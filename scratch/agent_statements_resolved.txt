@@ -1,0 +1,1254 @@
+23009:  [FRAME] "Agent Statements" #749:7809 
+23009:    -> layout: {"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"}
+23009:    -> fills: "White
+23010:    [FRAME] "div#shell" #749:7810 
+23010:      -> layout: {"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"}
+23011:      [FRAME] "Agent Portal navigation" #749:9430 TPL_FILLS: fill_df4cd166 (EL-84ca712f)
+23012:        [FRAME] "div.sb-h" #749:9431 (EL-5a59422e)
+23013:          [FRAME] "AeroWing Admin — Dashboard" #749:9432 TPL_FILLS: White (EL-280eabfe)
+23014:            [FRAME] "AeroWing — Explore, Book, Travel" #749:9433 TPL_FILLS: fill_af4669a1 (EL-966c7e52)
+23015:          [TEXT] "" #749:9434 TPL_TEXT: "Agent Portal" TPL_FILLS: Saffron (EL-25cb81a7)
+23016:        [FRAME] "Agent Portal sections" #749:9435 (EL-34ff3f47)
+23017:          [FRAME] "a" #749:9436 (EL-419d61b5)
+23018:            [IMAGE-SVG] "Frame" #749:9437 (EL-b1d338df)
+23019:            [FRAME] "span" #749:9439 (EL-2f9fe287)
+23020:              [TEXT] "" #749:9440 TPL_TEXT: "Dashboard" TPL_FILLS: Periwinkle Gray (EL-2811e7df)
+23021:          [FRAME] "a" #749:9441 (EL-419d61b5)
+23022:            [IMAGE-SVG] "Frame" #749:9442 (EL-b1d338df)
+23023:            [FRAME] "span" #749:9444 (EL-2f9fe287)
+23024:              [TEXT] "" #749:9445 TPL_TEXT: "Search & Book" TPL_FILLS: Periwinkle Gray (EL-47fd5523)
+23025:          [FRAME] "a" #749:9446 (EL-419d61b5)
+23026:            [IMAGE-SVG] "Frame" #749:9447 (EL-b1d338df)
+23027:            [FRAME] "span" #749:9449 (EL-2f9fe287)
+23028:              [TEXT] "" #749:9450 TPL_TEXT: "Bookings" TPL_FILLS: Periwinkle Gray (EL-4d579255)
+23029:          [FRAME] "a" #749:9451 (EL-419d61b5)
+23030:            [IMAGE-SVG] "Frame" #749:9452 (EL-b1d338df)
+23031:            [FRAME] "span" #749:9454 (EL-2f9fe287)
+23032:              [TEXT] "" #749:9455 TPL_TEXT: "Customers" TPL_FILLS: Periwinkle Gray (EL-bf3706d3)
+23033:          [FRAME] "a" #749:9456 (EL-419d61b5)
+23034:            [IMAGE-SVG] "Frame" #749:9457 (EL-b1d338df)
+23035:            [FRAME] "span" #749:9459 (EL-2f9fe287)
+23036:              [TEXT] "" #749:9460 TPL_TEXT: "Sub-agents" TPL_FILLS: Periwinkle Gray (EL-e7176502)
+23037:          [FRAME] "a" #749:9461 (EL-419d61b5)
+23038:            [IMAGE-SVG] "Frame" #749:9462 (EL-b1d338df)
+23039:            [FRAME] "span" #749:9464 (EL-2f9fe287)
+23040:              [TEXT] "" #749:9465 TPL_TEXT: "Pricing & Markup" TPL_FILLS: Periwinkle Gray (EL-8106c4b8)
+23041:          [FRAME] "div.sb-sep:margin" #749:9466 (EL-6c782aee)
+23042:            [RECTANGLE] "div.sb-sep" #749:9467 TPL_FILLS: White 10% (EL-74377f5a)
+23043:          [FRAME] "a" #749:9468 (EL-419d61b5)
+23044:            [IMAGE-SVG] "Frame" #749:9469 (EL-b1d338df)
+23045:            [FRAME] "span" #749:9471 (EL-2f9fe287)
+23046:              [TEXT] "" #749:9472 TPL_TEXT: "Wallet" TPL_FILLS: Periwinkle Gray (EL-1472cd12)
+23047:          [FRAME] "a" #749:9473 (EL-419d61b5)
+23048:            [IMAGE-SVG] "Frame" #749:9474 (EL-b1d338df)
+23049:            [FRAME] "span" #749:9476 (EL-2f9fe287)
+23050:              [TEXT] "" #749:9477 TPL_TEXT: "Credit" TPL_FILLS: Periwinkle Gray (EL-93d543dc)
+23051:          [FRAME] "a" #749:9478 (EL-419d61b5)
+23052:            [IMAGE-SVG] "Frame" #749:9479 (EL-b1d338df)
+23053:            [FRAME] "span" #749:9481 (EL-2f9fe287)
+23054:              [TEXT] "" #749:9482 TPL_TEXT: "Commissions" TPL_FILLS: Periwinkle Gray (EL-44b34f1e)
+23055:          [FRAME] "a" #749:9483 TPL_FILLS: White 12% (EL-d0215df3)
+23056:            [IMAGE-SVG] "Frame" #749:9484 (EL-b1d338df)
+23057:            [FRAME] "span" #749:9486 (EL-2f9fe287)
+23058:              [TEXT] "" #749:9487 TEXT: "Statements"
+23058:                -> layout: layout_177c5efc
+23058:                -> fills: White
+23059:          [FRAME] "a" #749:9488 (EL-419d61b5)
+23060:            [IMAGE-SVG] "Frame" #749:9489 (EL-b1d338df)
+23061:            [FRAME] "span" #749:9491 (EL-2f9fe287)
+23062:              [TEXT] "" #749:9492 TPL_TEXT: "Reports" TPL_FILLS: Periwinkle Gray (EL-dd0042e0)
+23063:          [FRAME] "div.sb-sep:margin" #749:9493 (EL-6c782aee)
+23064:            [RECTANGLE] "div.sb-sep" #749:9494 TPL_FILLS: White 10% (EL-74377f5a)
+23065:          [FRAME] "a" #749:9495 (EL-419d61b5)
+23066:            [IMAGE-SVG] "Frame" #749:9496 (EL-b1d338df)
+23067:            [FRAME] "span" #749:9498 (EL-2f9fe287)
+23068:              [TEXT] "" #749:9499 TPL_TEXT: "Notifications" TPL_FILLS: Periwinkle Gray (EL-944c8723)
+23069:          [FRAME] "a" #749:9500 (EL-419d61b5)
+23070:            [IMAGE-SVG] "Frame" #749:9501 (EL-b1d338df)
+23071:            [FRAME] "span" #749:9503 (EL-2f9fe287)
+23072:              [TEXT] "" #749:9504 TPL_TEXT: "Account / Settings" TPL_FILLS: Periwinkle Gray (EL-dcd43a44)
+23073:        [FRAME] "p.sb-f" #749:9505 (EL-ab281d22)
+23074:          [FRAME] "b" #749:9506 (EL-e9077466)
+23075:            [TEXT] "" #749:9507 TPL_TEXT: "M2 · B2B Agent Portal" TPL_FILLS: White (EL-a3ec670e)
+23076:          [TEXT] "" #749:9508 TEXT: "M2.10 Statements"
+23076:            -> layout: layout_177c5efc
+23076:            -> fills: "Rock
+23077:      [FRAME] "MAIN" #749:9510 
+23077:        -> layout: {"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"}
+23078:        [FRAME] "main#top" #749:9511 (EL-265f1e74)
+23079:          [FRAME] "div" #749:9512 (EL-286f649c)
+23080:            [FRAME] "section" #749:9513 (EL-a656df9e)
+23081:              [FRAME] "div.ph-t" #749:9514 (EL-12a11ae8)
+23082:                [FRAME] "p.eyb" #749:9515 (EL-e9077466)
+23083:                  [TEXT] "" #749:9516 TEXT: "Agent Portal · M2.10 Agent Statements"
+23083:                    -> layout: layout_56d3c81c
+23083:                    -> fills: "Science
+23084:                [FRAME] "h1#h-pg" #749:9517 (EL-e9077466)
+23085:                  [TEXT] "" #749:9518 TEXT: "Agent Statements"
+23085:                    -> layout: layout_56d3c81c
+23085:                    -> fills: "Midnight
+23086:                [FRAME] "p.ph-s" #749:9519 (EL-33f6f1ad)
+23087:                  [TEXT] "" #749:9520 TEXT: "Review account activity for a selected period and download your statement."
+23087:                    -> layout: layout_177c5efc
+23087:                    -> fills: Comet
+23088:                [FRAME] "p.ph-biz" #749:9521 (EL-ccd54d18)
+23089:                  [FRAME] "b" #749:9522 (EL-2f9fe287)
+23090:                    [TEXT] "" #749:9523 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-4a9ab66a)
+23091:                  [FRAME] "span.dm-tag" #749:9524 TPL_FILLS: Catskill White (660:5050) (EL-5514a8df)
+23092:                    [IMAGE-SVG] "Frame" #749:9525 (EL-62b4d877)
+23093:                    [TEXT] "" #749:9527 TPL_TEXT: "Sample data" TPL_FILLS: Shuttle Gray (665:6373) (EL-8340f657)
+23094:              [FRAME] "div.ph-a3" #749:9528 (EL-d9efaca1)
+23095:                [FRAME] "button.btn" #749:9529 TPL_FILLS: White (EL-1ecbab94)
+23096:                  [IMAGE-SVG] "Frame" #749:9530 (EL-f652840d)
+23097:                  [FRAME] "span" #749:9532 (EL-2a1f700b)
+23098:                    [TEXT] "" #749:9533 TEXT: "Download CSV"
+23098:                      -> layout: layout_177c5efc
+23098:                      -> fills: "Midnight
+23099:                [FRAME] "button.btn" #749:9534 TPL_FILLS: Saffron (EL-91e5fe2d)
+23100:                  [RECTANGLE] "button.btn:shadow" #749:9535 
+23100:                    -> layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+23100:                    -> fills: "White
+23101:                  [IMAGE-SVG] "Frame" #749:9536 (EL-f652840d)
+23102:                  [FRAME] "span" #749:9538 (EL-2a1f700b)
+23103:                    [TEXT] "" #749:9539 TEXT: "Download PDF"
+23103:                      -> layout: layout_177c5efc
+23103:                      -> fills: "Midnight
+23104:            [FRAME] "section.pbar" #749:9540 TPL_FILLS: White (EL-79125a71)
+23105:              [FRAME] "h2#pb-h" #749:9541 (EL-c8d50cb3)
+23106:                [IMAGE-SVG] "Frame" #749:9542 (EL-f652840d)
+23107:                [TEXT] "" #749:9544 TEXT: "Statement Period"
+23107:                  -> layout: layout_177c5efc
+23107:                  -> fills: "Midnight
+23108:              [FRAME] "form#pform" #749:9545 
+23108:                -> layout: {"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"240px 240px 170.97px","gridTemplateRows":"44px 65.25px","gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"}
+23109:                [FRAME] "Period presets" #749:9546 
+23109:                  -> layout: {"mode":"row","alignSelf":"start","wrap":true,"gap":"6px","sizing":{"horizontal":"fill","vertical":"fixed"}
+23110:                  [FRAME] "button" #749:9547 TPL_FILLS: White (EL-41dad5eb)
+23111:                    [TEXT] "" #749:9548 TPL_TEXT: "This Month" TPL_FILLS: Comet (EL-d8e27fce)
+23112:                  [FRAME] "button" #749:9549 TPL_FILLS: White (EL-41dad5eb)
+23113:                    [TEXT] "" #749:9550 TPL_TEXT: "Previous Month" TPL_FILLS: Comet (EL-957fe223)
+23114:                  [FRAME] "button" #749:9551 TPL_FILLS: Hawkes Blue (664:5963) (EL-2bdb6f4b)
+23115:                    [TEXT] "" #749:9552 TPL_TEXT: "Custom" TPL_FILLS: Midnight Blue (EL-53700f52)
+23116:                [FRAME] "div.pr-e" #749:9553 (EL-a5ce7f8c)
+23117:                  [FRAME] "label#p-from-w" #749:9554 (EL-99324298)
+23118:                    [FRAME] "span" #749:9555 (EL-e9077466)
+23119:                      [TEXT] "" #749:9556 TPL_TEXT: "From" TPL_FILLS: Comet (EL-4ba1a4d2)
+23120:                    [FRAME] "input#p-from" #749:9557 TPL_FILLS: White (EL-54791ce1)
+23121:                      [FRAME] "div" #749:9558 (EL-a75c3b19)
+23122:                        [FRAME] "div#date-time-edit" #749:9559 (EL-f676945a)
+23123:                          [FRAME] "div" #749:9560 (EL-2781be54)
+23124:                            [TEXT] "" #749:9561 TPL_TEXT: "10" TPL_FILLS: Mirage (EL-c911be3e)
+23125:                            [TEXT] "" #749:9562 TPL_TEXT: "/" TPL_FILLS: Mirage (EL-9212ea40)
+23126:                            [TEXT] "" #749:9563 TPL_TEXT: "01" TPL_FILLS: Mirage (EL-2d8de92a)
+23127:                            [TEXT] "" #749:9564 TPL_TEXT: "/" TPL_FILLS: Mirage (EL-9212ea40)
+23128:                            [TEXT] "" #749:9565 TPL_TEXT: "2026" TPL_FILLS: Mirage (EL-a63d52c6)
+23129:                        [FRAME] "div menu#picker" #749:9566 (EL-63a0d0bd)
+23130:                          [IMAGE-SVG] "image" #749:9567 (EL-56925d9d)
+23131:                [FRAME] "div.pr-e" #749:9570 (EL-a5ce7f8c)
+23132:                  [FRAME] "label#p-to-w" #749:9571 (EL-99324298)
+23133:                    [FRAME] "span" #749:9572 (EL-e9077466)
+23134:                      [TEXT] "" #749:9573 TPL_TEXT: "To" TPL_FILLS: Comet (EL-814b7586)
+23135:                    [FRAME] "input#p-to" #749:9574 TPL_FILLS: White (EL-54791ce1)
+23136:                      [FRAME] "div" #749:9575 (EL-a75c3b19)
+23137:                        [FRAME] "div#date-time-edit" #749:9576 (EL-f676945a)
+23138:                          [FRAME] "div" #749:9577 (EL-2781be54)
+23139:                            [TEXT] "" #749:9578 TPL_TEXT: "11" TPL_FILLS: Mirage (EL-09af758f)
+23140:                            [TEXT] "" #749:9579 TPL_TEXT: "/" TPL_FILLS: Mirage (EL-9212ea40)
+23141:                            [TEXT] "" #749:9580 TPL_TEXT: "16" TPL_FILLS: Mirage (EL-549499ce)
+23142:                            [TEXT] "" #749:9581 TPL_TEXT: "/" TPL_FILLS: Mirage (EL-9212ea40)
+23143:                            [TEXT] "" #749:9582 TPL_TEXT: "2026" TPL_FILLS: Mirage (EL-a63d52c6)
+23144:                        [FRAME] "div menu#picker" #749:9583 (EL-63a0d0bd)
+23145:                          [IMAGE-SVG] "image" #749:9584 (EL-56925d9d)
+23146:                [FRAME] "button.btn" #749:9587 
+23146:                  -> layout: {"mode":"row","alignSelf":"end","padding":"12px 18px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}
+23146:                  -> fills: Saffron
+23147:                  [RECTANGLE] "button.btn:shadow" #749:9588 
+23147:                    -> layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+23147:                    -> fills: "White
+23148:                  [IMAGE-SVG] "Frame" #749:9589 (EL-f652840d)
+23149:                  [FRAME] "span" #749:9591 (EL-2a1f700b)
+23150:                    [TEXT] "" #749:9592 TEXT: "View Statement"
+23150:                      -> layout: layout_177c5efc
+23150:                      -> fills: "Midnight
+23151:            [FRAME] "article#doc" #749:9593 
+23151:              -> layout: layout_5c79c5b1
+23151:              -> fills: White
+23152:              [FRAME] "header.doc-h" #749:9594 
+23152:                -> layout: {"mode":"row","alignSelf":"stretch","padding":"24px 28px","justifyContent":"space-between","wrap":true,"gap":"16px","sizing":{"horizontal":"fill","vertical":"hug"}
+23152:                -> fills: [{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(174deg,
+23153:                [FRAME] "div" #749:9595 
+23153:                  -> layout: {"mode":"column","gap":"6px","sizing":{"horizontal":"hug","vertical":"fixed"}
+23154:                  [FRAME] "AeroWing Admin — Dashboard" #749:10382 TPL_FILLS: White (EL-280eabfe)
+23155:                    [FRAME] "AeroWing — Explore, Book, Travel" #749:10383 
+23155:                      -> layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+23155:                      -> fills: fill_af4669a1
+23156:                  [FRAME] "h2#doc-h" #749:9597 
+23156:                    -> layout: {"mode":"column","alignSelf":"stretch","padding":"4px 0px 0px","sizing":{"horizontal":"fill","vertical":"hug"}
+23157:                    [TEXT] "" #749:9598 TEXT: "Agent Statement"
+23157:                      -> layout: layout_177c5efc
+23157:                      -> fills: White
+23158:                  [FRAME] "p" #749:9599 
+23158:                    -> layout: {"mode":"column","alignSelf":"stretch","padding":"0px 0px 2.25px","sizing":{"horizontal":"fill","vertical":"hug"}
+23159:                    [FRAME] "span.dm-tag" #749:9600 TPL_FILLS: White 12% (EL-159ee852)
+23160:                      [IMAGE-SVG] "Frame" #749:9601 (EL-62b4d877)
+23161:                      [TEXT] "" #749:9603 TPL_TEXT: "Sample data" TPL_FILLS: Link Water (721:24848) (EL-acf870e9)
+23162:                [FRAME] "dl.doc-m:align-flex-end" #749:9604 
+23162:                  -> layout: {"mode":"row","alignItems":"flex-end","sizing":{"horizontal":"hug","vertical":"fixed"}
+23163:                  [FRAME] "dl.doc-m" #749:9605 
+23163:                    -> layout: {"mode":"row","gap":"24px","sizing":{"horizontal":"hug","vertical":"hug"}
+23164:                    [FRAME] "div" #749:9606 (EL-bfbba51a)
+23165:                      [FRAME] "dt" #749:9607 (EL-dfdf56f9)
+23166:                        [TEXT] "" #749:9608 TEXT: "Agent"
+23166:                          -> layout: layout_177c5efc
+23166:                          -> fills: "Rock
+23167:                      [FRAME] "dd" #749:9609 (EL-dfdf56f9)
+23168:                        [TEXT] "" #749:9610 TEXT: "Skyline Demo Travels Ltd"
+23168:                          -> layout: layout_177c5efc
+23168:                          -> fills: White
+23169:                    [FRAME] "div" #749:9611 (EL-bfbba51a)
+23170:                      [FRAME] "dt" #749:9612 (EL-dfdf56f9)
+23171:                        [TEXT] "" #749:9613 TEXT: "Statement Period"
+23171:                          -> layout: layout_177c5efc
+23171:                          -> fills: "Rock
+23172:                      [FRAME] "dd#doc-per" #749:9614 (EL-dfdf56f9)
+23173:                        [TEXT] "" #749:9615 TEXT: "01 Oct 2026 – 16 Nov 2026"
+23173:                          -> layout: layout_177c5efc
+23173:                          -> fills: White
+23174:                    [FRAME] "div" #749:9616 (EL-bfbba51a)
+23175:                      [FRAME] "dt" #749:9617 (EL-dfdf56f9)
+23176:                        [TEXT] "" #749:9618 TEXT: "Statement Type"
+23176:                          -> layout: layout_177c5efc
+23176:                          -> fills: "Rock
+23177:                      [FRAME] "dd" #749:9619 (EL-dfdf56f9)
+23178:                        [TEXT] "" #749:9620 TEXT: "Agent Statement"
+23178:                          -> layout: layout_177c5efc
+23178:                          -> fills: White
+23179:              [FRAME] "div.doc-b" #749:9621 
+23179:                -> layout: {"mode":"column","alignSelf":"stretch","padding":"8px 28px 28px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+23180:                [FRAME] "Statement summary" #749:9622 
+23180:                  -> layout: {"mode":"row","alignSelf":"stretch","padding":"18px 0px 6px","justifyContent":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}
+23181:                  [FRAME] "div" #749:9623 TPL_FILLS: Catskill White (386:1824) (EL-cb50a28c)
+23182:                    [FRAME] "small" #749:9624 (EL-e9077466)
+23183:                      [TEXT] "" #749:9625 TEXT: "Bookings"
+23183:                        -> layout: layout_56d3c81c
+23183:                        -> fills: Comet
+23184:                    [FRAME] "b" #749:9626 (EL-e9077466)
+23185:                      [TEXT] "" #749:9627 TPL_TEXT: "Activity available" TPL_FILLS: Mirage (EL-c12f0b8d)
+23186:                    [FRAME] "span" #749:9628 (EL-e9077466)
+23187:                      [TEXT] "" #749:9629 TEXT: "12 in period"
+23187:                        -> layout: layout_56d3c81c
+23187:                        -> fills: Comet
+23188:                  [FRAME] "div" #749:9630 TPL_FILLS: Catskill White (386:1824) (EL-cb50a28c)
+23189:                    [FRAME] "small" #749:9631 (EL-e9077466)
+23190:                      [TEXT] "" #749:9632 TEXT: "Wallet Transactions"
+23190:                        -> layout: layout_56d3c81c
+23190:                        -> fills: Comet
+23191:                    [FRAME] "b" #749:9633 (EL-e9077466)
+23192:                      [TEXT] "" #749:9634 TPL_TEXT: "Activity available" TPL_FILLS: Mirage (EL-c12f0b8d)
+23193:                    [FRAME] "span" #749:9635 (EL-e9077466)
+23194:                      [TEXT] "" #749:9636 TEXT: "10 in period"
+23194:                        -> layout: layout_56d3c81c
+23194:                        -> fills: Comet
+23195:                  [FRAME] "div" #749:9637 
+23195:                    -> layout: {"mode":"column","padding":"12px 14px","alignItems":"stretch","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}
+23195:                    -> fills: "Catskill
+23196:                    [FRAME] "small" #749:9638 (EL-e9077466)
+23197:                      [TEXT] "" #749:9639 TEXT: "Credit Usage"
+23197:                        -> layout: layout_56d3c81c
+23197:                        -> fills: Comet
+23198:                    [FRAME] "b" #749:9640 (EL-e9077466)
+23199:                      [TEXT] "" #749:9641 TPL_TEXT: "Usage available" TPL_FILLS: Mirage (EL-10d8174e)
+23200:                    [FRAME] "span" #749:9642 (EL-e9077466)
+23201:                      [TEXT] "" #749:9643 TEXT: "Credit Limit, Used, Available,\\nOutstanding"
+23201:                        -> layout: layout_56d3c81c
+23201:                        -> fills: Comet
+23202:                  [FRAME] "div" #749:9644 TPL_FILLS: Catskill White (386:1824) (EL-cb50a28c)
+23203:                    [FRAME] "small" #749:9645 (EL-e9077466)
+23204:                      [TEXT] "" #749:9646 TEXT: "Commissions"
+23204:                        -> layout: layout_56d3c81c
+23204:                        -> fills: Comet
+23205:                    [FRAME] "b" #749:9647 (EL-e9077466)
+23206:                      [TEXT] "" #749:9648 TPL_TEXT: "Activity available" TPL_FILLS: Mirage (EL-c12f0b8d)
+23207:                    [FRAME] "span" #749:9649 (EL-e9077466)
+23208:                      [TEXT] "" #749:9650 TEXT: "5 in period"
+23208:                        -> layout: layout_56d3c81c
+23208:                        -> fills: Comet
+23209:                  [FRAME] "div" #749:9651 
+23209:                    -> layout: layout_9d1785b8
+23209:                    -> fills: "Buttery
+23210:                    [FRAME] "small" #749:9652 (EL-e9077466)
+23211:                      [TEXT] "" #749:9653 TEXT: "Closing Balance"
+23211:                        -> layout: layout_56d3c81c
+23211:                        -> fills: Comet
+23212:                    [FRAME] "b" #749:9654 (EL-e9077466)
+23213:                      [TEXT] "" #749:9655 TEXT: "Statement value"
+23213:                        -> layout: layout_56d3c81c
+23213:                        -> fills: Mirage
+23214:                    [FRAME] "span" #749:9656 (EL-e9077466)
+23215:                      [TEXT] "" #749:9657 TEXT: "System-provided"
+23215:                        -> layout: layout_56d3c81c
+23215:                        -> fills: Comet
+23216:                [FRAME] "Bookings" #749:9658 (EL-a94b8ffa)
+23217:                  [FRAME] "div.dsec-h" #749:9659 (EL-d29137d2)
+23218:                    [FRAME] "h3" #749:9660 
+23218:                      -> layout: {"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"}
+23219:                      [FRAME] "button.dsec-t" #749:9661 (EL-3bf81aa1)
+23220:                        [FRAME] "span.kic" #749:9662 
+23220:                          -> layout: layout_5d3b40b9
+23220:                          -> fills: "Hawkes
+23221:                          [IMAGE-SVG] "Frame" #749:9663 (EL-f1890f3e)
+23222:                        [TEXT] "" #749:9665 TEXT: "Bookings"
+23222:                          -> layout: layout_177c5efc
+23222:                          -> fills: "Midnight
+23223:                        [FRAME] "span.cnt" #749:9666 TPL_FILLS: Athens Gray (EL-9ea39ecd)
+23224:                          [TEXT] "" #749:9667 TEXT: "12"
+23224:                            -> layout: layout_177c5efc
+23224:                            -> fills: Comet
+23225:                        [FRAME] "svg.chv:margin" #749:9668 
+23225:                          -> layout: {"mode":"column","padding":"0px 0px 0px 935.4530029296875px","alignItems":"flex-end","sizing":{"horizontal":"fill","vertical":"fixed"}
+23226:                          [FRAME] "svg.chv" #749:9669 (EL-f40e3bba)
+23227:                            [IMAGE-SVG] "Frame" #749:9670 (EL-0af5cf6c)
+23228:                    [FRAME] "div.dsec-a" #749:9672 
+23228:                      -> layout: {"mode":"row","wrap":true,"gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}
+23229:                      [FRAME] "button.lnk" #749:9673 (EL-996ec01d)
+23230:                        [TEXT] "" #749:9674 TEXT: "View Booking History"
+23230:                          -> layout: layout_177c5efc
+23230:                          -> fills: "Science
+23231:                        [IMAGE-SVG] "Frame" #749:9675 (EL-d40fb4e5)
+23232:                  [FRAME] "div#b-bk" #749:9677 (EL-47ca8de5)
+23233:                    [FRAME] "table.btb" #749:9678 (EL-a7affeb4)
+23234:                      [FRAME] "tr" #749:9679 (EL-8a10e53c)
+23235:                        [FRAME] "th" #749:9680 
+23235:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23235:                          -> fills: "Link
+23236:                          [TEXT] "" #749:9681 TEXT: "Booking Reference"
+23236:                            -> layout: layout_177c5efc
+23236:                            -> fills: Comet
+23237:                        [FRAME] "th" #749:9682 
+23237:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23237:                          -> fills: "Link
+23238:                          [TEXT] "" #749:9683 TEXT: "Customer"
+23238:                            -> layout: layout_177c5efc
+23238:                            -> fills: Comet
+23239:                        [FRAME] "th" #749:9684 
+23239:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23239:                          -> fills: "Link
+23240:                          [TEXT] "" #749:9685 TPL_TEXT: "Service" TPL_FILLS: Comet (EL-e11fff9e)
+23241:                        [FRAME] "th" #749:9686 
+23241:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23241:                          -> fills: "Link
+23242:                          [TEXT] "" #749:9687 TEXT: "Created By"
+23242:                            -> layout: layout_177c5efc
+23242:                            -> fills: Comet
+23243:                        [FRAME] "th" #749:9688 
+23243:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23243:                          -> fills: "Link
+23244:                          [TEXT] "" #749:9689 TEXT: "Booking Date"
+23244:                            -> layout: layout_177c5efc
+23244:                            -> fills: Comet
+23245:                        [FRAME] "th" #749:9690 
+23245:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23245:                          -> fills: "Link
+23246:                          [TEXT] "" #749:9691 TEXT: "Booking Status"
+23246:                            -> layout: layout_177c5efc
+23246:                            -> fills: Comet
+23247:                        [FRAME] "th.num-c" #749:9692 
+23247:                          -> layout: {"mode":"column","padding":"9px 10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"}
+23247:                          -> fills: "Link
+23248:                          [TEXT] "" #749:9693 TEXT: "Booking Amount"
+23248:                            -> layout: layout_177c5efc
+23248:                            -> fills: Comet
+23249:                      [FRAME] "tbody" #749:9694 (EL-e9077466)
+23250:                        [FRAME] "tr" #749:9695 (EL-8a10e53c)
+23251:                          [FRAME] "td" #749:9696 (EL-51cfc64f)
+23252:                            [TEXT] "" #749:9697 TEXT: "AW-DEMO-PK-003"
+23252:                              -> layout: layout_177c5efc
+23252:                              -> fills: Endeavour
+23253:                          [FRAME] "td" #749:9698 (EL-23490a49)
+23254:                            [TEXT] "" #749:9699 TEXT: "Nadia Islam"
+23254:                              -> layout: layout_177c5efc
+23254:                              -> fills: Mirage
+23255:                          [FRAME] "td" #749:9700 (EL-11616f91)
+23256:                            [TEXT] "" #749:9701 TPL_TEXT: "Travel Package" TPL_FILLS: Mirage (EL-9bf24f28)
+23257:                          [FRAME] "td" #749:9702 (EL-4c9c070f)
+23258:                            [TEXT] "" #749:9703 TPL_TEXT: "Mirpur Desk" TPL_FILLS: Mirage (EL-054b68de)
+23259:                            [FRAME] "span" #749:9704 (EL-e9077466)
+23260:                              [TEXT] "" #749:9705 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23261:                          [FRAME] "td" #749:9706 (EL-3a0c236c)
+23262:                            [TEXT] "" #749:9707 TEXT: "05 Oct 2026"
+23262:                              -> layout: layout_177c5efc
+23262:                              -> fills: Mirage
+23263:                          [FRAME] "td" #749:9708 (EL-0ebac5a2)
+23264:                            [FRAME] "span.p-ok" #749:9709 TPL_FILLS: Panache (EL-4ed5d9a3)
+23265:                              [IMAGE-SVG] "Frame" #749:9710 (EL-522202e5)
+23266:                              [TEXT] "" #749:9712 TPL_TEXT: "Confirmed" TPL_FILLS: Jewel (EL-90dd810f)
+23267:                          [FRAME] "td.num-c" #749:9713 (EL-c761eb19)
+23268:                            [TEXT] "" #749:9714 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23269:                        [FRAME] "tr" #749:9715 (EL-8a10e53c)
+23270:                          [FRAME] "td" #749:9716 (EL-51cfc64f)
+23271:                            [TEXT] "" #749:9717 TEXT: "AW-DEMO-CR-005"
+23271:                              -> layout: layout_177c5efc
+23271:                              -> fills: Endeavour
+23272:                          [FRAME] "td" #749:9718 (EL-23490a49)
+23273:                            [TEXT] "" #749:9719 TEXT: "Farhana Noor"
+23273:                              -> layout: layout_177c5efc
+23273:                              -> fills: Mirage
+23274:                          [FRAME] "td" #749:9720 (EL-11616f91)
+23275:                            [TEXT] "" #749:9721 TPL_TEXT: "Car Rental" TPL_FILLS: Mirage (EL-2044b183)
+23276:                          [FRAME] "td" #749:9722 (EL-4c9c070f)
+23277:                            [TEXT] "" #749:9723 TPL_TEXT: "Mirpur Desk" TPL_FILLS: Mirage (EL-054b68de)
+23278:                            [FRAME] "span" #749:9724 (EL-e9077466)
+23279:                              [TEXT] "" #749:9725 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23280:                          [FRAME] "td" #749:9726 (EL-3a0c236c)
+23281:                            [TEXT] "" #749:9727 TEXT: "12 Oct 2026"
+23281:                              -> layout: layout_177c5efc
+23281:                              -> fills: Mirage
+23282:                          [FRAME] "td" #749:9728 (EL-0ebac5a2)
+23283:                            [FRAME] "span.p-neu" #749:9729 TPL_FILLS: Athens Gray (EL-885c7133)
+23284:                              [IMAGE-SVG] "Frame" #749:9730 (EL-522202e5)
+23285:                              [TEXT] "" #749:9732 TEXT: "Cancelled"
+23285:                                -> layout: layout_177c5efc
+23285:                                -> fills: Comet
+23286:                          [FRAME] "td.num-c" #749:9733 (EL-c761eb19)
+23287:                            [TEXT] "" #749:9734 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23288:                        [FRAME] "tr" #749:9735 (EL-8a10e53c)
+23289:                          [FRAME] "td" #749:9736 (EL-51cfc64f)
+23290:                            [TEXT] "" #749:9737 TEXT: "AW-DEMO-BT-009"
+23290:                              -> layout: layout_177c5efc
+23290:                              -> fills: Endeavour
+23291:                          [FRAME] "td" #749:9738 (EL-23490a49)
+23292:                            [TEXT] "" #749:9739 TEXT: "Maliha Khan"
+23292:                              -> layout: layout_177c5efc
+23292:                              -> fills: Mirage
+23293:                          [FRAME] "td" #749:9740 (EL-11616f91)
+23294:                            [TEXT] "" #749:9741 TEXT: "Bus / Train"
+23294:                              -> layout: layout_177c5efc
+23294:                              -> fills: Mirage
+23295:                          [FRAME] "td" #749:9742 (EL-4c9c070f)
+23296:                            [TEXT] "" #749:9743 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-1ef2d142)
+23297:                            [FRAME] "span" #749:9744 (EL-e9077466)
+23298:                              [TEXT] "" #749:9745 TPL_TEXT: "Parent Agent" TPL_FILLS: Comet (EL-808b2b47)
+23299:                          [FRAME] "td" #749:9746 (EL-3a0c236c)
+23300:                            [TEXT] "" #749:9747 TEXT: "14 Oct 2026"
+23300:                              -> layout: layout_177c5efc
+23300:                              -> fills: Mirage
+23301:                          [FRAME] "td" #749:9748 (EL-0ebac5a2)
+23302:                            [FRAME] "span.p-ok" #749:9749 TPL_FILLS: Panache (EL-4ed5d9a3)
+23303:                              [IMAGE-SVG] "Frame" #749:9750 (EL-522202e5)
+23304:                              [TEXT] "" #749:9752 TPL_TEXT: "Confirmed" TPL_FILLS: Jewel (EL-90dd810f)
+23305:                          [FRAME] "td.num-c" #749:9753 (EL-c761eb19)
+23306:                            [TEXT] "" #749:9754 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23307:                        [FRAME] "tr" #749:9755 (EL-8a10e53c)
+23308:                          [FRAME] "td" #749:9756 (EL-51cfc64f)
+23309:                            [TEXT] "" #749:9757 TEXT: "AW-DEMO-AC-011"
+23309:                              -> layout: layout_177c5efc
+23309:                              -> fills: Endeavour
+23310:                          [FRAME] "td" #749:9758 (EL-23490a49)
+23311:                            [TEXT] "" #749:9759 TEXT: "Nafisa Rahman"
+23311:                              -> layout: layout_177c5efc
+23311:                              -> fills: Mirage
+23312:                          [FRAME] "td" #749:9760 (EL-11616f91)
+23313:                            [TEXT] "" #749:9761 TPL_TEXT: "Activity" TPL_FILLS: Mirage (EL-835e7d4c)
+23314:                          [FRAME] "td" #749:9762 (EL-4c9c070f)
+23315:                            [TEXT] "" #749:9763 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-1ef2d142)
+23316:                            [FRAME] "span" #749:9764 (EL-e9077466)
+23317:                              [TEXT] "" #749:9765 TPL_TEXT: "Parent Agent" TPL_FILLS: Comet (EL-808b2b47)
+23318:                          [FRAME] "td" #749:9766 (EL-3a0c236c)
+23319:                            [TEXT] "" #749:9767 TEXT: "18 Oct 2026"
+23319:                              -> layout: layout_177c5efc
+23319:                              -> fills: Mirage
+23320:                          [FRAME] "td" #749:9768 (EL-0ebac5a2)
+23321:                            [FRAME] "span.p-neu" #749:9769 TPL_FILLS: Athens Gray (EL-885c7133)
+23322:                              [IMAGE-SVG] "Frame" #749:9770 (EL-522202e5)
+23323:                              [TEXT] "" #749:9772 TEXT: "Refunded"
+23323:                                -> layout: layout_177c5efc
+23323:                                -> fills: Comet
+23324:                          [FRAME] "td.num-c" #749:9773 (EL-c761eb19)
+23325:                            [TEXT] "" #749:9774 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23326:                        [FRAME] "tr" #749:9775 (EL-8a10e53c)
+23327:                          [FRAME] "td" #749:9776 (EL-51cfc64f)
+23328:                            [TEXT] "" #749:9777 TEXT: "AW-DEMO-HT-002"
+23328:                              -> layout: layout_177c5efc
+23328:                              -> fills: Endeavour
+23329:                          [FRAME] "td" #749:9778 (EL-23490a49)
+23330:                            [TEXT] "" #749:9779 TEXT: "Karim Hasan"
+23330:                              -> layout: layout_177c5efc
+23330:                              -> fills: Mirage
+23331:                          [FRAME] "td" #749:9780 (EL-11616f91)
+23332:                            [TEXT] "" #749:9781 TPL_TEXT: "Hotel" TPL_FILLS: Mirage (EL-382f6ceb)
+23333:                          [FRAME] "td" #749:9782 (EL-4c9c070f)
+23334:                            [TEXT] "" #749:9783 TPL_TEXT: "Mirpur Desk" TPL_FILLS: Mirage (EL-054b68de)
+23335:                            [FRAME] "span" #749:9784 (EL-e9077466)
+23336:                              [TEXT] "" #749:9785 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23337:                          [FRAME] "td" #749:9786 (EL-3a0c236c)
+23338:                            [TEXT] "" #749:9787 TEXT: "22 Oct 2026"
+23338:                              -> layout: layout_177c5efc
+23338:                              -> fills: Mirage
+23339:                          [FRAME] "td" #749:9788 (EL-0ebac5a2)
+23340:                            [FRAME] "span.p-ok" #749:9789 TPL_FILLS: Panache (EL-4ed5d9a3)
+23341:                              [IMAGE-SVG] "Frame" #749:9790 (EL-522202e5)
+23342:                              [TEXT] "" #749:9792 TPL_TEXT: "Confirmed" TPL_FILLS: Jewel (EL-90dd810f)
+23343:                          [FRAME] "td.num-c" #749:9793 (EL-c761eb19)
+23344:                            [TEXT] "" #749:9794 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23345:                        [FRAME] "tr" #749:9795 (EL-8a10e53c)
+23346:                          [FRAME] "td" #749:9796 (EL-51cfc64f)
+23347:                            [TEXT] "" #749:9797 TEXT: "AW-DEMO-HT-007"
+23347:                              -> layout: layout_177c5efc
+23347:                              -> fills: Endeavour
+23348:                          [FRAME] "td" #749:9798 (EL-23490a49)
+23349:                            [TEXT] "" #749:9799 TEXT: "Tania Sultana"
+23349:                              -> layout: layout_177c5efc
+23349:                              -> fills: Mirage
+23350:                          [FRAME] "td" #749:9800 (EL-11616f91)
+23351:                            [TEXT] "" #749:9801 TPL_TEXT: "Hotel" TPL_FILLS: Mirage (EL-382f6ceb)
+23352:                          [FRAME] "td" #749:9802 (EL-4c9c070f)
+23353:                            [TEXT] "" #749:9803 TPL_TEXT: "Banani Desk" TPL_FILLS: Mirage (EL-7a3e924c)
+23354:                            [FRAME] "span" #749:9804 (EL-e9077466)
+23355:                              [TEXT] "" #749:9805 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23356:                          [FRAME] "td" #749:9806 (EL-3a0c236c)
+23357:                            [TEXT] "" #749:9807 TEXT: "26 Oct 2026"
+23357:                              -> layout: layout_177c5efc
+23357:                              -> fills: Mirage
+23358:                          [FRAME] "td" #749:9808 (EL-0ebac5a2)
+23359:                            [FRAME] "span.p-ok" #749:9809 TPL_FILLS: Panache (EL-4ed5d9a3)
+23360:                              [IMAGE-SVG] "Frame" #749:9810 (EL-522202e5)
+23361:                              [TEXT] "" #749:9812 TPL_TEXT: "Issued" TPL_FILLS: Jewel (EL-ccc91ac0)
+23362:                          [FRAME] "td.num-c" #749:9813 (EL-c761eb19)
+23363:                            [TEXT] "" #749:9814 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23364:                        [FRAME] "tr" #749:9815 (EL-8a10e53c)
+23365:                          [FRAME] "td" #749:9816 (EL-51cfc64f)
+23366:                            [TEXT] "" #749:9817 TEXT: "AW-DEMO-TI-010"
+23366:                              -> layout: layout_177c5efc
+23366:                              -> fills: Endeavour
+23367:                          [FRAME] "td" #749:9818 (EL-23490a49)
+23368:                            [TEXT] "" #749:9819 TEXT: "Tasnim Karim"
+23368:                              -> layout: layout_177c5efc
+23368:                              -> fills: Mirage
+23369:                          [FRAME] "td" #749:9820 (EL-11616f91)
+23370:                            [TEXT] "" #749:9821 TEXT: "Travel Insurance"
+23370:                              -> layout: layout_177c5efc
+23370:                              -> fills: Mirage
+23371:                          [FRAME] "td" #749:9822 (EL-4c9c070f)
+23372:                            [TEXT] "" #749:9823 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-1ef2d142)
+23373:                            [FRAME] "span" #749:9824 (EL-e9077466)
+23374:                              [TEXT] "" #749:9825 TPL_TEXT: "Parent Agent" TPL_FILLS: Comet (EL-808b2b47)
+23375:                          [FRAME] "td" #749:9826 (EL-3a0c236c)
+23376:                            [TEXT] "" #749:9827 TEXT: "30 Oct 2026"
+23376:                              -> layout: layout_177c5efc
+23376:                              -> fills: Mirage
+23377:                          [FRAME] "td" #749:9828 (EL-0ebac5a2)
+23378:                            [FRAME] "span.p-ok" #749:9829 TPL_FILLS: Panache (EL-4ed5d9a3)
+23379:                              [IMAGE-SVG] "Frame" #749:9830 (EL-522202e5)
+23380:                              [TEXT] "" #749:9832 TPL_TEXT: "Issued" TPL_FILLS: Jewel (EL-ccc91ac0)
+23381:                          [FRAME] "td.num-c" #749:9833 (EL-c761eb19)
+23382:                            [TEXT] "" #749:9834 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23383:                        [FRAME] "tr" #749:9835 (EL-8a10e53c)
+23384:                          [FRAME] "td" #749:9836 (EL-51cfc64f)
+23385:                            [TEXT] "" #749:9837 TEXT: "AW-DEMO-ES-008"
+23385:                              -> layout: layout_177c5efc
+23385:                              -> fills: Endeavour
+23386:                          [FRAME] "td" #749:9838 (EL-23490a49)
+23387:                            [TEXT] "" #749:9839 TEXT: "Rafi Ahmed"
+23387:                              -> layout: layout_177c5efc
+23387:                              -> fills: Mirage
+23388:                          [FRAME] "td" #749:9840 (EL-11616f91)
+23389:                            [TEXT] "" #749:9841 TEXT: "eSIM"
+23389:                              -> layout: layout_177c5efc
+23389:                              -> fills: Mirage
+23390:                          [FRAME] "td" #749:9842 (EL-4c9c070f)
+23391:                            [TEXT] "" #749:9843 TEXT: "Uttara Desk"
+23391:                              -> layout: layout_177c5efc
+23391:                              -> fills: Mirage
+23392:                            [FRAME] "span" #749:9844 (EL-e9077466)
+23393:                              [TEXT] "" #749:9845 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23394:                          [FRAME] "td" #749:9846 (EL-3a0c236c)
+23395:                            [TEXT] "" #749:9847 TEXT: "02 Nov 2026"
+23395:                              -> layout: layout_177c5efc
+23395:                              -> fills: Mirage
+23396:                          [FRAME] "td" #749:9848 (EL-0ebac5a2)
+23397:                            [FRAME] "span.p-ok" #749:9849 TPL_FILLS: Panache (EL-4ed5d9a3)
+23398:                              [IMAGE-SVG] "Frame" #749:9850 (EL-522202e5)
+23399:                              [TEXT] "" #749:9852 TPL_TEXT: "Issued" TPL_FILLS: Jewel (EL-ccc91ac0)
+23400:                          [FRAME] "td.num-c" #749:9853 (EL-c761eb19)
+23401:                            [TEXT] "" #749:9854 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23402:                        [FRAME] "tr" #749:9855 (EL-8a10e53c)
+23403:                          [FRAME] "td" #749:9856 (EL-51cfc64f)
+23404:                            [TEXT] "" #749:9857 TEXT: "AW-DEMO-FL-006"
+23404:                              -> layout: layout_177c5efc
+23404:                              -> fills: Endeavour
+23405:                          [FRAME] "td" #749:9858 (EL-23490a49)
+23406:                            [TEXT] "" #749:9859 TEXT: "Mahin Chowdhury"
+23406:                              -> layout: layout_177c5efc
+23406:                              -> fills: Mirage
+23407:                          [FRAME] "td" #749:9860 (EL-11616f91)
+23408:                            [TEXT] "" #749:9861 TPL_TEXT: "Flight" TPL_FILLS: Mirage (EL-219388db)
+23409:                          [FRAME] "td" #749:9862 (EL-4c9c070f)
+23410:                            [TEXT] "" #749:9863 TPL_TEXT: "Banani Desk" TPL_FILLS: Mirage (EL-7a3e924c)
+23411:                            [FRAME] "span" #749:9864 (EL-e9077466)
+23412:                              [TEXT] "" #749:9865 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23413:                          [FRAME] "td" #749:9866 (EL-3a0c236c)
+23414:                            [TEXT] "" #749:9867 TEXT: "04 Nov 2026"
+23414:                              -> layout: layout_177c5efc
+23414:                              -> fills: Mirage
+23415:                          [FRAME] "td" #749:9868 (EL-0ebac5a2)
+23416:                            [FRAME] "span.p-ok" #749:9869 TPL_FILLS: Panache (EL-4ed5d9a3)
+23417:                              [IMAGE-SVG] "Frame" #749:9870 (EL-522202e5)
+23418:                              [TEXT] "" #749:9872 TPL_TEXT: "Confirmed" TPL_FILLS: Jewel (EL-90dd810f)
+23419:                          [FRAME] "td.num-c" #749:9873 (EL-c761eb19)
+23420:                            [TEXT] "" #749:9874 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23421:                        [FRAME] "tr" #749:9875 (EL-8a10e53c)
+23422:                          [FRAME] "td" #749:9876 (EL-51cfc64f)
+23423:                            [TEXT] "" #749:9877 TEXT: "AW-DEMO-FL-001"
+23423:                              -> layout: layout_177c5efc
+23423:                              -> fills: Endeavour
+23424:                          [FRAME] "td" #749:9878 (EL-23490a49)
+23425:                            [TEXT] "" #749:9879 TEXT: "Amina Rahman"
+23425:                              -> layout: layout_177c5efc
+23425:                              -> fills: Mirage
+23426:                          [FRAME] "td" #749:9880 (EL-11616f91)
+23427:                            [TEXT] "" #749:9881 TPL_TEXT: "Flight" TPL_FILLS: Mirage (EL-219388db)
+23428:                          [FRAME] "td" #749:9882 (EL-4c9c070f)
+23429:                            [TEXT] "" #749:9883 TPL_TEXT: "Mirpur Desk" TPL_FILLS: Mirage (EL-054b68de)
+23430:                            [FRAME] "span" #749:9884 (EL-e9077466)
+23431:                              [TEXT] "" #749:9885 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23432:                          [FRAME] "td" #749:9886 (EL-3a0c236c)
+23433:                            [TEXT] "" #749:9887 TEXT: "05 Nov 2026"
+23433:                              -> layout: layout_177c5efc
+23433:                              -> fills: Mirage
+23434:                          [FRAME] "td" #749:9888 (EL-0ebac5a2)
+23435:                            [FRAME] "span.p-ok" #749:9889 TPL_FILLS: Panache (EL-4ed5d9a3)
+23436:                              [IMAGE-SVG] "Frame" #749:9890 (EL-522202e5)
+23437:                              [TEXT] "" #749:9892 TEXT: "Ticketed"
+23437:                                -> layout: layout_177c5efc
+23437:                                -> fills: Jewel
+23438:                          [FRAME] "td.num-c" #749:9893 (EL-c761eb19)
+23439:                            [TEXT] "" #749:9894 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23440:                        [FRAME] "tr" #749:9895 (EL-8a10e53c)
+23441:                          [FRAME] "td" #749:9896 (EL-51cfc64f)
+23442:                            [TEXT] "" #749:9897 TEXT: "AW-DEMO-AC-004"
+23442:                              -> layout: layout_177c5efc
+23442:                              -> fills: Endeavour
+23443:                          [FRAME] "td" #749:9898 (EL-23490a49)
+23444:                            [TEXT] "" #749:9899 TEXT: "Samiul Ahmed"
+23444:                              -> layout: layout_177c5efc
+23444:                              -> fills: Mirage
+23445:                          [FRAME] "td" #749:9900 (EL-11616f91)
+23446:                            [TEXT] "" #749:9901 TPL_TEXT: "Activity" TPL_FILLS: Mirage (EL-835e7d4c)
+23447:                          [FRAME] "td" #749:9902 (EL-4c9c070f)
+23448:                            [TEXT] "" #749:9903 TPL_TEXT: "Mirpur Desk" TPL_FILLS: Mirage (EL-054b68de)
+23449:                            [FRAME] "span" #749:9904 (EL-e9077466)
+23450:                              [TEXT] "" #749:9905 TPL_TEXT: "Sub-agent" TPL_FILLS: Comet (EL-7d3af6d9)
+23451:                          [FRAME] "td" #749:9906 (EL-3a0c236c)
+23452:                            [TEXT] "" #749:9907 TEXT: "09 Nov 2026"
+23452:                              -> layout: layout_177c5efc
+23452:                              -> fills: Mirage
+23453:                          [FRAME] "td" #749:9908 (EL-0ebac5a2)
+23454:                            [FRAME] "span.p-pend" #749:9909 TPL_FILLS: Hawkes Blue (EL-e021b56f)
+23455:                              [IMAGE-SVG] "Frame" #749:9910 (EL-522202e5)
+23456:                              [TEXT] "" #749:9912 TPL_TEXT: "Pending" TPL_FILLS: Endeavour (EL-17970145)
+23457:                          [FRAME] "td.num-c" #749:9913 (EL-c761eb19)
+23458:                            [TEXT] "" #749:9914 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23459:                        [FRAME] "tr" #749:9915 (EL-8a10e53c)
+23460:                          [FRAME] "td" #749:9916 (EL-51cfc64f)
+23461:                            [TEXT] "" #749:9917 TEXT: "AW-DEMO-FL-012"
+23461:                              -> layout: layout_177c5efc
+23461:                              -> fills: Endeavour
+23462:                          [FRAME] "td" #749:9918 (EL-23490a49)
+23463:                            [TEXT] "" #749:9919 TEXT: "Imran Hossain"
+23463:                              -> layout: layout_177c5efc
+23463:                              -> fills: Mirage
+23464:                          [FRAME] "td" #749:9920 (EL-11616f91)
+23465:                            [TEXT] "" #749:9921 TPL_TEXT: "Flight" TPL_FILLS: Mirage (EL-219388db)
+23466:                          [FRAME] "td" #749:9922 (EL-4c9c070f)
+23467:                            [TEXT] "" #749:9923 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-1ef2d142)
+23468:                            [FRAME] "span" #749:9924 (EL-e9077466)
+23469:                              [TEXT] "" #749:9925 TPL_TEXT: "Parent Agent" TPL_FILLS: Comet (EL-808b2b47)
+23470:                          [FRAME] "td" #749:9926 (EL-3a0c236c)
+23471:                            [TEXT] "" #749:9927 TEXT: "11 Nov 2026"
+23471:                              -> layout: layout_177c5efc
+23471:                              -> fills: Mirage
+23472:                          [FRAME] "td" #749:9928 (EL-0ebac5a2)
+23473:                            [FRAME] "span.p-err" #749:9929 TPL_FILLS: Provincial Pink (EL-14e457b2)
+23474:                              [IMAGE-SVG] "Frame" #749:9930 (EL-522202e5)
+23475:                              [TEXT] "" #749:9932 TEXT: "Failed"
+23475:                                -> layout: layout_177c5efc
+23475:                                -> fills: Thunderbird
+23476:                          [FRAME] "td.num-c" #749:9933 
+23476:                            -> layout: {"mode":"column","padding":"19.75px 10px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"}
+23477:                            [FRAME] "span" #749:9934 (EL-8432426e)
+23478:                              [TEXT] "" #749:9935 TEXT: "Not applicable"
+23478:                                -> layout: layout_177c5efc
+23478:                                -> fills: Comet
+23479:                    [FRAME] "p" #749:9936 (EL-f9d4bb24)
+23480:                      [FRAME] "svg:margin" #749:9937 (EL-b964cc84)
+23481:                        [IMAGE-SVG] "Frame" #749:9938 (EL-62b4d877)
+23482:                      [TEXT] "" #749:9940 TEXT: "Created By shows booking origin. Sub-agent bookings settle against the Parent Agent account; no separate Sub-agent statement exists. Booking dates are fictional samples."
+23482:                        -> layout: layout_177c5efc
+23482:                        -> fills: Comet
+23483:                [FRAME] "Wallet Transactions" #749:9941 (EL-a94b8ffa)
+23484:                  [FRAME] "div.dsec-h" #749:9942 (EL-d29137d2)
+23485:                    [FRAME] "h3" #749:9943 
+23485:                      -> layout: {"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"}
+23486:                      [FRAME] "button.dsec-t" #749:9944 (EL-3bf81aa1)
+23487:                        [FRAME] "span.kic" #749:9945 TPL_FILLS: Panache (EL-ae402969)
+23488:                          [IMAGE-SVG] "Frame" #749:9946 (EL-f1890f3e)
+23489:                        [TEXT] "" #749:9948 TEXT: "Wallet Transactions"
+23489:                          -> layout: layout_177c5efc
+23489:                          -> fills: "Midnight
+23490:                        [FRAME] "span.cnt" #749:9949 TPL_FILLS: Athens Gray (EL-9ea39ecd)
+23491:                          [TEXT] "" #749:9950 TEXT: "10"
+23491:                            -> layout: layout_177c5efc
+23491:                            -> fills: Comet
+23492:                        [FRAME] "svg.chv:margin" #749:9951 
+23492:                          -> layout: {"mode":"column","padding":"0px 0px 0px 870.7659912109375px","alignItems":"flex-end","sizing":{"horizontal":"fill","vertical":"fixed"}
+23493:                          [FRAME] "svg.chv" #749:9952 (EL-f40e3bba)
+23494:                            [IMAGE-SVG] "Frame" #749:9953 (EL-0af5cf6c)
+23495:                    [FRAME] "div.dsec-a" #749:9955 
+23495:                      -> layout: {"mode":"row","wrap":true,"gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}
+23496:                      [FRAME] "button.lnk" #749:9956 (EL-006703e3)
+23497:                        [TEXT] "" #749:9957 TPL_TEXT: "View Wallet Ledger" TPL_FILLS: Science Blue (EL-6e422740)
+23498:                        [IMAGE-SVG] "Frame" #749:9958 (EL-d40fb4e5)
+23499:                  [FRAME] "div#b-wl" #749:9960 (EL-47ca8de5)
+23500:                    [FRAME] "table.btb" #749:9961 (EL-a7affeb4)
+23501:                      [FRAME] "tr" #749:9962 (EL-8a10e53c)
+23502:                        [FRAME] "th" #749:9963 
+23502:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23502:                          -> fills: "Link
+23503:                          [TEXT] "" #749:9964 TEXT: "Date / Time"
+23503:                            -> layout: layout_177c5efc
+23503:                            -> fills: Comet
+23504:                        [FRAME] "th" #749:9965 
+23504:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23504:                          -> fills: "Link
+23505:                          [TEXT] "" #749:9966 TEXT: "Type"
+23505:                            -> layout: layout_177c5efc
+23505:                            -> fills: Comet
+23506:                        [FRAME] "th" #749:9967 
+23506:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23506:                          -> fills: "Link
+23507:                          [TEXT] "" #749:9968 TEXT: "Description"
+23507:                            -> layout: layout_177c5efc
+23507:                            -> fills: Comet
+23508:                        [FRAME] "th" #749:9969 
+23508:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23508:                          -> fills: "Link
+23509:                          [TEXT] "" #749:9970 TEXT: "Reference"
+23509:                            -> layout: layout_177c5efc
+23509:                            -> fills: Comet
+23510:                        [FRAME] "th" #749:9971 
+23510:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23510:                          -> fills: "Link
+23511:                          [TEXT] "" #749:9972 TEXT: "Direction"
+23511:                            -> layout: layout_177c5efc
+23511:                            -> fills: Comet
+23512:                        [FRAME] "th.num-c" #749:9973 
+23512:                          -> layout: {"mode":"column","padding":"9px 10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"}
+23512:                          -> fills: "Link
+23513:                          [TEXT] "" #749:9974 TEXT: "Amount"
+23513:                            -> layout: layout_177c5efc
+23513:                            -> fills: Comet
+23514:                        [FRAME] "th.num-c" #749:9975 
+23514:                          -> layout: {"mode":"column","padding":"9px 10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"}
+23514:                          -> fills: "Link
+23515:                          [TEXT] "" #749:9976 TEXT: "Running Balance"
+23515:                            -> layout: layout_177c5efc
+23515:                            -> fills: Comet
+23516:                      [FRAME] "tbody" #749:9977 (EL-e9077466)
+23517:                        [FRAME] "tr" #749:9978 (EL-8a10e53c)
+23518:                          [FRAME] "td" #749:9979 (EL-0d88ebc7)
+23519:                            [TEXT] "" #749:9980 TEXT: "02 Oct 2026 · 09:30"
+23519:                              -> layout: layout_177c5efc
+23519:                              -> fills: Mirage
+23520:                          [FRAME] "td" #749:9981 (EL-47390c97)
+23521:                            [TEXT] "" #749:9982 TPL_TEXT: "Top-up" TPL_FILLS: Mirage (EL-fc1454c7)
+23522:                          [FRAME] "td" #749:9983 (EL-4159cec6)
+23523:                            [TEXT] "" #749:9984 TPL_TEXT: "Stripe wallet top-up" TPL_FILLS: Mirage (EL-4d33a9fb)
+23524:                          [FRAME] "td" #749:9985 (EL-bab2d7d1)
+23525:                            [TEXT] "" #749:9986 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23526:                          [FRAME] "td" #749:9987 (EL-7adcc47a)
+23527:                            [FRAME] "span.dir" #749:9988 TPL_FILLS: Panache (EL-c95169c5)
+23528:                              [IMAGE-SVG] "Frame" #749:9989 (EL-d4302386)
+23529:                              [TEXT] "" #749:9991 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23530:                          [FRAME] "td.num-c" #749:9992 (EL-a25d67c9)
+23531:                            [TEXT] "" #749:9993 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23532:                          [FRAME] "td.num-c" #749:9994 (EL-6b3c43f3)
+23533:                            [TEXT] "" #749:9995 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23534:                        [FRAME] "tr" #749:9996 (EL-8a10e53c)
+23535:                          [FRAME] "td" #749:9997 (EL-0d88ebc7)
+23536:                            [TEXT] "" #749:9998 TEXT: "08 Oct 2026 · 15:45"
+23536:                              -> layout: layout_177c5efc
+23536:                              -> fills: Mirage
+23537:                          [FRAME] "td" #749:9999 (EL-47390c97)
+23538:                            [TEXT] "" #749:10000 TPL_TEXT: "Top-up" TPL_FILLS: Mirage (EL-fc1454c7)
+23539:                          [FRAME] "td" #749:10001 (EL-4159cec6)
+23540:                            [TEXT] "" #749:10002 TEXT: "Manual deposit recorded by Admin"
+23540:                              -> layout: layout_177c5efc
+23540:                              -> fills: Mirage
+23541:                          [FRAME] "td" #749:10003 (EL-bab2d7d1)
+23542:                            [TEXT] "" #749:10004 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23543:                          [FRAME] "td" #749:10005 (EL-7adcc47a)
+23544:                            [FRAME] "span.dir" #749:10006 TPL_FILLS: Panache (EL-c95169c5)
+23545:                              [IMAGE-SVG] "Frame" #749:10007 (EL-d4302386)
+23546:                              [TEXT] "" #749:10009 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23547:                          [FRAME] "td.num-c" #749:10010 (EL-a25d67c9)
+23548:                            [TEXT] "" #749:10011 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23549:                          [FRAME] "td.num-c" #749:10012 (EL-6b3c43f3)
+23550:                            [TEXT] "" #749:10013 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23551:                        [FRAME] "tr" #749:10014 (EL-8a10e53c)
+23552:                          [FRAME] "td" #749:10015 (EL-0d88ebc7)
+23553:                            [TEXT] "" #749:10016 TEXT: "14 Oct 2026 · 10:05"
+23553:                              -> layout: layout_177c5efc
+23553:                              -> fills: Mirage
+23554:                          [FRAME] "td" #749:10017 (EL-47390c97)
+23555:                            [TEXT] "" #749:10018 TPL_TEXT: "Booking Debit" TPL_FILLS: Mirage (EL-6466eebc)
+23556:                          [FRAME] "td" #749:10019 (EL-4159cec6)
+23557:                            [TEXT] "" #749:10020 TPL_TEXT: "Booking payment" TPL_FILLS: Mirage (EL-ef0eed06)
+23558:                          [FRAME] "td" #749:10021 (EL-869621a1)
+23559:                            [TEXT] "" #749:10022 TEXT: "AW-DEMO-BT-009"
+23559:                              -> layout: layout_177c5efc
+23559:                              -> fills: Mirage
+23560:                          [FRAME] "td" #749:10023 (EL-7adcc47a)
+23561:                            [FRAME] "span.dir" #749:10024 TPL_FILLS: Provincial Pink (EL-5f0ae87a)
+23562:                              [IMAGE-SVG] "Frame" #749:10025 (EL-d4302386)
+23563:                              [TEXT] "" #749:10027 TPL_TEXT: "Debit" TPL_FILLS: Prairie Sand (EL-eb591d96)
+23564:                          [FRAME] "td.num-c" #749:10028 (EL-a25d67c9)
+23565:                            [TEXT] "" #749:10029 TPL_TEXT: "− Sample amount" TPL_FILLS: Mirage (EL-bee760d2)
+23566:                          [FRAME] "td.num-c" #749:10030 (EL-6b3c43f3)
+23567:                            [TEXT] "" #749:10031 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23568:                        [FRAME] "tr" #749:10032 (EL-8a10e53c)
+23569:                          [FRAME] "td" #749:10033 (EL-0d88ebc7)
+23570:                            [TEXT] "" #749:10034 TEXT: "20 Oct 2026 · 13:20"
+23570:                              -> layout: layout_177c5efc
+23570:                              -> fills: Mirage
+23571:                          [FRAME] "td" #749:10035 (EL-47390c97)
+23572:                            [TEXT] "" #749:10036 TPL_TEXT: "Refund" TPL_FILLS: Mirage (EL-4ae42429)
+23573:                          [FRAME] "td" #749:10037 (EL-4159cec6)
+23574:                            [TEXT] "" #749:10038 TPL_TEXT: "Booking refund" TPL_FILLS: Mirage (EL-60b99c09)
+23575:                          [FRAME] "td" #749:10039 (EL-bab2d7d1)
+23576:                            [TEXT] "" #749:10040 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23577:                          [FRAME] "td" #749:10041 (EL-7adcc47a)
+23578:                            [FRAME] "span.dir" #749:10042 TPL_FILLS: Panache (EL-c95169c5)
+23579:                              [IMAGE-SVG] "Frame" #749:10043 (EL-d4302386)
+23580:                              [TEXT] "" #749:10045 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23581:                          [FRAME] "td.num-c" #749:10046 (EL-a25d67c9)
+23582:                            [TEXT] "" #749:10047 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23583:                          [FRAME] "td.num-c" #749:10048 (EL-6b3c43f3)
+23584:                            [TEXT] "" #749:10049 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23585:                        [FRAME] "tr" #749:10050 (EL-8a10e53c)
+23586:                          [FRAME] "td" #749:10051 (EL-0d88ebc7)
+23587:                            [TEXT] "" #749:10052 TEXT: "27 Oct 2026 · 16:00"
+23587:                              -> layout: layout_177c5efc
+23587:                              -> fills: Mirage
+23588:                          [FRAME] "td" #749:10053 (EL-47390c97)
+23589:                            [TEXT] "" #749:10054 TPL_TEXT: "Manual Adjustment" TPL_FILLS: Mirage (EL-e9704ad3)
+23590:                          [FRAME] "td" #749:10055 (EL-4159cec6)
+23591:                            [TEXT] "" #749:10056 TEXT: "Admin correction"
+23591:                              -> layout: layout_177c5efc
+23591:                              -> fills: Mirage
+23592:                          [FRAME] "td" #749:10057 (EL-bab2d7d1)
+23593:                            [TEXT] "" #749:10058 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23594:                          [FRAME] "td" #749:10059 (EL-7adcc47a)
+23595:                            [FRAME] "span.dir" #749:10060 TPL_FILLS: Panache (EL-c95169c5)
+23596:                              [IMAGE-SVG] "Frame" #749:10061 (EL-d4302386)
+23597:                              [TEXT] "" #749:10063 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23598:                          [FRAME] "td.num-c" #749:10064 (EL-a25d67c9)
+23599:                            [TEXT] "" #749:10065 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23600:                          [FRAME] "td.num-c" #749:10066 (EL-6b3c43f3)
+23601:                            [TEXT] "" #749:10067 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23602:                        [FRAME] "tr" #749:10068 (EL-8a10e53c)
+23603:                          [FRAME] "td" #749:10069 (EL-0d88ebc7)
+23604:                            [TEXT] "" #749:10070 TEXT: "03 Nov 2026 · 10:15"
+23604:                              -> layout: layout_177c5efc
+23604:                              -> fills: Mirage
+23605:                          [FRAME] "td" #749:10071 (EL-47390c97)
+23606:                            [TEXT] "" #749:10072 TPL_TEXT: "Top-up" TPL_FILLS: Mirage (EL-fc1454c7)
+23607:                          [FRAME] "td" #749:10073 (EL-4159cec6)
+23608:                            [TEXT] "" #749:10074 TPL_TEXT: "Stripe wallet top-up" TPL_FILLS: Mirage (EL-4d33a9fb)
+23609:                          [FRAME] "td" #749:10075 (EL-bab2d7d1)
+23610:                            [TEXT] "" #749:10076 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23611:                          [FRAME] "td" #749:10077 (EL-7adcc47a)
+23612:                            [FRAME] "span.dir" #749:10078 TPL_FILLS: Panache (EL-c95169c5)
+23613:                              [IMAGE-SVG] "Frame" #749:10079 (EL-d4302386)
+23614:                              [TEXT] "" #749:10081 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23615:                          [FRAME] "td.num-c" #749:10082 (EL-a25d67c9)
+23616:                            [TEXT] "" #749:10083 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23617:                          [FRAME] "td.num-c" #749:10084 (EL-6b3c43f3)
+23618:                            [TEXT] "" #749:10085 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23619:                        [FRAME] "tr" #749:10086 (EL-8a10e53c)
+23620:                          [FRAME] "td" #749:10087 (EL-0d88ebc7)
+23621:                            [TEXT] "" #749:10088 TEXT: "05 Nov 2026 · 14:40"
+23621:                              -> layout: layout_177c5efc
+23621:                              -> fills: Mirage
+23622:                          [FRAME] "td" #749:10089 (EL-47390c97)
+23623:                            [TEXT] "" #749:10090 TPL_TEXT: "Booking Debit" TPL_FILLS: Mirage (EL-6466eebc)
+23624:                          [FRAME] "td" #749:10091 (EL-4159cec6)
+23625:                            [TEXT] "" #749:10092 TPL_TEXT: "Booking payment" TPL_FILLS: Mirage (EL-ef0eed06)
+23626:                          [FRAME] "td" #749:10093 (EL-869621a1)
+23627:                            [TEXT] "" #749:10094 TEXT: "AW-DEMO-FL-001"
+23627:                              -> layout: layout_177c5efc
+23627:                              -> fills: Mirage
+23628:                          [FRAME] "td" #749:10095 (EL-7adcc47a)
+23629:                            [FRAME] "span.dir" #749:10096 TPL_FILLS: Provincial Pink (EL-5f0ae87a)
+23630:                              [IMAGE-SVG] "Frame" #749:10097 (EL-d4302386)
+23631:                              [TEXT] "" #749:10099 TPL_TEXT: "Debit" TPL_FILLS: Prairie Sand (EL-eb591d96)
+23632:                          [FRAME] "td.num-c" #749:10100 (EL-a25d67c9)
+23633:                            [TEXT] "" #749:10101 TPL_TEXT: "− Sample amount" TPL_FILLS: Mirage (EL-bee760d2)
+23634:                          [FRAME] "td.num-c" #749:10102 (EL-6b3c43f3)
+23635:                            [TEXT] "" #749:10103 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23636:                        [FRAME] "tr" #749:10104 (EL-8a10e53c)
+23637:                          [FRAME] "td" #749:10105 (EL-0d88ebc7)
+23638:                            [TEXT] "" #749:10106 TEXT: "08 Nov 2026 · 09:05"
+23638:                              -> layout: layout_177c5efc
+23638:                              -> fills: Mirage
+23639:                          [FRAME] "td" #749:10107 (EL-47390c97)
+23640:                            [TEXT] "" #749:10108 TPL_TEXT: "Refund" TPL_FILLS: Mirage (EL-4ae42429)
+23641:                          [FRAME] "td" #749:10109 (EL-4159cec6)
+23642:                            [TEXT] "" #749:10110 TPL_TEXT: "Booking refund" TPL_FILLS: Mirage (EL-60b99c09)
+23643:                          [FRAME] "td" #749:10111 (EL-869621a1)
+23644:                            [TEXT] "" #749:10112 TPL_TEXT: "AW-DEMO-AC-011" TPL_FILLS: Mirage (EL-93b2fa45)
+23645:                          [FRAME] "td" #749:10113 (EL-7adcc47a)
+23646:                            [FRAME] "span.dir" #749:10114 TPL_FILLS: Panache (EL-c95169c5)
+23647:                              [IMAGE-SVG] "Frame" #749:10115 (EL-d4302386)
+23648:                              [TEXT] "" #749:10117 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23649:                          [FRAME] "td.num-c" #749:10118 (EL-a25d67c9)
+23650:                            [TEXT] "" #749:10119 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23651:                          [FRAME] "td.num-c" #749:10120 (EL-6b3c43f3)
+23652:                            [TEXT] "" #749:10121 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23653:                        [FRAME] "tr" #749:10122 (EL-8a10e53c)
+23654:                          [FRAME] "td" #749:10123 (EL-0d88ebc7)
+23655:                            [TEXT] "" #749:10124 TEXT: "10 Nov 2026 · 16:30"
+23655:                              -> layout: layout_177c5efc
+23655:                              -> fills: Mirage
+23656:                          [FRAME] "td" #749:10125 (EL-47390c97)
+23657:                            [TEXT] "" #749:10126 TEXT: "Commission Credit"
+23657:                              -> layout: layout_177c5efc
+23657:                              -> fills: Mirage
+23658:                          [FRAME] "td" #749:10127 (EL-4159cec6)
+23659:                            [TEXT] "" #749:10128 TEXT: "Commission credit"
+23659:                              -> layout: layout_177c5efc
+23659:                              -> fills: Mirage
+23660:                          [FRAME] "td" #749:10129 (EL-bab2d7d1)
+23661:                            [TEXT] "" #749:10130 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23662:                          [FRAME] "td" #749:10131 (EL-7adcc47a)
+23663:                            [FRAME] "span.dir" #749:10132 TPL_FILLS: Panache (EL-c95169c5)
+23664:                              [IMAGE-SVG] "Frame" #749:10133 (EL-d4302386)
+23665:                              [TEXT] "" #749:10135 TPL_TEXT: "Credit" TPL_FILLS: Jewel (EL-00fdb68f)
+23666:                          [FRAME] "td.num-c" #749:10136 (EL-a25d67c9)
+23667:                            [TEXT] "" #749:10137 TPL_TEXT: "+ Sample amount" TPL_FILLS: Mirage (EL-a45e2b34)
+23668:                          [FRAME] "td.num-c" #749:10138 (EL-6b3c43f3)
+23669:                            [TEXT] "" #749:10139 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23670:                        [FRAME] "tr" #749:10140 (EL-8a10e53c)
+23671:                          [FRAME] "td" #749:10141 (EL-0d88ebc7)
+23672:                            [TEXT] "" #749:10142 TEXT: "12 Nov 2026 · 11:20"
+23672:                              -> layout: layout_177c5efc
+23672:                              -> fills: Mirage
+23673:                          [FRAME] "td" #749:10143 (EL-47390c97)
+23674:                            [TEXT] "" #749:10144 TPL_TEXT: "Manual Adjustment" TPL_FILLS: Mirage (EL-e9704ad3)
+23675:                          [FRAME] "td" #749:10145 (EL-4159cec6)
+23676:                            [TEXT] "" #749:10146 TEXT: "Admin adjustment"
+23676:                              -> layout: layout_177c5efc
+23676:                              -> fills: Mirage
+23677:                          [FRAME] "td" #749:10147 (EL-bab2d7d1)
+23678:                            [TEXT] "" #749:10148 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23679:                          [FRAME] "td" #749:10149 (EL-7adcc47a)
+23680:                            [FRAME] "span.dir" #749:10150 TPL_FILLS: Provincial Pink (EL-5f0ae87a)
+23681:                              [IMAGE-SVG] "Frame" #749:10151 (EL-d4302386)
+23682:                              [TEXT] "" #749:10153 TPL_TEXT: "Debit" TPL_FILLS: Prairie Sand (EL-eb591d96)
+23683:                          [FRAME] "td.num-c" #749:10154 (EL-a25d67c9)
+23684:                            [TEXT] "" #749:10155 TPL_TEXT: "− Sample amount" TPL_FILLS: Mirage (EL-bee760d2)
+23685:                          [FRAME] "td.num-c" #749:10156 (EL-6b3c43f3)
+23686:                            [TEXT] "" #749:10157 TPL_TEXT: "Sample balance" TPL_FILLS: Mirage (EL-34983d7b)
+23687:                    [FRAME] "p" #749:10158 (EL-f9d4bb24)
+23688:                      [FRAME] "svg:margin" #749:10159 (EL-b964cc84)
+23689:                        [IMAGE-SVG] "Frame" #749:10160 (EL-62b4d877)
+23690:                      [TEXT] "" #749:10162 TEXT: "Wallet entries are read-only ledger records. A manual deposit recorded by Admin is a Top-up; corrections are Manual Adjustment entries."
+23690:                        -> layout: layout_177c5efc
+23690:                        -> fills: Comet
+23691:                [FRAME] "Credit Usage" #749:10163 (EL-a94b8ffa)
+23692:                  [FRAME] "div.dsec-h" #749:10164 (EL-d29137d2)
+23693:                    [FRAME] "h3" #749:10165 
+23693:                      -> layout: {"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"}
+23694:                      [FRAME] "button.dsec-t" #749:10166 (EL-3bf81aa1)
+23695:                        [FRAME] "span.kic" #749:10167 TPL_FILLS: Catskill White (660:4703) (EL-1b439593)
+23696:                          [IMAGE-SVG] "Frame" #749:10168 (EL-f1890f3e)
+23697:                        [TEXT] "" #749:10170 TEXT: "Credit Usage"
+23697:                          -> layout: layout_177c5efc
+23697:                          -> fills: "Midnight
+23698:                        [FRAME] "svg.chv:margin" #749:10171 
+23698:                          -> layout: {"mode":"column","padding":"0px 0px 0px 1016.8400268554688px","alignItems":"flex-end","sizing":{"horizontal":"fill","vertical":"fixed"}
+23699:                          [FRAME] "svg.chv" #749:10172 (EL-f40e3bba)
+23700:                            [IMAGE-SVG] "Frame" #749:10173 (EL-0af5cf6c)
+23701:                    [FRAME] "div.dsec-a" #749:10175 
+23701:                      -> layout: {"mode":"row","wrap":true,"gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}
+23702:                      [FRAME] "button.lnk" #749:10176 (EL-006703e3)
+23703:                        [TEXT] "" #749:10177 TPL_TEXT: "View Credit" TPL_FILLS: Science Blue (EL-197603c4)
+23704:                        [IMAGE-SVG] "Frame" #749:10178 (EL-d40fb4e5)
+23705:                  [FRAME] "div#b-cr" #749:10180 (EL-47ca8de5)
+23706:                    [FRAME] "div.ccr" #749:10181 (EL-fb1cecc4)
+23707:                      [FRAME] "div" #749:10182 (EL-ad8917a4)
+23708:                        [FRAME] "small" #749:10183 (EL-e9077466)
+23709:                          [TEXT] "" #749:10184 TPL_TEXT: "Credit Limit" TPL_FILLS: Comet (EL-a1ca851c)
+23710:                        [FRAME] "b" #749:10185 (EL-e9077466)
+23711:                          [TEXT] "" #749:10186 TEXT: "Limit configured"
+23711:                            -> layout: layout_56d3c81c
+23711:                            -> fills: Mirage
+23712:                      [FRAME] "div" #749:10187 (EL-ad8917a4)
+23713:                        [FRAME] "small" #749:10188 (EL-e9077466)
+23714:                          [TEXT] "" #749:10189 TPL_TEXT: "Used Credit" TPL_FILLS: Comet (EL-94e27b40)
+23715:                        [FRAME] "b" #749:10190 (EL-e9077466)
+23716:                          [TEXT] "" #749:10191 TPL_TEXT: "Usage available" TPL_FILLS: Mirage (EL-10d8174e)
+23717:                      [FRAME] "div" #749:10192 (EL-ad8917a4)
+23718:                        [FRAME] "small" #749:10193 (EL-e9077466)
+23719:                          [TEXT] "" #749:10194 TPL_TEXT: "Available Credit" TPL_FILLS: Comet (EL-5b560dde)
+23720:                        [FRAME] "b" #749:10195 (EL-e9077466)
+23721:                          [TEXT] "" #749:10196 TEXT: "Available credit tracked"
+23721:                            -> layout: layout_56d3c81c
+23721:                            -> fills: Mirage
+23722:                      [FRAME] "div" #749:10197 (EL-ad8917a4)
+23723:                        [FRAME] "small" #749:10198 (EL-e9077466)
+23724:                          [TEXT] "" #749:10199 TPL_TEXT: "Outstanding Balance" TPL_FILLS: Comet (EL-2b95ce10)
+23725:                        [FRAME] "b" #749:10200 (EL-e9077466)
+23726:                          [TEXT] "" #749:10201 TEXT: "Outstanding balance tracked"
+23726:                            -> layout: layout_56d3c81c
+23726:                            -> fills: Mirage
+23727:                    [FRAME] "p" #749:10202 (EL-f9d4bb24)
+23728:                      [FRAME] "svg:margin" #749:10203 (EL-b964cc84)
+23729:                        [IMAGE-SVG] "Frame" #749:10204 (EL-62b4d877)
+23730:                      [TEXT] "" #749:10206 TEXT: "Credit Limit is assigned by Aero Wing Admin. Exact amounts are not included in this design-preview dataset."
+23730:                        -> layout: layout_177c5efc
+23730:                        -> fills: Comet
+23731:                [FRAME] "Commissions" #749:10207 (EL-a94b8ffa)
+23732:                  [FRAME] "div.dsec-h" #749:10208 (EL-d29137d2)
+23733:                    [FRAME] "h3" #749:10209 
+23733:                      -> layout: {"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"}
+23734:                      [FRAME] "button.dsec-t" #749:10210 (EL-3bf81aa1)
+23735:                        [FRAME] "span.kic" #749:10211 TPL_FILLS: Varden (EL-6df97f6f)
+23736:                          [IMAGE-SVG] "Frame" #749:10212 (EL-f1890f3e)
+23737:                        [TEXT] "" #749:10214 TEXT: "Commissions"
+23737:                          -> layout: layout_177c5efc
+23737:                          -> fills: "Midnight
+23738:                        [FRAME] "span.cnt" #749:10215 TPL_FILLS: Athens Gray (EL-9ea39ecd)
+23739:                          [TEXT] "" #749:10216 TEXT: "5"
+23739:                            -> layout: layout_177c5efc
+23739:                            -> fills: Comet
+23740:                        [FRAME] "svg.chv:margin" #749:10217 
+23740:                          -> layout: {"mode":"column","padding":"0px 0px 0px 924.218994140625px","alignItems":"flex-end","sizing":{"horizontal":"fill","vertical":"fixed"}
+23741:                          [FRAME] "svg.chv" #749:10218 (EL-f40e3bba)
+23742:                            [IMAGE-SVG] "Frame" #749:10219 (EL-0af5cf6c)
+23743:                    [FRAME] "div.dsec-a" #749:10221 
+23743:                      -> layout: {"mode":"row","wrap":true,"gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}
+23744:                      [FRAME] "button.lnk" #749:10222 (EL-006703e3)
+23745:                        [TEXT] "" #749:10223 TPL_TEXT: "View Commissions" TPL_FILLS: Science Blue (EL-04a2516f)
+23746:                        [IMAGE-SVG] "Frame" #749:10224 (EL-d40fb4e5)
+23747:                  [FRAME] "div#b-cm" #749:10226 (EL-47ca8de5)
+23748:                    [FRAME] "table.btb" #749:10227 (EL-a7affeb4)
+23749:                      [FRAME] "tr" #749:10228 (EL-8a10e53c)
+23750:                        [FRAME] "th" #749:10229 
+23750:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23750:                          -> fills: "Link
+23751:                          [TEXT] "" #749:10230 TEXT: "Booking"
+23751:                            -> layout: layout_177c5efc
+23751:                            -> fills: Comet
+23752:                        [FRAME] "th" #749:10231 
+23752:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23752:                          -> fills: "Link
+23753:                          [TEXT] "" #749:10232 TPL_TEXT: "Service" TPL_FILLS: Comet (EL-e11fff9e)
+23754:                        [FRAME] "th" #749:10233 
+23754:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23754:                          -> fills: "Link
+23755:                          [TEXT] "" #749:10234 TEXT: "Commission Status"
+23755:                            -> layout: layout_177c5efc
+23755:                            -> fills: Comet
+23756:                        [FRAME] "th.num-c" #749:10235 
+23756:                          -> layout: {"mode":"column","padding":"9px 10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"}
+23756:                          -> fills: "Link
+23757:                          [TEXT] "" #749:10236 TEXT: "Commission"
+23757:                            -> layout: layout_177c5efc
+23757:                            -> fills: Comet
+23758:                        [FRAME] "th" #749:10237 
+23758:                          -> layout: {"mode":"column","padding":"9px 10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23758:                          -> fills: "Link
+23759:                          [TEXT] "" #749:10238 TEXT: "Settlement / Impact"
+23759:                            -> layout: layout_177c5efc
+23759:                            -> fills: Comet
+23760:                      [FRAME] "tbody" #749:10239 (EL-e9077466)
+23761:                        [FRAME] "tr" #749:10240 (EL-8a10e53c)
+23762:                          [FRAME] "td" #749:10241 (EL-0f172a48)
+23763:                            [TEXT] "" #749:10242 TEXT: "AW-DEMO-PK-003"
+23763:                              -> layout: layout_177c5efc
+23763:                              -> fills: Mirage
+23764:                          [FRAME] "td" #749:10243 (EL-811f96bf)
+23765:                            [TEXT] "" #749:10244 TPL_TEXT: "Travel Package" TPL_FILLS: Mirage (EL-9bf24f28)
+23766:                          [FRAME] "td" #749:10245 (EL-dbde85ea)
+23767:                            [FRAME] "span.p-set" #749:10246 TPL_FILLS: Catskill White (660:4703) (EL-e7560554)
+23768:                              [IMAGE-SVG] "Frame" #749:10247 (EL-522202e5)
+23769:                              [TEXT] "" #749:10249 TEXT: "Settled"
+23769:                                -> layout: layout_177c5efc
+23769:                                -> fills: "Midnight
+23770:                          [FRAME] "td.num-c" #749:10250 (EL-d16d8c0c)
+23771:                            [TEXT] "" #749:10251 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23772:                          [FRAME] "td.full" #749:10252 (EL-d5675f5a)
+23773:                            [TEXT] "" #749:10253 TEXT: "Recorded by Aero Wing Admin"
+23773:                              -> layout: layout_177c5efc
+23773:                              -> fills: Mirage
+23774:                        [FRAME] "tr" #749:10254 (EL-8a10e53c)
+23775:                          [FRAME] "td" #749:10255 (EL-ef78fa7b)
+23776:                            [TEXT] "" #749:10256 TEXT: "AW-DEMO-CR-005"
+23776:                              -> layout: layout_177c5efc
+23776:                              -> fills: Mirage
+23777:                          [FRAME] "td" #749:10257 (EL-bc11e303)
+23778:                            [TEXT] "" #749:10258 TPL_TEXT: "Car Rental" TPL_FILLS: Mirage (EL-2044b183)
+23779:                          [FRAME] "td" #749:10259 (EL-06f59d99)
+23780:                            [FRAME] "span.imp" #749:10260 TPL_FILLS: White (EL-d678bef6)
+23781:                              [IMAGE-SVG] "Frame" #749:10261 (EL-62b4d877)
+23782:                              [TEXT] "" #749:10263 TPL_TEXT: "Commission reversed" TPL_FILLS: Comet (EL-ea80a380)
+23783:                          [FRAME] "td.num-c" #749:10264 (EL-dd5509ae)
+23784:                            [TEXT] "" #749:10265 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23785:                            [FRAME] "span" #749:10266 (EL-8432426e)
+23786:                              [TEXT] "" #749:10267 TPL_TEXT: "Not in active totals" TPL_FILLS: Comet (EL-4a66f3ee)
+23787:                          [FRAME] "td.full" #749:10268 (EL-95cb31d3)
+23788:                            [TEXT] "" #749:10269 TEXT: "Reversed due to cancellation"
+23788:                              -> layout: layout_177c5efc
+23788:                              -> fills: Mirage
+23789:                        [FRAME] "tr" #749:10270 (EL-8a10e53c)
+23790:                          [FRAME] "td" #749:10271 (EL-ef78fa7b)
+23791:                            [TEXT] "" #749:10272 TPL_TEXT: "AW-DEMO-AC-011" TPL_FILLS: Mirage (EL-93b2fa45)
+23792:                          [FRAME] "td" #749:10273 (EL-bc11e303)
+23793:                            [TEXT] "" #749:10274 TPL_TEXT: "Activity" TPL_FILLS: Mirage (EL-835e7d4c)
+23794:                          [FRAME] "td" #749:10275 (EL-06f59d99)
+23795:                            [FRAME] "span.imp" #749:10276 TPL_FILLS: White (EL-d678bef6)
+23796:                              [IMAGE-SVG] "Frame" #749:10277 (EL-62b4d877)
+23797:                              [TEXT] "" #749:10279 TPL_TEXT: "Commission reversed" TPL_FILLS: Comet (EL-ea80a380)
+23798:                          [FRAME] "td.num-c" #749:10280 (EL-dd5509ae)
+23799:                            [TEXT] "" #749:10281 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23800:                            [FRAME] "span" #749:10282 (EL-8432426e)
+23801:                              [TEXT] "" #749:10283 TPL_TEXT: "Not in active totals" TPL_FILLS: Comet (EL-4a66f3ee)
+23802:                          [FRAME] "td.full" #749:10284 (EL-95cb31d3)
+23803:                            [TEXT] "" #749:10285 TEXT: "Reversed due to refund"
+23803:                              -> layout: layout_177c5efc
+23803:                              -> fills: Mirage
+23804:                        [FRAME] "tr" #749:10286 (EL-8a10e53c)
+23805:                          [FRAME] "td" #749:10287 (EL-0f172a48)
+23806:                            [TEXT] "" #749:10288 TEXT: "AW-DEMO-HT-002"
+23806:                              -> layout: layout_177c5efc
+23806:                              -> fills: Mirage
+23807:                          [FRAME] "td" #749:10289 (EL-811f96bf)
+23808:                            [TEXT] "" #749:10290 TPL_TEXT: "Hotel" TPL_FILLS: Mirage (EL-382f6ceb)
+23809:                          [FRAME] "td" #749:10291 (EL-dbde85ea)
+23810:                            [FRAME] "span.p-earn" #749:10292 TPL_FILLS: Varden (EL-98019cd8)
+23811:                              [IMAGE-SVG] "Frame" #749:10293 (EL-522202e5)
+23812:                              [TEXT] "" #749:10295 TEXT: "Earned"
+23812:                                -> layout: layout_177c5efc
+23812:                                -> fills: "Antique
+23813:                          [FRAME] "td.num-c" #749:10296 (EL-d16d8c0c)
+23814:                            [TEXT] "" #749:10297 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23815:                          [FRAME] "td.full" #749:10298 (EL-d5675f5a)
+23816:                            [TEXT] "" #749:10299 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23817:                        [FRAME] "tr" #749:10300 (EL-8a10e53c)
+23818:                          [FRAME] "td" #749:10301 (EL-0f172a48)
+23819:                            [TEXT] "" #749:10302 TEXT: "AW-DEMO-FL-006"
+23819:                              -> layout: layout_177c5efc
+23819:                              -> fills: Mirage
+23820:                          [FRAME] "td" #749:10303 (EL-811f96bf)
+23821:                            [TEXT] "" #749:10304 TPL_TEXT: "Flight" TPL_FILLS: Mirage (EL-219388db)
+23822:                          [FRAME] "td" #749:10305 (EL-dbde85ea)
+23823:                            [FRAME] "span.p-pend" #749:10306 TPL_FILLS: Hawkes Blue (EL-e021b56f)
+23824:                              [IMAGE-SVG] "Frame" #749:10307 (EL-522202e5)
+23825:                              [TEXT] "" #749:10309 TPL_TEXT: "Pending" TPL_FILLS: Endeavour (EL-17970145)
+23826:                          [FRAME] "td.num-c" #749:10310 (EL-d16d8c0c)
+23827:                            [TEXT] "" #749:10311 TPL_TEXT: "Sample amount" TPL_FILLS: Mirage (EL-8de07f68)
+23828:                          [FRAME] "td.full" #749:10312 (EL-d5675f5a)
+23829:                            [TEXT] "" #749:10313 TPL_TEXT: "—" TPL_FILLS: Mirage (EL-17660409)
+23830:                    [FRAME] "p" #749:10314 (EL-f9d4bb24)
+23831:                      [FRAME] "svg:margin" #749:10315 (EL-b964cc84)
+23832:                        [IMAGE-SVG] "Frame" #749:10316 (EL-62b4d877)
+23833:                      [TEXT] "" #749:10318 TEXT: "Commission statuses: Pending, Earned, Settled. A cancellation or refund reverses commission — shown as an impact, not a status. Rules are configured by Aero Wing Admin."
+23833:                        -> layout: layout_177c5efc
+23833:                        -> fills: Comet
+23834:                [FRAME] "section#sec-cb:margin" #749:10319 
+23834:                  -> layout: {"mode":"column","alignSelf":"stretch","padding":"14px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+23835:                  [FRAME] "section#sec-cb" #749:10320 
+23835:                    -> layout: {"mode":"row","alignSelf":"stretch","padding":"20px 22px","justifyContent":"space-between","alignItems":"center","wrap":true,"gap":"16px","sizing":{"horizontal":"fill","vertical":"hug"}
+23835:                    -> fills: [{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(175deg,
+23836:                    [FRAME] "div" #749:10321 (EL-36bb72c0)
+23837:                      [FRAME] "h3#cb-h" #749:10322 (EL-b98545a2)
+23838:                        [IMAGE-SVG] "Frame" #749:10323 (EL-a73b2a19)
+23839:                        [TEXT] "" #749:10325 TEXT: "Closing Balance"
+23839:                          -> layout: layout_177c5efc
+23839:                          -> fills: "Midnight
+23840:                      [FRAME] "p" #749:10326 (EL-dfdf56f9)
+23841:                        [TEXT] "" #749:10327 TEXT: "This is the closing balance recorded for the selected statement period. System-\\nprovided statement value; no formula is applied in this view."
+23841:                          -> layout: layout_177c5efc
+23841:                          -> fills: Comet
+23842:                    [FRAME] "p:margin" #749:10328 
+23842:                      -> layout: {"mode":"column","padding":"4px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}
+23843:                      [FRAME] "p" #749:10329 (EL-2f9fe287)
+23844:                        [TEXT] "" #749:10330 TEXT: "Statement value available"
+23844:                          -> layout: layout_177c5efc
+23844:                          -> fills: "Midnight
+23845:                        [FRAME] "small" #749:10331 
+23845:                          -> layout: {"mode":"column","padding":"0px 0px 0px 165.92999267578125px","alignItems":"flex-end","sizing":{"horizontal":"hug","vertical":"hug"}
+23846:                          [TEXT] "" #749:10332 TEXT: "01 Oct 2026 – 16 Nov 2026"
+23846:                            -> layout: layout_177c5efc
+23846:                            -> fills: Comet
+23847:              [FRAME] "footer.doc-f" #749:10333 
+23847:                -> layout: {"mode":"row","alignSelf":"stretch","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}
+23847:                -> fills: "White
+23848:                [FRAME] "span" #749:10334 (EL-2a66e910)
+23849:                  [TEXT] "" #749:10335 TEXT: "Agent Statement · Skyline Demo Travels Ltd · 01 Oct 2026 – 16 Nov 2026"
+23849:                    -> layout: layout_177c5efc
+23849:                    -> fills: Comet
+23850:                [FRAME] "span" #749:10336 (EL-2a66e910)
+23851:                  [TEXT] "" #749:10337 TEXT: "Sample data — fictional design-preview content · Read-only statement"
+23851:                    -> layout: layout_177c5efc
+23851:                    -> fills: Comet
+23852:        [FRAME] "footer" #749:10338 
+23852:          -> layout: {"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23852:          -> fills: White
+23853:          [FRAME] "span" #749:10339 (EL-2a66e910)
+23854:            [TEXT] "" #749:10340 TEXT: "AeroWing Agent Portal · M2.10 Agent Statements · Website"
+23854:              -> layout: layout_177c5efc
+23854:              -> fills: Comet
+23855:          [FRAME] "span" #749:10341 (EL-2a66e910)
+23856:            [TEXT] "" #749:10342 TEXT: "Design prototype — no accounting, PDF or export service is called."
+23856:              -> layout: layout_177c5efc
+23856:              -> fills: Comet
+23857:        [FRAME] "header" #749:10343 TPL_FILLS: White (EL-e7e947f7)
+23858:          [FRAME] "Collapse navigation" #749:10344 TPL_FILLS: White (EL-308cdf1b)
+23859:            [IMAGE-SVG] "Frame" #749:10345 (EL-a73b2a19)
+23860:          [FRAME] "Breadcrumb" #749:10347 (EL-51794897)
+23861:            [FRAME] "ol" #749:10348 (EL-0211da4a)
+23862:              [FRAME] "li" #749:10349 (EL-2a1bfea5)
+23863:                [FRAME] "a" #749:10350 (EL-2a66e910)
+23864:                  [TEXT] "" #749:10351 TPL_TEXT: "Dashboard" TPL_FILLS: Science Blue (EL-7c5b051c)
+23865:              [FRAME] "li" #749:10352 (EL-fc963d7f)
+23866:                [TEXT] "" #749:10353 TPL_TEXT: "/" TPL_FILLS: Gull Gray (EL-f250b41d)
+23867:                [TEXT] "" #749:10354 TEXT: "Statements"
+23867:                  -> layout: layout_177c5efc
+23867:                  -> fills: Mirage
+23868:          [FRAME] "form#tb-s" #749:10355 (EL-f48bd93e)
+23869:            [FRAME] "input#tb-q" #749:10356 TPL_FILLS: Catskill White (7:11) (EL-fdc56343)
+23870:              [FRAME] "div#placeholder" #749:10357 (EL-0b890b82)
+23871:                [TEXT] "" #749:10358 TPL_TEXT: "Search bookings or customers" TPL_FILLS: Boulder (EL-b219f93c)
+23872:              [FRAME] "div#text-field-container" #749:10359 (EL-e6b26f43)
+23873:                [FRAME] "div#editing-view-port" #749:10360 (EL-541d4b8f)
+23874:                [FRAME] "div#search-clear:margin" #749:10361 (EL-e5aab63e)
+23875:            [IMAGE-SVG] "Frame" #749:10362 (EL-f744bb1f)
+23876:          [FRAME] "div.pop-w" #749:10364 (EL-2f9fe287)
+23877:            [FRAME] "Notifications" #749:10365 TPL_FILLS: White (EL-308cdf1b)
+23878:              [IMAGE-SVG] "Frame" #749:10366 (EL-a73b2a19)
+23879:          [FRAME] "div.pop-w" #749:10368 (EL-2f9fe287)
+23880:            [FRAME] "button menu#pf-btn" #749:10369 (EL-73541ea2)
+23881:              [FRAME] "span#pf-av" #749:10370 TPL_FILLS: Midnight Blue (EL-97ad2434)
+23882:                [TEXT] "" #749:10371 TPL_TEXT: "SD" TPL_FILLS: Saffron (EL-790ada40)
+23883:              [FRAME] "span.tb-avt" #749:10372 (EL-6e7b525c)
+23884:                [FRAME] "b#pf-biz" #749:10373 (EL-dfdf56f9)
+23885:                  [TEXT] "" #749:10374 TPL_TEXT: "Skyline Demo Travels Ltd" TPL_FILLS: Mirage (EL-084e24f6)
+23886:                [FRAME] "small#pf-usr" #749:10375 (EL-dfdf56f9)
+23887:                  [TEXT] "" #749:10376 TPL_TEXT: "Nusrat Jahan · Agent Owner" TPL_FILLS: Comet (EL-42f6826b)
+23888:              [IMAGE-SVG] "Frame" #749:10377 (EL-d40fb4e5)
+23889:  [FRAME] "New Credit Request" #743:4050 
+23889:    -> layout: {"mode":"column","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fixed","vertical":"hug"}
+23890:    [RECTANGLE] "New Credit Request 1" #743:4049 
+23890:      -> layout: {"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"}
+23890:      -> fills: [{"type":"IMAGE","imageRef":"f03223e92251000576891579bf3458d32d712e80","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]

@@ -1,0 +1,448 @@
+  [FRAME] "Add Edit Markup Rule" #713:23496 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":18936,"y":3875},"dimensions":{"width":1920,"height":2176}} fills="White Catskill White" ==> 
+    [FRAME] "div#shell" #713:23497 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2176}} ==> 
+      [FRAME] "Agent Portal navigation" #713:24179 template=EL-84ca712f ==> 
+        [FRAME] "div.sb-h" #713:24180 template=EL-5a59422e ==> 
+          [FRAME] "AeroWing Admin — Dashboard" #713:24181 template=EL-280eabfe ==> 
+            [FRAME] "AeroWing — Explore, Book, Travel" #713:24182 template=EL-966c7e52 ==> 
+          [TEXT] #713:24183 template=EL-25cb81a7 ==> Agent Portal
+        [FRAME] "Agent Portal sections" #713:24184 template=EL-34ff3f47 ==> 
+          [FRAME] "a" #713:24185 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24186 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24188 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24189 template=EL-2811e7df ==> Dashboard
+          [FRAME] "a" #713:24190 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24191 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24193 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24194 template=EL-47fd5523 ==> Search & Book
+          [FRAME] "a" #713:24195 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24196 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24198 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24199 template=EL-4d579255 ==> Bookings
+          [FRAME] "a" #713:24200 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24201 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24203 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24204 template=EL-bf3706d3 ==> Customers
+          [FRAME] "a" #713:24205 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24206 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24208 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24209 template=EL-e7176502 ==> Sub-agents
+          [FRAME] "a" #713:24210 template=EL-d0215df3 ==> 
+            [IMAGE-SVG] "Frame" #713:24211 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24213 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24214 template=EL-92321688 ==> Pricing & Markup
+          [FRAME] "div.sb-sep:margin" #713:24215 template=EL-6c782aee ==> 
+            [RECTANGLE] "div.sb-sep" #713:24216 template=EL-74377f5a ==> 
+          [FRAME] "a" #713:24217 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24218 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24220 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24221 template=EL-1472cd12 ==> Wallet
+          [FRAME] "a" #713:24222 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24223 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24225 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24226 template=EL-93d543dc ==> Credit
+          [FRAME] "a" #713:24227 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24228 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24230 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24231 template=EL-44b34f1e ==> Commissions
+          [FRAME] "a" #713:24232 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24233 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24235 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24236 template=EL-83c4fdf7 ==> Statements
+          [FRAME] "a" #713:24237 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24238 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24240 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24241 template=EL-dd0042e0 ==> Reports
+          [FRAME] "div.sb-sep:margin" #713:24242 template=EL-6c782aee ==> 
+            [RECTANGLE] "div.sb-sep" #713:24243 template=EL-74377f5a ==> 
+          [FRAME] "a" #713:24244 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24245 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24247 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24248 template=EL-944c8723 ==> Notifications
+          [FRAME] "a" #713:24249 template=EL-419d61b5 ==> 
+            [IMAGE-SVG] "Frame" #713:24250 template=EL-b1d338df ==> 
+            [FRAME] "span" #713:24252 template=EL-2f9fe287 ==> 
+              [TEXT] #713:24253 template=EL-dcd43a44 ==> Account / Settings
+        [FRAME] "p.sb-f" #713:24254 template=EL-ab281d22 ==> 
+          [FRAME] "b" #713:24255 template=EL-e9077466 ==> 
+            [TEXT] #713:24256 template=EL-a3ec670e ==> M2 · B2B Agent Portal
+          [TEXT] #713:24257 template=EL-51e2406f ==> M2.3 + M2.4 Pricing & Markup
+      [FRAME] "MAIN" #713:24259 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2176}} ==> 
+        [FRAME] "main#top" #713:24260 template=EL-70ea3e22 ==> 
+          [FRAME] "div.wrap" #713:24261 template=EL-01f5b3d6 ==> 
+            [FRAME] "button.lnk:margin:align-flex-start" #713:24262 template=EL-dfdf56f9 ==> 
+              [FRAME] "button.lnk:margin" #713:24263 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":199.34,"height":26}} ==> 
+                [FRAME] "button.lnk" #713:24264 template=EL-1f8f3823 ==> 
+                  [IMAGE-SVG] "Frame" #713:24265 template=EL-d40fb4e5 ==> 
+                  [TEXT] #713:24267 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="Back to Pricing & Markup" ==> Back to Pricing & Markup
+            [FRAME] "div" #713:24268 template=EL-286f649c ==> 
+              [FRAME] "section" #713:24269 template=EL-64683540 ==> 
+                [FRAME] "div.ph-t" #713:24270 template=EL-12a11ae8 ==> 
+                  [FRAME] "p.eyb" #713:24271 template=EL-e9077466 ==> 
+                    [TEXT] #713:24272 template=EL-25a16843 ==> Agent Portal · M2.3 + M2.4 Pricing & Markup
+                  [FRAME] "h1#h-pg" #713:24273 template=EL-e9077466 ==> 
+                    [TEXT] #713:24274 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_47de102a text="Add Markup Rule" ==> Add Markup Rule
+                  [FRAME] "p.ph-s" #713:24275 template=EL-33f6f1ad ==> 
+                    [TEXT] #713:24276 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Create an additional markup rule for client quoting." ==> Create an additional markup rule for client quoting.
+                  [FRAME] "p.ph-biz" #713:24277 template=EL-ccd54d18 ==> 
+                    [FRAME] "b" #713:24278 template=EL-2f9fe287 ==> 
+                      [TEXT] #713:24279 template=EL-4a9ab66a ==> Skyline Demo Travels Ltd
+                    [FRAME] "span.dm-tag" #713:24280 template=EL-5514a8df ==> 
+                      [IMAGE-SVG] "Frame" #713:24281 template=EL-62b4d877 ==> 
+                      [TEXT] #713:24283 template=EL-8340f657 ==> Sample data
+              [FRAME] "div" #713:24284 template=EL-bff1719b ==> 
+                [FRAME] "Add markup rule" #713:24285 layout={"mode":"column","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":820}} ==> 
+                  [FRAME] "section#s-det" #713:24286 template=EL-5777b5ba ==> 
+                    [FRAME] "div.cd-h" #713:24287 template=EL-cefd9a89 ==> 
+                      [FRAME] "span" #713:24288 template=EL-5475e443 ==> 
+                        [TEXT] #713:24289 layout=layout_177c5efc fills=Saffron textStyle=style_bb12b1a7 text="A" ==> A
+                      [FRAME] "div.cd-ht" #713:24290 template=EL-51794897 ==> 
+                        [FRAME] "h2#s-det-h" #713:24291 template=EL-e9077466 ==> 
+                          [TEXT] #713:24292 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Rule Details" ==> Rule Details
+                        [FRAME] "p" #713:24293 template=EL-e9077466 ==> 
+                          [TEXT] #713:24294 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Name this rule so it’s easy to find on Pricing & Markup." ==> Name this rule so it’s easy to find on Pricing & Markup.
+                    [FRAME] "div.cd-b" #713:24295 template=EL-ca8ad49f ==> 
+                      [FRAME] "div#f-name-w" #713:24296 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"5.5px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                        [FRAME] "label" #713:24297 template=EL-b98545a2 ==> 
+                          [TEXT] #713:24298 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Rule Name" ==> Rule Name
+                          [FRAME] "span" #713:24299 template=EL-df3d6198 ==> 
+                            [TEXT] #713:24300 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "input#f-name" #713:24301 layout={"mode":"column","alignSelf":"stretch","padding":"13.75px 14px 14.25px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes=Geyser strokeWeight=1px borderRadius=12px ==> 
+                          [FRAME] "div#placeholder" #713:24302 template=EL-5c39073a ==> 
+                            [TEXT] #713:24303 layout=layout_56d3c81c fills=Boulder textStyle=style_a754b511 text="e.g. Flight Client Markup" ==> e.g. Flight Client Markup
+                        [FRAME] "small#f-name-h" #713:24304 template=EL-d1ac142c ==> 
+                          [TEXT] #713:24305 layout=layout_56d3c81c fills=Comet textStyle=style_3b3a479f text="Use a name that makes the rule easy to identify." ==> Use a name that makes the rule easy to identify.
+                      [FRAME] "div.fld" #713:24306 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"5.800000190734863px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                        [FRAME] "span.lbl" #713:24307 template=EL-b98545a2 ==> 
+                          [TEXT] #713:24308 layout=layout_56d3c81c fills=Mirage textStyle=style_c967ff2b text="Rule Source" ==> Rule Source
+                        [FRAME] "div.src-ro" #713:24309 template=EL-a6237eaa ==> 
+                          [FRAME] "svg:margin" #713:24310 template=EL-dfb7c17a ==> 
+                            [IMAGE-SVG] "Frame" #713:24311 template=EL-f652840d ==> 
+                          [FRAME] "div" #713:24313 template=EL-bfbba51a ==> 
+                            [FRAME] "b" #713:24314 template=EL-b98545a2 ==> 
+                              [TEXT] #713:24315 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Agent configured" ==> Agent configured
+                              [FRAME] "span.agt" #713:24316 layout={"mode":"row","padding":"3px 8px 1px 6px","gap":"4px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=Varden borderRadius=999px ==> 
+                                [IMAGE-SVG] "Frame" #713:24317 template=EL-f652840d ==> 
+                                [TEXT] #713:24319 template=EL-a02f863c ==> Agent
+                            [FRAME] "p" #713:24320 template=EL-dfdf56f9 ==> 
+                              [TEXT] #713:24321 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="This rule is managed by Skyline Demo Travels Ltd." ==> This rule is managed by Skyline Demo Travels Ltd.
+                        [FRAME] "small.hint" #713:24322 template=EL-f9d4bb24 ==> 
+                          [FRAME] "svg:margin" #713:24323 template=EL-568f7d26 ==> 
+                            [IMAGE-SVG] "Frame" #713:24324 template=EL-522202e5 ==> 
+                          [TEXT] #713:24326 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="This page sets your own Agent markup only. Sub-agent markup is managed separately under Sub-agents." ==> This page sets your own Agent markup only. Sub-agent markup is managed separately under Sub-agents.
+                  [FRAME] "section#s-where" #713:24327 template=EL-5777b5ba ==> 
+                    [FRAME] "div.cd-h" #713:24328 template=EL-cefd9a89 ==> 
+                      [FRAME] "span" #713:24329 template=EL-5475e443 ==> 
+                        [TEXT] #713:24330 layout=layout_177c5efc fills=Saffron textStyle=style_bb12b1a7 text="B" ==> B
+                      [FRAME] "div.cd-ht" #713:24331 template=EL-51794897 ==> 
+                        [FRAME] "h2#s-where-h" #713:24332 template=EL-e9077466 ==> 
+                          [TEXT] #713:24333 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Where This Rule Applies" ==> Where This Rule Applies
+                        [FRAME] "p" #713:24334 template=EL-e9077466 ==> 
+                          [TEXT] #713:24335 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Choose the scope for this markup." ==> Choose the scope for this markup.
+                    [FRAME] "div.cd-b" #713:24336 template=EL-ca8ad49f ==> 
+                      [FRAME] "fieldset#f-scope-w" #713:24337 template=EL-dfdf56f9 ==> 
+                        [FRAME] "legend.lbl:margin" #713:24338 layout={"mode":"column","padding":"0px 0px 10px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":145.95}} ==> 
+                          [FRAME] "legend.lbl" #713:24339 template=EL-b98545a2 ==> 
+                            [TEXT] #713:24340 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Rule Scope" ==> Rule Scope
+                            [FRAME] "span" #713:24341 template=EL-df3d6198 ==> 
+                              [TEXT] #713:24342 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "div.rc-g" #713:24343 template=EL-fb1cecc4 ==> 
+                          [FRAME] "label.rco" #713:24344 template=EL-d3b5145b ==> 
+                            [FRAME] "span:margin" #713:24345 template=EL-7ae328ec ==> 
+                              [RECTANGLE] "span" #713:24346 template=EL-01562c57 ==> 
+                            [FRAME] "span" #713:24347 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24348 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24349 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="All Services" ==> All Services
+                              [FRAME] "small" #713:24350 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24351 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Apply the Agent markup\\nbroadly across service\\nmodules." ==> Apply the Agent markup\\nbroadly across service\\nmodules.
+                          [FRAME] "label.rco" #713:24352 layout=layout_e375366f fills=Selago strokes="Midnight Blue" strokeWeight=1px borderRadius=14px ==> 
+                            [RECTANGLE] "label.rco:shadow" #713:24353 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":252.67,"height":104}} fills="White 0.2%" effects=effect_75ea4ec8 borderRadius=14px ==> 
+                            [FRAME] "span:margin" #713:24354 template=EL-7ae328ec ==> 
+                              [FRAME] "span" #713:24355 template=EL-13f92029 ==> 
+                                [RECTANGLE] "::after" #713:24356 template=EL-3490fdbe ==> 
+                            [FRAME] "span" #713:24357 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24358 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24359 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Specific Service" ==> Specific Service
+                              [FRAME] "small" #713:24360 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24361 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Apply to one selected service\\nmodule." ==> Apply to one selected service\\nmodule.
+                          [FRAME] "label.rco" #713:24362 layout=layout_e375366f fills=White strokes="Botticelli (667:8220)" strokeWeight=1px borderRadius=14px ==> 
+                            [FRAME] "span:margin" #713:24363 template=EL-7ae328ec ==> 
+                              [RECTANGLE] "span" #713:24364 template=EL-01562c57 ==> 
+                            [FRAME] "span" #713:24365 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24366 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24367 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Specific Supplier" ==> Specific Supplier
+                              [FRAME] "small" #713:24368 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24369 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Apply to a selected supplier\\ncontext." ==> Apply to a selected supplier\\ncontext.
+                      [FRAME] "div#f-svc-w" #713:24370 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"5.75px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                        [FRAME] "label" #713:24371 template=EL-b98545a2 ==> 
+                          [TEXT] #713:24372 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Service" ==> Service
+                          [FRAME] "span" #713:24373 template=EL-df3d6198 ==> 
+                            [TEXT] #713:24374 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "span.sel" #713:24375 template=EL-e9077466 ==> 
+                          [FRAME] "select#f-svc" #713:24376 template=EL-ea4531d4 ==> 
+                            [FRAME] "div" #713:24377 template=EL-51794897 ==> 
+                              [TEXT] #713:24378 layout=layout_56d3c81c fills=Mirage textStyle=style_325b630c text="Select a service" ==> Select a service
+                          [IMAGE-SVG] "Frame" #713:24379 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":750,"y":16},"dimensions":{"width":16,"height":16}} ==> 
+                  [FRAME] "section#s-mk" #713:24381 template=EL-5777b5ba ==> 
+                    [FRAME] "div.cd-h" #713:24382 template=EL-cefd9a89 ==> 
+                      [FRAME] "span" #713:24383 template=EL-5475e443 ==> 
+                        [TEXT] #713:24384 layout=layout_177c5efc fills=Saffron textStyle=style_bb12b1a7 text="C" ==> C
+                      [FRAME] "div.cd-ht" #713:24385 template=EL-51794897 ==> 
+                        [FRAME] "h2#s-mk-h" #713:24386 template=EL-e9077466 ==> 
+                          [TEXT] #713:24387 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Markup" ==> Markup
+                        [FRAME] "p" #713:24388 template=EL-e9077466 ==> 
+                          [TEXT] #713:24389 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Your markup is added when quoting customers." ==> Your markup is added when quoting customers.
+                    [FRAME] "div.cd-b" #713:24390 template=EL-ca8ad49f ==> 
+                      [FRAME] "fieldset#f-type-w" #713:24391 template=EL-dfdf56f9 ==> 
+                        [FRAME] "legend.lbl:margin" #713:24392 layout={"mode":"column","padding":"0px 0px 10px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":154.53}} ==> 
+                          [FRAME] "legend.lbl" #713:24393 template=EL-b98545a2 ==> 
+                            [TEXT] #713:24394 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Markup Type" ==> Markup Type
+                            [FRAME] "span" #713:24395 template=EL-df3d6198 ==> 
+                              [TEXT] #713:24396 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "div.rc-g" #713:24397 template=EL-fb1cecc4 ==> 
+                          [FRAME] "label.rco" #713:24398 template=EL-f718b972 ==> 
+                            [RECTANGLE] "label.rco:shadow" #713:24399 template=EL-a171ea24 ==> 
+                            [FRAME] "span:margin" #713:24400 template=EL-7ae328ec ==> 
+                              [FRAME] "span" #713:24401 template=EL-13f92029 ==> 
+                                [RECTANGLE] "::after" #713:24402 template=EL-3490fdbe ==> 
+                            [FRAME] "span" #713:24403 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24404 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24405 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Percentage" ==> Percentage
+                              [FRAME] "small" #713:24406 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24407 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Add a percentage markup when quoting." ==> Add a percentage markup when quoting.
+                          [FRAME] "label.rco" #713:24408 template=EL-d3b5145b ==> 
+                            [FRAME] "span:margin" #713:24409 template=EL-7ae328ec ==> 
+                              [RECTANGLE] "span" #713:24410 template=EL-01562c57 ==> 
+                            [FRAME] "span" #713:24411 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24412 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24413 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Fixed Amount" ==> Fixed Amount
+                              [FRAME] "small" #713:24414 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24415 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Add a fixed markup amount when quoting." ==> Add a fixed markup amount when quoting.
+                      [FRAME] "div#f-val-w" #713:24416 layout={"mode":"column","alignSelf":"stretch","gap":"5.800000190734863px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                        [FRAME] "div.lbl-r" #713:24417 template=EL-b98545a2 ==> 
+                          [FRAME] "label#f-val-l" #713:24418 template=EL-0916c04f ==> 
+                            [TEXT] #713:24419 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Markup Percentage" ==> Markup Percentage
+                            [FRAME] "span" #713:24420 template=EL-df3d6198 ==> 
+                              [TEXT] #713:24421 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "div.vin" #713:24422 layout={"mode":"row","padding":"1px 14px 1px 0px","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":280}} fills=White strokes=Geyser strokeWeight=1px borderRadius=12px ==> 
+                          [FRAME] "input#f-val" #713:24423 layout={"mode":"column","padding":"10.5px 54px 11.5px 16px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}} borderRadius=12px ==> 
+                            [FRAME] "div#placeholder" #713:24424 layout={"mode":"column","alignSelf":"stretch","padding":"2px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                              [TEXT] #713:24425 layout=layout_56d3c81c fills=Boulder textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":18,"textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Enter percentage" ==> Enter percentage
+                          [FRAME] "span#f-val-sfx" #713:24426 layout={"mode":"column","padding":"4.75px 13.329999923706055px 6.25px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"hug","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":233,"y":7},"dimensions":{"height":41}} fills="Athens Gray" borderRadius=9px ==> 
+                            [TEXT] #713:24427 layout=layout_177c5efc fills=Comet textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":15,"lineHeight":"22.5px","textAlignHorizontal":"CENTER","textAlignVertical":"CENTER"} text="%" ==> %
+                        [FRAME] "small#f-val-h" #713:24428 template=EL-f9d4bb24 ==> 
+                          [FRAME] "svg:margin" #713:24429 template=EL-568f7d26 ==> 
+                            [IMAGE-SVG] "Frame" #713:24430 template=EL-522202e5 ==> 
+                          [TEXT] #713:24432 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Enter the percentage to add when quoting customers." ==> Enter the percentage to add when quoting customers.
+                      [FRAME] "fieldset#f-st-w" #713:24433 template=EL-dfdf56f9 ==> 
+                        [FRAME] "legend.lbl:margin" #713:24434 layout={"mode":"column","padding":"0px 0px 10px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":113.63}} ==> 
+                          [FRAME] "legend.lbl" #713:24435 template=EL-b98545a2 ==> 
+                            [TEXT] #713:24436 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Status" ==> Status
+                            [FRAME] "span" #713:24437 template=EL-df3d6198 ==> 
+                              [TEXT] #713:24438 template=EL-f6fb2e0f ==> Required
+                        [FRAME] "div.rc-g" #713:24439 template=EL-fb1cecc4 ==> 
+                          [FRAME] "label.rco" #713:24440 template=EL-f718b972 ==> 
+                            [RECTANGLE] "label.rco:shadow" #713:24441 template=EL-a171ea24 ==> 
+                            [FRAME] "span:margin" #713:24442 template=EL-7ae328ec ==> 
+                              [FRAME] "span" #713:24443 template=EL-13f92029 ==> 
+                                [RECTANGLE] "::after" #713:24444 template=EL-3490fdbe ==> 
+                            [FRAME] "span" #713:24445 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24446 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24447 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Active" ==> Active
+                              [FRAME] "small" #713:24448 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24449 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Used when pricing is calculated." ==> Used when pricing is calculated.
+                          [FRAME] "label.rco" #713:24450 template=EL-d3b5145b ==> 
+                            [FRAME] "span:margin" #713:24451 template=EL-7ae328ec ==> 
+                              [RECTANGLE] "span" #713:24452 template=EL-01562c57 ==> 
+                            [FRAME] "span" #713:24453 template=EL-7c39d4fd ==> 
+                              [FRAME] "b" #713:24454 template=EL-bb66f4c9 ==> 
+                                [TEXT] #713:24455 layout=layout_177c5efc fills=Mirage textStyle=style_4ebdb974 text="Inactive" ==> Inactive
+                              [FRAME] "small" #713:24456 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24457 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Not used while inactive." ==> Not used while inactive.
+                      [FRAME] "p.hint" #713:24458 template=EL-f9d4bb24 ==> 
+                        [FRAME] "svg:margin" #713:24459 template=EL-568f7d26 ==> 
+                          [IMAGE-SVG] "Frame" #713:24460 template=EL-522202e5 ==> 
+                        [TEXT] #713:24462 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Inactive rules are not used while inactive." ==> Inactive rules are not used while inactive.
+                  [FRAME] "section#s-lim" #713:24463 template=EL-5777b5ba ==> 
+                    [FRAME] "div.cd-h" #713:24464 template=EL-cefd9a89 ==> 
+                      [FRAME] "span" #713:24465 template=EL-5475e443 ==> 
+                        [TEXT] #713:24466 layout=layout_177c5efc fills=Saffron textStyle=style_bb12b1a7 text="D" ==> D
+                      [FRAME] "div.cd-ht" #713:24467 template=EL-51794897 ==> 
+                        [FRAME] "h2#s-lim-h" #713:24468 template=EL-e9077466 ==> 
+                          [TEXT] #713:24469 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Admin Limit & Pricing Context" ==> Admin Limit & Pricing Context
+                        [FRAME] "p" #713:24470 template=EL-e9077466 ==> 
+                          [TEXT] #713:24471 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Read-only — configured by Aero Wing Admin." ==> Read-only — configured by Aero Wing Admin.
+                      [FRAME] "span.ro-b" #713:24472 template=EL-f1de3b07 ==> 
+                        [IMAGE-SVG] "Frame" #713:24473 template=EL-62b4d877 ==> 
+                        [TEXT] #713:24475 template=EL-e7acc3b1 ==> Read-only
+                    [FRAME] "div.cd-b" #713:24476 layout={"mode":"column","alignSelf":"stretch","padding":"4px 20px 16px","alignItems":"stretch","gap":"28px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                      [FRAME] "div.lim-c" #713:24477 layout={"mode":"column","alignSelf":"stretch","padding":"16px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills="Alice Blue (171:1588)" strokes="Link Water (664:5964)" strokeWeight=1px borderRadius=16px ==> 
+                        [FRAME] "div.lim-h" #713:24478 template=EL-c094fdcc ==> 
+                          [FRAME] "svg:margin" #713:24479 template=EL-7ae328ec ==> 
+                            [IMAGE-SVG] "Frame" #713:24480 template=EL-a73b2a19 ==> 
+                          [FRAME] "div" #713:24482 template=EL-bfbba51a ==> 
+                            [FRAME] "b#lim-h" #713:24483 template=EL-dfdf56f9 ==> 
+                              [TEXT] #713:24484 layout=layout_177c5efc fills=Mirage textStyle=style_486af943 text="Admin Markup Limit" ==> Admin Markup Limit
+                            [FRAME] "p" #713:24485 template=EL-dfdf56f9 ==> 
+                              [TEXT] #713:24486 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="Your markup must remain within the limit configured for Skyline Demo Travels Ltd by Aero Wing Admin." ==> Your markup must remain within the limit configured for Skyline Demo Travels Ltd by Aero Wing Admin.
+                        [FRAME] "div.lim-r" #713:24487 template=EL-924265d7 ==> 
+                          [FRAME] "span" #713:24488 template=EL-2a66e910 ==> 
+                            [TEXT] #713:24489 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Exact limit" ==> Exact limit
+                          [FRAME] "b" #713:24490 template=EL-2a66e910 ==> 
+                            [TEXT] #713:24491 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Exact limit not included in this design-preview dataset" ==> Exact limit not included in this design-preview dataset
+                        [FRAME] "div#lim-st" #713:24492 layout=layout_df81a93d fills="Catskill White (710:20114)" borderRadius=12px ==> 
+                          [FRAME] "svg:margin" #713:24493 layout={"mode":"column","padding":"1px 0px 0px","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":16,"height":17}} ==> 
+                            [IMAGE-SVG] "Frame" #713:24494 template=EL-d40fb4e5 ==> 
+                          [FRAME] "span" #713:24496 template=EL-2f9fe287 ==> 
+                            [TEXT] #713:24497 layout=layout_177c5efc fills=Comet textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":13,"lineHeight":"18px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="{ts1}Limit validation unavailable in this design-preview dataset{/ts1}\\n{ts5}The exact limit isn’t included, so this value can’t be checked here.{/ts5}" ==> {ts1}Limit validation unavailable in this design-preview dataset{/ts1}\\n{ts5}The exact limit isn’t included, so this value can’t be checked here.{/ts5}
+                      [FRAME] "div" #713:24498 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"7.800000190734863px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                        [FRAME] "p.lbl" #713:24499 template=EL-b98545a2 ==> 
+                          [TEXT] #713:24500 layout=layout_56d3c81c fills=Mirage textStyle=style_c967ff2b text="Pricing Context" ==> Pricing Context
+                        [FRAME] "ul.ctx-l" #713:24501 template=EL-bc40306a ==> 
+                          [FRAME] "li" #713:24502 template=EL-abbed161 ==> 
+                            [FRAME] "span.kic" #713:24503 template=EL-1b439593 ==> 
+                              [IMAGE-SVG] "Frame" #713:24504 template=EL-f1890f3e ==> 
+                            [FRAME] "div" #713:24506 template=EL-6e7b525c ==> 
+                              [FRAME] "small" #713:24507 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24508 layout=layout_177c5efc fills=Comet textStyle=style_c639e4b0 text="Admin pricing" ==> Admin pricing
+                              [FRAME] "b" #713:24509 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24510 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Configured" ==> Configured
+                          [FRAME] "li" #713:24511 template=EL-abbed161 ==> 
+                            [FRAME] "span.kic" #713:24512 template=EL-6df97f6f ==> 
+                              [IMAGE-SVG] "Frame" #713:24513 template=EL-f1890f3e ==> 
+                            [FRAME] "div" #713:24515 template=EL-6e7b525c ==> 
+                              [FRAME] "small" #713:24516 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24517 layout=layout_177c5efc fills=Comet textStyle=style_c639e4b0 text="Your Agent markup" ==> Your Agent markup
+                              [FRAME] "b" #713:24518 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24519 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="This rule" ==> This rule
+                          [FRAME] "li.res" #713:24520 layout=layout_63d6be96 fills="Buttery White" strokes=Wheat strokeWeight=1px borderRadius=12px ==> 
+                            [FRAME] "span.kic" #713:24521 template=EL-6df97f6f ==> 
+                              [IMAGE-SVG] "Frame" #713:24522 template=EL-f1890f3e ==> 
+                            [FRAME] "div" #713:24524 template=EL-6e7b525c ==> 
+                              [FRAME] "small" #713:24525 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24526 layout=layout_177c5efc fills=Comet textStyle=style_c639e4b0 text="Final client pricing" ==> Final client pricing
+                              [FRAME] "b" #713:24527 template=EL-dfdf56f9 ==> 
+                                [TEXT] #713:24528 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Calculated during quoting" ==> Calculated during quoting
+                        [FRAME] "p.hint" #713:24529 layout={"mode":"row","alignSelf":"stretch","padding":"2.200000047683716px 0px 0px","gap":"6px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                          [FRAME] "svg:margin" #713:24530 template=EL-568f7d26 ==> 
+                            [IMAGE-SVG] "Frame" #713:24531 template=EL-522202e5 ==> 
+                          [TEXT] #713:24533 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="When multiple pricing or markup rules apply, the platform resolves them using the configured pricing precedence." ==> When multiple pricing or markup rules apply, the platform resolves them using the configured pricing precedence.
+                [FRAME] "aside" #713:24534 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":380}} ==> 
+                  [FRAME] "section#s-rv" #713:24535 template=EL-5777b5ba ==> 
+                    [FRAME] "div.cd-h" #713:24536 template=EL-cefd9a89 ==> 
+                      [FRAME] "span" #713:24537 template=EL-5475e443 ==> 
+                        [TEXT] #713:24538 layout=layout_177c5efc fills=Saffron textStyle=style_bb12b1a7 text="E" ==> E
+                      [FRAME] "div.cd-ht" #713:24539 template=EL-51794897 ==> 
+                        [FRAME] "h2#rv-h" #713:24540 template=EL-e9077466 ==> 
+                          [TEXT] #713:24541 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Rule Summary" ==> Rule Summary
+                        [FRAME] "p" #713:24542 template=EL-e9077466 ==> 
+                          [TEXT] #713:24543 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Updates as you edit" ==> Updates as you edit
+                      [FRAME] "span.dm-tag" #713:24544 template=EL-5514a8df ==> 
+                        [IMAGE-SVG] "Frame" #713:24545 template=EL-62b4d877 ==> 
+                        [TEXT] #713:24547 template=EL-8340f657 ==> Sample data
+                    [FRAME] "dl#rv-l" #713:24548 template=EL-c357a9c7 ==> 
+                      [FRAME] "div.rv-r" #713:24549 layout={"mode":"grid","alignSelf":"stretch","padding":"10px 0px","gridTemplateColumns":"repeat(1,minmax(0,1fr))","gridTemplateRows":"18px 20px","gap":"2px 10px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":60}} ==> 
+                        [FRAME] "dt" #713:24550 template=EL-f676945a ==> 
+                          [TEXT] #713:24551 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Rule" ==> Rule
+                        [FRAME] "dd.miss" #713:24552 template=EL-151c532e ==> 
+                          [IMAGE-SVG] "Frame" #713:24553 template=EL-494805ba ==> 
+                          [TEXT] #713:24555 template=EL-dd1bf783 ==> Not entered
+                      [FRAME] "div.rv-r" #713:24556 template=EL-5ae9a3b3 ==> 
+                        [FRAME] "dt" #713:24557 template=EL-f676945a ==> 
+                          [TEXT] #713:24558 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Rule Source" ==> Rule Source
+                        [FRAME] "dd" #713:24559 template=EL-f676945a ==> 
+                          [TEXT] #713:24560 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="Agent configured" ==> Agent configured
+                          [FRAME] "small" #713:24561 template=EL-e9077466 ==> 
+                            [TEXT] #713:24562 layout=layout_56d3c81c fills=Comet textStyle=style_0702813d text="Skyline Demo Travels Ltd" ==> Skyline Demo Travels Ltd
+                      [FRAME] "div.rv-r" #713:24563 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24564 template=EL-f676945a ==> 
+                          [TEXT] #713:24565 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Scope" ==> Scope
+                        [FRAME] "dd" #713:24566 template=EL-f676945a ==> 
+                          [TEXT] #713:24567 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="Specific Service" ==> Specific Service
+                      [FRAME] "div.rv-r" #713:24568 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24569 template=EL-f676945a ==> 
+                          [TEXT] #713:24570 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Service" ==> Service
+                        [FRAME] "dd.miss" #713:24571 template=EL-151c532e ==> 
+                          [IMAGE-SVG] "Frame" #713:24572 template=EL-494805ba ==> 
+                          [TEXT] #713:24574 layout=layout_177c5efc fills=Thunderbird textStyle=Manrope/Bold text="Not selected" ==> Not selected
+                      [FRAME] "div.rv-r" #713:24575 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24576 template=EL-f676945a ==> 
+                          [TEXT] #713:24577 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Supplier" ==> Supplier
+                        [FRAME] "dd" #713:24578 template=EL-f676945a ==> 
+                          [TEXT] #713:24579 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="All suppliers" ==> All suppliers
+                      [FRAME] "div.rv-r" #713:24580 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24581 template=EL-f676945a ==> 
+                          [TEXT] #713:24582 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Type" ==> Type
+                        [FRAME] "dd" #713:24583 template=EL-f676945a ==> 
+                          [TEXT] #713:24584 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="Percentage" ==> Percentage
+                      [FRAME] "div.rv-r" #713:24585 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24586 template=EL-f676945a ==> 
+                          [TEXT] #713:24587 template=EL-ba4b5b58 ==> Markup
+                        [FRAME] "dd.miss" #713:24588 template=EL-151c532e ==> 
+                          [IMAGE-SVG] "Frame" #713:24589 template=EL-494805ba ==> 
+                          [TEXT] #713:24591 template=EL-dd1bf783 ==> Not entered
+                      [FRAME] "div.rv-r" #713:24592 template=EL-0cea06c2 ==> 
+                        [FRAME] "dt" #713:24593 template=EL-f676945a ==> 
+                          [TEXT] #713:24594 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Status" ==> Status
+                        [FRAME] "dd" #713:24595 template=EL-f676945a ==> 
+                          [TEXT] #713:24596 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="Active" ==> Active
+                      [FRAME] "div.rv-r" #713:24597 template=EL-5ae9a3b3 ==> 
+                        [FRAME] "dt" #713:24598 template=EL-f676945a ==> 
+                          [TEXT] #713:24599 layout=layout_177c5efc fills=Comet textStyle=style_5886fec6 text="Pricing resolution" ==> Pricing resolution
+                        [FRAME] "dd" #713:24600 template=EL-f676945a ==> 
+                          [TEXT] #713:24601 layout=layout_177c5efc fills=Mirage textStyle=style_b9dd2e74 text="Configured precedence" ==> Configured precedence
+                          [FRAME] "small" #713:24602 template=EL-e9077466 ==> 
+                            [TEXT] #713:24603 layout=layout_56d3c81c fills=Comet textStyle=style_0702813d text="Final client pricing is calculated during quoting" ==> Final client pricing is calculated during quoting
+                    [FRAME] "p.hint" #713:24604 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px 14px","gap":"6px","sizing":{"horizontal":"fill","vertical":"hug"}} ==> 
+                      [FRAME] "svg:margin" #713:24605 template=EL-568f7d26 ==> 
+                        [IMAGE-SVG] "Frame" #713:24606 template=EL-522202e5 ==> 
+                      [FRAME] "span" #713:24608 layout={"mode":"column","padding":"0px 10.579999923706055px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}} ==> 
+                        [TEXT] #713:24609 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Markup changes are used according to the platform\\npricing rules when pricing is calculated." ==> Markup changes are used according to the platform\\npricing rules when pricing is calculated.
+                    [FRAME] "div.rv-a" #713:24610 template=EL-83d7d3e1 ==> 
+                      [FRAME] "button.btn" #713:24611 template=EL-f7eef115 ==> 
+                        [RECTANGLE] "button.btn:shadow" #713:24612 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":338,"height":58}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px ==> 
+                        [IMAGE-SVG] "Frame" #713:24613 template=EL-f652840d ==> 
+                        [FRAME] "span" #713:24615 template=EL-2a1f700b ==> 
+                          [TEXT] #713:24616 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_62559887 text="Save Markup Rule" ==> Save Markup Rule
+                      [FRAME] "button.btn" #713:24617 template=EL-78dce079 ==> 
+                        [FRAME] "span" #713:24618 template=EL-2a1f700b ==> 
+                          [TEXT] #713:24619 template=EL-0c385e09 ==> Cancel
+        [FRAME] "footer" #713:24620 layout={"mode":"row","padding":"14px 27.989999771118164px 14px 28px","alignItems":"stretch","wrap":true,"gap":"6px 753.6900024414062px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":2129},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px" ==> 
+          [FRAME] "span" #713:24621 template=EL-2a66e910 ==> 
+            [TEXT] #713:24622 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="AeroWing Agent Portal · M2.3 + M2.4 Add / Edit Markup Rule · Website" ==> AeroWing Agent Portal · M2.3 + M2.4 Add / Edit Markup Rule · Website
+          [FRAME] "span" #713:24623 template=EL-2a66e910 ==> 
+            [TEXT] #713:24624 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="Design prototype — no pricing engine, rule storage or supplier system is called." ==> Design prototype — no pricing engine, rule storage or supplier system is called.
+        [FRAME] "header" #713:24625 template=EL-e7e947f7 ==> 
+          [FRAME] "Collapse navigation" #713:24626 template=EL-308cdf1b ==> 
+            [IMAGE-SVG] "Frame" #713:24627 template=EL-a73b2a19 ==> 
+          [FRAME] "Breadcrumb" #713:24629 template=EL-51794897 ==> 
+            [FRAME] "ol" #713:24630 template=EL-0211da4a ==> 
+              [FRAME] "li" #713:24631 template=EL-2a1bfea5 ==> 
+                [FRAME] "a" #713:24632 template=EL-2a66e910 ==> 
+                  [TEXT] #713:24633 template=EL-7c5b051c ==> Dashboard
+              [FRAME] "li" #713:24634 template=EL-7a6c58b6 ==> 
+                [FRAME] "span.__h2d-remove-before:margin" #713:24635 template=EL-0f04eb31 ==> 
+                  [TEXT] #713:24636 template=EL-07d54cf7 ==> /
+                [FRAME] "a" #713:24637 template=EL-2a66e910 ==> 
+                  [TEXT] #713:24638 layout=layout_177c5efc fills="Science Blue" textStyle=style_94747b76 text="Pricing & Markup" ==> Pricing & Markup
+              [FRAME] "li" #713:24639 template=EL-fc963d7f ==> 
+                [TEXT] #713:24640 template=EL-f250b41d ==> /
+                [TEXT] #713:24641 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Add Rule" ==> Add Rule
+          [FRAME] "form#tb-s" #736:2178 template=EL-a4a2fb03 ==> 
+            [FRAME] "input#tb-q" #736:2179 template=EL-bcaab4e4 ==> 
+              [IMAGE-SVG] "Frame" #736:2180 template=EL-f1890f3e ==> 
+              [FRAME] "div#placeholder" #736:2182 template=EL-a8ef7fa3 ==> 
+                [TEXT] #736:2183 template=EL-c12bf1ac ==> Search Admin Panel
+          [FRAME] "div.pop-w" #713:24651 template=EL-2f9fe287 ==> 
+            [FRAME] "Notifications" #713:24652 template=EL-308cdf1b ==> 
+              [IMAGE-SVG] "Frame" #713:24653 template=EL-a73b2a19 ==> 
+          [FRAME] "div.pop-w" #713:24655 template=EL-2f9fe287 ==> 
+            [FRAME] "button menu#pf-btn" #713:24656 template=EL-73541ea2 ==> 
+              [FRAME] "span#pf-av" #713:24657 template=EL-97ad2434 ==> 
+                [TEXT] #713:24658 template=EL-790ada40 ==> SD
+              [FRAME] "span.tb-avt" #713:24659 template=EL-6e7b525c ==> 
+                [FRAME] "b#pf-biz" #713:24660 template=EL-dfdf56f9 ==> 
+                  [TEXT] #713:24661 template=EL-084e24f6 ==> Skyline Demo Travels Ltd
+                [FRAME] "small#pf-usr" #713:24662 template=EL-dfdf56f9 ==> 
+                  [TEXT] #713:24663 template=EL-42f6826b ==> Nusrat Jahan · Agent Owner
+              [IMAGE-SVG] "Frame" #713:24664 template=EL-d40fb4e5 ==> 
+  [FRAME] "Agent Wallet Overview" #723:25715 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":20971,"y":3875},"dimensions":{"width":1920,"height":2001}} fills="White Catskill White" ==> 

@@ -1,0 +1,345 @@
+  [FRAME] "Registration - Review & Submit" #639:5270 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":4691,"y":838},"dimensions":{"width":1920}} fills="White Catskill White Catskill White"
+    [FRAME] "FOCUSED PARTNER HEADER" #639:5651 template=EL-7fb6089c
+      [FRAME] "div.rg-wrap" #639:5652 template=EL-de5582a6
+        [FRAME] "AeroWing — Explore, Book, Travel" #639:5653 template=EL-223dee85
+        [FRAME] "span.rg-prog-l" #639:5654 template=EL-3863fc82
+          [IMAGE-SVG] "Frame" #639:5655 template=EL-f652840d
+          [FRAME] "span" #639:5657 template=EL-2f9fe287
+            [TEXT] #639:5658 template=EL-9409dfd9
+        [FRAME] "p.rg-signin:margin" #639:5659 template=EL-cdf0e4d3
+          [FRAME] "p.rg-signin" #639:5660 template=EL-9aac139a
+            [TEXT] #639:5661 template=EL-78c8b22e
+            [TEXT] #639:5662 template=EL-80a56d72
+    [FRAME] "main#top" #639:5271 template=EL-fa2cb9de
+      [FRAME] "hero band" #639:5272 template=EL-ee23b3bf
+        [IMAGE-SVG] "Frame" #639:5273 template=EL-2ac84ecd
+        [FRAME] "div.rg-wrap" #639:5275 template=EL-2b5eb58d
+          [FRAME] "p.rg-eye" #639:5276 template=EL-0adef349
+            [IMAGE-SVG] "Frame" #639:5277 template=EL-d40fb4e5
+            [TEXT] #639:5279 template=EL-e0a9ad25
+          [FRAME] "h1#pg-t" #639:5280 template=EL-4d57d784
+            [TEXT] #639:5281 template=EL-85785721
+          [FRAME] "p.rg-lead" #639:5282 template=EL-9259b7f3
+            [TEXT] #639:5283 template=EL-a6fa6fda
+          [FRAME] "p.rg-band-si" #639:5284 template=EL-1b827f77
+            [TEXT] #639:5285 template=EL-ee50ecb5
+            [TEXT] #639:5286 template=EL-c7228cb4
+      [FRAME] "div.rg-wrap" #639:5287 template=EL-65a45ea2
+        [FRAME] "div.rg-col" #639:5288 template=EL-b900ca63
+          [FRAME] "Registration progress" #639:5289 template=EL-aba51226
+            [RECTANGLE] "Registration progress:shadow" #639:5290 template=EL-400ef626
+            [FRAME] "ol" #639:5291 template=EL-a75c3b19
+              [FRAME] "li" #639:5292 template=EL-a202b2a8
+                [FRAME] "span.rs-n" #639:5293 template=EL-f3b217d0
+                  [IMAGE-SVG] "Frame" #639:5294 template=EL-f652840d
+                [FRAME] "span.rs-t" #639:5296 template=EL-6e7b525c
+                  [FRAME] "small" #639:5297 template=EL-dfdf56f9
+                    [TEXT] #639:5298 template=EL-f8ff195a
+                  [FRAME] "b" #639:5299 template=EL-dfdf56f9
+                    [TEXT] #639:5300 template=EL-38c0ff67
+                [FRAME] "::after:margin" #639:5301 template=EL-7ecfd2df
+                  [RECTANGLE] "::after" #639:5302 template=EL-8657f9c2
+              [FRAME] "li" #639:5303 template=EL-a202b2a8
+                [FRAME] "span.rs-n" #639:5304 template=EL-f3b217d0
+                  [IMAGE-SVG] "Frame" #639:5305 template=EL-f652840d
+                [FRAME] "span.rs-t" #639:5307 template=EL-6e7b525c
+                  [FRAME] "small" #639:5308 template=EL-dfdf56f9
+                    [TEXT] #639:5309 template=EL-eb0e615a
+                  [FRAME] "b" #639:5310 template=EL-dfdf56f9
+                    [TEXT] #639:5311 layout=layout_177c5efc fills=Jewel textStyle=style_6cae3b68 text="Contact & Documents"
+                [FRAME] "::after:margin" #639:5312 template=EL-7ecfd2df
+                  [RECTANGLE] "::after" #639:5313 template=EL-8657f9c2
+              [FRAME] "li" #639:5314 template=EL-5efdc068
+                [FRAME] "span.rs-n" #639:5315 template=EL-4fdebbdc
+                  [RECTANGLE] "span.rs-n:shadow" #639:5316 template=EL-d65365ed
+                  [TEXT] #639:5317 layout=layout_177c5efc fills=White textStyle=style_ac8daa02 text="3"
+                [FRAME] "span.rs-t" #639:5318 template=EL-6e7b525c
+                  [FRAME] "small" #639:5319 template=EL-dfdf56f9
+                    [TEXT] #639:5320 template=EL-2550d910
+                  [FRAME] "b" #639:5321 template=EL-dfdf56f9
+                    [TEXT] #639:5322 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_6cae3b68 text="Review & Submit"
+          [FRAME] "STEP 3 · REVIEW & SUBMIT" #639:5323 template=EL-ddd8fca1
+            [FRAME] "div.rg-ch" #639:5324 template=EL-94a17615
+              [FRAME] "span.rg-ci" #639:5325 template=EL-c2434e86
+                [IMAGE-SVG] "Frame" #639:5326 template=EL-f1b0f0c9
+              [FRAME] "div" #639:5328 template=EL-36bb72c0
+                [FRAME] "h2#s3-t" #639:5329 template=EL-dfdf56f9
+                  [TEXT] #639:5330 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_33bf3015 text="Review Your Application"
+                [FRAME] "p" #639:5331 template=EL-dfdf56f9
+                  [TEXT] #639:5332 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Please review your business information, contact details and supporting documents\\nbefore submitting your Aero Wing travel partner application."
+            [FRAME] "readiness" #639:5333 template=EL-6fb2567b
+              [FRAME] "div#rdy-h" #639:5334 layout={"mode":"row","alignSelf":"stretch","padding":"16px 18px","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills="Panache (232:3288)"
+                [IMAGE-SVG] "Frame" #639:5335 layout=layout_2812f6d4
+                [FRAME] "div" #639:5337 template=EL-bfbba51a
+                  [FRAME] "b#rdy-t" #639:5338 template=EL-dfdf56f9
+                    [TEXT] #639:5339 layout=layout_177c5efc fills=Jewel textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":16.5,"lineHeight":"23px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Your application is ready to submit"
+                  [FRAME] "span" #639:5340 template=EL-dfdf56f9
+                    [TEXT] #639:5341 layout=layout_177c5efc fills="Oxford Blue" textStyle=style_a1ef2a0a text="All required information is complete. Confirm the declaration below to submit."
+              [FRAME] "Application sections" #639:5342 template=EL-e9077466
+                [FRAME] "li" #639:5343 template=EL-578ec810
+                  [FRAME] "span.rdy-ic" #639:5344 template=EL-c232f49a
+                    [IMAGE-SVG] "Frame" #639:5345 template=EL-f652840d
+                  [FRAME] "div" #639:5347 template=EL-51794897
+                    [FRAME] "b" #639:5348 template=EL-e9077466
+                      [TEXT] #639:5349 layout=layout_56d3c81c fills=Mirage textStyle=style_53cdfbde text="Business Information"
+                    [FRAME] "span" #639:5350 template=EL-e9077466
+                      [TEXT] #639:5351 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Optional information not provided: Business Registration Number"
+                  [FRAME] "span.rs-chip" #639:5352 template=EL-fc445316
+                    [IMAGE-SVG] "Frame" #639:5353 template=EL-522202e5
+                    [TEXT] #639:5355 template=EL-da8d0d85
+                [FRAME] "li" #639:5356 template=EL-578ec810
+                  [FRAME] "span.rdy-ic" #639:5357 template=EL-c232f49a
+                    [IMAGE-SVG] "Frame" #639:5358 template=EL-f652840d
+                  [FRAME] "div" #639:5360 template=EL-51794897
+                    [FRAME] "b" #639:5361 template=EL-e9077466
+                      [TEXT] #639:5362 layout=layout_56d3c81c fills=Mirage textStyle=style_53cdfbde text="Contact Information"
+                    [FRAME] "span" #639:5363 template=EL-e9077466
+                      [TEXT] #639:5364 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="All details provided"
+                  [FRAME] "span.rs-chip" #639:5365 template=EL-fc445316
+                    [IMAGE-SVG] "Frame" #639:5366 template=EL-522202e5
+                    [TEXT] #639:5368 template=EL-da8d0d85
+                [FRAME] #639:5678 layout={"mode":"column","alignSelf":"stretch","padding":"5px 15px 15px","justifyContent":"center","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                  [FRAME] "li.opt" #639:5369 layout=layout_99f1600a fills="Athens Gray" strokes="Catskill White" strokeWeight="1px 0px 0px" borderRadius=999px
+                    [FRAME] "span.rdy-ic" #639:5370 layout=layout_b74cd9f4 fills="Athens Gray" borderRadius=10px
+                      [IMAGE-SVG] "Frame" #639:5371 template=EL-f652840d
+                    [FRAME] "div" #639:5373 template=EL-51794897
+                      [FRAME] "b" #639:5374 template=EL-e9077466
+                        [TEXT] #639:5375 layout=layout_56d3c81c fills=Mirage textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":14.5,"lineHeight":"17px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Supporting Documents"
+                      [FRAME] "span" #639:5376 template=EL-e9077466
+                        [TEXT] #639:5377 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="No supporting documents uploaded"
+                    [FRAME] "span.rs-chip" #639:5378 layout=layout_260a7c99 fills="Athens Gray" borderRadius=999px
+                      [IMAGE-SVG] "Frame" #639:5379 template=EL-522202e5
+                      [TEXT] #639:5381 layout=layout_177c5efc fills="Oxford Blue" textStyle=style_446c376e text="Optional information not provided"
+            [FRAME] "business information" #639:5382 template=EL-6fb2567b
+              [FRAME] "div.rv-h" #639:5383 template=EL-1c659e47
+                [FRAME] "h3#rvb-t" #639:5384 template=EL-235879b0
+                  [IMAGE-SVG] "Frame" #639:5385 template=EL-a73b2a19
+                  [TEXT] #639:5387 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="Business Information"
+                [FRAME] "button.tlink" #639:5388 template=EL-364dccea
+                  [IMAGE-SVG] "Frame" #639:5389 template=EL-d40fb4e5
+                  [TEXT] #639:5391 template=EL-201b54ee
+              [FRAME] "dl#rvb" #639:5392 layout={"mode":"grid","alignSelf":"stretch","padding":"16px 18px","gridTemplateColumns":"repeat(2,minmax(0,1fr))","gridTemplateRows":"40px 40px 40px 61px 40px","gap":"14px 24px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":309}}
+                [FRAME] "div" #639:5393 template=EL-496dd43f
+                  [FRAME] "dt" #639:5394 template=EL-e9077466
+                    [TEXT] #639:5395 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Legal Business Name"
+                  [FRAME] "dd" #639:5396 template=EL-e9077466
+                    [TEXT] #639:5397 template=EL-30811611
+                [FRAME] "div" #639:5398 template=EL-84de6cfd
+                  [FRAME] "dt" #639:5399 template=EL-e9077466
+                    [TEXT] #639:5400 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Trading Name"
+                  [FRAME] "dd" #639:5401 template=EL-e9077466
+                    [TEXT] #639:5402 template=EL-b93c2208
+                [FRAME] "div" #639:5403 template=EL-d9c40360
+                  [FRAME] "dt" #639:5404 template=EL-e9077466
+                    [TEXT] #639:5405 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Business Type"
+                  [FRAME] "dd" #639:5406 template=EL-e9077466
+                    [TEXT] #639:5407 template=EL-8b4cd0a5
+                [FRAME] "div" #639:5408 template=EL-d2128618
+                  [FRAME] "dt" #639:5409 template=EL-e9077466
+                    [TEXT] #639:5410 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Country"
+                  [FRAME] "dd" #639:5411 template=EL-e9077466
+                    [TEXT] #639:5412 template=EL-e9afabe6
+                [FRAME] "div" #639:5413 template=EL-50455dca
+                  [FRAME] "dt" #639:5414 template=EL-e9077466
+                    [TEXT] #639:5415 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="City"
+                  [FRAME] "dd" #639:5416 template=EL-e9077466
+                    [TEXT] #639:5417 template=EL-aeace25a
+                [FRAME] "div" #639:5418 template=EL-7c969035
+                  [FRAME] "dt" #639:5419 template=EL-e9077466
+                    [TEXT] #639:5420 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Business Address"
+                  [FRAME] "dd.pre" #639:5421 template=EL-e9077466
+                    [TEXT] #639:5422 template=EL-f3ccb55f
+                [FRAME] "div" #639:5423 template=EL-65364041
+                  [FRAME] "dt" #639:5424 template=EL-e9077466
+                    [TEXT] #639:5425 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Business Website"
+                  [FRAME] "dd" #639:5426 template=EL-e9077466
+                    [TEXT] #639:5427 template=EL-befbc648
+            [FRAME] "primary business contact" #639:5428 template=EL-6fb2567b
+              [FRAME] "div.rv-h" #639:5429 template=EL-1c659e47
+                [FRAME] "h3#rvc-t" #639:5430 template=EL-235879b0
+                  [IMAGE-SVG] "Frame" #639:5431 template=EL-a73b2a19
+                  [TEXT] #639:5433 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="Primary Business Contact"
+                [FRAME] "button.tlink" #639:5434 template=EL-364dccea
+                  [IMAGE-SVG] "Frame" #639:5435 template=EL-d40fb4e5
+                  [TEXT] #639:5437 layout=layout_177c5efc fills="Science Blue" textStyle=style_ae17a590 text="Edit Contact Information"
+              [FRAME] "dl#rvc" #639:5438 layout={"mode":"grid","alignSelf":"stretch","padding":"16px 18px","gridTemplateColumns":"repeat(2,minmax(0,1fr))","gridTemplateRows":"40px 41.75px","gap":"14px 24px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":127.75}}
+                [FRAME] "div" #639:5439 template=EL-f489842c
+                  [FRAME] "dt" #639:5440 template=EL-e9077466
+                    [TEXT] #639:5441 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Full Name"
+                  [FRAME] "dd" #639:5442 template=EL-e9077466
+                    [TEXT] #639:5443 template=EL-9c6beb64
+                [FRAME] "div" #639:5444 template=EL-f489842c
+                  [FRAME] "dt" #639:5445 template=EL-e9077466
+                    [TEXT] #639:5446 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Job Title"
+                  [FRAME] "dd" #639:5447 template=EL-e9077466
+                    [TEXT] #639:5448 template=EL-406f6b41
+                [FRAME] "div" #639:5449 layout={"mode":"column","padding":"0px 0px 1.75px","alignItems":"stretch","gap":"3px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                  [FRAME] "dt" #639:5450 template=EL-e9077466
+                    [TEXT] #639:5451 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Business Email"
+                  [FRAME] "dd" #639:5452 template=EL-e9077466
+                    [TEXT] #639:5453 layout=layout_56d3c81c fills=Mirage textStyle=style_394ce98c text="nusrat.jahan@example.com"
+                [FRAME] "div" #639:5454 template=EL-f489842c
+                  [FRAME] "dt" #639:5455 template=EL-e9077466
+                    [TEXT] #639:5456 layout=layout_56d3c81c fills=Comet textStyle=style_98691a88 text="Mobile Number"
+                  [FRAME] "dd" #639:5457 layout={"mode":"column","alignSelf":"stretch","padding":"1.75px 0px 0px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                    [FRAME] "span" #639:5458 template=EL-235879b0
+                      [FRAME] "span.flg" #639:5459 layout={"mode":"column","padding":"2.75px 5px 4.25px 4.980000019073486px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"hug","vertical":"fixed"},"dimensions":{"height":20}} fills=fill_858a44fb strokes=Spindle strokeWeight=1px borderRadius=5px
+                        [TEXT] #639:5460 template=EL-90dbbfab
+                      [TEXT] #639:5461 template=EL-f48d6847
+            [FRAME] "supporting documents" #639:5462 layout={"mode":"column","alignSelf":"stretch","padding":"0px 0px 14px","alignItems":"center","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes="Mystic (7:34)" strokeWeight=1px borderRadius=16px
+              [FRAME] "div.rv-h" #639:5463 template=EL-1c659e47
+                [FRAME] "h3#rvd-t" #639:5464 template=EL-235879b0
+                  [IMAGE-SVG] "Frame" #639:5465 template=EL-a73b2a19
+                  [TEXT] #639:5467 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="Supporting Documents"
+                [FRAME] "button.tlink" #639:5468 template=EL-364dccea
+                  [IMAGE-SVG] "Frame" #639:5469 template=EL-d40fb4e5
+                  [TEXT] #639:5471 layout=layout_177c5efc fills="Science Blue" textStyle=style_ae17a590 text="Edit Documents"
+              [FRAME] "div.rv-empty" #639:5472 layout={"mode":"row","padding":"14px 16px","gap":"12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":664}} fills="Link Water (627:1977)" strokes=Botticelli strokeWeight=1px strokeDashes=3,2 borderRadius=12px
+                [FRAME] "svg:margin" #639:5473 template=EL-af68c20c
+                  [IMAGE-SVG] "Frame" #639:5474 template=EL-d2f5d0a6
+                [FRAME] "div" #639:5476 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":596,"height":64.5}}
+                  [FRAME] "b" #639:5477 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":-1},"dimensions":{"width":596}}
+                    [TEXT] #639:5478 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_ac8daa02 text="No supporting documents uploaded"
+                  [FRAME] "span" #639:5479 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":24.5},"dimensions":{"width":596}}
+                    [TEXT] #639:5480 layout=layout_177c5efc fills="Oxford Blue" textStyle=style_a1ef2a0a text="You haven’t uploaded any supporting documents. You can continue with your\\napplication."
+            [FRAME] "declaration" #639:5481 layout=layout_816aa529 fills=White strokes=Geyser strokeWeight=1px borderRadius=16px
+              [FRAME] "h3#dc-t" #639:5482 template=EL-c8d50cb3
+                [IMAGE-SVG] "Frame" #639:5483 template=EL-a73b2a19
+                [TEXT] #639:5485 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="Declaration"
+              [FRAME] "p" #639:5486 template=EL-e9077466
+                [TEXT] #639:5487 layout=layout_56d3c81c fills="Oxford Blue" textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":600,"fontSize":14.5,"lineHeight":"22px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="I confirm that the information provided in this application is accurate and complete to the best\\nof my knowledge."
+              [FRAME] "label.chk" #639:5488 layout=layout_226da672 fills="Catskill White (7:11)" borderRadius=12px
+                [FRAME] "span.chk-b" #639:5489 layout={"mode":"column","padding":"3px 0px","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":26,"height":26}} fills=White strokes="Gull Gray" strokeWeight=2px borderRadius=8px
+                  [IMAGE-SVG] "Frame" #639:5490 template=EL-d40fb4e5
+                [TEXT] #639:5492 layout=layout_177c5efc fills=fill_5db9edd2 textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":15,"lineHeight":"24px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="{ts3}I confirm that the information provided above is accurate.{/ts3}{ts2} \\*{/ts2}"
+              [FRAME] "p#sub-why" #639:5493 template=EL-e9077466
+                [TEXT] #639:5494 layout=layout_56d3c81c fills=Comet textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":700,"fontSize":13.5,"lineHeight":"19px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Tick the declaration to submit your application."
+          [FRAME] "action bar (sticky on mobile)" #639:5495 template=EL-cecf0dc2
+            [FRAME] "button#b-back" #639:5496 template=EL-c5549b6f
+              [IMAGE-SVG] "Frame" #639:5497 template=EL-f652840d
+              [FRAME] "span" #639:5499 template=EL-2a1f700b
+                [TEXT] #639:5500 template=EL-b761b908
+            [FRAME] "p.rg-save" #639:5501 template=EL-235879b0
+              [IMAGE-SVG] "Frame" #639:5502 template=EL-d40fb4e5
+              [FRAME] "span" #639:5504 template=EL-27528d41
+                [TEXT] #639:5505 layout=layout_177c5efc fills=Comet textStyle=style_d5fe13bf text="Your details are kept while you move between\\nsteps."
+            [FRAME] "button#b-next" #639:5506 layout={"mode":"row","padding":"0px 33.11000061035156px 0px 33.09000015258789px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"dimensions":{"height":52}} fills="Catskill White" strokes="Black 0%" strokeWeight=1px borderRadius=10px
+              [FRAME] "span#b-next-t" #639:5507 template=EL-2a1f700b
+                [TEXT] #639:5508 layout=layout_177c5efc fills="Shuttle Gray" textStyle=style_dd076576 text="Submit Application"
+              [IMAGE-SVG] "Frame" #639:5509 template=EL-f652840d
+        [FRAME] "About partner registration" #639:5511 layout={"mode":"column","padding":"0px 0px 56px","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":340}}
+          [FRAME] "div#sd-app" #639:5512 layout={"mode":"column","alignSelf":"stretch","padding":"20px 22px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes=Saffron strokeWeight="4px 1px 1px" effects=effect_96562f89 borderRadius=18px
+            [FRAME] "h2" #639:5513 template=EL-e9077466
+              [TEXT] #639:5514 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_14748df6 text="Application summary"
+            [FRAME] "dl#sd-sum" #639:5515 template=EL-e9077466
+              [FRAME] "div" #639:5516 layout={"mode":"row","alignSelf":"stretch","padding":"2px 0px 10px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+                [FRAME] "dt" #639:5517 template=EL-2f9fe287
+                  [TEXT] #639:5518 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Registration status"
+                [FRAME] "dd" #639:5519 layout={"mode":"column","padding":"0px 0px 2.630000114440918px","alignItems":"flex-end","sizing":{"horizontal":"hug","vertical":"hug"}}
+                  [FRAME] "span.sd-st" #639:5520 template=EL-fc445316
+                    [IMAGE-SVG] "Frame" #639:5521 template=EL-522202e5
+                    [TEXT] #639:5523 layout=layout_177c5efc fills="Bottle Green" textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":12.5,"lineHeight":"18.75px","textAlignHorizontal":"RIGHT","textAlignVertical":"CENTER"} text="Ready to Submit"
+              [FRAME] "div" #639:5524 template=EL-30567647
+                [FRAME] "dt" #639:5525 template=EL-2f9fe287
+                  [TEXT] #639:5526 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Completed steps"
+                [FRAME] "dd" #639:5527 template=EL-17eb356c
+                  [TEXT] #639:5528 layout=layout_177c5efc fills=Mirage textStyle=style_3a4967d7 text="2 of 3"
+              [FRAME] "div" #639:5529 template=EL-30567647
+                [FRAME] "dt" #639:5530 template=EL-2f9fe287
+                  [TEXT] #639:5531 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Business name"
+                [FRAME] "dd" #639:5532 template=EL-17eb356c
+                  [TEXT] #639:5533 layout=layout_177c5efc fills=Mirage textStyle=style_3a4967d7 text="Skyline Demo Travels Ltd"
+              [FRAME] "div" #639:5534 template=EL-30567647
+                [FRAME] "dt" #639:5535 template=EL-2f9fe287
+                  [TEXT] #639:5536 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Primary contact"
+                [FRAME] "dd" #639:5537 template=EL-17eb356c
+                  [TEXT] #639:5538 layout=layout_177c5efc fills=Mirage textStyle=style_3a4967d7 text="Nusrat Jahan"
+              [FRAME] "div" #639:5539 template=EL-30567647
+                [FRAME] "dt" #639:5540 template=EL-2f9fe287
+                  [TEXT] #639:5541 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Document status"
+                [FRAME] "dd" #639:5542 template=EL-17eb356c
+                  [TEXT] #639:5543 layout=layout_177c5efc fills=Mirage textStyle=style_3a4967d7 text="None uploaded \\(optional\\)"
+              [FRAME] "div" #639:5544 template=EL-30567647
+                [FRAME] "dt" #639:5545 template=EL-2f9fe287
+                  [TEXT] #639:5546 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Submission status"
+                [FRAME] "dd" #639:5547 template=EL-17eb356c
+                  [TEXT] #639:5548 layout=layout_177c5efc fills=Mirage textStyle=style_3a4967d7 text="Not Submitted"
+          [FRAME] "div.sd-card" #639:5549 template=EL-486c6117
+            [FRAME] "h2" #639:5550 template=EL-e9077466
+              [TEXT] #639:5551 template=EL-cded2d65
+            [FRAME] "ol.sd-how" #639:5552 template=EL-91e14ea7
+              [FRAME] "li" #639:5553 template=EL-c094fdcc
+                [FRAME] "span" #639:5554 template=EL-ffe270c4
+                  [IMAGE-SVG] "Frame" #639:5555 template=EL-f652840d
+                [FRAME] "div" #639:5557 template=EL-8a275127
+                  [FRAME] "b" #639:5558 template=EL-dfdf56f9
+                    [TEXT] #639:5559 template=EL-9c12e25c
+                  [FRAME] "p" #639:5560 template=EL-dfdf56f9
+                    [TEXT] #639:5561 template=EL-ec8faef9
+                [RECTANGLE] "::after" #639:5562 template=EL-edf6bf25
+              [FRAME] "li" #639:5563 template=EL-c094fdcc
+                [FRAME] "span" #639:5564 template=EL-ffe270c4
+                  [IMAGE-SVG] "Frame" #639:5565 template=EL-f652840d
+                [FRAME] "div" #639:5567 template=EL-8a275127
+                  [FRAME] "b" #639:5568 template=EL-dfdf56f9
+                    [TEXT] #639:5569 template=EL-a068a510
+                  [FRAME] "p" #639:5570 template=EL-dfdf56f9
+                    [TEXT] #639:5571 template=EL-45e04d6d
+                [RECTANGLE] "::after" #639:5572 template=EL-7d0fde56
+              [FRAME] "li" #639:5573 template=EL-c094fdcc
+                [FRAME] "span" #639:5574 template=EL-ffe270c4
+                  [IMAGE-SVG] "Frame" #639:5575 template=EL-f652840d
+                [FRAME] "div" #639:5577 template=EL-8a275127
+                  [FRAME] "b" #639:5578 template=EL-dfdf56f9
+                    [TEXT] #639:5579 template=EL-ca93649d
+                  [FRAME] "p" #639:5580 template=EL-dfdf56f9
+                    [TEXT] #639:5581 template=EL-5765abfb
+                [RECTANGLE] "::after" #639:5582 template=EL-edf6bf25
+              [FRAME] "li" #639:5583 template=EL-c094fdcc
+                [FRAME] "span" #639:5584 template=EL-ffe270c4
+                  [IMAGE-SVG] "Frame" #639:5585 template=EL-f652840d
+                [FRAME] "div" #639:5587 template=EL-8a275127
+                  [FRAME] "b" #639:5588 template=EL-dfdf56f9
+                    [TEXT] #639:5589 template=EL-6841d038
+                  [FRAME] "p" #639:5590 template=EL-dfdf56f9
+                    [TEXT] #639:5591 template=EL-4b5325bc
+          [FRAME] "details#sd-feat" #639:5592 template=EL-486c6117
+            [FRAME] "summary" #639:5593 template=EL-18c3818a
+              [FRAME] "h2" #639:5594 template=EL-2f9fe287
+                [TEXT] #639:5595 template=EL-33fa42ff
+              [IMAGE-SVG] "Frame" #639:5596 template=EL-a73b2a19
+            [FRAME] "slot#details-content" #639:5598 template=EL-1519dabc
+              [FRAME] "ul.sd-feat" #639:5599 template=EL-627bf71a
+                [FRAME] "li" #639:5600 template=EL-f5d9400b
+                  [IMAGE-SVG] "Frame" #639:5601 template=EL-90fb8aa7
+                  [TEXT] #639:5603 template=EL-9dd6171c
+                [FRAME] "li" #639:5604 template=EL-c8d50cb3
+                  [IMAGE-SVG] "Frame" #639:5605 template=EL-f1890f3e
+                  [TEXT] #639:5607 template=EL-bec108fc
+                [FRAME] "li" #639:5608 template=EL-f5d9400b
+                  [IMAGE-SVG] "Frame" #639:5609 template=EL-90fb8aa7
+                  [TEXT] #639:5611 template=EL-e8ada2e0
+                [FRAME] "li" #639:5612 template=EL-f5d9400b
+                  [IMAGE-SVG] "Frame" #639:5613 template=EL-90fb8aa7
+                  [TEXT] #639:5615 template=EL-eee46e6a
+              [FRAME] "p.sd-small" #639:5616 template=EL-87f6d867
+                [TEXT] #639:5617 template=EL-9e9d254c
+          [FRAME] "div.sd-card" #639:5618 template=EL-66f3f9a1
+            [FRAME] "svg:margin" #639:5619 template=EL-af68c20c
+              [IMAGE-SVG] "Frame" #639:5620 template=EL-d2f5d0a6
+            [FRAME] "div" #639:5622 template=EL-1dea8474
+              [TEXT] #639:5623 template=EL-1e294335
+              [TEXT] #639:5624 template=EL-05a755cf
+    [FRAME] "footer.rg-ftr" #639:5664 template=EL-6a654142
+      [FRAME] "div.rg-wrap" #639:5665 template=EL-579fc026
+        [FRAME] "AeroWing — Explore, Book, Travel" #639:5666 template=EL-c6e77fdb
+        [FRAME] "Footer" #639:5667 template=EL-ed68217c
+          [FRAME] "a" #639:5668 template=EL-ce9ec291
+            [TEXT] #639:5669 template=EL-fb08486d
+          [FRAME] "a" #639:5670 template=EL-ce9ec291
+            [TEXT] #639:5671 template=EL-4c2817a2
+          [FRAME] "a" #639:5672 template=EL-ce9ec291
+            [TEXT] #639:5673 template=EL-8181adf1
+        [FRAME] "p:margin" #639:5674 template=EL-facd5f13
+          [FRAME] "p" #639:5675 template=EL-d19e51ba
+            [TEXT] #639:5676 template=EL-9b0711b2

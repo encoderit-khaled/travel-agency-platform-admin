@@ -1,0 +1,660 @@
+  [FRAME] "Sub Agent Performance" #698:11315 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":53707,"y":838},"dimensions":{"width":1920,"height":2439}} fills="White Catskill White"
+    [FRAME] "div#shell" #698:11316 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2439}}
+      [FRAME] "Agent Portal navigation" #698:11951 template=EL-61ee664d
+        [FRAME] "div.sb-h" #698:11952 template=EL-bcdc03e9
+          [FRAME] "AeroWing Agent Portal — Dashboard" #698:11953 template=EL-280eabfe
+            [FRAME] "AeroWing — Explore, Book, Travel" #698:11954 template=EL-966c7e52
+          [TEXT] #698:11955 template=EL-25cb81a7
+        [FRAME] "Agent Portal sections" #698:11956 template=EL-34ff3f47
+          [FRAME] "a" #698:11957 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11958 template=EL-b1d338df
+            [FRAME] "span" #698:11960 template=EL-2f9fe287
+              [TEXT] #698:11961 template=EL-2811e7df
+          [FRAME] "a" #698:11962 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11963 template=EL-b1d338df
+            [FRAME] "span" #698:11965 template=EL-2f9fe287
+              [TEXT] #698:11966 template=EL-47fd5523
+          [FRAME] "a" #698:11967 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11968 template=EL-b1d338df
+            [FRAME] "span" #698:11970 template=EL-2f9fe287
+              [TEXT] #698:11971 template=EL-4d579255
+          [FRAME] "a" #698:11972 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11973 template=EL-b1d338df
+            [FRAME] "span" #698:11975 template=EL-2f9fe287
+              [TEXT] #698:11976 template=EL-bf3706d3
+          [FRAME] "a" #698:11977 template=EL-d0215df3
+            [IMAGE-SVG] "Frame" #698:11978 template=EL-b1d338df
+            [FRAME] "span" #698:11980 template=EL-2f9fe287
+              [TEXT] #698:11981 template=EL-8d5bf0b1
+          [FRAME] "a" #698:11982 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11983 template=EL-b1d338df
+            [FRAME] "span" #698:11985 template=EL-2f9fe287
+              [TEXT] #698:11986 template=EL-8106c4b8
+          [FRAME] "div.sb-sep:margin" #698:11987 template=EL-6c782aee
+            [RECTANGLE] "div.sb-sep" #698:11988 template=EL-74377f5a
+          [FRAME] "a" #698:11989 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11990 template=EL-b1d338df
+            [FRAME] "span" #698:11992 template=EL-2f9fe287
+              [TEXT] #698:11993 template=EL-1472cd12
+          [FRAME] "a" #698:11994 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:11995 template=EL-b1d338df
+            [FRAME] "span" #698:11997 template=EL-2f9fe287
+              [TEXT] #698:11998 template=EL-93d543dc
+          [FRAME] "a" #698:11999 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:12000 template=EL-b1d338df
+            [FRAME] "span" #698:12002 template=EL-2f9fe287
+              [TEXT] #698:12003 template=EL-44b34f1e
+          [FRAME] "a" #698:12004 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:12005 template=EL-b1d338df
+            [FRAME] "span" #698:12007 template=EL-2f9fe287
+              [TEXT] #698:12008 template=EL-83c4fdf7
+          [FRAME] "a" #698:12009 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:12010 template=EL-b1d338df
+            [FRAME] "span" #698:12012 template=EL-2f9fe287
+              [TEXT] #698:12013 template=EL-dd0042e0
+          [FRAME] "div.sb-sep:margin" #698:12014 template=EL-6c782aee
+            [RECTANGLE] "div.sb-sep" #698:12015 template=EL-74377f5a
+          [FRAME] "a" #698:12016 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:12017 template=EL-b1d338df
+            [FRAME] "span" #698:12019 template=EL-2f9fe287
+              [TEXT] #698:12020 template=EL-944c8723
+          [FRAME] "a" #698:12021 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #698:12022 template=EL-b1d338df
+            [FRAME] "span" #698:12024 template=EL-2f9fe287
+              [TEXT] #698:12025 template=EL-dcd43a44
+        [FRAME] "p.sb-f" #698:12026 template=EL-ab281d22
+          [FRAME] "b" #698:12027 template=EL-e9077466
+            [TEXT] #698:12028 template=EL-a3ec670e
+          [TEXT] #698:12029 template=EL-4574f7fd
+      [FRAME] "MAIN" #698:12031 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2439}}
+        [FRAME] "main#top" #698:12032 template=EL-70ea3e22
+          [FRAME] "div.wrap" #698:12033 template=EL-01f5b3d6
+            [FRAME] "button.lnk:margin:align-flex-start" #698:12034 template=EL-dfdf56f9
+              [FRAME] "button.lnk:margin" #698:12035 template=EL-9522f697
+                [FRAME] "button.lnk" #698:12036 template=EL-1f8f3823
+                  [IMAGE-SVG] "Frame" #698:12037 template=EL-d40fb4e5
+                  [TEXT] #698:12039 template=EL-4ee0596b
+            [FRAME] "div" #698:12040 template=EL-286f649c
+              [FRAME] "section" #698:12041 template=EL-f5593ae4
+                [FRAME] "div.dh-id" #698:12042 template=EL-77ff2c05
+                  [FRAME] "span.dh-av" #698:12043 template=EL-7d18d351
+                    [RECTANGLE] "span.dh-av:shadow" #698:12044 template=EL-a0bccc34
+                    [TEXT] #698:12045 template=EL-6c5d1c0c
+                  [FRAME] "div.dh-t" #698:12046 template=EL-bfbba51a
+                    [FRAME] "p.eyb" #698:12047 template=EL-dfdf56f9
+                      [TEXT] #698:12048 layout=layout_177c5efc fills="Science Blue" textStyle=style_f38e2072 text="Mirpur Desk · M2.2 Sub-agent Performance"
+                    [FRAME] "h1#h-pg" #698:12049 template=EL-dfdf56f9
+                      [TEXT] #698:12050 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_47de102a text="Performance"
+                    [FRAME] "p.ph-s" #698:12051 template=EL-8e6ae22b
+                      [TEXT] #698:12052 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Review booking activity and report data for Mirpur Desk."
+                    [FRAME] "div.dh-m" #698:12053 template=EL-660f39ac
+                      [TEXT] #698:12054 template=EL-23d31d10
+                      [FRAME] "span" #698:12055 template=EL-96116367
+                        [IMAGE-SVG] "Frame" #698:12056 template=EL-62b4d877
+                        [TEXT] #698:12058 template=EL-97a74993
+                      [FRAME] "span.dm-tag" #698:12059 template=EL-5514a8df
+                        [IMAGE-SVG] "Frame" #698:12060 template=EL-62b4d877
+                        [TEXT] #698:12062 template=EL-8340f657
+                [FRAME] "div.dh-a" #698:12063 template=EL-d9efaca1
+                  [FRAME] "button#csv-b" #698:12064 template=EL-6233b9fb
+                    [RECTANGLE] "button#csv-b:shadow" #698:12065 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":145,"height":49}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px
+                    [IMAGE-SVG] "Frame" #698:12066 template=EL-f652840d
+                    [FRAME] "span" #698:12068 template=EL-2a1f700b
+                      [TEXT] #698:12069 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="Export CSV"
+              [FRAME] "Sub-agent sections:margin" #698:12070 template=EL-bf75b076
+                [FRAME] "Sub-agent sections" #698:12071 template=EL-40d5f91d
+                  [FRAME] "a" #698:12072 template=EL-b9e127aa
+                    [IMAGE-SVG] "Frame" #698:12073 template=EL-f1890f3e
+                    [TEXT] #698:12075 template=EL-328ce311
+                  [FRAME] "a" #698:12076 template=EL-b9e127aa
+                    [IMAGE-SVG] "Frame" #698:12077 template=EL-f1890f3e
+                    [TEXT] #698:12079 template=EL-a672646f
+                  [FRAME] "a" #698:12080 template=EL-b9e127aa
+                    [IMAGE-SVG] "Frame" #698:12081 template=EL-f1890f3e
+                    [TEXT] #698:12083 template=EL-7524eb63
+                  [FRAME] "a" #698:12084 template=EL-b9e127aa
+                    [IMAGE-SVG] "Frame" #698:12085 template=EL-f1890f3e
+                    [TEXT] #698:12087 template=EL-64e8625a
+                  [FRAME] "a" #698:12088 template=EL-f76c27c2
+                    [IMAGE-SVG] "Frame" #698:12089 template=EL-f1890f3e
+                    [TEXT] #698:12091 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_53cdfbde text="Performance"
+              [FRAME] "aside" #698:12092 template=EL-6aa68c28
+                [FRAME] "span.kic" #698:12093 template=EL-a080e1c7
+                  [IMAGE-SVG] "Frame" #698:12094 template=EL-b1d338df
+                [FRAME] "div.hn-t" #698:12096 template=EL-3fcf4831
+                  [FRAME] "h2#rv-h" #698:12097 template=EL-e9077466
+                    [TEXT] #698:12098 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_13c2afb3 text="Sub-agent report"
+                  [FRAME] "p" #698:12099 template=EL-e9077466
+                    [TEXT] #698:12100 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="This is the Mirpur Desk report within Skyline Demo Travels Ltd’s Agent Reports. Values are counted from the selected\\nbooking records."
+                [FRAME] "div.hn-a" #698:12101 layout={"mode":"row","wrap":true,"gap":"6px 18.010000228881836px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                  [FRAME] "button.lnk" #698:12102 template=EL-006703e3
+                    [IMAGE-SVG] "Frame" #698:12103 template=EL-d40fb4e5
+                    [TEXT] #698:12105 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="View All Agent Reports"
+                  [FRAME] "button.lnk" #698:12106 template=EL-006703e3
+                    [IMAGE-SVG] "Frame" #698:12107 template=EL-d40fb4e5
+                    [TEXT] #698:12109 template=EL-9452b071
+              [FRAME] "section#c-flt" #698:12110 template=EL-5777b5ba
+                [FRAME] "div.cd-h" #698:12111 template=EL-cefd9a89
+                  [FRAME] "span.kic" #698:12112 template=EL-1aeab6f4
+                    [IMAGE-SVG] "Frame" #698:12113 template=EL-b1d338df
+                  [FRAME] "div.cd-ht" #698:12115 template=EL-51794897
+                    [FRAME] "h2#c-flt-h" #698:12116 template=EL-e9077466
+                      [TEXT] #698:12117 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Report filters"
+                    [FRAME] "p" #698:12118 template=EL-e9077466
+                      [TEXT] #698:12119 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Date, service and status apply to every section below and to the CSV export."
+                  [FRAME] "span.dm-tag" #698:12120 template=EL-5514a8df
+                    [IMAGE-SVG] "Frame" #698:12121 template=EL-62b4d877
+                    [TEXT] #698:12123 template=EL-900b951a
+                [FRAME] "Report filters" #698:12124 layout={"mode":"grid","alignSelf":"stretch","padding":"4px 20px 6px","gridTemplateColumns":"minmax(0,1.30fr) minmax(0,1fr) minmax(0,1fr)","gridTemplateRows":"69.25px","gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":79.25}}
+                  [FRAME] "label.fs-f" #698:12125 template=EL-ebc0d21c
+                    [FRAME] "span" #698:12126 template=EL-e9077466
+                      [TEXT] #698:12127 layout=layout_56d3c81c fills=Comet textStyle=style_c639e4b0 text="Date range"
+                    [FRAME] "span.sel" #698:12128 template=EL-e9077466
+                      [FRAME] "select#f-range" #698:12129 template=EL-ea4531d4
+                        [FRAME] "div" #698:12130 template=EL-51794897
+                          [TEXT] #698:12131 layout=layout_56d3c81c fills=Mirage textStyle=style_325b630c text="All Demo Data"
+                      [IMAGE-SVG] "Frame" #698:12132 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":482.02,"y":16},"dimensions":{"width":16,"height":16}}
+                  [FRAME] "label.fs-f" #698:12134 template=EL-ebc0d21c
+                    [FRAME] "span" #698:12135 template=EL-e9077466
+                      [TEXT] #698:12136 template=EL-60f160e1
+                    [FRAME] "span.sel" #698:12137 template=EL-e9077466
+                      [FRAME] "select#f-svc" #698:12138 template=EL-ea4531d4
+                        [FRAME] "div" #698:12139 template=EL-51794897
+                          [TEXT] #698:12140 template=EL-5e5825d2
+                      [IMAGE-SVG] "Frame" #698:12141 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":364.48,"y":16},"dimensions":{"width":16,"height":16}}
+                  [FRAME] "label.fs-f" #698:12143 template=EL-ebc0d21c
+                    [FRAME] "span" #698:12144 template=EL-e9077466
+                      [TEXT] #698:12145 template=EL-4b8773bb
+                    [FRAME] "span.sel" #698:12146 template=EL-e9077466
+                      [FRAME] "select#f-st" #698:12147 template=EL-ea4531d4
+                        [FRAME] "div" #698:12148 template=EL-51794897
+                          [TEXT] #698:12149 template=EL-5e81e528
+                      [IMAGE-SVG] "Frame" #698:12150 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":363.5,"y":16},"dimensions":{"width":16,"height":16}}
+                [FRAME] "div#cov2" #698:12152 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44.5}} strokes="Athens Gray" strokeWeight="1px 0px 0px"
+                  [IMAGE-SVG] "Frame" #698:12153 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":20,"y":12.75},"dimensions":{"width":16,"height":16}}
+                  [FRAME] "span" #698:12155 layout={"mode":"column","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":44,"y":11}}
+                    [TEXT] #698:12156 layout=layout_177c5efc fills=fill_e7dc66ce textStyle=style_e6a95020 boldWeight=900 text="{ts1}All Demo Data · coverage {/ts1}{ts3}**18 Dec 2026 – 14 Jan 2027**{/ts3}"
+                  [FRAME] "span" #698:12157 layout={"mode":"column","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":1038.98,"y":11}}
+                    [TEXT] #698:12158 layout=layout_177c5efc fills=fill_e7dc66ce textStyle=style_e6a95020 boldWeight=900 text="{ts1}Showing {/ts1}{ts3}**5**{/ts3}{ts1} bookings · 18 Dec 2026 – 14 Jan 2027{/ts1}"
+              [FRAME] "div#rep" #698:12159 template=EL-286f649c
+                [FRAME] "Performance summary" #698:12160 template=EL-f384505a
+                  [FRAME] "article.kpi" #698:12161 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #698:12162 template=EL-998e62e2
+                      [FRAME] "span.kic" #698:12163 template=EL-a080e1c7
+                        [IMAGE-SVG] "Frame" #698:12164 template=EL-b1d338df
+                      [FRAME] "h3:margin" #698:12166 template=EL-a802b208
+                        [TEXT] #698:12167 template=EL-06583c5b
+                    [FRAME] "p.num" #698:12168 template=EL-e9077466
+                      [TEXT] #698:12169 template=EL-2dbd370e
+                    [FRAME] "p" #698:12170 template=EL-e9077466
+                      [TEXT] #698:12171 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="In the selected records"
+                  [FRAME] "article.kpi" #698:12172 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #698:12173 template=EL-998e62e2
+                      [FRAME] "span.kic" #698:12174 template=EL-9e704c57
+                        [IMAGE-SVG] "Frame" #698:12175 template=EL-b1d338df
+                      [FRAME] "h3:margin" #698:12177 layout={"mode":"column","padding":"0px 99.875px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #698:12178 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Confirmed / Ticketed"
+                    [FRAME] "p.num" #698:12179 template=EL-e9077466
+                      [TEXT] #698:12180 template=EL-73a05641
+                    [FRAME] "p" #698:12181 template=EL-e9077466
+                      [TEXT] #698:12182 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="2 Confirmed · 1 Ticketed / Issued"
+                  [FRAME] "article.kpi" #698:12183 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #698:12184 template=EL-998e62e2
+                      [FRAME] "span.kic" #698:12185 template=EL-1aeab6f4
+                        [IMAGE-SVG] "Frame" #698:12186 template=EL-b1d338df
+                      [FRAME] "h3:margin" #698:12188 template=EL-560bd3af
+                        [TEXT] #698:12189 template=EL-439b7f3f
+                    [FRAME] "p.num" #698:12190 template=EL-e9077466
+                      [TEXT] #698:12191 template=EL-92dfc6c3
+                    [FRAME] "p" #698:12192 template=EL-e9077466
+                      [TEXT] #698:12193 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Awaiting confirmation"
+                  [FRAME] "article.kpi" #698:12194 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #698:12195 template=EL-998e62e2
+                      [FRAME] "span.kic" #698:12196 template=EL-9d7acaef
+                        [IMAGE-SVG] "Frame" #698:12197 template=EL-b1d338df
+                      [FRAME] "h3:margin" #698:12199 layout={"mode":"column","padding":"0px 171.75px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #698:12200 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Cancelled"
+                    [FRAME] "p.num" #698:12201 template=EL-e9077466
+                      [TEXT] #698:12202 template=EL-92dfc6c3
+                    [FRAME] "p" #698:12203 template=EL-e9077466
+                      [TEXT] #698:12204 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Shown as status only"
+                [FRAME] "div.rg2" #698:12205 template=EL-f384505a
+                  [FRAME] "section#c-svc" #698:12206 template=EL-a098d0a8
+                    [FRAME] "div.cd-h" #698:12207 template=EL-cefd9a89
+                      [FRAME] "span.kic" #698:12208 template=EL-a080e1c7
+                        [IMAGE-SVG] "Frame" #698:12209 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #698:12211 template=EL-51794897
+                        [FRAME] "h2#c-svc-h" #698:12212 template=EL-e9077466
+                          [TEXT] #698:12213 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Bookings by Service"
+                        [FRAME] "p" #698:12214 template=EL-e9077466
+                          [TEXT] #698:12215 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="All 8 service modules"
+                      [FRAME] "span.mlab" #698:12216 template=EL-9f6a3ee1
+                        [IMAGE-SVG] "Frame" #698:12217 template=EL-62b4d877
+                        [TEXT] #698:12219 template=EL-02528022
+                    [FRAME] "div.cd-b" #698:12220 template=EL-6674105b
+                      [FRAME] "Booking count by service" #698:12221 template=EL-deea1ab0
+                        [FRAME] "li" #698:12222 template=EL-873fa82c
+                          [FRAME] "span" #698:12223 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12224 template=EL-d40fb4e5
+                            [TEXT] #698:12226 template=EL-c84840a3
+                          [IMAGE-SVG] "span" #698:12227 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12229 template=EL-83392991
+                            [TEXT] #698:12230 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12231 template=EL-873fa82c
+                          [FRAME] "span" #698:12232 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12233 template=EL-d40fb4e5
+                            [TEXT] #698:12235 template=EL-9ac6860b
+                          [IMAGE-SVG] "span" #698:12236 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12238 template=EL-83392991
+                            [TEXT] #698:12239 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12240 template=EL-873fa82c
+                          [FRAME] "span" #698:12241 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12242 template=EL-d40fb4e5
+                            [TEXT] #698:12244 template=EL-144c82b1
+                          [IMAGE-SVG] "span" #698:12245 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12247 template=EL-83392991
+                            [TEXT] #698:12248 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12249 template=EL-873fa82c
+                          [FRAME] "span" #698:12250 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12251 template=EL-d40fb4e5
+                            [TEXT] #698:12253 template=EL-8fff9e5d
+                          [IMAGE-SVG] "span" #698:12254 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12256 template=EL-83392991
+                            [TEXT] #698:12257 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12258 template=EL-873fa82c
+                          [FRAME] "span" #698:12259 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12260 template=EL-d40fb4e5
+                            [TEXT] #698:12262 template=EL-5a60e32f
+                          [IMAGE-SVG] "span" #698:12263 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12265 template=EL-83392991
+                            [TEXT] #698:12266 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12267 template=EL-873fa82c
+                          [FRAME] "span" #698:12268 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12269 template=EL-d40fb4e5
+                            [TEXT] #698:12271 layout=layout_177c5efc fills=Comet textStyle=style_94747b76 text="eSIM"
+                          [FRAME] "span" #698:12272 template=EL-9733a75f
+                          [FRAME] "span.num" #698:12273 template=EL-0960575c
+                            [TEXT] #698:12274 template=EL-6e4a87e4
+                        [FRAME] "li" #698:12275 template=EL-873fa82c
+                          [FRAME] "span" #698:12276 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12277 template=EL-d40fb4e5
+                            [TEXT] #698:12279 layout=layout_177c5efc fills=Comet textStyle=style_94747b76 text="Bus / Train"
+                          [FRAME] "span" #698:12280 template=EL-9733a75f
+                          [FRAME] "span.num" #698:12281 template=EL-0960575c
+                            [TEXT] #698:12282 template=EL-6e4a87e4
+                        [FRAME] "li" #698:12283 template=EL-873fa82c
+                          [FRAME] "span" #698:12284 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12285 template=EL-d40fb4e5
+                            [TEXT] #698:12287 layout=layout_177c5efc fills=Comet textStyle=style_94747b76 text="Travel Insurance"
+                          [FRAME] "span" #698:12288 template=EL-9733a75f
+                          [FRAME] "span.num" #698:12289 template=EL-0960575c
+                            [TEXT] #698:12290 template=EL-6e4a87e4
+                  [FRAME] "section#c-st" #698:12291 template=EL-a098d0a8
+                    [FRAME] "div.cd-h" #698:12292 template=EL-cefd9a89
+                      [FRAME] "span.kic" #698:12293 template=EL-9e704c57
+                        [IMAGE-SVG] "Frame" #698:12294 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #698:12296 template=EL-51794897
+                        [FRAME] "h2#c-st-h" #698:12297 template=EL-e9077466
+                          [TEXT] #698:12298 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Bookings by Status"
+                        [FRAME] "p" #698:12299 template=EL-e9077466
+                          [TEXT] #698:12300 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="M8 booking lifecycle"
+                      [FRAME] "span.mlab" #698:12301 template=EL-9f6a3ee1
+                        [IMAGE-SVG] "Frame" #698:12302 template=EL-62b4d877
+                        [TEXT] #698:12304 template=EL-02528022
+                    [FRAME] "div.cd-b" #698:12305 layout={"mode":"column","alignSelf":"stretch","padding":"0px 20px 76.5px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [FRAME] "Booking count by status" #698:12306 template=EL-deea1ab0
+                        [FRAME] "li" #698:12307 template=EL-873fa82c
+                          [FRAME] "span" #698:12308 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12309 template=EL-d40fb4e5
+                            [TEXT] #698:12311 layout=layout_177c5efc fills=Mirage textStyle=style_94747b76 text="Pending"
+                          [IMAGE-SVG] "span.st-pend" #698:12312 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12314 template=EL-83392991
+                            [TEXT] #698:12315 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12316 template=EL-873fa82c
+                          [FRAME] "span" #698:12317 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12318 template=EL-d40fb4e5
+                            [TEXT] #698:12320 layout=layout_177c5efc fills=Mirage textStyle=style_94747b76 text="Confirmed"
+                          [IMAGE-SVG] "span.st-ok" #698:12321 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12323 template=EL-0960575c
+                            [TEXT] #698:12324 layout=layout_177c5efc fills=Mirage textStyle=style_faea599f text="2 bookings"
+                        [FRAME] "li" #698:12325 template=EL-873fa82c
+                          [FRAME] "span" #698:12326 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12327 template=EL-d40fb4e5
+                            [TEXT] #698:12329 layout=layout_177c5efc fills=Mirage textStyle=style_94747b76 text="Ticketed"
+                          [IMAGE-SVG] "span.st-ok" #698:12330 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12332 template=EL-83392991
+                            [TEXT] #698:12333 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12334 template=EL-873fa82c
+                          [FRAME] "span" #698:12335 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12336 template=EL-d40fb4e5
+                            [TEXT] #698:12338 layout=layout_177c5efc fills=Mirage textStyle=style_94747b76 text="Cancelled"
+                          [IMAGE-SVG] "span.st-neu" #698:12339 template=EL-f37e2640
+                          [FRAME] "span.num" #698:12341 template=EL-83392991
+                            [TEXT] #698:12342 template=EL-6ee6d0db
+                        [FRAME] "li" #698:12343 template=EL-873fa82c
+                          [FRAME] "span" #698:12344 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12345 template=EL-d40fb4e5
+                            [TEXT] #698:12347 layout=layout_177c5efc fills=Comet textStyle=style_94747b76 text="Refunded"
+                          [FRAME] "span.st-neu" #698:12348 template=EL-9733a75f
+                          [FRAME] "span.num" #698:12349 template=EL-0960575c
+                            [TEXT] #698:12350 template=EL-6e4a87e4
+                        [FRAME] "li" #698:12351 template=EL-873fa82c
+                          [FRAME] "span" #698:12352 template=EL-1eefef47
+                            [IMAGE-SVG] "Frame" #698:12353 template=EL-d40fb4e5
+                            [TEXT] #698:12355 layout=layout_177c5efc fills=Comet textStyle=style_94747b76 text="Failed"
+                          [FRAME] "span.st-err" #698:12356 template=EL-9733a75f
+                          [FRAME] "span.num" #698:12357 template=EL-0960575c
+                            [TEXT] #698:12358 template=EL-6e4a87e4
+                [FRAME] "div.rg2" #698:12359 template=EL-f384505a
+                  [FRAME] "section#c-sup" #698:12360 template=EL-a098d0a8
+                    [FRAME] "div.cd-h" #698:12361 template=EL-cefd9a89
+                      [FRAME] "span.kic" #698:12362 template=EL-1aeab6f4
+                        [IMAGE-SVG] "Frame" #698:12363 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #698:12365 template=EL-51794897
+                        [FRAME] "h2#c-sup-h" #698:12366 template=EL-e9077466
+                          [TEXT] #698:12367 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Bookings by Supplier"
+                    [FRAME] "div.cd-b" #698:12368 layout={"mode":"column","alignSelf":"stretch","padding":"0px 20px 140.25px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [FRAME] "div" #698:12369 template=EL-51b1abb2
+                        [FRAME] "span.em-ic" #698:12370 layout={"mode":"column","padding":"10px 0px","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":44,"height":44}} fills="Link Water (7:616)" borderRadius=13px
+                          [IMAGE-SVG] "Frame" #698:12371 template=EL-f1b0f0c9
+                        [FRAME] "div" #698:12373 layout={"mode":"column","padding":"0px 47.560001373291016px 0px 0px","gap":"-0.625px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [TEXT] #698:12374 layout=layout_177c5efc fills=Mirage textStyle=style_486af943 text="Supplier data not available"
+                          [TEXT] #698:12375 layout=layout_177c5efc fills=Comet textStyle=style_d5fe13bf text="Supplier information is not included in the current design-\\npreview dataset."
+                  [FRAME] "section#c-perf" #698:12376 template=EL-a098d0a8
+                    [FRAME] "div.cd-h" #698:12377 template=EL-cefd9a89
+                      [FRAME] "span.kic" #698:12378 template=EL-a080e1c7
+                        [IMAGE-SVG] "Frame" #698:12379 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #698:12381 template=EL-51794897
+                        [FRAME] "h2#c-perf-h" #698:12382 template=EL-e9077466
+                          [TEXT] #698:12383 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Sub-agent Performance"
+                        [FRAME] "p" #698:12384 template=EL-e9077466
+                          [TEXT] #698:12385 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Booking-derived operational summary for Mirpur Desk"
+                    [FRAME] "div.cd-b" #698:12386 template=EL-900b4178
+                      [FRAME] "div.pf-g" #698:12387 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(4,minmax(0,1fr))","gridTemplateRows":"70px 86px","gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":166}}
+                        [FRAME] "div" #698:12388 layout={"mode":"column","padding":"12px 14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"},"gridColumn":"1","gridRow":"1"} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                          [FRAME] "small" #698:12389 template=EL-e9077466
+                            [TEXT] #698:12390 template=EL-a631b9df
+                          [FRAME] "b.num" #698:12391 template=EL-e9077466
+                            [TEXT] #698:12392 template=EL-01c0f9cd
+                        [FRAME] "div" #698:12393 layout={"mode":"column","padding":"12px 14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"},"gridColumn":"2","gridRow":"1"} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                          [FRAME] "small" #698:12394 template=EL-e9077466
+                            [TEXT] #698:12395 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Confirmed / Ticketed"
+                          [FRAME] "b.num" #698:12396 template=EL-e9077466
+                            [TEXT] #698:12397 template=EL-ff8fa64b
+                        [FRAME] "div" #698:12398 layout={"mode":"column","padding":"12px 14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"},"gridColumn":"3","gridRow":"1"} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                          [FRAME] "small" #698:12399 template=EL-e9077466
+                            [TEXT] #698:12400 template=EL-a8630901
+                          [FRAME] "b.num" #698:12401 template=EL-e9077466
+                            [TEXT] #698:12402 template=EL-4b11fa93
+                        [FRAME] "div" #698:12403 layout={"mode":"column","padding":"12px 14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"},"gridColumn":"4","gridRow":"1"} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                          [FRAME] "small" #698:12404 template=EL-e9077466
+                            [TEXT] #698:12405 template=EL-782b1fe4
+                          [FRAME] "b.num" #698:12406 template=EL-e9077466
+                            [TEXT] #698:12407 template=EL-4b11fa93
+                        [FRAME] "div" #698:12408 layout={"mode":"column","padding":"12px 14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"},"gridColumn":"1","gridRow":"2"} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                          [FRAME] "small" #698:12409 template=EL-e9077466
+                            [TEXT] #698:12410 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Service Coverage"
+                          [FRAME] "b.num" #698:12411 template=EL-e9077466
+                            [TEXT] #698:12412 layout=layout_56d3c81c fills=Mirage textStyle=style_13c2afb3 text="5 service types\\nused"
+                      [FRAME] "p" #698:12413 template=EL-f96bbce8
+                        [FRAME] "svg:margin" #698:12414 template=EL-59323ff4
+                          [IMAGE-SVG] "Frame" #698:12415 template=EL-494805ba
+                        [TEXT] #698:12417 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Performance values shown here are based on the currently selected booking records."
+                [FRAME] "section#c-act" #698:12418 template=EL-5777b5ba
+                  [FRAME] "div.cd-h" #698:12419 template=EL-cd5d6c82
+                    [FRAME] "span.kic" #698:12420 template=EL-9e704c57
+                      [IMAGE-SVG] "Frame" #698:12421 template=EL-b1d338df
+                    [FRAME] "div.cd-ht" #698:12423 template=EL-51794897
+                      [FRAME] "h2#c-act-h" #698:12424 template=EL-e9077466
+                        [TEXT] #698:12425 template=EL-bf98b0a1
+                      [FRAME] "p" #698:12426 template=EL-e9077466
+                        [TEXT] #698:12427 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="The records behind this report"
+                  [FRAME] "div.bk2" #698:12428 template=EL-7439f5a3
+                    [FRAME] "table.btb" #698:12429 template=EL-e9077466
+                      [FRAME] "tr" #698:12430 template=EL-8a10e53c
+                        [FRAME] "th" #698:12431 layout={"mode":"column","padding":"10px 12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":238.81}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                          [TEXT] #698:12432 template=EL-f0b27634
+                        [FRAME] "th" #698:12433 layout={"mode":"column","padding":"10px 12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":309.64}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                          [TEXT] #698:12434 template=EL-89fb89a4
+                        [FRAME] "th" #698:12435 layout={"mode":"column","padding":"10px 12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":213.84}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                          [TEXT] #698:12436 template=EL-72648ad6
+                        [FRAME] "th" #698:12437 layout={"mode":"column","padding":"10px 12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":159.06}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                          [TEXT] #698:12438 layout=layout_177c5efc fills=Comet textStyle=style_bc0b0020 text="Travel Date"
+                        [FRAME] "th" #698:12439 layout={"mode":"column","padding":"10px 12px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":179.23}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                          [TEXT] #698:12440 template=EL-987632e2
+                        [RECTANGLE] "th.act" #698:12441 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":241.41,"height":37}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [FRAME] "tbody" #698:12442 template=EL-e9077466
+                        [FRAME] "tr" #698:12443 template=EL-8a10e53c
+                          [FRAME] "td.c-ref" #698:12444 template=EL-086ef37c
+                            [FRAME] "View booking AW-DEMO-FL-001" #698:12445 template=EL-a8345e51
+                              [TEXT] #698:12446 template=EL-7436ab7d
+                          [FRAME] "td.c-cu" #698:12447 template=EL-29a37a3c
+                            [FRAME] "div.cu2" #698:12448 template=EL-e9077466
+                              [FRAME] "b" #698:12449 template=EL-e9077466
+                                [TEXT] #698:12450 template=EL-fca80bed
+                              [FRAME] "small" #698:12451 template=EL-0211da4a
+                                [IMAGE-SVG] "Frame" #698:12452 template=EL-62b4d877
+                                [TEXT] #698:12454 template=EL-aca35aec
+                          [FRAME] "td.c-sv" #698:12455 template=EL-787ddd55
+                            [FRAME] "span" #698:12456 template=EL-d269e0eb
+                              [IMAGE-SVG] "Frame" #698:12457 template=EL-f1890f3e
+                              [TEXT] #698:12459 template=EL-4125a69d
+                          [FRAME] "td.c-dt" #698:12460 template=EL-94071760
+                            [TEXT] #698:12461 template=EL-8ac478d9
+                          [FRAME] "td.c-st" #698:12462 template=EL-72643f80
+                            [FRAME] "span.p-ok" #698:12463 template=EL-4ed5d9a3
+                              [IMAGE-SVG] "Frame" #698:12464 template=EL-522202e5
+                              [TEXT] #698:12466 template=EL-629a2dd8
+                          [FRAME] "td.act" #698:12467 template=EL-93acce1f
+                            [FRAME] "button.btn" #698:12468 template=EL-9682d1c8
+                              [IMAGE-SVG] "Frame" #698:12469 template=EL-d40fb4e5
+                              [FRAME] "span" #698:12471 template=EL-2a1f700b
+                                [TEXT] #698:12472 template=EL-f92368d2
+                        [FRAME] "tr" #698:12473 template=EL-8a10e53c
+                          [FRAME] "td.c-ref" #698:12474 template=EL-086ef37c
+                            [FRAME] "View booking AW-DEMO-HT-002" #698:12475 template=EL-a8345e51
+                              [TEXT] #698:12476 template=EL-aea3eeb3
+                          [FRAME] "td.c-cu" #698:12477 template=EL-29a37a3c
+                            [FRAME] "div.cu2" #698:12478 template=EL-e9077466
+                              [FRAME] "b" #698:12479 template=EL-e9077466
+                                [TEXT] #698:12480 template=EL-0058c4d2
+                              [FRAME] "small" #698:12481 template=EL-0211da4a
+                                [IMAGE-SVG] "Frame" #698:12482 template=EL-62b4d877
+                                [TEXT] #698:12484 template=EL-aca35aec
+                          [FRAME] "td.c-sv" #698:12485 template=EL-787ddd55
+                            [FRAME] "span" #698:12486 template=EL-d269e0eb
+                              [IMAGE-SVG] "Frame" #698:12487 template=EL-f1890f3e
+                              [TEXT] #698:12489 template=EL-ef2c52e4
+                          [FRAME] "td.c-dt" #698:12490 template=EL-94071760
+                            [TEXT] #698:12491 template=EL-a66d5af1
+                          [FRAME] "td.c-st" #698:12492 template=EL-72643f80
+                            [FRAME] "span.p-ok" #698:12493 template=EL-4ed5d9a3
+                              [IMAGE-SVG] "Frame" #698:12494 template=EL-522202e5
+                              [TEXT] #698:12496 template=EL-f0511c3b
+                          [FRAME] "td.act" #698:12497 template=EL-93acce1f
+                            [FRAME] "button.btn" #698:12498 template=EL-9682d1c8
+                              [IMAGE-SVG] "Frame" #698:12499 template=EL-d40fb4e5
+                              [FRAME] "span" #698:12501 template=EL-2a1f700b
+                                [TEXT] #698:12502 template=EL-f92368d2
+                        [FRAME] "tr" #698:12503 template=EL-8a10e53c
+                          [FRAME] "td.c-ref" #698:12504 template=EL-086ef37c
+                            [FRAME] "View booking AW-DEMO-PK-003" #698:12505 template=EL-a8345e51
+                              [TEXT] #698:12506 template=EL-d4149d72
+                          [FRAME] "td.c-cu" #698:12507 template=EL-29a37a3c
+                            [FRAME] "div.cu2" #698:12508 template=EL-e9077466
+                              [FRAME] "b" #698:12509 template=EL-e9077466
+                                [TEXT] #698:12510 template=EL-15dff158
+                              [FRAME] "small" #698:12511 template=EL-0211da4a
+                                [IMAGE-SVG] "Frame" #698:12512 template=EL-62b4d877
+                                [TEXT] #698:12514 template=EL-aca35aec
+                          [FRAME] "td.c-sv" #698:12515 template=EL-787ddd55
+                            [FRAME] "span" #698:12516 template=EL-d269e0eb
+                              [IMAGE-SVG] "Frame" #698:12517 template=EL-f1890f3e
+                              [TEXT] #698:12519 template=EL-9eda488a
+                          [FRAME] "td.c-dt" #698:12520 template=EL-94071760
+                            [TEXT] #698:12521 template=EL-a0757c8d
+                          [FRAME] "td.c-st" #698:12522 template=EL-72643f80
+                            [FRAME] "span.p-ok" #698:12523 template=EL-4ed5d9a3
+                              [IMAGE-SVG] "Frame" #698:12524 template=EL-522202e5
+                              [TEXT] #698:12526 template=EL-f0511c3b
+                          [FRAME] "td.act" #698:12527 template=EL-93acce1f
+                            [FRAME] "button.btn" #698:12528 template=EL-9682d1c8
+                              [IMAGE-SVG] "Frame" #698:12529 template=EL-d40fb4e5
+                              [FRAME] "span" #698:12531 template=EL-2a1f700b
+                                [TEXT] #698:12532 template=EL-f92368d2
+                        [FRAME] "tr" #698:12533 template=EL-8a10e53c
+                          [FRAME] "td.c-ref" #698:12534 template=EL-086ef37c
+                            [FRAME] "View booking AW-DEMO-AC-004" #698:12535 template=EL-a8345e51
+                              [TEXT] #698:12536 template=EL-b8399cb1
+                          [FRAME] "td.c-cu" #698:12537 template=EL-29a37a3c
+                            [FRAME] "div.cu2" #698:12538 template=EL-e9077466
+                              [FRAME] "b" #698:12539 template=EL-e9077466
+                                [TEXT] #698:12540 template=EL-bf579cb0
+                              [FRAME] "small" #698:12541 template=EL-0211da4a
+                                [IMAGE-SVG] "Frame" #698:12542 template=EL-62b4d877
+                                [TEXT] #698:12544 template=EL-aca35aec
+                          [FRAME] "td.c-sv" #698:12545 template=EL-787ddd55
+                            [FRAME] "span" #698:12546 template=EL-d269e0eb
+                              [IMAGE-SVG] "Frame" #698:12547 template=EL-f1890f3e
+                              [TEXT] #698:12549 template=EL-040ae7b8
+                          [FRAME] "td.c-dt" #698:12550 template=EL-94071760
+                            [TEXT] #698:12551 template=EL-36956a56
+                          [FRAME] "td.c-st" #698:12552 template=EL-72643f80
+                            [FRAME] "span.p-pend" #698:12553 template=EL-e021b56f
+                              [IMAGE-SVG] "Frame" #698:12554 template=EL-522202e5
+                              [TEXT] #698:12556 template=EL-70123cfa
+                          [FRAME] "td.act" #698:12557 template=EL-93acce1f
+                            [FRAME] "button.btn" #698:12558 template=EL-9682d1c8
+                              [IMAGE-SVG] "Frame" #698:12559 template=EL-d40fb4e5
+                              [FRAME] "span" #698:12561 template=EL-2a1f700b
+                                [TEXT] #698:12562 template=EL-f92368d2
+                        [FRAME] "tr" #698:12563 template=EL-8a10e53c
+                          [FRAME] "td.c-ref" #698:12564 template=EL-086ef37c
+                            [FRAME] "View booking AW-DEMO-CR-005" #698:12565 template=EL-a8345e51
+                              [TEXT] #698:12566 template=EL-42df5696
+                          [FRAME] "td.c-cu" #698:12567 template=EL-29a37a3c
+                            [FRAME] "div.cu2" #698:12568 template=EL-e9077466
+                              [FRAME] "b" #698:12569 template=EL-e9077466
+                                [TEXT] #698:12570 template=EL-3e79009d
+                              [FRAME] "small" #698:12571 template=EL-0211da4a
+                                [IMAGE-SVG] "Frame" #698:12572 template=EL-62b4d877
+                                [TEXT] #698:12574 template=EL-aca35aec
+                          [FRAME] "td.c-sv" #698:12575 template=EL-787ddd55
+                            [FRAME] "span" #698:12576 template=EL-d269e0eb
+                              [IMAGE-SVG] "Frame" #698:12577 template=EL-f1890f3e
+                              [TEXT] #698:12579 template=EL-ecdef8b7
+                          [FRAME] "td.c-dt" #698:12580 template=EL-94071760
+                            [TEXT] #698:12581 template=EL-75d1a9e5
+                          [FRAME] "td.c-st" #698:12582 template=EL-72643f80
+                            [FRAME] "span.p-neu" #698:12583 template=EL-885c7133
+                              [IMAGE-SVG] "Frame" #698:12584 template=EL-522202e5
+                              [TEXT] #698:12586 template=EL-095449bc
+                          [FRAME] "td.act" #698:12587 template=EL-93acce1f
+                            [FRAME] "button.btn" #698:12588 template=EL-9682d1c8
+                              [IMAGE-SVG] "Frame" #698:12589 template=EL-d40fb4e5
+                              [FRAME] "span" #698:12591 template=EL-2a1f700b
+                                [TEXT] #698:12592 template=EL-f92368d2
+                  [FRAME] "div.cd-f" #698:12593 layout={"mode":"row","alignSelf":"stretch","padding":"12px 1101.9100341796875px 14px 12px","alignItems":"center","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes="Athens Gray" strokeWeight="1px 0px 0px"
+                    [FRAME] "button.lnk" #698:12594 template=EL-006703e3
+                      [TEXT] #698:12595 template=EL-9452b071
+                      [IMAGE-SVG] "Frame" #698:12596 template=EL-d40fb4e5
+              [FRAME] "section#c-fin" #698:12598 template=EL-5777b5ba
+                [FRAME] "div.cd-h" #698:12599 template=EL-cefd9a89
+                  [FRAME] "span.kic" #698:12600 template=EL-9d7acaef
+                    [IMAGE-SVG] "Frame" #698:12601 template=EL-b1d338df
+                  [FRAME] "div.cd-ht" #698:12603 template=EL-51794897
+                    [FRAME] "h2#c-fin-h" #698:12604 template=EL-e9077466
+                      [TEXT] #698:12605 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Financial Summary"
+                    [FRAME] "p" #698:12606 template=EL-e9077466
+                      [TEXT] #698:12607 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Sales, commission, wallet and credit report availability"
+                [FRAME] "div.cd-b" #698:12608 template=EL-900b4178
+                  [FRAME] "div.fin" #698:12609 layout={"mode":"row","alignSelf":"stretch","justifyContent":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                    [FRAME] "article#fc-sales" #698:12610 template=EL-8ebcda0b
+                      [FRAME] "h3" #698:12611 template=EL-c8d50cb3
+                        [IMAGE-SVG] "Frame" #698:12612 template=EL-d40fb4e5
+                        [TEXT] #698:12614 layout=layout_177c5efc fills=Comet textStyle=style_c967ff2b text="Sales"
+                      [FRAME] "p" #698:12615 template=EL-e9077466
+                        [TEXT] #698:12616 template=EL-d218455d
+                      [FRAME] "p" #698:12617 template=EL-e9077466
+                        [TEXT] #698:12618 layout=layout_56d3c81c fills=Comet textStyle=style_3b3a479f text="Booking amount data is not included in this\\ndesign-preview dataset."
+                    [FRAME] "article#fc-comm" #698:12619 template=EL-8ebcda0b
+                      [FRAME] "h3" #698:12620 template=EL-c8d50cb3
+                        [IMAGE-SVG] "Frame" #698:12621 template=EL-d40fb4e5
+                        [TEXT] #698:12623 layout=layout_177c5efc fills=Comet textStyle=style_c967ff2b text="Commissions"
+                      [FRAME] "p" #698:12624 template=EL-e9077466
+                        [TEXT] #698:12625 template=EL-d218455d
+                      [FRAME] "p" #698:12626 template=EL-e9077466
+                        [TEXT] #698:12627 layout=layout_56d3c81c fills=Comet textStyle=style_3b3a479f text="Commission amounts depend on configured\\ncommission rules and booking financial data."
+                    [FRAME] "article#fc-wal" #698:12628 template=EL-0c40681e
+                      [FRAME] "h3" #698:12629 template=EL-c8d50cb3
+                        [IMAGE-SVG] "Frame" #698:12630 template=EL-d40fb4e5
+                        [TEXT] #698:12632 layout=layout_177c5efc fills=Comet textStyle=style_c967ff2b text="Wallet Summary"
+                      [FRAME] "p" #698:12633 template=EL-e9077466
+                        [TEXT] #698:12634 template=EL-914aa3c5
+                      [FRAME] "p" #698:12635 template=EL-e9077466
+                        [TEXT] #698:12636 layout=layout_56d3c81c fills=Comet textStyle=style_3b3a479f text="Mirpur Desk bookings settle against Skyline\\nDemo Travels Ltd’s wallet."
+                      [FRAME] "button.lnk:margin:align-flex-start" #698:12637 layout={"mode":"column","padding":"0px 198.55999755859375px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":292.5,"height":34}}
+                        [FRAME] "button.lnk:margin" #698:12638 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fill"},"dimensions":{"width":92.94}}
+                          [FRAME] "button.lnk" #698:12639 template=EL-298624ce
+                            [TEXT] #698:12640 layout=layout_177c5efc fills="Science Blue" textStyle=style_f4ba76f7 text="View Wallet"
+                            [IMAGE-SVG] "Frame" #698:12641 template=EL-d40fb4e5
+                    [FRAME] "article#fc-cred" #698:12643 template=EL-0c40681e
+                      [FRAME] "h3" #698:12644 template=EL-c8d50cb3
+                        [IMAGE-SVG] "Frame" #698:12645 template=EL-d40fb4e5
+                        [TEXT] #698:12647 layout=layout_177c5efc fills=Comet textStyle=style_c967ff2b text="Credit Summary"
+                      [FRAME] "p" #698:12648 template=EL-e9077466
+                        [TEXT] #698:12649 template=EL-914aa3c5
+                      [FRAME] "p" #698:12650 template=EL-e9077466
+                        [TEXT] #698:12651 layout=layout_56d3c81c fills=Comet textStyle=style_3b3a479f text="Available credit is managed under Skyline Demo\\nTravels Ltd."
+                      [FRAME] "button.lnk:margin:align-flex-start" #698:12652 layout={"mode":"column","padding":"0px 198.8000030517578px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":292.5,"height":34}}
+                        [FRAME] "button.lnk:margin" #698:12653 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fill"},"dimensions":{"width":92.7}}
+                          [FRAME] "button.lnk" #698:12654 template=EL-298624ce
+                            [TEXT] #698:12655 layout=layout_177c5efc fills="Science Blue" textStyle=style_f4ba76f7 text="View Credit"
+                            [IMAGE-SVG] "Frame" #698:12656 template=EL-d40fb4e5
+                  [FRAME] "p" #698:12658 template=EL-f96bbce8
+                    [FRAME] "svg:margin" #698:12659 template=EL-59323ff4
+                      [IMAGE-SVG] "Frame" #698:12660 template=EL-494805ba
+                    [TEXT] #698:12662 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Financial reports will use real booking amounts and financial ledgers when those modules are connected. Nothing here is estimated from booking counts."
+              [FRAME] "p" #698:12663 template=EL-f96bbce8
+                [FRAME] "svg:margin" #698:12664 template=EL-59323ff4
+                  [IMAGE-SVG] "Frame" #698:12665 template=EL-494805ba
+                [TEXT] #698:12667 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Agent Statements \\(M2.10\\) and Commission Tracking \\(M2.9\\) are separate screens. This page is the Sub-agent performance report only."
+        [FRAME] "footer" #698:12668 layout={"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":2392},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+          [FRAME] "span" #698:12669 template=EL-2a66e910
+            [TEXT] #698:12670 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="AeroWing Agent Portal · M2.2 Sub-agent Hierarchy + M2.12 Agent Reports · Sub-agent Performance"
+          [FRAME] "span" #698:12671 template=EL-2a66e910
+            [TEXT] #698:12672 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="Website only · design prototype — no analytics, financial or export service is called."
+        [FRAME] "header" #698:12673 template=EL-e7e947f7
+          [FRAME] "Collapse navigation" #698:12674 template=EL-308cdf1b
+            [IMAGE-SVG] "Frame" #698:12675 template=EL-a73b2a19
+          [FRAME] "Breadcrumb" #698:12677 template=EL-51794897
+            [FRAME] "ol" #698:12678 template=EL-0211da4a
+              [FRAME] "li" #698:12679 template=EL-2f9fe287
+                [TEXT] #698:12680 template=EL-7c5b051c
+              [FRAME] "li" #698:12681 template=EL-fc963d7f
+                [TEXT] #698:12682 template=EL-07d54cf7
+                [TEXT] #698:12683 template=EL-2b958c34
+              [FRAME] "li" #698:12684 template=EL-80d942af
+                [TEXT] #698:12685 template=EL-07d54cf7
+                [TEXT] #698:12686 template=EL-a3375e52
+              [FRAME] "li" #698:12687 template=EL-59babb83
+                [TEXT] #698:12688 template=EL-f250b41d
+                [TEXT] #698:12689 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Performance"
+          [FRAME] "form#tb-s" #698:12690 template=EL-a4a2fb03
+            [FRAME] "input#tb-q" #698:12691 template=EL-bcaab4e4
+              [IMAGE-SVG] "Frame" #698:12692 template=EL-f1890f3e
+              [FRAME] "div#placeholder" #698:12694 template=EL-a8ef7fa3
+                [TEXT] #698:12695 template=EL-c12bf1ac
+          [FRAME] "div.pop-w" #698:12696 template=EL-2f9fe287
+            [FRAME] "Notifications" #698:12697 template=EL-308cdf1b
+              [IMAGE-SVG] "Frame" #698:12698 template=EL-a73b2a19
+          [FRAME] "div.pop-w" #698:12700 template=EL-2f9fe287
+            [FRAME] "button menu#pf-btn" #698:12701 template=EL-73541ea2
+              [FRAME] "span#pf-av" #698:12702 template=EL-97ad2434
+                [TEXT] #698:12703 template=EL-790ada40
+              [FRAME] "span.tb-avt" #698:12704 template=EL-6e7b525c
+                [FRAME] "b#pf-biz" #698:12705 template=EL-dfdf56f9
+                  [TEXT] #698:12706 template=EL-084e24f6
+                [FRAME] "small#pf-usr" #698:12707 template=EL-dfdf56f9
+                  [TEXT] #698:12708 template=EL-42f6826b
+              [IMAGE-SVG] "Frame" #698:12709 template=EL-d40fb4e5

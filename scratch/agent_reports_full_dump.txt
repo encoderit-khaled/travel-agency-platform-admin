@@ -1,0 +1,391 @@
+22018:   [FRAME] "Agent Reports - Overview" #821:920 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":53531,"y":3875},"dimensions":{"width":1920,"height":1262}} fills="White Catskill White"
+22019:     [FRAME] "div#shell" #821:921 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1262}}
+22020:       [FRAME] "Agent Portal navigation" #821:1447 template=EL-84ca712f
+22021:         [FRAME] "div.sb-h" #821:1448 template=EL-5a59422e
+22022:           [FRAME] "AeroWing Admin — Dashboard" #821:1449 template=EL-280eabfe
+22023:             [FRAME] "AeroWing — Explore, Book, Travel" #821:1450 template=EL-966c7e52
+22024:           [TEXT] #821:1451 template=EL-25cb81a7
+22025:         [FRAME] "Agent Portal sections" #821:1452 template=EL-34ff3f47
+22026:           [FRAME] "a" #821:1453 template=EL-419d61b5
+22027:             [IMAGE-SVG] "Frame" #821:1454 template=EL-b1d338df
+22028:             [FRAME] "span" #821:1456 template=EL-2f9fe287
+22029:               [TEXT] #821:1457 template=EL-2811e7df
+22030:           [FRAME] "a" #821:1458 template=EL-419d61b5
+22031:             [IMAGE-SVG] "Frame" #821:1459 template=EL-b1d338df
+22032:             [FRAME] "span" #821:1461 template=EL-2f9fe287
+22033:               [TEXT] #821:1462 template=EL-47fd5523
+22034:           [FRAME] "a" #821:1463 template=EL-419d61b5
+22035:             [IMAGE-SVG] "Frame" #821:1464 template=EL-b1d338df
+22036:             [FRAME] "span" #821:1466 template=EL-2f9fe287
+22037:               [TEXT] #821:1467 template=EL-4d579255
+22038:           [FRAME] "a" #821:1468 template=EL-419d61b5
+22039:             [IMAGE-SVG] "Frame" #821:1469 template=EL-b1d338df
+22040:             [FRAME] "span" #821:1471 template=EL-2f9fe287
+22041:               [TEXT] #821:1472 template=EL-bf3706d3
+22042:           [FRAME] "a" #821:1473 template=EL-419d61b5
+22043:             [IMAGE-SVG] "Frame" #821:1474 template=EL-b1d338df
+22044:             [FRAME] "span" #821:1476 template=EL-2f9fe287
+22045:               [TEXT] #821:1477 template=EL-e7176502
+22046:           [FRAME] "a" #821:1478 template=EL-419d61b5
+22047:             [IMAGE-SVG] "Frame" #821:1479 template=EL-b1d338df
+22048:             [FRAME] "span" #821:1481 template=EL-2f9fe287
+22049:               [TEXT] #821:1482 template=EL-8106c4b8
+22050:           [FRAME] "div.sb-sep:margin" #821:1483 template=EL-6c782aee
+22051:             [RECTANGLE] "div.sb-sep" #821:1484 template=EL-74377f5a
+22052:           [FRAME] "a" #821:1485 template=EL-419d61b5
+22053:             [IMAGE-SVG] "Frame" #821:1486 template=EL-b1d338df
+22054:             [FRAME] "span" #821:1488 template=EL-2f9fe287
+22055:               [TEXT] #821:1489 template=EL-1472cd12
+22056:           [FRAME] "a" #821:1490 template=EL-419d61b5
+22057:             [IMAGE-SVG] "Frame" #821:1491 template=EL-b1d338df
+22058:             [FRAME] "span" #821:1493 template=EL-2f9fe287
+22059:               [TEXT] #821:1494 template=EL-93d543dc
+22060:           [FRAME] "a" #821:1495 template=EL-419d61b5
+22061:             [IMAGE-SVG] "Frame" #821:1496 template=EL-b1d338df
+22062:             [FRAME] "span" #821:1498 template=EL-2f9fe287
+22063:               [TEXT] #821:1499 template=EL-44b34f1e
+22064:           [FRAME] "a" #821:1500 template=EL-419d61b5
+22065:             [IMAGE-SVG] "Frame" #821:1501 template=EL-b1d338df
+22066:             [FRAME] "span" #821:1503 template=EL-2f9fe287
+22067:               [TEXT] #821:1504 template=EL-83c4fdf7
+22068:           [FRAME] "a" #821:1505 template=EL-d0215df3
+22069:             [IMAGE-SVG] "Frame" #821:1506 template=EL-b1d338df
+22070:             [FRAME] "span" #821:1508 template=EL-2f9fe287
+22071:               [TEXT] #821:1509 layout=layout_177c5efc fills=White textStyle=style_5b7c52cb text="Reports"
+22072:           [FRAME] "div.sb-sep:margin" #821:1510 template=EL-6c782aee
+22073:             [RECTANGLE] "div.sb-sep" #821:1511 template=EL-74377f5a
+22074:           [FRAME] "a" #821:1512 template=EL-419d61b5
+22075:             [IMAGE-SVG] "Frame" #821:1513 template=EL-b1d338df
+22076:             [FRAME] "span" #821:1515 template=EL-2f9fe287
+22077:               [TEXT] #821:1516 template=EL-944c8723
+22078:           [FRAME] "a" #821:1517 template=EL-419d61b5
+22079:             [IMAGE-SVG] "Frame" #821:1518 template=EL-b1d338df
+22080:             [FRAME] "span" #821:1520 template=EL-2f9fe287
+22081:               [TEXT] #821:1521 template=EL-dcd43a44
+22082:         [FRAME] "p.sb-f" #821:1522 template=EL-ab281d22
+22083:           [FRAME] "b" #821:1523 template=EL-e9077466
+22084:             [TEXT] #821:1524 template=EL-a3ec670e
+22085:           [TEXT] #821:1525 layout=layout_177c5efc fills="Rock Blue" textStyle="Manrope/Bold (7:5795)" text="M2.12 Reports"
+22086:       [FRAME] "MAIN" #821:1547 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1262.25}}
+22087:         [FRAME] "main#top" #821:1548 template=EL-265f1e74
+22088:           [FRAME] "div" #821:1549 template=EL-286f649c
+22089:             [FRAME] "section" #821:1550 template=EL-a656df9e
+22090:               [FRAME] "div.ph-t" #821:1551 template=EL-12a11ae8
+22091:                 [FRAME] "p.eyb" #821:1552 template=EL-e9077466
+22092:                   [TEXT] #821:1553 layout=layout_56d3c81c fills="Science Blue" textStyle=style_f38e2072 text="Agent Portal · M2.12 Agent Reports"
+22093:                 [FRAME] "h1#h-pg" #821:1554 template=EL-e9077466
+22094:                   [TEXT] #821:1555 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_47de102a text="Agent Reports"
+22095:                 [FRAME] "p.ph-s" #821:1556 template=EL-33f6f1ad
+22096:                   [TEXT] #821:1557 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Review sales, booking, commission, wallet, credit and Sub-agent performance for your\\nAgent account."
+22097:                 [FRAME] "p.ph-biz" #821:1558 template=EL-ccd54d18
+22098:                   [FRAME] "b" #821:1559 template=EL-2f9fe287
+22099:                     [TEXT] #821:1560 template=EL-4a9ab66a
+22100:                   [FRAME] "span.dm-tag" #821:1561 template=EL-5514a8df
+22101:                     [IMAGE-SVG] "Frame" #821:1562 template=EL-62b4d877
+22102:                     [TEXT] #821:1564 template=EL-8340f657
+22103:               [FRAME] "div.ph-a3" #821:1565 template=EL-d9efaca1
+22104:                 [FRAME] "button.btn" #821:1566 template=EL-91e5fe2d
+22105:                   [RECTANGLE] "button.btn:shadow" #821:1567 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":158,"height":58}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px
+22106:                   [IMAGE-SVG] "Frame" #821:1568 template=EL-f652840d
+22107:                   [FRAME] "span" #821:1570 template=EL-2a1f700b
+22108:                     [TEXT] #821:1571 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_62559887 text="Export CSV"
+22109:             [FRAME] "section.fbar" #821:1572 template=EL-79125a71
+22110:               [FRAME] "h2#fb-h" #821:1573 template=EL-c8d50cb3
+22111:                 [IMAGE-SVG] "Frame" #821:1574 template=EL-f652840d
+22112:                 [TEXT] #821:1576 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="Report Period & Filters"
+22113:               [FRAME] "form#fform" #821:1577 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(6,minmax(0,1fr))","gridTemplateRows":"44px 65.25px 44px","gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":177.25}}
+22114:                 [FRAME] "Period presets" #821:1578 layout={"mode":"row","alignSelf":"start","wrap":true,"gap":"6px","sizing":{"horizontal":"fill","vertical":"fixed"},"gridColumn":"span 6","dimensions":{"height":44}}
+22115:                   [FRAME] "button" #821:1579 template=EL-41dad5eb
+22116:                     [TEXT] #821:1580 template=EL-d8e27fce
+22117:                   [FRAME] "button" #821:1581 template=EL-41dad5eb
+22118:                     [TEXT] #821:1582 template=EL-957fe223
+22119:                   [FRAME] "button" #821:1583 template=EL-41dad5eb
+22120:                     [TEXT] #821:1584 layout=layout_177c5efc fills=Comet textStyle=style_b297c791 text="Last 30 Days"
+22121:                   [FRAME] "button" #821:1585 template=EL-2bdb6f4b
+22122:                     [TEXT] #821:1586 template=EL-53700f52
+22123:                 [FRAME] "label#r-from-w" #821:1587 template=EL-87be36d4
+22124:                   [FRAME] "span" #821:1588 template=EL-e9077466
+22125:                     [TEXT] #821:1589 template=EL-4ba1a4d2
+22126:                   [FRAME] "input#r-from" #821:1590 template=EL-54791ce1
+22127:                     [FRAME] "div" #821:1591 layout={"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"-2.842170943040401e-14px","sizing":{"horizontal":"fill","vertical":"hug"}}
+22128:                       [FRAME] "div#date-time-edit" #821:1592 template=EL-f676945a
+22129:                         [FRAME] "div" #821:1593 template=EL-2781be54
+22130:                           [TEXT] #821:1594 template=EL-c911be3e
+22131:                           [TEXT] #821:1595 template=EL-9212ea40
+22132:                           [TEXT] #821:1596 template=EL-2d8de92a
+22133:                           [TEXT] #821:1597 template=EL-9212ea40
+22134:                           [TEXT] #821:1598 template=EL-a63d52c6
+22135:                       [FRAME] "div menu#picker" #821:1599 template=EL-63a0d0bd
+22136:                         [IMAGE-SVG] "image" #821:1600 template=EL-56925d9d
+22137:                 [FRAME] "label#r-to-w" #821:1603 template=EL-87be36d4
+22138:                   [FRAME] "span" #821:1604 template=EL-e9077466
+22139:                     [TEXT] #821:1605 template=EL-814b7586
+22140:                   [FRAME] "input#r-to" #821:1606 template=EL-54791ce1
+22141:                     [FRAME] "div" #821:1607 layout={"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"8.526512829121202e-14px","sizing":{"horizontal":"fill","vertical":"hug"}}
+22142:                       [FRAME] "div#date-time-edit" #821:1608 template=EL-f676945a
+22143:                         [FRAME] "div" #821:1609 template=EL-2781be54
+22144:                           [TEXT] #821:1610 template=EL-09af758f
+22145:                           [TEXT] #821:1611 template=EL-9212ea40
+22146:                           [TEXT] #821:1612 template=EL-549499ce
+22147:                           [TEXT] #821:1613 template=EL-9212ea40
+22148:                           [TEXT] #821:1614 template=EL-a63d52c6
+22149:                       [FRAME] "div menu#picker" #821:1615 template=EL-63a0d0bd
+22150:                         [IMAGE-SVG] "image" #821:1616 template=EL-56925d9d
+22151:                 [FRAME] "label.fs-f" #821:1619 template=EL-87be36d4
+22152:                   [FRAME] "span" #821:1620 template=EL-e9077466
+22153:                     [TEXT] #821:1621 template=EL-60f160e1
+22154:                   [FRAME] "span.sel" #821:1622 template=EL-e9077466
+22155:                     [FRAME] "select#r-svc" #821:1623 template=EL-e732bdbe
+22156:                       [FRAME] "div" #821:1624 template=EL-51794897
+22157:                         [TEXT] #821:1625 template=EL-5e5825d2
+22158:                     [IMAGE-SVG] "Frame" #821:1626 template=EL-d20efb33
+22159:                 [FRAME] "label.fs-f" #821:1628 template=EL-87be36d4
+22160:                   [FRAME] "span" #821:1629 template=EL-e9077466
+22161:                     [TEXT] #821:1630 template=EL-f2cf537a
+22162:                   [FRAME] "span.sel" #821:1631 template=EL-e9077466
+22163:                     [FRAME] "select#r-st" #821:1632 template=EL-e732bdbe
+22164:                       [FRAME] "div" #821:1633 template=EL-51794897
+22165:                         [TEXT] #821:1634 template=EL-5e81e528
+22166:                     [IMAGE-SVG] "Frame" #821:1635 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":181.66,"y":14},"dimensions":{"width":16,"height":16}}
+22167:                 [FRAME] "label.fs-f" #821:1637 template=EL-87be36d4
+22168:                   [FRAME] "span" #821:1638 template=EL-e9077466
+22169:                     [TEXT] #821:1639 template=EL-06eaf3c0
+22170:                   [FRAME] "span.sel" #821:1640 template=EL-e9077466
+22171:                     [FRAME] "select#r-by" #821:1641 template=EL-e732bdbe
+22172:                       [FRAME] "div" #821:1642 template=EL-51794897
+22173:                         [TEXT] #821:1643 template=EL-38e7ccdb
+22174:                     [IMAGE-SVG] "Frame" #821:1644 template=EL-d20efb33
+22175:                 [FRAME] "label.fs-f" #821:1646 template=EL-87be36d4
+22176:                   [FRAME] "span" #821:1647 template=EL-e9077466
+22177:                     [TEXT] #821:1648 template=EL-0e3c7db8
+22178:                   [FRAME] "span.sel" #821:1649 template=EL-e9077466
+22179:                     [FRAME] "select#r-sup" #821:1650 layout=layout_424d85a2 fills="Catskill White (7:11)" strokes=Geyser strokeWeight=1px opacity=0.699999988079071 borderRadius=12px
+22180:                       [FRAME] "div" #821:1651 template=EL-51794897
+22181:                         [TEXT] #821:1652 template=EL-db81dbe1
+22182:                     [IMAGE-SVG] "Frame" #821:1653 template=EL-d20efb33
+22183:                 [FRAME] "div.fa2" #821:1655 layout={"mode":"row","alignSelf":"start","alignItems":"center","wrap":true,"gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"},"gridColumn":"span 6","dimensions":{"height":44}}
+22184:                   [FRAME] "button.btn" #821:1656 template=EL-6233b9fb
+22185:                     [RECTANGLE] "button.btn:shadow" #821:1657 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":105,"height":49}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px
+22186:                     [IMAGE-SVG] "Frame" #821:1658 template=EL-f652840d
+22187:                     [FRAME] "span" #821:1660 template=EL-2a1f700b
+22188:                       [TEXT] #821:1661 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="Apply"
+22189:                   [FRAME] "span.act-f" #821:1662 template=EL-2f9fe287
+22190:                     [TEXT] #821:1663 layout=layout_177c5efc fills=Comet textStyle=style_c80e55f1 text="Applied: 01 Oct 2026 – 16 Nov 2026 · No additional filters"
+22191:             [FRAME] "Report sections" #821:1664 template=EL-7b4e2fc3
+22192:               [FRAME] "button#t-ov" #821:1665 template=EL-177ef00a
+22193:                 [IMAGE-SVG] "Frame" #821:1666 template=EL-f1890f3e
+22194:                 [TEXT] #821:1668 template=EL-24439bda
+22195:                 [RECTANGLE] "::after" #821:1669 template=EL-c557a8b8
+22196:               [FRAME] "button#t-sales" #821:1670 template=EL-177ef00a
+22197:                 [IMAGE-SVG] "Frame" #821:1671 template=EL-f1890f3e
+22198:                 [TEXT] #821:1673 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Sales"
+22199:               [FRAME] "button#t-bk" #821:1674 template=EL-177ef00a
+22200:                 [IMAGE-SVG] "Frame" #821:1675 template=EL-f1890f3e
+22201:                 [TEXT] #821:1677 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Bookings"
+22202:               [FRAME] "button#t-cm" #821:1678 template=EL-177ef00a
+22203:                 [IMAGE-SVG] "Frame" #821:1679 template=EL-f1890f3e
+22204:                 [TEXT] #821:1681 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Commissions"
+22205:               [FRAME] "button#t-wc" #821:1682 template=EL-177ef00a
+22206:                 [IMAGE-SVG] "Frame" #821:1683 template=EL-f1890f3e
+22207:                 [TEXT] #821:1685 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Wallet & Credit"
+22208:               [FRAME] "button#t-sa" #821:1686 template=EL-177ef00a
+22209:                 [IMAGE-SVG] "Frame" #821:1687 template=EL-f1890f3e
+22210:                 [TEXT] #821:1689 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Sub-agent Performance"
+22211:             [FRAME] "div#p-ov" #821:1690 template=EL-286f649c
+22212:               [FRAME] "Report summary" #821:1691 layout={"mode":"row","alignSelf":"stretch","gap":"16px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":162}}
+22213:                 [FRAME] "article.kpi" #821:1692 layout={"mode":"column","padding":"18px 20px 40px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes="Mystic (7:34)" strokeWeight=1px effects=effect_96562f89 borderRadius=18px
+22214:                   [FRAME] "div.kpi-h" #821:1693 template=EL-998e62e2
+22215:                     [FRAME] "span.kic" #821:1694 template=EL-a080e1c7
+22216:                       [IMAGE-SVG] "Frame" #821:1695 template=EL-b1d338df
+22217:                     [FRAME] "h3:margin" #821:1697 layout={"mode":"column","padding":"0px 59.46879959106445px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+22218:                       [TEXT] #821:1698 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Booking Volume"
+22219:                   [FRAME] "p" #821:1699 template=EL-e9077466
+22220:                     [TEXT] #821:1700 layout=layout_56d3c81c fills=Mirage textStyle=style_cb910fc6 text="12 bookings"
+22221:                   [FRAME] "p" #821:1701 template=EL-e9077466
+22222:                     [TEXT] #821:1702 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="In the applied period and filters"
+22223:                 [FRAME] "article.kpi" #821:1703 template=EL-b882237b
+22224:                   [FRAME] "div.kpi-h" #821:1704 template=EL-998e62e2
+22225:                     [FRAME] "span.kic" #821:1705 template=EL-9e704c57
+22226:                       [IMAGE-SVG] "Frame" #821:1706 template=EL-b1d338df
+22227:                     [FRAME] "h3:margin" #821:1708 layout={"mode":"column","padding":"0px 78.2031021118164px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+22228:                       [TEXT] #821:1709 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Sales Activity"
+22229:                   [FRAME] "p" #821:1710 template=EL-e9077466
+22230:                     [TEXT] #821:1711 layout=layout_56d3c81c fills=Mirage textStyle=style_cb910fc6 text="Sales activity available"
+22231:                   [FRAME] "p" #821:1712 template=EL-e9077466
+22232:                     [TEXT] #821:1713 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Sales values not included in\\nsample data"
+22233:                 [FRAME] "article.kpi" #821:1714 template=EL-c00459ae
+22234:                   [FRAME] "div.kpi-h" #821:1715 template=EL-998e62e2
+22235:                     [FRAME] "span.kic" #821:1716 template=EL-9d7acaef
+22236:                       [IMAGE-SVG] "Frame" #821:1717 template=EL-b1d338df
+22237:                     [FRAME] "h3:margin" #821:1719 layout={"mode":"column","padding":"0px 30.8125px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+22238:                       [TEXT] #821:1720 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Commission Activity"
+22239:                   [FRAME] "p" #821:1721 template=EL-e9077466
+22240:                     [TEXT] #821:1722 layout=layout_56d3c81c fills=Mirage textStyle=style_cb910fc6 text="Commission activity\\navailable"
+22241:                   [FRAME] "p" #821:1723 template=EL-e9077466
+22242:                     [TEXT] #821:1724 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="3 active · 2 reversed"
+22243:                 [FRAME] "article.kpi" #821:1725 layout={"mode":"column","padding":"18px 20px 15px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes="Mystic (7:34)" strokeWeight=1px effects=effect_96562f89 borderRadius=18px
+22244:                   [FRAME] "div.kpi-h" #821:1726 template=EL-998e62e2
+22245:                     [FRAME] "span.kic" #821:1727 template=EL-1aeab6f4
+22246:                       [IMAGE-SVG] "Frame" #821:1728 template=EL-b1d338df
+22247:                     [FRAME] "h3:margin" #821:1730 layout={"mode":"column","padding":"0px 29.593799591064453px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+22248:                       [TEXT] #821:1731 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Wallet / Credit Status"
+22249:                   [FRAME] "p" #821:1732 template=EL-e9077466
+22250:                     [TEXT] #821:1733 layout=layout_56d3c81c fills=Mirage textStyle=style_cb910fc6 text="Wallet activity available"
+22251:                   [FRAME] "p" #821:1734 template=EL-e9077466
+22252:                     [TEXT] #821:1735 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Credit usage available"
+22253:                 [FRAME] "article.kpi" #821:1736 template=EL-b882237b
+22254:                   [FRAME] "div.kpi-h" #821:1737 template=EL-998e62e2
+22255:                     [FRAME] "span.kic" #821:1738 template=EL-a080e1c7
+22256:                       [IMAGE-SVG] "Frame" #821:1739 template=EL-b1d338df
+22257:                     [FRAME] "h3:margin" #821:1741 layout={"mode":"column","padding":"0px 47.39059829711914px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+22258:                       [TEXT] #821:1742 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Active Sub-agents"
+22259:                   [FRAME] "p" #821:1743 template=EL-e9077466
+22260:                     [TEXT] #821:1744 layout=layout_56d3c81c fills=Mirage textStyle=style_cb910fc6 text="3 of 5"
+22261:                   [FRAME] "p" #821:1745 template=EL-e9077466
+22262:                     [TEXT] #821:1746 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Sub-agents with bookings in the\\nperiod"
+22263:               [FRAME] "div.areas" #821:1747 layout={"mode":"row","alignSelf":"stretch","wrap":true,"gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":327}}
+22264:                 [FRAME] "article.area" #821:1748 template=EL-efeff825
+22265:                   [FRAME] "span" #821:1749 template=EL-545aedd9
+22266:                     [FRAME] "span.kic" #821:1750 template=EL-4a346552
+22267:                       [IMAGE-SVG] "Frame" #821:1751 template=EL-494805ba
+22268:                     [TEXT] #821:1753 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Sales"
+22269:                   [FRAME] "b" #821:1754 template=EL-a6c160f2
+22270:                     [TEXT] #821:1755 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="Sales activity available"
+22271:                   [FRAME] "p" #821:1756 template=EL-79698c5c
+22272:                     [TEXT] #821:1757 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Reported sales activity for the period"
+22273:                   [FRAME] "button.lnk:margin" #821:1758 template=EL-c10a190e
+22274:                     [FRAME] "button.lnk" #821:1759 template=EL-2c0b947c
+22275:                       [TEXT] #821:1760 template=EL-93f8758f
+22276:                       [IMAGE-SVG] "Frame" #821:1761 template=EL-d40fb4e5
+22277:                 [FRAME] "article.area" #821:1763 template=EL-efeff825
+22278:                   [FRAME] "span" #821:1764 template=EL-545aedd9
+22279:                     [FRAME] "span.kic" #821:1765 template=EL-09b5bd9d
+22280:                       [IMAGE-SVG] "Frame" #821:1766 template=EL-494805ba
+22281:                     [TEXT] #821:1768 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Bookings by Service"
+22282:                   [FRAME] "b" #821:1769 template=EL-a6c160f2
+22283:                     [TEXT] #821:1770 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="8 of 8 services"
+22284:                   [FRAME] "p" #821:1771 template=EL-79698c5c
+22285:                     [TEXT] #821:1772 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Booking count per service module"
+22286:                   [FRAME] "button.lnk:margin" #821:1773 template=EL-c10a190e
+22287:                     [FRAME] "button.lnk" #821:1774 template=EL-2c0b947c
+22288:                       [TEXT] #821:1775 template=EL-93f8758f
+22289:                       [IMAGE-SVG] "Frame" #821:1776 template=EL-d40fb4e5
+22290:                 [FRAME] "article.area" #821:1778 template=EL-efeff825
+22291:                   [FRAME] "span" #821:1779 template=EL-545aedd9
+22292:                     [FRAME] "span.kic" #821:1780 template=EL-59ddad59
+22293:                       [IMAGE-SVG] "Frame" #821:1781 template=EL-494805ba
+22294:                     [TEXT] #821:1783 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Bookings by Supplier"
+22295:                   [FRAME] "b" #821:1784 template=EL-a6c160f2
+22296:                     [TEXT] #821:1785 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="Supplier data unavailable"
+22297:                   [FRAME] "p" #821:1786 template=EL-79698c5c
+22298:                     [TEXT] #821:1787 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Supplier-based booking reporting"
+22299:                   [FRAME] "button.lnk:margin" #821:1788 template=EL-c10a190e
+22300:                     [FRAME] "button.lnk" #821:1789 template=EL-2c0b947c
+22301:                       [TEXT] #821:1790 template=EL-93f8758f
+22302:                       [IMAGE-SVG] "Frame" #821:1791 template=EL-d40fb4e5
+22303:                 [FRAME] "article.area" #821:1793 template=EL-efeff825
+22304:                   [FRAME] "span" #821:1794 template=EL-545aedd9
+22305:                     [FRAME] "span.kic" #821:1795 template=EL-09b5bd9d
+22306:                       [IMAGE-SVG] "Frame" #821:1796 template=EL-494805ba
+22307:                     [TEXT] #821:1798 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Bookings by Status"
+22308:                   [FRAME] "b" #821:1799 template=EL-a6c160f2
+22309:                     [TEXT] #821:1800 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="12 across 7 statuses"
+22310:                   [FRAME] "p" #821:1801 template=EL-79698c5c
+22311:                     [TEXT] #821:1802 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Approved booking lifecycle"
+22312:                   [FRAME] "button.lnk:margin" #821:1803 template=EL-c10a190e
+22313:                     [FRAME] "button.lnk" #821:1804 template=EL-2c0b947c
+22314:                       [TEXT] #821:1805 template=EL-93f8758f
+22315:                       [IMAGE-SVG] "Frame" #821:1806 template=EL-d40fb4e5
+22316:                 [FRAME] "article.area" #821:1808 template=EL-efeff825
+22317:                   [FRAME] "span" #821:1809 template=EL-545aedd9
+22318:                     [FRAME] "span.kic" #821:1810 template=EL-f0cb0953
+22319:                       [IMAGE-SVG] "Frame" #821:1811 template=EL-494805ba
+22320:                     [TEXT] #821:1813 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Commissions"
+22321:                   [FRAME] "b" #821:1814 template=EL-a6c160f2
+22322:                     [TEXT] #821:1815 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="3 active · 2 reversed"
+22323:                   [FRAME] "p" #821:1816 template=EL-79698c5c
+22324:                     [TEXT] #821:1817 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Pending, Earned, Settled"
+22325:                   [FRAME] "button.lnk:margin" #821:1818 template=EL-c10a190e
+22326:                     [FRAME] "button.lnk" #821:1819 template=EL-2c0b947c
+22327:                       [TEXT] #821:1820 template=EL-93f8758f
+22328:                       [IMAGE-SVG] "Frame" #821:1821 template=EL-d40fb4e5
+22329:                 [FRAME] "article.area" #821:1823 template=EL-efeff825
+22330:                   [FRAME] "span" #821:1824 template=EL-545aedd9
+22331:                     [FRAME] "span.kic" #821:1825 template=EL-4a346552
+22332:                       [IMAGE-SVG] "Frame" #821:1826 template=EL-494805ba
+22333:                     [TEXT] #821:1828 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Wallet Summary"
+22334:                   [FRAME] "b" #821:1829 template=EL-a6c160f2
+22335:                     [TEXT] #821:1830 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="10 wallet transactions"
+22336:                   [FRAME] "p" #821:1831 template=EL-79698c5c
+22337:                     [TEXT] #821:1832 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Credits and debits in the period"
+22338:                   [FRAME] "button.lnk:margin" #821:1833 template=EL-c10a190e
+22339:                     [FRAME] "button.lnk" #821:1834 template=EL-2c0b947c
+22340:                       [TEXT] #821:1835 template=EL-93f8758f
+22341:                       [IMAGE-SVG] "Frame" #821:1836 template=EL-d40fb4e5
+22342:                 [FRAME] "article.area" #821:1838 template=EL-efeff825
+22343:                   [FRAME] "span" #821:1839 template=EL-545aedd9
+22344:                     [FRAME] "span.kic" #821:1840 template=EL-59ddad59
+22345:                       [IMAGE-SVG] "Frame" #821:1841 template=EL-494805ba
+22346:                     [TEXT] #821:1843 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Credit Summary"
+22347:                   [FRAME] "b" #821:1844 template=EL-a6c160f2
+22348:                     [TEXT] #821:1845 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="Credit usage available"
+22349:                   [FRAME] "p" #821:1846 template=EL-79698c5c
+22350:                     [TEXT] #821:1847 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="Limit, Used, Available, Outstanding"
+22351:                   [FRAME] "button.lnk:margin" #821:1848 template=EL-c10a190e
+22352:                     [FRAME] "button.lnk" #821:1849 template=EL-2c0b947c
+22353:                       [TEXT] #821:1850 template=EL-93f8758f
+22354:                       [IMAGE-SVG] "Frame" #821:1851 template=EL-d40fb4e5
+22355:                 [FRAME] "article.area" #821:1853 template=EL-efeff825
+22356:                   [FRAME] "span" #821:1854 template=EL-545aedd9
+22357:                     [FRAME] "span.kic" #821:1855 template=EL-09b5bd9d
+22358:                       [IMAGE-SVG] "Frame" #821:1856 template=EL-494805ba
+22359:                     [TEXT] #821:1858 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c967ff2b text="Sub-agent Performance"
+22360:                   [FRAME] "b" #821:1859 template=EL-a6c160f2
+22361:                     [TEXT] #821:1860 layout=layout_177c5efc fills=Mirage textStyle=style_ac8daa02 text="8 Sub-agent bookings"
+22362:                   [FRAME] "p" #821:1861 template=EL-79698c5c
+22363:                     [TEXT] #821:1862 layout=layout_177c5efc fills=Comet textStyle=style_3b3a479f text="3 of 5 Sub-agents active"
+22364:                   [FRAME] "button.lnk:margin" #821:1863 template=EL-c10a190e
+22365:                     [FRAME] "button.lnk" #821:1864 template=EL-2c0b947c
+22366:                       [TEXT] #821:1865 template=EL-93f8758f
+22367:                       [IMAGE-SVG] "Frame" #821:1866 template=EL-d40fb4e5
+22368:               [FRAME] "p.fnote" #821:1868 template=EL-a8e2343c
+22369:                 [FRAME] "svg:margin" #821:1869 template=EL-59323ff4
+22370:                   [IMAGE-SVG] "Frame" #821:1870 template=EL-494805ba
+22371:                 [TEXT] #821:1872 layout=layout_177c5efc fills=Comet textStyle=style_6a8bdf3c text="Agent-level reports for Skyline Demo Travels Ltd and its Sub-agents only. Platform-wide Admin reporting \\(M16\\) is separate."
+22372:         [FRAME] "footer" #821:1873 layout={"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":1215.25},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+22373:           [FRAME] "span" #821:1874 template=EL-2a66e910
+22374:             [TEXT] #821:1875 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="AeroWing Agent Portal · M2.12 Agent Reports · Website"
+22375:           [FRAME] "span" #821:1876 template=EL-2a66e910
+22376:             [TEXT] #821:1877 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="Design prototype — no analytics, accounting, supplier or export service is called."
+22377:         [FRAME] "header" #821:1878 template=EL-e7e947f7
+22378:           [FRAME] "Collapse navigation" #821:1879 template=EL-308cdf1b
+22379:             [IMAGE-SVG] "Frame" #821:1880 template=EL-a73b2a19
+22380:           [FRAME] "Breadcrumb" #821:1882 template=EL-51794897
+22381:             [FRAME] "ol" #821:1883 template=EL-0211da4a
+22382:               [FRAME] "li" #821:1884 template=EL-2a1bfea5
+22383:                 [FRAME] "a" #821:1885 template=EL-2a66e910
+22384:                   [TEXT] #821:1886 template=EL-7c5b051c
+22385:               [FRAME] "li" #821:1887 template=EL-fc963d7f
+22386:                 [TEXT] #821:1888 template=EL-f250b41d
+22387:                 [TEXT] #821:1889 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Reports"
+22388:           [FRAME] "form#tb-s" #821:1890 template=EL-f48bd93e
+22389:             [FRAME] "input#tb-q" #821:1891 template=EL-fdc56343
+22390:               [FRAME] "div#placeholder" #821:1892 template=EL-0b890b82
+22391:                 [TEXT] #821:1893 template=EL-b219f93c
+22392:               [FRAME] "div#text-field-container" #821:1894 template=EL-e6b26f43
+22393:                 [FRAME] "div#editing-view-port" #821:1895 template=EL-541d4b8f
+22394:                 [FRAME] "div#search-clear:margin" #821:1896 template=EL-e5aab63e
+22395:             [IMAGE-SVG] "Frame" #821:1897 template=EL-f744bb1f
+22396:           [FRAME] "div.pop-w" #821:1899 template=EL-2f9fe287
+22397:             [FRAME] "Notifications" #821:1900 template=EL-308cdf1b
+22398:               [IMAGE-SVG] "Frame" #821:1901 template=EL-a73b2a19
+22399:           [FRAME] "div.pop-w" #821:1903 template=EL-2f9fe287
+22400:             [FRAME] "button menu#pf-btn" #821:1904 template=EL-73541ea2
+22401:               [FRAME] "span#pf-av" #821:1905 template=EL-97ad2434
+22402:                 [TEXT] #821:1906 template=EL-790ada40
+22403:               [FRAME] "span.tb-avt" #821:1907 template=EL-6e7b525c
+22404:                 [FRAME] "b#pf-biz" #821:1908 template=EL-dfdf56f9
+22405:                   [TEXT] #821:1909 template=EL-084e24f6
+22406:                 [FRAME] "small#pf-usr" #821:1910 template=EL-dfdf56f9
+22407:                   [TEXT] #821:1911 template=EL-42f6826b
+22408:               [IMAGE-SVG] "Frame" #821:1912 template=EL-d40fb4e5

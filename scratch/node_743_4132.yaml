@@ -1,0 +1,2 @@
+  [FRAME] "New Credit Request - Submit Request" #743:4132 layout={"mode":"column","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":39286,"y":3875},"dimensions":{"width":1920}}
+    [RECTANGLE] "Submit Request 1" #743:4131 layout=layout_fa9366f8 fills=[{"type":"IMAGE","imageRef":"913df489680c7d0902697c07d6e50bf1812ba04b","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]

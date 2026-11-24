@@ -1,0 +1,279 @@
+  [FRAME] "Roles Access - Overview" #835:2262 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":65741,"y":3875},"dimensions":{"width":1920}} fills="White Catskill White"
+    [FRAME] "div#shell" #835:2263 template=EL-d1ac142c
+      [FRAME] "Agent Portal navigation" #835:2264 template=EL-84ca712f
+        [FRAME] "div.sb-h" #835:2579 template=EL-5a59422e
+          [FRAME] "AeroWing Admin — Dashboard" #835:2580 template=EL-280eabfe
+            [FRAME] "AeroWing — Explore, Book, Travel" #835:2581 template=EL-966c7e52
+          [TEXT] #835:2582 template=EL-25cb81a7
+        [FRAME] "Agent Portal sections" #835:2269 template=EL-34ff3f47
+          [FRAME] "a" #835:2270 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2271 template=EL-b1d338df
+            [FRAME] "span" #835:2273 template=EL-2f9fe287
+              [TEXT] #835:2274 template=EL-2811e7df
+          [FRAME] "a" #835:2275 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2276 template=EL-b1d338df
+            [FRAME] "span" #835:2278 template=EL-2f9fe287
+              [TEXT] #835:2279 template=EL-47fd5523
+          [FRAME] "a" #835:2280 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2281 template=EL-b1d338df
+            [FRAME] "span" #835:2283 template=EL-2f9fe287
+              [TEXT] #835:2284 template=EL-4d579255
+          [FRAME] "a" #835:2285 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2286 template=EL-b1d338df
+            [FRAME] "span" #835:2288 template=EL-2f9fe287
+              [TEXT] #835:2289 template=EL-bf3706d3
+          [FRAME] "a" #835:2290 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2291 template=EL-b1d338df
+            [FRAME] "span" #835:2293 template=EL-2f9fe287
+              [TEXT] #835:2294 template=EL-e7176502
+          [FRAME] "a" #835:2295 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2296 template=EL-b1d338df
+            [FRAME] "span" #835:2298 template=EL-2f9fe287
+              [TEXT] #835:2299 template=EL-8106c4b8
+          [FRAME] "div.sb-sep:margin" #835:2300 template=EL-6c782aee
+            [RECTANGLE] "div.sb-sep" #835:2301 template=EL-74377f5a
+          [FRAME] "a" #835:2302 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2303 template=EL-b1d338df
+            [FRAME] "span" #835:2305 template=EL-2f9fe287
+              [TEXT] #835:2306 template=EL-1472cd12
+          [FRAME] "a" #835:2307 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2308 template=EL-b1d338df
+            [FRAME] "span" #835:2310 template=EL-2f9fe287
+              [TEXT] #835:2311 template=EL-93d543dc
+          [FRAME] "a" #835:2312 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2313 template=EL-b1d338df
+            [FRAME] "span" #835:2315 template=EL-2f9fe287
+              [TEXT] #835:2316 template=EL-44b34f1e
+          [FRAME] "a" #835:2317 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2318 template=EL-b1d338df
+            [FRAME] "span" #835:2320 template=EL-2f9fe287
+              [TEXT] #835:2321 template=EL-83c4fdf7
+          [FRAME] "a" #835:2322 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2323 template=EL-b1d338df
+            [FRAME] "span" #835:2325 template=EL-2f9fe287
+              [TEXT] #835:2326 template=EL-dd0042e0
+          [FRAME] "div.sb-sep:margin" #835:2327 template=EL-6c782aee
+            [RECTANGLE] "div.sb-sep" #835:2328 template=EL-74377f5a
+          [FRAME] "a" #835:2329 template=EL-419d61b5
+            [IMAGE-SVG] "Frame" #835:2330 template=EL-b1d338df
+            [FRAME] "span" #835:2332 template=EL-2f9fe287
+              [TEXT] #835:2333 template=EL-944c8723
+          [FRAME] "a" #835:2334 template=EL-d0215df3
+            [IMAGE-SVG] "Frame" #835:2335 template=EL-b1d338df
+            [FRAME] "span" #835:2337 template=EL-2f9fe287
+              [TEXT] #835:2338 layout=layout_177c5efc fills=White textStyle=style_5b7c52cb text="Account / Settings"
+        [FRAME] "p.sb-f" #835:2339 template=EL-ab281d22
+          [FRAME] "b" #835:2340 template=EL-e9077466
+            [TEXT] #835:2341 template=EL-a3ec670e
+          [TEXT] #835:2342 layout=layout_177c5efc fills="Rock Blue" textStyle="Manrope/Bold (7:5795)" text="M2.13 Roles & Access"
+      [FRAME] "MAIN" #835:2343 template=EL-ba6dbac3
+        [FRAME] "main#top" #835:2344 layout={"mode":"column","padding":"24px 152px 118.5px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":68},"dimensions":{"width":1664}}
+          [FRAME] "div.wrap" #835:2345 template=EL-01f5b3d6
+            [FRAME] "button.lnk:margin:align-flex-start" #835:2346 template=EL-dfdf56f9
+              [FRAME] "button.lnk:margin" #835:2347 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":207.17,"height":26}}
+                [FRAME] "button.lnk" #835:2348 template=EL-1f8f3823
+                  [IMAGE-SVG] "Frame" #835:2349 template=EL-d40fb4e5
+                  [TEXT] #835:2351 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="Back to Account / Settings"
+            [FRAME] "div" #835:2352 template=EL-286f649c
+              [FRAME] "section" #835:2353 template=EL-64683540
+                [FRAME] "div.ph-t" #835:2354 template=EL-12a11ae8
+                  [FRAME] "p.eyb" #835:2355 template=EL-e9077466
+                    [TEXT] #835:2356 layout=layout_56d3c81c fills="Science Blue" textStyle=style_f38e2072 text="Account / Settings · M2.13 Role-Based Access"
+                  [FRAME] "h1#h-pg" #835:2357 template=EL-e9077466
+                    [TEXT] #835:2358 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_47de102a text="Roles & Access"
+                  [FRAME] "p.ph-s" #835:2359 template=EL-33f6f1ad
+                    [TEXT] #835:2360 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Review Agent-side roles, assigned access and permission-based portal visibility."
+                  [FRAME] "p.ph-biz" #835:2361 template=EL-ccd54d18
+                    [FRAME] "b" #835:2362 template=EL-2f9fe287
+                      [TEXT] #835:2363 template=EL-4a9ab66a
+                    [FRAME] "span.dm-tag" #835:2364 template=EL-5514a8df
+                      [IMAGE-SVG] "Frame" #835:2365 template=EL-62b4d877
+                      [TEXT] #835:2367 template=EL-8340f657
+              [FRAME] "Roles and access sections" #835:2368 template=EL-7b4e2fc3
+                [FRAME] "button#t-ov" #835:2369 template=EL-177ef00a
+                  [IMAGE-SVG] "Frame" #835:2370 template=EL-f1890f3e
+                  [TEXT] #835:2372 template=EL-24439bda
+                  [RECTANGLE] "::after" #835:2373 template=EL-c557a8b8
+                [FRAME] "button#t-team" #835:2374 template=EL-177ef00a
+                  [IMAGE-SVG] "Frame" #835:2375 template=EL-f1890f3e
+                  [TEXT] #835:2377 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Team Access"
+                [FRAME] "button#t-mx" #835:2378 template=EL-177ef00a
+                  [IMAGE-SVG] "Frame" #835:2379 template=EL-f1890f3e
+                  [TEXT] #835:2381 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Permission Matrix"
+              [FRAME] "div#p-ov" #835:2382 template=EL-286f649c
+                [FRAME] "Access summary" #835:2383 template=EL-f384505a
+                  [FRAME] "article.kpi" #835:2384 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #835:2385 template=EL-998e62e2
+                      [FRAME] "span.kic" #835:2386 template=EL-1aeab6f4
+                        [IMAGE-SVG] "Frame" #835:2387 template=EL-b1d338df
+                      [FRAME] "h3:margin" #835:2389 layout={"mode":"column","padding":"0px 123.76599884033203px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2390 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Agent-side Roles"
+                    [FRAME] "p" #835:2391 template=EL-e9077466
+                      [TEXT] #835:2392 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="2 predefined roles"
+                    [FRAME] "p" #835:2393 template=EL-e9077466
+                      [TEXT] #835:2394 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Agent Owner · Sub-agent / staff"
+                  [FRAME] "article.kpi" #835:2395 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #835:2396 template=EL-998e62e2
+                      [FRAME] "span.kic" #835:2397 template=EL-1aeab6f4
+                        [IMAGE-SVG] "Frame" #835:2398 template=EL-b1d338df
+                      [FRAME] "h3:margin" #835:2400 layout={"mode":"column","padding":"0px 151.06199645996094px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2401 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Agent Owner"
+                    [FRAME] "p" #835:2402 template=EL-e9077466
+                      [TEXT] #835:2403 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="1"
+                    [FRAME] "p" #835:2404 template=EL-e9077466
+                      [TEXT] #835:2405 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Nusrat Jahan"
+                  [FRAME] "article.kpi" #835:2406 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #835:2407 template=EL-998e62e2
+                      [FRAME] "span.kic" #835:2408 template=EL-a080e1c7
+                        [IMAGE-SVG] "Frame" #835:2409 template=EL-b1d338df
+                      [FRAME] "h3:margin" #835:2411 layout={"mode":"column","padding":"0px 128.0780029296875px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2412 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Sub-agent / staff"
+                    [FRAME] "p" #835:2413 template=EL-e9077466
+                      [TEXT] #835:2414 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="5 sample access holders"
+                    [FRAME] "p" #835:2415 template=EL-e9077466
+                      [TEXT] #835:2416 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Approved Sub-agents"
+                  [FRAME] "article.kpi" #835:2417 template=EL-c00459ae
+                    [FRAME] "div.kpi-h" #835:2418 template=EL-998e62e2
+                      [FRAME] "span.kic" #835:2419 template=EL-9d7acaef
+                        [IMAGE-SVG] "Frame" #835:2420 template=EL-b1d338df
+                      [FRAME] "h3:margin" #835:2422 layout={"mode":"column","padding":"0px 28.5625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2423 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Need Permission Configuration"
+                    [FRAME] "p" #835:2424 template=EL-e9077466
+                      [TEXT] #835:2425 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="2"
+                    [FRAME] "p" #835:2426 template=EL-e9077466
+                      [TEXT] #835:2427 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Gulshan Desk, Dhanmondi Desk"
+                [FRAME] "Agent-side roles" #835:2428 template=EL-f384505a
+                  [FRAME] "article.role" #835:2429 layout={"mode":"column","padding":"18px 20px 100px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(152deg, rgba(247, 251, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"}] strokes="Link Water (664:5964)" strokeWeight=1px borderRadius=18px
+                    [FRAME] "div.role-h" #835:2430 template=EL-b2246b6c
+                      [FRAME] "span.kic" #835:2431 template=EL-8713f2d7
+                        [IMAGE-SVG] "Frame" #835:2432 template=EL-b1d338df
+                      [FRAME] "h3#r1-h:margin" #835:2434 layout={"mode":"column","padding":"0px 352.156005859375px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2435 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_08f72687 text="Agent Owner"
+                      [FRAME] "span.pdb" #835:2436 template=EL-e7560554
+                        [IMAGE-SVG] "Frame" #835:2437 template=EL-62b4d877
+                        [TEXT] #835:2439 template=EL-c8e55c42
+                    [FRAME] "p" #835:2440 template=EL-e9077466
+                      [TEXT] #835:2441 layout=layout_56d3c81c fills=Comet textStyle=style_d5fe13bf text="Account-level Agent role."
+                    [FRAME] "Agent Owner" #835:2442 layout={"mode":"row","alignSelf":"stretch","alignItems":"stretch","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [FRAME] "li" #835:2443 layout={"mode":"row","alignSelf":"stretch","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fill"}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2444 layout=layout_afd4c807 fills="Midnight Blue" borderRadius=9px
+                          [TEXT] #835:2445 layout=layout_177c5efc fills=Saffron textStyle=style_4b06a737 text="NJ"
+                        [TEXT] #835:2446 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Nusrat Jahan"
+                        [FRAME] "small" #835:2447 template=EL-2f9fe287
+                          [TEXT] #835:2448 layout=layout_177c5efc fills=Comet textStyle=style_cabfe684 text="· Skyline Demo Travels Ltd"
+                    [FRAME] "p" #835:2449 template=EL-f96bbce8
+                      [FRAME] "svg:margin" #835:2450 template=EL-59323ff4
+                        [IMAGE-SVG] "Frame" #835:2451 template=EL-494805ba
+                      [FRAME] "span" #835:2453 layout={"mode":"column","padding":"0px 30.049999237060547px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                        [TEXT] #835:2454 layout=layout_177c5efc fills=Comet textStyle=style_b2707ef0 text="Read-only in this prototype — the Agent Owner role can’t be edited, deleted or reassigned\\nhere."
+                    [FRAME] "button.btn:align-flex-start" #835:2455 layout={"mode":"column","padding":"0px 479.2799987792969px 0px 1px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":632}}
+                      [FRAME] "button.btn" #835:2456 template=EL-1ecbab94
+                        [IMAGE-SVG] "Frame" #835:2457 template=EL-f652840d
+                        [FRAME] "span" #835:2459 template=EL-2a1f700b
+                          [TEXT] #835:2460 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Access"
+                  [FRAME] "article.role" #835:2461 layout={"mode":"column","padding":"18px 20px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes="Mystic (7:34)" strokeWeight=1px borderRadius=18px
+                    [FRAME] "div.role-h" #835:2462 template=EL-b2246b6c
+                      [FRAME] "span.kic" #835:2463 template=EL-79343747
+                        [IMAGE-SVG] "Frame" #835:2464 template=EL-b1d338df
+                      [FRAME] "h3#r2-h:margin" #835:2466 layout={"mode":"column","padding":"0px 322.593994140625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2467 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_08f72687 text="Sub-agent / staff"
+                      [FRAME] "span.pdb" #835:2468 template=EL-e7560554
+                        [IMAGE-SVG] "Frame" #835:2469 template=EL-62b4d877
+                        [TEXT] #835:2471 template=EL-c8e55c42
+                    [FRAME] "p" #835:2472 template=EL-e9077466
+                      [TEXT] #835:2473 layout=layout_56d3c81c fills=Comet textStyle=style_d5fe13bf text="Access is controlled by assigned permissions."
+                    [FRAME] "Sub-agent / staff access holders" #835:2474 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":142}}
+                      [FRAME] "li" #835:2475 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2476 template=EL-683b15ef
+                          [TEXT] #835:2477 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="MD"
+                        [TEXT] #835:2478 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Mirpur Desk"
+                        [FRAME] "small" #835:2479 template=EL-2f9fe287
+                          [TEXT] #835:2480 template=EL-b01fd263
+                      [FRAME] "li" #835:2481 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":213.13,"y":0},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2482 template=EL-683b15ef
+                          [TEXT] #835:2483 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="BD"
+                        [TEXT] #835:2484 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Banani Desk"
+                        [FRAME] "small" #835:2485 template=EL-2f9fe287
+                          [TEXT] #835:2486 template=EL-b01fd263
+                      [FRAME] "li" #835:2487 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":50},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2488 template=EL-683b15ef
+                          [TEXT] #835:2489 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="UD"
+                        [TEXT] #835:2490 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Uttara Desk"
+                        [FRAME] "small" #835:2491 template=EL-2f9fe287
+                          [TEXT] #835:2492 template=EL-b01fd263
+                      [FRAME] "li" #835:2493 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":210.55,"y":50},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2494 template=EL-683b15ef
+                          [TEXT] #835:2495 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="GD"
+                        [TEXT] #835:2496 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Gulshan Desk"
+                        [FRAME] "small" #835:2497 template=EL-2f9fe287
+                          [TEXT] #835:2498 template=EL-25aaa4ba
+                      [FRAME] "li" #835:2499 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":100},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2500 template=EL-683b15ef
+                          [TEXT] #835:2501 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="DD"
+                        [TEXT] #835:2502 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Dhanmondi Desk"
+                        [FRAME] "small" #835:2503 template=EL-2f9fe287
+                          [TEXT] #835:2504 template=EL-25aaa4ba
+                    [FRAME] "p" #835:2505 template=EL-f96bbce8
+                      [FRAME] "svg:margin" #835:2506 template=EL-59323ff4
+                        [IMAGE-SVG] "Frame" #835:2507 template=EL-494805ba
+                      [TEXT] #835:2509 layout=layout_177c5efc fills=Comet textStyle=style_b2707ef0 text="Permissions are configured per Sub-agent on the Sub-agent Permissions screen \\(M2.2\\)."
+                    [FRAME] "button.btn:align-flex-start" #835:2510 layout={"mode":"column","padding":"0px 438.3399963378906px 0px 1px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":632}}
+                      [FRAME] "button.btn" #835:2511 template=EL-1ecbab94
+                        [IMAGE-SVG] "Frame" #835:2512 template=EL-f652840d
+                        [FRAME] "span" #835:2514 template=EL-2a1f700b
+                          [TEXT] #835:2515 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Team Access"
+                [FRAME] "div#c-api" #835:2516 layout={"mode":"row","alignSelf":"stretch","padding":"16px 18px","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}} fills="Early Dawn" strokes=Buff strokeWeight=1px borderRadius=18px
+                  [FRAME] "svg:margin" #835:2517 template=EL-af68c20c
+                    [IMAGE-SVG] "Frame" #835:2518 template=EL-d2f5d0a6
+                  [FRAME] "div" #835:2520 template=EL-7c39d4fd
+                    [FRAME] "b" #835:2521 template=EL-dfdf56f9
+                      [TEXT] #835:2522 layout=layout_177c5efc fills="Saddle Brown" textStyle=style_486af943 text="Access is enforced beyond the menu"
+                    [FRAME] "span" #835:2523 template=EL-dfdf56f9
+                      [TEXT] #835:2524 layout=layout_177c5efc fills="Saddle Brown" textStyle=style_d4875030 text="Portal permissions must also be enforced by the API. Hidden navigation alone is not authorization."
+                [FRAME] "p.fnote" #835:2525 template=EL-a8e2343c
+                  [FRAME] "svg:margin" #835:2526 template=EL-59323ff4
+                    [IMAGE-SVG] "Frame" #835:2527 template=EL-494805ba
+                  [TEXT] #835:2529 layout=layout_177c5efc fills=Comet textStyle=style_6a8bdf3c text="Admin roles are managed separately in the Aero Wing Admin Panel."
+        [FRAME] "footer" #835:2530 layout={"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":1153},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+          [FRAME] "span" #835:2531 template=EL-2a66e910
+            [TEXT] #835:2532 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="AeroWing Agent Portal · M2.13 Role-Based Access · Roles & Access \\(Website\\)"
+          [FRAME] "span" #835:2533 template=EL-2a66e910
+            [TEXT] #835:2534 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="Design prototype — no authentication, authorization or API enforcement is implemented here."
+        [FRAME] "header" #835:2535 template=EL-e7e947f7
+          [FRAME] "Collapse navigation" #835:2536 template=EL-308cdf1b
+            [IMAGE-SVG] "Frame" #835:2537 template=EL-a73b2a19
+          [FRAME] "Breadcrumb" #835:2539 template=EL-51794897
+            [FRAME] "ol" #835:2540 template=EL-0211da4a
+              [FRAME] "li" #835:2541 template=EL-2a1bfea5
+                [FRAME] "a" #835:2542 template=EL-2a66e910
+                  [TEXT] #835:2543 template=EL-7c5b051c
+              [FRAME] "li" #835:2544 template=EL-7a6c58b6
+                [FRAME] "span.__h2d-remove-before:margin" #835:2545 template=EL-0f04eb31
+                  [TEXT] #835:2546 template=EL-07d54cf7
+                [FRAME] "a" #835:2547 template=EL-2a66e910
+                  [TEXT] #835:2548 layout=layout_177c5efc fills="Science Blue" textStyle=style_94747b76 text="Account"
+              [FRAME] "li" #835:2549 template=EL-59babb83
+                [TEXT] #835:2550 template=EL-f250b41d
+                [TEXT] #835:2551 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Roles & Access"
+          [FRAME] "form#tb-s" #835:2552 template=EL-f48bd93e
+            [FRAME] "input#tb-q" #835:2553 template=EL-fdc56343
+              [FRAME] "div#placeholder" #835:2554 template=EL-0b890b82
+                [TEXT] #835:2555 template=EL-b219f93c
+              [FRAME] "div#text-field-container" #835:2556 template=EL-e6b26f43
+                [FRAME] "div#editing-view-port" #835:2557 template=EL-541d4b8f
+                [FRAME] "div#search-clear:margin" #835:2558 template=EL-e5aab63e
+            [IMAGE-SVG] "Frame" #835:2559 template=EL-f744bb1f
+          [FRAME] "div.pop-w" #835:2561 template=EL-2f9fe287
+            [FRAME] "Notifications" #835:2562 template=EL-308cdf1b
+              [IMAGE-SVG] "Frame" #835:2563 template=EL-a73b2a19
+          [FRAME] "div.pop-w" #835:2565 template=EL-2f9fe287
+            [FRAME] "button menu#pf-btn" #835:2566 template=EL-73541ea2
+              [FRAME] "span#pf-av" #835:2567 template=EL-97ad2434
+                [TEXT] #835:2568 template=EL-790ada40
+              [FRAME] "span.tb-avt" #835:2569 template=EL-6e7b525c
+                [FRAME] "b#pf-biz" #835:2570 template=EL-dfdf56f9
+                  [TEXT] #835:2571 template=EL-084e24f6
+                [FRAME] "small#pf-usr" #835:2572 template=EL-dfdf56f9
+                  [TEXT] #835:2573 template=EL-42f6826b
+              [IMAGE-SVG] "Frame" #835:2574 template=EL-d40fb4e5
+  [FRAME] "Roles Access - Team Access - Team Access Summary" #835:2590 layout={"mode":"column","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":662,"y":6845},"dimensions":{"width":1920}}

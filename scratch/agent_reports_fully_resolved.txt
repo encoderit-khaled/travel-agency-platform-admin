@@ -1,0 +1,391 @@
+[FRAME] "Agent Reports - Overview" #821:920 | fills: "White | layout: {"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"}
+[FRAME] "div#shell" #821:921 | layout: {"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "Agent Portal navigation" #821:1447 | fills: fill_df4cd166
+[FRAME] "div.sb-h" #821:1448
+[FRAME] "AeroWing Admin — Dashboard" #821:1449 | fills: White | radius: 12px
+[FRAME] "AeroWing — Explore, Book, Travel" #821:1450 | fills: fill_af4669a1
+[TEXT] "" #821:1451 | text: "Agent Portal" | fills: Saffron | layout: layout_177c5efc | textStyle: style_637ce44a
+[FRAME] "Agent Portal sections" #821:1452
+[FRAME] "a" #821:1453 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1454
+[FRAME] "span" #821:1456
+[TEXT] "" #821:1457 | text: "Dashboard" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1458 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1459
+[FRAME] "span" #821:1461
+[TEXT] "" #821:1462 | text: "Search & Book" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1463 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1464
+[FRAME] "span" #821:1466
+[TEXT] "" #821:1467 | text: "Bookings" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1468 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1469
+[FRAME] "span" #821:1471
+[TEXT] "" #821:1472 | text: "Customers" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1473 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1474
+[FRAME] "span" #821:1476
+[TEXT] "" #821:1477 | text: "Sub-agents" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1478 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1479
+[FRAME] "span" #821:1481
+[TEXT] "" #821:1482 | text: "Pricing & Markup" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "div.sb-sep:margin" #821:1483
+[RECTANGLE] "div.sb-sep" #821:1484 | fills: White 10%
+[FRAME] "a" #821:1485 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1486
+[FRAME] "span" #821:1488
+[TEXT] "" #821:1489 | text: "Wallet" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1490 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1491
+[FRAME] "span" #821:1493
+[TEXT] "" #821:1494 | text: "Credit" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1495 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1496
+[FRAME] "span" #821:1498
+[TEXT] "" #821:1499 | text: "Commissions" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1500 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1501
+[FRAME] "span" #821:1503
+[TEXT] "" #821:1504 | text: "Statements" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1505 | fills: White 12% | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1506
+[FRAME] "span" #821:1508
+[TEXT] "" #821:1509 | text: "Reports" | fills: White | layout: layout_177c5efc
+[FRAME] "div.sb-sep:margin" #821:1510
+[RECTANGLE] "div.sb-sep" #821:1511 | fills: White 10%
+[FRAME] "a" #821:1512 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1513
+[FRAME] "span" #821:1515
+[TEXT] "" #821:1516 | text: "Notifications" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "a" #821:1517 | layout: layout_a0ed5881 | radius: 10px
+[IMAGE-SVG] "Frame" #821:1518
+[FRAME] "span" #821:1520
+[TEXT] "" #821:1521 | text: "Account / Settings" | fills: Periwinkle Gray | layout: layout_177c5efc | textStyle: style_5b7c52cb
+[FRAME] "p.sb-f" #821:1522
+[FRAME] "b" #821:1523 | layout: layout_5c79c5b1
+[TEXT] "" #821:1524 | text: "M2 · B2B Agent Portal" | fills: White | layout: layout_56d3c81c | textStyle: style_82dfb323
+[TEXT] "" #821:1525 | text: "M2.12 Reports" | fills: "Rock | layout: layout_177c5efc
+[FRAME] "MAIN" #821:1547 | layout: {"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "main#top" #821:1548
+[FRAME] "div" #821:1549
+[FRAME] "section" #821:1550
+[FRAME] "div.ph-t" #821:1551
+[FRAME] "p.eyb" #821:1552 | layout: layout_5c79c5b1
+[TEXT] "" #821:1553 | text: "Agent Portal · M2.12 Agent Reports" | fills: "Science | layout: layout_56d3c81c
+[FRAME] "h1#h-pg" #821:1554 | layout: layout_5c79c5b1
+[TEXT] "" #821:1555 | text: "Agent Reports" | fills: "Midnight | layout: layout_56d3c81c
+[FRAME] "p.ph-s" #821:1556
+[TEXT] "" #821:1557 | text: "Review sales, booking, commission, wallet, credit and Sub-agent performance for your\\nAgent account." | fills: Comet | layout: layout_177c5efc
+[FRAME] "p.ph-biz" #821:1558
+[FRAME] "b" #821:1559
+[TEXT] "" #821:1560 | text: "Skyline Demo Travels Ltd" | fills: Mirage | layout: layout_177c5efc | textStyle: style_3befcb4d
+[FRAME] "span.dm-tag" #821:1561 | fills: Catskill White (660:5050) | layout: layout_98b2bba4 | radius: 999px
+[IMAGE-SVG] "Frame" #821:1562
+[TEXT] "" #821:1564 | text: "Sample data" | fills: Shuttle Gray (665:6373) | layout: layout_177c5efc | textStyle: style_d63f5220
+[FRAME] "div.ph-a3" #821:1565
+[FRAME] "button.btn" #821:1566 | fills: Saffron | radius: 10px
+[RECTANGLE] "button.btn:shadow" #821:1567 | fills: "White | layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+[IMAGE-SVG] "Frame" #821:1568
+[FRAME] "span" #821:1570
+[TEXT] "" #821:1571 | text: "Export CSV" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "section.fbar" #821:1572 | fills: White | radius: 18px
+[FRAME] "h2#fb-h" #821:1573
+[IMAGE-SVG] "Frame" #821:1574
+[TEXT] "" #821:1576 | text: "Report Period & Filters" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "form#fform" #821:1577 | layout: {"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(6,minmax(0,1fr))","gridTemplateRows":"44px 65.25px 44px","gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "Period presets" #821:1578 | layout: {"mode":"row","alignSelf":"start","wrap":true,"gap":"6px","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "button" #821:1579 | fills: White | layout: layout_3bd85657 | radius: 12px
+[TEXT] "" #821:1580 | text: "This Month" | fills: Comet | layout: layout_177c5efc | textStyle: style_b297c791
+[FRAME] "button" #821:1581 | fills: White | layout: layout_3bd85657 | radius: 12px
+[TEXT] "" #821:1582 | text: "Previous Month" | fills: Comet | layout: layout_177c5efc | textStyle: style_b297c791
+[FRAME] "button" #821:1583 | fills: White | layout: layout_3bd85657 | radius: 12px
+[TEXT] "" #821:1584 | text: "Last 30 Days" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button" #821:1585 | fills: Hawkes Blue (664:5963) | layout: layout_3bd85657 | radius: 12px
+[TEXT] "" #821:1586 | text: "Custom" | fills: Midnight Blue | layout: layout_177c5efc | textStyle: style_b297c791
+[FRAME] "label#r-from-w" #821:1587
+[FRAME] "span" #821:1588 | layout: layout_5c79c5b1
+[TEXT] "" #821:1589 | text: "From" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "input#r-from" #821:1590 | fills: White | radius: 12px
+[FRAME] "div" #821:1591 | layout: {"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"-2.842170943040401e-14px","sizing":{"horizontal":"fill","vertical":"hug"}
+[FRAME] "div#date-time-edit" #821:1592
+[FRAME] "div" #821:1593
+[TEXT] "" #821:1594 | text: "10" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1595 | text: "/" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1596 | text: "01" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1597 | text: "/" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1598 | text: "2026" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[FRAME] "div menu#picker" #821:1599
+[IMAGE-SVG] "image" #821:1600
+[FRAME] "label#r-to-w" #821:1603
+[FRAME] "span" #821:1604 | layout: layout_5c79c5b1
+[TEXT] "" #821:1605 | text: "To" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "input#r-to" #821:1606 | fills: White | radius: 12px
+[FRAME] "div" #821:1607 | layout: {"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"8.526512829121202e-14px","sizing":{"horizontal":"fill","vertical":"hug"}
+[FRAME] "div#date-time-edit" #821:1608
+[FRAME] "div" #821:1609
+[TEXT] "" #821:1610 | text: "11" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1611 | text: "/" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1612 | text: "16" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1613 | text: "/" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[TEXT] "" #821:1614 | text: "2026" | fills: Mirage | layout: layout_177c5efc | textStyle: style_325b630c
+[FRAME] "div menu#picker" #821:1615
+[IMAGE-SVG] "image" #821:1616
+[FRAME] "label.fs-f" #821:1619
+[FRAME] "span" #821:1620 | layout: layout_5c79c5b1
+[TEXT] "" #821:1621 | text: "Service" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "span.sel" #821:1622 | layout: layout_5c79c5b1
+[FRAME] "select#r-svc" #821:1623 | fills: White | layout: layout_424d85a2 | radius: 12px
+[FRAME] "div" #821:1624 | layout: layout_4c84150a
+[TEXT] "" #821:1625 | text: "All Services" | fills: Mirage | layout: layout_56d3c81c | textStyle: style_325b630c
+[IMAGE-SVG] "Frame" #821:1626
+[FRAME] "label.fs-f" #821:1628
+[FRAME] "span" #821:1629 | layout: layout_5c79c5b1
+[TEXT] "" #821:1630 | text: "Booking Status" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "span.sel" #821:1631 | layout: layout_5c79c5b1
+[FRAME] "select#r-st" #821:1632 | fills: White | layout: layout_424d85a2 | radius: 12px
+[FRAME] "div" #821:1633 | layout: layout_4c84150a
+[TEXT] "" #821:1634 | text: "All Statuses" | fills: Mirage | layout: layout_56d3c81c | textStyle: style_325b630c
+[IMAGE-SVG] "Frame" #821:1635 | layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+[FRAME] "label.fs-f" #821:1637
+[FRAME] "span" #821:1638 | layout: layout_5c79c5b1
+[TEXT] "" #821:1639 | text: "Created By" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "span.sel" #821:1640 | layout: layout_5c79c5b1
+[FRAME] "select#r-by" #821:1641 | fills: White | layout: layout_424d85a2 | radius: 12px
+[FRAME] "div" #821:1642 | layout: layout_4c84150a
+[TEXT] "" #821:1643 | text: "All" | fills: Mirage | layout: layout_56d3c81c | textStyle: style_325b630c
+[IMAGE-SVG] "Frame" #821:1644
+[FRAME] "label.fs-f" #821:1646
+[FRAME] "span" #821:1647 | layout: layout_5c79c5b1
+[TEXT] "" #821:1648 | text: "Supplier" | fills: Comet | layout: layout_56d3c81c | textStyle: style_c639e4b0
+[FRAME] "span.sel" #821:1649 | layout: layout_5c79c5b1
+[FRAME] "select#r-sup" #821:1650 | fills: "Catskill | layout: layout_424d85a2
+[FRAME] "div" #821:1651 | layout: layout_4c84150a
+[TEXT] "" #821:1652 | text: "Supplier data unavailable" | fills: Comet | layout: layout_56d3c81c | textStyle: style_325b630c
+[IMAGE-SVG] "Frame" #821:1653
+[FRAME] "div.fa2" #821:1655 | layout: {"mode":"row","alignSelf":"start","alignItems":"center","wrap":true,"gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "button.btn" #821:1656 | fills: Saffron | layout: layout_7d8472a0 | radius: 10px
+[RECTANGLE] "button.btn:shadow" #821:1657 | fills: "White | layout: {"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"}
+[IMAGE-SVG] "Frame" #821:1658
+[FRAME] "span" #821:1660
+[TEXT] "" #821:1661 | text: "Apply" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "span.act-f" #821:1662
+[TEXT] "" #821:1663 | text: "Applied: 01 Oct 2026 – 16 Nov 2026 · No additional filters" | fills: Comet | layout: layout_177c5efc
+[FRAME] "Report sections" #821:1664 | fills: White | radius: 16px
+[FRAME] "button#t-ov" #821:1665
+[IMAGE-SVG] "Frame" #821:1666
+[TEXT] "" #821:1668 | text: "Overview" | fills: Midnight Blue | layout: layout_177c5efc | textStyle: style_c859fa4c
+[RECTANGLE] "::after" #821:1669 | fills: Midnight Blue | radius: 3px 3px 0px 0px
+[FRAME] "button#t-sales" #821:1670
+[IMAGE-SVG] "Frame" #821:1671
+[TEXT] "" #821:1673 | text: "Sales" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button#t-bk" #821:1674
+[IMAGE-SVG] "Frame" #821:1675
+[TEXT] "" #821:1677 | text: "Bookings" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button#t-cm" #821:1678
+[IMAGE-SVG] "Frame" #821:1679
+[TEXT] "" #821:1681 | text: "Commissions" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button#t-wc" #821:1682
+[IMAGE-SVG] "Frame" #821:1683
+[TEXT] "" #821:1685 | text: "Wallet & Credit" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button#t-sa" #821:1686
+[IMAGE-SVG] "Frame" #821:1687
+[TEXT] "" #821:1689 | text: "Sub-agent Performance" | fills: Comet | layout: layout_177c5efc
+[FRAME] "div#p-ov" #821:1690
+[FRAME] "Report summary" #821:1691 | layout: {"mode":"row","alignSelf":"stretch","gap":"16px","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "article.kpi" #821:1692 | fills: White | layout: {"mode":"column","padding":"18px 20px 40px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}
+[FRAME] "div.kpi-h" #821:1693
+[FRAME] "span.kic" #821:1694 | fills: Hawkes Blue | layout: layout_7c94d434 | radius: 11px
+[IMAGE-SVG] "Frame" #821:1695
+[FRAME] "h3:margin" #821:1697 | layout: {"mode":"column","padding":"0px 59.46879959106445px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+[TEXT] "" #821:1698 | text: "Booking Volume" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "p" #821:1699 | layout: layout_5c79c5b1
+[TEXT] "" #821:1700 | text: "12 bookings" | fills: Mirage | layout: layout_56d3c81c
+[FRAME] "p" #821:1701 | layout: layout_5c79c5b1
+[TEXT] "" #821:1702 | text: "In the applied period and filters" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "article.kpi" #821:1703 | fills: White | radius: 18px
+[FRAME] "div.kpi-h" #821:1704
+[FRAME] "span.kic" #821:1705 | fills: Panache | layout: layout_7c94d434 | radius: 11px
+[IMAGE-SVG] "Frame" #821:1706
+[FRAME] "h3:margin" #821:1708 | layout: {"mode":"column","padding":"0px 78.2031021118164px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+[TEXT] "" #821:1709 | text: "Sales Activity" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "p" #821:1710 | layout: layout_5c79c5b1
+[TEXT] "" #821:1711 | text: "Sales activity available" | fills: Mirage | layout: layout_56d3c81c
+[FRAME] "p" #821:1712 | layout: layout_5c79c5b1
+[TEXT] "" #821:1713 | text: "Sales values not included in\\nsample data" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "article.kpi" #821:1714 | fills: White | radius: 18px
+[FRAME] "div.kpi-h" #821:1715
+[FRAME] "span.kic" #821:1716 | fills: Varden | layout: layout_7c94d434 | radius: 11px
+[IMAGE-SVG] "Frame" #821:1717
+[FRAME] "h3:margin" #821:1719 | layout: {"mode":"column","padding":"0px 30.8125px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+[TEXT] "" #821:1720 | text: "Commission Activity" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "p" #821:1721 | layout: layout_5c79c5b1
+[TEXT] "" #821:1722 | text: "Commission activity\\navailable" | fills: Mirage | layout: layout_56d3c81c
+[FRAME] "p" #821:1723 | layout: layout_5c79c5b1
+[TEXT] "" #821:1724 | text: "3 active · 2 reversed" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "article.kpi" #821:1725 | fills: White | layout: {"mode":"column","padding":"18px 20px 15px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}
+[FRAME] "div.kpi-h" #821:1726
+[FRAME] "span.kic" #821:1727 | fills: Catskill White (660:4703) | layout: layout_7c94d434 | radius: 11px
+[IMAGE-SVG] "Frame" #821:1728
+[FRAME] "h3:margin" #821:1730 | layout: {"mode":"column","padding":"0px 29.593799591064453px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+[TEXT] "" #821:1731 | text: "Wallet / Credit Status" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "p" #821:1732 | layout: layout_5c79c5b1
+[TEXT] "" #821:1733 | text: "Wallet activity available" | fills: Mirage | layout: layout_56d3c81c
+[FRAME] "p" #821:1734 | layout: layout_5c79c5b1
+[TEXT] "" #821:1735 | text: "Credit usage available" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "article.kpi" #821:1736 | fills: White | radius: 18px
+[FRAME] "div.kpi-h" #821:1737
+[FRAME] "span.kic" #821:1738 | fills: Hawkes Blue | layout: layout_7c94d434 | radius: 11px
+[IMAGE-SVG] "Frame" #821:1739
+[FRAME] "h3:margin" #821:1741 | layout: {"mode":"column","padding":"0px 47.39059829711914px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}
+[TEXT] "" #821:1742 | text: "Active Sub-agents" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "p" #821:1743 | layout: layout_5c79c5b1
+[TEXT] "" #821:1744 | text: "3 of 5" | fills: Mirage | layout: layout_56d3c81c
+[FRAME] "p" #821:1745 | layout: layout_5c79c5b1
+[TEXT] "" #821:1746 | text: "Sub-agents with bookings in the\\nperiod" | fills: Comet | layout: layout_56d3c81c
+[FRAME] "div.areas" #821:1747 | layout: {"mode":"row","alignSelf":"stretch","wrap":true,"gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"}
+[FRAME] "article.area" #821:1748 | fills: White | radius: 16px
+[FRAME] "span" #821:1749
+[FRAME] "span.kic" #821:1750 | fills: Panache | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1751
+[TEXT] "" #821:1753 | text: "Sales" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1754
+[TEXT] "" #821:1755 | text: "Sales activity available" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1756
+[TEXT] "" #821:1757 | text: "Reported sales activity for the period" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1758
+[FRAME] "button.lnk" #821:1759 | radius: 8px
+[TEXT] "" #821:1760 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1761
+[FRAME] "article.area" #821:1763 | fills: White | radius: 16px
+[FRAME] "span" #821:1764
+[FRAME] "span.kic" #821:1765 | fills: Hawkes Blue | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1766
+[TEXT] "" #821:1768 | text: "Bookings by Service" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1769
+[TEXT] "" #821:1770 | text: "8 of 8 services" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1771
+[TEXT] "" #821:1772 | text: "Booking count per service module" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1773
+[FRAME] "button.lnk" #821:1774 | radius: 8px
+[TEXT] "" #821:1775 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1776
+[FRAME] "article.area" #821:1778 | fills: White | radius: 16px
+[FRAME] "span" #821:1779
+[FRAME] "span.kic" #821:1780 | fills: Catskill White (660:4703) | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1781
+[TEXT] "" #821:1783 | text: "Bookings by Supplier" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1784
+[TEXT] "" #821:1785 | text: "Supplier data unavailable" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1786
+[TEXT] "" #821:1787 | text: "Supplier-based booking reporting" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1788
+[FRAME] "button.lnk" #821:1789 | radius: 8px
+[TEXT] "" #821:1790 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1791
+[FRAME] "article.area" #821:1793 | fills: White | radius: 16px
+[FRAME] "span" #821:1794
+[FRAME] "span.kic" #821:1795 | fills: Hawkes Blue | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1796
+[TEXT] "" #821:1798 | text: "Bookings by Status" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1799
+[TEXT] "" #821:1800 | text: "12 across 7 statuses" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1801
+[TEXT] "" #821:1802 | text: "Approved booking lifecycle" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1803
+[FRAME] "button.lnk" #821:1804 | radius: 8px
+[TEXT] "" #821:1805 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1806
+[FRAME] "article.area" #821:1808 | fills: White | radius: 16px
+[FRAME] "span" #821:1809
+[FRAME] "span.kic" #821:1810 | fills: Varden | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1811
+[TEXT] "" #821:1813 | text: "Commissions" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1814
+[TEXT] "" #821:1815 | text: "3 active · 2 reversed" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1816
+[TEXT] "" #821:1817 | text: "Pending, Earned, Settled" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1818
+[FRAME] "button.lnk" #821:1819 | radius: 8px
+[TEXT] "" #821:1820 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1821
+[FRAME] "article.area" #821:1823 | fills: White | radius: 16px
+[FRAME] "span" #821:1824
+[FRAME] "span.kic" #821:1825 | fills: Panache | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1826
+[TEXT] "" #821:1828 | text: "Wallet Summary" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1829
+[TEXT] "" #821:1830 | text: "10 wallet transactions" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1831
+[TEXT] "" #821:1832 | text: "Credits and debits in the period" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1833
+[FRAME] "button.lnk" #821:1834 | radius: 8px
+[TEXT] "" #821:1835 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1836
+[FRAME] "article.area" #821:1838 | fills: White | radius: 16px
+[FRAME] "span" #821:1839
+[FRAME] "span.kic" #821:1840 | fills: Catskill White (660:4703) | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1841
+[TEXT] "" #821:1843 | text: "Credit Summary" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1844
+[TEXT] "" #821:1845 | text: "Credit usage available" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1846
+[TEXT] "" #821:1847 | text: "Limit, Used, Available, Outstanding" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1848
+[FRAME] "button.lnk" #821:1849 | radius: 8px
+[TEXT] "" #821:1850 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1851
+[FRAME] "article.area" #821:1853 | fills: White | radius: 16px
+[FRAME] "span" #821:1854
+[FRAME] "span.kic" #821:1855 | fills: Hawkes Blue | layout: layout_688116aa | radius: 9px
+[IMAGE-SVG] "Frame" #821:1856
+[TEXT] "" #821:1858 | text: "Sub-agent Performance" | fills: "Midnight | layout: layout_177c5efc
+[FRAME] "b" #821:1859
+[TEXT] "" #821:1860 | text: "8 Sub-agent bookings" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "p" #821:1861
+[TEXT] "" #821:1862 | text: "3 of 5 Sub-agents active" | fills: Comet | layout: layout_177c5efc
+[FRAME] "button.lnk:margin" #821:1863
+[FRAME] "button.lnk" #821:1864 | radius: 8px
+[TEXT] "" #821:1865 | text: "Open report" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_e2571a1a
+[IMAGE-SVG] "Frame" #821:1866
+[FRAME] "p.fnote" #821:1868 | fills: Catskill White (386:1824) | radius: 12px
+[FRAME] "svg:margin" #821:1869
+[IMAGE-SVG] "Frame" #821:1870
+[TEXT] "" #821:1872 | text: "Agent-level reports for Skyline Demo Travels Ltd and its Sub-agents only. Platform-wide Admin reporting \\(M16\\) is separate." | fills: Comet | layout: layout_177c5efc
+[FRAME] "footer" #821:1873 | fills: White | layout: {"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"}
+[FRAME] "span" #821:1874
+[TEXT] "" #821:1875 | text: "AeroWing Agent Portal · M2.12 Agent Reports · Website" | fills: Comet | layout: layout_177c5efc
+[FRAME] "span" #821:1876
+[TEXT] "" #821:1877 | text: "Design prototype — no analytics, accounting, supplier or export service is called." | fills: Comet | layout: layout_177c5efc
+[FRAME] "header" #821:1878 | fills: White
+[FRAME] "Collapse navigation" #821:1879 | fills: White | radius: 10px
+[IMAGE-SVG] "Frame" #821:1880 | layout: layout_bee36b52
+[FRAME] "Breadcrumb" #821:1882 | layout: layout_4c84150a
+[FRAME] "ol" #821:1883
+[FRAME] "li" #821:1884
+[FRAME] "a" #821:1885
+[TEXT] "" #821:1886 | text: "Dashboard" | fills: Science Blue | layout: layout_177c5efc | textStyle: style_94747b76
+[FRAME] "li" #821:1887
+[TEXT] "" #821:1888 | text: "/" | fills: Gull Gray | layout: layout_177c5efc | textStyle: style_c967ff2b
+[TEXT] "" #821:1889 | text: "Reports" | fills: Mirage | layout: layout_177c5efc
+[FRAME] "form#tb-s" #821:1890
+[FRAME] "input#tb-q" #821:1891 | fills: Catskill White (7:11) | radius: 10px
+[FRAME] "div#placeholder" #821:1892
+[TEXT] "" #821:1893 | text: "Search bookings or customers" | fills: Boulder | layout: layout_177c5efc
+[FRAME] "div#text-field-container" #821:1894
+[FRAME] "div#editing-view-port" #821:1895
+[FRAME] "div#search-clear:margin" #821:1896
+[IMAGE-SVG] "Frame" #821:1897
+[FRAME] "div.pop-w" #821:1899
+[FRAME] "Notifications" #821:1900 | fills: White | radius: 10px
+[IMAGE-SVG] "Frame" #821:1901 | layout: layout_bee36b52
+[FRAME] "div.pop-w" #821:1903
+[FRAME] "button menu#pf-btn" #821:1904 | radius: 12px
+[FRAME] "span#pf-av" #821:1905 | fills: Midnight Blue | radius: 12px
+[TEXT] "" #821:1906 | text: "SD" | fills: Saffron | layout: layout_177c5efc | textStyle: style_f6d4e0eb
+[FRAME] "span.tb-avt" #821:1907
+[FRAME] "b#pf-biz" #821:1908
+[TEXT] "" #821:1909 | text: "Skyline Demo Travels Ltd" | fills: Mirage | layout: layout_177c5efc | textStyle: style_576f5991
+[FRAME] "small#pf-usr" #821:1910
+[TEXT] "" #821:1911 | text: "Nusrat Jahan · Agent Owner" | fills: Comet | layout: layout_177c5efc | textStyle: Manrope/Bold (7:363)
+[IMAGE-SVG] "Frame" #821:1912

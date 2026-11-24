@@ -1,0 +1,2346 @@
+21623:  [FRAME] Credit Request History
+21624:    [FRAME] div#shell
+21625:      [FRAME] Agent Portal navigation (EL-84ca712f)
+21626:        [FRAME] div.sb-h (EL-5a59422e)
+21627:          [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+21628:            [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+21629:          [TEXT]  => TEXT: Agent Portal
+21630:        [FRAME] Agent Portal sections (EL-34ff3f47)
+21631:          [FRAME] a (EL-419d61b5)
+21632:            [IMAGE-SVG] Frame (EL-b1d338df)
+21633:            [FRAME] span (EL-2f9fe287)
+21634:              [TEXT]  => TEXT: Dashboard
+21635:          [FRAME] a (EL-419d61b5)
+21636:            [IMAGE-SVG] Frame (EL-b1d338df)
+21637:            [FRAME] span (EL-2f9fe287)
+21638:              [TEXT]  => TEXT: Search & Book
+21639:          [FRAME] a (EL-419d61b5)
+21640:            [IMAGE-SVG] Frame (EL-b1d338df)
+21641:            [FRAME] span (EL-2f9fe287)
+21642:              [TEXT]  => TEXT: Bookings
+21643:          [FRAME] a (EL-419d61b5)
+21644:            [IMAGE-SVG] Frame (EL-b1d338df)
+21645:            [FRAME] span (EL-2f9fe287)
+21646:              [TEXT]  => TEXT: Customers
+21647:          [FRAME] a (EL-419d61b5)
+21648:            [IMAGE-SVG] Frame (EL-b1d338df)
+21649:            [FRAME] span (EL-2f9fe287)
+21650:              [TEXT]  => TEXT: Sub-agents
+21651:          [FRAME] a (EL-419d61b5)
+21652:            [IMAGE-SVG] Frame (EL-b1d338df)
+21653:            [FRAME] span (EL-2f9fe287)
+21654:              [TEXT]  => TEXT: Pricing & Markup
+21655:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+21656:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+21657:          [FRAME] a (EL-419d61b5)
+21658:            [IMAGE-SVG] Frame (EL-b1d338df)
+21659:            [FRAME] span (EL-2f9fe287)
+21660:              [TEXT]  => TEXT: Wallet
+21661:          [FRAME] a (EL-d0215df3)
+21662:            [IMAGE-SVG] Frame (EL-b1d338df)
+21663:            [FRAME] span (EL-2f9fe287)
+21664:              [TEXT]  => TEXT: Credit
+21665:          [FRAME] a (EL-419d61b5)
+21666:            [IMAGE-SVG] Frame (EL-b1d338df)
+21667:            [FRAME] span (EL-2f9fe287)
+21668:              [TEXT]  => TEXT: Commissions
+21669:          [FRAME] a (EL-419d61b5)
+21670:            [IMAGE-SVG] Frame (EL-b1d338df)
+21671:            [FRAME] span (EL-2f9fe287)
+21672:              [TEXT]  => TEXT: Statements
+21673:          [FRAME] a (EL-419d61b5)
+21674:            [IMAGE-SVG] Frame (EL-b1d338df)
+21675:            [FRAME] span (EL-2f9fe287)
+21676:              [TEXT]  => TEXT: Reports
+21677:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+21678:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+21679:          [FRAME] a (EL-419d61b5)
+21680:            [IMAGE-SVG] Frame (EL-b1d338df)
+21681:            [FRAME] span (EL-2f9fe287)
+21682:              [TEXT]  => TEXT: Notifications
+21683:          [FRAME] a (EL-419d61b5)
+21684:            [IMAGE-SVG] Frame (EL-b1d338df)
+21685:            [FRAME] span (EL-2f9fe287)
+21686:              [TEXT]  => TEXT: Account / Settings
+21687:        [FRAME] p.sb-f (EL-ab281d22)
+21688:          [FRAME] b (EL-e9077466)
+21689:            [TEXT]  => TEXT: M2 · B2B Agent Portal
+21690:          [TEXT]  => TEXT: M2.8 Credit Requests
+21691:      [FRAME] MAIN
+21692:        [FRAME] main#top (EL-70ea3e22)
+21693:          [FRAME] div.wrap (EL-01f5b3d6)
+21694:            [FRAME] button.lnk:margin:align-flex-start (EL-dfdf56f9)
+21695:              [FRAME] button.lnk:margin
+21696:                [FRAME] button.lnk (EL-1f8f3823)
+21697:                  [IMAGE-SVG] Frame (EL-d40fb4e5)
+21698:                  [TEXT] Back to Credit
+21699:            [FRAME] div (EL-286f649c)
+21700:              [FRAME] section (EL-a656df9e)
+21701:                [FRAME] div.ph-t (EL-12a11ae8)
+21702:                  [FRAME] p.eyb (EL-e9077466)
+21703:                    [TEXT] Agent Portal · M2.8 Credit Requests
+21704:                  [FRAME] h1#h-pg (EL-e9077466)
+21705:                    [TEXT] Credit Requests
+21706:                  [FRAME] p.ph-s (EL-33f6f1ad)
+21707:                    [TEXT] Request changes to your Agent credit and review previous decisions.
+21708:                  [FRAME] p.ph-biz (EL-ccd54d18)
+21709:                    [FRAME] b (EL-2f9fe287)
+21710:                      [TEXT]  => TEXT: Skyline Demo Travels Ltd
+21711:                    [FRAME] span.dm-tag (EL-5514a8df)
+21712:                      [IMAGE-SVG] Frame (EL-62b4d877)
+21713:                      [TEXT]  => TEXT: Sample data
+21714:                [FRAME] div.ph-a3 (EL-d9efaca1)
+21715:                  [FRAME] button.btn (EL-91e5fe2d)
+21716:                    [RECTANGLE] button.btn:shadow
+21717:                    [IMAGE-SVG] Frame (EL-f652840d)
+21718:                    [FRAME] span (EL-2a1f700b)
+21719:                      [TEXT] New Credit Request
+21720:              [FRAME] Credit requests
+21721:                [FRAME] button#t-hist (EL-177ef00a)
+21722:                  [IMAGE-SVG] Frame (EL-f1890f3e)
+21723:                  [TEXT] Request History
+21724:                  [FRAME] span.cnt
+21725:                    [TEXT] 4
+21726:                  [RECTANGLE] ::after
+21727:                [FRAME] button#t-new (EL-177ef00a)
+21728:                  [IMAGE-SVG] Frame (EL-f1890f3e)
+21729:                  [TEXT] New Request
+21730:              [FRAME] div#p-hist (EL-286f649c)
+21731:                [FRAME] Request summary (EL-f384505a)
+21732:                  [FRAME] article.kpi (EL-c00459ae)
+21733:                    [FRAME] div.kpi-h (EL-998e62e2)
+21734:                      [FRAME] span.kic (EL-a080e1c7)
+21735:                        [IMAGE-SVG] Frame (EL-b1d338df)
+21736:                      [FRAME] h3:margin
+21737:                        [TEXT] Total Requests
+21738:                    [FRAME] p (EL-e9077466)
+21739:                      [TEXT]  => TEXT: 4
+21740:                    [FRAME] p (EL-e9077466)
+21741:                      [TEXT] Credit-limit increase and credit top-up
+21742:                  [FRAME] article.kpi (EL-c00459ae)
+21743:                    [FRAME] div.kpi-h (EL-998e62e2)
+21744:                      [FRAME] span.kic (EL-a080e1c7)
+21745:                        [IMAGE-SVG] Frame (EL-b1d338df)
+21746:                      [FRAME] h3:margin (EL-560bd3af)
+21747:                        [TEXT]  => TEXT: Pending
+21748:                    [FRAME] p (EL-e9077466)
+21749:                      [TEXT]  => TEXT: 1
+21750:                    [FRAME] p (EL-e9077466)
+21751:                      [TEXT] Awaiting an Admin decision
+21752:                  [FRAME] article.kpi (EL-c00459ae)
+21753:                    [FRAME] div.kpi-h (EL-998e62e2)
+21754:                      [FRAME] span.kic (EL-9e704c57)
+21755:                        [IMAGE-SVG] Frame (EL-b1d338df)
+21756:                      [FRAME] h3:margin
+21757:                        [TEXT] Approved / Adjusted
+21758:                    [FRAME] p (EL-e9077466)
+21759:                      [TEXT]  => TEXT: 2
+21760:                    [FRAME] p (EL-e9077466)
+21761:                      [TEXT] Decided by Aero Wing Admin
+21762:                  [FRAME] article.kpi (EL-c00459ae)
+21763:                    [FRAME] div.kpi-h (EL-998e62e2)
+21764:                      [FRAME] span.kic (EL-1aeab6f4)
+21765:                        [IMAGE-SVG] Frame (EL-b1d338df)
+21766:                      [FRAME] h3:margin
+21767:                        [TEXT] Rejected
+21768:                    [FRAME] p (EL-e9077466)
+21769:                      [TEXT]  => TEXT: 1
+21770:                    [FRAME] p (EL-e9077466)
+21771:                      [TEXT] No credit change applied
+21772:                [FRAME] section (EL-5777b5ba)
+21773:                  [FRAME] div.cd-h (EL-cefd9a89)
+21774:                    [FRAME] span.kic (EL-9d7acaef)
+21775:                      [IMAGE-SVG] Frame (EL-b1d338df)
+21776:                    [FRAME] div.cd-ht (EL-51794897)
+21777:                      [FRAME] h2#ls-h (EL-e9077466)
+21778:                        [TEXT] Request History
+21779:                      [FRAME] p (EL-e9077466)
+21780:                        [TEXT] Submitted requests are read-only. Decisions are made by Aero Wing Admin.
+21781:                    [FRAME] span.dm-tag (EL-5514a8df)
+21782:                      [IMAGE-SVG] Frame (EL-62b4d877)
+21783:                      [TEXT]  => TEXT: Sample data
+21784:                  [FRAME] Search and filter requests (EL-3c5b9b06)
+21785:                    [FRAME] div.bf2-r (EL-310e8d9a)
+21786:                      [FRAME] div.flt-s (EL-51794897)
+21787:                        [FRAME] input (EL-d73455e5)
+21788:                          [FRAME] div#placeholder (EL-4f02a5a4)
+21789:                            [TEXT] Search requests
+21790:                          [FRAME] div#text-field-container (EL-24d4cf33)
+21791:                            [FRAME] div#editing-view-port (EL-09b05472)
+21792:                            [FRAME] div#search-clear:margin (EL-e5aab63e)
+21793:                        [IMAGE-SVG] Frame (EL-2e3f34c3)
+21794:                    [FRAME] div#bfx (EL-217917a3)
+21795:                      [FRAME] label.fs-f (EL-6d1b5341)
+21796:                        [FRAME] span (EL-e9077466)
+21797:                          [TEXT] Request Type
+21798:                        [FRAME] span.sel (EL-e9077466)
+21799:                          [FRAME] select#f-t (EL-ea4531d4)
+21800:                            [FRAME] div (EL-51794897)
+21801:                              [TEXT]  => TEXT: All Types
+21802:                          [IMAGE-SVG] Frame (EL-e06044d8)
+21803:                      [FRAME] label.fs-f (EL-6d1b5341)
+21804:                        [FRAME] span (EL-e9077466)
+21805:                          [TEXT]  => TEXT: Status
+21806:                        [FRAME] span.sel (EL-e9077466)
+21807:                          [FRAME] select#f-s (EL-ea4531d4)
+21808:                            [FRAME] div (EL-51794897)
+21809:                              [TEXT]  => TEXT: All Statuses
+21810:                          [IMAGE-SVG] Frame (EL-e06044d8)
+21811:                      [FRAME] label.fs-f (EL-6d1b5341)
+21812:                        [FRAME] span (EL-e9077466)
+21813:                          [TEXT]  => TEXT: From
+21814:                        [FRAME] input#f-from (EL-b7f3ef7b)
+21815:                          [FRAME] div (EL-a75c3b19)
+21816:                            [FRAME] div#date-time-edit (EL-f676945a)
+21817:                              [FRAME] div (EL-2781be54)
+21818:                                [TEXT]  => TEXT: mm
+21819:                                [TEXT]  => TEXT: /
+21820:                                [TEXT]  => TEXT: dd
+21821:                                [TEXT]  => TEXT: /
+21822:                                [TEXT]  => TEXT: yyyy
+21823:                            [FRAME] div menu#picker (EL-63a0d0bd)
+21824:                              [IMAGE-SVG] image (EL-56925d9d)
+21825:                      [FRAME] label.fs-f (EL-6d1b5341)
+21826:                        [FRAME] span (EL-e9077466)
+21827:                          [TEXT]  => TEXT: To
+21828:                        [FRAME] input#f-to (EL-b7f3ef7b)
+21829:                          [FRAME] div (EL-a75c3b19)
+21830:                            [FRAME] div#date-time-edit (EL-f676945a)
+21831:                              [FRAME] div (EL-2781be54)
+21832:                                [TEXT]  => TEXT: mm
+21833:                                [TEXT]  => TEXT: /
+21834:                                [TEXT]  => TEXT: dd
+21835:                                [TEXT]  => TEXT: /
+21836:                                [TEXT]  => TEXT: yyyy
+21837:                            [FRAME] div menu#picker (EL-63a0d0bd)
+21838:                              [IMAGE-SVG] image (EL-56925d9d)
+21839:                  [FRAME] div.bf-sum (EL-bb12fa7d)
+21840:                    [FRAME] p#sum (EL-51794897)
+21841:                      [TEXT] {ts1}Showing {/ts1}{ts3}**4**{/ts3}{ts1} requests{/ts1}
+21842:                  [FRAME] div#rtw (EL-7439f5a3)
+21843:                    [FRAME] table.btb (EL-e9077466)
+21844:                      [FRAME] tr (EL-8a10e53c)
+21845:                        [FRAME] th
+21846:                          [TEXT] Submitted
+21847:                        [FRAME] th
+21848:                          [TEXT]  => TEXT: Request Type
+21849:                        [FRAME] th
+21850:                          [TEXT] Requested Amount
+21851:                        [FRAME] th
+21852:                          [TEXT]  => TEXT: Status
+21853:                        [FRAME] th
+21854:                          [TEXT]  => TEXT: Decision
+21855:                        [RECTANGLE] th.act
+21856:                      [FRAME] tbody (EL-e9077466)
+21857:                        [FRAME] tr (EL-8a10e53c)
+21858:                          [FRAME] td.c-sb (EL-4165d1de)
+21859:                            [TEXT]  => TEXT: 12 Nov 2026
+21860:                            [FRAME] span.sub-d (EL-e9077466)
+21861:                              [TEXT] 10:20
+21862:                          [FRAME] td.c-ty (EL-93f2e600)
+21863:                            [FRAME] span (EL-235879b0)
+21864:                              [FRAME] span.kic (EL-09b5bd9d)
+21865:                                [IMAGE-SVG] Frame (EL-494805ba)
+21866:                              [FRAME] span.rq-n (EL-6e7b525c)
+21867:                                [FRAME] b (EL-dfdf56f9)
+21868:                                  [TEXT]  => TEXT: Credit-limit increase
+21869:                                [FRAME] small (EL-dfdf56f9)
+21870:                                  [TEXT]  => TEXT: Additional booking capacity
+21871:                          [FRAME] td.c-am (EL-696d06d7)
+21872:                            [TEXT]  => TEXT: Sample amount
+21873:                          [FRAME] td.c-st (EL-8c9bafe9)
+21874:                            [FRAME] span.p-pend (EL-e021b56f)
+21875:                              [IMAGE-SVG] Frame (EL-522202e5)
+21876:                              [TEXT]  => TEXT: Pending
+21877:                          [FRAME] td.c-rs
+21878:                            [TEXT]  => TEXT: Awaiting Admin decision
+21879:                          [FRAME] td.act (EL-7232ef99)
+21880:                            [FRAME] View details for Credit-limit increase submitted 12 Nov 2026, Pending (EL-2f76e5a0)
+21881:                              [IMAGE-SVG] Frame (EL-d40fb4e5)
+21882:                              [FRAME] span (EL-2a1f700b)
+21883:                                [TEXT]  => TEXT: View Details
+21884:                        [FRAME] tr (EL-8a10e53c)
+21885:                          [FRAME] td.c-sb (EL-4165d1de)
+21886:                            [TEXT] 28 Oct 2026
+21887:                            [FRAME] span.sub-d (EL-e9077466)
+21888:                              [TEXT] 15:05
+21889:                          [FRAME] td.c-ty (EL-93f2e600)
+21890:                            [FRAME] span (EL-235879b0)
+21891:                              [FRAME] span.kic (EL-4a346552)
+21892:                                [IMAGE-SVG] Frame (EL-494805ba)
+21893:                              [FRAME] span.rq-n (EL-6e7b525c)
+21894:                                [FRAME] b (EL-dfdf56f9)
+21895:                                  [TEXT]  => TEXT: Credit top-up
+21896:                                [FRAME] small (EL-dfdf56f9)
+21897:                                  [TEXT]  => TEXT: Additional booking capacity
+21898:                          [FRAME] td.c-am (EL-696d06d7)
+21899:                            [TEXT]  => TEXT: Sample amount
+21900:                          [FRAME] td.c-st (EL-8c9bafe9)
+21901:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+21902:                              [IMAGE-SVG] Frame (EL-522202e5)
+21903:                              [TEXT]  => TEXT: Approved
+21904:                          [FRAME] td.c-rs (EL-e8fd8f19)
+21905:                            [TEXT]  => TEXT: Admin approved
+21906:                            [FRAME] span.sub-d (EL-e9077466)
+21907:                              [TEXT] 30 Oct 2026
+21908:                          [FRAME] td.act (EL-7232ef99)
+21909:                            [FRAME] View details for Credit top-up submitted 28 Oct 2026, Approved (EL-2f76e5a0)
+21910:                              [IMAGE-SVG] Frame (EL-d40fb4e5)
+21911:                              [FRAME] span (EL-2a1f700b)
+21912:                                [TEXT]  => TEXT: View Details
+21913:                        [FRAME] tr (EL-8a10e53c)
+21914:                          [FRAME] td.c-sb (EL-4165d1de)
+21915:                            [TEXT] 15 Oct 2026
+21916:                            [FRAME] span.sub-d (EL-e9077466)
+21917:                              [TEXT] 09:30
+21918:                          [FRAME] td.c-ty (EL-93f2e600)
+21919:                            [FRAME] span (EL-235879b0)
+21920:                              [FRAME] span.kic (EL-09b5bd9d)
+21921:                                [IMAGE-SVG] Frame (EL-494805ba)
+21922:                              [FRAME] span.rq-n (EL-6e7b525c)
+21923:                                [FRAME] b (EL-dfdf56f9)
+21924:                                  [TEXT]  => TEXT: Credit-limit increase
+21925:                                [FRAME] small (EL-dfdf56f9)
+21926:                                  [TEXT]  => TEXT: Additional booking capacity
+21927:                          [FRAME] td.c-am (EL-696d06d7)
+21928:                            [TEXT]  => TEXT: Sample amount
+21929:                          [FRAME] td.c-st (EL-8c9bafe9)
+21930:                            [FRAME] span.p-err (EL-14e457b2)
+21931:                              [IMAGE-SVG] Frame (EL-522202e5)
+21932:                              [TEXT]  => TEXT: Rejected
+21933:                          [FRAME] td.c-rs (EL-e8fd8f19)
+21934:                            [TEXT]  => TEXT: Admin rejected
+21935:                            [FRAME] span.sub-d (EL-e9077466)
+21936:                              [TEXT] 17 Oct 2026
+21937:                          [FRAME] td.act (EL-7232ef99)
+21938:                            [FRAME] View details for Credit-limit increase submitted 15 Oct 2026, Rejected (EL-2f76e5a0)
+21939:                              [IMAGE-SVG] Frame (EL-d40fb4e5)
+21940:                              [FRAME] span (EL-2a1f700b)
+21941:                                [TEXT]  => TEXT: View Details
+21942:                        [FRAME] tr (EL-8a10e53c)
+21943:                          [FRAME] td.c-sb (EL-4165d1de)
+21944:                            [TEXT] 24 Sep 2026
+21945:                            [FRAME] span.sub-d (EL-e9077466)
+21946:                              [TEXT] 13:45
+21947:                          [FRAME] td.c-ty (EL-93f2e600)
+21948:                            [FRAME] span (EL-235879b0)
+21949:                              [FRAME] span.kic (EL-09b5bd9d)
+21950:                                [IMAGE-SVG] Frame (EL-494805ba)
+21951:                              [FRAME] span.rq-n (EL-6e7b525c)
+21952:                                [FRAME] b (EL-dfdf56f9)
+21953:                                  [TEXT]  => TEXT: Credit-limit increase
+21954:                                [FRAME] small (EL-dfdf56f9)
+21955:                                  [TEXT]  => TEXT: Additional booking capacity
+21956:                          [FRAME] td.c-am
+21957:                            [TEXT]  => TEXT: Sample amount
+21958:                            [FRAME] span.sub-d (EL-e9077466)
+21959:                              [TEXT] Adjusted amount available
+21960:                          [FRAME] td.c-st (EL-8c9bafe9)
+21961:                            [FRAME] span.p-warn (EL-98019cd8)
+21962:                              [IMAGE-SVG] Frame (EL-522202e5)
+21963:                              [TEXT] Adjusted
+21964:                          [FRAME] td.c-rs (EL-e8fd8f19)
+21965:                            [TEXT] Admin adjusted
+21966:                            [FRAME] span.sub-d (EL-e9077466)
+21967:                              [TEXT] 26 Sep 2026
+21968:                          [FRAME] td.act (EL-7232ef99)
+21969:                            [FRAME] View details for Credit-limit increase submitted 24 Sep 2026, Adjusted (EL-2f76e5a0)
+21970:                              [IMAGE-SVG] Frame (EL-d40fb4e5)
+21971:                              [FRAME] span (EL-2a1f700b)
+21972:                                [TEXT]  => TEXT: View Details
+21973:                  [FRAME] div.lg-f2 (EL-fa35e3ab)
+21974:                    [FRAME] span (EL-51794897)
+21975:                      [TEXT] Statuses: Pending, Approved, Adjusted, Rejected. Sample submission dates are fictional.
+21976:        [FRAME] footer
+21977:          [FRAME] span (EL-2a66e910)
+21978:            [TEXT] AeroWing Agent Portal · M2.8 Credit Request & Request History · Website
+21979:          [FRAME] span (EL-2a66e910)
+21980:            [TEXT] Design prototype — no credit, approval, ledger or notification system is called.
+21981:        [FRAME] header (EL-e7e947f7)
+21982:          [FRAME] Collapse navigation (EL-308cdf1b)
+21983:            [IMAGE-SVG] Frame (EL-a73b2a19)
+21984:          [FRAME] Breadcrumb (EL-51794897)
+21985:            [FRAME] ol (EL-0211da4a)
+21986:              [FRAME] li (EL-2a1bfea5)
+21987:                [FRAME] a (EL-2a66e910)
+21988:                  [TEXT]  => TEXT: Dashboard
+21989:              [FRAME] li (EL-7a6c58b6)
+21990:                [FRAME] span.__h2d-remove-before:margin (EL-0f04eb31)
+21991:                  [TEXT]  => TEXT: /
+21992:                [FRAME] a (EL-2a66e910)
+21993:                  [TEXT] Credit
+21994:              [FRAME] li (EL-59babb83)
+21995:                [TEXT]  => TEXT: /
+21996:                [TEXT] Requests
+21997:          [FRAME] form#tb-s (EL-f48bd93e)
+21998:            [FRAME] input#tb-q (EL-fdc56343)
+21999:              [FRAME] div#placeholder (EL-0b890b82)
+22000:                [TEXT]  => TEXT: Search bookings or customers
+22001:              [FRAME] div#text-field-container (EL-e6b26f43)
+22002:                [FRAME] div#editing-view-port (EL-541d4b8f)
+22003:                [FRAME] div#search-clear:margin (EL-e5aab63e)
+22004:            [IMAGE-SVG] Frame (EL-f744bb1f)
+22005:          [FRAME] div.pop-w (EL-2f9fe287)
+22006:            [FRAME] Notifications (EL-308cdf1b)
+22007:              [IMAGE-SVG] Frame (EL-a73b2a19)
+22008:          [FRAME] div.pop-w (EL-2f9fe287)
+22009:            [FRAME] button menu#pf-btn (EL-73541ea2)
+22010:              [FRAME] span#pf-av (EL-97ad2434)
+22011:                [TEXT]  => TEXT: SD
+22012:              [FRAME] span.tb-avt (EL-6e7b525c)
+22013:                [FRAME] b#pf-biz (EL-dfdf56f9)
+22014:                  [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22015:                [FRAME] small#pf-usr (EL-dfdf56f9)
+22016:                  [TEXT]  => TEXT: Nusrat Jahan · Agent Owner
+22017:              [IMAGE-SVG] Frame (EL-d40fb4e5)
+22018:  [FRAME] Agent Reports - Overview
+22019:    [FRAME] div#shell
+22020:      [FRAME] Agent Portal navigation (EL-84ca712f)
+22021:        [FRAME] div.sb-h (EL-5a59422e)
+22022:          [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+22023:            [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+22024:          [TEXT]  => TEXT: Agent Portal
+22025:        [FRAME] Agent Portal sections (EL-34ff3f47)
+22026:          [FRAME] a (EL-419d61b5)
+22027:            [IMAGE-SVG] Frame (EL-b1d338df)
+22028:            [FRAME] span (EL-2f9fe287)
+22029:              [TEXT]  => TEXT: Dashboard
+22030:          [FRAME] a (EL-419d61b5)
+22031:            [IMAGE-SVG] Frame (EL-b1d338df)
+22032:            [FRAME] span (EL-2f9fe287)
+22033:              [TEXT]  => TEXT: Search & Book
+22034:          [FRAME] a (EL-419d61b5)
+22035:            [IMAGE-SVG] Frame (EL-b1d338df)
+22036:            [FRAME] span (EL-2f9fe287)
+22037:              [TEXT]  => TEXT: Bookings
+22038:          [FRAME] a (EL-419d61b5)
+22039:            [IMAGE-SVG] Frame (EL-b1d338df)
+22040:            [FRAME] span (EL-2f9fe287)
+22041:              [TEXT]  => TEXT: Customers
+22042:          [FRAME] a (EL-419d61b5)
+22043:            [IMAGE-SVG] Frame (EL-b1d338df)
+22044:            [FRAME] span (EL-2f9fe287)
+22045:              [TEXT]  => TEXT: Sub-agents
+22046:          [FRAME] a (EL-419d61b5)
+22047:            [IMAGE-SVG] Frame (EL-b1d338df)
+22048:            [FRAME] span (EL-2f9fe287)
+22049:              [TEXT]  => TEXT: Pricing & Markup
+22050:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+22051:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+22052:          [FRAME] a (EL-419d61b5)
+22053:            [IMAGE-SVG] Frame (EL-b1d338df)
+22054:            [FRAME] span (EL-2f9fe287)
+22055:              [TEXT]  => TEXT: Wallet
+22056:          [FRAME] a (EL-419d61b5)
+22057:            [IMAGE-SVG] Frame (EL-b1d338df)
+22058:            [FRAME] span (EL-2f9fe287)
+22059:              [TEXT]  => TEXT: Credit
+22060:          [FRAME] a (EL-419d61b5)
+22061:            [IMAGE-SVG] Frame (EL-b1d338df)
+22062:            [FRAME] span (EL-2f9fe287)
+22063:              [TEXT]  => TEXT: Commissions
+22064:          [FRAME] a (EL-419d61b5)
+22065:            [IMAGE-SVG] Frame (EL-b1d338df)
+22066:            [FRAME] span (EL-2f9fe287)
+22067:              [TEXT]  => TEXT: Statements
+22068:          [FRAME] a (EL-d0215df3)
+22069:            [IMAGE-SVG] Frame (EL-b1d338df)
+22070:            [FRAME] span (EL-2f9fe287)
+22071:              [TEXT] Reports
+22072:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+22073:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+22074:          [FRAME] a (EL-419d61b5)
+22075:            [IMAGE-SVG] Frame (EL-b1d338df)
+22076:            [FRAME] span (EL-2f9fe287)
+22077:              [TEXT]  => TEXT: Notifications
+22078:          [FRAME] a (EL-419d61b5)
+22079:            [IMAGE-SVG] Frame (EL-b1d338df)
+22080:            [FRAME] span (EL-2f9fe287)
+22081:              [TEXT]  => TEXT: Account / Settings
+22082:        [FRAME] p.sb-f (EL-ab281d22)
+22083:          [FRAME] b (EL-e9077466)
+22084:            [TEXT]  => TEXT: M2 · B2B Agent Portal
+22085:          [TEXT] M2.12 Reports
+22086:      [FRAME] MAIN
+22087:        [FRAME] main#top (EL-265f1e74)
+22088:          [FRAME] div (EL-286f649c)
+22089:            [FRAME] section (EL-a656df9e)
+22090:              [FRAME] div.ph-t (EL-12a11ae8)
+22091:                [FRAME] p.eyb (EL-e9077466)
+22092:                  [TEXT] Agent Portal · M2.12 Agent Reports
+22093:                [FRAME] h1#h-pg (EL-e9077466)
+22094:                  [TEXT] Agent Reports
+22095:                [FRAME] p.ph-s (EL-33f6f1ad)
+22096:                  [TEXT] Review sales, booking, commission, wallet, credit and Sub-agent performance for your\\nAgent account.
+22097:                [FRAME] p.ph-biz (EL-ccd54d18)
+22098:                  [FRAME] b (EL-2f9fe287)
+22099:                    [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22100:                  [FRAME] span.dm-tag (EL-5514a8df)
+22101:                    [IMAGE-SVG] Frame (EL-62b4d877)
+22102:                    [TEXT]  => TEXT: Sample data
+22103:              [FRAME] div.ph-a3 (EL-d9efaca1)
+22104:                [FRAME] button.btn (EL-91e5fe2d)
+22105:                  [RECTANGLE] button.btn:shadow
+22106:                  [IMAGE-SVG] Frame (EL-f652840d)
+22107:                  [FRAME] span (EL-2a1f700b)
+22108:                    [TEXT] Export CSV
+22109:            [FRAME] section.fbar (EL-79125a71)
+22110:              [FRAME] h2#fb-h (EL-c8d50cb3)
+22111:                [IMAGE-SVG] Frame (EL-f652840d)
+22112:                [TEXT] Report Period & Filters
+22113:              [FRAME] form#fform
+22114:                [FRAME] Period presets
+22115:                  [FRAME] button (EL-41dad5eb)
+22116:                    [TEXT]  => TEXT: This Month
+22117:                  [FRAME] button (EL-41dad5eb)
+22118:                    [TEXT]  => TEXT: Previous Month
+22119:                  [FRAME] button (EL-41dad5eb)
+22120:                    [TEXT] Last 30 Days
+22121:                  [FRAME] button (EL-2bdb6f4b)
+22122:                    [TEXT]  => TEXT: Custom
+22123:                [FRAME] label#r-from-w (EL-87be36d4)
+22124:                  [FRAME] span (EL-e9077466)
+22125:                    [TEXT]  => TEXT: From
+22126:                  [FRAME] input#r-from (EL-54791ce1)
+22127:                    [FRAME] div
+22128:                      [FRAME] div#date-time-edit (EL-f676945a)
+22129:                        [FRAME] div (EL-2781be54)
+22130:                          [TEXT]  => TEXT: 10
+22131:                          [TEXT]  => TEXT: /
+22132:                          [TEXT]  => TEXT: 01
+22133:                          [TEXT]  => TEXT: /
+22134:                          [TEXT]  => TEXT: 2026
+22135:                      [FRAME] div menu#picker (EL-63a0d0bd)
+22136:                        [IMAGE-SVG] image (EL-56925d9d)
+22137:                [FRAME] label#r-to-w (EL-87be36d4)
+22138:                  [FRAME] span (EL-e9077466)
+22139:                    [TEXT]  => TEXT: To
+22140:                  [FRAME] input#r-to (EL-54791ce1)
+22141:                    [FRAME] div
+22142:                      [FRAME] div#date-time-edit (EL-f676945a)
+22143:                        [FRAME] div (EL-2781be54)
+22144:                          [TEXT]  => TEXT: 11
+22145:                          [TEXT]  => TEXT: /
+22146:                          [TEXT]  => TEXT: 16
+22147:                          [TEXT]  => TEXT: /
+22148:                          [TEXT]  => TEXT: 2026
+22149:                      [FRAME] div menu#picker (EL-63a0d0bd)
+22150:                        [IMAGE-SVG] image (EL-56925d9d)
+22151:                [FRAME] label.fs-f (EL-87be36d4)
+22152:                  [FRAME] span (EL-e9077466)
+22153:                    [TEXT]  => TEXT: Service
+22154:                  [FRAME] span.sel (EL-e9077466)
+22155:                    [FRAME] select#r-svc (EL-e732bdbe)
+22156:                      [FRAME] div (EL-51794897)
+22157:                        [TEXT]  => TEXT: All Services
+22158:                    [IMAGE-SVG] Frame (EL-d20efb33)
+22159:                [FRAME] label.fs-f (EL-87be36d4)
+22160:                  [FRAME] span (EL-e9077466)
+22161:                    [TEXT]  => TEXT: Booking Status
+22162:                  [FRAME] span.sel (EL-e9077466)
+22163:                    [FRAME] select#r-st (EL-e732bdbe)
+22164:                      [FRAME] div (EL-51794897)
+22165:                        [TEXT]  => TEXT: All Statuses
+22166:                    [IMAGE-SVG] Frame
+22167:                [FRAME] label.fs-f (EL-87be36d4)
+22168:                  [FRAME] span (EL-e9077466)
+22169:                    [TEXT]  => TEXT: Created By
+22170:                  [FRAME] span.sel (EL-e9077466)
+22171:                    [FRAME] select#r-by (EL-e732bdbe)
+22172:                      [FRAME] div (EL-51794897)
+22173:                        [TEXT]  => TEXT: All
+22174:                    [IMAGE-SVG] Frame (EL-d20efb33)
+22175:                [FRAME] label.fs-f (EL-87be36d4)
+22176:                  [FRAME] span (EL-e9077466)
+22177:                    [TEXT]  => TEXT: Supplier
+22178:                  [FRAME] span.sel (EL-e9077466)
+22179:                    [FRAME] select#r-sup
+22180:                      [FRAME] div (EL-51794897)
+22181:                        [TEXT]  => TEXT: Supplier data unavailable
+22182:                    [IMAGE-SVG] Frame (EL-d20efb33)
+22183:                [FRAME] div.fa2
+22184:                  [FRAME] button.btn (EL-6233b9fb)
+22185:                    [RECTANGLE] button.btn:shadow
+22186:                    [IMAGE-SVG] Frame (EL-f652840d)
+22187:                    [FRAME] span (EL-2a1f700b)
+22188:                      [TEXT] Apply
+22189:                  [FRAME] span.act-f (EL-2f9fe287)
+22190:                    [TEXT] Applied: 01 Oct 2026 – 16 Nov 2026 · No additional filters
+22191:            [FRAME] Report sections (EL-7b4e2fc3)
+22192:              [FRAME] button#t-ov (EL-177ef00a)
+22193:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22194:                [TEXT]  => TEXT: Overview
+22195:                [RECTANGLE] ::after (EL-c557a8b8)
+22196:              [FRAME] button#t-sales (EL-177ef00a)
+22197:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22198:                [TEXT] Sales
+22199:              [FRAME] button#t-bk (EL-177ef00a)
+22200:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22201:                [TEXT] Bookings
+22202:              [FRAME] button#t-cm (EL-177ef00a)
+22203:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22204:                [TEXT] Commissions
+22205:              [FRAME] button#t-wc (EL-177ef00a)
+22206:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22207:                [TEXT] Wallet & Credit
+22208:              [FRAME] button#t-sa (EL-177ef00a)
+22209:                [IMAGE-SVG] Frame (EL-f1890f3e)
+22210:                [TEXT] Sub-agent Performance
+22211:            [FRAME] div#p-ov (EL-286f649c)
+22212:              [FRAME] Report summary
+22213:                [FRAME] article.kpi
+22214:                  [FRAME] div.kpi-h (EL-998e62e2)
+22215:                    [FRAME] span.kic (EL-a080e1c7)
+22216:                      [IMAGE-SVG] Frame (EL-b1d338df)
+22217:                    [FRAME] h3:margin
+22218:                      [TEXT] Booking Volume
+22219:                  [FRAME] p (EL-e9077466)
+22220:                    [TEXT] 12 bookings
+22221:                  [FRAME] p (EL-e9077466)
+22222:                    [TEXT] In the applied period and filters
+22223:                [FRAME] article.kpi (EL-b882237b)
+22224:                  [FRAME] div.kpi-h (EL-998e62e2)
+22225:                    [FRAME] span.kic (EL-9e704c57)
+22226:                      [IMAGE-SVG] Frame (EL-b1d338df)
+22227:                    [FRAME] h3:margin
+22228:                      [TEXT] Sales Activity
+22229:                  [FRAME] p (EL-e9077466)
+22230:                    [TEXT] Sales activity available
+22231:                  [FRAME] p (EL-e9077466)
+22232:                    [TEXT] Sales values not included in\\nsample data
+22233:                [FRAME] article.kpi (EL-c00459ae)
+22234:                  [FRAME] div.kpi-h (EL-998e62e2)
+22235:                    [FRAME] span.kic (EL-9d7acaef)
+22236:                      [IMAGE-SVG] Frame (EL-b1d338df)
+22237:                    [FRAME] h3:margin
+22238:                      [TEXT] Commission Activity
+22239:                  [FRAME] p (EL-e9077466)
+22240:                    [TEXT] Commission activity\\navailable
+22241:                  [FRAME] p (EL-e9077466)
+22242:                    [TEXT] 3 active · 2 reversed
+22243:                [FRAME] article.kpi
+22244:                  [FRAME] div.kpi-h (EL-998e62e2)
+22245:                    [FRAME] span.kic (EL-1aeab6f4)
+22246:                      [IMAGE-SVG] Frame (EL-b1d338df)
+22247:                    [FRAME] h3:margin
+22248:                      [TEXT] Wallet / Credit Status
+22249:                  [FRAME] p (EL-e9077466)
+22250:                    [TEXT] Wallet activity available
+22251:                  [FRAME] p (EL-e9077466)
+22252:                    [TEXT] Credit usage available
+22253:                [FRAME] article.kpi (EL-b882237b)
+22254:                  [FRAME] div.kpi-h (EL-998e62e2)
+22255:                    [FRAME] span.kic (EL-a080e1c7)
+22256:                      [IMAGE-SVG] Frame (EL-b1d338df)
+22257:                    [FRAME] h3:margin
+22258:                      [TEXT] Active Sub-agents
+22259:                  [FRAME] p (EL-e9077466)
+22260:                    [TEXT] 3 of 5
+22261:                  [FRAME] p (EL-e9077466)
+22262:                    [TEXT] Sub-agents with bookings in the\\nperiod
+22263:              [FRAME] div.areas
+22264:                [FRAME] article.area (EL-efeff825)
+22265:                  [FRAME] span (EL-545aedd9)
+22266:                    [FRAME] span.kic (EL-4a346552)
+22267:                      [IMAGE-SVG] Frame (EL-494805ba)
+22268:                    [TEXT] Sales
+22269:                  [FRAME] b (EL-a6c160f2)
+22270:                    [TEXT] Sales activity available
+22271:                  [FRAME] p (EL-79698c5c)
+22272:                    [TEXT] Reported sales activity for the period
+22273:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22274:                    [FRAME] button.lnk (EL-2c0b947c)
+22275:                      [TEXT]  => TEXT: Open report
+22276:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22277:                [FRAME] article.area (EL-efeff825)
+22278:                  [FRAME] span (EL-545aedd9)
+22279:                    [FRAME] span.kic (EL-09b5bd9d)
+22280:                      [IMAGE-SVG] Frame (EL-494805ba)
+22281:                    [TEXT] Bookings by Service
+22282:                  [FRAME] b (EL-a6c160f2)
+22283:                    [TEXT] 8 of 8 services
+22284:                  [FRAME] p (EL-79698c5c)
+22285:                    [TEXT] Booking count per service module
+22286:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22287:                    [FRAME] button.lnk (EL-2c0b947c)
+22288:                      [TEXT]  => TEXT: Open report
+22289:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22290:                [FRAME] article.area (EL-efeff825)
+22291:                  [FRAME] span (EL-545aedd9)
+22292:                    [FRAME] span.kic (EL-59ddad59)
+22293:                      [IMAGE-SVG] Frame (EL-494805ba)
+22294:                    [TEXT] Bookings by Supplier
+22295:                  [FRAME] b (EL-a6c160f2)
+22296:                    [TEXT] Supplier data unavailable
+22297:                  [FRAME] p (EL-79698c5c)
+22298:                    [TEXT] Supplier-based booking reporting
+22299:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22300:                    [FRAME] button.lnk (EL-2c0b947c)
+22301:                      [TEXT]  => TEXT: Open report
+22302:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22303:                [FRAME] article.area (EL-efeff825)
+22304:                  [FRAME] span (EL-545aedd9)
+22305:                    [FRAME] span.kic (EL-09b5bd9d)
+22306:                      [IMAGE-SVG] Frame (EL-494805ba)
+22307:                    [TEXT] Bookings by Status
+22308:                  [FRAME] b (EL-a6c160f2)
+22309:                    [TEXT] 12 across 7 statuses
+22310:                  [FRAME] p (EL-79698c5c)
+22311:                    [TEXT] Approved booking lifecycle
+22312:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22313:                    [FRAME] button.lnk (EL-2c0b947c)
+22314:                      [TEXT]  => TEXT: Open report
+22315:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22316:                [FRAME] article.area (EL-efeff825)
+22317:                  [FRAME] span (EL-545aedd9)
+22318:                    [FRAME] span.kic (EL-f0cb0953)
+22319:                      [IMAGE-SVG] Frame (EL-494805ba)
+22320:                    [TEXT] Commissions
+22321:                  [FRAME] b (EL-a6c160f2)
+22322:                    [TEXT] 3 active · 2 reversed
+22323:                  [FRAME] p (EL-79698c5c)
+22324:                    [TEXT] Pending, Earned, Settled
+22325:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22326:                    [FRAME] button.lnk (EL-2c0b947c)
+22327:                      [TEXT]  => TEXT: Open report
+22328:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22329:                [FRAME] article.area (EL-efeff825)
+22330:                  [FRAME] span (EL-545aedd9)
+22331:                    [FRAME] span.kic (EL-4a346552)
+22332:                      [IMAGE-SVG] Frame (EL-494805ba)
+22333:                    [TEXT] Wallet Summary
+22334:                  [FRAME] b (EL-a6c160f2)
+22335:                    [TEXT] 10 wallet transactions
+22336:                  [FRAME] p (EL-79698c5c)
+22337:                    [TEXT] Credits and debits in the period
+22338:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22339:                    [FRAME] button.lnk (EL-2c0b947c)
+22340:                      [TEXT]  => TEXT: Open report
+22341:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22342:                [FRAME] article.area (EL-efeff825)
+22343:                  [FRAME] span (EL-545aedd9)
+22344:                    [FRAME] span.kic (EL-59ddad59)
+22345:                      [IMAGE-SVG] Frame (EL-494805ba)
+22346:                    [TEXT] Credit Summary
+22347:                  [FRAME] b (EL-a6c160f2)
+22348:                    [TEXT] Credit usage available
+22349:                  [FRAME] p (EL-79698c5c)
+22350:                    [TEXT] Limit, Used, Available, Outstanding
+22351:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22352:                    [FRAME] button.lnk (EL-2c0b947c)
+22353:                      [TEXT]  => TEXT: Open report
+22354:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22355:                [FRAME] article.area (EL-efeff825)
+22356:                  [FRAME] span (EL-545aedd9)
+22357:                    [FRAME] span.kic (EL-09b5bd9d)
+22358:                      [IMAGE-SVG] Frame (EL-494805ba)
+22359:                    [TEXT] Sub-agent Performance
+22360:                  [FRAME] b (EL-a6c160f2)
+22361:                    [TEXT] 8 Sub-agent bookings
+22362:                  [FRAME] p (EL-79698c5c)
+22363:                    [TEXT] 3 of 5 Sub-agents active
+22364:                  [FRAME] button.lnk:margin (EL-c10a190e)
+22365:                    [FRAME] button.lnk (EL-2c0b947c)
+22366:                      [TEXT]  => TEXT: Open report
+22367:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22368:              [FRAME] p.fnote (EL-a8e2343c)
+22369:                [FRAME] svg:margin (EL-59323ff4)
+22370:                  [IMAGE-SVG] Frame (EL-494805ba)
+22371:                [TEXT] Agent-level reports for Skyline Demo Travels Ltd and its Sub-agents only. Platform-wide Admin reporting \\(M16\\) is separate.
+22372:        [FRAME] footer
+22373:          [FRAME] span (EL-2a66e910)
+22374:            [TEXT] AeroWing Agent Portal · M2.12 Agent Reports · Website
+22375:          [FRAME] span (EL-2a66e910)
+22376:            [TEXT] Design prototype — no analytics, accounting, supplier or export service is called.
+22377:        [FRAME] header (EL-e7e947f7)
+22378:          [FRAME] Collapse navigation (EL-308cdf1b)
+22379:            [IMAGE-SVG] Frame (EL-a73b2a19)
+22380:          [FRAME] Breadcrumb (EL-51794897)
+22381:            [FRAME] ol (EL-0211da4a)
+22382:              [FRAME] li (EL-2a1bfea5)
+22383:                [FRAME] a (EL-2a66e910)
+22384:                  [TEXT]  => TEXT: Dashboard
+22385:              [FRAME] li (EL-fc963d7f)
+22386:                [TEXT]  => TEXT: /
+22387:                [TEXT] Reports
+22388:          [FRAME] form#tb-s (EL-f48bd93e)
+22389:            [FRAME] input#tb-q (EL-fdc56343)
+22390:              [FRAME] div#placeholder (EL-0b890b82)
+22391:                [TEXT]  => TEXT: Search bookings or customers
+22392:              [FRAME] div#text-field-container (EL-e6b26f43)
+22393:                [FRAME] div#editing-view-port (EL-541d4b8f)
+22394:                [FRAME] div#search-clear:margin (EL-e5aab63e)
+22395:            [IMAGE-SVG] Frame (EL-f744bb1f)
+22396:          [FRAME] div.pop-w (EL-2f9fe287)
+22397:            [FRAME] Notifications (EL-308cdf1b)
+22398:              [IMAGE-SVG] Frame (EL-a73b2a19)
+22399:          [FRAME] div.pop-w (EL-2f9fe287)
+22400:            [FRAME] button menu#pf-btn (EL-73541ea2)
+22401:              [FRAME] span#pf-av (EL-97ad2434)
+22402:                [TEXT]  => TEXT: SD
+22403:              [FRAME] span.tb-avt (EL-6e7b525c)
+22404:                [FRAME] b#pf-biz (EL-dfdf56f9)
+22405:                  [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22406:                [FRAME] small#pf-usr (EL-dfdf56f9)
+22407:                  [TEXT]  => TEXT: Nusrat Jahan · Agent Owner
+22408:              [IMAGE-SVG] Frame (EL-d40fb4e5)
+22409:  [FRAME] Agent Reports - Bookings
+22410:    [RECTANGLE] Bookings 1
+22411:  [FRAME] Agent Reports - Commissions
+22412:    [RECTANGLE] Commissions 1
+22413:  [FRAME] Agent Reports - Wallet & Credit
+22414:    [RECTANGLE] Wallet & Credit 1
+22415:  [FRAME] Agent Reports - Sub Agent Performance
+22416:    [RECTANGLE] Sub Agent Performance 1
+22417:  [FRAME] Agent Reports - Sales
+22418:    [RECTANGLE] Sales 1
+22419:  [FRAME] Commission Tracking
+22420:    [FRAME] div#shell
+22421:      [FRAME] Agent Portal navigation (EL-84ca712f)
+22422:        [FRAME] div.sb-h (EL-5a59422e)
+22423:          [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+22424:            [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+22425:          [TEXT]  => TEXT: Agent Portal
+22426:        [FRAME] Agent Portal sections (EL-34ff3f47)
+22427:          [FRAME] a (EL-419d61b5)
+22428:            [IMAGE-SVG] Frame (EL-b1d338df)
+22429:            [FRAME] span (EL-2f9fe287)
+22430:              [TEXT]  => TEXT: Dashboard
+22431:          [FRAME] a (EL-419d61b5)
+22432:            [IMAGE-SVG] Frame (EL-b1d338df)
+22433:            [FRAME] span (EL-2f9fe287)
+22434:              [TEXT]  => TEXT: Search & Book
+22435:          [FRAME] a (EL-419d61b5)
+22436:            [IMAGE-SVG] Frame (EL-b1d338df)
+22437:            [FRAME] span (EL-2f9fe287)
+22438:              [TEXT]  => TEXT: Bookings
+22439:          [FRAME] a (EL-419d61b5)
+22440:            [IMAGE-SVG] Frame (EL-b1d338df)
+22441:            [FRAME] span (EL-2f9fe287)
+22442:              [TEXT]  => TEXT: Customers
+22443:          [FRAME] a (EL-419d61b5)
+22444:            [IMAGE-SVG] Frame (EL-b1d338df)
+22445:            [FRAME] span (EL-2f9fe287)
+22446:              [TEXT]  => TEXT: Sub-agents
+22447:          [FRAME] a (EL-419d61b5)
+22448:            [IMAGE-SVG] Frame (EL-b1d338df)
+22449:            [FRAME] span (EL-2f9fe287)
+22450:              [TEXT]  => TEXT: Pricing & Markup
+22451:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+22452:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+22453:          [FRAME] a (EL-419d61b5)
+22454:            [IMAGE-SVG] Frame (EL-b1d338df)
+22455:            [FRAME] span (EL-2f9fe287)
+22456:              [TEXT]  => TEXT: Wallet
+22457:          [FRAME] a (EL-419d61b5)
+22458:            [IMAGE-SVG] Frame (EL-b1d338df)
+22459:            [FRAME] span (EL-2f9fe287)
+22460:              [TEXT]  => TEXT: Credit
+22461:          [FRAME] a (EL-d0215df3)
+22462:            [IMAGE-SVG] Frame (EL-b1d338df)
+22463:            [FRAME] span (EL-2f9fe287)
+22464:              [TEXT]  => TEXT: Commissions
+22465:          [FRAME] a (EL-419d61b5)
+22466:            [IMAGE-SVG] Frame (EL-b1d338df)
+22467:            [FRAME] span (EL-2f9fe287)
+22468:              [TEXT]  => TEXT: Statements
+22469:          [FRAME] a (EL-419d61b5)
+22470:            [IMAGE-SVG] Frame (EL-b1d338df)
+22471:            [FRAME] span (EL-2f9fe287)
+22472:              [TEXT]  => TEXT: Reports
+22473:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+22474:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+22475:          [FRAME] a (EL-419d61b5)
+22476:            [IMAGE-SVG] Frame (EL-b1d338df)
+22477:            [FRAME] span (EL-2f9fe287)
+22478:              [TEXT]  => TEXT: Notifications
+22479:          [FRAME] a (EL-419d61b5)
+22480:            [IMAGE-SVG] Frame (EL-b1d338df)
+22481:            [FRAME] span (EL-2f9fe287)
+22482:              [TEXT]  => TEXT: Account / Settings
+22483:        [FRAME] p.sb-f (EL-ab281d22)
+22484:          [FRAME] b (EL-e9077466)
+22485:            [TEXT]  => TEXT: M2 · B2B Agent Portal
+22486:          [TEXT]  => TEXT: M2.9 Commissions
+22487:      [FRAME] MAIN
+22488:        [FRAME] main#top (EL-265f1e74)
+22489:          [FRAME] div (EL-286f649c)
+22490:            [FRAME] section (EL-64683540)
+22491:              [FRAME] div.ph-t (EL-12a11ae8)
+22492:                [FRAME] p.eyb (EL-e9077466)
+22493:                  [TEXT] Agent Portal · M2.9 Commission Tracking
+22494:                [FRAME] h1#h-pg (EL-e9077466)
+22495:                  [TEXT] Commissions
+22496:                [FRAME] p.ph-s (EL-33f6f1ad)
+22497:                  [TEXT] Track commissions generated from confirmed bookings and review settlement status.
+22498:                [FRAME] p.ph-biz (EL-ccd54d18)
+22499:                  [FRAME] b (EL-2f9fe287)
+22500:                    [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22501:                  [FRAME] span.dm-tag (EL-5514a8df)
+22502:                    [IMAGE-SVG] Frame (EL-62b4d877)
+22503:                    [TEXT]  => TEXT: Sample data
+22504:            [FRAME] section#c-sum (EL-5777b5ba)
+22505:              [FRAME] div.cd-h (EL-cefd9a89)
+22506:                [FRAME] span.kic (EL-9d7acaef)
+22507:                  [IMAGE-SVG] Frame (EL-b1d338df)
+22508:                [FRAME] div.cd-ht (EL-51794897)
+22509:                  [FRAME] h2#sm-h (EL-e9077466)
+22510:                    [TEXT] Commission Summary
+22511:                  [FRAME] p (EL-e9077466)
+22512:                    [TEXT] Active Pending, Earned and Settled records only — reversed commission is excluded
+22513:                [FRAME] span.dm-tag (EL-5514a8df)
+22514:                  [IMAGE-SVG] Frame (EL-62b4d877)
+22515:                  [TEXT]  => TEXT: Sample data
+22516:              [FRAME] div.cd-b (EL-900b4178)
+22517:                [FRAME] div.k4m (EL-f384505a)
+22518:                  [FRAME] article.kpi (EL-55d810b1)
+22519:                    [FRAME] div.kpi-h (EL-998e62e2)
+22520:                      [FRAME] span.kic (EL-a080e1c7)
+22521:                        [IMAGE-SVG] Frame (EL-b1d338df)
+22522:                      [FRAME] h3:margin
+22523:                        [TEXT]  => TEXT: Pending
+22524:                    [FRAME] p.cnt (EL-be873040)
+22525:                      [TEXT]  => TEXT: 1
+22526:                      [TEXT]  => TEXT: record
+22527:                    [FRAME] p.amt-l (EL-29ed9775)
+22528:                      [FRAME] span (EL-2a66e910)
+22529:                        [TEXT]  => TEXT: Amount
+22530:                      [FRAME] b (EL-2a66e910)
+22531:                        [TEXT]  => TEXT: Sample amount
+22532:                    [FRAME] p (EL-e9077466)
+22533:                      [TEXT] Commission currently shown as pending.
+22534:                  [FRAME] article.kpi (EL-55d810b1)
+22535:                    [FRAME] div.kpi-h (EL-998e62e2)
+22536:                      [FRAME] span.kic (EL-9d7acaef)
+22537:                        [IMAGE-SVG] Frame (EL-b1d338df)
+22538:                      [FRAME] h3:margin
+22539:                        [TEXT] Earned
+22540:                    [FRAME] p.cnt (EL-be873040)
+22541:                      [TEXT]  => TEXT: 1
+22542:                      [TEXT]  => TEXT: record
+22543:                    [FRAME] p.amt-l (EL-29ed9775)
+22544:                      [FRAME] span (EL-2a66e910)
+22545:                        [TEXT]  => TEXT: Amount
+22546:                      [FRAME] b (EL-2a66e910)
+22547:                        [TEXT]  => TEXT: Sample amount
+22548:                    [FRAME] p (EL-e9077466)
+22549:                      [TEXT] Commission currently shown as earned.
+22550:                  [FRAME] article.kpi (EL-c00459ae)
+22551:                    [FRAME] div.kpi-h (EL-998e62e2)
+22552:                      [FRAME] span.kic (EL-1aeab6f4)
+22553:                        [IMAGE-SVG] Frame (EL-b1d338df)
+22554:                      [FRAME] h3:margin
+22555:                        [TEXT] Settled
+22556:                    [FRAME] p.cnt (EL-be873040)
+22557:                      [TEXT]  => TEXT: 1
+22558:                      [TEXT]  => TEXT: record
+22559:                    [FRAME] p.amt-l (EL-29ed9775)
+22560:                      [FRAME] span (EL-2a66e910)
+22561:                        [TEXT]  => TEXT: Amount
+22562:                      [FRAME] b (EL-2a66e910)
+22563:                        [TEXT]  => TEXT: Sample amount
+22564:                    [FRAME] p (EL-e9077466)
+22565:                      [TEXT] Commission settlement recorded by Aero\\nWing Admin.
+22566:                  [FRAME] article.kpi (EL-c00459ae)
+22567:                    [FRAME] div.kpi-h (EL-998e62e2)
+22568:                      [FRAME] span.kic (EL-9e704c57)
+22569:                        [IMAGE-SVG] Frame (EL-b1d338df)
+22570:                      [FRAME] h3:margin
+22571:                        [TEXT] Commission Records
+22572:                    [FRAME] p.cnt (EL-be873040)
+22573:                      [TEXT] 5
+22574:                      [TEXT] total
+22575:                    [FRAME] p.amt-l (EL-29ed9775)
+22576:                      [FRAME] span (EL-2a66e910)
+22577:                        [TEXT] Active / reversed
+22578:                      [FRAME] b (EL-2a66e910)
+22579:                        [TEXT] 3 / 2
+22580:                    [FRAME] p (EL-e9077466)
+22581:                      [TEXT] Derived from the sample commission\\nrecords below.
+22582:                [FRAME] p.sum-n (EL-f96bbce8)
+22583:                  [FRAME] svg:margin (EL-74f7db68)
+22584:                    [IMAGE-SVG] Frame (EL-522202e5)
+22585:                  [TEXT] Commission amounts, rates and currency are not included in this design-preview dataset.
+22586:            [FRAME] div#c-set
+22587:              [FRAME] svg:margin (EL-7ae328ec)
+22588:                [IMAGE-SVG] Frame (EL-a73b2a19)
+22589:              [FRAME] div (EL-bfbba51a)
+22590:                [FRAME] b (EL-dfdf56f9)
+22591:                  [TEXT] Commission settlements are recorded by Aero Wing Admin
+22592:                [FRAME] span (EL-dfdf56f9)
+22593:                  [TEXT] Agent users can review settlement status but cannot record settlement payments.
+22594:            [FRAME] section#c-cfg (EL-5777b5ba)
+22595:              [FRAME] div.cd-h (EL-cefd9a89)
+22596:                [FRAME] span.kic (EL-1aeab6f4)
+22597:                  [IMAGE-SVG] Frame (EL-b1d338df)
+22598:                [FRAME] div.cd-ht (EL-51794897)
+22599:                  [FRAME] h2#cf-h (EL-e9077466)
+22600:                    [TEXT] Commission Configuration
+22601:                  [FRAME] p (EL-e9077466)
+22602:                    [TEXT] Commission rules are configured by Aero Wing Admin for the Agent, service and supplier.
+22603:                [FRAME] span.ro-b (EL-f1de3b07)
+22604:                  [IMAGE-SVG] Frame (EL-62b4d877)
+22605:                  [TEXT]  => TEXT: Read-only
+22606:              [FRAME] div.cd-b (EL-6674105b)
+22607:                [FRAME] dl.cfg
+22608:                  [FRAME] div (EL-5e8f7d86)
+22609:                    [FRAME] dt (EL-e9077466)
+22610:                      [TEXT] Agent
+22611:                    [FRAME] dd (EL-e9077466)
+22612:                      [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22613:                  [FRAME] div (EL-1d2000d3)
+22614:                    [FRAME] dt (EL-e9077466)
+22615:                      [TEXT]  => TEXT: Service
+22616:                    [FRAME] dd (EL-e9077466)
+22617:                      [TEXT]  => TEXT: Depends on applicable\ncommission rule
+22618:                  [FRAME] div (EL-1d2000d3)
+22619:                    [FRAME] dt (EL-e9077466)
+22620:                      [TEXT] Supplier
+22621:                    [FRAME] dd (EL-e9077466)
+22622:                      [TEXT]  => TEXT: Depends on applicable\ncommission rule
+22623:                  [FRAME] div (EL-5e8f7d86)
+22624:                    [FRAME] dt (EL-e9077466)
+22625:                      [TEXT] Commission Rule
+22626:                    [FRAME] dd (EL-e9077466)
+22627:                      [TEXT] Admin configured
+22628:                  [FRAME] div (EL-1d2000d3)
+22629:                    [FRAME] dt (EL-e9077466)
+22630:                      [TEXT] Rate
+22631:                    [FRAME] dd (EL-e9077466)
+22632:                      [TEXT] Rate configured by Aero Wing\\nAdmin
+22633:            [FRAME] section (EL-5777b5ba)
+22634:              [FRAME] div.cd-h (EL-cefd9a89)
+22635:                [FRAME] span.kic (EL-a080e1c7)
+22636:                  [IMAGE-SVG] Frame (EL-b1d338df)
+22637:                [FRAME] div.cd-ht (EL-51794897)
+22638:                  [FRAME] h2#ls-h (EL-e9077466)
+22639:                    [TEXT] Commission History
+22640:                  [FRAME] p (EL-e9077466)
+22641:                    [TEXT] Booking-level commission tracking · read-only
+22642:                [FRAME] span.dm-tag (EL-5514a8df)
+22643:                  [IMAGE-SVG] Frame (EL-62b4d877)
+22644:                  [TEXT]  => TEXT: Sample data
+22645:              [FRAME] Search and filter commission records (EL-3c5b9b06)
+22646:                [FRAME] div.bf2-r (EL-310e8d9a)
+22647:                  [FRAME] div.flt-s (EL-51794897)
+22648:                    [FRAME] input (EL-d73455e5)
+22649:                      [FRAME] div#placeholder (EL-4f02a5a4)
+22650:                        [TEXT] Search commissions
+22651:                      [FRAME] div#text-field-container (EL-24d4cf33)
+22652:                        [FRAME] div#editing-view-port (EL-09b05472)
+22653:                        [FRAME] div#search-clear:margin (EL-e5aab63e)
+22654:                    [IMAGE-SVG] Frame (EL-2e3f34c3)
+22655:                [FRAME] div#bfx
+22656:                  [FRAME] label.fs-f
+22657:                    [FRAME] span (EL-e9077466)
+22658:                      [TEXT] Commission Status
+22659:                    [FRAME] span.sel (EL-e9077466)
+22660:                      [FRAME] select#f-cs (EL-ea4531d4)
+22661:                        [FRAME] div (EL-51794897)
+22662:                          [TEXT]  => TEXT: All
+22663:                      [IMAGE-SVG] Frame (EL-e06044d8)
+22664:                  [FRAME] label.fs-f
+22665:                    [FRAME] span (EL-e9077466)
+22666:                      [TEXT]  => TEXT: Booking Status
+22667:                    [FRAME] span.sel (EL-e9077466)
+22668:                      [FRAME] select#f-bs (EL-ea4531d4)
+22669:                        [FRAME] div (EL-51794897)
+22670:                          [TEXT]  => TEXT: All
+22671:                      [IMAGE-SVG] Frame (EL-e06044d8)
+22672:                  [FRAME] label.fs-f
+22673:                    [FRAME] span (EL-e9077466)
+22674:                      [TEXT]  => TEXT: Service
+22675:                    [FRAME] span.sel (EL-e9077466)
+22676:                      [FRAME] select#f-svc (EL-ea4531d4)
+22677:                        [FRAME] div (EL-51794897)
+22678:                          [TEXT]  => TEXT: All Services
+22679:                      [IMAGE-SVG] Frame (EL-e06044d8)
+22680:                  [FRAME] label.fs-f
+22681:                    [FRAME] span (EL-e9077466)
+22682:                      [TEXT]  => TEXT: Created By
+22683:                    [FRAME] span.sel (EL-e9077466)
+22684:                      [FRAME] select#f-by (EL-ea4531d4)
+22685:                        [FRAME] div (EL-51794897)
+22686:                          [TEXT]  => TEXT: All
+22687:                      [IMAGE-SVG] Frame (EL-e06044d8)
+22688:                  [FRAME] label.fs-f
+22689:                    [FRAME] span (EL-e9077466)
+22690:                      [TEXT]  => TEXT: Supplier
+22691:                    [FRAME] span.sel (EL-e9077466)
+22692:                      [FRAME] select#f-su
+22693:                        [FRAME] div (EL-51794897)
+22694:                          [TEXT]  => TEXT: Supplier data unavailable
+22695:                      [IMAGE-SVG] Frame (EL-e06044d8)
+22696:                  [FRAME] label.fs-f
+22697:                    [FRAME] span (EL-e9077466)
+22698:                      [TEXT] Booking / Commission Date — From
+22699:                    [FRAME] input#f-from (EL-b7f3ef7b)
+22700:                      [FRAME] div (EL-a75c3b19)
+22701:                        [FRAME] div#date-time-edit (EL-f676945a)
+22702:                          [FRAME] div (EL-2781be54)
+22703:                            [TEXT]  => TEXT: mm
+22704:                            [TEXT]  => TEXT: /
+22705:                            [TEXT]  => TEXT: dd
+22706:                            [TEXT]  => TEXT: /
+22707:                            [TEXT]  => TEXT: yyyy
+22708:                        [FRAME] div menu#picker (EL-63a0d0bd)
+22709:                          [IMAGE-SVG] image (EL-56925d9d)
+22710:                  [FRAME] label.fs-f
+22711:                    [FRAME] span (EL-e9077466)
+22712:                      [TEXT]  => TEXT: To
+22713:                    [FRAME] input#f-to (EL-b7f3ef7b)
+22714:                      [FRAME] div (EL-a75c3b19)
+22715:                        [FRAME] div#date-time-edit (EL-f676945a)
+22716:                          [FRAME] div (EL-2781be54)
+22717:                            [TEXT]  => TEXT: mm
+22718:                            [TEXT]  => TEXT: /
+22719:                            [TEXT]  => TEXT: dd
+22720:                            [TEXT]  => TEXT: /
+22721:                            [TEXT]  => TEXT: yyyy
+22722:                        [FRAME] div menu#picker (EL-63a0d0bd)
+22723:                          [IMAGE-SVG] image (EL-56925d9d)
+22724:              [FRAME] div.bf-sum (EL-bb12fa7d)
+22725:                [FRAME] p#sum (EL-51794897)
+22726:                  [TEXT] {ts1}Showing {/ts1}{ts3}**5**{/ts3}{ts1} commission records{/ts1}
+22727:              [FRAME] div#ctw (EL-7439f5a3)
+22728:                [FRAME] table.btb (EL-e9077466)
+22729:                  [FRAME] tr (EL-8a10e53c)
+22730:                    [FRAME] th
+22731:                      [TEXT] Booking
+22732:                    [FRAME] th
+22733:                      [TEXT]  => TEXT: Service
+22734:                    [FRAME] th.c-cu
+22735:                      [TEXT]  => TEXT: Customer
+22736:                    [FRAME] th
+22737:                      [TEXT]  => TEXT: Created By
+22738:                    [FRAME] th
+22739:                      [TEXT] Booking Status
+22740:                    [FRAME] th
+22741:                      [TEXT] Commission Status
+22742:                    [FRAME] th
+22743:                      [TEXT] Commission
+22744:                    [FRAME] th.c-su
+22745:                      [TEXT]  => TEXT: Supplier
+22746:                    [RECTANGLE] th.act
+22747:                  [FRAME] tbody (EL-e9077466)
+22748:                    [FRAME] tr (EL-8a10e53c)
+22749:                      [FRAME] td.c-bk (EL-eb249582)
+22750:                        [TEXT] AW-DEMO-FL-006
+22751:                      [FRAME] td.c-sv (EL-180beeac)
+22752:                        [FRAME] span (EL-d269e0eb)
+22753:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22754:                          [TEXT]  => TEXT: Flight
+22755:                      [FRAME] td.c-cu (EL-53f349e7)
+22756:                        [TEXT] Mahin Chowdhury
+22757:                      [FRAME] td.c-by (EL-858eb512)
+22758:                        [FRAME] div (EL-81f8aba7)
+22759:                          [FRAME] b (EL-e9077466)
+22760:                            [TEXT]  => TEXT: Banani Desk
+22761:                          [FRAME] span.src (EL-7de4904a)
+22762:                            [IMAGE-SVG] Frame (EL-d4302386)
+22763:                            [TEXT]  => TEXT: Sub-agent
+22764:                      [FRAME] td.c-bs (EL-eb2bec3e)
+22765:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+22766:                          [IMAGE-SVG] Frame (EL-522202e5)
+22767:                          [TEXT]  => TEXT: Confirmed
+22768:                      [FRAME] td.c-cs (EL-098aed91)
+22769:                        [FRAME] span.p-pend (EL-e021b56f)
+22770:                          [IMAGE-SVG] Frame (EL-522202e5)
+22771:                          [TEXT]  => TEXT: Pending
+22772:                      [FRAME] td.c-am (EL-c15d1e71)
+22773:                        [FRAME] b (EL-e9077466)
+22774:                          [TEXT]  => TEXT: Sample amount
+22775:                      [FRAME] td.c-su (EL-1948566a)
+22776:                        [TEXT]  => TEXT: Unavailable
+22777:                      [FRAME] td.act (EL-71bcada3)
+22778:                        [FRAME] View commission details for AW-DEMO-FL-006 (EL-2f76e5a0)
+22779:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22780:                          [FRAME] span (EL-2a1f700b)
+22781:                            [TEXT]  => TEXT: View Details
+22782:                    [FRAME] tr (EL-8a10e53c)
+22783:                      [FRAME] td.c-bk (EL-eb249582)
+22784:                        [TEXT] AW-DEMO-HT-002
+22785:                      [FRAME] td.c-sv (EL-180beeac)
+22786:                        [FRAME] span (EL-d269e0eb)
+22787:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22788:                          [TEXT]  => TEXT: Hotel
+22789:                      [FRAME] td.c-cu (EL-53f349e7)
+22790:                        [TEXT] Karim Hasan
+22791:                      [FRAME] td.c-by (EL-858eb512)
+22792:                        [FRAME] div (EL-81f8aba7)
+22793:                          [FRAME] b (EL-e9077466)
+22794:                            [TEXT]  => TEXT: Mirpur Desk
+22795:                          [FRAME] span.src (EL-7de4904a)
+22796:                            [IMAGE-SVG] Frame (EL-d4302386)
+22797:                            [TEXT]  => TEXT: Sub-agent
+22798:                      [FRAME] td.c-bs (EL-eb2bec3e)
+22799:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+22800:                          [IMAGE-SVG] Frame (EL-522202e5)
+22801:                          [TEXT]  => TEXT: Confirmed
+22802:                      [FRAME] td.c-cs (EL-098aed91)
+22803:                        [FRAME] span.p-earn (EL-98019cd8)
+22804:                          [IMAGE-SVG] Frame (EL-522202e5)
+22805:                          [TEXT] Earned
+22806:                      [FRAME] td.c-am (EL-c15d1e71)
+22807:                        [FRAME] b (EL-e9077466)
+22808:                          [TEXT]  => TEXT: Sample amount
+22809:                      [FRAME] td.c-su (EL-1948566a)
+22810:                        [TEXT]  => TEXT: Unavailable
+22811:                      [FRAME] td.act (EL-71bcada3)
+22812:                        [FRAME] View commission details for AW-DEMO-HT-002 (EL-2f76e5a0)
+22813:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22814:                          [FRAME] span (EL-2a1f700b)
+22815:                            [TEXT]  => TEXT: View Details
+22816:                    [FRAME] tr (EL-8a10e53c)
+22817:                      [FRAME] td.c-bk (EL-eb249582)
+22818:                        [TEXT] AW-DEMO-PK-003
+22819:                      [FRAME] td.c-sv (EL-180beeac)
+22820:                        [FRAME] span (EL-d269e0eb)
+22821:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22822:                          [TEXT]  => TEXT: Travel Package
+22823:                      [FRAME] td.c-cu (EL-53f349e7)
+22824:                        [TEXT] Nadia Islam
+22825:                      [FRAME] td.c-by (EL-858eb512)
+22826:                        [FRAME] div (EL-81f8aba7)
+22827:                          [FRAME] b (EL-e9077466)
+22828:                            [TEXT]  => TEXT: Mirpur Desk
+22829:                          [FRAME] span.src (EL-7de4904a)
+22830:                            [IMAGE-SVG] Frame (EL-d4302386)
+22831:                            [TEXT]  => TEXT: Sub-agent
+22832:                      [FRAME] td.c-bs (EL-eb2bec3e)
+22833:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+22834:                          [IMAGE-SVG] Frame (EL-522202e5)
+22835:                          [TEXT]  => TEXT: Confirmed
+22836:                      [FRAME] td.c-cs (EL-098aed91)
+22837:                        [FRAME] span.p-set (EL-e7560554)
+22838:                          [IMAGE-SVG] Frame (EL-522202e5)
+22839:                          [TEXT] Settled
+22840:                      [FRAME] td.c-am (EL-c15d1e71)
+22841:                        [FRAME] b (EL-e9077466)
+22842:                          [TEXT]  => TEXT: Sample amount
+22843:                      [FRAME] td.c-su (EL-1948566a)
+22844:                        [TEXT]  => TEXT: Unavailable
+22845:                      [FRAME] td.act (EL-71bcada3)
+22846:                        [FRAME] View commission details for AW-DEMO-PK-003 (EL-2f76e5a0)
+22847:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22848:                          [FRAME] span (EL-2a1f700b)
+22849:                            [TEXT]  => TEXT: View Details
+22850:                    [FRAME] tr.rev (EL-8a10e53c)
+22851:                      [FRAME] td.c-bk
+22852:                        [TEXT] AW-DEMO-AC-011
+22853:                      [FRAME] td.c-sv
+22854:                        [FRAME] span (EL-d269e0eb)
+22855:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22856:                          [TEXT]  => TEXT: Activity
+22857:                      [FRAME] td.c-cu
+22858:                        [TEXT] Nafisa Rahman
+22859:                      [FRAME] td.c-by
+22860:                        [FRAME] div (EL-81f8aba7)
+22861:                          [FRAME] b (EL-e9077466)
+22862:                            [TEXT]  => TEXT: Skyline Demo Travels Ltd
+22863:                          [FRAME] span.src (EL-74e0cdeb)
+22864:                            [IMAGE-SVG] Frame (EL-d4302386)
+22865:                            [TEXT]  => TEXT: Parent Agent
+22866:                      [FRAME] td.c-bs
+22867:                        [FRAME] span.p-neu (EL-885c7133)
+22868:                          [IMAGE-SVG] Frame (EL-522202e5)
+22869:                          [TEXT]  => TEXT: Refunded
+22870:                      [FRAME] td.c-cs
+22871:                        [FRAME] span.imp (EL-d678bef6)
+22872:                          [IMAGE-SVG] Frame (EL-62b4d877)
+22873:                          [TEXT]  => TEXT: Commission reversed
+22874:                      [FRAME] td.c-am (EL-7eb95a78)
+22875:                        [FRAME] b (EL-e9077466)
+22876:                          [TEXT]  => TEXT: Sample amount
+22877:                        [FRAME] small (EL-fb54cfa0)
+22878:                          [TEXT] Reversed due to refund ·\\nnot in active totals
+22879:                      [FRAME] td.c-su
+22880:                        [TEXT]  => TEXT: Unavailable
+22881:                      [FRAME] td.act
+22882:                        [FRAME] View commission details for AW-DEMO-AC-011 (EL-2f76e5a0)
+22883:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22884:                          [FRAME] span (EL-2a1f700b)
+22885:                            [TEXT]  => TEXT: View Details
+22886:                    [FRAME] tr.rev (EL-8a10e53c)
+22887:                      [FRAME] td.c-bk
+22888:                        [TEXT] AW-DEMO-CR-005
+22889:                      [FRAME] td.c-sv
+22890:                        [FRAME] span (EL-d269e0eb)
+22891:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22892:                          [TEXT]  => TEXT: Car Rental
+22893:                      [FRAME] td.c-cu
+22894:                        [TEXT] Farhana Noor
+22895:                      [FRAME] td.c-by
+22896:                        [FRAME] div (EL-81f8aba7)
+22897:                          [FRAME] b (EL-e9077466)
+22898:                            [TEXT]  => TEXT: Mirpur Desk
+22899:                          [FRAME] span.src (EL-7de4904a)
+22900:                            [IMAGE-SVG] Frame (EL-d4302386)
+22901:                            [TEXT]  => TEXT: Sub-agent
+22902:                      [FRAME] td.c-bs
+22903:                        [FRAME] span.p-neu (EL-885c7133)
+22904:                          [IMAGE-SVG] Frame (EL-522202e5)
+22905:                          [TEXT]  => TEXT: Cancelled
+22906:                      [FRAME] td.c-cs
+22907:                        [FRAME] span.imp (EL-d678bef6)
+22908:                          [IMAGE-SVG] Frame (EL-62b4d877)
+22909:                          [TEXT]  => TEXT: Commission reversed
+22910:                      [FRAME] td.c-am (EL-7eb95a78)
+22911:                        [FRAME] b (EL-e9077466)
+22912:                          [TEXT]  => TEXT: Sample amount
+22913:                        [FRAME] small (EL-fb54cfa0)
+22914:                          [TEXT] Reversed due to\\ncancellation · not in active\\ntotals
+22915:                      [FRAME] td.c-su
+22916:                        [TEXT]  => TEXT: Unavailable
+22917:                      [FRAME] td.act
+22918:                        [FRAME] View commission details for AW-DEMO-CR-005 (EL-2f76e5a0)
+22919:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+22920:                          [FRAME] span (EL-2a1f700b)
+22921:                            [TEXT]  => TEXT: View Details
+22922:              [FRAME] div.lg-f2 (EL-fa35e3ab)
+22923:                [FRAME] span (EL-51794897)
+22924:                  [TEXT] Commission statuses: Pending, Earned, Settled. A cancellation or refund reverses commission — shown as an impact, not a status.
+22925:            [FRAME] div.inf-g
+22926:              [FRAME] article (EL-4dc7965b)
+22927:                [FRAME] h3 (EL-bf86a654)
+22928:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22929:                  [TEXT] Confirmed bookings
+22930:                [FRAME] p (EL-e9077466)
+22931:                  [TEXT] Commission is calculated on each confirmed booking, where\\nan applicable commission rule exists.
+22932:              [FRAME] article (EL-4dc7965b)
+22933:                [FRAME] h3 (EL-bf86a654)
+22934:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22935:                  [TEXT] Cancellations and refunds
+22936:                [FRAME] p (EL-e9077466)
+22937:                  [TEXT] Commission is reversed on cancellation or refund. Reversed\\ncommission is not included in active commission totals.
+22938:              [FRAME] article.imm
+22939:                [FRAME] h3 (EL-bf86a654)
+22940:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22941:                  [TEXT] Settlement
+22942:                [FRAME] p (EL-e9077466)
+22943:                  [TEXT] Settlement payments are recorded manually by Aero Wing\\nAdmin. The settlement method is not shown here.
+22944:              [FRAME] article (EL-fd383381)
+22945:                [FRAME] h3 (EL-bf86a654)
+22946:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22947:                  [TEXT] Created By
+22948:                [FRAME] p (EL-e9077466)
+22949:                  [TEXT] Created By shows where a booking came from \\(Parent Agent\\nor Sub-agent\\). This page tracks Skyline Demo Travels Ltd’s\\nAgent commission.
+22950:              [FRAME] article.cred (EL-bb247e74)
+22951:                [FRAME] h3 (EL-bf86a654)
+22952:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22953:                  [TEXT] Wallet Ledger
+22954:                [FRAME] p (EL-e9077466)
+22955:                  [TEXT] Commission-related wallet activity may appear in the Wallet\\nLedger where recorded.
+22956:                [FRAME] button.lnk:margin:align-flex-start
+22957:                  [FRAME] button.lnk:margin
+22958:                    [FRAME] button.lnk (EL-2c0b947c)
+22959:                      [TEXT]  => TEXT: View Wallet Ledger
+22960:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22961:              [FRAME] article (EL-64430d11)
+22962:                [FRAME] h3 (EL-bf86a654)
+22963:                  [IMAGE-SVG] Frame (EL-e96fade3)
+22964:                  [TEXT] Commission and markup
+22965:                [FRAME] p (EL-e9077466)
+22966:                  [TEXT] Commission is separate from your client markup. Markup\\nrules are managed under Pricing & Markup.
+22967:                [FRAME] button.lnk:margin:align-flex-start
+22968:                  [FRAME] button.lnk:margin
+22969:                    [FRAME] button.lnk (EL-2c0b947c)
+22970:                      [TEXT]  => TEXT: View Pricing & Markup
+22971:                      [IMAGE-SVG] Frame (EL-d40fb4e5)
+22972:        [FRAME] footer
+22973:          [FRAME] span (EL-2a66e910)
+22974:            [TEXT] AeroWing Agent Portal · M2.9 Commission Tracking · Website
+22975:          [FRAME] span (EL-2a66e910)
+22976:            [TEXT] Design prototype — no commission, settlement, booking or supplier system is called.
+22977:        [FRAME] header (EL-e7e947f7)
+22978:          [FRAME] Collapse navigation (EL-308cdf1b)
+22979:            [IMAGE-SVG] Frame (EL-a73b2a19)
+22980:          [FRAME] Breadcrumb (EL-51794897)
+22981:            [FRAME] ol (EL-0211da4a)
+22982:              [FRAME] li (EL-2a1bfea5)
+22983:                [FRAME] a (EL-2a66e910)
+22984:                  [TEXT]  => TEXT: Dashboard
+22985:              [FRAME] li (EL-fc963d7f)
+22986:                [TEXT]  => TEXT: /
+22987:                [TEXT] Commissions
+22988:          [FRAME] form#tb-s (EL-f48bd93e)
+22989:            [FRAME] input#tb-q (EL-fdc56343)
+22990:              [FRAME] div#placeholder (EL-0b890b82)
+22991:                [TEXT]  => TEXT: Search bookings or customers
+22992:              [FRAME] div#text-field-container (EL-e6b26f43)
+22993:                [FRAME] div#editing-view-port (EL-541d4b8f)
+22994:                [FRAME] div#search-clear:margin (EL-e5aab63e)
+22995:            [IMAGE-SVG] Frame (EL-f744bb1f)
+22996:          [FRAME] div.pop-w (EL-2f9fe287)
+22997:            [FRAME] Notifications (EL-308cdf1b)
+22998:              [IMAGE-SVG] Frame (EL-a73b2a19)
+22999:          [FRAME] div.pop-w (EL-2f9fe287)
+23000:            [FRAME] button menu#pf-btn (EL-73541ea2)
+23001:              [FRAME] span#pf-av (EL-97ad2434)
+23002:                [TEXT]  => TEXT: SD
+23003:              [FRAME] span.tb-avt (EL-6e7b525c)
+23004:                [FRAME] b#pf-biz (EL-dfdf56f9)
+23005:                  [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23006:                [FRAME] small#pf-usr (EL-dfdf56f9)
+23007:                  [TEXT]  => TEXT: Nusrat Jahan · Agent Owner
+23008:              [IMAGE-SVG] Frame (EL-d40fb4e5)
+23009:  [FRAME] Agent Statements
+23010:    [FRAME] div#shell
+23011:      [FRAME] Agent Portal navigation (EL-84ca712f)
+23012:        [FRAME] div.sb-h (EL-5a59422e)
+23013:          [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+23014:            [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+23015:          [TEXT]  => TEXT: Agent Portal
+23016:        [FRAME] Agent Portal sections (EL-34ff3f47)
+23017:          [FRAME] a (EL-419d61b5)
+23018:            [IMAGE-SVG] Frame (EL-b1d338df)
+23019:            [FRAME] span (EL-2f9fe287)
+23020:              [TEXT]  => TEXT: Dashboard
+23021:          [FRAME] a (EL-419d61b5)
+23022:            [IMAGE-SVG] Frame (EL-b1d338df)
+23023:            [FRAME] span (EL-2f9fe287)
+23024:              [TEXT]  => TEXT: Search & Book
+23025:          [FRAME] a (EL-419d61b5)
+23026:            [IMAGE-SVG] Frame (EL-b1d338df)
+23027:            [FRAME] span (EL-2f9fe287)
+23028:              [TEXT]  => TEXT: Bookings
+23029:          [FRAME] a (EL-419d61b5)
+23030:            [IMAGE-SVG] Frame (EL-b1d338df)
+23031:            [FRAME] span (EL-2f9fe287)
+23032:              [TEXT]  => TEXT: Customers
+23033:          [FRAME] a (EL-419d61b5)
+23034:            [IMAGE-SVG] Frame (EL-b1d338df)
+23035:            [FRAME] span (EL-2f9fe287)
+23036:              [TEXT]  => TEXT: Sub-agents
+23037:          [FRAME] a (EL-419d61b5)
+23038:            [IMAGE-SVG] Frame (EL-b1d338df)
+23039:            [FRAME] span (EL-2f9fe287)
+23040:              [TEXT]  => TEXT: Pricing & Markup
+23041:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+23042:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+23043:          [FRAME] a (EL-419d61b5)
+23044:            [IMAGE-SVG] Frame (EL-b1d338df)
+23045:            [FRAME] span (EL-2f9fe287)
+23046:              [TEXT]  => TEXT: Wallet
+23047:          [FRAME] a (EL-419d61b5)
+23048:            [IMAGE-SVG] Frame (EL-b1d338df)
+23049:            [FRAME] span (EL-2f9fe287)
+23050:              [TEXT]  => TEXT: Credit
+23051:          [FRAME] a (EL-419d61b5)
+23052:            [IMAGE-SVG] Frame (EL-b1d338df)
+23053:            [FRAME] span (EL-2f9fe287)
+23054:              [TEXT]  => TEXT: Commissions
+23055:          [FRAME] a (EL-d0215df3)
+23056:            [IMAGE-SVG] Frame (EL-b1d338df)
+23057:            [FRAME] span (EL-2f9fe287)
+23058:              [TEXT] Statements
+23059:          [FRAME] a (EL-419d61b5)
+23060:            [IMAGE-SVG] Frame (EL-b1d338df)
+23061:            [FRAME] span (EL-2f9fe287)
+23062:              [TEXT]  => TEXT: Reports
+23063:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+23064:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+23065:          [FRAME] a (EL-419d61b5)
+23066:            [IMAGE-SVG] Frame (EL-b1d338df)
+23067:            [FRAME] span (EL-2f9fe287)
+23068:              [TEXT]  => TEXT: Notifications
+23069:          [FRAME] a (EL-419d61b5)
+23070:            [IMAGE-SVG] Frame (EL-b1d338df)
+23071:            [FRAME] span (EL-2f9fe287)
+23072:              [TEXT]  => TEXT: Account / Settings
+23073:        [FRAME] p.sb-f (EL-ab281d22)
+23074:          [FRAME] b (EL-e9077466)
+23075:            [TEXT]  => TEXT: M2 · B2B Agent Portal
+23076:          [TEXT] M2.10 Statements
+23077:      [FRAME] MAIN
+23078:        [FRAME] main#top (EL-265f1e74)
+23079:          [FRAME] div (EL-286f649c)
+23080:            [FRAME] section (EL-a656df9e)
+23081:              [FRAME] div.ph-t (EL-12a11ae8)
+23082:                [FRAME] p.eyb (EL-e9077466)
+23083:                  [TEXT] Agent Portal · M2.10 Agent Statements
+23084:                [FRAME] h1#h-pg (EL-e9077466)
+23085:                  [TEXT] Agent Statements
+23086:                [FRAME] p.ph-s (EL-33f6f1ad)
+23087:                  [TEXT] Review account activity for a selected period and download your statement.
+23088:                [FRAME] p.ph-biz (EL-ccd54d18)
+23089:                  [FRAME] b (EL-2f9fe287)
+23090:                    [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23091:                  [FRAME] span.dm-tag (EL-5514a8df)
+23092:                    [IMAGE-SVG] Frame (EL-62b4d877)
+23093:                    [TEXT]  => TEXT: Sample data
+23094:              [FRAME] div.ph-a3 (EL-d9efaca1)
+23095:                [FRAME] button.btn (EL-1ecbab94)
+23096:                  [IMAGE-SVG] Frame (EL-f652840d)
+23097:                  [FRAME] span (EL-2a1f700b)
+23098:                    [TEXT] Download CSV
+23099:                [FRAME] button.btn (EL-91e5fe2d)
+23100:                  [RECTANGLE] button.btn:shadow
+23101:                  [IMAGE-SVG] Frame (EL-f652840d)
+23102:                  [FRAME] span (EL-2a1f700b)
+23103:                    [TEXT] Download PDF
+23104:            [FRAME] section.pbar (EL-79125a71)
+23105:              [FRAME] h2#pb-h (EL-c8d50cb3)
+23106:                [IMAGE-SVG] Frame (EL-f652840d)
+23107:                [TEXT] Statement Period
+23108:              [FRAME] form#pform
+23109:                [FRAME] Period presets
+23110:                  [FRAME] button (EL-41dad5eb)
+23111:                    [TEXT]  => TEXT: This Month
+23112:                  [FRAME] button (EL-41dad5eb)
+23113:                    [TEXT]  => TEXT: Previous Month
+23114:                  [FRAME] button (EL-2bdb6f4b)
+23115:                    [TEXT]  => TEXT: Custom
+23116:                [FRAME] div.pr-e (EL-a5ce7f8c)
+23117:                  [FRAME] label#p-from-w (EL-99324298)
+23118:                    [FRAME] span (EL-e9077466)
+23119:                      [TEXT]  => TEXT: From
+23120:                    [FRAME] input#p-from (EL-54791ce1)
+23121:                      [FRAME] div (EL-a75c3b19)
+23122:                        [FRAME] div#date-time-edit (EL-f676945a)
+23123:                          [FRAME] div (EL-2781be54)
+23124:                            [TEXT]  => TEXT: 10
+23125:                            [TEXT]  => TEXT: /
+23126:                            [TEXT]  => TEXT: 01
+23127:                            [TEXT]  => TEXT: /
+23128:                            [TEXT]  => TEXT: 2026
+23129:                        [FRAME] div menu#picker (EL-63a0d0bd)
+23130:                          [IMAGE-SVG] image (EL-56925d9d)
+23131:                [FRAME] div.pr-e (EL-a5ce7f8c)
+23132:                  [FRAME] label#p-to-w (EL-99324298)
+23133:                    [FRAME] span (EL-e9077466)
+23134:                      [TEXT]  => TEXT: To
+23135:                    [FRAME] input#p-to (EL-54791ce1)
+23136:                      [FRAME] div (EL-a75c3b19)
+23137:                        [FRAME] div#date-time-edit (EL-f676945a)
+23138:                          [FRAME] div (EL-2781be54)
+23139:                            [TEXT]  => TEXT: 11
+23140:                            [TEXT]  => TEXT: /
+23141:                            [TEXT]  => TEXT: 16
+23142:                            [TEXT]  => TEXT: /
+23143:                            [TEXT]  => TEXT: 2026
+23144:                        [FRAME] div menu#picker (EL-63a0d0bd)
+23145:                          [IMAGE-SVG] image (EL-56925d9d)
+23146:                [FRAME] button.btn
+23147:                  [RECTANGLE] button.btn:shadow
+23148:                  [IMAGE-SVG] Frame (EL-f652840d)
+23149:                  [FRAME] span (EL-2a1f700b)
+23150:                    [TEXT] View Statement
+23151:            [FRAME] article#doc
+23152:              [FRAME] header.doc-h
+23153:                [FRAME] div
+23154:                  [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+23155:                    [FRAME] AeroWing — Explore, Book, Travel
+23156:                  [FRAME] h2#doc-h
+23157:                    [TEXT] Agent Statement
+23158:                  [FRAME] p
+23159:                    [FRAME] span.dm-tag (EL-159ee852)
+23160:                      [IMAGE-SVG] Frame (EL-62b4d877)
+23161:                      [TEXT]  => TEXT: Sample data
+23162:                [FRAME] dl.doc-m:align-flex-end
+23163:                  [FRAME] dl.doc-m
+23164:                    [FRAME] div (EL-bfbba51a)
+23165:                      [FRAME] dt (EL-dfdf56f9)
+23166:                        [TEXT] Agent
+23167:                      [FRAME] dd (EL-dfdf56f9)
+23168:                        [TEXT] Skyline Demo Travels Ltd
+23169:                    [FRAME] div (EL-bfbba51a)
+23170:                      [FRAME] dt (EL-dfdf56f9)
+23171:                        [TEXT] Statement Period
+23172:                      [FRAME] dd#doc-per (EL-dfdf56f9)
+23173:                        [TEXT] 01 Oct 2026 – 16 Nov 2026
+23174:                    [FRAME] div (EL-bfbba51a)
+23175:                      [FRAME] dt (EL-dfdf56f9)
+23176:                        [TEXT] Statement Type
+23177:                      [FRAME] dd (EL-dfdf56f9)
+23178:                        [TEXT] Agent Statement
+23179:              [FRAME] div.doc-b
+23180:                [FRAME] Statement summary
+23181:                  [FRAME] div (EL-cb50a28c)
+23182:                    [FRAME] small (EL-e9077466)
+23183:                      [TEXT] Bookings
+23184:                    [FRAME] b (EL-e9077466)
+23185:                      [TEXT]  => TEXT: Activity available
+23186:                    [FRAME] span (EL-e9077466)
+23187:                      [TEXT] 12 in period
+23188:                  [FRAME] div (EL-cb50a28c)
+23189:                    [FRAME] small (EL-e9077466)
+23190:                      [TEXT] Wallet Transactions
+23191:                    [FRAME] b (EL-e9077466)
+23192:                      [TEXT]  => TEXT: Activity available
+23193:                    [FRAME] span (EL-e9077466)
+23194:                      [TEXT] 10 in period
+23195:                  [FRAME] div
+23196:                    [FRAME] small (EL-e9077466)
+23197:                      [TEXT] Credit Usage
+23198:                    [FRAME] b (EL-e9077466)
+23199:                      [TEXT]  => TEXT: Usage available
+23200:                    [FRAME] span (EL-e9077466)
+23201:                      [TEXT] Credit Limit, Used, Available,\\nOutstanding
+23202:                  [FRAME] div (EL-cb50a28c)
+23203:                    [FRAME] small (EL-e9077466)
+23204:                      [TEXT] Commissions
+23205:                    [FRAME] b (EL-e9077466)
+23206:                      [TEXT]  => TEXT: Activity available
+23207:                    [FRAME] span (EL-e9077466)
+23208:                      [TEXT] 5 in period
+23209:                  [FRAME] div
+23210:                    [FRAME] small (EL-e9077466)
+23211:                      [TEXT] Closing Balance
+23212:                    [FRAME] b (EL-e9077466)
+23213:                      [TEXT] Statement value
+23214:                    [FRAME] span (EL-e9077466)
+23215:                      [TEXT] System-provided
+23216:                [FRAME] Bookings (EL-a94b8ffa)
+23217:                  [FRAME] div.dsec-h (EL-d29137d2)
+23218:                    [FRAME] h3
+23219:                      [FRAME] button.dsec-t (EL-3bf81aa1)
+23220:                        [FRAME] span.kic
+23221:                          [IMAGE-SVG] Frame (EL-f1890f3e)
+23222:                        [TEXT] Bookings
+23223:                        [FRAME] span.cnt (EL-9ea39ecd)
+23224:                          [TEXT] 12
+23225:                        [FRAME] svg.chv:margin
+23226:                          [FRAME] svg.chv (EL-f40e3bba)
+23227:                            [IMAGE-SVG] Frame (EL-0af5cf6c)
+23228:                    [FRAME] div.dsec-a
+23229:                      [FRAME] button.lnk (EL-996ec01d)
+23230:                        [TEXT] View Booking History
+23231:                        [IMAGE-SVG] Frame (EL-d40fb4e5)
+23232:                  [FRAME] div#b-bk (EL-47ca8de5)
+23233:                    [FRAME] table.btb (EL-a7affeb4)
+23234:                      [FRAME] tr (EL-8a10e53c)
+23235:                        [FRAME] th
+23236:                          [TEXT] Booking Reference
+23237:                        [FRAME] th
+23238:                          [TEXT] Customer
+23239:                        [FRAME] th
+23240:                          [TEXT]  => TEXT: Service
+23241:                        [FRAME] th
+23242:                          [TEXT] Created By
+23243:                        [FRAME] th
+23244:                          [TEXT] Booking Date
+23245:                        [FRAME] th
+23246:                          [TEXT] Booking Status
+23247:                        [FRAME] th.num-c
+23248:                          [TEXT] Booking Amount
+23249:                      [FRAME] tbody (EL-e9077466)
+23250:                        [FRAME] tr (EL-8a10e53c)
+23251:                          [FRAME] td (EL-51cfc64f)
+23252:                            [TEXT] AW-DEMO-PK-003
+23253:                          [FRAME] td (EL-23490a49)
+23254:                            [TEXT] Nadia Islam
+23255:                          [FRAME] td (EL-11616f91)
+23256:                            [TEXT]  => TEXT: Travel Package
+23257:                          [FRAME] td (EL-4c9c070f)
+23258:                            [TEXT]  => TEXT: Mirpur Desk
+23259:                            [FRAME] span (EL-e9077466)
+23260:                              [TEXT]  => TEXT: Sub-agent
+23261:                          [FRAME] td (EL-3a0c236c)
+23262:                            [TEXT] 05 Oct 2026
+23263:                          [FRAME] td (EL-0ebac5a2)
+23264:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23265:                              [IMAGE-SVG] Frame (EL-522202e5)
+23266:                              [TEXT]  => TEXT: Confirmed
+23267:                          [FRAME] td.num-c (EL-c761eb19)
+23268:                            [TEXT]  => TEXT: Sample amount
+23269:                        [FRAME] tr (EL-8a10e53c)
+23270:                          [FRAME] td (EL-51cfc64f)
+23271:                            [TEXT] AW-DEMO-CR-005
+23272:                          [FRAME] td (EL-23490a49)
+23273:                            [TEXT] Farhana Noor
+23274:                          [FRAME] td (EL-11616f91)
+23275:                            [TEXT]  => TEXT: Car Rental
+23276:                          [FRAME] td (EL-4c9c070f)
+23277:                            [TEXT]  => TEXT: Mirpur Desk
+23278:                            [FRAME] span (EL-e9077466)
+23279:                              [TEXT]  => TEXT: Sub-agent
+23280:                          [FRAME] td (EL-3a0c236c)
+23281:                            [TEXT] 12 Oct 2026
+23282:                          [FRAME] td (EL-0ebac5a2)
+23283:                            [FRAME] span.p-neu (EL-885c7133)
+23284:                              [IMAGE-SVG] Frame (EL-522202e5)
+23285:                              [TEXT] Cancelled
+23286:                          [FRAME] td.num-c (EL-c761eb19)
+23287:                            [TEXT]  => TEXT: Sample amount
+23288:                        [FRAME] tr (EL-8a10e53c)
+23289:                          [FRAME] td (EL-51cfc64f)
+23290:                            [TEXT] AW-DEMO-BT-009
+23291:                          [FRAME] td (EL-23490a49)
+23292:                            [TEXT] Maliha Khan
+23293:                          [FRAME] td (EL-11616f91)
+23294:                            [TEXT] Bus / Train
+23295:                          [FRAME] td (EL-4c9c070f)
+23296:                            [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23297:                            [FRAME] span (EL-e9077466)
+23298:                              [TEXT]  => TEXT: Parent Agent
+23299:                          [FRAME] td (EL-3a0c236c)
+23300:                            [TEXT] 14 Oct 2026
+23301:                          [FRAME] td (EL-0ebac5a2)
+23302:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23303:                              [IMAGE-SVG] Frame (EL-522202e5)
+23304:                              [TEXT]  => TEXT: Confirmed
+23305:                          [FRAME] td.num-c (EL-c761eb19)
+23306:                            [TEXT]  => TEXT: Sample amount
+23307:                        [FRAME] tr (EL-8a10e53c)
+23308:                          [FRAME] td (EL-51cfc64f)
+23309:                            [TEXT] AW-DEMO-AC-011
+23310:                          [FRAME] td (EL-23490a49)
+23311:                            [TEXT] Nafisa Rahman
+23312:                          [FRAME] td (EL-11616f91)
+23313:                            [TEXT]  => TEXT: Activity
+23314:                          [FRAME] td (EL-4c9c070f)
+23315:                            [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23316:                            [FRAME] span (EL-e9077466)
+23317:                              [TEXT]  => TEXT: Parent Agent
+23318:                          [FRAME] td (EL-3a0c236c)
+23319:                            [TEXT] 18 Oct 2026
+23320:                          [FRAME] td (EL-0ebac5a2)
+23321:                            [FRAME] span.p-neu (EL-885c7133)
+23322:                              [IMAGE-SVG] Frame (EL-522202e5)
+23323:                              [TEXT] Refunded
+23324:                          [FRAME] td.num-c (EL-c761eb19)
+23325:                            [TEXT]  => TEXT: Sample amount
+23326:                        [FRAME] tr (EL-8a10e53c)
+23327:                          [FRAME] td (EL-51cfc64f)
+23328:                            [TEXT] AW-DEMO-HT-002
+23329:                          [FRAME] td (EL-23490a49)
+23330:                            [TEXT] Karim Hasan
+23331:                          [FRAME] td (EL-11616f91)
+23332:                            [TEXT]  => TEXT: Hotel
+23333:                          [FRAME] td (EL-4c9c070f)
+23334:                            [TEXT]  => TEXT: Mirpur Desk
+23335:                            [FRAME] span (EL-e9077466)
+23336:                              [TEXT]  => TEXT: Sub-agent
+23337:                          [FRAME] td (EL-3a0c236c)
+23338:                            [TEXT] 22 Oct 2026
+23339:                          [FRAME] td (EL-0ebac5a2)
+23340:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23341:                              [IMAGE-SVG] Frame (EL-522202e5)
+23342:                              [TEXT]  => TEXT: Confirmed
+23343:                          [FRAME] td.num-c (EL-c761eb19)
+23344:                            [TEXT]  => TEXT: Sample amount
+23345:                        [FRAME] tr (EL-8a10e53c)
+23346:                          [FRAME] td (EL-51cfc64f)
+23347:                            [TEXT] AW-DEMO-HT-007
+23348:                          [FRAME] td (EL-23490a49)
+23349:                            [TEXT] Tania Sultana
+23350:                          [FRAME] td (EL-11616f91)
+23351:                            [TEXT]  => TEXT: Hotel
+23352:                          [FRAME] td (EL-4c9c070f)
+23353:                            [TEXT]  => TEXT: Banani Desk
+23354:                            [FRAME] span (EL-e9077466)
+23355:                              [TEXT]  => TEXT: Sub-agent
+23356:                          [FRAME] td (EL-3a0c236c)
+23357:                            [TEXT] 26 Oct 2026
+23358:                          [FRAME] td (EL-0ebac5a2)
+23359:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23360:                              [IMAGE-SVG] Frame (EL-522202e5)
+23361:                              [TEXT]  => TEXT: Issued
+23362:                          [FRAME] td.num-c (EL-c761eb19)
+23363:                            [TEXT]  => TEXT: Sample amount
+23364:                        [FRAME] tr (EL-8a10e53c)
+23365:                          [FRAME] td (EL-51cfc64f)
+23366:                            [TEXT] AW-DEMO-TI-010
+23367:                          [FRAME] td (EL-23490a49)
+23368:                            [TEXT] Tasnim Karim
+23369:                          [FRAME] td (EL-11616f91)
+23370:                            [TEXT] Travel Insurance
+23371:                          [FRAME] td (EL-4c9c070f)
+23372:                            [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23373:                            [FRAME] span (EL-e9077466)
+23374:                              [TEXT]  => TEXT: Parent Agent
+23375:                          [FRAME] td (EL-3a0c236c)
+23376:                            [TEXT] 30 Oct 2026
+23377:                          [FRAME] td (EL-0ebac5a2)
+23378:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23379:                              [IMAGE-SVG] Frame (EL-522202e5)
+23380:                              [TEXT]  => TEXT: Issued
+23381:                          [FRAME] td.num-c (EL-c761eb19)
+23382:                            [TEXT]  => TEXT: Sample amount
+23383:                        [FRAME] tr (EL-8a10e53c)
+23384:                          [FRAME] td (EL-51cfc64f)
+23385:                            [TEXT] AW-DEMO-ES-008
+23386:                          [FRAME] td (EL-23490a49)
+23387:                            [TEXT] Rafi Ahmed
+23388:                          [FRAME] td (EL-11616f91)
+23389:                            [TEXT] eSIM
+23390:                          [FRAME] td (EL-4c9c070f)
+23391:                            [TEXT] Uttara Desk
+23392:                            [FRAME] span (EL-e9077466)
+23393:                              [TEXT]  => TEXT: Sub-agent
+23394:                          [FRAME] td (EL-3a0c236c)
+23395:                            [TEXT] 02 Nov 2026
+23396:                          [FRAME] td (EL-0ebac5a2)
+23397:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23398:                              [IMAGE-SVG] Frame (EL-522202e5)
+23399:                              [TEXT]  => TEXT: Issued
+23400:                          [FRAME] td.num-c (EL-c761eb19)
+23401:                            [TEXT]  => TEXT: Sample amount
+23402:                        [FRAME] tr (EL-8a10e53c)
+23403:                          [FRAME] td (EL-51cfc64f)
+23404:                            [TEXT] AW-DEMO-FL-006
+23405:                          [FRAME] td (EL-23490a49)
+23406:                            [TEXT] Mahin Chowdhury
+23407:                          [FRAME] td (EL-11616f91)
+23408:                            [TEXT]  => TEXT: Flight
+23409:                          [FRAME] td (EL-4c9c070f)
+23410:                            [TEXT]  => TEXT: Banani Desk
+23411:                            [FRAME] span (EL-e9077466)
+23412:                              [TEXT]  => TEXT: Sub-agent
+23413:                          [FRAME] td (EL-3a0c236c)
+23414:                            [TEXT] 04 Nov 2026
+23415:                          [FRAME] td (EL-0ebac5a2)
+23416:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23417:                              [IMAGE-SVG] Frame (EL-522202e5)
+23418:                              [TEXT]  => TEXT: Confirmed
+23419:                          [FRAME] td.num-c (EL-c761eb19)
+23420:                            [TEXT]  => TEXT: Sample amount
+23421:                        [FRAME] tr (EL-8a10e53c)
+23422:                          [FRAME] td (EL-51cfc64f)
+23423:                            [TEXT] AW-DEMO-FL-001
+23424:                          [FRAME] td (EL-23490a49)
+23425:                            [TEXT] Amina Rahman
+23426:                          [FRAME] td (EL-11616f91)
+23427:                            [TEXT]  => TEXT: Flight
+23428:                          [FRAME] td (EL-4c9c070f)
+23429:                            [TEXT]  => TEXT: Mirpur Desk
+23430:                            [FRAME] span (EL-e9077466)
+23431:                              [TEXT]  => TEXT: Sub-agent
+23432:                          [FRAME] td (EL-3a0c236c)
+23433:                            [TEXT] 05 Nov 2026
+23434:                          [FRAME] td (EL-0ebac5a2)
+23435:                            [FRAME] span.p-ok (EL-4ed5d9a3)
+23436:                              [IMAGE-SVG] Frame (EL-522202e5)
+23437:                              [TEXT] Ticketed
+23438:                          [FRAME] td.num-c (EL-c761eb19)
+23439:                            [TEXT]  => TEXT: Sample amount
+23440:                        [FRAME] tr (EL-8a10e53c)
+23441:                          [FRAME] td (EL-51cfc64f)
+23442:                            [TEXT] AW-DEMO-AC-004
+23443:                          [FRAME] td (EL-23490a49)
+23444:                            [TEXT] Samiul Ahmed
+23445:                          [FRAME] td (EL-11616f91)
+23446:                            [TEXT]  => TEXT: Activity
+23447:                          [FRAME] td (EL-4c9c070f)
+23448:                            [TEXT]  => TEXT: Mirpur Desk
+23449:                            [FRAME] span (EL-e9077466)
+23450:                              [TEXT]  => TEXT: Sub-agent
+23451:                          [FRAME] td (EL-3a0c236c)
+23452:                            [TEXT] 09 Nov 2026
+23453:                          [FRAME] td (EL-0ebac5a2)
+23454:                            [FRAME] span.p-pend (EL-e021b56f)
+23455:                              [IMAGE-SVG] Frame (EL-522202e5)
+23456:                              [TEXT]  => TEXT: Pending
+23457:                          [FRAME] td.num-c (EL-c761eb19)
+23458:                            [TEXT]  => TEXT: Sample amount
+23459:                        [FRAME] tr (EL-8a10e53c)
+23460:                          [FRAME] td (EL-51cfc64f)
+23461:                            [TEXT] AW-DEMO-FL-012
+23462:                          [FRAME] td (EL-23490a49)
+23463:                            [TEXT] Imran Hossain
+23464:                          [FRAME] td (EL-11616f91)
+23465:                            [TEXT]  => TEXT: Flight
+23466:                          [FRAME] td (EL-4c9c070f)
+23467:                            [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23468:                            [FRAME] span (EL-e9077466)
+23469:                              [TEXT]  => TEXT: Parent Agent
+23470:                          [FRAME] td (EL-3a0c236c)
+23471:                            [TEXT] 11 Nov 2026
+23472:                          [FRAME] td (EL-0ebac5a2)
+23473:                            [FRAME] span.p-err (EL-14e457b2)
+23474:                              [IMAGE-SVG] Frame (EL-522202e5)
+23475:                              [TEXT] Failed
+23476:                          [FRAME] td.num-c
+23477:                            [FRAME] span (EL-8432426e)
+23478:                              [TEXT] Not applicable
+23479:                    [FRAME] p (EL-f9d4bb24)
+23480:                      [FRAME] svg:margin (EL-b964cc84)
+23481:                        [IMAGE-SVG] Frame (EL-62b4d877)
+23482:                      [TEXT] Created By shows booking origin. Sub-agent bookings settle against the Parent Agent account; no separate Sub-agent statement exists. Booking dates are fictional samples.
+23483:                [FRAME] Wallet Transactions (EL-a94b8ffa)
+23484:                  [FRAME] div.dsec-h (EL-d29137d2)
+23485:                    [FRAME] h3
+23486:                      [FRAME] button.dsec-t (EL-3bf81aa1)
+23487:                        [FRAME] span.kic (EL-ae402969)
+23488:                          [IMAGE-SVG] Frame (EL-f1890f3e)
+23489:                        [TEXT] Wallet Transactions
+23490:                        [FRAME] span.cnt (EL-9ea39ecd)
+23491:                          [TEXT] 10
+23492:                        [FRAME] svg.chv:margin
+23493:                          [FRAME] svg.chv (EL-f40e3bba)
+23494:                            [IMAGE-SVG] Frame (EL-0af5cf6c)
+23495:                    [FRAME] div.dsec-a
+23496:                      [FRAME] button.lnk (EL-006703e3)
+23497:                        [TEXT]  => TEXT: View Wallet Ledger
+23498:                        [IMAGE-SVG] Frame (EL-d40fb4e5)
+23499:                  [FRAME] div#b-wl (EL-47ca8de5)
+23500:                    [FRAME] table.btb (EL-a7affeb4)
+23501:                      [FRAME] tr (EL-8a10e53c)
+23502:                        [FRAME] th
+23503:                          [TEXT] Date / Time
+23504:                        [FRAME] th
+23505:                          [TEXT] Type
+23506:                        [FRAME] th
+23507:                          [TEXT] Description
+23508:                        [FRAME] th
+23509:                          [TEXT] Reference
+23510:                        [FRAME] th
+23511:                          [TEXT] Direction
+23512:                        [FRAME] th.num-c
+23513:                          [TEXT] Amount
+23514:                        [FRAME] th.num-c
+23515:                          [TEXT] Running Balance
+23516:                      [FRAME] tbody (EL-e9077466)
+23517:                        [FRAME] tr (EL-8a10e53c)
+23518:                          [FRAME] td (EL-0d88ebc7)
+23519:                            [TEXT] 02 Oct 2026 · 09:30
+23520:                          [FRAME] td (EL-47390c97)
+23521:                            [TEXT]  => TEXT: Top-up
+23522:                          [FRAME] td (EL-4159cec6)
+23523:                            [TEXT]  => TEXT: Stripe wallet top-up
+23524:                          [FRAME] td (EL-bab2d7d1)
+23525:                            [TEXT]  => TEXT: —
+23526:                          [FRAME] td (EL-7adcc47a)
+23527:                            [FRAME] span.dir (EL-c95169c5)
+23528:                              [IMAGE-SVG] Frame (EL-d4302386)
+23529:                              [TEXT]  => TEXT: Credit
+23530:                          [FRAME] td.num-c (EL-a25d67c9)
+23531:                            [TEXT]  => TEXT: + Sample amount
+23532:                          [FRAME] td.num-c (EL-6b3c43f3)
+23533:                            [TEXT]  => TEXT: Sample balance
+23534:                        [FRAME] tr (EL-8a10e53c)
+23535:                          [FRAME] td (EL-0d88ebc7)
+23536:                            [TEXT] 08 Oct 2026 · 15:45
+23537:                          [FRAME] td (EL-47390c97)
+23538:                            [TEXT]  => TEXT: Top-up
+23539:                          [FRAME] td (EL-4159cec6)
+23540:                            [TEXT] Manual deposit recorded by Admin
+23541:                          [FRAME] td (EL-bab2d7d1)
+23542:                            [TEXT]  => TEXT: —
+23543:                          [FRAME] td (EL-7adcc47a)
+23544:                            [FRAME] span.dir (EL-c95169c5)
+23545:                              [IMAGE-SVG] Frame (EL-d4302386)
+23546:                              [TEXT]  => TEXT: Credit
+23547:                          [FRAME] td.num-c (EL-a25d67c9)
+23548:                            [TEXT]  => TEXT: + Sample amount
+23549:                          [FRAME] td.num-c (EL-6b3c43f3)
+23550:                            [TEXT]  => TEXT: Sample balance
+23551:                        [FRAME] tr (EL-8a10e53c)
+23552:                          [FRAME] td (EL-0d88ebc7)
+23553:                            [TEXT] 14 Oct 2026 · 10:05
+23554:                          [FRAME] td (EL-47390c97)
+23555:                            [TEXT]  => TEXT: Booking Debit
+23556:                          [FRAME] td (EL-4159cec6)
+23557:                            [TEXT]  => TEXT: Booking payment
+23558:                          [FRAME] td (EL-869621a1)
+23559:                            [TEXT] AW-DEMO-BT-009
+23560:                          [FRAME] td (EL-7adcc47a)
+23561:                            [FRAME] span.dir (EL-5f0ae87a)
+23562:                              [IMAGE-SVG] Frame (EL-d4302386)
+23563:                              [TEXT]  => TEXT: Debit
+23564:                          [FRAME] td.num-c (EL-a25d67c9)
+23565:                            [TEXT]  => TEXT: − Sample amount
+23566:                          [FRAME] td.num-c (EL-6b3c43f3)
+23567:                            [TEXT]  => TEXT: Sample balance
+23568:                        [FRAME] tr (EL-8a10e53c)
+23569:                          [FRAME] td (EL-0d88ebc7)
+23570:                            [TEXT] 20 Oct 2026 · 13:20
+23571:                          [FRAME] td (EL-47390c97)
+23572:                            [TEXT]  => TEXT: Refund
+23573:                          [FRAME] td (EL-4159cec6)
+23574:                            [TEXT]  => TEXT: Booking refund
+23575:                          [FRAME] td (EL-bab2d7d1)
+23576:                            [TEXT]  => TEXT: —
+23577:                          [FRAME] td (EL-7adcc47a)
+23578:                            [FRAME] span.dir (EL-c95169c5)
+23579:                              [IMAGE-SVG] Frame (EL-d4302386)
+23580:                              [TEXT]  => TEXT: Credit
+23581:                          [FRAME] td.num-c (EL-a25d67c9)
+23582:                            [TEXT]  => TEXT: + Sample amount
+23583:                          [FRAME] td.num-c (EL-6b3c43f3)
+23584:                            [TEXT]  => TEXT: Sample balance
+23585:                        [FRAME] tr (EL-8a10e53c)
+23586:                          [FRAME] td (EL-0d88ebc7)
+23587:                            [TEXT] 27 Oct 2026 · 16:00
+23588:                          [FRAME] td (EL-47390c97)
+23589:                            [TEXT]  => TEXT: Manual Adjustment
+23590:                          [FRAME] td (EL-4159cec6)
+23591:                            [TEXT] Admin correction
+23592:                          [FRAME] td (EL-bab2d7d1)
+23593:                            [TEXT]  => TEXT: —
+23594:                          [FRAME] td (EL-7adcc47a)
+23595:                            [FRAME] span.dir (EL-c95169c5)
+23596:                              [IMAGE-SVG] Frame (EL-d4302386)
+23597:                              [TEXT]  => TEXT: Credit
+23598:                          [FRAME] td.num-c (EL-a25d67c9)
+23599:                            [TEXT]  => TEXT: + Sample amount
+23600:                          [FRAME] td.num-c (EL-6b3c43f3)
+23601:                            [TEXT]  => TEXT: Sample balance
+23602:                        [FRAME] tr (EL-8a10e53c)
+23603:                          [FRAME] td (EL-0d88ebc7)
+23604:                            [TEXT] 03 Nov 2026 · 10:15
+23605:                          [FRAME] td (EL-47390c97)
+23606:                            [TEXT]  => TEXT: Top-up
+23607:                          [FRAME] td (EL-4159cec6)
+23608:                            [TEXT]  => TEXT: Stripe wallet top-up
+23609:                          [FRAME] td (EL-bab2d7d1)
+23610:                            [TEXT]  => TEXT: —
+23611:                          [FRAME] td (EL-7adcc47a)
+23612:                            [FRAME] span.dir (EL-c95169c5)
+23613:                              [IMAGE-SVG] Frame (EL-d4302386)
+23614:                              [TEXT]  => TEXT: Credit
+23615:                          [FRAME] td.num-c (EL-a25d67c9)
+23616:                            [TEXT]  => TEXT: + Sample amount
+23617:                          [FRAME] td.num-c (EL-6b3c43f3)
+23618:                            [TEXT]  => TEXT: Sample balance
+23619:                        [FRAME] tr (EL-8a10e53c)
+23620:                          [FRAME] td (EL-0d88ebc7)
+23621:                            [TEXT] 05 Nov 2026 · 14:40
+23622:                          [FRAME] td (EL-47390c97)
+23623:                            [TEXT]  => TEXT: Booking Debit
+23624:                          [FRAME] td (EL-4159cec6)
+23625:                            [TEXT]  => TEXT: Booking payment
+23626:                          [FRAME] td (EL-869621a1)
+23627:                            [TEXT] AW-DEMO-FL-001
+23628:                          [FRAME] td (EL-7adcc47a)
+23629:                            [FRAME] span.dir (EL-5f0ae87a)
+23630:                              [IMAGE-SVG] Frame (EL-d4302386)
+23631:                              [TEXT]  => TEXT: Debit
+23632:                          [FRAME] td.num-c (EL-a25d67c9)
+23633:                            [TEXT]  => TEXT: − Sample amount
+23634:                          [FRAME] td.num-c (EL-6b3c43f3)
+23635:                            [TEXT]  => TEXT: Sample balance
+23636:                        [FRAME] tr (EL-8a10e53c)
+23637:                          [FRAME] td (EL-0d88ebc7)
+23638:                            [TEXT] 08 Nov 2026 · 09:05
+23639:                          [FRAME] td (EL-47390c97)
+23640:                            [TEXT]  => TEXT: Refund
+23641:                          [FRAME] td (EL-4159cec6)
+23642:                            [TEXT]  => TEXT: Booking refund
+23643:                          [FRAME] td (EL-869621a1)
+23644:                            [TEXT]  => TEXT: AW-DEMO-AC-011
+23645:                          [FRAME] td (EL-7adcc47a)
+23646:                            [FRAME] span.dir (EL-c95169c5)
+23647:                              [IMAGE-SVG] Frame (EL-d4302386)
+23648:                              [TEXT]  => TEXT: Credit
+23649:                          [FRAME] td.num-c (EL-a25d67c9)
+23650:                            [TEXT]  => TEXT: + Sample amount
+23651:                          [FRAME] td.num-c (EL-6b3c43f3)
+23652:                            [TEXT]  => TEXT: Sample balance
+23653:                        [FRAME] tr (EL-8a10e53c)
+23654:                          [FRAME] td (EL-0d88ebc7)
+23655:                            [TEXT] 10 Nov 2026 · 16:30
+23656:                          [FRAME] td (EL-47390c97)
+23657:                            [TEXT] Commission Credit
+23658:                          [FRAME] td (EL-4159cec6)
+23659:                            [TEXT] Commission credit
+23660:                          [FRAME] td (EL-bab2d7d1)
+23661:                            [TEXT]  => TEXT: —
+23662:                          [FRAME] td (EL-7adcc47a)
+23663:                            [FRAME] span.dir (EL-c95169c5)
+23664:                              [IMAGE-SVG] Frame (EL-d4302386)
+23665:                              [TEXT]  => TEXT: Credit
+23666:                          [FRAME] td.num-c (EL-a25d67c9)
+23667:                            [TEXT]  => TEXT: + Sample amount
+23668:                          [FRAME] td.num-c (EL-6b3c43f3)
+23669:                            [TEXT]  => TEXT: Sample balance
+23670:                        [FRAME] tr (EL-8a10e53c)
+23671:                          [FRAME] td (EL-0d88ebc7)
+23672:                            [TEXT] 12 Nov 2026 · 11:20
+23673:                          [FRAME] td (EL-47390c97)
+23674:                            [TEXT]  => TEXT: Manual Adjustment
+23675:                          [FRAME] td (EL-4159cec6)
+23676:                            [TEXT] Admin adjustment
+23677:                          [FRAME] td (EL-bab2d7d1)
+23678:                            [TEXT]  => TEXT: —
+23679:                          [FRAME] td (EL-7adcc47a)
+23680:                            [FRAME] span.dir (EL-5f0ae87a)
+23681:                              [IMAGE-SVG] Frame (EL-d4302386)
+23682:                              [TEXT]  => TEXT: Debit
+23683:                          [FRAME] td.num-c (EL-a25d67c9)
+23684:                            [TEXT]  => TEXT: − Sample amount
+23685:                          [FRAME] td.num-c (EL-6b3c43f3)
+23686:                            [TEXT]  => TEXT: Sample balance
+23687:                    [FRAME] p (EL-f9d4bb24)
+23688:                      [FRAME] svg:margin (EL-b964cc84)
+23689:                        [IMAGE-SVG] Frame (EL-62b4d877)
+23690:                      [TEXT] Wallet entries are read-only ledger records. A manual deposit recorded by Admin is a Top-up; corrections are Manual Adjustment entries.
+23691:                [FRAME] Credit Usage (EL-a94b8ffa)
+23692:                  [FRAME] div.dsec-h (EL-d29137d2)
+23693:                    [FRAME] h3
+23694:                      [FRAME] button.dsec-t (EL-3bf81aa1)
+23695:                        [FRAME] span.kic (EL-1b439593)
+23696:                          [IMAGE-SVG] Frame (EL-f1890f3e)
+23697:                        [TEXT] Credit Usage
+23698:                        [FRAME] svg.chv:margin
+23699:                          [FRAME] svg.chv (EL-f40e3bba)
+23700:                            [IMAGE-SVG] Frame (EL-0af5cf6c)
+23701:                    [FRAME] div.dsec-a
+23702:                      [FRAME] button.lnk (EL-006703e3)
+23703:                        [TEXT]  => TEXT: View Credit
+23704:                        [IMAGE-SVG] Frame (EL-d40fb4e5)
+23705:                  [FRAME] div#b-cr (EL-47ca8de5)
+23706:                    [FRAME] div.ccr (EL-fb1cecc4)
+23707:                      [FRAME] div (EL-ad8917a4)
+23708:                        [FRAME] small (EL-e9077466)
+23709:                          [TEXT]  => TEXT: Credit Limit
+23710:                        [FRAME] b (EL-e9077466)
+23711:                          [TEXT] Limit configured
+23712:                      [FRAME] div (EL-ad8917a4)
+23713:                        [FRAME] small (EL-e9077466)
+23714:                          [TEXT]  => TEXT: Used Credit
+23715:                        [FRAME] b (EL-e9077466)
+23716:                          [TEXT]  => TEXT: Usage available
+23717:                      [FRAME] div (EL-ad8917a4)
+23718:                        [FRAME] small (EL-e9077466)
+23719:                          [TEXT]  => TEXT: Available Credit
+23720:                        [FRAME] b (EL-e9077466)
+23721:                          [TEXT] Available credit tracked
+23722:                      [FRAME] div (EL-ad8917a4)
+23723:                        [FRAME] small (EL-e9077466)
+23724:                          [TEXT]  => TEXT: Outstanding Balance
+23725:                        [FRAME] b (EL-e9077466)
+23726:                          [TEXT] Outstanding balance tracked
+23727:                    [FRAME] p (EL-f9d4bb24)
+23728:                      [FRAME] svg:margin (EL-b964cc84)
+23729:                        [IMAGE-SVG] Frame (EL-62b4d877)
+23730:                      [TEXT] Credit Limit is assigned by Aero Wing Admin. Exact amounts are not included in this design-preview dataset.
+23731:                [FRAME] Commissions (EL-a94b8ffa)
+23732:                  [FRAME] div.dsec-h (EL-d29137d2)
+23733:                    [FRAME] h3
+23734:                      [FRAME] button.dsec-t (EL-3bf81aa1)
+23735:                        [FRAME] span.kic (EL-6df97f6f)
+23736:                          [IMAGE-SVG] Frame (EL-f1890f3e)
+23737:                        [TEXT] Commissions
+23738:                        [FRAME] span.cnt (EL-9ea39ecd)
+23739:                          [TEXT] 5
+23740:                        [FRAME] svg.chv:margin
+23741:                          [FRAME] svg.chv (EL-f40e3bba)
+23742:                            [IMAGE-SVG] Frame (EL-0af5cf6c)
+23743:                    [FRAME] div.dsec-a
+23744:                      [FRAME] button.lnk (EL-006703e3)
+23745:                        [TEXT]  => TEXT: View Commissions
+23746:                        [IMAGE-SVG] Frame (EL-d40fb4e5)
+23747:                  [FRAME] div#b-cm (EL-47ca8de5)
+23748:                    [FRAME] table.btb (EL-a7affeb4)
+23749:                      [FRAME] tr (EL-8a10e53c)
+23750:                        [FRAME] th
+23751:                          [TEXT] Booking
+23752:                        [FRAME] th
+23753:                          [TEXT]  => TEXT: Service
+23754:                        [FRAME] th
+23755:                          [TEXT] Commission Status
+23756:                        [FRAME] th.num-c
+23757:                          [TEXT] Commission
+23758:                        [FRAME] th
+23759:                          [TEXT] Settlement / Impact
+23760:                      [FRAME] tbody (EL-e9077466)
+23761:                        [FRAME] tr (EL-8a10e53c)
+23762:                          [FRAME] td (EL-0f172a48)
+23763:                            [TEXT] AW-DEMO-PK-003
+23764:                          [FRAME] td (EL-811f96bf)
+23765:                            [TEXT]  => TEXT: Travel Package
+23766:                          [FRAME] td (EL-dbde85ea)
+23767:                            [FRAME] span.p-set (EL-e7560554)
+23768:                              [IMAGE-SVG] Frame (EL-522202e5)
+23769:                              [TEXT] Settled
+23770:                          [FRAME] td.num-c (EL-d16d8c0c)
+23771:                            [TEXT]  => TEXT: Sample amount
+23772:                          [FRAME] td.full (EL-d5675f5a)
+23773:                            [TEXT] Recorded by Aero Wing Admin
+23774:                        [FRAME] tr (EL-8a10e53c)
+23775:                          [FRAME] td (EL-ef78fa7b)
+23776:                            [TEXT] AW-DEMO-CR-005
+23777:                          [FRAME] td (EL-bc11e303)
+23778:                            [TEXT]  => TEXT: Car Rental
+23779:                          [FRAME] td (EL-06f59d99)
+23780:                            [FRAME] span.imp (EL-d678bef6)
+23781:                              [IMAGE-SVG] Frame (EL-62b4d877)
+23782:                              [TEXT]  => TEXT: Commission reversed
+23783:                          [FRAME] td.num-c (EL-dd5509ae)
+23784:                            [TEXT]  => TEXT: Sample amount
+23785:                            [FRAME] span (EL-8432426e)
+23786:                              [TEXT]  => TEXT: Not in active totals
+23787:                          [FRAME] td.full (EL-95cb31d3)
+23788:                            [TEXT] Reversed due to cancellation
+23789:                        [FRAME] tr (EL-8a10e53c)
+23790:                          [FRAME] td (EL-ef78fa7b)
+23791:                            [TEXT]  => TEXT: AW-DEMO-AC-011
+23792:                          [FRAME] td (EL-bc11e303)
+23793:                            [TEXT]  => TEXT: Activity
+23794:                          [FRAME] td (EL-06f59d99)
+23795:                            [FRAME] span.imp (EL-d678bef6)
+23796:                              [IMAGE-SVG] Frame (EL-62b4d877)
+23797:                              [TEXT]  => TEXT: Commission reversed
+23798:                          [FRAME] td.num-c (EL-dd5509ae)
+23799:                            [TEXT]  => TEXT: Sample amount
+23800:                            [FRAME] span (EL-8432426e)
+23801:                              [TEXT]  => TEXT: Not in active totals
+23802:                          [FRAME] td.full (EL-95cb31d3)
+23803:                            [TEXT] Reversed due to refund
+23804:                        [FRAME] tr (EL-8a10e53c)
+23805:                          [FRAME] td (EL-0f172a48)
+23806:                            [TEXT] AW-DEMO-HT-002
+23807:                          [FRAME] td (EL-811f96bf)
+23808:                            [TEXT]  => TEXT: Hotel
+23809:                          [FRAME] td (EL-dbde85ea)
+23810:                            [FRAME] span.p-earn (EL-98019cd8)
+23811:                              [IMAGE-SVG] Frame (EL-522202e5)
+23812:                              [TEXT] Earned
+23813:                          [FRAME] td.num-c (EL-d16d8c0c)
+23814:                            [TEXT]  => TEXT: Sample amount
+23815:                          [FRAME] td.full (EL-d5675f5a)
+23816:                            [TEXT]  => TEXT: —
+23817:                        [FRAME] tr (EL-8a10e53c)
+23818:                          [FRAME] td (EL-0f172a48)
+23819:                            [TEXT] AW-DEMO-FL-006
+23820:                          [FRAME] td (EL-811f96bf)
+23821:                            [TEXT]  => TEXT: Flight
+23822:                          [FRAME] td (EL-dbde85ea)
+23823:                            [FRAME] span.p-pend (EL-e021b56f)
+23824:                              [IMAGE-SVG] Frame (EL-522202e5)
+23825:                              [TEXT]  => TEXT: Pending
+23826:                          [FRAME] td.num-c (EL-d16d8c0c)
+23827:                            [TEXT]  => TEXT: Sample amount
+23828:                          [FRAME] td.full (EL-d5675f5a)
+23829:                            [TEXT]  => TEXT: —
+23830:                    [FRAME] p (EL-f9d4bb24)
+23831:                      [FRAME] svg:margin (EL-b964cc84)
+23832:                        [IMAGE-SVG] Frame (EL-62b4d877)
+23833:                      [TEXT] Commission statuses: Pending, Earned, Settled. A cancellation or refund reverses commission — shown as an impact, not a status. Rules are configured by Aero Wing Admin.
+23834:                [FRAME] section#sec-cb:margin
+23835:                  [FRAME] section#sec-cb
+23836:                    [FRAME] div (EL-36bb72c0)
+23837:                      [FRAME] h3#cb-h (EL-b98545a2)
+23838:                        [IMAGE-SVG] Frame (EL-a73b2a19)
+23839:                        [TEXT] Closing Balance
+23840:                      [FRAME] p (EL-dfdf56f9)
+23841:                        [TEXT] This is the closing balance recorded for the selected statement period. System-\\nprovided statement value; no formula is applied in this view.
+23842:                    [FRAME] p:margin
+23843:                      [FRAME] p (EL-2f9fe287)
+23844:                        [TEXT] Statement value available
+23845:                        [FRAME] small
+23846:                          [TEXT] 01 Oct 2026 – 16 Nov 2026
+23847:              [FRAME] footer.doc-f
+23848:                [FRAME] span (EL-2a66e910)
+23849:                  [TEXT] Agent Statement · Skyline Demo Travels Ltd · 01 Oct 2026 – 16 Nov 2026
+23850:                [FRAME] span (EL-2a66e910)
+23851:                  [TEXT] Sample data — fictional design-preview content · Read-only statement
+23852:        [FRAME] footer
+23853:          [FRAME] span (EL-2a66e910)
+23854:            [TEXT] AeroWing Agent Portal · M2.10 Agent Statements · Website
+23855:          [FRAME] span (EL-2a66e910)
+23856:            [TEXT] Design prototype — no accounting, PDF or export service is called.
+23857:        [FRAME] header (EL-e7e947f7)
+23858:          [FRAME] Collapse navigation (EL-308cdf1b)
+23859:            [IMAGE-SVG] Frame (EL-a73b2a19)
+23860:          [FRAME] Breadcrumb (EL-51794897)
+23861:            [FRAME] ol (EL-0211da4a)
+23862:              [FRAME] li (EL-2a1bfea5)
+23863:                [FRAME] a (EL-2a66e910)
+23864:                  [TEXT]  => TEXT: Dashboard
+23865:              [FRAME] li (EL-fc963d7f)
+23866:                [TEXT]  => TEXT: /
+23867:                [TEXT] Statements
+23868:          [FRAME] form#tb-s (EL-f48bd93e)
+23869:            [FRAME] input#tb-q (EL-fdc56343)
+23870:              [FRAME] div#placeholder (EL-0b890b82)
+23871:                [TEXT]  => TEXT: Search bookings or customers
+23872:              [FRAME] div#text-field-container (EL-e6b26f43)
+23873:                [FRAME] div#editing-view-port (EL-541d4b8f)
+23874:                [FRAME] div#search-clear:margin (EL-e5aab63e)
+23875:            [IMAGE-SVG] Frame (EL-f744bb1f)
+23876:          [FRAME] div.pop-w (EL-2f9fe287)
+23877:            [FRAME] Notifications (EL-308cdf1b)
+23878:              [IMAGE-SVG] Frame (EL-a73b2a19)
+23879:          [FRAME] div.pop-w (EL-2f9fe287)
+23880:            [FRAME] button menu#pf-btn (EL-73541ea2)
+23881:              [FRAME] span#pf-av (EL-97ad2434)
+23882:                [TEXT]  => TEXT: SD
+23883:              [FRAME] span.tb-avt (EL-6e7b525c)
+23884:                [FRAME] b#pf-biz (EL-dfdf56f9)
+23885:                  [TEXT]  => TEXT: Skyline Demo Travels Ltd
+23886:                [FRAME] small#pf-usr (EL-dfdf56f9)
+23887:                  [TEXT]  => TEXT: Nusrat Jahan · Agent Owner
+23888:              [IMAGE-SVG] Frame (EL-d40fb4e5)
+23889:  [FRAME] New Credit Request
+23890:    [RECTANGLE] New Credit Request 1
+23891:    [FRAME] Agent Portal navigation
+23892:      [FRAME] div.sb-h (EL-5a59422e)
+23893:        [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+23894:          [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+23895:        [TEXT]  => TEXT: Agent Portal
+23896:      [FRAME] Agent Portal sections (EL-34ff3f47)
+23897:        [FRAME] a (EL-419d61b5)
+23898:          [IMAGE-SVG] Frame (EL-b1d338df)
+23899:          [FRAME] span (EL-2f9fe287)
+23900:            [TEXT]  => TEXT: Dashboard
+23901:        [FRAME] a (EL-419d61b5)
+23902:          [IMAGE-SVG] Frame (EL-b1d338df)
+23903:          [FRAME] span (EL-2f9fe287)
+23904:            [TEXT]  => TEXT: Search & Book
+23905:        [FRAME] a (EL-419d61b5)
+23906:          [IMAGE-SVG] Frame (EL-b1d338df)
+23907:          [FRAME] span (EL-2f9fe287)
+23908:            [TEXT]  => TEXT: Bookings
+23909:        [FRAME] a (EL-419d61b5)
+23910:          [IMAGE-SVG] Frame (EL-b1d338df)
+23911:          [FRAME] span (EL-2f9fe287)
+23912:            [TEXT]  => TEXT: Customers
+23913:        [FRAME] a (EL-419d61b5)
+23914:          [IMAGE-SVG] Frame (EL-b1d338df)
+23915:          [FRAME] span (EL-2f9fe287)
+23916:            [TEXT]  => TEXT: Sub-agents
+23917:        [FRAME] a (EL-419d61b5)
+23918:          [IMAGE-SVG] Frame (EL-b1d338df)
+23919:          [FRAME] span (EL-2f9fe287)
+23920:            [TEXT]  => TEXT: Pricing & Markup
+23921:        [FRAME] div.sb-sep:margin (EL-6c782aee)
+23922:          [RECTANGLE] div.sb-sep (EL-74377f5a)
+23923:        [FRAME] a (EL-419d61b5)
+23924:          [IMAGE-SVG] Frame (EL-b1d338df)
+23925:          [FRAME] span (EL-2f9fe287)
+23926:            [TEXT]  => TEXT: Wallet
+23927:        [FRAME] a (EL-d0215df3)
+23928:          [IMAGE-SVG] Frame (EL-b1d338df)
+23929:          [FRAME] span (EL-2f9fe287)
+23930:            [TEXT]  => TEXT: Credit
+23931:        [FRAME] a (EL-419d61b5)
+23932:          [IMAGE-SVG] Frame (EL-b1d338df)
+23933:          [FRAME] span (EL-2f9fe287)
+23934:            [TEXT]  => TEXT: Commissions
+23935:        [FRAME] a (EL-419d61b5)
+23936:          [IMAGE-SVG] Frame (EL-b1d338df)
+23937:          [FRAME] span (EL-2f9fe287)
+23938:            [TEXT]  => TEXT: Statements
+23939:        [FRAME] a (EL-419d61b5)
+23940:          [IMAGE-SVG] Frame (EL-b1d338df)
+23941:          [FRAME] span (EL-2f9fe287)
+23942:            [TEXT]  => TEXT: Reports
+23943:        [FRAME] div.sb-sep:margin (EL-6c782aee)
+23944:          [RECTANGLE] div.sb-sep (EL-74377f5a)
+23945:        [FRAME] a (EL-419d61b5)
+23946:          [IMAGE-SVG] Frame (EL-b1d338df)
+23947:          [FRAME] span (EL-2f9fe287)
+23948:            [TEXT]  => TEXT: Notifications
+23949:        [FRAME] a (EL-419d61b5)
+23950:          [IMAGE-SVG] Frame (EL-b1d338df)
+23951:          [FRAME] span (EL-2f9fe287)
+23952:            [TEXT]  => TEXT: Account / Settings
+23953:      [FRAME] p.sb-f (EL-ab281d22)
+23954:        [FRAME] b (EL-e9077466)
+23955:          [TEXT]  => TEXT: M2 · B2B Agent Portal
+23956:        [TEXT]  => TEXT: M2.8 Credit Requests
+23957:  [FRAME] New Credit Request - Submit Request
+23958:    [RECTANGLE] Submit Request 1
+23959:  [FRAME] Credit Request Details
+23960:    [RECTANGLE] Credit Request Details 2
+23961:  [FRAME] Agent Booking History - Booking Preview
+23962:    [RECTANGLE] Booking Preview 1
+23963:  [FRAME] Agent Booking Details - E-ticket Preview
+23964:    [RECTANGLE] E-ticket Preview 1
+23965:  [FRAME] Agent Pricing Markup Overview - Remove markup rule
+23966:    [RECTANGLE] Remove markup rule 1
+23967:  [FRAME] Agent Pricing Markup Overview - Disable markup rule
+23968:    [RECTANGLE] Disable markup rule 1

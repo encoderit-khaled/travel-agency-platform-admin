@@ -1,0 +1,592 @@
+19123:  [FRAME] Agent Pricing Markup Overview
+19124:    [FRAME] div#shell
+19125:      [FRAME] Agent Portal navigation (EL-84ca712f)
+19126:        [FRAME] div.sb-h (EL-5a59422e)
+19127:          [FRAME] AeroWing Admin — Dashboard (EL-280eabfe)
+19128:            [FRAME] AeroWing — Explore, Book, Travel (EL-966c7e52)
+19129:          [TEXT]  => TEXT: 'Agent Portal'
+19130:        [FRAME] Agent Portal sections (EL-34ff3f47)
+19131:          [FRAME] a (EL-419d61b5)
+19132:            [IMAGE-SVG] Frame (EL-b1d338df)
+19133:            [FRAME] span (EL-2f9fe287)
+19134:              [TEXT]  => TEXT: 'Dashboard'
+19135:          [FRAME] a (EL-419d61b5)
+19136:            [IMAGE-SVG] Frame (EL-b1d338df)
+19137:            [FRAME] span (EL-2f9fe287)
+19138:              [TEXT]  => TEXT: 'Search & Book'
+19139:          [FRAME] a (EL-419d61b5)
+19140:            [IMAGE-SVG] Frame (EL-b1d338df)
+19141:            [FRAME] span (EL-2f9fe287)
+19142:              [TEXT]  => TEXT: 'Bookings'
+19143:          [FRAME] a (EL-419d61b5)
+19144:            [IMAGE-SVG] Frame (EL-b1d338df)
+19145:            [FRAME] span (EL-2f9fe287)
+19146:              [TEXT]  => TEXT: 'Customers'
+19147:          [FRAME] a (EL-419d61b5)
+19148:            [IMAGE-SVG] Frame (EL-b1d338df)
+19149:            [FRAME] span (EL-2f9fe287)
+19150:              [TEXT]  => TEXT: 'Sub-agents'
+19151:          [FRAME] a (EL-d0215df3)
+19152:            [IMAGE-SVG] Frame (EL-b1d338df)
+19153:            [FRAME] span (EL-2f9fe287)
+19154:              [TEXT]  => TEXT: 'Pricing & Markup'
+19155:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+19156:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+19157:          [FRAME] a (EL-419d61b5)
+19158:            [IMAGE-SVG] Frame (EL-b1d338df)
+19159:            [FRAME] span (EL-2f9fe287)
+19160:              [TEXT]  => TEXT: 'Wallet'
+19161:          [FRAME] a (EL-419d61b5)
+19162:            [IMAGE-SVG] Frame (EL-b1d338df)
+19163:            [FRAME] span (EL-2f9fe287)
+19164:              [TEXT]  => TEXT: 'Credit'
+19165:          [FRAME] a (EL-419d61b5)
+19166:            [IMAGE-SVG] Frame (EL-b1d338df)
+19167:            [FRAME] span (EL-2f9fe287)
+19168:              [TEXT]  => TEXT: 'Commissions'
+19169:          [FRAME] a (EL-419d61b5)
+19170:            [IMAGE-SVG] Frame (EL-b1d338df)
+19171:            [FRAME] span (EL-2f9fe287)
+19172:              [TEXT]  => TEXT: 'Statements'
+19173:          [FRAME] a (EL-419d61b5)
+19174:            [IMAGE-SVG] Frame (EL-b1d338df)
+19175:            [FRAME] span (EL-2f9fe287)
+19176:              [TEXT]  => TEXT: 'Reports'
+19177:          [FRAME] div.sb-sep:margin (EL-6c782aee)
+19178:            [RECTANGLE] div.sb-sep (EL-74377f5a)
+19179:          [FRAME] a (EL-419d61b5)
+19180:            [IMAGE-SVG] Frame (EL-b1d338df)
+19181:            [FRAME] span (EL-2f9fe287)
+19182:              [TEXT]  => TEXT: 'Notifications'
+19183:          [FRAME] a (EL-419d61b5)
+19184:            [IMAGE-SVG] Frame (EL-b1d338df)
+19185:            [FRAME] span (EL-2f9fe287)
+19186:              [TEXT]  => TEXT: 'Account / Settings'
+19187:        [FRAME] p.sb-f (EL-ab281d22)
+19188:          [FRAME] b (EL-e9077466)
+19189:            [TEXT]  => TEXT: 'M2 · B2B Agent Portal'
+19190:          [TEXT]  => TEXT: 'M2.3 + M2.4 Pricing & Markup'
+19191:      [FRAME] MAIN
+19192:        [FRAME] main#top (EL-265f1e74)
+19193:          [FRAME] div (EL-286f649c)
+19194:            [FRAME] section (EL-a656df9e)
+19195:              [FRAME] div.ph-t (EL-12a11ae8)
+19196:                [FRAME] p.eyb (EL-e9077466)
+19197:                  [TEXT]  => TEXT: 'Agent Portal · M2.3 + M2.4 Pricing & Markup'
+19198:                [FRAME] h1#h-pg (EL-e9077466)
+19199:                  [TEXT] Pricing & Markup
+19200:                [FRAME] p.ph-s (EL-33f6f1ad)
+19201:                  [TEXT] Review pricing applied to your Agent account and manage your own client markup rules.
+19202:                [FRAME] p.ph-biz (EL-ccd54d18)
+19203:                  [FRAME] b (EL-2f9fe287)
+19204:                    [TEXT]  => TEXT: 'Skyline Demo Travels Ltd'
+19205:                  [FRAME] span.dm-tag (EL-5514a8df)
+19206:                    [IMAGE-SVG] Frame (EL-62b4d877)
+19207:                    [TEXT]  => TEXT: 'Sample data'
+19208:              [FRAME] div.ph-a3 (EL-d9efaca1)
+19209:                [FRAME] button.btn (EL-1ecbab94)
+19210:                  [IMAGE-SVG] Frame (EL-f652840d)
+19211:                  [FRAME] span (EL-2a1f700b)
+19212:                    [TEXT] Pricing Preview
+19213:                [FRAME] button.btn (EL-91e5fe2d)
+19214:                  [RECTANGLE] button.btn:shadow
+19215:                  [IMAGE-SVG] Frame (EL-f652840d)
+19216:                  [FRAME] span (EL-2a1f700b)
+19217:                    [TEXT] Add Markup Rule
+19218:            [FRAME] Pricing and markup summary (EL-f384505a)
+19219:              [FRAME] article.kpi (EL-c00459ae)
+19220:                [FRAME] div.kpi-h (EL-998e62e2)
+19221:                  [FRAME] span.kic (EL-1aeab6f4)
+19222:                    [IMAGE-SVG] Frame (EL-b1d338df)
+19223:                  [FRAME] h3:margin
+19224:                    [TEXT] Admin Pricing
+19225:                [FRAME] p (EL-e9077466)
+19226:                  [TEXT] Configured
+19227:                [FRAME] p (EL-e9077466)
+19228:                  [TEXT] Pricing rules are applied to this Agent\\naccount.
+19229:              [FRAME] article.kpi (EL-229af5ea)
+19230:                [FRAME] div.kpi-h (EL-998e62e2)
+19231:                  [FRAME] span.kic (EL-9d7acaef)
+19232:                    [IMAGE-SVG] Frame (EL-b1d338df)
+19233:                  [FRAME] h3:margin
+19234:                    [TEXT] Your Markup Rules
+19235:                [FRAME] p (EL-e9077466)
+19236:                  [TEXT]  => TEXT: '3'
+19237:                [FRAME] p (EL-e9077466)
+19238:                  [TEXT] 2 active · 1 inactive
+19239:              [FRAME] article.kpi (EL-229af5ea)
+19240:                [FRAME] div.kpi-h (EL-998e62e2)
+19241:                  [FRAME] span.kic (EL-a080e1c7)
+19242:                    [IMAGE-SVG] Frame (EL-b1d338df)
+19243:                  [FRAME] h3:margin
+19244:                    [TEXT] Service Coverage
+19245:                [FRAME] p (EL-e9077466)
+19246:                  [TEXT] 3 of 8
+19247:                [FRAME] p (EL-e9077466)
+19248:                  [TEXT] Service modules with your markup rules
+19249:              [FRAME] article.kpi (EL-55d810b1)
+19250:                [FRAME] div.kpi-h (EL-998e62e2)
+19251:                  [FRAME] span.kic (EL-9e704c57)
+19252:                    [IMAGE-SVG] Frame (EL-b1d338df)
+19253:                  [FRAME] h3:margin
+19254:                    [TEXT] Supplier-specific Rules
+19255:                [FRAME] p (EL-e9077466)
+19256:                  [TEXT] None configured
+19257:                [FRAME] p (EL-e9077466)
+19258:                  [TEXT] Service-level rules only
+19259:            [FRAME] section (EL-5777b5ba)
+19260:              [FRAME] Search and filter rules
+19261:                [FRAME] div.bf2-r (EL-310e8d9a)
+19262:                  [FRAME] div.flt-s (EL-51794897)
+19263:                    [FRAME] input (EL-d73455e5)
+19264:                      [FRAME] div#placeholder (EL-4f02a5a4)
+19265:                        [TEXT] Search rules
+19266:                      [FRAME] div#text-field-container (EL-24d4cf33)
+19267:                        [FRAME] div#editing-view-port (EL-09b05472)
+19268:                        [FRAME] div#search-clear:margin (EL-e5aab63e)
+19269:                    [IMAGE-SVG] Frame (EL-2e3f34c3)
+19270:                [FRAME] div#bfx (EL-217917a3)
+19271:                  [FRAME] label.fs-f (EL-6d1b5341)
+19272:                    [FRAME] span (EL-e9077466)
+19273:                      [TEXT] Rule Source
+19274:                    [FRAME] span.sel (EL-e9077466)
+19275:                      [FRAME] select#f-src (EL-ea4531d4)
+19276:                        [FRAME] div (EL-51794897)
+19277:                          [TEXT]  => TEXT: 'All'
+19278:                      [IMAGE-SVG] Frame (EL-e06044d8)
+19279:                  [FRAME] label.fs-f (EL-6d1b5341)
+19280:                    [FRAME] span (EL-e9077466)
+19281:                      [TEXT]  => TEXT: 'Service'
+19282:                    [FRAME] span.sel (EL-e9077466)
+19283:                      [FRAME] select#f-svc (EL-ea4531d4)
+19284:                        [FRAME] div (EL-51794897)
+19285:                          [TEXT]  => TEXT: 'All Services'
+19286:                      [IMAGE-SVG] Frame (EL-e06044d8)
+19287:                  [FRAME] label.fs-f (EL-6d1b5341)
+19288:                    [FRAME] span (EL-e9077466)
+19289:                      [TEXT] Type
+19290:                    [FRAME] span.sel (EL-e9077466)
+19291:                      [FRAME] select#f-type (EL-ea4531d4)
+19292:                        [FRAME] div (EL-51794897)
+19293:                          [TEXT]  => TEXT: 'All Types'
+19294:                      [IMAGE-SVG] Frame (EL-e06044d8)
+19295:                  [FRAME] label.fs-f (EL-6d1b5341)
+19296:                    [FRAME] span (EL-e9077466)
+19297:                      [TEXT]  => TEXT: 'Status'
+19298:                    [FRAME] span.sel (EL-e9077466)
+19299:                      [FRAME] select#f-st (EL-ea4531d4)
+19300:                        [FRAME] div (EL-51794897)
+19301:                          [TEXT]  => TEXT: 'All Statuses'
+19302:                      [IMAGE-SVG] Frame (EL-e06044d8)
+19303:              [FRAME] div.bf-sum (EL-bb12fa7d)
+19304:                [FRAME] p#sum (EL-51794897)
+19305:                  [TEXT] {ts1}Showing {/ts1}{ts3}**5**{/ts3}{ts1} rules{/ts1}
+19306:            [FRAME] section#c-adm (EL-5777b5ba)
+19307:              [FRAME] div.cd-h (EL-cefd9a89)
+19308:                [FRAME] span.kic (EL-1aeab6f4)
+19309:                  [IMAGE-SVG] Frame (EL-b1d338df)
+19310:                [FRAME] div.cd-ht (EL-51794897)
+19311:                  [FRAME] h2#adm-h (EL-e9077466)
+19312:                    [TEXT] Your Applicable Pricing
+19313:                  [FRAME] p (EL-e9077466)
+19314:                    [TEXT] These pricing settings are configured by Aero Wing Admin and cannot be edited here.
+19315:                [FRAME] span.ro-b (EL-f1de3b07)
+19316:                  [IMAGE-SVG] Frame (EL-62b4d877)
+19317:                  [TEXT]  => TEXT: 'Read-only'
+19318:                [FRAME] span.dm-tag (EL-5514a8df)
+19319:                  [IMAGE-SVG] Frame (EL-62b4d877)
+19320:                  [TEXT]  => TEXT: 'Sample data'
+19321:              [FRAME] div.ptw (EL-7439f5a3)
+19322:                [FRAME] table.btb (EL-e9077466)
+19323:                  [FRAME] tr (EL-8a10e53c)
+19324:                    [FRAME] th
+19325:                      [TEXT]  => TEXT: 'Rule'
+19326:                    [FRAME] th.c-sc
+19327:                      [TEXT]  => TEXT: 'Scope'
+19328:                    [FRAME] th
+19329:                      [TEXT]  => TEXT: 'Service'
+19330:                    [FRAME] th
+19331:                      [TEXT]  => TEXT: 'Supplier'
+19332:                    [FRAME] th
+19333:                      [TEXT]  => TEXT: 'Type'
+19334:                    [FRAME] th
+19335:                      [TEXT] Value
+19336:                    [FRAME] th
+19337:                      [TEXT] Applied To
+19338:                    [FRAME] th
+19339:                      [TEXT]  => TEXT: 'Status'
+19340:                    [RECTANGLE] th.act
+19341:                  [FRAME] tbody (EL-e9077466)
+19342:                    [FRAME] tr (EL-8a10e53c)
+19343:                      [FRAME] td.c-nm (EL-d9e2e1c7)
+19344:                        [TEXT] Admin pricing — All Services
+19345:                        [FRAME] small (EL-759dc5fd)
+19346:                          [FRAME] span.adm (EL-74e0cdeb)
+19347:                            [IMAGE-SVG] Frame (EL-d4302386)
+19348:                            [TEXT]  => TEXT: 'Admin'
+19349:                      [FRAME] td.c-sc (EL-2b2fe994)
+19350:                        [TEXT]  => TEXT: 'All Services'
+19351:                      [FRAME] td.c-sv (EL-7c861c1c)
+19352:                        [FRAME] span (EL-d269e0eb)
+19353:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19354:                          [TEXT]  => TEXT: 'All Services'
+19355:                      [FRAME] td.c-su (EL-2976e534)
+19356:                        [TEXT]  => TEXT: 'All suppliers'
+19357:                      [FRAME] td.c-ty (EL-e4eb673e)
+19358:                        [TEXT]  => TEXT: 'Percentage'
+19359:                      [FRAME] td.c-va
+19360:                        [TEXT] Sample 2%
+19361:                      [FRAME] td.c-to (EL-4b89accc)
+19362:                        [TEXT]  => TEXT: 'Skyline Demo Travels Ltd'
+19363:                      [FRAME] td.c-st (EL-b1b3eea8)
+19364:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+19365:                          [IMAGE-SVG] Frame (EL-522202e5)
+19366:                          [TEXT]  => TEXT: 'Active'
+19367:                      [FRAME] td.act (EL-0c71f263)
+19368:                        [FRAME] View details for Admin pricing — All Services (EL-2f76e5a0)
+19369:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19370:                          [FRAME] span (EL-2a1f700b)
+19371:                            [TEXT]  => TEXT: 'View Details'
+19372:                    [FRAME] tr (EL-8a10e53c)
+19373:                      [FRAME] td.c-nm (EL-d9e2e1c7)
+19374:                        [TEXT] Admin pricing — Hotel
+19375:                        [FRAME] small (EL-759dc5fd)
+19376:                          [FRAME] span.adm (EL-74e0cdeb)
+19377:                            [IMAGE-SVG] Frame (EL-d4302386)
+19378:                            [TEXT]  => TEXT: 'Admin'
+19379:                      [FRAME] td.c-sc (EL-2b2fe994)
+19380:                        [TEXT]  => TEXT: 'Specific Service'
+19381:                      [FRAME] td.c-sv (EL-7c861c1c)
+19382:                        [FRAME] span (EL-d269e0eb)
+19383:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19384:                          [TEXT]  => TEXT: 'Hotel'
+19385:                      [FRAME] td.c-su (EL-2976e534)
+19386:                        [TEXT]  => TEXT: 'All suppliers'
+19387:                      [FRAME] td.c-ty (EL-e4eb673e)
+19388:                        [TEXT]  => TEXT: 'Fixed amount'
+19389:                      [FRAME] td.c-va
+19390:                        [FRAME] span.val (EL-da690b5f)
+19391:                          [TEXT]  => TEXT: 'Sample fixed\namount'
+19392:                      [FRAME] td.c-to (EL-4b89accc)
+19393:                        [TEXT]  => TEXT: 'Skyline Demo Travels Ltd'
+19394:                      [FRAME] td.c-st (EL-b1b3eea8)
+19395:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+19396:                          [IMAGE-SVG] Frame (EL-522202e5)
+19397:                          [TEXT]  => TEXT: 'Active'
+19398:                      [FRAME] td.act (EL-0c71f263)
+19399:                        [FRAME] View details for Admin pricing — Hotel (EL-2f76e5a0)
+19400:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19401:                          [FRAME] span (EL-2a1f700b)
+19402:                            [TEXT]  => TEXT: 'View Details'
+19403:              [FRAME] p.pt-n (EL-f120bf1f)
+19404:                [FRAME] svg:margin (EL-59323ff4)
+19405:                  [IMAGE-SVG] Frame (EL-494805ba)
+19406:                [TEXT] Admin pricing is shown for reference only. Values are fictional sample data, not contractual pricing.
+19407:            [FRAME] section#c-agt (EL-5777b5ba)
+19408:              [FRAME] div.cd-h (EL-cefd9a89)
+19409:                [FRAME] span.kic (EL-9d7acaef)
+19410:                  [IMAGE-SVG] Frame (EL-b1d338df)
+19411:                [FRAME] div.cd-ht (EL-51794897)
+19412:                  [FRAME] h2#agt-h (EL-e9077466)
+19413:                    [TEXT] Your Markup Rules
+19414:                  [FRAME] p (EL-e9077466)
+19415:                    [TEXT] Add your own markup when quoting customers, within limits configured by Admin.
+19416:                [FRAME] span.dm-tag (EL-5514a8df)
+19417:                  [IMAGE-SVG] Frame (EL-62b4d877)
+19418:                  [TEXT]  => TEXT: 'Sample data'
+19419:                [FRAME] button.btn (EL-1ecbab94)
+19420:                  [IMAGE-SVG] Frame (EL-f652840d)
+19421:                  [FRAME] span (EL-2a1f700b)
+19422:                    [TEXT]  => TEXT: 'Add Markup Rule'
+19423:              [FRAME] div.ptw (EL-7439f5a3)
+19424:                [FRAME] table.btb (EL-e9077466)
+19425:                  [FRAME] tr (EL-8a10e53c)
+19426:                    [FRAME] th
+19427:                      [TEXT]  => TEXT: 'Rule'
+19428:                    [FRAME] th.c-sc
+19429:                      [TEXT]  => TEXT: 'Scope'
+19430:                    [FRAME] th
+19431:                      [TEXT]  => TEXT: 'Service'
+19432:                    [FRAME] th
+19433:                      [TEXT]  => TEXT: 'Supplier'
+19434:                    [FRAME] th
+19435:                      [TEXT]  => TEXT: 'Type'
+19436:                    [FRAME] th
+19437:                      [TEXT] Markup
+19438:                    [FRAME] th
+19439:                      [TEXT]  => TEXT: 'Status'
+19440:                    [FRAME] th.act
+19441:                      [TEXT] Actions
+19442:                  [FRAME] tbody (EL-e9077466)
+19443:                    [FRAME] tr (EL-8a10e53c)
+19444:                      [FRAME] td.c-nm (EL-6e3694a1)
+19445:                        [TEXT] Flight Client Markup
+19446:                        [FRAME] small (EL-759dc5fd)
+19447:                          [FRAME] span.agt (EL-11560c2e)
+19448:                            [IMAGE-SVG] Frame (EL-d4302386)
+19449:                            [TEXT]  => TEXT: 'Agent'
+19450:                      [FRAME] td.c-sc (EL-470684a6)
+19451:                        [TEXT]  => TEXT: 'Specific Service'
+19452:                      [FRAME] td.c-sv (EL-5bb6cacd)
+19453:                        [FRAME] span (EL-d269e0eb)
+19454:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19455:                          [TEXT]  => TEXT: 'Flight'
+19456:                      [FRAME] td.c-su (EL-27ed0e33)
+19457:                        [TEXT]  => TEXT: 'All suppliers'
+19458:                      [FRAME] td.c-ty (EL-ca4d142a)
+19459:                        [TEXT]  => TEXT: 'Percentage'
+19460:                      [FRAME] td.c-va (EL-ca580709)
+19461:                        [TEXT] Sample 3%
+19462:                      [FRAME] td.c-st (EL-1dbf0493)
+19463:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+19464:                          [IMAGE-SVG] Frame (EL-522202e5)
+19465:                          [TEXT]  => TEXT: 'Active'
+19466:                      [FRAME] td.act (EL-1d36dea3)
+19467:                        [FRAME] span (EL-689d8e8e)
+19468:                          [FRAME] Edit Flight Client Markup (EL-2f76e5a0)
+19469:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19470:                            [FRAME] span (EL-2a1f700b)
+19471:                              [TEXT]  => TEXT: 'Edit'
+19472:                          [FRAME] Disable Flight Client Markup (EL-2f76e5a0)
+19473:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19474:                            [FRAME] span (EL-2a1f700b)
+19475:                              [TEXT]  => TEXT: 'Disable'
+19476:                          [FRAME] Remove Flight Client Markup (EL-4805ec47)
+19477:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19478:                            [FRAME] span (EL-2a1f700b)
+19479:                              [TEXT]  => TEXT: 'Remove'
+19480:                    [FRAME] tr (EL-8a10e53c)
+19481:                      [FRAME] td.c-nm (EL-6e3694a1)
+19482:                        [TEXT] Hotel Client Markup
+19483:                        [FRAME] small (EL-759dc5fd)
+19484:                          [FRAME] span.agt (EL-11560c2e)
+19485:                            [IMAGE-SVG] Frame (EL-d4302386)
+19486:                            [TEXT]  => TEXT: 'Agent'
+19487:                      [FRAME] td.c-sc (EL-470684a6)
+19488:                        [TEXT]  => TEXT: 'Specific Service'
+19489:                      [FRAME] td.c-sv (EL-5bb6cacd)
+19490:                        [FRAME] span (EL-d269e0eb)
+19491:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19492:                          [TEXT]  => TEXT: 'Hotel'
+19493:                      [FRAME] td.c-su (EL-27ed0e33)
+19494:                        [TEXT]  => TEXT: 'All suppliers'
+19495:                      [FRAME] td.c-ty (EL-ca4d142a)
+19496:                        [TEXT]  => TEXT: 'Fixed amount'
+19497:                      [FRAME] td.c-va
+19498:                        [FRAME] span.val (EL-da690b5f)
+19499:                          [TEXT]  => TEXT: 'Sample fixed\namount'
+19500:                      [FRAME] td.c-st (EL-1dbf0493)
+19501:                        [FRAME] span.p-ok (EL-4ed5d9a3)
+19502:                          [IMAGE-SVG] Frame (EL-522202e5)
+19503:                          [TEXT]  => TEXT: 'Active'
+19504:                      [FRAME] td.act (EL-1d36dea3)
+19505:                        [FRAME] span (EL-689d8e8e)
+19506:                          [FRAME] Edit Hotel Client Markup (EL-2f76e5a0)
+19507:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19508:                            [FRAME] span (EL-2a1f700b)
+19509:                              [TEXT]  => TEXT: 'Edit'
+19510:                          [FRAME] Disable Hotel Client Markup (EL-2f76e5a0)
+19511:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19512:                            [FRAME] span (EL-2a1f700b)
+19513:                              [TEXT]  => TEXT: 'Disable'
+19514:                          [FRAME] Remove Hotel Client Markup (EL-4805ec47)
+19515:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19516:                            [FRAME] span (EL-2a1f700b)
+19517:                              [TEXT]  => TEXT: 'Remove'
+19518:                    [FRAME] tr (EL-8a10e53c)
+19519:                      [FRAME] td.c-nm (EL-6e3694a1)
+19520:                        [TEXT] Package Client Markup
+19521:                        [FRAME] small (EL-759dc5fd)
+19522:                          [FRAME] span.agt (EL-11560c2e)
+19523:                            [IMAGE-SVG] Frame (EL-d4302386)
+19524:                            [TEXT]  => TEXT: 'Agent'
+19525:                      [FRAME] td.c-sc (EL-470684a6)
+19526:                        [TEXT]  => TEXT: 'Specific Service'
+19527:                      [FRAME] td.c-sv (EL-5bb6cacd)
+19528:                        [FRAME] span (EL-d269e0eb)
+19529:                          [IMAGE-SVG] Frame (EL-d40fb4e5)
+19530:                          [TEXT]  => TEXT: 'Travel Package'
+19531:                      [FRAME] td.c-su (EL-27ed0e33)
+19532:                        [TEXT]  => TEXT: 'All suppliers'
+19533:                      [FRAME] td.c-ty (EL-ca4d142a)
+19534:                        [TEXT]  => TEXT: 'Percentage'
+19535:                      [FRAME] td.c-va (EL-ca580709)
+19536:                        [TEXT] Sample 4%
+19537:                      [FRAME] td.c-st (EL-1dbf0493)
+19538:                        [FRAME] span.p-neu (EL-885c7133)
+19539:                          [IMAGE-SVG] Frame (EL-522202e5)
+19540:                          [TEXT] Inactive
+19541:                      [FRAME] td.act (EL-1d36dea3)
+19542:                        [FRAME] span (EL-689d8e8e)
+19543:                          [FRAME] Edit Package Client Markup (EL-2f76e5a0)
+19544:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19545:                            [FRAME] span (EL-2a1f700b)
+19546:                              [TEXT]  => TEXT: 'Edit'
+19547:                          [FRAME] Enable Package Client Markup (EL-2f76e5a0)
+19548:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19549:                            [FRAME] span (EL-2a1f700b)
+19550:                              [TEXT] Enable
+19551:                          [FRAME] Remove Package Client Markup (EL-4805ec47)
+19552:                            [IMAGE-SVG] Frame (EL-d40fb4e5)
+19553:                            [FRAME] span (EL-2a1f700b)
+19554:                              [TEXT]  => TEXT: 'Remove'
+19555:              [FRAME] p.pt-n (EL-f120bf1f)
+19556:                [FRAME] svg:margin (EL-59323ff4)
+19557:                  [IMAGE-SVG] Frame (EL-494805ba)
+19558:                [TEXT] Changes apply according to the platform’s pricing rules when future pricing is calculated.
+19559:            [FRAME] section#c-cov (EL-5777b5ba)
+19560:              [FRAME] div.cd-h (EL-cefd9a89)
+19561:                [FRAME] span.kic (EL-a080e1c7)
+19562:                  [IMAGE-SVG] Frame (EL-b1d338df)
+19563:                [FRAME] div.cd-ht (EL-51794897)
+19564:                  [FRAME] h2#cov-h (EL-e9077466)
+19565:                    [TEXT]  => TEXT: 'Service Coverage'
+19566:                  [FRAME] p (EL-e9077466)
+19567:                    [TEXT] All 8 service modules and whether you’ve added your own markup
+19568:                [FRAME] span.dm-tag (EL-5514a8df)
+19569:                  [IMAGE-SVG] Frame (EL-62b4d877)
+19570:                  [TEXT]  => TEXT: 'Sample data'
+19571:              [FRAME] div.cd-b (EL-900b4178)
+19572:                [FRAME] ul.cov
+19573:                  [FRAME] li (EL-febd86b0)
+19574:                    [FRAME] span (EL-c8d50cb3)
+19575:                      [IMAGE-SVG] Frame (EL-f652840d)
+19576:                      [TEXT] Flight
+19577:                    [FRAME] span.p-ok:align-flex-start (EL-4ae12539)
+19578:                      [FRAME] span.p-ok (EL-4ed5d9a3)
+19579:                        [IMAGE-SVG] Frame (EL-522202e5)
+19580:                        [TEXT]  => TEXT: 'Agent rule configured'
+19581:                    [FRAME] small (EL-e9077466)
+19582:                      [TEXT]  => TEXT: '1 active rule'
+19583:                  [FRAME] li (EL-febd86b0)
+19584:                    [FRAME] span (EL-c8d50cb3)
+19585:                      [IMAGE-SVG] Frame (EL-f652840d)
+19586:                      [TEXT] Hotel
+19587:                    [FRAME] span.p-ok:align-flex-start (EL-4ae12539)
+19588:                      [FRAME] span.p-ok (EL-4ed5d9a3)
+19589:                        [IMAGE-SVG] Frame (EL-522202e5)
+19590:                        [TEXT]  => TEXT: 'Agent rule configured'
+19591:                    [FRAME] small (EL-e9077466)
+19592:                      [TEXT]  => TEXT: '1 active rule'
+19593:                  [FRAME] li (EL-febd86b0)
+19594:                    [FRAME] span (EL-c8d50cb3)
+19595:                      [IMAGE-SVG] Frame (EL-f652840d)
+19596:                      [TEXT] Travel Package
+19597:                    [FRAME] span.p-ok:align-flex-start (EL-4ae12539)
+19598:                      [FRAME] span.p-ok (EL-4ed5d9a3)
+19599:                        [IMAGE-SVG] Frame (EL-522202e5)
+19600:                        [TEXT]  => TEXT: 'Agent rule configured'
+19601:                    [FRAME] small (EL-e9077466)
+19602:                      [TEXT] Rule inactive
+19603:                  [FRAME] li
+19604:                    [FRAME] span (EL-c8d50cb3)
+19605:                      [IMAGE-SVG] Frame (EL-f652840d)
+19606:                      [TEXT] Activity
+19607:                    [FRAME] span.p-pend:align-flex-start (EL-7d3793c2)
+19608:                      [FRAME] span.p-pend (EL-e021b56f)
+19609:                        [IMAGE-SVG] Frame (EL-522202e5)
+19610:                        [TEXT]  => TEXT: 'Admin pricing only'
+19611:                  [FRAME] li (EL-b3f8128e)
+19612:                    [FRAME] span (EL-c8d50cb3)
+19613:                      [IMAGE-SVG] Frame (EL-f652840d)
+19614:                      [TEXT]  => TEXT: 'Car Rental'
+19615:                    [FRAME] span.p-pend:align-flex-start (EL-7d3793c2)
+19616:                      [FRAME] span.p-pend (EL-e021b56f)
+19617:                        [IMAGE-SVG] Frame (EL-522202e5)
+19618:                        [TEXT]  => TEXT: 'Admin pricing only'
+19619:                  [FRAME] li (EL-b3f8128e)
+19620:                    [FRAME] span (EL-c8d50cb3)
+19621:                      [IMAGE-SVG] Frame (EL-f652840d)
+19622:                      [TEXT]  => TEXT: 'eSIM'
+19623:                    [FRAME] span.p-pend:align-flex-start (EL-7d3793c2)
+19624:                      [FRAME] span.p-pend (EL-e021b56f)
+19625:                        [IMAGE-SVG] Frame (EL-522202e5)
+19626:                        [TEXT]  => TEXT: 'Admin pricing only'
+19627:                  [FRAME] li (EL-b3f8128e)
+19628:                    [FRAME] span (EL-c8d50cb3)
+19629:                      [IMAGE-SVG] Frame (EL-f652840d)
+19630:                      [TEXT]  => TEXT: 'Bus / Train'
+19631:                    [FRAME] span.p-pend:align-flex-start (EL-7d3793c2)
+19632:                      [FRAME] span.p-pend (EL-e021b56f)
+19633:                        [IMAGE-SVG] Frame (EL-522202e5)
+19634:                        [TEXT]  => TEXT: 'Admin pricing only'
+19635:                  [FRAME] li (EL-b3f8128e)
+19636:                    [FRAME] span (EL-c8d50cb3)
+19637:                      [IMAGE-SVG] Frame (EL-f652840d)
+19638:                      [TEXT]  => TEXT: 'Travel Insurance'
+19639:                    [FRAME] span.p-pend:align-flex-start (EL-7d3793c2)
+19640:                      [FRAME] span.p-pend (EL-e021b56f)
+19641:                        [IMAGE-SVG] Frame (EL-522202e5)
+19642:                        [TEXT]  => TEXT: 'Admin pricing only'
+19643:                [FRAME] p.cov-n (EL-f96bbce8)
+19644:                  [FRAME] svg:margin (EL-59323ff4)
+19645:                    [IMAGE-SVG] Frame (EL-494805ba)
+19646:                  [TEXT] “No Agent rule” only means you haven’t added your own markup for that service. Underlying pricing may still apply.
+19647:            [FRAME] div.pm-g
+19648:              [FRAME] section
+19649:                [FRAME] h2#hw-h (EL-c8d50cb3)
+19650:                  [IMAGE-SVG] Frame (EL-f652840d)
+19651:                  [TEXT] How pricing works
+19652:                [FRAME] p (EL-e9077466)
+19653:                  [TEXT] Your client price may include pricing configured by Aero Wing Admin together with markup\\nconfigured by your Agent account.
+19654:                [FRAME] p (EL-e9077466)
+19655:                  [TEXT] When several pricing or markup rules apply, the platform resolves them using the configured\\npricing rule precedence.
+19656:                [FRAME] p.sub (EL-f9d4bb24)
+19657:                  [FRAME] svg:margin (EL-74f7db68)
+19658:                    [IMAGE-SVG] Frame (EL-522202e5)
+19659:                  [TEXT] Sub-agent markup is managed separately under Sub-agents.
+19660:              [FRAME] section#c-lim (EL-a098d0a8)
+19661:                [FRAME] div.cd-h (EL-cefd9a89)
+19662:                  [FRAME] span.kic (EL-9d7acaef)
+19663:                    [IMAGE-SVG] Frame (EL-b1d338df)
+19664:                  [FRAME] div.cd-ht (EL-51794897)
+19665:                    [FRAME] h2#lim-h (EL-e9077466)
+19666:                      [TEXT] Markup Limits
+19667:                [FRAME] div.cd-b
+19668:                  [FRAME] div.lim-h (EL-c094fdcc)
+19669:                    [FRAME] svg:margin (EL-7ae328ec)
+19670:                      [IMAGE-SVG] Frame (EL-a73b2a19)
+19671:                    [FRAME] div
+19672:                      [FRAME] b
+19673:                        [TEXT] Limits are configured by Aero Wing Admin
+19674:                      [FRAME] p
+19675:                        [TEXT] Your markup must remain within the limits applicable to your Agent account.
+19676:                  [FRAME] div.lim-r (EL-924265d7)
+19677:                    [FRAME] span (EL-2a66e910)
+19678:                      [TEXT] Exact limits
+19679:                    [FRAME] b (EL-2a66e910)
+19680:                      [TEXT] Not included in this design-preview dataset
+19681:        [FRAME] footer
+19682:          [FRAME] span (EL-2a66e910)
+19683:            [TEXT] AeroWing Agent Portal · M2.3 + M2.4 Agent Pricing & Markup Overview · Website
+19684:          [FRAME] span (EL-2a66e910)
+19685:            [TEXT] Design prototype — no pricing engine, supplier system or quoting service is called.
+19686:        [FRAME] header (EL-e7e947f7)
+19687:          [FRAME] Collapse navigation (EL-308cdf1b)
+19688:            [IMAGE-SVG] Frame (EL-a73b2a19)
+19689:          [FRAME] Breadcrumb (EL-51794897)
+19690:            [FRAME] ol (EL-0211da4a)
+19691:              [FRAME] li (EL-2a1bfea5)
+19692:                [FRAME] a (EL-2a66e910)
+19693:                  [TEXT]  => TEXT: 'Dashboard'
+19694:              [FRAME] li (EL-fc963d7f)
+19695:                [TEXT]  => TEXT: '/'
+19696:                [TEXT] Pricing & Markup
+19697:          [FRAME] form#tb-s (EL-a4a2fb03)
+19698:            [FRAME] input#tb-q (EL-bcaab4e4)
+19699:              [IMAGE-SVG] Frame (EL-f1890f3e)
+19700:              [FRAME] div#placeholder (EL-a8ef7fa3)
+19701:                [TEXT]  => TEXT: 'Search Admin Panel'
+19702:          [FRAME] div.pop-w (EL-2f9fe287)
+19703:            [FRAME] Notifications (EL-308cdf1b)
+19704:              [IMAGE-SVG] Frame (EL-a73b2a19)
+19705:          [FRAME] div.pop-w (EL-2f9fe287)
+19706:            [FRAME] button menu#pf-btn (EL-73541ea2)
+19707:              [FRAME] span#pf-av (EL-97ad2434)
+19708:                [TEXT]  => TEXT: 'SD'
+19709:              [FRAME] span.tb-avt (EL-6e7b525c)
+19710:                [FRAME] b#pf-biz (EL-dfdf56f9)
+19711:                  [TEXT]  => TEXT: 'Skyline Demo Travels Ltd'
+19712:                [FRAME] small#pf-usr (EL-dfdf56f9)
+19713:                  [TEXT]  => TEXT: 'Nusrat Jahan · Agent Owner'
+19714:              [IMAGE-SVG] Frame (EL-d40fb4e5)

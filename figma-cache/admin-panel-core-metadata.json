@@ -1,0 +1,163 @@
+{
+  "fileKey": "8Dgk9OL3yPpE8L7e8Clo0n",
+  "nodeId": "944:1125",
+  "sectionName": "M15 \u2014 Admin Panel Core",
+  "fileName": "aero-wing-travel-agency-platform",
+  "dataFile": "Admin panel core.yaml",
+  "sourceUrl": "https://www.figma.com/design/8Dgk9OL3yPpE8L7e8Clo0n/aero-wing-travel-agency-platform?node-id=944-1125&t=6pMnEKiSBAgBy4Rk-4",
+  "cachedAt": "2026-11-24T12:08:10+06:00",
+  "totalLines": 25241,
+  "frameCount": 30,
+  "screens": [
+    {
+      "id": "965:1410",
+      "name": "Admin Login",
+      "type": "FRAME"
+    },
+    {
+      "id": "965:1500",
+      "name": "Trouble signing in?",
+      "type": "FRAME"
+    },
+    {
+      "id": "972:2051",
+      "name": "Admin Dashboard",
+      "type": "FRAME"
+    },
+    {
+      "id": "975:3024",
+      "name": "Admin Users",
+      "type": "FRAME"
+    },
+    {
+      "id": "984:976",
+      "name": "Admin Roles Permissions",
+      "type": "FRAME"
+    },
+    {
+      "id": "984:1859",
+      "name": "Admin Roles Permissions - Edit Permissions",
+      "type": "FRAME"
+    },
+    {
+      "id": "984:2269",
+      "name": "B2C Customers",
+      "type": "FRAME"
+    },
+    {
+      "id": "990:2945",
+      "name": "B2C Customer Details",
+      "type": "FRAME"
+    },
+    {
+      "id": "995:3669",
+      "name": "Admin Audit Log",
+      "type": "FRAME"
+    },
+    {
+      "id": "995:4126",
+      "name": "Collapsed Sidebar",
+      "type": "FRAME"
+    },
+    {
+      "id": "1005:4738",
+      "name": "Admin Reports - Sales",
+      "type": "FRAME"
+    },
+    {
+      "id": "1005:5345",
+      "name": "Admin Reports - Payments",
+      "type": "FRAME"
+    },
+    {
+      "id": "1005:5346",
+      "name": "Admin Reports - Commissions",
+      "type": "FRAME"
+    },
+    {
+      "id": "1005:5344",
+      "name": "Admin Reports - Bookings",
+      "type": "FRAME"
+    },
+    {
+      "id": "1007:5992",
+      "name": "Platform Settings - Business Details",
+      "type": "FRAME"
+    },
+    {
+      "id": "1009:6558",
+      "name": "Platform Settings - Languages",
+      "type": "FRAME"
+    },
+    {
+      "id": "1009:6944",
+      "name": "Platform Settings - Languages - Add Languages",
+      "type": "FRAME"
+    },
+    {
+      "id": "1009:6827",
+      "name": "Platform Settings - Languages - Configure Languages",
+      "type": "FRAME"
+    },
+    {
+      "id": "1015:7243",
+      "name": "Platform Settings - Display Currencies",
+      "type": "FRAME"
+    },
+    {
+      "id": "1015:7534",
+      "name": "Platform Settings - Display Currencies - View Currencies",
+      "type": "FRAME"
+    },
+    {
+      "id": "1015:7535",
+      "name": "Platform Settings - Exchange Rates",
+      "type": "FRAME"
+    },
+    {
+      "id": "1015:7533",
+      "name": "Platform Settings - Display Currencies - Configure Currencies",
+      "type": "FRAME"
+    },
+    {
+      "id": "1015:7536",
+      "name": "Platform Settings - Exchange Rates Add",
+      "type": "FRAME"
+    },
+    {
+      "id": "1022:7537",
+      "name": "Platform Settings - Exchange Rates View",
+      "type": "FRAME"
+    },
+    {
+      "id": "1049:277",
+      "name": "Platform Settings - Tax Defaults",
+      "type": "FRAME"
+    },
+    {
+      "id": "1049:1250",
+      "name": "Platform Settings - Add Tax Defaults",
+      "type": "FRAME"
+    },
+    {
+      "id": "1049:1251",
+      "name": "Platform Settings - View Tax Defaults",
+      "type": "FRAME"
+    },
+    {
+      "id": "1084:3525",
+      "name": "Platform Settings - Default Cancellation Policies",
+      "type": "FRAME"
+    },
+    {
+      "id": "1084:3797",
+      "name": "Platform Settings - View Default Cancellation Policies",
+      "type": "FRAME"
+    },
+    {
+      "id": "1084:3798",
+      "name": "Platform Settings - Add Default Cancellation Policies",
+      "type": "FRAME"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+  [FRAME] "Application Review" #648:909 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":12831,"y":838},"dimensions":{"width":1920}} fills="White Catskill White"
+    [FRAME] "div#shell" #648:910 template=EL-d1ac142c
+      [FRAME] "Admin navigation" #648:911 template=EL-c185cf4a
+        [FRAME] "Admin sections" #648:912 template=EL-10ab4ebd
+          [FRAME] "a" #648:913 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:914 template=EL-b1d338df
+            [FRAME] "span" #648:916 template=EL-2f9fe287
+              [TEXT] #648:917 template=EL-2811e7df
+          [FRAME] "a" #648:918 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:919 template=EL-b1d338df
+            [FRAME] "span" #648:921 template=EL-2f9fe287
+              [TEXT] #648:922 template=EL-4d579255
+          [FRAME] "a" #648:923 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:924 template=EL-b1d338df
+            [FRAME] "span" #648:926 template=EL-2f9fe287
+              [TEXT] #648:927 template=EL-bf3706d3
+          [FRAME] "div.sb-grp" #648:928 template=EL-c5cb316d
+            [FRAME] "button.sb-gb" #648:929 template=EL-96112e40
+              [IMAGE-SVG] "Frame" #648:930 template=EL-b1d338df
+              [FRAME] "span" #648:932 template=EL-698c97da
+                [TEXT] #648:933 template=EL-52617278
+              [FRAME] "svg:margin" #648:934 template=EL-76cb550b
+                [FRAME] "svg" #648:935 template=EL-0ef073c4
+                  [IMAGE-SVG] "Frame" #648:936 template=EL-b3e2df83
+            [FRAME] "div#sb-agents" #648:938 template=EL-9b403550
+              [FRAME] "a" #648:939 template=EL-71802032
+                [TEXT] #648:940 template=EL-4fd81d65
+                [FRAME] "1 pending" #648:941 template=EL-400742a6
+                  [TEXT] #648:942 template=EL-53fdc499
+              [FRAME] "a" #648:943 template=EL-544a02db
+                [TEXT] #648:944 template=EL-7bb7b741
+              [FRAME] "a" #648:945 template=EL-544a02db
+                [TEXT] #648:946 template=EL-1f9534f7
+          [FRAME] "a" #648:947 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:948 template=EL-b1d338df
+            [FRAME] "span" #648:950 template=EL-2f9fe287
+              [TEXT] #648:951 template=EL-1da472c8
+          [FRAME] "a" #648:952 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:953 template=EL-b1d338df
+            [FRAME] "span" #648:955 template=EL-2f9fe287
+              [TEXT] #648:956 template=EL-44b34f1e
+          [FRAME] "a" #648:957 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:958 template=EL-b1d338df
+            [FRAME] "span" #648:960 template=EL-2f9fe287
+              [TEXT] #648:961 template=EL-dd0042e0
+          [FRAME] "a" #648:962 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:963 template=EL-b1d338df
+            [FRAME] "span" #648:965 template=EL-2f9fe287
+              [TEXT] #648:966 template=EL-944c8723
+          [FRAME] "a" #648:967 template=EL-8b0bc1ef
+            [IMAGE-SVG] "Frame" #648:968 template=EL-b1d338df
+            [FRAME] "span" #648:970 template=EL-2f9fe287
+              [TEXT] #648:971 template=EL-97ae6005
+        [FRAME] "p.sb-f" #648:972 template=EL-19d8191c
+          [TEXT] #648:973 template=EL-0b544cef
+        [FRAME] "div.sb-h" #648:974 template=EL-636815bd
+          [FRAME] "AeroWing Admin — Dashboard" #648:975 template=EL-280eabfe
+            [FRAME] "AeroWing — Explore, Book, Travel" #648:1244 template=EL-966c7e52
+          [TEXT] #648:977 template=EL-79cb4df9
+      [FRAME] "MAIN" #648:978 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1310.5}}
+        [FRAME] "main#top" #648:979 layout={"mode":"column","padding":"24px 28px 40px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":68},"dimensions":{"width":1664}}
+          [FRAME] "DETAIL VIEW" #648:980 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1131.5}}
+            [FRAME] "button#dt-back" #648:981 template=EL-1f8f3823
+              [IMAGE-SVG] "Frame" #648:982 template=EL-d40fb4e5
+              [TEXT] #648:984 layout=layout_177c5efc fills="Science Blue" textStyle=style_ae17a590 text="Back to applications"
+            [FRAME] "div" #648:985 layout={"mode":"column","padding":"20px 24px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":42},"dimensions":{"width":1608}} fills=White strokes="Mystic (7:34)" strokeWeight=1px effects=effect_96562f89 borderRadius=18px
+              [FRAME] "div.dh-m" #648:986 template=EL-bc40306a
+                [FRAME] "div.dh-tags" #648:987 template=EL-b98545a2
+                  [FRAME] "span.bdg" #648:988 template=EL-f3b889ad
+                    [IMAGE-SVG] "Frame" #648:989 template=EL-522202e5
+                    [TEXT] #648:991 template=EL-39298ca5
+                  [FRAME] "span.qa-tag" #648:992 template=EL-36b7254e
+                    [TEXT] #648:993 template=EL-17b79c1c
+                [FRAME] "h1#dt-t" #648:994 template=EL-e9077466
+                  [TEXT] #648:995 layout=layout_56d3c81c fills="Midnight Blue" textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":26,"lineHeight":"33px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Skyline Demo Travels Ltd"
+                [FRAME] "dl.dh-meta" #648:996 layout={"mode":"row","alignSelf":"stretch","padding":"4px 0px 0px","alignItems":"stretch","wrap":true,"gap":"10px 28px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                  [FRAME] "div" #648:997 template=EL-1b96b41b
+                    [FRAME] "dt" #648:998 template=EL-dfdf56f9
+                      [TEXT] #648:999 layout=layout_177c5efc fills=Comet textStyle=style_16201471 text="Application reference"
+                    [FRAME] "dd" #648:1000 template=EL-5b7f580b
+                      [TEXT] #648:1001 layout=layout_177c5efc fills=Comet textStyle=style_9420bd5f text="No reference assigned"
+                  [FRAME] "div" #648:1002 template=EL-1b96b41b
+                    [FRAME] "dt" #648:1003 template=EL-dfdf56f9
+                      [TEXT] #648:1004 template=EL-90e05d34
+                    [FRAME] "dd" #648:1005 template=EL-5b7f580b
+                      [TEXT] #648:1006 layout=layout_177c5efc fills=Comet textStyle=style_9420bd5f text="Not recorded in this prototype"
+                  [FRAME] "div" #648:1007 template=EL-1b96b41b
+                    [FRAME] "dt" #648:1008 template=EL-dfdf56f9
+                      [TEXT] #648:1009 layout=layout_177c5efc fills=Comet textStyle=style_16201471 text="Business type"
+                    [FRAME] "dd" #648:1010 template=EL-dfdf56f9
+                      [TEXT] #648:1011 layout=layout_177c5efc fills=Mirage textStyle=style_5b7c52cb text="Travel agency"
+                  [FRAME] "div" #648:1012 template=EL-1b96b41b
+                    [FRAME] "dt" #648:1013 template=EL-dfdf56f9
+                      [TEXT] #648:1014 template=EL-145c16af
+                    [FRAME] "dd" #648:1015 template=EL-dfdf56f9
+                      [TEXT] #648:1016 layout=layout_177c5efc fills=Mirage textStyle=style_5b7c52cb text="Bangladesh"
+              [RECTANGLE] "::before" #648:1017 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":1,"y":1},"dimensions":{"width":4,"height":160.25}} fills=Saffron
+            [FRAME] "div" #648:1018 layout={"mode":"row","gap":"16px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":219},"dimensions":{"width":1608}}
+              [FRAME] "div.dg-m" #648:1019 template=EL-c0b8ba13
+                [FRAME] "section" #648:1020 template=EL-287947e7
+                  [FRAME] "div.pc-h" #648:1021 template=EL-075b35af
+                    [FRAME] "h2#bi-t" #648:1022 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1023 template=EL-a73b2a19
+                      [TEXT] #648:1025 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Business Information"
+                    [FRAME] "span" #648:1026 template=EL-62387e23
+                      [IMAGE-SVG] "Frame" #648:1027 template=EL-522202e5
+                      [TEXT] #648:1029 template=EL-c4d5f7c4
+                  [FRAME] "dl#d-biz" #648:1030 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(2,minmax(0,1fr))","gridTemplateRows":"40px 40px 40px 61px 40px","gap":"14px 24px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":277}}
+                    [FRAME] "div" #648:1031 template=EL-496dd43f
+                      [FRAME] "dt" #648:1032 template=EL-e9077466
+                        [TEXT] #648:1033 template=EL-b704793d
+                      [FRAME] "dd" #648:1034 template=EL-b98545a2
+                        [TEXT] #648:1035 template=EL-30811611
+                    [FRAME] "div" #648:1036 template=EL-84de6cfd
+                      [FRAME] "dt" #648:1037 template=EL-e9077466
+                        [TEXT] #648:1038 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Trading Name"
+                      [FRAME] "dd" #648:1039 template=EL-b98545a2
+                        [TEXT] #648:1040 template=EL-b93c2208
+                    [FRAME] "div" #648:1041 template=EL-d9c40360
+                      [FRAME] "dt" #648:1042 template=EL-e9077466
+                        [TEXT] #648:1043 template=EL-9e38b3ce
+                      [FRAME] "dd" #648:1044 template=EL-b98545a2
+                        [TEXT] #648:1045 template=EL-8b4cd0a5
+                    [FRAME] "div" #648:1046 template=EL-d2128618
+                      [FRAME] "dt" #648:1047 template=EL-e9077466
+                        [TEXT] #648:1048 template=EL-ace595bf
+                      [FRAME] "dd" #648:1049 template=EL-b98545a2
+                        [TEXT] #648:1050 template=EL-e9afabe6
+                    [FRAME] "div" #648:1051 template=EL-50455dca
+                      [FRAME] "dt" #648:1052 template=EL-e9077466
+                        [TEXT] #648:1053 template=EL-ce797886
+                      [FRAME] "dd" #648:1054 template=EL-b98545a2
+                        [TEXT] #648:1055 template=EL-aeace25a
+                    [FRAME] "div.pre" #648:1056 template=EL-7c969035
+                      [FRAME] "dt" #648:1057 template=EL-e9077466
+                        [TEXT] #648:1058 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Business Address"
+                      [FRAME] "dd" #648:1059 template=EL-e9077466
+                        [TEXT] #648:1060 template=EL-f3ccb55f
+                    [FRAME] "div" #648:1061 template=EL-65364041
+                      [FRAME] "dt" #648:1062 template=EL-e9077466
+                        [TEXT] #648:1063 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Business Website"
+                      [FRAME] "dd" #648:1064 template=EL-b98545a2
+                        [TEXT] #648:1065 template=EL-befbc648
+                [FRAME] "section" #648:1066 template=EL-287947e7
+                  [FRAME] "div.pc-h" #648:1067 template=EL-075b35af
+                    [FRAME] "h2#ct-t" #648:1068 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1069 template=EL-a73b2a19
+                      [TEXT] #648:1071 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Primary Business Contact"
+                    [FRAME] "span" #648:1072 template=EL-62387e23
+                      [IMAGE-SVG] "Frame" #648:1073 template=EL-522202e5
+                      [TEXT] #648:1075 template=EL-c4d5f7c4
+                  [FRAME] "dl#d-ct" #648:1076 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(2,minmax(0,1fr))","gridTemplateRows":"40px 58px","gap":"14px 24px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":112}}
+                    [FRAME] "div" #648:1077 template=EL-f489842c
+                      [FRAME] "dt" #648:1078 template=EL-e9077466
+                        [TEXT] #648:1079 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Full Name"
+                      [FRAME] "dd" #648:1080 template=EL-b98545a2
+                        [TEXT] #648:1081 template=EL-9c6beb64
+                    [FRAME] "div" #648:1082 template=EL-f489842c
+                      [FRAME] "dt" #648:1083 template=EL-e9077466
+                        [TEXT] #648:1084 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Job Title"
+                      [FRAME] "dd" #648:1085 template=EL-b98545a2
+                        [TEXT] #648:1086 template=EL-406f6b41
+                    [FRAME] "div" #648:1087 layout={"mode":"column","padding":"0px 0px 7px","alignItems":"stretch","gap":"3px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [FRAME] "dt" #648:1088 template=EL-e9077466
+                        [TEXT] #648:1089 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Business Email"
+                      [FRAME] "dd" #648:1090 template=EL-b98545a2
+                        [FRAME] "span#v-em" #648:1091 template=EL-2f9fe287
+                          [TEXT] #648:1092 layout=layout_177c5efc fills=Mirage textStyle=style_394ce98c text="nusrat.jahan@example.com"
+                        [FRAME] "Copy business email" #648:1093 template=EL-6e3773dc
+                          [IMAGE-SVG] "Frame" #648:1094 template=EL-522202e5
+                          [FRAME] "span" #648:1096 template=EL-2a1f700b
+                            [TEXT] #648:1097 template=EL-395bfb40
+                    [FRAME] "div" #648:1098 template=EL-f489842c
+                      [FRAME] "dt" #648:1099 template=EL-e9077466
+                        [TEXT] #648:1100 layout=layout_56d3c81c fills=Comet textStyle=style_dffd4b27 text="Mobile Number"
+                      [FRAME] "dd" #648:1101 template=EL-b98545a2
+                        [FRAME] "span:margin" #648:1102 layout={"mode":"column","padding":"0px 0px 18px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [FRAME] "span" #648:1103 layout={"mode":"row","alignItems":"flex-end","wrap":true,"gap":"10px 20px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                            [FRAME] "span.flg" #648:1104 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":20}} fills=fill_858a44fb strokes=Spindle strokeWeight=1px borderRadius=5px
+                              [TEXT] #648:1105 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":6.49,"y":1},"dimensions":{"width":15.13,"height":21}} fills=Endeavour textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":10.5,"lineHeight":"21px","letterSpacing":"0.04em","textAlignHorizontal":"CENTER","textAlignVertical":"CENTER"} text="BD"
+                            [FRAME] "span#v-ph" #648:1106 template=EL-2f9fe287
+                              [TEXT] #648:1107 template=EL-f48d6847
+                        [FRAME] "Copy mobile number" #648:1108 template=EL-6e3773dc
+                          [IMAGE-SVG] "Frame" #648:1109 template=EL-522202e5
+                          [FRAME] "span" #648:1111 template=EL-2a1f700b
+                            [TEXT] #648:1112 template=EL-395bfb40
+                [FRAME] "section#d-docs-s" #648:1113 template=EL-287947e7
+                  [FRAME] "div.pc-h" #648:1114 template=EL-b98545a2
+                    [FRAME] "h2#dc-t" #648:1115 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1116 template=EL-a73b2a19
+                      [TEXT] #648:1118 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Supporting Documents"
+                  [FRAME] "div" #648:1119 layout=layout_918fe051 fills="Link Water (627:1977)" strokes=Botticelli strokeWeight=1px strokeDashes=3,2 borderRadius=12px
+                    [FRAME] "svg:margin" #648:1120 template=EL-af68c20c
+                      [IMAGE-SVG] "Frame" #648:1121 template=EL-d2f5d0a6
+                    [FRAME] "div" #648:1123 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":403.22,"height":44.5}}
+                      [FRAME] "b" #648:1124 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":-1},"dimensions":{"width":403.22}}
+                        [TEXT] #648:1125 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_ac8daa02 text="No supporting documents submitted"
+                      [FRAME] "span" #648:1126 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":24.5},"dimensions":{"width":403.22}}
+                        [TEXT] #648:1127 layout=layout_177c5efc fills="Oxford Blue" textStyle=style_a1ef2a0a text="No supporting documents were required for this application."
+                [FRAME] "section" #648:1128 template=EL-287947e7
+                  [FRAME] "div.pc-h" #648:1129 template=EL-b98545a2
+                    [FRAME] "h2#hs-t" #648:1130 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1131 template=EL-a73b2a19
+                      [TEXT] #648:1133 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Decision history"
+                  [FRAME] "ol#d-hist" #648:1134 template=EL-e9077466
+                    [FRAME] "li.h-sub" #648:1135 template=EL-2f4b10ae
+                      [FRAME] "span.tl-ic" #648:1136 layout={"mode":"column","padding":"8px 0px","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":32,"height":32}} fills="Hawkes Blue" borderRadius=16px
+                        [IMAGE-SVG] "Frame" #648:1137 template=EL-d40fb4e5
+                      [FRAME] "div" #648:1139 template=EL-8bf8318c
+                        [FRAME] "b" #648:1140 template=EL-dfdf56f9
+                          [TEXT] #648:1141 layout=layout_177c5efc fills=Mirage textStyle=style_53cdfbde text="Application submitted"
+                        [FRAME] "span" #648:1142 template=EL-dfdf56f9
+                          [TEXT] #648:1143 layout=layout_177c5efc fills=Comet textStyle=style_8f1384da text="Date not recorded in this prototype"
+                      [RECTANGLE] "::after" #648:1144 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":15,"y":34},"dimensions":{"width":2,"height":21}} fills=Mystic
+                    [FRAME] "li.h-wait" #648:1145 template=EL-2f4b10ae
+                      [FRAME] "span.tl-ic" #648:1146 layout=layout_b74cd9f4 fills="Catskill White (7:11)" strokes=Heather strokeWeight=1px strokeDashes=3,2 borderRadius=16px
+                        [IMAGE-SVG] "Frame" #648:1147 template=EL-d40fb4e5
+                      [FRAME] "div" #648:1149 template=EL-8bf8318c
+                        [FRAME] "b" #648:1150 template=EL-dfdf56f9
+                          [TEXT] #648:1151 layout=layout_177c5efc fills=Mirage textStyle=style_53cdfbde text="Awaiting decision"
+                        [FRAME] "span" #648:1152 template=EL-dfdf56f9
+                          [TEXT] #648:1153 layout=layout_177c5efc fills=Comet textStyle=style_8f1384da text="Approve or reject this application."
+              [FRAME] "div.dg-s" #648:1154 template=EL-b1be3370
+                [FRAME] "section#d-dec" #648:1155 layout=layout_816aa529 fills=White strokes="Cornflower (648:815)" strokeWeight=1px borderRadius=16px
+                  [RECTANGLE] "section#d-dec:shadow" #648:1156 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":360,"height":249}} fills="White 0.2%" effects={"boxShadow":"0px 10px 30px -18px rgba(1, 42, 94, 0.4)"} borderRadius=16px
+                  [FRAME] "div.pc-h" #648:1157 template=EL-b98545a2
+                    [FRAME] "h2#de-t" #648:1158 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1159 template=EL-a73b2a19
+                      [TEXT] #648:1161 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Decision"
+                  [FRAME] "p.dec-p" #648:1162 template=EL-cbb8c719
+                    [TEXT] #648:1163 layout=layout_56d3c81c fills="Oxford Blue" textStyle=style_d4875030 text="Review the business information, contact and\\ndocuments, then record a decision. The\\napplicant is notified of the decision by email."
+                  [FRAME] "button#b-ap" #648:1164 layout={"mode":"row","alignSelf":"stretch","padding":"4px 22px 0px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":56}} fills=Jewel strokes="Black 0%" strokeWeight=1px borderRadius=10px
+                    [IMAGE-SVG] "Frame" #648:1165 template=EL-f652840d
+                    [TEXT] #648:1167 layout=layout_177c5efc fills=White textStyle=style_62559887 text="Approve Application"
+                  [FRAME] "button#b-rj" #648:1168 layout={"mode":"row","alignSelf":"stretch","padding":"0px 18px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44}} fills=White strokes=Shilo strokeWeight=1px borderRadius=10px
+                    [IMAGE-SVG] "Frame" #648:1169 template=EL-f652840d
+                    [TEXT] #648:1171 layout=layout_177c5efc fills=Thunderbird textStyle=style_c859fa4c text="Reject Application"
+                [FRAME] "section" #648:1172 template=EL-287947e7
+                  [FRAME] "div.pc-h" #648:1173 template=EL-b98545a2
+                    [FRAME] "h2#rs-t" #648:1174 template=EL-235879b0
+                      [IMAGE-SVG] "Frame" #648:1175 template=EL-a73b2a19
+                      [TEXT] #648:1177 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4ee39d62 text="Review summary"
+                  [FRAME] "ul#d-rsum" #648:1178 template=EL-e9077466
+                    [FRAME] "li" #648:1179 layout={"mode":"row","alignSelf":"stretch","padding":"0px 0px 10px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [IMAGE-SVG] "Frame" #648:1180 template=EL-f652840d
+                      [FRAME] "span" #648:1182 template=EL-51794897
+                        [TEXT] #648:1183 layout=layout_56d3c81c fills=Mirage textStyle=style_94747b76 text="Business Information"
+                      [FRAME] "b" #648:1184 template=EL-17eb356c
+                        [TEXT] #648:1185 template=EL-e0f3a915
+                    [FRAME] "li" #648:1186 template=EL-3a369026
+                      [IMAGE-SVG] "Frame" #648:1187 template=EL-f652840d
+                      [FRAME] "span" #648:1189 template=EL-51794897
+                        [TEXT] #648:1190 layout=layout_56d3c81c fills=Mirage textStyle=style_94747b76 text="Primary Contact"
+                      [FRAME] "b" #648:1191 template=EL-17eb356c
+                        [TEXT] #648:1192 template=EL-e0f3a915
+                    [FRAME] "li" #648:1193 template=EL-3a369026
+                      [IMAGE-SVG] "Frame" #648:1194 template=EL-f652840d
+                      [FRAME] "span" #648:1196 template=EL-51794897
+                        [TEXT] #648:1197 layout=layout_56d3c81c fills=Mirage textStyle=style_94747b76 text="Supporting\\nDocuments"
+                      [FRAME] "b" #648:1198 template=EL-17eb356c
+                        [TEXT] #648:1199 layout=layout_177c5efc fills=Comet textStyle=style_faea599f text="Not submitted · optional"
+        [FRAME] "footer" #648:1200 layout={"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"8px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":1263.5},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+          [FRAME] "span" #648:1201 template=EL-2a66e910
+            [TEXT] #648:1202 template=EL-842cf3ba
+          [FRAME] "span" #648:1203 template=EL-2a66e910
+            [TEXT] #648:1204 template=EL-efb8f479
+        [FRAME] "header" #648:1205 template=EL-e0db0c74
+          [FRAME] "Breadcrumb" #648:1206 template=EL-51794897
+            [FRAME] "ol" #648:1207 template=EL-0211da4a
+              [FRAME] "a" #648:1208 template=EL-2f9fe287
+                [TEXT] #648:1209 template=EL-7c5b051c
+              [FRAME] "li" #648:1210 template=EL-9d62fe7b
+                [FRAME] "span.__h2d-remove-before:margin" #648:1211 template=EL-b5d3d7e6
+                  [TEXT] #648:1212 template=EL-07d54cf7
+                [FRAME] "a" #648:1213 template=EL-2f9fe287
+                  [TEXT] #648:1214 template=EL-ba506fa3
+              [FRAME] "li#bc-apps" #648:1215 layout={"mode":"row","alignItems":"center","gap":"4.010000228881836px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                [FRAME] "span.__h2d-remove-before:margin" #648:1216 template=EL-b5d3d7e6
+                  [TEXT] #648:1217 template=EL-07d54cf7
+                [FRAME] "a" #648:1218 template=EL-2f9fe287
+                  [TEXT] #648:1219 layout=layout_177c5efc fills="Science Blue" textStyle=style_94747b76 text="Agent Applications"
+              [FRAME] "li#bc-cur" #648:1220 layout={"mode":"row","padding":"0px 0px 0px 4px","gap":"4px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                [TEXT] #648:1221 template=EL-f250b41d
+                [TEXT] #648:1222 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Skyline Demo Travels Ltd"
+          [FRAME] "form#tb-s" #665:7367 template=EL-a4a2fb03
+            [FRAME] "input#tb-q" #665:7368 template=EL-bcaab4e4
+              [IMAGE-SVG] "Frame" #665:7369 template=EL-f1890f3e
+              [FRAME] "div#placeholder" #665:7371 template=EL-a8ef7fa3
+                [TEXT] #665:7372 template=EL-c12bf1ac
+          [FRAME] "Notifications" #648:1232 template=EL-308cdf1b
+            [IMAGE-SVG] "Frame" #648:1233 template=EL-a73b2a19
+          [FRAME] "Admin profile" #648:1235 template=EL-ebeba58d
+            [FRAME] "span" #648:1236 template=EL-23a90869
+              [TEXT] #648:1237 template=EL-681590d9
+            [FRAME] "span.tb-avt" #648:1238 template=EL-6e7b525c
+              [FRAME] "b" #648:1239 template=EL-dfdf56f9
+                [TEXT] #648:1240 template=EL-4b8fe6d9
+              [FRAME] "small#tb-role" #648:1241 template=EL-81ec75b7
+                [TEXT] #648:1242 template=EL-8765bfb6

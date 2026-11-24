@@ -1,0 +1,500 @@
+"MAIN" #707:18574 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1693}}
+        [FRAME] "main#top" #707:19510 layout={"mode":"column","padding":"24px 152px 40px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":68},"dimensions":{"width":1664,"height":1625}}
+          [FRAME] "div.wrap" #707:19511 template=EL-01f5b3d6
+            [FRAME] "button.lnk:margin:align-flex-start" #707:19512 template=EL-dfdf56f9
+              [FRAME] "button.lnk:margin" #707:19513 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":192.56,"height":26}}
+                [FRAME] "button.lnk" #707:19514 template=EL-1f8f3823
+                  [IMAGE-SVG] "Frame" #707:19515 template=EL-d40fb4e5
+                  [TEXT] #707:19517 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="Back to Booking History"
+            [FRAME] "div" #707:19518 template=EL-286f649c
+              [FRAME] "section" #707:19519 template=EL-f5593ae4
+                [FRAME] "div.bh-t" #707:19520 template=EL-12a11ae8
+                  [FRAME] "p.eyb" #707:19521 template=EL-e9077466
+                    [TEXT] #707:19522 layout=layout_56d3c81c fills="Science Blue" textStyle=style_f38e2072 text="Agent Portal · M2.11 Agent Booking Details"
+                  [FRAME] "h1#h-pg" #707:19523 template=EL-e9077466
+                    [TEXT] #707:19524 layout=layout_56d3c81c fills="Midnight Blue" textStyle={"fontFamily":"Inter","fontStyle":"Bold","fontWeight":800,"fontSize":25.299999237060547,"lineHeight":"36px","letterSpacing":"-0.0111em","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="AW-DEMO-FL-001"
+                  [FRAME] "p.ph-s" #707:19525 layout={"mode":"column","padding":"2px 0px 0px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":640}}
+                    [TEXT] #707:19526 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Flight booking for Amina Rahman"
+                  [FRAME] "div.bh-b" #707:19527 layout={"mode":"row","alignSelf":"stretch","padding":"8px 0px 0px","alignItems":"center","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                    [FRAME] "span.p-ok" #707:19528 layout={"mode":"row","padding":"2px 10px 2px 8px","alignItems":"center","gap":"5px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=Panache borderRadius=999px
+                      [IMAGE-SVG] "Frame" #707:19529 template=EL-522202e5
+                      [TEXT] #707:19531 layout=layout_177c5efc fills=Jewel textStyle=style_ac7c698a text="Ticketed"
+                    [FRAME] "span.src" #707:19532 layout={"mode":"row","padding":"2px 10px 2px 8px","alignItems":"center","gap":"4px","sizing":{"horizontal":"hug","vertical":"hug"}} fills="Hawkes Blue" borderRadius=999px
+                      [IMAGE-SVG] "Frame" #707:19533 template=EL-d4302386
+                      [TEXT] #707:19535 layout=layout_177c5efc fills=Endeavour textStyle=style_ac7c698a text="Sub-agent booking"
+                    [FRAME] "span.dm-tag" #707:19536 template=EL-5514a8df
+        -> FILLS: Catskill White (660:5050)
+                      [IMAGE-SVG] "Frame" #707:19537 template=EL-62b4d877
+                      [TEXT] #707:19539 template=EL-8340f657
+        -> TEXT: "Sample data"
+        -> FILLS: Shuttle Gray (665:6373)
+                [FRAME] "div.bh-a" #707:19540 template=EL-d9efaca1
+                  [FRAME] "button.btn" #707:19541 template=EL-6233b9fb
+        -> FILLS: Saffron
+                    [RECTANGLE] "button.btn:shadow" #707:19542 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":158,"height":49}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px
+                    [IMAGE-SVG] "Frame" #707:19543 template=EL-f652840d
+                    [FRAME] "span" #707:19545 template=EL-2a1f700b
+                      [TEXT] #707:19546 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View E-ticket"
+                  [FRAME] "button.btn" #707:19547 template=EL-1ecbab94
+        -> FILLS: White
+                    [IMAGE-SVG] "Frame" #707:19548 template=EL-f652840d
+                    [FRAME] "span" #707:19550 template=EL-2a1f700b
+                      [TEXT] #707:19551 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="Download E-ticket PDF"
+                  [FRAME] "button.btn" #707:19552 template=EL-d97d4179
+                    [IMAGE-SVG] "Frame" #707:19553 template=EL-f652840d
+                    [FRAME] "span" #707:19555 template=EL-2a1f700b
+                      [TEXT] #707:19556 layout=layout_177c5efc fills="Science Blue" textStyle=style_c859fa4c text="Back to Booking History"
+              [FRAME] "div.bd-g" #707:19557 template=EL-bff1719b
+                [FRAME] "div" #707:19558 template=EL-c0b8ba13
+                  [FRAME] "section#c-sum" #707:19559 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19560 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19561 template=EL-a080e1c7
+        -> FILLS: Hawkes Blue
+                        [IMAGE-SVG] "Frame" #707:19562 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19564 template=EL-51794897
+                        [FRAME] "h2#c-sum-h" #707:19565 template=EL-e9077466
+                          [TEXT] #707:19566 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Booking Summary"
+                      [FRAME] "span.dm-tag" #707:19567 template=EL-5514a8df
+        -> FILLS: Catskill White (660:5050)
+                        [IMAGE-SVG] "Frame" #707:19568 template=EL-62b4d877
+                        [TEXT] #707:19570 template=EL-8340f657
+        -> TEXT: "Sample data"
+        -> FILLS: Shuttle Gray (665:6373)
+                    [FRAME] "div.cd-b" #707:19571 template=EL-6674105b
+                      [FRAME] "dl.sm-dl" #707:19572 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(4,minmax(0,1fr))","gridTemplateRows":"69px 67px","gap":"0px 16px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":136}}
+                        [FRAME] "div" #707:19573 template=EL-7c689027
+                          [FRAME] "dt" #707:19574 template=EL-e9077466
+                            [TEXT] #707:19575 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Booking Reference"
+                          [FRAME] "dd.mono" #707:19576 template=EL-bb66f4c9
+                            [TEXT] #707:19577 layout=layout_56d3c81c fills=Mirage textStyle={"fontFamily":"Inter","fontStyle":"Bold","fontWeight":800,"fontSize":12.199999809265137,"lineHeight":"21px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="AW-DEMO-FL-001"
+                        [FRAME] "div" #707:19578 template=EL-7c689027
+                          [FRAME] "dt" #707:19579 template=EL-e9077466
+                            [TEXT] #707:19580 template=EL-655653fc
+        -> TEXT: "Service"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19581 template=EL-bb66f4c9
+                            [IMAGE-SVG] "Frame" #707:19582 template=EL-a73b2a19
+                            [TEXT] #707:19584 layout=layout_177c5efc fills=Mirage textStyle=style_ec288b49 text="Flight"
+                        [FRAME] "div" #707:19585 layout=layout_0f473e99
+                          [FRAME] "dt" #707:19586 template=EL-e9077466
+                            [TEXT] #707:19587 template=EL-62089f8a
+        -> TEXT: "Booking Status"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19588 template=EL-bb66f4c9
+                            [FRAME] "span.p-ok" #707:19589 template=EL-4ed5d9a3
+        -> FILLS: Panache
+                              [IMAGE-SVG] "Frame" #707:19590 template=EL-522202e5
+                              [TEXT] #707:19592 template=EL-629a2dd8
+        -> TEXT: "Ticketed"
+        -> FILLS: Jewel
+                        [FRAME] "div" #707:19593 template=EL-7c689027
+                          [FRAME] "dt" #707:19594 template=EL-e9077466
+                            [TEXT] #707:19595 template=EL-c3e4d072
+        -> TEXT: "Travel / Service Date"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19596 template=EL-bb66f4c9
+                            [TEXT] #707:19597 layout=layout_56d3c81c fills=Mirage textStyle=style_ec288b49 text="18 Dec 2026"
+                        [FRAME] "div" #707:19598 template=EL-140f17e3
+                          [FRAME] "dt" #707:19599 template=EL-e9077466
+                            [TEXT] #707:19600 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Customer"
+                          [FRAME] "dd" #707:19601 template=EL-bb66f4c9
+                            [TEXT] #707:19602 layout=layout_56d3c81c fills=Mirage textStyle=style_ec288b49 text="Amina Rahman"
+                        [FRAME] "div" #707:19603 template=EL-140f17e3
+                          [FRAME] "dt" #707:19604 template=EL-e9077466
+                            [TEXT] #707:19605 template=EL-bde194dd
+        -> TEXT: "Created By"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19606 template=EL-bb66f4c9
+                            [TEXT] #707:19607 template=EL-2e37ada9
+        -> TEXT: "Mirpur Desk"
+        -> FILLS: Mirage
+                        [FRAME] "div" #707:19608 layout={"mode":"column","padding":"12px 0px 14px","alignItems":"stretch","gap":"3px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes="Athens Gray" strokeWeight="1px 0px 0px"
+                          [FRAME] "dt" #707:19609 template=EL-e9077466
+                            [TEXT] #707:19610 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Booking Source"
+                          [FRAME] "dd" #707:19611 template=EL-bb66f4c9
+                            [FRAME] "span.src" #707:19612 template=EL-7de4904a
+        -> FILLS: Hawkes Blue
+                              [IMAGE-SVG] "Frame" #707:19613 template=EL-d4302386
+                              [TEXT] #707:19615 template=EL-25484a5e
+        -> TEXT: "Sub-agent"
+        -> FILLS: Endeavour
+                        [FRAME] "div" #707:19616 template=EL-140f17e3
+                          [FRAME] "dt" #707:19617 template=EL-e9077466
+                            [TEXT] #707:19618 template=EL-5bec79db
+        -> TEXT: "Parent Agent"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19619 template=EL-bb66f4c9
+                            [TEXT] #707:19620 template=EL-d7de7120
+        -> TEXT: "Skyline Demo Travels Ltd"
+        -> FILLS: Mirage
+                  [FRAME] "section#c-st" #707:19621 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19622 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19623 template=EL-9e704c57
+        -> FILLS: Panache
+                        [IMAGE-SVG] "Frame" #707:19624 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19626 template=EL-51794897
+                        [FRAME] "h2#c-st-h" #707:19627 template=EL-e9077466
+                          [TEXT] #707:19628 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Booking Status"
+                    [FRAME] "div.cd-b" #707:19629 template=EL-6674105b
+                      [FRAME] "div.stc" #707:19630 layout={"mode":"row","alignSelf":"stretch","padding":"14px 16px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=Narvik strokes=Skeptic strokeWeight=1px borderRadius=16px
+                        [FRAME] "div" #707:19631 layout={"mode":"column","gap":"9.25px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [FRAME] "span.big" #707:19632 template=EL-235879b0
+                            [IMAGE-SVG] "Frame" #707:19633 template=EL-d2f5d0a6
+                            [TEXT] #707:19635 layout=layout_177c5efc fills=Mirage textStyle=style_08f72687 text="Ticketed"
+                          [TEXT] #707:19636 layout=layout_177c5efc fills=Comet textStyle=style_d4875030 text="An E-ticket is available for this booking."
+                  [FRAME] "section#c-cu" #707:19637 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19638 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19639 template=EL-9d7acaef
+        -> FILLS: Varden
+                        [IMAGE-SVG] "Frame" #707:19640 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19642 template=EL-51794897
+                        [FRAME] "h2#c-cu-h" #707:19643 template=EL-e9077466
+                          [TEXT] #707:19644 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Customer"
+                        [FRAME] "p" #707:19645 template=EL-e9077466
+                          [TEXT] #707:19646 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="The person this booking was made for"
+                    [FRAME] "div.cd-b" #707:19647 template=EL-6674105b
+                      [FRAME] "dl.kv2" #707:19648 template=EL-f384505a
+                        [FRAME] "div" #707:19649 template=EL-cabd90d2
+                          [FRAME] "dt" #707:19650 template=EL-e9077466
+                            [TEXT] #707:19651 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Customer Name"
+                          [FRAME] "dd" #707:19652 template=EL-bb66f4c9
+                            [TEXT] #707:19653 template=EL-fca80bed
+        -> TEXT: "Amina Rahman"
+        -> FILLS: Mirage
+                        [FRAME] "div" #707:19654 layout={"mode":"column","padding":"10px 0px 13.5px","alignItems":"stretch","gap":"2.5px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                          [FRAME] "dt" #707:19655 template=EL-e9077466
+                            [TEXT] #707:19656 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Booking Type"
+                          [FRAME] "dd" #707:19657 template=EL-bb66f4c9
+                            [FRAME] "span" #707:19658 template=EL-e487a1a2
+                              [IMAGE-SVG] "Frame" #707:19659 template=EL-62b4d877
+                              [TEXT] #707:19661 layout=layout_177c5efc fills=Comet textStyle=style_cabfe684 text="Booked on behalf of customer"
+                  [FRAME] "section#c-svc" #707:19662 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19663 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19664 template=EL-a080e1c7
+        -> FILLS: Hawkes Blue
+                        [IMAGE-SVG] "Frame" #707:19665 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19667 template=EL-51794897
+                        [FRAME] "h2#c-svc-h" #707:19668 template=EL-e9077466
+                          [TEXT] #707:19669 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Service Details"
+                    [FRAME] "div.cd-b" #707:19670 template=EL-6674105b
+                      [FRAME] "dl.kv2" #707:19671 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(2,minmax(0,1fr))","gridTemplateRows":"62px 66px","gap":"0px 16px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":128}}
+                        [FRAME] "div" #707:19672 template=EL-cabd90d2
+                          [FRAME] "dt" #707:19673 template=EL-e9077466
+                            [TEXT] #707:19674 template=EL-655653fc
+        -> TEXT: "Service"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19675 template=EL-bb66f4c9
+                            [IMAGE-SVG] "Frame" #707:19676 template=EL-a73b2a19
+                            [TEXT] #707:19678 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Flight"
+                        [FRAME] "div" #707:19679 template=EL-cabd90d2
+                          [FRAME] "dt" #707:19680 template=EL-e9077466
+                            [TEXT] #707:19681 template=EL-c3e4d072
+        -> TEXT: "Travel / Service Date"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19682 template=EL-bb66f4c9
+                            [TEXT] #707:19683 layout=layout_56d3c81c fills=Mirage textStyle=style_cf58f31f text="18 Dec 2026"
+                        [FRAME] "div" #707:19684 layout=layout_1568f27d strokes="Athens Gray" strokeWeight="1px 0px 0px"
+                          [FRAME] "dt" #707:19685 template=EL-e9077466
+                            [TEXT] #707:19686 template=EL-62089f8a
+        -> TEXT: "Booking Status"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19687 template=EL-bb66f4c9
+                            [FRAME] "span.p-ok" #707:19688 template=EL-4ed5d9a3
+        -> FILLS: Panache
+                              [IMAGE-SVG] "Frame" #707:19689 template=EL-522202e5
+                              [TEXT] #707:19691 template=EL-629a2dd8
+        -> TEXT: "Ticketed"
+        -> FILLS: Jewel
+                        [FRAME] "div" #707:19692 layout={"mode":"column","padding":"10px 0px 13px","alignItems":"stretch","gap":"3px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes="Athens Gray" strokeWeight="1px 0px 0px"
+                          [FRAME] "dt" #707:19693 template=EL-e9077466
+                            [TEXT] #707:19694 layout=layout_56d3c81c fills=Comet textStyle=style_d455df39 text="Route details"
+                          [FRAME] "dd" #707:19695 template=EL-bb66f4c9
+                            [TEXT] #707:19696 layout=layout_56d3c81c fills="Slate Gray (665:6381)" textStyle=style_39e93c2c text="Not provided"
+                  [FRAME] "section#c-tr" #707:19697 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19698 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19699 template=EL-1aeab6f4
+        -> FILLS: Catskill White (660:4703)
+                        [IMAGE-SVG] "Frame" #707:19700 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19702 template=EL-51794897
+                        [FRAME] "h2#c-tr-h" #707:19703 template=EL-e9077466
+                          [TEXT] #707:19704 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Traveller Information"
+                    [FRAME] "div.cd-b" #707:19705 template=EL-6674105b
+                      [FRAME] "div" #707:19706 template=EL-adc86636
+        -> FILLS: White Lilac
+                        [FRAME] "svg:margin" #707:19707 template=EL-7ae328ec
+                          [IMAGE-SVG] "Frame" #707:19708 template=EL-a73b2a19
+                        [FRAME] "div" #707:19710 template=EL-bfbba51a
+                          [FRAME] "b" #707:19711 template=EL-dfdf56f9
+                            [TEXT] #707:19712 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Traveller details not provided in this design-preview dataset"
+                          [FRAME] "p" #707:19713 template=EL-dfdf56f9
+                            [TEXT] #707:19714 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="Traveller information will appear here when available from the booking record."
+                  [FRAME] "section#c-pay" #707:19715 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19716 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19717 template=EL-1aeab6f4
+        -> FILLS: Catskill White (660:4703)
+                        [IMAGE-SVG] "Frame" #707:19718 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19720 template=EL-51794897
+                        [FRAME] "h2#c-pay-h" #707:19721 template=EL-e9077466
+                          [TEXT] #707:19722 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Payment Information"
+                    [FRAME] "div.cd-b" #707:19723 template=EL-6674105b
+                      [FRAME] "div" #707:19724 template=EL-adc86636
+        -> FILLS: White Lilac
+                        [FRAME] "svg:margin" #707:19725 template=EL-7ae328ec
+                          [IMAGE-SVG] "Frame" #707:19726 template=EL-a73b2a19
+                        [FRAME] "div" #707:19728 template=EL-bfbba51a
+                          [FRAME] "b" #707:19729 template=EL-dfdf56f9
+                            [TEXT] #707:19730 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Not available in this design-preview dataset"
+                          [FRAME] "p" #707:19731 template=EL-dfdf56f9
+                            [TEXT] #707:19732 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="Payment information will be shown here when available from the booking record."
+                  [FRAME] "section#c-act" #707:19733 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19734 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19735 template=EL-1aeab6f4
+        -> FILLS: Catskill White (660:4703)
+                        [IMAGE-SVG] "Frame" #707:19736 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19738 template=EL-51794897
+                        [FRAME] "h2#c-act-h" #707:19739 template=EL-e9077466
+                          [TEXT] #707:19740 template=EL-bf98b0a1
+        -> TEXT: "Booking Activity"
+        -> FILLS: Midnight Blue
+                    [FRAME] "div.cd-b" #707:19741 template=EL-6674105b
+                      [FRAME] "div" #707:19742 template=EL-adc86636
+        -> FILLS: White Lilac
+                        [FRAME] "svg:margin" #707:19743 template=EL-7ae328ec
+                          [IMAGE-SVG] "Frame" #707:19744 template=EL-a73b2a19
+                        [FRAME] "div" #707:19746 template=EL-bfbba51a
+                          [FRAME] "b" #707:19747 template=EL-dfdf56f9
+                            [TEXT] #707:19748 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Not available"
+                          [FRAME] "p" #707:19749 template=EL-dfdf56f9
+                            [TEXT] #707:19750 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="Detailed booking activity is not available in this design-preview dataset."
+                [FRAME] "div" #707:19751 layout={"mode":"column","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":380}}
+                  [FRAME] "section#c-doc" #707:19752 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19753 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19754 template=EL-9e704c57
+        -> FILLS: Panache
+                        [IMAGE-SVG] "Frame" #707:19755 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19757 template=EL-51794897
+                        [FRAME] "h2#c-doc-h" #707:19758 template=EL-e9077466
+                          [TEXT] #707:19759 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Documents"
+                        [FRAME] "p" #707:19760 template=EL-e9077466
+                          [TEXT] #707:19761 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Flights use an E-ticket"
+                    [FRAME] "div.cd-b" #707:19762 template=EL-900b4178
+                      [FRAME] "div.dcard" #707:19763 layout={"mode":"column","alignSelf":"stretch","padding":"16px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills="Alice Blue (171:1588)" strokes="Link Water (664:5964)" strokeWeight=1px borderRadius=16px
+                        [FRAME] "div.dcard-h" #707:19764 layout={"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                          [FRAME] "span.kic" #707:19765 layout=layout_d905ebbd fills=Panache borderRadius=13px
+                            [IMAGE-SVG] "Frame" #707:19766 template=EL-b1d338df
+                          [FRAME] "div" #707:19768 template=EL-6e7b525c
+                            [FRAME] "b" #707:19769 template=EL-dfdf56f9
+                              [TEXT] #707:19770 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3befcb4d text="E-ticket"
+                            [FRAME] "small" #707:19771 template=EL-dfdf56f9
+                              [TEXT] #707:19772 layout=layout_177c5efc fills=Comet textStyle=style_c80e55f1 text="E-ticket available"
+                        [FRAME] "div.doc-a" #707:19773 layout={"mode":"row","alignSelf":"stretch","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                          [FRAME] "button.btn" #707:19774 layout={"mode":"row","padding":"10.5px 14px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":142}} fills=White strokes="Heather (660:4870)" strokeWeight=1px borderRadius=10px
+                            [IMAGE-SVG] "Frame" #707:19775 template=EL-d40fb4e5
+                            [FRAME] "span" #707:19777 template=EL-2a1f700b
+                              [TEXT] #707:19778 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_f6d4e0eb text="View E-ticket"
+                          [FRAME] "button.btn" #707:19779 layout={"mode":"row","padding":"10.5px 14px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":154}} fills=White strokes="Heather (660:4870)" strokeWeight=1px borderRadius=10px
+                            [IMAGE-SVG] "Frame" #707:19780 template=EL-d40fb4e5
+                            [FRAME] "span" #707:19782 template=EL-2a1f700b
+                              [TEXT] #707:19783 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_f6d4e0eb text="Download PDF"
+                      [FRAME] "div.irow" #707:19784 template=EL-fc07c2e0
+        -> FILLS: Catskill White (386:1824)
+                        [FRAME] "b" #707:19785 template=EL-d3cd7fb5
+                          [TEXT] #707:19786 layout=layout_177c5efc fills=Mirage textStyle=style_82dfb323 text="Invoice"
+                        [FRAME] "span" #707:19787 template=EL-d3cd7fb5
+                          [TEXT] #707:19788 layout=layout_177c5efc fills=Comet textStyle=style_e6a95020 text="Not available in the current design-preview dataset"
+                  [FRAME] "section#c-src" #707:19789 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19790 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19791 template=EL-a080e1c7
+        -> FILLS: Hawkes Blue
+                        [IMAGE-SVG] "Frame" #707:19792 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19794 template=EL-51794897
+                        [FRAME] "h2#c-src-h" #707:19795 template=EL-e9077466
+                          [TEXT] #707:19796 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Booking Source"
+                    [FRAME] "div.cd-b" #707:19797 template=EL-900b4178
+                      [FRAME] "dl.kv2" #707:19798 template=EL-f384505a
+                        [FRAME] "div" #707:19799 layout=layout_1568f27d
+                          [FRAME] "dt" #707:19800 template=EL-e9077466
+                            [TEXT] #707:19801 template=EL-bde194dd
+        -> TEXT: "Created By"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19802 layout={"mode":"column","alignSelf":"stretch","justifyContent":"center","gap":"9.5px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                            [TEXT] #707:19803 template=EL-0968349c
+        -> TEXT: "Mirpur Desk"
+        -> FILLS: Mirage
+                            [FRAME] "span.src" #707:19804 template=EL-7de4904a
+        -> FILLS: Hawkes Blue
+                              [IMAGE-SVG] "Frame" #707:19805 template=EL-d4302386
+                              [TEXT] #707:19807 template=EL-25484a5e
+        -> TEXT: "Sub-agent"
+        -> FILLS: Endeavour
+                        [FRAME] "div" #707:19808 layout={"mode":"column","padding":"10px 0px 17px","alignItems":"stretch","gap":"2.5px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                          [FRAME] "dt" #707:19809 template=EL-e9077466
+                            [TEXT] #707:19810 template=EL-5bec79db
+        -> TEXT: "Parent Agent"
+        -> FILLS: Comet
+                          [FRAME] "dd" #707:19811 template=EL-bb66f4c9
+                            [TEXT] #707:19812 layout=layout_56d3c81c fills=Mirage textStyle=style_cf58f31f text="Skyline Demo Travels\\nLtd"
+                      [FRAME] "p" #707:19813 template=EL-f96bbce8
+                        [FRAME] "svg:margin" #707:19814 template=EL-59323ff4
+                          [IMAGE-SVG] "Frame" #707:19815 template=EL-494805ba
+                        [FRAME] "span" #707:19817 layout={"mode":"column","padding":"0px 30.3700008392334px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [TEXT] #707:19818 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Created by Mirpur Desk on behalf of a customer\\nunder Skyline Demo Travels Ltd."
+                      [FRAME] "Booking hierarchy" #707:19819 template=EL-e9077466
+                        [FRAME] "div.hi-n" #707:19820 layout=layout_b2c765ac fills=White strokes="Link Water (664:5964)" strokeWeight=1px borderRadius=14px
+                          [FRAME] "span.sa-av" #707:19821 template=EL-a8b2764a
+        -> FILLS: Midnight Blue
+                            [TEXT] #707:19822 template=EL-dd769b91
+        -> TEXT: "SD"
+        -> FILLS: Saffron
+                          [FRAME] "div" #707:19823 template=EL-6e7b525c
+                            [FRAME] "small" #707:19824 template=EL-dfdf56f9
+                              [TEXT] #707:19825 template=EL-e4b3e839
+        -> TEXT: "Parent Agent"
+        -> FILLS: Comet
+                            [FRAME] "b" #707:19826 template=EL-dfdf56f9
+                              [TEXT] #707:19827 template=EL-6452f1ab
+        -> TEXT: "Skyline Demo Travels Ltd"
+        -> FILLS: Mirage
+                        [FRAME] "div.lnk2:margin" #707:19828 template=EL-8a75087e
+                          [FRAME] "div.lnk2" #707:19829 template=EL-6808f97e
+                            [TEXT] #707:19830 layout=layout_177c5efc fills=Comet textStyle=style_1ce9f441 text="created under"
+                        [FRAME] "div.hi-n" #707:19831 template=EL-02d189a3
+        -> FILLS: White
+                          [FRAME] "span.sa-av" #707:19832 template=EL-064dd916
+        -> FILLS: Catskill White (660:4703)
+                            [TEXT] #707:19833 template=EL-b007e26d
+        -> TEXT: "MD"
+        -> FILLS: Midnight Blue
+                          [FRAME] "div" #707:19834 layout={"mode":"column","padding":"0px 0px 4.25px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                            [FRAME] "small" #707:19835 template=EL-dfdf56f9
+                              [TEXT] #707:19836 template=EL-ae39483c
+        -> TEXT: "Sub-agent"
+        -> FILLS: Comet
+                            [FRAME] "b" #707:19837 template=EL-0da4ccaa
+                              [TEXT] #707:19838 template=EL-0968349c
+        -> TEXT: "Mirpur Desk"
+        -> FILLS: Mirage
+                            [FRAME] "span.src" #707:19839 template=EL-7de4904a
+        -> FILLS: Hawkes Blue
+                              [IMAGE-SVG] "Frame" #707:19840 template=EL-d4302386
+                              [TEXT] #707:19842 template=EL-25484a5e
+        -> TEXT: "Sub-agent"
+        -> FILLS: Endeavour
+                        [FRAME] "div.lnk2:margin" #707:19843 template=EL-8a75087e
+                          [FRAME] "div.lnk2" #707:19844 template=EL-6808f97e
+                            [TEXT] #707:19845 layout=layout_177c5efc fills=Comet textStyle=style_1ce9f441 text="booked for"
+                        [FRAME] "div.hi-n" #707:19846 template=EL-02d189a3
+        -> FILLS: White
+                          [FRAME] "span.sa-av" #707:19847 layout=layout_07da14cc fills=Varden borderRadius=11px
+                            [TEXT] #707:19848 layout=layout_177c5efc fills="Antique Bronze" textStyle=style_73ea70d9 text="AR"
+                          [FRAME] "div" #707:19849 template=EL-6e7b525c
+                            [FRAME] "small" #707:19850 template=EL-dfdf56f9
+                              [TEXT] #707:19851 layout=layout_177c5efc fills=Comet textStyle=style_1ce9f441 text="Customer"
+                            [FRAME] "b" #707:19852 template=EL-dfdf56f9
+                              [TEXT] #707:19853 layout=layout_177c5efc fills=Mirage textStyle=style_cf58f31f text="Amina Rahman"
+                      [FRAME] "button.btn:align-flex-start" #707:19854 template=EL-dfdf56f9
+                        [FRAME] "button.btn" #707:19855 template=EL-1ecbab94
+        -> FILLS: White
+                          [IMAGE-SVG] "Frame" #707:19856 template=EL-f652840d
+                          [FRAME] "span" #707:19858 template=EL-2a1f700b
+                            [TEXT] #707:19859 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Mirpur Desk"
+                  [FRAME] "section#c-set" #707:19860 template=EL-5777b5ba
+        -> FILLS: White
+                    [FRAME] "div.cd-h" #707:19861 template=EL-cefd9a89
+                      [FRAME] "span.kic" #707:19862 template=EL-9d7acaef
+        -> FILLS: Varden
+                        [IMAGE-SVG] "Frame" #707:19863 template=EL-b1d338df
+                      [FRAME] "div.cd-ht" #707:19865 template=EL-51794897
+                        [FRAME] "h2#c-set-h" #707:19866 template=EL-e9077466
+                          [TEXT] #707:19867 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Agent Settlement"
+                    [FRAME] "div.cd-b" #707:19868 template=EL-900b4178
+                      [FRAME] "div.bnote" #707:19869 layout=layout_adb17a0e fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=14px
+                        [FRAME] "svg:margin" #707:19870 layout={"mode":"column","padding":"1px 0px 0px","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":17,"height":18}}
+                          [IMAGE-SVG] "Frame" #707:19871 template=EL-f1890f3e
+                        [FRAME] "div" #707:19873 layout={"mode":"column","padding":"0px 1.7799999713897705px 0px 0px","gap":"-0.5px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [TEXT] #707:19874 layout=layout_177c5efc fills=Mirage textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":900,"fontSize":13.5,"lineHeight":"18px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Agent settlement note"
+                          [TEXT] #707:19875 layout=layout_177c5efc fills=Comet textStyle=style_82888ddb text="This booking is settled against Skyline Demo\\nTravels Ltd’s wallet and available credit."
+                      [FRAME] "p.cnote" #707:19876 template=EL-f96bbce8
+                        [FRAME] "svg:margin" #707:19877 template=EL-59323ff4
+                          [IMAGE-SVG] "Frame" #707:19878 template=EL-494805ba
+                        [FRAME] "span" #707:19880 layout={"mode":"column","padding":"0px 6.550000190734863px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                          [TEXT] #707:19881 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Cancellation and refund actions are handled in their\\ndedicated workflows where available."
+        [FRAME] "footer" #707:19382 layout={"mode":"row","padding":"14px 28px","alignItems":"stretch","wrap":true,"gap":"6px 637.0999755859375px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":1646},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+          [FRAME] "span" #707:19383 template=EL-2a66e910
+            [TEXT] #707:19384 template=EL-0cd2690b
+        -> TEXT: "AeroWing Agent Portal · M2.2 / M2.3 / M2.4 Sub-agent Markup"
+        -> FILLS: Comet
+          [FRAME] "span" #707:19385 template=EL-2a66e910
+            [TEXT] #707:19386 template=EL-20db4d5e
+        -> TEXT: "Website only · configuration prototype — no prices are calculated and the real pricing engine is not changed."
+        -> FILLS: Comet
+        [FRAME] "header" #707:19387 template=EL-e7e947f7
+        -> FILLS: White
+          [FRAME] "Collapse navigation" #707:19388 template=EL-308cdf1b
+        -> FILLS: White
+            [IMAGE-SVG] "Frame" #707:19389 template=EL-a73b2a19
+          [FRAME] "Breadcrumb" #707:19391 template=EL-51794897
+            [FRAME] "ol" #707:19392 template=EL-0211da4a
+              [FRAME] "li" #707:19393 template=EL-2f9fe287
+                [TEXT] #707:19394 template=EL-7c5b051c
+        -> TEXT: "Dashboard"
+        -> FILLS: Science Blue
+              [FRAME] "li" #707:19395 template=EL-fc963d7f
+                [TEXT] #707:19396 template=EL-07d54cf7
+        -> TEXT: "/"
+        -> FILLS: Gull Gray
+                [TEXT] #707:19397 template=EL-2b958c34
+        -> TEXT: "Sub-agents"
+        -> FILLS: Science Blue
+              [FRAME] "li" #707:19398 template=EL-80d942af
+                [TEXT] #707:19399 template=EL-07d54cf7
+        -> TEXT: "/"
+        -> FILLS: Gull Gray
+                [TEXT] #707:19400 template=EL-a3375e52
+        -> TEXT: "Mirpur Desk"
+        -> FILLS: Science Blue
+              [FRAME] "li" #707:19401 template=EL-80d942af
+                [TEXT] #707:19402 template=EL-f250b41d
+        -> TEXT: "/"
+        -> FILLS: Gull Gray
+                [TEXT] #707:19403 template=EL-300de47a
+        -> TEXT: "Markup"
+        -> FILLS: Mirage
+          [FRAME] "form#tb-s" #707:19404 template=EL-a4a2fb03
+            [FRAME] "input#tb-q" #707:19405 template=EL-bcaab4e4
+        -> FILLS: Catskill White (7:11)
+              [IMAGE-SVG] "Frame" #707:19406 template=EL-f1890f3e
+              [FRAME] "div#placeholder" #707:19408 template=EL-a8ef7fa3
+                [TEXT] #707:19409 template=EL-c12bf1ac
+        -> TEXT: "Search Admin Panel"
+        -> FILLS: Boulder
+          [FRAME] "div.pop-w" #707:19410 template=EL-2f9fe287
+            [FRAME] "Notifications" #707:19411 template=EL-308cdf1b
+        -> FILLS: White
+              [IMAGE-SVG] "Frame" #707:19412 template=EL-a73b2a19
+          [FRAME] "div.pop-w" #707:19414 template=EL-2f9fe287
+            [FRAME] "button menu#pf-btn" #707:19415 template=EL-73541ea2
+              [FRAME] "span#pf-av" #707:19416 template=EL-97ad2434
+        -> FILLS: Midnight Blue
+                [TEXT] #707:19417 template=EL-790ada40
+        -> TEXT: "SD"
+        -> FILLS: Saffron
+              [FRAME] "span.tb-avt" #707:19418 template=EL-6e7b525c
+                [FRAME] "b#pf-biz" #707:19419 template=EL-dfdf56f9
+                  [TEXT] #707:19420 template=EL-084e24f6
+        -> TEXT: "Skyline Demo Travels Ltd"
+        -> FILLS: Mirage
+                [FRAME] "small#pf-usr" #707:19421 template=EL-dfdf56f9
+                  [TEXT] #707:19422 template=EL-42f6826b
+        -> TEXT: "Nusrat Jahan · Agent Owner"
+        -> FILLS: Comet
+              [IMAGE-SVG] "Frame" #707:19423 template=EL-d40fb4e5

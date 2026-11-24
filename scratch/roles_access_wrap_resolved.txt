@@ -1,0 +1,911 @@
+          [FRAME] "div.wrap" #835:2345 template=EL-01f5b3d6
+              type: FRAME
+              layout:
+                mode: column
+                alignSelf: stretch
+                padding: 20px 0px 0px
+                alignItems: stretch
+                gap: 20px
+                sizing:
+                  horizontal: fill
+                  vertical: hug
+            [FRAME] "button.lnk:margin:align-flex-start" #835:2346 template=EL-dfdf56f9
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  sizing:
+                    horizontal: fill
+                    vertical: hug
+              [FRAME] "button.lnk:margin" #835:2347 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":207.17,"height":26}}
+                [FRAME] "button.lnk" #835:2348 template=EL-1f8f3823
+                    type: FRAME
+                    layout:
+                      mode: row
+                      padding: 12px 8px
+                      alignItems: center
+                      gap: 6px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                      locationRelativeToParent:
+                        x: -8
+                        y: -6
+                    borderRadius: 8px
+                  [IMAGE-SVG] "Frame" #835:2349 template=EL-d40fb4e5
+                      type: IMAGE-SVG
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 16
+                          height: 16
+                  [TEXT] #835:2351 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="Back to Account / Settings"
+            [FRAME] "div" #835:2352 template=EL-286f649c
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  alignItems: stretch
+                  gap: 20px
+                  sizing:
+                    horizontal: fill
+                    vertical: hug
+              [FRAME] "section" #835:2353 template=EL-64683540
+                  type: FRAME
+                  layout:
+                    mode: row
+                    alignSelf: stretch
+                    alignItems: flex-end
+                    wrap: true
+                    gap: 16px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+                [FRAME] "div.ph-t" #835:2354 template=EL-12a11ae8
+                    type: FRAME
+                    layout:
+                      mode: column
+                      gap: 2px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                  [FRAME] "p.eyb" #835:2355 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                    [TEXT] #835:2356 layout=layout_56d3c81c fills="Science Blue" textStyle=style_f38e2072 text="Account / Settings · M2.13 Role-Based Access"
+                  [FRAME] "h1#h-pg" #835:2357 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                    [TEXT] #835:2358 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_47de102a text="Roles & Access"
+                  [FRAME] "p.ph-s" #835:2359 template=EL-33f6f1ad
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 4px 0px 0px
+                        sizing:
+                          horizontal: fixed
+                          vertical: hug
+                        dimensions:
+                          width: 640
+                    [TEXT] #835:2360 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="Review Agent-side roles, assigned access and permission-based portal visibility."
+                  [FRAME] "p.ph-biz" #835:2361 template=EL-ccd54d18
+                      type: FRAME
+                      layout:
+                        mode: row
+                        alignSelf: stretch
+                        padding: 4px 0px 0px
+                        alignItems: center
+                        wrap: true
+                        gap: 6px 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                    [FRAME] "b" #835:2362 template=EL-2f9fe287
+                        type: FRAME
+                        layout:
+                          mode: column
+                          sizing:
+                            horizontal: hug
+                            vertical: hug
+                      [TEXT] #835:2363 template=EL-4a9ab66a
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Skyline Demo Travels Ltd
+                          textStyle: style_3befcb4d
+                          fills: Mirage
+                    [FRAME] "span.dm-tag" #835:2364 template=EL-5514a8df
+                        type: FRAME
+                        layout: layout_98b2bba4
+                        fills: Catskill White (660:5050)
+                        strokes: Mystic
+                        strokeWeight: 1px
+                        borderRadius: 999px
+                      [IMAGE-SVG] "Frame" #835:2365 template=EL-62b4d877
+                          type: IMAGE-SVG
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 13
+                              height: 13
+                      [TEXT] #835:2367 template=EL-8340f657
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Sample data
+                          textStyle: style_d63f5220
+                          fills: Shuttle Gray (665:6373)
+              [FRAME] "Roles and access sections" #835:2368 template=EL-7b4e2fc3
+                  type: FRAME
+                  layout:
+                    mode: row
+                    overflowScroll:
+                      - x
+                      - y
+                    alignSelf: stretch
+                    padding: 0px 8px
+                    alignItems: center
+                    gap: 4px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+                  fills: White
+                  strokes: Mystic (7:34)
+                  strokeWeight: 1px
+                  borderRadius: 16px
+                [FRAME] "button#t-ov" #835:2369 template=EL-177ef00a
+                    type: FRAME
+                    layout:
+                      mode: row
+                      padding: 14.5px 14px 16.5px
+                      alignItems: center
+                      gap: 8px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                  [IMAGE-SVG] "Frame" #835:2370 template=EL-f1890f3e
+                      type: IMAGE-SVG
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 17
+                          height: 17
+                  [TEXT] #835:2372 template=EL-24439bda
+                      type: TEXT
+                      layout: layout_177c5efc
+                      text: Overview
+                      textStyle: style_c859fa4c
+                      fills: Midnight Blue
+                  [RECTANGLE] "::after" #835:2373 template=EL-c557a8b8
+                      type: RECTANGLE
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        position: absolute
+                        locationRelativeToParent:
+                          x: 10
+                          y: 49
+                        dimensions:
+                          width: 100
+                          height: 3
+                      fills: Midnight Blue
+                      borderRadius: 3px 3px 0px 0px
+                [FRAME] "button#t-team" #835:2374 template=EL-177ef00a
+                    type: FRAME
+                    layout:
+                      mode: row
+                      padding: 14.5px 14px 16.5px
+                      alignItems: center
+                      gap: 8px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                  [IMAGE-SVG] "Frame" #835:2375 template=EL-f1890f3e
+                      type: IMAGE-SVG
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 17
+                          height: 17
+                  [TEXT] #835:2377 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Team Access"
+                [FRAME] "button#t-mx" #835:2378 template=EL-177ef00a
+                    type: FRAME
+                    layout:
+                      mode: row
+                      padding: 14.5px 14px 16.5px
+                      alignItems: center
+                      gap: 8px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                  [IMAGE-SVG] "Frame" #835:2379 template=EL-f1890f3e
+                      type: IMAGE-SVG
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 17
+                          height: 17
+                  [TEXT] #835:2381 layout=layout_177c5efc fills=Comet textStyle=style_8618617d text="Permission Matrix"
+              [FRAME] "div#p-ov" #835:2382 template=EL-286f649c
+                  type: FRAME
+                  layout:
+                    mode: column
+                    alignSelf: stretch
+                    alignItems: stretch
+                    gap: 20px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+                [FRAME] "Access summary" #835:2383 template=EL-f384505a
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      justifyContent: center
+                      gap: 16px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                  [FRAME] "article.kpi" #835:2384 template=EL-c00459ae
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                    [FRAME] "div.kpi-h" #835:2385 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2386 template=EL-1aeab6f4
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Catskill White (660:4703)
+                          borderRadius: 11px
+                        [IMAGE-SVG] "Frame" #835:2387 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3:margin" #835:2389 layout={"mode":"column","padding":"0px 123.76599884033203px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2390 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Agent-side Roles"
+                    [FRAME] "p" #835:2391 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2392 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="2 predefined roles"
+                    [FRAME] "p" #835:2393 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2394 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Agent Owner · Sub-agent / staff"
+                  [FRAME] "article.kpi" #835:2395 template=EL-c00459ae
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                    [FRAME] "div.kpi-h" #835:2396 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2397 template=EL-1aeab6f4
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Catskill White (660:4703)
+                          borderRadius: 11px
+                        [IMAGE-SVG] "Frame" #835:2398 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3:margin" #835:2400 layout={"mode":"column","padding":"0px 151.06199645996094px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2401 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Agent Owner"
+                    [FRAME] "p" #835:2402 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2403 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="1"
+                    [FRAME] "p" #835:2404 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2405 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Nusrat Jahan"
+                  [FRAME] "article.kpi" #835:2406 template=EL-c00459ae
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                    [FRAME] "div.kpi-h" #835:2407 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2408 template=EL-a080e1c7
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Hawkes Blue
+                          borderRadius: 11px
+                        [IMAGE-SVG] "Frame" #835:2409 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3:margin" #835:2411 layout={"mode":"column","padding":"0px 128.0780029296875px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2412 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Sub-agent / staff"
+                    [FRAME] "p" #835:2413 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2414 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="5 sample access holders"
+                    [FRAME] "p" #835:2415 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2416 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Approved Sub-agents"
+                  [FRAME] "article.kpi" #835:2417 template=EL-c00459ae
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                    [FRAME] "div.kpi-h" #835:2418 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2419 template=EL-9d7acaef
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Varden
+                          borderRadius: 11px
+                        [IMAGE-SVG] "Frame" #835:2420 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3:margin" #835:2422 layout={"mode":"column","padding":"0px 28.5625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2423 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Need Permission Configuration"
+                    [FRAME] "p" #835:2424 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2425 layout=layout_56d3c81c fills=Mirage textStyle=style_f6717624 text="2"
+                    [FRAME] "p" #835:2426 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2427 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Gulshan Desk, Dhanmondi Desk"
+                [FRAME] "Agent-side roles" #835:2428 template=EL-f384505a
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      justifyContent: center
+                      gap: 16px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                  [FRAME] "article.role" #835:2429 layout={"mode":"column","padding":"18px 20px 100px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(152deg, rgba(247, 251, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"}] strokes="Link Water (664:5964)" strokeWeight=1px borderRadius=18px
+                    [FRAME] "div.role-h" #835:2430 template=EL-b2246b6c
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 12px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2431 template=EL-8713f2d7
+                          type: FRAME
+                          layout: layout_d905ebbd
+                          fills: Catskill White (660:4703)
+                          borderRadius: 13px
+                        [IMAGE-SVG] "Frame" #835:2432 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3#r1-h:margin" #835:2434 layout={"mode":"column","padding":"0px 352.156005859375px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2435 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_08f72687 text="Agent Owner"
+                      [FRAME] "span.pdb" #835:2436 template=EL-e7560554
+                          type: FRAME
+                          layout: layout_2890e3ec
+                          fills: Catskill White (660:4703)
+                          borderRadius: 999px
+                        [IMAGE-SVG] "Frame" #835:2437 template=EL-62b4d877
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 13
+                                height: 13
+                        [TEXT] #835:2439 template=EL-c8e55c42
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Predefined
+                            textStyle: style_d455df39
+                            fills: Midnight Blue
+                    [FRAME] "p" #835:2440 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2441 layout=layout_56d3c81c fills=Comet textStyle=style_d5fe13bf text="Account-level Agent role."
+                    [FRAME] "Agent Owner" #835:2442 layout={"mode":"row","alignSelf":"stretch","alignItems":"stretch","wrap":true,"gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [FRAME] "li" #835:2443 layout={"mode":"row","alignSelf":"stretch","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fill"}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2444 layout=layout_afd4c807 fills="Midnight Blue" borderRadius=9px
+                          [TEXT] #835:2445 layout=layout_177c5efc fills=Saffron textStyle=style_4b06a737 text="NJ"
+                        [TEXT] #835:2446 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Nusrat Jahan"
+                        [FRAME] "small" #835:2447 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2448 layout=layout_177c5efc fills=Comet textStyle=style_cabfe684 text="· Skyline Demo Travels Ltd"
+                    [FRAME] "p" #835:2449 template=EL-f96bbce8
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          gap: 8px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "svg:margin" #835:2450 template=EL-59323ff4
+                          type: FRAME
+                          layout:
+                            mode: column
+                            padding: 1px 0px 0px
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 15
+                              height: 16
+                        [IMAGE-SVG] "Frame" #835:2451 template=EL-494805ba
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 15
+                                height: 15
+                      [FRAME] "span" #835:2453 layout={"mode":"column","padding":"0px 30.049999237060547px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                        [TEXT] #835:2454 layout=layout_177c5efc fills=Comet textStyle=style_b2707ef0 text="Read-only in this prototype — the Agent Owner role can’t be edited, deleted or reassigned\\nhere."
+                    [FRAME] "button.btn:align-flex-start" #835:2455 layout={"mode":"column","padding":"0px 479.2799987792969px 0px 1px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":632}}
+                      [FRAME] "button.btn" #835:2456 template=EL-1ecbab94
+                          type: FRAME
+                          layout: layout_7d8472a0
+                          fills: White
+                          strokes: Heather (660:4870)
+                          strokeWeight: 1px
+                          borderRadius: 10px
+                        [IMAGE-SVG] "Frame" #835:2457 template=EL-f652840d
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 18
+                                height: 18
+                        [FRAME] "span" #835:2459 template=EL-2a1f700b
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 2px
+                              alignItems: center
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2460 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Access"
+                  [FRAME] "article.role" #835:2461 layout={"mode":"column","padding":"18px 20px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes="Mystic (7:34)" strokeWeight=1px borderRadius=18px
+                    [FRAME] "div.role-h" #835:2462 template=EL-b2246b6c
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 12px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "span.kic" #835:2463 template=EL-79343747
+                          type: FRAME
+                          layout: layout_d905ebbd
+                          fills: Hawkes Blue
+                          borderRadius: 13px
+                        [IMAGE-SVG] "Frame" #835:2464 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                      [FRAME] "h3#r2-h:margin" #835:2466 layout={"mode":"column","padding":"0px 322.593994140625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                        [TEXT] #835:2467 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_08f72687 text="Sub-agent / staff"
+                      [FRAME] "span.pdb" #835:2468 template=EL-e7560554
+                          type: FRAME
+                          layout: layout_2890e3ec
+                          fills: Catskill White (660:4703)
+                          borderRadius: 999px
+                        [IMAGE-SVG] "Frame" #835:2469 template=EL-62b4d877
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 13
+                                height: 13
+                        [TEXT] #835:2471 template=EL-c8e55c42
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Predefined
+                            textStyle: style_d455df39
+                            fills: Midnight Blue
+                    [FRAME] "p" #835:2472 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                      [TEXT] #835:2473 layout=layout_56d3c81c fills=Comet textStyle=style_d5fe13bf text="Access is controlled by assigned permissions."
+                    [FRAME] "Sub-agent / staff access holders" #835:2474 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":142}}
+                      [FRAME] "li" #835:2475 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2476 template=EL-683b15ef
+                            type: FRAME
+                            layout: layout_afd4c807
+                            fills: Catskill White (660:4703)
+                            borderRadius: 9px
+                          [TEXT] #835:2477 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="MD"
+                        [TEXT] #835:2478 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Mirpur Desk"
+                        [FRAME] "small" #835:2479 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2480 template=EL-b01fd263
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: · Configured
+                              textStyle: style_cabfe684
+                              fills: Comet
+                      [FRAME] "li" #835:2481 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":213.13,"y":0},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2482 template=EL-683b15ef
+                            type: FRAME
+                            layout: layout_afd4c807
+                            fills: Catskill White (660:4703)
+                            borderRadius: 9px
+                          [TEXT] #835:2483 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="BD"
+                        [TEXT] #835:2484 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Banani Desk"
+                        [FRAME] "small" #835:2485 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2486 template=EL-b01fd263
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: · Configured
+                              textStyle: style_cabfe684
+                              fills: Comet
+                      [FRAME] "li" #835:2487 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":50},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2488 template=EL-683b15ef
+                            type: FRAME
+                            layout: layout_afd4c807
+                            fills: Catskill White (660:4703)
+                            borderRadius: 9px
+                          [TEXT] #835:2489 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="UD"
+                        [TEXT] #835:2490 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Uttara Desk"
+                        [FRAME] "small" #835:2491 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2492 template=EL-b01fd263
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: · Configured
+                              textStyle: style_cabfe684
+                              fills: Comet
+                      [FRAME] "li" #835:2493 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":210.55,"y":50},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2494 template=EL-683b15ef
+                            type: FRAME
+                            layout: layout_afd4c807
+                            fills: Catskill White (660:4703)
+                            borderRadius: 9px
+                          [TEXT] #835:2495 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="GD"
+                        [TEXT] #835:2496 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Gulshan Desk"
+                        [FRAME] "small" #835:2497 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2498 template=EL-25aaa4ba
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: · Needs configuration
+                              textStyle: style_cabfe684
+                              fills: Comet
+                      [FRAME] "li" #835:2499 layout={"mode":"row","padding":"6px 10px 6px 6px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":100},"dimensions":{"height":42}} fills="Catskill White (386:1824)" strokes="Athens Gray" strokeWeight=1px borderRadius=12px
+                        [FRAME] "span" #835:2500 template=EL-683b15ef
+                            type: FRAME
+                            layout: layout_afd4c807
+                            fills: Catskill White (660:4703)
+                            borderRadius: 9px
+                          [TEXT] #835:2501 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_4b06a737 text="DD"
+                        [TEXT] #835:2502 layout=layout_177c5efc fills=Mirage textStyle=style_857f4816 text="Dhanmondi Desk"
+                        [FRAME] "small" #835:2503 template=EL-2f9fe287
+                            type: FRAME
+                            layout:
+                              mode: column
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2504 template=EL-25aaa4ba
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: · Needs configuration
+                              textStyle: style_cabfe684
+                              fills: Comet
+                    [FRAME] "p" #835:2505 template=EL-f96bbce8
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          gap: 8px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [FRAME] "svg:margin" #835:2506 template=EL-59323ff4
+                          type: FRAME
+                          layout:
+                            mode: column
+                            padding: 1px 0px 0px
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 15
+                              height: 16
+                        [IMAGE-SVG] "Frame" #835:2507 template=EL-494805ba
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 15
+                                height: 15
+                      [TEXT] #835:2509 layout=layout_177c5efc fills=Comet textStyle=style_b2707ef0 text="Permissions are configured per Sub-agent on the Sub-agent Permissions screen \\(M2.2\\)."
+                    [FRAME] "button.btn:align-flex-start" #835:2510 layout={"mode":"column","padding":"0px 438.3399963378906px 0px 1px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":632}}
+                      [FRAME] "button.btn" #835:2511 template=EL-1ecbab94
+                          type: FRAME
+                          layout: layout_7d8472a0
+                          fills: White
+                          strokes: Heather (660:4870)
+                          strokeWeight: 1px
+                          borderRadius: 10px
+                        [IMAGE-SVG] "Frame" #835:2512 template=EL-f652840d
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 18
+                                height: 18
+                        [FRAME] "span" #835:2514 template=EL-2a1f700b
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 2px
+                              alignItems: center
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                          [TEXT] #835:2515 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Team Access"
+                [FRAME] "div#c-api" #835:2516 layout={"mode":"row","alignSelf":"stretch","padding":"16px 18px","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}} fills="Early Dawn" strokes=Buff strokeWeight=1px borderRadius=18px
+                  [FRAME] "svg:margin" #835:2517 template=EL-af68c20c
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 1px 0px 0px
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 22
+                          height: 23
+                    [IMAGE-SVG] "Frame" #835:2518 template=EL-d2f5d0a6
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 22
+                            height: 22
+                  [FRAME] "div" #835:2520 template=EL-7c39d4fd
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignItems: stretch
+                        gap: 3px
+                        sizing:
+                          horizontal: hug
+                          vertical: hug
+                    [FRAME] "b" #835:2521 template=EL-dfdf56f9
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [TEXT] #835:2522 layout=layout_177c5efc fills="Saddle Brown" textStyle=style_486af943 text="Access is enforced beyond the menu"
+                    [FRAME] "span" #835:2523 template=EL-dfdf56f9
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                      [TEXT] #835:2524 layout=layout_177c5efc fills="Saddle Brown" textStyle=style_d4875030 text="Portal permissions must also be enforced by the API. Hidden navigation alone is not authorization."
+                [FRAME] "p.fnote" #835:2525 template=EL-a8e2343c
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      padding: 10px 12px
+                      gap: 8px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                    fills: Catskill White (386:1824)
+                    strokes: Geyser
+                    strokeWeight: 1px
+                    strokeDashes:
+                      - 3
+                      - 2
+                    borderRadius: 12px
+                  [FRAME] "svg:margin" #835:2526 template=EL-59323ff4
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 1px 0px 0px
+                        sizing:
+                          horizontal: fixed
+                          vertical: fixed
+                        dimensions:
+                          width: 15
+                          height: 16
+                    [IMAGE-SVG] "Frame" #835:2527 template=EL-494805ba
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 15
+                            height: 15
+                  [TEXT] #835:2529 layout=layout_177c5efc fills=Comet textStyle=style_6a8bdf3c text="Admin roles are managed separately in the Aero Wing Admin Panel."

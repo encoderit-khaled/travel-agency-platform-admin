@@ -1,0 +1,9 @@
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+figma-cache
+dist
+.tanstack
+routeTree.gen.ts
+scratch
+scratch_*

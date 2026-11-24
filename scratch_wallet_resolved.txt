@@ -1,0 +1,3003 @@
+  [FRAME] "Agent Wallet Overview" #723:25715 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":20971,"y":3875},"dimensions":{"width":1920,"height":2001}} fills="White Catskill White"
+    [FRAME] "div#shell" #723:25716 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2001}}
+      [FRAME] "Agent Portal navigation" #723:26208 template=EL-84ca712f
+            type: FRAME
+            layout:
+              mode: column
+              overflowScroll:
+                - y
+              sizing:
+                horizontal: fixed
+                vertical: fixed
+              dimensions:
+                width: 256
+                height: 1200
+            fills: fill_df4cd166
+        [FRAME] "div.sb-h" #723:26209 template=EL-5a59422e
+              type: FRAME
+              layout:
+                mode: column
+                padding: 16px 18px
+                gap: 7.625px
+                sizing:
+                  horizontal: fixed
+                  vertical: hug
+                dimensions:
+                  width: 256
+              strokes: White 10%
+              strokeWeight: 0px 0px 1px
+          [FRAME] "AeroWing Admin — Dashboard" #723:26210 template=EL-280eabfe
+                type: FRAME
+                layout:
+                  mode: row
+                  padding: 8px 12px
+                  sizing:
+                    horizontal: hug
+                    vertical: hug
+                fills: White
+                borderRadius: 12px
+            [FRAME] "AeroWing — Explore, Book, Travel" #723:26211 template=EL-966c7e52
+                  type: FRAME
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 161
+                      height: 36
+                  fills: fill_af4669a1
+          [TEXT] #723:26212 template=EL-25cb81a7
+                type: TEXT
+                layout: layout_177c5efc
+                text: Agent Portal
+                textStyle: style_637ce44a
+                fills: Saffron
+        [FRAME] "Agent Portal sections" #723:26213 template=EL-34ff3f47
+              type: FRAME
+              layout:
+                mode: column
+                alignSelf: stretch
+                padding: 12px 10px
+                alignItems: stretch
+                gap: 2px
+                sizing:
+                  horizontal: fill
+                  vertical: fill
+          [FRAME] "a" #723:26214 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26215 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26217 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26218 template=EL-2811e7df
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Dashboard
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26219 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26220 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26222 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26223 template=EL-47fd5523
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Search & Book
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26224 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26225 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26227 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26228 template=EL-4d579255
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Bookings
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26229 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26230 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26232 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26233 template=EL-bf3706d3
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Customers
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26234 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26235 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26237 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26238 template=EL-e7176502
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Sub-agents
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26239 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26240 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26242 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26243 template=EL-8106c4b8
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Pricing & Markup
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "div.sb-sep:margin" #723:26244 template=EL-6c782aee
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  padding: 8px 6px
+                  alignItems: stretch
+                  sizing:
+                    horizontal: fill
+                    vertical: fixed
+                  dimensions:
+                    height: 17
+            [RECTANGLE] "div.sb-sep" #723:26245 template=EL-74377f5a
+                  type: RECTANGLE
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fill
+                      vertical: fixed
+                    dimensions:
+                      height: 1
+                  fills: White 10%
+          [FRAME] "a" #723:26246 template=EL-d0215df3
+                type: FRAME
+                layout: layout_a0ed5881
+                fills: White 12%
+                effects: effect_a6f27370
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26247 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26249 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26250 template=EL-be096a41
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Wallet
+                    textStyle: style_5b7c52cb
+                    fills: White
+          [FRAME] "a" #723:26251 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26252 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26254 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26255 template=EL-93d543dc
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Credit
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26256 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26257 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26259 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26260 template=EL-44b34f1e
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Commissions
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26261 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26262 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26264 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26265 template=EL-83c4fdf7
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Statements
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26266 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26267 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26269 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26270 template=EL-dd0042e0
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Reports
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "div.sb-sep:margin" #723:26271 template=EL-6c782aee
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  padding: 8px 6px
+                  alignItems: stretch
+                  sizing:
+                    horizontal: fill
+                    vertical: fixed
+                  dimensions:
+                    height: 17
+            [RECTANGLE] "div.sb-sep" #723:26272 template=EL-74377f5a
+                  type: RECTANGLE
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fill
+                      vertical: fixed
+                    dimensions:
+                      height: 1
+                  fills: White 10%
+          [FRAME] "a" #723:26273 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26274 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26276 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26277 template=EL-944c8723
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Notifications
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+          [FRAME] "a" #723:26278 template=EL-419d61b5
+                type: FRAME
+                layout: layout_a0ed5881
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26279 template=EL-b1d338df
+                  type: IMAGE-SVG
+                  layout:
+                    mode: none
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 19
+                      height: 19
+            [FRAME] "span" #723:26281 template=EL-2f9fe287
+                  type: FRAME
+                  layout:
+                    mode: column
+                    sizing:
+                      horizontal: hug
+                      vertical: hug
+              [TEXT] #723:26282 template=EL-dcd43a44
+                    type: TEXT
+                    layout: layout_177c5efc
+                    text: Account / Settings
+                    textStyle: style_5b7c52cb
+                    fills: Periwinkle Gray
+        [FRAME] "p.sb-f" #723:26283 template=EL-ab281d22
+              type: FRAME
+              layout:
+                mode: column
+                alignSelf: stretch
+                padding: 14px 18px 18px
+                sizing:
+                  horizontal: fill
+                  vertical: hug
+              strokes: White 10%
+              strokeWeight: 1px 0px 0px
+          [FRAME] "b" #723:26284 template=EL-e9077466
+                type: FRAME
+                layout: layout_5c79c5b1
+            [TEXT] #723:26285 template=EL-a3ec670e
+                  type: TEXT
+                  layout: layout_56d3c81c
+                  text: M2 · B2B Agent Portal
+                  textStyle: style_82dfb323
+                  fills: White
+          [TEXT] #723:26286 layout=layout_177c5efc fills="Rock Blue" textStyle="Manrope/Bold (7:5795)" text="M2.5 Wallet"
+      [FRAME] "MAIN" #723:26288 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":2001}}
+        [FRAME] "main#top" #723:26289 template=EL-265f1e74
+              type: FRAME
+              layout:
+                mode: column
+                padding: 44px 152px 40px
+                alignItems: stretch
+                sizing:
+                  horizontal: fixed
+                  vertical: hug
+                locationRelativeToParent:
+                  x: 0
+                  y: 68
+                dimensions:
+                  width: 1664
+          [FRAME] "div" #723:26290 template=EL-286f649c
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  alignItems: stretch
+                  gap: 20px
+                  sizing:
+                    horizontal: fill
+                    vertical: hug
+            [FRAME] "section" #723:26291 template=EL-a656df9e
+                  type: FRAME
+                  layout:
+                    mode: row
+                    alignSelf: stretch
+                    alignItems: flex-end
+                    wrap: true
+                    gap: 16px 24px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+              [FRAME] "div.ph-t" #723:26292 template=EL-12a11ae8
+                    type: FRAME
+                    layout:
+                      mode: column
+                      gap: 2px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "p.eyb" #723:26293 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26294 layout=layout_56d3c81c fills="Science Blue" textStyle=style_f38e2072 text="Agent Portal · M2.5 Wallet"
+                [FRAME] "h1#h-pg" #723:26295 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26296 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_47de102a text="Wallet"
+                [FRAME] "p.ph-s" #723:26297 template=EL-33f6f1ad
+                      type: FRAME
+                      layout:
+                        mode: column
+                        padding: 4px 0px 0px
+                        sizing:
+                          horizontal: fixed
+                          vertical: hug
+                        dimensions:
+                          width: 640
+                  [TEXT] #723:26298 layout=layout_177c5efc fills=Comet textStyle=style_db488bf3 text="View your Agent wallet balance and recent wallet activity."
+                [FRAME] "p.ph-biz" #723:26299 template=EL-ccd54d18
+                      type: FRAME
+                      layout:
+                        mode: row
+                        alignSelf: stretch
+                        padding: 4px 0px 0px
+                        alignItems: center
+                        wrap: true
+                        gap: 6px 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                  [FRAME] "b" #723:26300 template=EL-2f9fe287
+                        type: FRAME
+                        layout:
+                          mode: column
+                          sizing:
+                            horizontal: hug
+                            vertical: hug
+                    [TEXT] #723:26301 template=EL-4a9ab66a
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Skyline Demo Travels Ltd
+                          textStyle: style_3befcb4d
+                          fills: Mirage
+                  [FRAME] "span.dm-tag" #723:26302 template=EL-5514a8df
+                        type: FRAME
+                        layout: layout_98b2bba4
+                        fills: Catskill White (660:5050)
+                        strokes: Mystic
+                        strokeWeight: 1px
+                        borderRadius: 999px
+                    [IMAGE-SVG] "Frame" #723:26303 template=EL-62b4d877
+                          type: IMAGE-SVG
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 13
+                              height: 13
+                    [TEXT] #723:26305 template=EL-8340f657
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Sample data
+                          textStyle: style_d63f5220
+                          fills: Shuttle Gray (665:6373)
+              [FRAME] "div.ph-a3" #723:26306 template=EL-d9efaca1
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignItems: center
+                      wrap: true
+                      gap: 10px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                [FRAME] "button.btn" #723:26307 template=EL-1ecbab94
+                      type: FRAME
+                      layout: layout_7d8472a0
+                      fills: White
+                      strokes: Heather (660:4870)
+                      strokeWeight: 1px
+                      borderRadius: 10px
+                  [IMAGE-SVG] "Frame" #723:26308 template=EL-f652840d
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [FRAME] "span" #723:26310 template=EL-2a1f700b
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 1px 0px 2px
+                          alignItems: center
+                          sizing:
+                            horizontal: hug
+                            vertical: hug
+                    [TEXT] #723:26311 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Full Ledger"
+                [FRAME] "button.btn" #723:26312 template=EL-91e5fe2d
+                      type: FRAME
+                      layout:
+                        mode: row
+                        padding: 16px 22px
+                        justifyContent: center
+                        alignItems: center
+                        gap: 8px
+                        sizing:
+                          horizontal: hug
+                          vertical: hug
+                      fills: Saffron
+                      strokes: Black 0%
+                      strokeWeight: 1px
+                      borderRadius: 10px
+                  [RECTANGLE] "button.btn:shadow" #723:26313 template=EL-90866cfb
+                        type: RECTANGLE
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          position: absolute
+                          locationRelativeToParent:
+                            x: 0
+                            y: 0
+                          dimensions:
+                            width: 176
+                            height: 58
+                        fills: White 0.2%
+                        effects: effect_d5e9efbc
+                        borderRadius: 10px
+                  [IMAGE-SVG] "Frame" #723:26314 template=EL-f652840d
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [FRAME] "span" #723:26316 template=EL-2a1f700b
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 1px 0px 2px
+                          alignItems: center
+                          sizing:
+                            horizontal: hug
+                            vertical: hug
+                    [TEXT] #723:26317 template=EL-6a140930
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Top Up Wallet
+                          textStyle: style_62559887
+                          fills: Midnight Blue
+            [FRAME] "div.wtop" #723:26318 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"minmax(0,1.50fr) minmax(0,1fr)","gridTemplateRows":"487px","gap":"20px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":487}}
+              [FRAME] "section.hero" #723:26359 layout={"mode":"column","padding":"26px 28px","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(149deg, rgba(0, 26, 61, 1) 0%, rgba(1, 42, 94, 1) 57%, rgba(15, 63, 125, 1) 100%)"}] effects={"boxShadow":"0px 18px 40px -22px rgba(0, 26, 61, 0.75)"} borderRadius=22px
+                [RECTANGLE] "::before" #723:26360 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":538,"y":-90},"dimensions":{"width":336,"height":336}} strokes="Saffron 12%" strokeWeight=38px borderRadius=168px
+                [RECTANGLE] "::after" #723:26361 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":564,"y":402.25},"dimensions":{"width":200,"height":200}} fills="Lochmara 25%" effects={"filter":"blur(10px)"} borderRadius=100px
+                [FRAME] "div.hero-h" #723:26362 template=EL-998e62e2
+                      type: FRAME
+                      layout:
+                        mode: row
+                        alignSelf: stretch
+                        alignItems: center
+                        wrap: true
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                  [FRAME] "span.kic" #723:26363 layout=layout_61a33abb fills="Saffron 16%" borderRadius=12px
+                    [IMAGE-SVG] "Frame" #723:26364 template=EL-b1d338df
+                          type: IMAGE-SVG
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 19
+                              height: 19
+                  [FRAME] "h2#hb-h:margin" #723:26366 layout={"mode":"column","padding":"0px 400.218994140625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                    [TEXT] #723:26367 layout=layout_56d3c81c fills="Link Water (721:24843)" textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":15,"lineHeight":"22.5px","letterSpacing":"0.02em","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Available Wallet Balance"
+                  [FRAME] "span.dm-tag" #723:26368 template=EL-159ee852
+                        type: FRAME
+                        layout: layout_98b2bba4
+                        fills: White 12%
+                        strokes: White 18%
+                        strokeWeight: 1px
+                        borderRadius: 999px
+                    [IMAGE-SVG] "Frame" #723:26369 template=EL-62b4d877
+                          type: IMAGE-SVG
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 13
+                              height: 13
+                    [TEXT] #723:26371 template=EL-acf870e9
+                          type: TEXT
+                          layout: layout_177c5efc
+                          text: Sample data
+                          textStyle: style_d63f5220
+                          fills: Link Water (721:24848)
+                [FRAME] "p.hero-v" #723:26372 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26373 layout=layout_56d3c81c fills=White textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":32,"lineHeight":"40px","letterSpacing":"-0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Balance available"
+                [FRAME] "p.hero-n" #723:26374 layout={"mode":"row","padding":"10px 12px","gap":"8px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":560}} fills="White 8%" strokes="White 12%" strokeWeight=1px borderRadius=12px
+                  [FRAME] "svg:margin" #723:26375 template=EL-59323ff4
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 1px 0px 0px
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 15
+                            height: 16
+                    [IMAGE-SVG] "Frame" #723:26376 template=EL-494805ba
+                          type: IMAGE-SVG
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fixed
+                            dimensions:
+                              width: 15
+                              height: 15
+                  [TEXT] #723:26378 layout=layout_177c5efc fills="Link Water (721:24843)" textStyle=style_6a8bdf3c text="Exact balance is not included in this design-preview dataset."
+                [FRAME] "p.hero-s" #723:26379 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":560}}
+                  [TEXT] #723:26380 layout=layout_177c5efc fills="Periwinkle Gray" textStyle=style_9420bd5f text="Wallet funds can be used for eligible booking payments."
+                [FRAME] "div.hero-a:margin" #723:26381 layout={"mode":"column","alignSelf":"stretch","padding":"182.25px 0px 0px","justifyContent":"flex-end","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":238.25}}
+                  [FRAME] "div.hero-a" #723:26382 layout={"mode":"row","alignSelf":"stretch","padding":"4px 0px 0px","alignItems":"center","wrap":true,"gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+                    [FRAME] "button.btn" #723:26383 template=EL-91e5fe2d
+                          type: FRAME
+                          layout:
+                            mode: row
+                            padding: 16px 22px
+                            justifyContent: center
+                            alignItems: center
+                            gap: 8px
+                            sizing:
+                              horizontal: hug
+                              vertical: hug
+                          fills: Saffron
+                          strokes: Black 0%
+                          strokeWeight: 1px
+                          borderRadius: 10px
+                      [RECTANGLE] "button.btn:shadow" #723:26384 template=EL-90866cfb
+                            type: RECTANGLE
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              position: absolute
+                              locationRelativeToParent:
+                                x: 0
+                                y: 0
+                              dimensions:
+                                width: 176
+                                height: 58
+                            fills: White 0.2%
+                            effects: effect_d5e9efbc
+                            borderRadius: 10px
+                      [IMAGE-SVG] "Frame" #723:26385 template=EL-f652840d
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 18
+                                height: 18
+                      [FRAME] "span" #723:26387 template=EL-2a1f700b
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 2px
+                              alignItems: center
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                        [TEXT] #723:26388 template=EL-6a140930
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Top Up Wallet
+                              textStyle: style_62559887
+                              fills: Midnight Blue
+                    [FRAME] "button.btn" #723:26389 layout=layout_7d8472a0 strokes="White 40%" strokeWeight=1px borderRadius=10px
+                      [IMAGE-SVG] "Frame" #723:26390 template=EL-f652840d
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 18
+                                height: 18
+                      [FRAME] "span" #723:26392 template=EL-2a1f700b
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 2px
+                              alignItems: center
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                        [TEXT] #723:26393 layout=layout_177c5efc fills=White textStyle=style_c859fa4c text="View Full Ledger"
+              [FRAME] "Wallet summary" #723:26319 template=EL-c0b8ba13
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignItems: stretch
+                      gap: 16px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "article.kpi" #723:26320 template=EL-2dc2d632
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignSelf: stretch
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                  [FRAME] "div.kpi-h" #723:26321 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                    [FRAME] "span.kic" #723:26322 template=EL-a080e1c7
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Hawkes Blue
+                          borderRadius: 11px
+                      [IMAGE-SVG] "Frame" #723:26323 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                    [FRAME] "h3:margin" #723:26325 layout={"mode":"column","padding":"0px 309.093994140625px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [TEXT] #723:26326 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Recent Transactions"
+                  [FRAME] "p" #723:26327 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26328 layout=layout_56d3c81c fills=Mirage textStyle=style_a88fd65d text="5 sample records"
+                  [FRAME] "p" #723:26329 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26330 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Top-up, booking debit, refund, commission credit and adjustment"
+                [FRAME] "article.kpi" #723:26331 template=EL-2dc2d632
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignSelf: stretch
+                        padding: 18px 20px 14px
+                        alignItems: stretch
+                        gap: 10px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                      fills: White
+                      strokes: Mystic (7:34)
+                      strokeWeight: 1px
+                      effects: effect_96562f89
+                      borderRadius: 18px
+                  [FRAME] "div.kpi-h" #723:26332 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                    [FRAME] "span.kic" #723:26333 template=EL-9e704c57
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Panache
+                          borderRadius: 11px
+                      [IMAGE-SVG] "Frame" #723:26334 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                    [FRAME] "h3:margin" #723:26336 layout={"mode":"column","padding":"0px 391.156005859375px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [TEXT] #723:26337 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Funding"
+                  [FRAME] "p" #723:26338 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26339 layout=layout_56d3c81c fills=Mirage textStyle=style_a88fd65d text="Stripe + Admin-recorded manual deposit"
+                  [FRAME] "p" #723:26340 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26341 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Top up with Stripe; manual deposits are recorded by Aero Wing Admin"
+                [FRAME] "article.kpi" #723:26342 layout={"mode":"column","alignSelf":"stretch","padding":"18px 20px 14px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=White strokes="Mystic (7:34)" strokeWeight=1px effects=effect_96562f89 borderRadius=18px
+                  [FRAME] "div.kpi-h" #723:26343 template=EL-998e62e2
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          alignItems: center
+                          wrap: true
+                          gap: 10px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                    [FRAME] "span.kic" #723:26344 template=EL-1aeab6f4
+                          type: FRAME
+                          layout: layout_7c94d434
+                          fills: Catskill White (660:4703)
+                          borderRadius: 11px
+                      [IMAGE-SVG] "Frame" #723:26345 template=EL-b1d338df
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 19
+                                height: 19
+                    [FRAME] "h3:margin" #723:26347 layout={"mode":"column","padding":"0px 225.43800354003906px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+                      [TEXT] #723:26348 layout=layout_56d3c81c fills=Comet textStyle=style_cf58f31f text="Need more purchasing capacity?"
+                  [FRAME] "p" #723:26349 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26350 layout=layout_56d3c81c fills=Mirage textStyle=style_a88fd65d text="Credit is separate"
+                  [FRAME] "p" #723:26351 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26352 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Wallet balance and available credit are shown separately."
+                  [FRAME] "button.lnk:margin:align-flex-start" #723:26353 layout={"mode":"column","padding":"0px 396.8599853515625px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":496,"height":40}}
+                    [FRAME] "button.lnk:margin" #723:26354 template=EL-33ae8d9e
+                          type: FRAME
+                          layout:
+                            mode: none
+                            sizing:
+                              horizontal: fixed
+                              vertical: fill
+                            dimensions:
+                              width: 98.14
+                      [FRAME] "button.lnk" #723:26355 template=EL-2c0b947c
+                            type: FRAME
+                            layout:
+                              mode: row
+                              padding: 12px 8px
+                              alignItems: center
+                              gap: 6px
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                              locationRelativeToParent:
+                                x: -8
+                                y: 0
+                            borderRadius: 8px
+                        [TEXT] #723:26356 template=EL-197603c4
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: View Credit
+                              textStyle: style_e2571a1a
+                              fills: Science Blue
+                        [IMAGE-SVG] "Frame" #723:26357 template=EL-d40fb4e5
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 16
+                                  height: 16
+            [FRAME] "section#c-fund" #723:26394 template=EL-5777b5ba
+                  type: FRAME
+                  layout: layout_5c79c5b1
+                  fills: White
+                  strokes: Mystic (7:34)
+                  strokeWeight: 1px
+                  effects: effect_96562f89
+                  borderRadius: 18px
+              [FRAME] "div.cd-h" #723:26395 template=EL-cefd9a89
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      padding: 16px 20px 12px
+                      alignItems: center
+                      wrap: true
+                      gap: 12px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "span.kic" #723:26396 template=EL-9e704c57
+                      type: FRAME
+                      layout: layout_7c94d434
+                      fills: Panache
+                      borderRadius: 11px
+                  [IMAGE-SVG] "Frame" #723:26397 template=EL-b1d338df
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 19
+                            height: 19
+                [FRAME] "div.cd-ht" #723:26399 template=EL-51794897
+                      type: FRAME
+                      layout: layout_4c84150a
+                  [FRAME] "h2#fd-h" #723:26400 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26401 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Add Funds"
+                  [FRAME] "p" #723:26402 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26403 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="Two ways funds are added to your Agent wallet"
+              [FRAME] "div.cd-b" #723:26404 template=EL-6674105b
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignSelf: stretch
+                      padding: 0px 20px 16px
+                      alignItems: stretch
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "div.fund" #723:26405 template=EL-f384505a
+                      type: FRAME
+                      layout:
+                        mode: row
+                        alignSelf: stretch
+                        justifyContent: center
+                        gap: 16px
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                  [FRAME] "article.fcard" #723:26406 template=EL-aecf02b4
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 18px
+                          alignItems: stretch
+                          gap: 12px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        fills: White
+                        strokes: Mystic (7:34)
+                        strokeWeight: 1px
+                        borderRadius: 18px
+                    [FRAME] "div.fcard-h" #723:26407 template=EL-c094fdcc
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            gap: 12px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "span.kic" #723:26408 template=EL-79343747
+                            type: FRAME
+                            layout: layout_d905ebbd
+                            fills: Hawkes Blue
+                            borderRadius: 13px
+                        [IMAGE-SVG] "Frame" #723:26409 template=EL-b1d338df
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 19
+                                  height: 19
+                      [FRAME] "div" #723:26411 template=EL-3fcf4831
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignItems: stretch
+                              gap: 2px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                        [FRAME] "h3#st-h" #723:26412 template=EL-b98545a2
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignSelf: stretch
+                                alignItems: center
+                                wrap: true
+                                gap: 8px
+                                sizing:
+                                  horizontal: fill
+                                  vertical: hug
+                          [TEXT] #723:26413 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_3f89a285 text="Stripe Top-up"
+                        [FRAME] "p" #723:26414 template=EL-e9077466
+                              type: FRAME
+                              layout: layout_5c79c5b1
+                          [TEXT] #723:26415 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Add funds using a payment method available through Stripe."
+                    [FRAME] "p" #723:26416 template=EL-f96bbce8
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            gap: 8px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "svg:margin" #723:26417 template=EL-59323ff4
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 0px
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 15
+                                height: 16
+                        [IMAGE-SVG] "Frame" #723:26418 template=EL-494805ba
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 15
+                                  height: 15
+                      [TEXT] #723:26420 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="Card details are entered with Stripe, not on AeroWing."
+                    [FRAME] "div" #723:26421 template=EL-998e62e2
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            alignItems: center
+                            wrap: true
+                            gap: 10px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "button.btn" #723:26422 template=EL-6233b9fb
+                            type: FRAME
+                            layout: layout_7d8472a0
+                            fills: Saffron
+                            strokes: Black 0%
+                            strokeWeight: 1px
+                            borderRadius: 10px
+                        [RECTANGLE] "button.btn:shadow" #723:26423 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":195,"height":49}} fills="White 0.2%" effects=effect_d5e9efbc borderRadius=10px
+                        [IMAGE-SVG] "Frame" #723:26424 template=EL-f652840d
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 18
+                                  height: 18
+                        [FRAME] "span" #723:26426 template=EL-2a1f700b
+                              type: FRAME
+                              layout:
+                                mode: column
+                                padding: 1px 0px 2px
+                                alignItems: center
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26427 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="Top Up with Stripe"
+                  [FRAME] "article#c-man" #723:26428 template=EL-aecf02b4
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 18px
+                          alignItems: stretch
+                          gap: 12px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        fills: White
+                        strokes: Mystic (7:34)
+                        strokeWeight: 1px
+                        borderRadius: 18px
+                    [FRAME] "div.fcard-h" #723:26429 template=EL-c094fdcc
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            gap: 12px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "span.kic" #723:26430 template=EL-8713f2d7
+                            type: FRAME
+                            layout: layout_d905ebbd
+                            fills: Catskill White (660:4703)
+                            borderRadius: 13px
+                        [IMAGE-SVG] "Frame" #723:26431 template=EL-b1d338df
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 19
+                                  height: 19
+                      [FRAME] "div" #723:26433 template=EL-3fcf4831
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignItems: stretch
+                              gap: 2px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                        [FRAME] "h3#mn-h" #723:26434 template=EL-b98545a2
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignSelf: stretch
+                                alignItems: center
+                                wrap: true
+                                gap: 8px
+                                sizing:
+                                  horizontal: fill
+                                  vertical: hug
+                          [TEXT] #723:26435 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_3f89a285 text="Manual Deposits"
+                          [FRAME] "span.adm-b" #723:26436 layout={"mode":"row","padding":"1.5px 9px 1.75px 7px","alignItems":"center","gap":"5px","sizing":{"horizontal":"hug","vertical":"hug"}} fills="Catskill White (660:4703)" borderRadius=999px
+                            [IMAGE-SVG] "Frame" #723:26437 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26439 layout=layout_177c5efc fills="Midnight Blue" textStyle={"fontFamily":"Manrope","fontStyle":"Bold","fontWeight":800,"fontSize":11.5,"lineHeight":"17.25px","textAlignHorizontal":"LEFT","textAlignVertical":"CENTER"} text="Admin recorded"
+                        [FRAME] "p" #723:26440 template=EL-e9077466
+                              type: FRAME
+                              layout: layout_5c79c5b1
+                          [TEXT] #723:26441 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Manual deposits are recorded by Aero Wing Admin and appear in your Wallet Ledger."
+                    [FRAME] "p" #723:26442 template=EL-f96bbce8
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            gap: 8px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "svg:margin" #723:26443 template=EL-59323ff4
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 1px 0px 0px
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 15
+                                height: 16
+                        [IMAGE-SVG] "Frame" #723:26444 template=EL-494805ba
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 15
+                                  height: 15
+                      [TEXT] #723:26446 layout=layout_177c5efc fills=Comet textStyle=style_c4ea618b text="You can’t create or edit manual deposits from the Agent Portal."
+                    [FRAME] "div" #723:26447 template=EL-998e62e2
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            alignItems: center
+                            wrap: true
+                            gap: 10px
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "button.btn" #723:26448 template=EL-1ecbab94
+                            type: FRAME
+                            layout: layout_7d8472a0
+                            fills: White
+                            strokes: Heather (660:4870)
+                            strokeWeight: 1px
+                            borderRadius: 10px
+                        [IMAGE-SVG] "Frame" #723:26449 template=EL-f652840d
+                              type: IMAGE-SVG
+                              layout:
+                                mode: none
+                                sizing:
+                                  horizontal: fixed
+                                  vertical: fixed
+                                dimensions:
+                                  width: 18
+                                  height: 18
+                        [FRAME] "span" #723:26451 template=EL-2a1f700b
+                              type: FRAME
+                              layout:
+                                mode: column
+                                padding: 1px 0px 2px
+                                alignItems: center
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26452 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View in Ledger"
+            [FRAME] "section#c-act" #723:26453 template=EL-5777b5ba
+                  type: FRAME
+                  layout: layout_5c79c5b1
+                  fills: White
+                  strokes: Mystic (7:34)
+                  strokeWeight: 1px
+                  effects: effect_96562f89
+                  borderRadius: 18px
+              [FRAME] "div.cd-h" #723:26454 template=EL-cefd9a89
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      padding: 16px 20px 12px
+                      alignItems: center
+                      wrap: true
+                      gap: 12px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "span.kic" #723:26455 template=EL-a080e1c7
+                      type: FRAME
+                      layout: layout_7c94d434
+                      fills: Hawkes Blue
+                      borderRadius: 11px
+                  [IMAGE-SVG] "Frame" #723:26456 template=EL-b1d338df
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 19
+                            height: 19
+                [FRAME] "div.cd-ht" #723:26458 template=EL-51794897
+                      type: FRAME
+                      layout: layout_4c84150a
+                  [FRAME] "h2#ac-h" #723:26459 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26460 layout=layout_56d3c81c fills="Midnight Blue" textStyle=style_1e8d5b02 text="Recent Wallet Activity"
+                  [FRAME] "p" #723:26461 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [TEXT] #723:26462 layout=layout_56d3c81c fills=Comet textStyle=style_82888ddb text="A preview of your Wallet Ledger · oldest to newest"
+                [FRAME] "span.dm-tag" #723:26463 template=EL-5514a8df
+                      type: FRAME
+                      layout: layout_98b2bba4
+                      fills: Catskill White (660:5050)
+                      strokes: Mystic
+                      strokeWeight: 1px
+                      borderRadius: 999px
+                  [IMAGE-SVG] "Frame" #723:26464 template=EL-62b4d877
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 13
+                            height: 13
+                  [TEXT] #723:26466 template=EL-8340f657
+                        type: TEXT
+                        layout: layout_177c5efc
+                        text: Sample data
+                        textStyle: style_d63f5220
+                        fills: Shuttle Gray (665:6373)
+              [FRAME] "div.wtw" #723:26467 template=EL-7439f5a3
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignSelf: stretch
+                      padding: 0px 8px 8px
+                      alignItems: stretch
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "table.btb" #723:26468 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [FRAME] "tr" #723:26469 template=EL-8a10e53c
+                        type: FRAME
+                        layout:
+                          mode: row
+                          alignSelf: stretch
+                          justifyContent: center
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                    [FRAME] "th" #723:26470 layout={"mode":"column","padding":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":231.38}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26471 layout=layout_177c5efc fills=Comet textStyle=style_431e0589 text="Date / Time"
+                    [FRAME] "th" #723:26472 layout={"mode":"column","padding":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":257.2}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26473 template=EL-a8fc9ad4
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Type
+                            textStyle: style_431e0589
+                            fills: Comet
+                    [FRAME] "th" #723:26474 layout={"mode":"column","padding":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":276.66}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26475 template=EL-f3ca435f
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Description
+                            textStyle: style_431e0589
+                            fills: Comet
+                    [FRAME] "th" #723:26476 layout={"mode":"column","padding":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":176.41}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26477 template=EL-bbfb2d14
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Reference
+                            textStyle: style_431e0589
+                            fills: Comet
+                    [FRAME] "th.num-c" #723:26478 layout={"mode":"column","padding":"10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":198.31}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26479 template=EL-67a55fdc
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Amount
+                            textStyle: style_2b5418d8
+                            fills: Comet
+                    [FRAME] "th.num-c" #723:26480 layout={"mode":"column","padding":"10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":202.05}} fills="Link Water (627:1977)" strokes=Mystic strokeWeight="1px 0px"
+                      [TEXT] #723:26481 template=EL-6d551992
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: Running Balance
+                            textStyle: style_2b5418d8
+                            fills: Comet
+                  [FRAME] "tbody" #723:26482 template=EL-e9077466
+                        type: FRAME
+                        layout: layout_5c79c5b1
+                    [FRAME] "tr" #723:26483 template=EL-8a10e53c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            justifyContent: center
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "td.c-dt" #723:26484 template=EL-07eb75e9
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 25.1299991607666px 10px 24.6200008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 231.38
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26485 template=EL-7d2e64cc
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Demo date · Demo time
+                              textStyle: style_e6a95020
+                              fills: Comet
+                      [FRAME] "td.c-ty" #723:26486 template=EL-bd99e8e6
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 19.8799991607666px 10px 19.8700008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 257.2
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span" #723:26487 template=EL-235879b0
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignItems: center
+                                gap: 8px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [FRAME] "span.kic" #723:26488 template=EL-4a346552
+                                type: FRAME
+                                layout: layout_688116aa
+                                fills: Panache
+                                borderRadius: 9px
+                            [IMAGE-SVG] "Frame" #723:26489 template=EL-494805ba
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 15
+                                      height: 15
+                          [TEXT] #723:26491 template=EL-67c84be9
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Top-up
+                                textStyle: style_c967ff2b
+                                fills: Mirage
+                      [FRAME] "td.c-ds" #723:26492 template=EL-c80b8590
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 276.66
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26493 template=EL-aacfc3b2
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Stripe wallet top-up
+                              textStyle: style_94747b76
+                              fills: Mirage
+                      [FRAME] "td.c-rf" #723:26494 template=EL-933c8a29
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 176.41
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26495 template=EL-192d5f7c
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: —
+                              textStyle: style_d5fe13bf
+                              fills: Slate Gray (665:6381)
+                      [FRAME] "td.c-am" #723:26496 template=EL-0bb9e171
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 13px 10px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 198.31
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span.amt" #723:26497 template=EL-971c29ed
+                              type: FRAME
+                              layout:
+                                mode: column
+                                alignItems: flex-end
+                                gap: 2.875px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26498 template=EL-a6bae548
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: + Sample amount
+                                textStyle: style_b587463a
+                                fills: Jewel
+                          [FRAME] "span.dir" #723:26499 template=EL-c95169c5
+                                type: FRAME
+                                layout: layout_78fc4696
+                                fills: Panache
+                                borderRadius: 999px
+                            [IMAGE-SVG] "Frame" #723:26500 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26502 template=EL-37803af9
+                                  type: TEXT
+                                  layout: layout_177c5efc
+                                  text: Credit
+                                  textStyle: style_b79cabe8
+                                  fills: Jewel
+                      [FRAME] "td.c-rb" #723:26503 template=EL-1c039792
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 202.05
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26504 template=EL-146d8024
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Sample balance
+                              textStyle:
+                                fontFamily: Manrope
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 13.5
+                                lineHeight: 20.25px
+                                textAlignHorizontal: RIGHT
+                                textAlignVertical: CENTER
+                              fills: Midnight Blue
+                    [FRAME] "tr" #723:26505 template=EL-8a10e53c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            justifyContent: center
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "td.c-dt" #723:26506 template=EL-07eb75e9
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 25.1299991607666px 10px 24.6200008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 231.38
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26507 template=EL-7d2e64cc
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Demo date · Demo time
+                              textStyle: style_e6a95020
+                              fills: Comet
+                      [FRAME] "td.c-ty" #723:26508 template=EL-bd99e8e6
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 19.8799991607666px 10px 19.8700008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 257.2
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span" #723:26509 template=EL-235879b0
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignItems: center
+                                gap: 8px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [FRAME] "span.kic" #723:26510 template=EL-59ddad59
+                                type: FRAME
+                                layout: layout_688116aa
+                                fills: Catskill White (660:4703)
+                                borderRadius: 9px
+                            [IMAGE-SVG] "Frame" #723:26511 template=EL-494805ba
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 15
+                                      height: 15
+                          [TEXT] #723:26513 template=EL-0c3b9bc7
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Booking Debit
+                                textStyle: style_c967ff2b
+                                fills: Mirage
+                      [FRAME] "td.c-ds" #723:26514 template=EL-c80b8590
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 276.66
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26515 template=EL-d6fbd8ed
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Booking payment
+                              textStyle: style_94747b76
+                              fills: Mirage
+                      [FRAME] "td.c-rf" #723:26516 template=EL-084ae809
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 26.875px 10px 23.875px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 176.41
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26517 template=EL-cf5f7870
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: AW-DEMO-FL-001
+                              textStyle:
+                                fontFamily: Inter
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 11.300000190734863
+                                lineHeight: 18.75px
+                                textAlignHorizontal: CENTER
+                                textAlignVertical: CENTER
+                                textDecoration: UNDERLINE
+                              fills: Endeavour
+                      [FRAME] "td.c-am" #723:26518 template=EL-0bb9e171
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 13px 10px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 198.31
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span.amt" #723:26519 template=EL-971c29ed
+                              type: FRAME
+                              layout:
+                                mode: column
+                                alignItems: flex-end
+                                gap: 2.875px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26520 layout=layout_177c5efc fills="Prairie Sand" textStyle=style_b587463a text="− Sample amount"
+                          [FRAME] "span.dir" #723:26521 template=EL-5f0ae87a
+                                type: FRAME
+                                layout: layout_78fc4696
+                                fills: Provincial Pink
+                                borderRadius: 999px
+                            [IMAGE-SVG] "Frame" #723:26522 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26524 layout=layout_177c5efc fills="Prairie Sand" textStyle=style_b79cabe8 text="Debit"
+                      [FRAME] "td.c-rb" #723:26525 template=EL-1c039792
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 202.05
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26526 template=EL-146d8024
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Sample balance
+                              textStyle:
+                                fontFamily: Manrope
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 13.5
+                                lineHeight: 20.25px
+                                textAlignHorizontal: RIGHT
+                                textAlignVertical: CENTER
+                              fills: Midnight Blue
+                    [FRAME] "tr" #723:26527 template=EL-8a10e53c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            justifyContent: center
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "td.c-dt" #723:26528 template=EL-07eb75e9
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 25.1299991607666px 10px 24.6200008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 231.38
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26529 template=EL-7d2e64cc
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Demo date · Demo time
+                              textStyle: style_e6a95020
+                              fills: Comet
+                      [FRAME] "td.c-ty" #723:26530 template=EL-bd99e8e6
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 19.8799991607666px 10px 19.8700008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 257.2
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span" #723:26531 template=EL-235879b0
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignItems: center
+                                gap: 8px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [FRAME] "span.kic" #723:26532 template=EL-09b5bd9d
+                                type: FRAME
+                                layout: layout_688116aa
+                                fills: Hawkes Blue
+                                borderRadius: 9px
+                            [IMAGE-SVG] "Frame" #723:26533 template=EL-494805ba
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 15
+                                      height: 15
+                          [TEXT] #723:26535 template=EL-b76aebbd
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Refund
+                                textStyle: style_c967ff2b
+                                fills: Mirage
+                      [FRAME] "td.c-ds" #723:26536 template=EL-c80b8590
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 276.66
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26537 template=EL-98f8aa7a
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Booking refund
+                              textStyle: style_94747b76
+                              fills: Mirage
+                      [FRAME] "td.c-rf" #723:26538 template=EL-084ae809
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 26.875px 10px 23.875px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 176.41
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26539 template=EL-d1535726
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: AW-DEMO-AC-011
+                              textStyle:
+                                fontFamily: Inter
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 11.100000381469727
+                                lineHeight: 18.75px
+                                textAlignHorizontal: CENTER
+                                textAlignVertical: CENTER
+                                textDecoration: UNDERLINE
+                              fills: Endeavour
+                      [FRAME] "td.c-am" #723:26540 template=EL-0bb9e171
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 13px 10px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 198.31
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span.amt" #723:26541 template=EL-971c29ed
+                              type: FRAME
+                              layout:
+                                mode: column
+                                alignItems: flex-end
+                                gap: 2.875px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26542 template=EL-a6bae548
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: + Sample amount
+                                textStyle: style_b587463a
+                                fills: Jewel
+                          [FRAME] "span.dir" #723:26543 template=EL-c95169c5
+                                type: FRAME
+                                layout: layout_78fc4696
+                                fills: Panache
+                                borderRadius: 999px
+                            [IMAGE-SVG] "Frame" #723:26544 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26546 template=EL-37803af9
+                                  type: TEXT
+                                  layout: layout_177c5efc
+                                  text: Credit
+                                  textStyle: style_b79cabe8
+                                  fills: Jewel
+                      [FRAME] "td.c-rb" #723:26547 template=EL-1c039792
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 202.05
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26548 template=EL-146d8024
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Sample balance
+                              textStyle:
+                                fontFamily: Manrope
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 13.5
+                                lineHeight: 20.25px
+                                textAlignHorizontal: RIGHT
+                                textAlignVertical: CENTER
+                              fills: Midnight Blue
+                    [FRAME] "tr" #723:26549 template=EL-8a10e53c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            justifyContent: center
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "td.c-dt" #723:26550 layout={"mode":"column","padding":"28.3799991607666px 10px 27.8700008392334px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":231.38}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [TEXT] #723:26551 template=EL-7d2e64cc
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Demo date · Demo time
+                              textStyle: style_e6a95020
+                              fills: Comet
+                      [FRAME] "td.c-ty" #723:26552 layout={"mode":"column","padding":"23.1299991607666px 10px 23.1200008392334px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":257.2}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [FRAME] "span" #723:26553 template=EL-235879b0
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignItems: center
+                                gap: 8px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [FRAME] "span.kic" #723:26554 template=EL-f0cb0953
+                                type: FRAME
+                                layout: layout_688116aa
+                                fills: Varden
+                                borderRadius: 9px
+                            [IMAGE-SVG] "Frame" #723:26555 template=EL-494805ba
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 15
+                                      height: 15
+                          [TEXT] #723:26557 template=EL-81696435
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Commission Credit
+                                textStyle: style_c967ff2b
+                                fills: Mirage
+                      [FRAME] "td.c-ds" #723:26558 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":276.66,"height":77.25}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [TEXT] #723:26559 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":10,"y":12.5},"dimensions":{"width":124.17,"height":21}} fills=Mirage textStyle=style_94747b76 text="Commission credit"
+                        [FRAME] "small" #723:26560 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":6,"y":35.25},"dimensions":{"width":260.66}}
+                          [FRAME] "button.lnk" #723:26561 layout={"mode":"row","padding":"6px 4px","alignItems":"center","gap":"5.989999771118164px","sizing":{"horizontal":"hug","vertical":"hug"}} borderRadius=8px
+                            [TEXT] #723:26562 template=EL-04a2516f
+                                  type: TEXT
+                                  layout: layout_177c5efc
+                                  text: View Commissions
+                                  textStyle: style_e2571a1a
+                                  fills: Science Blue
+                            [IMAGE-SVG] "Frame" #723:26563 template=EL-d40fb4e5
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 16
+                                      height: 16
+                      [FRAME] "td.c-rf" #723:26565 layout={"mode":"column","padding":"27.5px 10px 27.75px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":176.41}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [TEXT] #723:26566 template=EL-192d5f7c
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: —
+                              textStyle: style_d5fe13bf
+                              fills: Slate Gray (665:6381)
+                      [FRAME] "td.c-am" #723:26567 layout={"mode":"column","padding":"16.25px 10px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":198.31}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [FRAME] "span.amt" #723:26568 template=EL-971c29ed
+                              type: FRAME
+                              layout:
+                                mode: column
+                                alignItems: flex-end
+                                gap: 2.875px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26569 template=EL-a6bae548
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: + Sample amount
+                                textStyle: style_b587463a
+                                fills: Jewel
+                          [FRAME] "span.dir" #723:26570 template=EL-c95169c5
+                                type: FRAME
+                                layout: layout_78fc4696
+                                fills: Panache
+                                borderRadius: 999px
+                            [IMAGE-SVG] "Frame" #723:26571 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26573 template=EL-37803af9
+                                  type: TEXT
+                                  layout: layout_177c5efc
+                                  text: Credit
+                                  textStyle: style_b79cabe8
+                                  fills: Jewel
+                      [FRAME] "td.c-rb" #723:26574 layout={"mode":"column","padding":"27.5px 10px 27.75px","alignItems":"flex-end","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":202.05}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [TEXT] #723:26575 template=EL-146d8024
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Sample balance
+                              textStyle:
+                                fontFamily: Manrope
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 13.5
+                                lineHeight: 20.25px
+                                textAlignHorizontal: RIGHT
+                                textAlignVertical: CENTER
+                              fills: Midnight Blue
+                    [FRAME] "tr" #723:26576 template=EL-8a10e53c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            alignSelf: stretch
+                            justifyContent: center
+                            sizing:
+                              horizontal: fill
+                              vertical: hug
+                      [FRAME] "td.c-dt" #723:26577 template=EL-07eb75e9
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 25.1299991607666px 10px 24.6200008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 231.38
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26578 template=EL-7d2e64cc
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Demo date · Demo time
+                              textStyle: style_e6a95020
+                              fills: Comet
+                      [FRAME] "td.c-ty" #723:26579 template=EL-bd99e8e6
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 19.8799991607666px 10px 19.8700008392334px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 257.2
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span" #723:26580 template=EL-235879b0
+                              type: FRAME
+                              layout:
+                                mode: row
+                                alignItems: center
+                                gap: 8px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [FRAME] "span.kic" #723:26581 template=EL-59ddad59
+                                type: FRAME
+                                layout: layout_688116aa
+                                fills: Catskill White (660:4703)
+                                borderRadius: 9px
+                            [IMAGE-SVG] "Frame" #723:26582 template=EL-494805ba
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 15
+                                      height: 15
+                          [TEXT] #723:26584 template=EL-6c7407ae
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Manual Adjustment
+                                textStyle: style_c967ff2b
+                                fills: Mirage
+                      [FRAME] "td.c-ds" #723:26585 layout={"mode":"column","padding":"14.25px 10px 14.75px","gap":"1.75px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":276.66}} strokes="Athens Gray" strokeWeight="0px 0px 1px"
+                        [TEXT] #723:26586 template=EL-a829d0c6
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Admin adjustment
+                              textStyle: style_94747b76
+                              fills: Mirage
+                        [FRAME] "small" #723:26587 template=EL-e9077466
+                              type: FRAME
+                              layout: layout_5c79c5b1
+                          [TEXT] #723:26588 layout=layout_56d3c81c fills=Comet textStyle=style_f15527d8 text="Recorded by Aero Wing Admin"
+                      [FRAME] "td.c-rf" #723:26589 template=EL-933c8a29
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 176.41
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26590 template=EL-192d5f7c
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: —
+                              textStyle: style_d5fe13bf
+                              fills: Slate Gray (665:6381)
+                      [FRAME] "td.c-am" #723:26591 template=EL-0bb9e171
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 13px 10px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 198.31
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [FRAME] "span.amt" #723:26592 template=EL-971c29ed
+                              type: FRAME
+                              layout:
+                                mode: column
+                                alignItems: flex-end
+                                gap: 2.875px
+                                sizing:
+                                  horizontal: hug
+                                  vertical: hug
+                          [TEXT] #723:26593 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_b587463a text="± Sample amount"
+                          [FRAME] "span.dir" #723:26594 template=EL-74e0cdeb
+                                type: FRAME
+                                layout: layout_78fc4696
+                                fills: Catskill White (660:4703)
+                                borderRadius: 999px
+                            [IMAGE-SVG] "Frame" #723:26595 template=EL-d4302386
+                                  type: IMAGE-SVG
+                                  layout:
+                                    mode: none
+                                    sizing:
+                                      horizontal: fixed
+                                      vertical: fixed
+                                    dimensions:
+                                      width: 12
+                                      height: 12
+                            [TEXT] #723:26597 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_b79cabe8 text="Adjustment"
+                      [FRAME] "td.c-rb" #723:26598 template=EL-1c039792
+                            type: FRAME
+                            layout:
+                              mode: column
+                              padding: 24.25px 10px 24.5px
+                              alignItems: flex-end
+                              sizing:
+                                horizontal: fixed
+                                vertical: hug
+                              dimensions:
+                                width: 202.05
+                            strokes: Athens Gray
+                            strokeWeight: 0px 0px 1px
+                        [TEXT] #723:26599 template=EL-146d8024
+                              type: TEXT
+                              layout: layout_177c5efc
+                              text: Sample balance
+                              textStyle:
+                                fontFamily: Manrope
+                                fontStyle: Bold
+                                fontWeight: 800
+                                fontSize: 13.5
+                                lineHeight: 20.25px
+                                textAlignHorizontal: RIGHT
+                                textAlignVertical: CENTER
+                              fills: Midnight Blue
+              [FRAME] "div.wt-f" #723:26600 template=EL-d240e5bd
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignSelf: stretch
+                      padding: 6px 20px 18px
+                      justifyContent: space-between
+                      alignItems: center
+                      wrap: true
+                      gap: 12px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [FRAME] "p" #723:26601 template=EL-46e13874
+                      type: FRAME
+                      layout:
+                        mode: row
+                        gap: 6px
+                        sizing:
+                          horizontal: hug
+                          vertical: hug
+                  [FRAME] "svg:margin" #723:26602 template=EL-74f7db68
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 2px 0px 0px
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 14
+                            height: 16
+                    [IMAGE-SVG] "Frame" #723:26603 template=EL-522202e5
+                          type: IMAGE-SVG
+                          layout: layout_595e11ec
+                  [TEXT] #723:26605 layout=layout_177c5efc fills=Comet textStyle=style_8f1384da text="Ledger entries are read-only. Corrections are recorded through adjustment entries."
+                [FRAME] "button.btn" #723:26606 template=EL-1ecbab94
+                      type: FRAME
+                      layout: layout_7d8472a0
+                      fills: White
+                      strokes: Heather (660:4870)
+                      strokeWeight: 1px
+                      borderRadius: 10px
+                  [IMAGE-SVG] "Frame" #723:26607 template=EL-f652840d
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [FRAME] "span" #723:26609 template=EL-2a1f700b
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 1px 0px 2px
+                          alignItems: center
+                          sizing:
+                            horizontal: hug
+                            vertical: hug
+                    [TEXT] #723:26610 layout=layout_177c5efc fills="Midnight Blue" textStyle=style_c859fa4c text="View Full Wallet Ledger"
+            [FRAME] "div.inf-g" #723:26611 layout={"mode":"grid","alignSelf":"stretch","gridTemplateColumns":"repeat(3,minmax(0,1fr))","gridTemplateRows":"150.50px 150.50px","gap":"16px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":317}}
+              [FRAME] "article" #723:26612 template=EL-e350d87c
+                    type: FRAME
+                    layout: layout_0ae0bddd
+                    fills: White
+                    strokes: Mystic (7:34)
+                    strokeWeight: 1px
+                    borderRadius: 16px
+                [FRAME] "h3" #723:26613 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26614 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26616 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":26,"y":-1},"dimensions":{"width":137.19,"height":23}} fills="Midnight Blue" textStyle=style_ac8daa02 text="Booking Payments"
+                [FRAME] "p" #723:26617 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26618 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Eligible booking payments can be deducted from your Agent\\nwallet."
+              [FRAME] "article" #723:26619 template=EL-64430d11
+                    type: FRAME
+                    layout: layout_4746e6d8
+                    fills: White
+                    strokes: Mystic (7:34)
+                    strokeWeight: 1px
+                    borderRadius: 16px
+                [FRAME] "h3" #723:26620 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26621 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26623 template=EL-b1bfe7f3
+                        type: TEXT
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 26
+                            y: -1
+                          dimensions:
+                            width: 150.2
+                            height: 23
+                        text: Sub-agent Bookings
+                        textStyle: style_ac8daa02
+                        fills: Midnight Blue
+                [FRAME] "p" #723:26624 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26625 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Bookings made by your Sub-agents are settled against Skyline\\nDemo Travels Ltd’s wallet and available credit."
+                [FRAME] "button.lnk:margin:align-flex-start" #723:26626 layout={"mode":"column","padding":"0px 271.6099853515625px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":406.67,"height":40}}
+                  [FRAME] "button.lnk:margin" #723:26627 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fill"},"dimensions":{"width":134.06}}
+                    [FRAME] "button.lnk" #723:26628 template=EL-2c0b947c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            padding: 12px 8px
+                            alignItems: center
+                            gap: 6px
+                            sizing:
+                              horizontal: hug
+                              vertical: hug
+                            locationRelativeToParent:
+                              x: -8
+                              y: 0
+                          borderRadius: 8px
+                      [TEXT] #723:26629 layout=layout_177c5efc fills="Science Blue" textStyle=style_e2571a1a text="View Sub-agents"
+                      [IMAGE-SVG] "Frame" #723:26630 template=EL-d40fb4e5
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 16
+                                height: 16
+              [FRAME] "article" #723:26632 template=EL-e350d87c
+                    type: FRAME
+                    layout: layout_0ae0bddd
+                    fills: White
+                    strokes: Mystic (7:34)
+                    strokeWeight: 1px
+                    borderRadius: 16px
+                [FRAME] "h3" #723:26633 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26634 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26636 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":26,"y":-1},"dimensions":{"width":131.16,"height":23}} fills="Midnight Blue" textStyle=style_ac8daa02 text="Refunds to Wallet"
+                [FRAME] "p" #723:26637 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26638 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="When an applicable booking cancellation is refunded to the\\nAgent wallet, the refund appears as a wallet credit."
+              [FRAME] "article#c-imm" #723:26639 layout=layout_0ae0bddd fills="Catskill White (386:1824)" strokes="Mystic (7:34)" strokeWeight=1px borderRadius=16px
+                [FRAME] "h3" #723:26640 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26641 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26643 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":26,"y":-1},"dimensions":{"width":235.14,"height":23}} fills="Midnight Blue" textStyle=style_ac8daa02 text="Wallet records cannot be edited"
+                [FRAME] "p" #723:26644 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26645 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Wallet ledger entries are permanent records. Corrections are\\nrecorded through adjustment entries."
+              [FRAME] "article" #723:26646 template=EL-64430d11
+                    type: FRAME
+                    layout: layout_4746e6d8
+                    fills: White
+                    strokes: Mystic (7:34)
+                    strokeWeight: 1px
+                    borderRadius: 16px
+                [FRAME] "h3" #723:26647 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26648 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26650 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":26,"y":-1},"dimensions":{"width":151.19,"height":23}} fills="Midnight Blue" textStyle=style_ac8daa02 text="Commission Credits"
+                [FRAME] "p" #723:26651 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26652 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Commission credits can appear in your Wallet Ledger.\\nCommission tracking has its own screen."
+                [FRAME] "button.lnk:margin:align-flex-start" #723:26653 layout={"mode":"column","padding":"0px 256.1499938964844px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":406.67,"height":40}}
+                  [FRAME] "button.lnk:margin" #723:26654 template=EL-6d2e1d43
+                        type: FRAME
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fill
+                          dimensions:
+                            width: 149.52
+                    [FRAME] "button.lnk" #723:26655 template=EL-727e879c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            padding: 12px 8px
+                            alignItems: center
+                            gap: 5.989999771118164px
+                            sizing:
+                              horizontal: hug
+                              vertical: hug
+                            locationRelativeToParent:
+                              x: -8
+                              y: 0
+                          borderRadius: 8px
+                      [TEXT] #723:26656 template=EL-04a2516f
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: View Commissions
+                            textStyle: style_e2571a1a
+                            fills: Science Blue
+                      [IMAGE-SVG] "Frame" #723:26657 template=EL-d40fb4e5
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 16
+                                height: 16
+              [FRAME] "article.cred" #723:26659 template=EL-bb247e74
+                    type: FRAME
+                    layout: layout_4746e6d8
+                    fills: Hawkes Blue (664:5963)
+                    strokes: Link Water (664:5964)
+                    strokeWeight: 1px
+                    borderRadius: 16px
+                [FRAME] "h3" #723:26660 template=EL-bf86a654
+                      type: FRAME
+                      layout:
+                        mode: none
+                        sizing:
+                          horizontal: fill
+                          vertical: fixed
+                        dimensions:
+                          height: 22.5
+                  [IMAGE-SVG] "Frame" #723:26661 template=EL-e96fade3
+                        type: IMAGE-SVG
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 0
+                            y: 2.25
+                          dimensions:
+                            width: 18
+                            height: 18
+                  [TEXT] #723:26663 template=EL-15e89706
+                        type: TEXT
+                        layout:
+                          mode: none
+                          sizing: {}
+                          locationRelativeToParent:
+                            x: 26
+                            y: -1
+                          dimensions:
+                            width: 128.14
+                            height: 23
+                        text: Wallet and Credit
+                        textStyle: style_ac8daa02
+                        fills: Midnight Blue
+                [FRAME] "p" #723:26664 template=EL-e9077466
+                      type: FRAME
+                      layout: layout_5c79c5b1
+                  [TEXT] #723:26665 layout=layout_56d3c81c fills=Comet textStyle=style_d4875030 text="Your wallet balance and available credit are separate. Need\\nmore purchasing capacity?"
+                [FRAME] "button.lnk:margin:align-flex-start" #723:26666 layout={"mode":"column","padding":"0px 307.5199890136719px 0px 1px","justifyContent":"flex-end","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":406.66,"height":40}}
+                  [FRAME] "button.lnk:margin" #723:26667 template=EL-33ae8d9e
+                        type: FRAME
+                        layout:
+                          mode: none
+                          sizing:
+                            horizontal: fixed
+                            vertical: fill
+                          dimensions:
+                            width: 98.14
+                    [FRAME] "button.lnk" #723:26668 template=EL-2c0b947c
+                          type: FRAME
+                          layout:
+                            mode: row
+                            padding: 12px 8px
+                            alignItems: center
+                            gap: 6px
+                            sizing:
+                              horizontal: hug
+                              vertical: hug
+                            locationRelativeToParent:
+                              x: -8
+                              y: 0
+                          borderRadius: 8px
+                      [TEXT] #723:26669 template=EL-197603c4
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: View Credit
+                            textStyle: style_e2571a1a
+                            fills: Science Blue
+                      [IMAGE-SVG] "Frame" #723:26670 template=EL-d40fb4e5
+                            type: IMAGE-SVG
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              dimensions:
+                                width: 16
+                                height: 16
+        [FRAME] "footer" #723:26672 layout={"mode":"row","padding":"14px 28px","justifyContent":"space-between","alignItems":"stretch","wrap":true,"gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":1954},"dimensions":{"width":1664}} fills=White strokes="Mystic (204:411)" strokeWeight="1px 0px 0px"
+          [FRAME] "span" #723:26673 template=EL-2a66e910
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  sizing:
+                    horizontal: hug
+                    vertical: fill
+            [TEXT] #723:26674 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="AeroWing Agent Portal · M2.5 Agent Wallet Overview · Website"
+          [FRAME] "span" #723:26675 template=EL-2a66e910
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  sizing:
+                    horizontal: hug
+                    vertical: fill
+            [TEXT] #723:26676 layout=layout_177c5efc fills=Comet textStyle=style_f15527d8 text="Design prototype — no payment, Stripe, ledger or booking system is called."
+        [FRAME] "header" #723:26677 template=EL-e7e947f7
+              type: FRAME
+              layout:
+                mode: row
+                padding: 0px 24px
+                alignItems: center
+                gap: 12px
+                sizing:
+                  horizontal: fixed
+                  vertical: fixed
+                locationRelativeToParent:
+                  x: 0
+                  y: 0
+                dimensions:
+                  width: 1664
+                  height: 68
+              fills: White
+              strokes: Mystic (204:411)
+              strokeWeight: 0px 0px 1px
+          [FRAME] "Collapse navigation" #723:26678 template=EL-308cdf1b
+                type: FRAME
+                layout:
+                  mode: column
+                  padding: 11px 6px
+                  alignItems: center
+                  sizing:
+                    horizontal: fixed
+                    vertical: fixed
+                  dimensions:
+                    width: 44
+                    height: 44
+                fills: White
+                strokes: Mystic (7:34)
+                strokeWeight: 1px
+                borderRadius: 10px
+            [IMAGE-SVG] "Frame" #723:26679 template=EL-a73b2a19
+                  type: IMAGE-SVG
+                  layout: layout_bee36b52
+          [FRAME] "Breadcrumb" #723:26681 template=EL-51794897
+                type: FRAME
+                layout: layout_4c84150a
+            [FRAME] "ol" #723:26682 template=EL-0211da4a
+                  type: FRAME
+                  layout:
+                    mode: row
+                    alignSelf: stretch
+                    alignItems: center
+                    gap: 4px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+              [FRAME] "li" #723:26683 template=EL-2a1bfea5
+                    type: FRAME
+                    layout:
+                      mode: row
+                      alignItems: stretch
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                [FRAME] "a" #723:26684 template=EL-2a66e910
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignSelf: stretch
+                        sizing:
+                          horizontal: hug
+                          vertical: fill
+                  [TEXT] #723:26685 template=EL-7c5b051c
+                        type: TEXT
+                        layout: layout_177c5efc
+                        text: Dashboard
+                        textStyle: style_94747b76
+                        fills: Science Blue
+              [FRAME] "li" #723:26686 template=EL-fc963d7f
+                    type: FRAME
+                    layout:
+                      mode: row
+                      padding: 0px 0px 0px 6px
+                      gap: 6px
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                [TEXT] #723:26687 template=EL-f250b41d
+                      type: TEXT
+                      layout: layout_177c5efc
+                      text: /
+                      textStyle: style_c967ff2b
+                      fills: Gull Gray
+                [TEXT] #723:26688 layout=layout_177c5efc fills=Mirage textStyle=style_c967ff2b text="Wallet"
+          [FRAME] "form#tb-s" #736:2185 template=EL-a4a2fb03
+                type: FRAME
+                layout:
+                  mode: column
+                  alignItems: stretch
+                  sizing:
+                    horizontal: fixed
+                    vertical: hug
+                  dimensions:
+                    width: 280
+            [FRAME] "input#tb-q" #736:2186 template=EL-bcaab4e4
+                  type: FRAME
+                  layout:
+                    mode: row
+                    alignSelf: stretch
+                    padding: 12px 13px
+                    alignItems: center
+                    gap: 10px
+                    sizing:
+                      horizontal: fill
+                      vertical: hug
+                  fills: Catskill White (7:11)
+                  strokes: Mystic (7:34)
+                  strokeWeight: 1px
+                  borderRadius: 10px
+              [IMAGE-SVG] "Frame" #736:2187 template=EL-f1890f3e
+                    type: IMAGE-SVG
+                    layout:
+                      mode: none
+                      sizing:
+                        horizontal: fixed
+                        vertical: fixed
+                      dimensions:
+                        width: 17
+                        height: 17
+              [FRAME] "div#placeholder" #736:2189 template=EL-a8ef7fa3
+                    type: FRAME
+                    layout:
+                      mode: column
+                      justifyContent: center
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                [TEXT] #736:2190 template=EL-c12bf1ac
+                      type: TEXT
+                      layout: layout_177c5efc
+                      text: Search Admin Panel
+                      textStyle: Manrope/Regular
+                      fills: Boulder
+          [FRAME] "div.pop-w" #723:26698 template=EL-2f9fe287
+                type: FRAME
+                layout:
+                  mode: column
+                  sizing:
+                    horizontal: hug
+                    vertical: hug
+            [FRAME] "Notifications" #723:26699 template=EL-308cdf1b
+                  type: FRAME
+                  layout:
+                    mode: column
+                    padding: 11px 6px
+                    alignItems: center
+                    sizing:
+                      horizontal: fixed
+                      vertical: fixed
+                    dimensions:
+                      width: 44
+                      height: 44
+                  fills: White
+                  strokes: Mystic (7:34)
+                  strokeWeight: 1px
+                  borderRadius: 10px
+              [IMAGE-SVG] "Frame" #723:26700 template=EL-a73b2a19
+                    type: IMAGE-SVG
+                    layout: layout_bee36b52
+          [FRAME] "div.pop-w" #723:26702 template=EL-2f9fe287
+                type: FRAME
+                layout:
+                  mode: column
+                  sizing:
+                    horizontal: hug
+                    vertical: hug
+            [FRAME] "button menu#pf-btn" #723:26703 template=EL-73541ea2
+                  type: FRAME
+                  layout:
+                    mode: row
+                    padding: 0px 10px 0px 4px
+                    alignItems: center
+                    gap: 10px
+                    sizing:
+                      horizontal: hug
+                      vertical: fixed
+                    dimensions:
+                      height: 48
+                  strokes: Black 0%
+                  strokeWeight: 1px
+                  borderRadius: 12px
+              [FRAME] "span#pf-av" #723:26704 template=EL-97ad2434
+                    type: FRAME
+                    layout:
+                      mode: column
+                      padding: 11.5px 0px 12.5px
+                      justifyContent: center
+                      alignItems: center
+                      sizing:
+                        horizontal: fixed
+                        vertical: fixed
+                      dimensions:
+                        width: 38
+                        height: 38
+                    fills: Midnight Blue
+                    borderRadius: 12px
+                [TEXT] #723:26705 template=EL-790ada40
+                      type: TEXT
+                      layout: layout_177c5efc
+                      text: SD
+                      textStyle: style_f6d4e0eb
+                      fills: Saffron
+              [FRAME] "span.tb-avt" #723:26706 template=EL-6e7b525c
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignItems: stretch
+                      sizing:
+                        horizontal: hug
+                        vertical: hug
+                [FRAME] "b#pf-biz" #723:26707 template=EL-dfdf56f9
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignSelf: stretch
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                  [TEXT] #723:26708 template=EL-084e24f6
+                        type: TEXT
+                        layout: layout_177c5efc
+                        text: Skyline Demo Travels Ltd
+                        textStyle: style_576f5991
+                        fills: Mirage
+                [FRAME] "small#pf-usr" #723:26709 template=EL-dfdf56f9
+                      type: FRAME
+                      layout:
+                        mode: column
+                        alignSelf: stretch
+                        sizing:
+                          horizontal: fill
+                          vertical: hug
+                  [TEXT] #723:26710 template=EL-42f6826b
+                        type: TEXT
+                        layout: layout_177c5efc
+                        text: Nusrat Jahan · Agent Owner
+                        textStyle: Manrope/Bold (7:363)
+                        fills: Comet
+              [IMAGE-SVG] "Frame" #723:26711 template=EL-d40fb4e5
+                    type: IMAGE-SVG
+                    layout:
+                      mode: none
+                      sizing:
+                        horizontal: fixed
+                        vertical: fixed
+                      dimensions:
+                        width: 16
+                        height: 16
+  [FRAME] "Wallet Ledger" #728:28566 layout={"mode":"column","overflowScroll":["y"],"alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":25041,"y":3875},"dimensions":{"width":1920,"height":1758}} fills="White Catskill White"

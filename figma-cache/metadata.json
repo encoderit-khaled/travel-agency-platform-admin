@@ -1,0 +1,338 @@
+{
+  "fileKey": "8Dgk9OL3yPpE8L7e8Clo0n",
+  "nodeId": "631:3413",
+  "sectionName": "M2 \u2014 B2B Agent Portal",
+  "fileName": "aero-wing-travel-agency-platform",
+  "sourceUrl": "https://www.figma.com/design/8Dgk9OL3yPpE8L7e8Clo0n/aero-wing-travel-agency-platform?node-id=631-3413&t=6pMnEKiSBAgBy4Rk-4",
+  "fetchedAt": "2026-11-24T11:30:56+06:00",
+  "totalLines": 24404,
+  "frameCount": 65,
+  "screens": [
+    {
+      "type": "FRAME",
+      "name": "Registration - Business Information",
+      "nodeId": "631:3414"
+    },
+    {
+      "type": "FRAME",
+      "name": "Registration - Contact & Documents",
+      "nodeId": "637:4456"
+    },
+    {
+      "type": "FRAME",
+      "name": "Registration - Review & Submit",
+      "nodeId": "639:5270"
+    },
+    {
+      "type": "FRAME",
+      "name": "Admin Agent Applications",
+      "nodeId": "645:301"
+    },
+    {
+      "type": "FRAME",
+      "name": "All Applications",
+      "nodeId": "645:555"
+    },
+    {
+      "type": "FRAME",
+      "name": "Application Review",
+      "nodeId": "648:909"
+    },
+    {
+      "type": "FRAME",
+      "name": "Approve Application",
+      "nodeId": "648:1247"
+    },
+    {
+      "type": "FRAME",
+      "name": "Reject Application",
+      "nodeId": "648:1249"
+    },
+    {
+      "type": "FRAME",
+      "name": "Suspend Agent",
+      "nodeId": "648:1251"
+    },
+    {
+      "type": "FRAME",
+      "name": "No Data Match",
+      "nodeId": "648:1253"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Dashboard",
+      "nodeId": "660:5189"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Dashboard - Notifications Dropdown",
+      "nodeId": "660:5854"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Dashboard - Dropdown Menu",
+      "nodeId": "660:5853"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Management Overview",
+      "nodeId": "665:6744"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Management Overview - Table Action Button Dropdown",
+      "nodeId": "665:7389"
+    },
+    {
+      "type": "FRAME",
+      "name": "Create Sub Agent",
+      "nodeId": "667:8506"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Details",
+      "nodeId": "686:2127"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Markup",
+      "nodeId": "691:4490"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Bookings",
+      "nodeId": "694:6650"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Performance",
+      "nodeId": "698:11315"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Bookings - Booking Details",
+      "nodeId": "694:7692"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Markup - Add Markup",
+      "nodeId": "691:5509"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Permissions",
+      "nodeId": "689:3099"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Permissions - Custom Permissions",
+      "nodeId": "689:3507"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Permissions - Custom Permissions - Discard Changes",
+      "nodeId": "689:3510"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Permissions - Custom Permissions - Save Changes",
+      "nodeId": "689:3508"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Details - Booking Details",
+      "nodeId": "696:9753"
+    },
+    {
+      "type": "FRAME",
+      "name": "Sub Agent Performance - Booking Details",
+      "nodeId": "698:12713"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Booking History",
+      "nodeId": "703:16111"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Booking Details",
+      "nodeId": "707:18493"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Pricing Markup Overview",
+      "nodeId": "710:21270"
+    },
+    {
+      "type": "FRAME",
+      "name": "Add Edit Markup Rule",
+      "nodeId": "713:23496"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Wallet Overview",
+      "nodeId": "723:25715"
+    },
+    {
+      "type": "FRAME",
+      "name": "Wallet Ledger",
+      "nodeId": "728:28566"
+    },
+    {
+      "type": "FRAME",
+      "name": "Credit Overview",
+      "nodeId": "736:1022"
+    },
+    {
+      "type": "FRAME",
+      "name": "Credit Request History",
+      "nodeId": "743:3110"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Overview",
+      "nodeId": "821:920"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Bookings",
+      "nodeId": "821:1921"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Commissions",
+      "nodeId": "821:1922"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Wallet & Credit",
+      "nodeId": "821:1923"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Sub Agent Performance",
+      "nodeId": "821:1924"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Reports - Sales",
+      "nodeId": "821:1920"
+    },
+    {
+      "type": "FRAME",
+      "name": "Commission Tracking",
+      "nodeId": "745:5562"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Statements",
+      "nodeId": "749:7809"
+    },
+    {
+      "type": "FRAME",
+      "name": "New Credit Request",
+      "nodeId": "743:4050"
+    },
+    {
+      "type": "FRAME",
+      "name": "New Credit Request - Submit Request",
+      "nodeId": "743:4132"
+    },
+    {
+      "type": "FRAME",
+      "name": "Credit Request Details",
+      "nodeId": "743:4134"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Booking History - Booking Preview",
+      "nodeId": "706:17471"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Booking Details - E-ticket Preview",
+      "nodeId": "707:19884"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Pricing Markup Overview - Remove markup rule",
+      "nodeId": "710:22500"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Pricing Markup Overview - Disable markup rule",
+      "nodeId": "710:22499"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Pricing Markup Overview - Markup Rule Details",
+      "nodeId": "710:22498"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Pricing Markup Overview - Pricing Preview",
+      "nodeId": "710:22497"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Wallet Overview - Top Up Wallet",
+      "nodeId": "725:27232"
+    },
+    {
+      "type": "FRAME",
+      "name": "Wallet Ledger - Export Current View",
+      "nodeId": "728:29735"
+    },
+    {
+      "type": "FRAME",
+      "name": "Wallet Ledger - Transaction Details",
+      "nodeId": "728:29736"
+    },
+    {
+      "type": "FRAME",
+      "name": "Credit Overview - Credit Request Details",
+      "nodeId": "736:2207"
+    },
+    {
+      "type": "FRAME",
+      "name": "Commission Tracking - Commission Details",
+      "nodeId": "745:6678"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Statements - Download CSV",
+      "nodeId": "749:10386"
+    },
+    {
+      "type": "FRAME",
+      "name": "Agent Statements - Download PDF",
+      "nodeId": "749:10388"
+    },
+    {
+      "type": "FRAME",
+      "name": "Roles Access - Overview",
+      "nodeId": "835:2262"
+    },
+    {
+      "type": "FRAME",
+      "name": "Roles Access - Team Access - Team Access Summary",
+      "nodeId": "835:2590"
+    },
+    {
+      "type": "FRAME",
+      "name": "Roles Access - Permission Matrix",
+      "nodeId": "835:2591"
+    },
+    {
+      "type": "FRAME",
+      "name": "Roles Access - Team Access",
+      "nodeId": "835:2588"
+    },
+    {
+      "type": "FRAME",
+      "name": "Roles Access - Overview - Owner Access Summary",
+      "nodeId": "835:2589"
+    }
+  ],
+  "dataFile": "B2B agent portal.yaml"
+}
