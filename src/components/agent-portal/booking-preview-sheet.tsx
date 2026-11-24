@@ -146,7 +146,7 @@ export function BookingPreviewSheet({
         className="w-full sm:max-w-xl p-0 overflow-y-auto bg-[#F8FAFC] flex flex-col z-50 text-[#111827]"
       >
         {/* Top Header matching Figma #706:17471 / #707:18493 */}
-        <div className="bg-gradient-to-r from-[#012A5E] to-[#0267B8] text-white p-6 shrink-0 relative">
+        <div className="bg-linear-to-r from-[#012A5E] to-[#0267B8] text-white p-6 shrink-0 relative">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-bold tracking-wide uppercase text-white/80">
               Agent Portal · M2.11 Booking Preview

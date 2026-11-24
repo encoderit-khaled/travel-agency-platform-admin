@@ -65,7 +65,6 @@ export function AdminAgentApplicationsPage({
   )
   const [selectedStatusFilter, setSelectedStatusFilter] =
     React.useState<ApplicationStatus | null>(initialStatus)
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [globalSearch, setGlobalSearch] = React.useState(initialSearchQuery)
   const [selectedApplication, setSelectedApplication] =
     React.useState<AgentApplication>(() => {
@@ -187,197 +186,182 @@ export function AdminAgentApplicationsPage({
         {/* 1. Desktop Sidebar */}
         <AdminSidebar pendingCount={pendingCount} />
 
-      {/* Mobile Drawer Overlay */}
-      {mobileMenuOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs lg:hidden"
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          <div
-            className="w-64 max-w-[80vw] h-full shadow-2xl animate-in slide-in-from-left duration-200"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <AdminSidebar
-              pendingCount={pendingCount}
-              onCloseMobile={() => setMobileMenuOpen(false)}
-            />
-          </div>
-        </div>
-      )}
+        {/* 2. Main Content Wrapper */}
+        <div className="flex-1 flex flex-col min-w-0 min-h-screen">
+          {/* Top Header with dynamic breadcrumbs */}
+          <AdminHeader
+            searchQuery={globalSearch}
+            onSearchChange={setGlobalSearch}
+            breadcrumbs={breadcrumbs}
+          />
 
-      {/* 2. Main Content Wrapper */}
-      <div className="flex-1 flex flex-col min-w-0 min-h-screen">
-        {/* Top Header with dynamic breadcrumbs */}
-        <AdminHeader
-          onToggleMobileMenu={() => setMobileMenuOpen(true)}
-          searchQuery={globalSearch}
-          onSearchChange={setGlobalSearch}
-          breadcrumbs={breadcrumbs}
-        />
-
-        {/* Page Content */}
-        <main className="flex-1 px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-6 max-w-[1664px] w-full mx-auto">
-          {viewMode === 'review' ? (
-            /* APPLICATION REVIEW FULL PAGE VIEW (#648:909, #648:1247, #648:1249, #648:1250) */
-            <ApplicationReviewView
-              application={selectedApplication}
-              onBack={() => {
-                setActiveAction(undefined)
-                setViewMode('table')
-              }}
-              onUpdateStatus={handleUpdateStatus}
-              initialOpenApprove={activeAction === 'approve'}
-              initialOpenReject={activeAction === 'reject'}
-              initialOpenSuspend={activeAction === 'suspend'}
-            />
-          ) : (
-            /* AGENT APPLICATIONS QUEUE TABLE VIEW (#645:301) */
-            <>
-              {/* Page Heading & QA Demo Data Banner with Node 648:1253 Toggle & Node 648:909 Link */}
-              <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <h1 className="text-2xl sm:text-[28px] font-extrabold text-[#012A5E] tracking-tight leading-tight">
-                      Agent Applications
-                    </h1>
-                    {forceNoDataMatch && (
-                      <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[#FEE2E2] text-[#991B1B] border border-[#FCA5A5]">
-                        No Data Match (#648:1253)
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-sm text-[#4F5B70] mt-1 font-medium">
-                    Review submitted travel partner applications and manage
-                    approval decisions.
-                  </p>
-                </div>
-
-                {/* QA Demo Banner from Figma with interactive toggles */}
-                <div className="rounded-xl border border-dashed border-[#E1BA6D] bg-[#FFF8E7] px-3.5 py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#E1BA6D]/30 text-[#854D0E] shrink-0 w-fit">
-                      QA DEMO DATA
-                    </span>
-                    <span className="text-xs text-[#78350F] font-medium leading-snug">
-                      Sample application from the registration prototype (Steps
-                      01–03).
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-2 shrink-0 flex-wrap">
-                    {/* Direct Button to open Reject Application (#648:1248) */}
-                    <Button
-                      type="button"
-                      size="xs"
-                      variant="outline"
-                      onClick={() =>
-                        handleOpenReviewPage(selectedApplication, 'reject')
-                      }
-                      className="h-7 text-xs font-extrabold rounded-lg gap-1.5 border-[#FCA5A5] bg-white text-[#C62828] hover:bg-[#FEF2F2] cursor-pointer shadow-none"
-                    >
-                      <Eye className="size-3 text-[#C62828]" />
-                      <span>Reject Modal (#648:1248)</span>
-                    </Button>
-
-                    {/* Direct Button to open Application Review (#648:909) */}
-                    <Button
-                      type="button"
-                      size="xs"
-                      variant="default"
-                      onClick={() => handleOpenReviewPage(selectedApplication)}
-                      className="h-7 text-xs font-extrabold rounded-lg gap-1.5 bg-[#012A5E] hover:bg-[#023B82] text-white cursor-pointer shadow-none"
-                    >
-                      <Eye className="size-3 text-[#F1C134]" />
-                      <span>Review (#648:909)</span>
-                    </Button>
-
-                    {/* Node 648:1253 State Switcher */}
-                    <Button
-                      type="button"
-                      size="xs"
-                      variant={forceNoDataMatch ? 'destructive' : 'outline'}
-                      onClick={handleToggleNoDataSimulation}
-                      className="h-7 text-xs font-bold rounded-lg gap-1.5 cursor-pointer shadow-none"
-                    >
-                      {forceNoDataMatch ? (
-                        <>
-                          <RotateCcw className="size-3" />
-                          <span>Reset to 1 Result</span>
-                        </>
-                      ) : (
-                        <>
-                          <Sparkles className="size-3 text-[#B45309]" />
-                          <span>"No Data Match" (#648:1253)</span>
-                        </>
-                      )}
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* 3. Status Metric Cards (4 Grid) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3.5 sm:gap-4">
-                <StatusMetricCard
-                  status="pending"
-                  title="Pending Review"
-                  count={pendingCount}
-                  isSelected={selectedStatusFilter === 'pending'}
-                  onClick={() => handleStatusCardClick('pending')}
-                />
-                <StatusMetricCard
-                  status="approved"
-                  title="Approved"
-                  count={approvedCount}
-                  isSelected={selectedStatusFilter === 'approved'}
-                  onClick={() => handleStatusCardClick('approved')}
-                />
-                <StatusMetricCard
-                  status="rejected"
-                  title="Rejected"
-                  count={rejectedCount}
-                  isSelected={selectedStatusFilter === 'rejected'}
-                  onClick={() => handleStatusCardClick('rejected')}
-                />
-                <StatusMetricCard
-                  status="suspended"
-                  title="Suspended"
-                  count={suspendedCount}
-                  isSelected={selectedStatusFilter === 'suspended'}
-                  onClick={() => handleStatusCardClick('suspended')}
-                />
-              </div>
-
-              {/* 4. Main Applications Queue Table */}
-              <AgentApplicationsTable
-                applications={applications}
-                activeTab={activeTab}
-                onTabChange={(tab) => {
-                  setActiveTab(tab)
-                  setSelectedStatusFilter(tab === 'pending' ? 'pending' : null)
+          {/* Page Content */}
+          <main className="flex-1 px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-6 max-w-[1664px] w-full mx-auto">
+            {viewMode === 'review' ? (
+              /* APPLICATION REVIEW FULL PAGE VIEW (#648:909, #648:1247, #648:1249, #648:1250) */
+              <ApplicationReviewView
+                application={selectedApplication}
+                onBack={() => {
+                  setActiveAction(undefined)
+                  setViewMode('table')
                 }}
-                onReviewClick={(app) => handleOpenReviewPage(app)}
-                initialSearch={globalSearch}
-                statusFilter={selectedStatusFilter}
-                onStatusFilterChange={setSelectedStatusFilter}
-                forceNoDataMatch={forceNoDataMatch}
-                onToggleForceNoData={handleToggleNoDataSimulation}
+                onUpdateStatus={handleUpdateStatus}
+                initialOpenApprove={activeAction === 'approve'}
+                initialOpenReject={activeAction === 'reject'}
+                initialOpenSuspend={activeAction === 'suspend'}
               />
-            </>
-          )}
-        </main>
+            ) : (
+              /* AGENT APPLICATIONS QUEUE TABLE VIEW (#645:301) */
+              <>
+                {/* Page Heading & QA Demo Data Banner with Node 648:1253 Toggle & Node 648:909 Link */}
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h1 className="text-2xl sm:text-[28px] font-extrabold text-[#012A5E] tracking-tight leading-tight">
+                        Agent Applications
+                      </h1>
+                      {forceNoDataMatch && (
+                        <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[#FEE2E2] text-[#991B1B] border border-[#FCA5A5]">
+                          No Data Match (#648:1253)
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-[#4F5B70] mt-1 font-medium">
+                      Review submitted travel partner applications and manage
+                      approval decisions.
+                    </p>
+                  </div>
 
-        {/* 5. Footer */}
-        <AdminFooter />
+                  {/* QA Demo Banner from Figma with interactive toggles */}
+                  <div className="rounded-xl border border-dashed border-[#E1BA6D] bg-[#FFF8E7] px-3.5 py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#E1BA6D]/30 text-[#854D0E] shrink-0 w-fit">
+                        QA DEMO DATA
+                      </span>
+                      <span className="text-xs text-[#78350F] font-medium leading-snug">
+                        Sample application from the registration prototype
+                        (Steps 01–03).
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2 shrink-0 flex-wrap">
+                      {/* Direct Button to open Reject Application (#648:1248) */}
+                      <Button
+                        type="button"
+                        size="xs"
+                        variant="outline"
+                        onClick={() =>
+                          handleOpenReviewPage(selectedApplication, 'reject')
+                        }
+                        className="h-7 text-xs font-extrabold rounded-lg gap-1.5 border-[#FCA5A5] bg-white text-[#C62828] hover:bg-[#FEF2F2] cursor-pointer shadow-none"
+                      >
+                        <Eye className="size-3 text-[#C62828]" />
+                        <span>Reject Modal (#648:1248)</span>
+                      </Button>
+
+                      {/* Direct Button to open Application Review (#648:909) */}
+                      <Button
+                        type="button"
+                        size="xs"
+                        variant="default"
+                        onClick={() =>
+                          handleOpenReviewPage(selectedApplication)
+                        }
+                        className="h-7 text-xs font-extrabold rounded-lg gap-1.5 bg-[#012A5E] hover:bg-[#023B82] text-white cursor-pointer shadow-none"
+                      >
+                        <Eye className="size-3 text-[#F1C134]" />
+                        <span>Review (#648:909)</span>
+                      </Button>
+
+                      {/* Node 648:1253 State Switcher */}
+                      <Button
+                        type="button"
+                        size="xs"
+                        variant={forceNoDataMatch ? 'destructive' : 'outline'}
+                        onClick={handleToggleNoDataSimulation}
+                        className="h-7 text-xs font-bold rounded-lg gap-1.5 cursor-pointer shadow-none"
+                      >
+                        {forceNoDataMatch ? (
+                          <>
+                            <RotateCcw className="size-3" />
+                            <span>Reset to 1 Result</span>
+                          </>
+                        ) : (
+                          <>
+                            <Sparkles className="size-3 text-[#B45309]" />
+                            <span>"No Data Match" (#648:1253)</span>
+                          </>
+                        )}
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 3. Status Metric Cards (4 Grid) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3.5 sm:gap-4">
+                  <StatusMetricCard
+                    status="pending"
+                    title="Pending Review"
+                    count={pendingCount}
+                    isSelected={selectedStatusFilter === 'pending'}
+                    onClick={() => handleStatusCardClick('pending')}
+                  />
+                  <StatusMetricCard
+                    status="approved"
+                    title="Approved"
+                    count={approvedCount}
+                    isSelected={selectedStatusFilter === 'approved'}
+                    onClick={() => handleStatusCardClick('approved')}
+                  />
+                  <StatusMetricCard
+                    status="rejected"
+                    title="Rejected"
+                    count={rejectedCount}
+                    isSelected={selectedStatusFilter === 'rejected'}
+                    onClick={() => handleStatusCardClick('rejected')}
+                  />
+                  <StatusMetricCard
+                    status="suspended"
+                    title="Suspended"
+                    count={suspendedCount}
+                    isSelected={selectedStatusFilter === 'suspended'}
+                    onClick={() => handleStatusCardClick('suspended')}
+                  />
+                </div>
+
+                {/* 4. Main Applications Queue Table */}
+                <AgentApplicationsTable
+                  applications={applications}
+                  activeTab={activeTab}
+                  onTabChange={(tab) => {
+                    setActiveTab(tab)
+                    setSelectedStatusFilter(
+                      tab === 'pending' ? 'pending' : null,
+                    )
+                  }}
+                  onReviewClick={(app) => handleOpenReviewPage(app)}
+                  initialSearch={globalSearch}
+                  statusFilter={selectedStatusFilter}
+                  onStatusFilterChange={setSelectedStatusFilter}
+                  forceNoDataMatch={forceNoDataMatch}
+                  onToggleForceNoData={handleToggleNoDataSimulation}
+                />
+              </>
+            )}
+          </main>
+
+          {/* 5. Footer */}
+          <AdminFooter />
+        </div>
+
+        {/* Review Dialog Modal (kept for optional quick view) */}
+        <ApplicationReviewModal
+          application={reviewingAppModal}
+          isOpen={Boolean(reviewingAppModal)}
+          onClose={() => setReviewingAppModal(null)}
+          onUpdateStatus={handleUpdateStatus}
+        />
       </div>
-
-      {/* Review Dialog Modal (kept for optional quick view) */}
-      <ApplicationReviewModal
-        application={reviewingAppModal}
-        isOpen={Boolean(reviewingAppModal)}
-        onClose={() => setReviewingAppModal(null)}
-        onUpdateStatus={handleUpdateStatus}
-      />
-    </div>
     </SidebarProvider>
   )
 }

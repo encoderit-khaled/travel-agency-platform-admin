@@ -7,7 +7,7 @@ export interface PartnerHeroProps {
 
 export function PartnerHero({ portalUrl = '/login' }: PartnerHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#011B3D] via-[#012552] to-[#012A5E] pt-9 pb-28 text-white">
+    <section className="relative w-full overflow-hidden bg-linear-to-r from-[#011B3D] via-[#012552] to-[#012A5E] pt-9 pb-28 text-white">
       {/* Decorative Golden Wave / Glow Background */}
       <div
         className="pointer-events-none absolute inset-0 opacity-25"

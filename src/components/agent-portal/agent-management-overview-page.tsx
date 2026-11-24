@@ -253,24 +253,11 @@ export function AgentManagementOverviewPage({
       <div className="flex flex-1 w-full min-h-screen">
         {/* Desktop Sidebar (Figma #665:6746) */}
         <AgentPortalSidebar
+          mobileOpen={mobileMenuOpen}
+          onCloseMobile={() => setMobileMenuOpen(false)}
           currentTab="Sub-agents"
           className="hidden lg:flex"
         />
-
-        {/* Mobile Sidebar Drawer */}
-        {mobileMenuOpen && (
-          <div className="fixed inset-0 z-50 lg:hidden flex">
-            <div
-              className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
-              onClick={() => setMobileMenuOpen(false)}
-            />
-            <AgentPortalSidebar
-              currentTab="Sub-agents"
-              onCloseMobile={() => setMobileMenuOpen(false)}
-              className="relative z-10 w-72 h-full shadow-2xl"
-            />
-          </div>
-        )}
 
         {/* Main Column */}
         <div className="flex-1 flex flex-col min-w-0">

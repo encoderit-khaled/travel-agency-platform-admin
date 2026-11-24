@@ -111,6 +111,15 @@ export function SubAgentMarkupPage({
   onBack,
 }: SubAgentMarkupPageProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [sidebarCollapsed, setSidebarCollapsed] = React.useState(false)
+
+  const handleToggleSidebar = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      setMobileMenuOpen((prev) => !prev)
+    } else {
+      setSidebarCollapsed((prev) => !prev)
+    }
+  }
 
   // Markup rules state (default starts empty matching Figma #691:4490 & #691:5509)
   const [rules, setRules] = React.useState<MarkupRuleItem[]>([])
@@ -199,30 +208,20 @@ export function SubAgentMarkupPage({
     <div className="flex min-h-screen bg-[#F4F6FA] text-[#012A5E] antialiased">
       {/* Sidebar: Desktop */}
       <AgentPortalSidebar
+        mobileOpen={mobileMenuOpen}
+        onCloseMobile={() => setMobileMenuOpen(false)}
         currentActive="Sub-agents"
+        collapsed={sidebarCollapsed}
+        onToggleCollapse={() => setSidebarCollapsed((prev) => !prev)}
         className="hidden lg:flex"
       />
-
-      {/* Sidebar: Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 flex lg:hidden animate-in fade-in duration-200">
-          <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-          <AgentPortalSidebar
-            currentActive="Sub-agents"
-            className="relative z-10 w-72 h-full shadow-2xl"
-            onCloseMobile={() => setMobileMenuOpen(false)}
-          />
-        </div>
-      )}
 
       {/* Main Container */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Header */}
         <AgentPortalHeader
-          onToggleMobileMenu={() => setMobileMenuOpen(true)}
+          onToggleSidebar={handleToggleSidebar}
+          onToggleMobileMenu={handleToggleSidebar}
           breadcrumbs={[
             { label: 'Dashboard', active: false },
             { label: 'Sub-agents', active: false },
@@ -577,7 +576,7 @@ export function SubAgentMarkupPage({
                     /* Figma-matching empty state */
                     <div className="py-8 flex flex-col items-center justify-center text-center">
                       {/* Gradient icon with corner saffron plus */}
-                      <div className="relative size-16 rounded-2xl bg-gradient-to-br from-[#EAF4FD] to-[#E8EDF5] flex items-center justify-center shadow-xs mb-3">
+                      <div className="relative size-16 rounded-2xl bg-linear-to-br from-[#EAF4FD] to-[#E8EDF5] flex items-center justify-center shadow-xs mb-3">
                         <Tag className="size-7 text-[#0267B8]" />
                       </div>
                       <h3 className="text-base font-black text-[#012A5E]">

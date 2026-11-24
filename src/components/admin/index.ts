@@ -1,5 +1,7 @@
 export { AdminSidebar } from './admin-sidebar'
 export { AdminHeader } from './admin-header'
+export { Navbar } from '#/components/ui/navbar'
+export type { NavbarProps } from '#/components/ui/navbar'
 export { AdminFooter } from './admin-footer'
 export { StatusMetricCard } from './status-metric-card'
 export type { ApplicationStatus } from './status-metric-card'

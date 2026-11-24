@@ -62,7 +62,7 @@ export function ETicketPreviewDialog({
         <div className="bg-[#012A5E] text-white px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="size-8 rounded-lg bg-[#F1C134] text-[#012A5E] flex items-center justify-center font-extrabold shadow-xs">
-              <Plane className="size-4 rotate-[-45deg]" />
+              <Plane className="size-4 -rotate-45" />
             </div>
             <div>
               <h3 className="font-extrabold text-white text-sm tracking-tight leading-none">
@@ -92,7 +92,7 @@ export function ETicketPreviewDialog({
           {/* Main Boarding Pass / Voucher Card */}
           <div className="border border-[#CBD5E1] rounded-2xl overflow-hidden shadow-xs bg-white">
             {/* Ticket Header */}
-            <div className="bg-gradient-to-r from-[#001A3D] via-[#012A5E] to-[#0267B8] p-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="bg-linear-to-r from-[#001A3D] via-[#012A5E] to-[#0267B8] p-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#F1C134] block mb-1">
                   {isFlight
@@ -203,9 +203,9 @@ export function ETicketPreviewDialog({
                     </span>
                     <div className="w-full flex items-center gap-1.5">
                       <div className="size-2 rounded-full bg-[#0267B8]" />
-                      <div className="h-0.5 flex-1 bg-gradient-to-r from-[#0267B8] to-[#F1C134]" />
+                      <div className="h-0.5 flex-1 bg-linear-to-r from-[#0267B8] to-[#F1C134]" />
                       <Plane className="size-4 text-[#0267B8] rotate-90 shrink-0" />
-                      <div className="h-0.5 flex-1 bg-gradient-to-r from-[#F1C134] to-[#0267B8]" />
+                      <div className="h-0.5 flex-1 bg-linear-to-r from-[#F1C134] to-[#0267B8]" />
                       <div className="size-2 rounded-full bg-[#0267B8]" />
                     </div>
                     <span className="text-[10px] text-emerald-700 font-bold mt-1">

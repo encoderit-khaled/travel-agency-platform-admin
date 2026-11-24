@@ -21,9 +21,7 @@ export const Route = createFileRoute('/credit')({
           : undefined
 
     const rawTab =
-      search.tab === 'history' || search.tab === 'new'
-        ? (search.tab)
-        : undefined
+      search.tab === 'history' || search.tab === 'new' ? search.tab : undefined
 
     const modal = typeof search.modal === 'string' ? search.modal : undefined
     const sheet = typeof search.sheet === 'string' ? search.sheet : undefined

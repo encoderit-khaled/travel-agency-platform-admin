@@ -1442,7 +1442,7 @@ export function AgentBookingHistoryPage({
           {previewDocument && (
             <div>
               {/* Modal Header */}
-              <div className="p-5 bg-gradient-to-r from-[#001A3D] to-[#012A5E] text-white flex items-center justify-between">
+              <div className="p-5 bg-linear-to-r from-[#001A3D] to-[#012A5E] text-white flex items-center justify-between">
                 <div className="space-y-0.5">
                   <span className="text-[10px] font-bold tracking-wider uppercase text-blue-200">
                     AeroWing Travel Partner Portal
@@ -1590,7 +1590,7 @@ export function AgentBookingHistoryPage({
       {/* New Booking / Search Dialog */}
       <Dialog open={newBookingModalOpen} onOpenChange={setNewBookingModalOpen}>
         <DialogContent className="sm:max-w-[540px] p-0 rounded-2xl overflow-hidden bg-white border-[#DCE2EB] shadow-xl">
-          <div className="p-6 bg-gradient-to-r from-[#001A3D] to-[#012A5E] text-white space-y-1">
+          <div className="p-6 bg-linear-to-r from-[#001A3D] to-[#012A5E] text-white space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-wider text-blue-200">
               Skyline Demo Travels Ltd
             </span>

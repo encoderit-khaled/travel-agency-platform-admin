@@ -208,7 +208,7 @@ export function TeamAccessSummaryDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl max-h-[92vh] overflow-hidden flex flex-col p-0 gap-0 border border-slate-200 shadow-2xl rounded-2xl bg-white">
         {/* Header with AeroWing gradient */}
-        <div className="bg-gradient-to-r from-[#001A3D] via-[#012A5E] to-[#0A3D78] text-white p-6 relative">
+        <div className="bg-linear-to-r from-[#001A3D] via-[#012A5E] to-[#0A3D78] text-white p-6 relative">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-start gap-3.5">
               <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shrink-0 shadow-inner">

@@ -1,5 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { CommissionTrackingPage, AgentReportsPage } from '#/components/agent-portal'
+import {
+  CommissionTrackingPage,
+  AgentReportsPage,
+} from '#/components/agent-portal'
 
 interface CommissionSearchParams {
   'node-id'?: string

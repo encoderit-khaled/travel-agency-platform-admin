@@ -340,7 +340,7 @@ export function WalletLedgerPage({
             {/* 3 KPI Summary Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Card 1: Current Wallet Balance */}
-              <div className="bg-gradient-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] rounded-2xl p-5 text-white shadow-md relative overflow-hidden flex flex-col justify-between">
+              <div className="bg-linear-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] rounded-2xl p-5 text-white shadow-md relative overflow-hidden flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-3">
                     <div className="size-9 rounded-xl bg-[#F5B800]/20 border border-[#F5B800]/30 flex items-center justify-center text-[#F5B800]">

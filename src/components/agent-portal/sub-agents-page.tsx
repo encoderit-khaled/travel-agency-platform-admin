@@ -39,8 +39,17 @@ export function SubAgentsPage({
   initialDeskId,
 }: SubAgentsPageProps = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [sidebarCollapsed, setSidebarCollapsed] = React.useState(false)
   const [subAgents, setSubAgents] =
     React.useState<SubAgent[]>(INITIAL_SUB_AGENTS)
+
+  const handleToggleSidebar = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      setMobileMenuOpen((prev) => !prev)
+    } else {
+      setSidebarCollapsed((prev) => !prev)
+    }
+  }
 
   // Search & Filter state
   const [searchQuery, setSearchQuery] = React.useState(initialSearch)
@@ -141,28 +150,21 @@ export function SubAgentsPage({
   return (
     <div className="flex min-h-screen bg-[#F4F6FA] text-[#141C2E] antialiased">
       {/* Sidebar: Desktop */}
-      <AgentPortalSidebar currentTab="Sub-agents" className="hidden lg:flex" />
-
-      {/* Sidebar: Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 flex lg:hidden animate-in fade-in">
-          <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-          <AgentPortalSidebar
-            currentTab="Sub-agents"
-            className="relative z-10 w-72 h-full shadow-2xl"
-            onCloseMobile={() => setMobileMenuOpen(false)}
-          />
-        </div>
-      )}
+      <AgentPortalSidebar
+        mobileOpen={mobileMenuOpen}
+        onCloseMobile={() => setMobileMenuOpen(false)}
+        currentTab="Sub-agents"
+        collapsed={sidebarCollapsed}
+        onToggleCollapse={() => setSidebarCollapsed((prev) => !prev)}
+        className="hidden lg:flex"
+      />
 
       {/* Main Container */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Header */}
         <AgentPortalHeader
-          onToggleMobileMenu={() => setMobileMenuOpen(true)}
+          onToggleSidebar={handleToggleSidebar}
+          onToggleMobileMenu={handleToggleSidebar}
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
           breadcrumbs={[

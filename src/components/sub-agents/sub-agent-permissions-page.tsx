@@ -156,6 +156,15 @@ export function SubAgentPermissionsPage({
   onBack,
 }: SubAgentPermissionsPageProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [sidebarCollapsed, setSidebarCollapsed] = React.useState(false)
+
+  const handleToggleSidebar = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      setMobileMenuOpen((prev) => !prev)
+    } else {
+      setSidebarCollapsed((prev) => !prev)
+    }
+  }
   const [activeTab, setActiveTab] = React.useState<
     'overview' | 'permissions' | 'markup' | 'bookings' | 'performance'
   >('permissions')
@@ -294,30 +303,20 @@ export function SubAgentPermissionsPage({
     <div className="flex min-h-screen bg-[#F4F6FA] text-[#141C2E] antialiased">
       {/* Sidebar: Desktop */}
       <AgentPortalSidebar
+        mobileOpen={mobileMenuOpen}
+        onCloseMobile={() => setMobileMenuOpen(false)}
         currentActive="Sub-agents"
+        collapsed={sidebarCollapsed}
+        onToggleCollapse={() => setSidebarCollapsed((prev) => !prev)}
         className="hidden lg:flex"
       />
-
-      {/* Sidebar: Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 flex lg:hidden animate-in fade-in duration-200">
-          <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-          <AgentPortalSidebar
-            currentActive="Sub-agents"
-            className="relative z-10 w-72 h-full shadow-2xl"
-            onCloseMobile={() => setMobileMenuOpen(false)}
-          />
-        </div>
-      )}
 
       {/* Main Container */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Header */}
         <AgentPortalHeader
-          onToggleMobileMenu={() => setMobileMenuOpen(true)}
+          onToggleSidebar={handleToggleSidebar}
+          onToggleMobileMenu={handleToggleSidebar}
           breadcrumbs={[
             { label: 'Dashboard', active: false },
             { label: 'Sub-agents', active: false },

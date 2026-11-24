@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useForm } from '@tanstack/react-form'
+import { useForm, useStore } from '@tanstack/react-form'
 import {
   BarChart3,
   Calendar,
@@ -46,6 +46,8 @@ import {
   Plus,
   ArrowUpRight,
   ArrowDownLeft,
+  Lock,
+  Building,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
@@ -97,6 +99,9 @@ import type { AgentBookingItem } from './agent-bookings-data'
 import { cn } from 'cn'
 import { TopUpWalletDialog } from './top-up-wallet-dialog'
 import { WalletLedgerTransactionDetailsSheet } from './wallet-ledger-transaction-details-sheet'
+import { CommissionDetailsSheet } from './commission-details-sheet'
+import { INITIAL_COMMISSION_RECORDS } from './commission-tracking-data'
+import type { CommissionRecord } from './commission-tracking-data'
 import {
   Dialog,
   DialogContent,
@@ -149,10 +154,7 @@ export function AgentReportsPage({
   const filterForm = useForm({
     defaultValues: {
       periodPreset: 'custom' as
-        | 'this-month'
-        | 'previous-month'
-        | 'last-30-days'
-        | 'custom',
+        'this-month' | 'previous-month' | 'last-30-days' | 'custom',
       fromDate: '2026-10-01',
       toDate: '2026-11-16',
       serviceFilter: 'all',
@@ -171,14 +173,16 @@ export function AgentReportsPage({
       if (searchQuery.trim()) filtersUsed.push(`Search: "${searchQuery}"`)
 
       const filterText =
-        filtersUsed.length > 0 ? filtersUsed.join(', ') : 'No additional filters'
+        filtersUsed.length > 0
+          ? filtersUsed.join(', ')
+          : 'No additional filters'
       setAppliedInfo(
         `Applied: ${formatDateDisplay(value.fromDate)} – ${formatDateDisplay(value.toDate)} · ${filterText}`,
       )
     },
   })
 
-  const formValues = filterForm.useStore((state) => state.values)
+  const formValues = useStore(filterForm.store, (state) => state.values)
   const {
     periodPreset,
     fromDate,
@@ -198,6 +202,46 @@ export function AgentReportsPage({
   const [selectedBooking, setSelectedBooking] =
     React.useState<AgentBookingItem | null>(null)
   const [previewOpen, setPreviewOpen] = React.useState(false)
+
+  // Commission Details Sheet
+  const [commissionDetailsOpen, setCommissionDetailsOpen] =
+    React.useState(false)
+  const [selectedCommissionRecord, setSelectedCommissionRecord] =
+    React.useState<CommissionRecord | null>(null)
+  const [commissionSearchQuery, setCommissionSearchQuery] = React.useState('')
+  const [commissionStatusFilter, setCommissionStatusFilter] =
+    React.useState<string>('all')
+  const [commissionServiceFilter, setCommissionServiceFilter] =
+    React.useState<string>('all')
+
+  const handleOpenCommissionDetails = (record: CommissionRecord) => {
+    setSelectedCommissionRecord(record)
+    setCommissionDetailsOpen(true)
+  }
+
+  const filteredCommissions = React.useMemo(() => {
+    return INITIAL_COMMISSION_RECORDS.filter((rec: CommissionRecord) => {
+      if (commissionSearchQuery.trim()) {
+        const query = commissionSearchQuery.toLowerCase()
+        const matchesQuery =
+          rec.bookingId.toLowerCase().includes(query) ||
+          rec.customer.toLowerCase().includes(query) ||
+          rec.createdByName.toLowerCase().includes(query) ||
+          rec.service.toLowerCase().includes(query)
+        if (!matchesQuery) return false
+      }
+
+      if (commissionStatusFilter !== 'all') {
+        if (rec.commissionStatus !== commissionStatusFilter) return false
+      }
+
+      if (commissionServiceFilter !== 'all') {
+        if (rec.service !== commissionServiceFilter) return false
+      }
+
+      return true
+    })
+  }, [commissionSearchQuery, commissionStatusFilter, commissionServiceFilter])
 
   // Applied notification badge / confirmation
   const [appliedInfo, setAppliedInfo] = React.useState(
@@ -697,7 +741,9 @@ export function AgentReportsPage({
                           <SelectItem value="activity">Activity</SelectItem>
                           <SelectItem value="car rental">Car Rental</SelectItem>
                           <SelectItem value="esim">eSIM</SelectItem>
-                          <SelectItem value="bus / train">Bus / Train</SelectItem>
+                          <SelectItem value="bus / train">
+                            Bus / Train
+                          </SelectItem>
                           <SelectItem value="travel insurance">
                             Travel Insurance
                           </SelectItem>
@@ -1696,7 +1742,9 @@ export function AgentReportsPage({
 
                     <Select
                       value={commissionStatusFilter}
-                      onValueChange={setCommissionStatusFilter}
+                      onValueChange={(val) =>
+                        setCommissionStatusFilter(val || 'all')
+                      }
                     >
                       <SelectTrigger className="h-8 text-xs w-36 rounded-lg border-[#D0D5DD]">
                         <SelectValue placeholder="Status" />
@@ -1714,7 +1762,9 @@ export function AgentReportsPage({
 
                     <Select
                       value={commissionServiceFilter}
-                      onValueChange={setCommissionServiceFilter}
+                      onValueChange={(val) =>
+                        setCommissionServiceFilter(val || 'all')
+                      }
                     >
                       <SelectTrigger className="h-8 text-xs w-32 rounded-lg border-[#D0D5DD]">
                         <SelectValue placeholder="Service" />

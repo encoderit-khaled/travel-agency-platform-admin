@@ -458,7 +458,7 @@ export function RolesAccessPage({
                 {/* 2 Agent-side Role Cards (Figma #835:2428) */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Role Card 1: Agent Owner (Figma #835:2429) */}
-                  <div className="rounded-2xl border border-[#DCE8F6] bg-gradient-to-br from-[#F7FBFF] via-white to-white p-6 shadow-2xs flex flex-col justify-between space-y-6">
+                  <div className="rounded-2xl border border-[#DCE8F6] bg-linear-to-br from-[#F7FBFF] via-white to-white p-6 shadow-2xs flex flex-col justify-between space-y-6">
                     <div className="space-y-4">
                       {/* Header */}
                       <div className="flex items-center justify-between">

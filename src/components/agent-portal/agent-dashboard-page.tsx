@@ -108,26 +108,12 @@ export function AgentDashboardPage({
       <div className="flex flex-1 w-full min-h-screen">
         {/* Desktop Sidebar (Figma #660:5191) */}
         <AgentPortalSidebar
+          mobileOpen={mobileMenuOpen}
+          onCloseMobile={() => setMobileMenuOpen(false)}
           currentTab={activeNav}
           onSelectNav={setActiveNav}
           className="hidden lg:flex"
         />
-
-        {/* Mobile Sidebar Drawer */}
-        {mobileMenuOpen && (
-          <div className="fixed inset-0 z-50 lg:hidden flex">
-            <div
-              className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
-              onClick={() => setMobileMenuOpen(false)}
-            />
-            <AgentPortalSidebar
-              currentTab={activeNav}
-              onSelectNav={setActiveNav}
-              onCloseMobile={() => setMobileMenuOpen(false)}
-              className="relative z-10 w-72 h-full shadow-2xl"
-            />
-          </div>
-        )}
 
         {/* Main Content Area (Figma #660:5270) */}
         <div className="flex-1 flex flex-col min-w-0">
@@ -209,7 +195,7 @@ export function AgentDashboardPage({
             </div>
 
             {/* 2. Hero Quick Start Banner matching Figma #660:5298 */}
-            <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] text-white shadow-xl">
+            <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-linear-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] text-white shadow-xl">
               {/* Radial glow background & decorative accent rings */}
               <div
                 className="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(circle_at_100%_0%,rgba(10,118,204,0.45)_0%,transparent_60%)]"

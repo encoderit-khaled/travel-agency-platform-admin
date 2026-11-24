@@ -28,7 +28,7 @@ export function CarriedBusinessSummary({
   const city = data?.city || 'Dhaka'
 
   return (
-    <div className="w-full rounded-[16px] border border-[#DCE2EB] bg-gradient-to-b from-[#F8FAFD] to-white shadow-xs overflow-hidden">
+    <div className="w-full rounded-[16px] border border-[#DCE2EB] bg-linear-to-b from-[#F8FAFD] to-white shadow-xs overflow-hidden">
       {/* Top Header Row */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#E6EAF0] px-4.5 py-3 sm:px-5">
         <div className="flex items-center gap-2.5">

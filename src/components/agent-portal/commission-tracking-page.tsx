@@ -45,11 +45,8 @@ import {
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { CommissionDetailsSheet } from './commission-details-sheet'
-import {
-  INITIAL_COMMISSION_RECORDS
-  
-} from './commission-tracking-data'
-import type {CommissionRecord} from './commission-tracking-data';
+import { INITIAL_COMMISSION_RECORDS } from './commission-tracking-data'
+import type { CommissionRecord } from './commission-tracking-data'
 import { cn } from 'cn'
 
 interface CommissionTrackingPageProps {
@@ -814,7 +811,7 @@ export function CommissionTrackingPage({
                                 {record.amount}
                               </p>
                               {record.reversedReason && (
-                                <p className="text-[10px] text-[#5A6E85] max-w-[150px] leading-tight">
+                                <p className="text-[10px] text-[#5A6E85] max-w-37.5 leading-tight">
                                   {record.reversedReason}
                                 </p>
                               )}

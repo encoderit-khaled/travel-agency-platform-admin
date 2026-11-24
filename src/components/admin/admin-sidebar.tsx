@@ -10,7 +10,6 @@ import {
   Bell,
   Settings,
   ChevronDown,
-  Plane,
 } from 'lucide-react'
 import {
   Sidebar,
@@ -87,32 +86,39 @@ function AdminSidebarInner({
       collapsible={collapsible}
       className={cn(
         'shrink-0 text-white select-none border-r border-white/10 transition-all duration-200',
-        '*:data-[sidebar=sidebar]:bg-linear-to-b *:data-[sidebar=sidebar]:from-[#001A3D] *:data-[sidebar=sidebar]:via-[#012A5E] *:data-[sidebar=sidebar]:to-[#0F3F7D] *:data-[sidebar=sidebar]:text-white',
+        'bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0F3F7D] [&_[data-slot=sidebar-inner]]:bg-transparent',
         className,
       )}
     >
       {/* Brand Header */}
       <SidebarHeader className="p-4 border-b border-white/10 gap-2 group-data-[collapsible=icon]:h-17 group-data-[collapsible=icon]:p-0 group-data-[collapsible=icon]:flex group-data-[collapsible=icon]:items-center group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:gap-0 group-data-[collapsible=icon]:overflow-hidden">
-        <div className="bg-white rounded-xl px-3.5 py-2.5 flex items-center justify-between shadow-xs w-full group-data-[collapsible=icon]:bg-transparent group-data-[collapsible=icon]:p-0 group-data-[collapsible=icon]:shadow-none group-data-[collapsible=icon]:w-auto group-data-[collapsible=icon]:justify-center">
-          <div className="flex items-center gap-2.5 min-w-0 group-data-[collapsible=icon]:gap-0 group-data-[collapsible=icon]:justify-center">
-            <div
-              className="size-8 rounded-lg bg-[#012A5E] border border-white/15 flex items-center justify-center text-[#F1C134] shadow-xs shrink-0 transition-transform hover:scale-105"
-              title="AeroWing Admin"
-            >
-              <Plane className="size-4.5 -rotate-45" />
-            </div>
-            <div className="flex flex-col min-w-0 group-data-[collapsible=icon]:hidden">
-              <span className="font-extrabold text-[#012A5E] text-base leading-none tracking-tight">
-                Aero<span className="text-[#0267B8]">Wing</span>
-              </span>
-              <span className="text-[10px] text-[#4F5B70] font-medium leading-tight">
-                Travel Agency Platform
-              </span>
-            </div>
-          </div>
-          <span className="text-[10px] font-bold uppercase tracking-wider bg-[#F1C134]/20 text-[#854D0E] px-1.5 py-0.5 rounded shrink-0 group-data-[collapsible=icon]:hidden">
-            Admin
-          </span>
+        {/* Full Brand Logo Container */}
+        <div className="bg-white rounded-xl px-3.5 py-2.5 flex items-center justify-center shadow-xs w-full group-data-[collapsible=icon]:hidden">
+          <a
+            href="/admin"
+            className="flex items-center justify-center w-full transition-opacity hover:opacity-95"
+          >
+            <img
+              src="/images/aerowing-logo.png"
+              alt="AeroWing — Explore, Book, Travel"
+              className="h-9 w-auto max-w-full object-contain"
+            />
+          </a>
+        </div>
+
+        {/* Collapsed Icon Logo */}
+        <div className="hidden group-data-[collapsible=icon]:flex items-center justify-center">
+          <a
+            href="/admin"
+            className="size-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs transition-transform hover:scale-105"
+            title="AeroWing Admin"
+          >
+            <img
+              src="/images/aerowing-icon.png"
+              alt="AeroWing Admin"
+              className="size-7 object-contain"
+            />
+          </a>
         </div>
 
         <div className="px-1 group-data-[collapsible=icon]:hidden">

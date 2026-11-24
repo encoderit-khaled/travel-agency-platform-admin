@@ -56,7 +56,7 @@ export function ETicketPreviewDialog({
         </DialogHeader>
 
         {/* E-Ticket Preview Container */}
-        <div className="mt-4 relative rounded-2xl border border-[#DCE2EB] bg-gradient-to-br from-[#FAFBFD] via-[#FFFFFF] to-[#F5F8FC] p-6 sm:p-7 overflow-hidden shadow-xs">
+        <div className="mt-4 relative rounded-2xl border border-[#DCE2EB] bg-linear-to-br from-[#FAFBFD] via-[#FFFFFF] to-[#F5F8FC] p-6 sm:p-7 overflow-hidden shadow-xs">
           {/* Subtle Diagonal Watermark Pattern */}
           <div
             className="absolute inset-0 select-none pointer-events-none flex flex-col justify-around items-center opacity-[0.045] rotate-[-22deg] scale-125 z-0"

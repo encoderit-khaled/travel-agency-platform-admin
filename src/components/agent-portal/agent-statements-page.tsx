@@ -9,7 +9,7 @@ import {
   Search,
   RotateCw,
   Printer,
-  FileText,
+  X,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
@@ -77,12 +77,16 @@ export function AgentStatementsPage({
   const [exportFormat, setExportFormat] = React.useState<'csv' | 'pdf'>(
     isPDFNode || initialExportFormat === 'pdf' ? 'pdf' : 'csv',
   )
+  const [pdfPreviewMode, setPdfPreviewMode] = React.useState(isPDFNode)
 
   React.useEffect(() => {
     if (initialExportOpen || isCSVNode || isPDFNode) {
       setExportModalOpen(true)
       if (isPDFNode || initialExportFormat === 'pdf') {
         setExportFormat('pdf')
+        if (isPDFNode) {
+          setPdfPreviewMode(true)
+        }
       } else {
         setExportFormat('csv')
       }

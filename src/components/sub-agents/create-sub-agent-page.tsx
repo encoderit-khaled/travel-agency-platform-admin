@@ -1087,7 +1087,7 @@ export function CreateSubAgentPage() {
                   {/* Settlement */}
                   <div className="flex items-start justify-between py-1.5">
                     <dt className="text-[#4F5B70] font-medium">Settlement</dt>
-                    <dd className="font-medium text-[#4F5B70] text-right max-w-[150px] leading-snug">
+                    <dd className="font-medium text-[#4F5B70] text-right max-w-37.5 leading-snug">
                       Parent Agent wallet and available credit
                     </dd>
                   </div>

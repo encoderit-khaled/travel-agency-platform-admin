@@ -80,7 +80,7 @@ export function ViewBookingsDialog({
                 >
                   <div className="flex items-start gap-3">
                     <div className="size-9 rounded-lg bg-[#EAF4FD] text-[#0267B8] flex items-center justify-center shrink-0 mt-0.5">
-                      <Plane className="size-4.5 rotate-[-45deg]" />
+                      <Plane className="size-4.5 -rotate-45" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
