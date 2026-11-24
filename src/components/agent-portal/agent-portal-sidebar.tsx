@@ -200,7 +200,7 @@ export function AgentPortalSidebar({
     } else if (label === 'Account / Settings') {
       window.location.href = '/roles-access'
     } else if (label === 'Dashboard') {
-      window.location.href = '/agent'
+      window.location.href = '/'
     }
   }
 
@@ -232,7 +232,7 @@ export function AgentPortalSidebar({
           {isCollapsed && !isMobileOpen ? (
             <div className="h-17 border-b border-white/10 flex items-center justify-center shrink-0">
               <a
-                href="/agent"
+                href="/"
                 className="size-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs cursor-pointer hover:scale-105 transition-transform"
                 title="AeroWing - Travel Partner Program"
                 onClick={onToggleCollapse}
@@ -248,7 +248,7 @@ export function AgentPortalSidebar({
             <div className="p-4 border-b border-white/10 flex flex-col gap-2 shrink-0">
               <div className="bg-white rounded-xl px-3.5 py-2.5 flex items-center justify-between shadow-xs">
                 <a
-                  href="/agent"
+                  href="/"
                   className="flex items-center justify-center flex-1 transition-opacity hover:opacity-95"
                 >
                   <img

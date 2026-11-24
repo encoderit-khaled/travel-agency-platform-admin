@@ -578,11 +578,13 @@ function RootComponent() {
     },
     {
       title: 'Agent Dashboard (M2)',
-      path: '/agent-dashboard',
+      path: '/',
       tag: 'Figma #660:5189',
       icon: LayoutDashboard,
       active:
-        (pathname === '/agent-dashboard' || pathname === '/agent') &&
+        (pathname === '/' ||
+          pathname === '/agent-dashboard' ||
+          pathname === '/agent') &&
         !(search as any).menu,
     },
     {
@@ -610,7 +612,6 @@ function RootComponent() {
       icon: FileCheck2,
       active:
         pathname === '/review-submit' ||
-        (pathname === '/' && currentStep === 3) ||
         (pathname === '/register' && currentStep === 3),
     },
     {
@@ -618,16 +619,14 @@ function RootComponent() {
       path: '/register?step=1',
       tag: 'Step 01',
       icon: Layers,
-      active:
-        (pathname === '/' || pathname === '/register') && currentStep === 1,
+      active: pathname === '/register' && currentStep === 1,
     },
     {
       title: 'Step 2: Contact & Documents',
       path: '/register?step=2',
       tag: 'Step 02',
       icon: Layers,
-      active:
-        (pathname === '/' || pathname === '/register') && currentStep === 2,
+      active: pathname === '/register' && currentStep === 2,
     },
     {
       title: 'Admin: All Applications',
