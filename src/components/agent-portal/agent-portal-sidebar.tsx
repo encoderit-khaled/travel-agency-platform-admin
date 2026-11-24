@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useNavigate } from '@tanstack/react-router'
 import {
   LayoutDashboard,
   Search,
@@ -178,29 +179,30 @@ export function AgentPortalSidebar({
     { label: 'Account / Settings', icon: Settings },
   ]
 
+  const navigate = useNavigate()
+
   const handleNavClick = (label: string) => {
     onSelectNav?.(label)
     closeMobile()
-    if (label === 'Sub-agents') {
-      window.location.href = '/sub-agents'
-    } else if (label === 'Pricing & Markup') {
-      window.location.href = '/pricing-markup'
-    } else if (label === 'Bookings') {
-      window.location.href = '/bookings'
-    } else if (label === 'Wallet') {
-      window.location.href = '/wallet'
-    } else if (label === 'Statements') {
-      window.location.href = '/statements'
-    } else if (label === 'Credit') {
-      window.location.href = '/credit'
-    } else if (label === 'Commissions') {
-      window.location.href = '/commissions'
-    } else if (label === 'Reports') {
-      window.location.href = '/reports'
-    } else if (label === 'Account / Settings') {
-      window.location.href = '/roles-access'
-    } else if (label === 'Dashboard') {
-      window.location.href = '/'
+    const pathMap: Record<string, string> = {
+      'Sub-agents': '/sub-agents',
+      'Pricing & Markup': '/pricing-markup',
+      Bookings: '/bookings',
+      Wallet: '/wallet',
+      Statements: '/statements',
+      Credit: '/credit',
+      Commissions: '/commissions',
+      Reports: '/reports',
+      'Account / Settings': '/roles-access',
+      Dashboard: '/',
+    }
+    const target = pathMap[label]
+    if (target) {
+      try {
+        navigate({ to: target as any })
+      } catch {
+        window.location.href = target
+      }
     }
   }
 
@@ -249,6 +251,10 @@ export function AgentPortalSidebar({
               <div className="bg-white rounded-xl px-3.5 py-2.5 flex items-center justify-between shadow-xs">
                 <a
                   href="/"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    navigate({ to: '/' })
+                  }}
                   className="flex items-center justify-center flex-1 transition-opacity hover:opacity-95"
                 >
                   <img
