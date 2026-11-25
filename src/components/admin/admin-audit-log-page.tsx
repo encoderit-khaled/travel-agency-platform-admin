@@ -21,14 +21,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   INITIAL_AUDIT_LOGS,
   AUDIT_AREAS,
@@ -103,6 +97,109 @@ export function AdminAuditLogPage({
     searchQuery.trim() !== '' ||
     selectedArea !== 'all' ||
     selectedAdmin !== 'all'
+
+  const columns = React.useMemo<ColumnDef<AuditLogItem>[]>(
+    () => [
+      {
+        id: 'dateTime',
+        header: 'Date & Time',
+        meta: {
+          headerClassName:
+            'w-[170px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+          cellClassName: 'px-4.5 py-4 align-middle',
+        },
+        cell: ({ row }) => (
+          <div className="flex flex-col">
+            <time className="text-[14px] font-extrabold text-[#141B28] leading-tight">
+              {row.original.date}
+            </time>
+            <span className="text-[12.5px] font-bold text-[#4F5B70] leading-tight mt-0.5">
+              {row.original.time}
+            </span>
+          </div>
+        ),
+      },
+      {
+        id: 'admin',
+        header: 'Admin',
+        meta: {
+          headerClassName:
+            'w-[280px] lg:w-[312px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+          cellClassName: 'px-4.5 py-4 align-middle',
+        },
+        cell: ({ row }) => {
+          const item = row.original
+          return (
+            <div className="flex items-center gap-3">
+              <span
+                className={cn(
+                  'size-8 rounded-[10px] flex items-center justify-center text-[12px] font-extrabold shrink-0 shadow-2xs',
+                  item.adminAvatarBg,
+                  item.adminAvatarColor,
+                )}
+              >
+                {item.adminInitials}
+              </span>
+              <span className="text-[14px] font-extrabold text-[#141B28]">
+                {item.adminName}
+              </span>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName:
+            'px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+          cellClassName: 'px-4.5 py-4 align-middle',
+        },
+        cell: ({ row }) => {
+          const item = row.original
+          return (
+            <div className="flex items-center gap-2.5">
+              <span className="size-8.5 rounded-[10px] bg-[#F1F5FA] flex items-center justify-center shrink-0 border border-[#DCE2EB]/50">
+                {getActionIcon(item.action)}
+              </span>
+              <b className="text-[14px] font-extrabold text-[#141B28] font-normal">
+                {item.action}
+              </b>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'area',
+        header: 'Area',
+        meta: {
+          headerClassName:
+            'w-[260px] lg:w-[318px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+          cellClassName: 'px-4.5 py-4 align-middle',
+        },
+        cell: ({ row }) => (
+          <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#EEF3FA] text-[12px] font-bold text-[#012A5E]">
+            {row.original.area}
+          </span>
+        ),
+      },
+      {
+        id: 'context',
+        header: 'Context',
+        meta: {
+          headerClassName:
+            'w-[280px] lg:w-[346px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+          cellClassName: 'px-4.5 py-4 align-middle',
+        },
+        cell: ({ row }) => (
+          <span className="text-[14px] font-bold text-[#141B28]">
+            {row.original.context}
+          </span>
+        ),
+      },
+    ],
+    [],
+  )
 
   return (
     <SidebarProvider defaultOpen>
@@ -246,117 +343,33 @@ export function AdminAuditLogPage({
 
                 {/* Audit Log Table */}
                 <div className="overflow-x-auto">
-                  <Table className="w-full min-w-[900px] border-collapse">
-                    <TableHeader>
-                      <TableRow className="border-b border-[#EEF1F5] hover:bg-transparent bg-[#F8FAFC]">
-                        <TableHead className="w-[170px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto">
-                          Date & Time
-                        </TableHead>
-                        <TableHead className="w-[280px] lg:w-[312px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto">
-                          Admin
-                        </TableHead>
-                        <TableHead className="px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto">
-                          Action
-                        </TableHead>
-                        <TableHead className="w-[260px] lg:w-[318px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto">
-                          Area
-                        </TableHead>
-                        <TableHead className="w-[280px] lg:w-[346px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto">
-                          Context
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {filteredLogs.length > 0 ? (
-                        filteredLogs.map((item) => (
-                          <TableRow
-                            key={item.id}
-                            className="border-b border-[#EEF1F5] hover:bg-[#F8FAFC]/80 transition-colors"
+                  <DataTable
+                    data={filteredLogs}
+                    columns={columns}
+                    getRowId={(item) => item.id}
+                    tableClassName="w-full min-w-[900px] border-collapse"
+                    headerRowClassName="border-b border-[#EEF1F5] hover:bg-transparent bg-[#F8FAFC]"
+                    rowClassName="border-b border-[#EEF1F5] hover:bg-[#F8FAFC]/80 transition-colors"
+                    emptyCellClassName="py-12 text-center text-[#4F5B70]"
+                    empty={
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <p className="text-sm font-semibold">
+                          No audit events found matching your filters.
+                        </p>
+                        {isFiltered && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={handleResetFilters}
+                            className="gap-2 text-xs font-semibold rounded-xl border-[#DCE2EB]"
                           >
-                            {/* Date & Time */}
-                            <TableCell className="px-4.5 py-4 align-middle">
-                              <div className="flex flex-col">
-                                <time className="text-[14px] font-extrabold text-[#141B28] leading-tight">
-                                  {item.date}
-                                </time>
-                                <span className="text-[12.5px] font-bold text-[#4F5B70] leading-tight mt-0.5">
-                                  {item.time}
-                                </span>
-                              </div>
-                            </TableCell>
-
-                            {/* Admin */}
-                            <TableCell className="px-4.5 py-4 align-middle">
-                              <div className="flex items-center gap-3">
-                                <span
-                                  className={cn(
-                                    'size-8 rounded-[10px] flex items-center justify-center text-[12px] font-extrabold shrink-0 shadow-2xs',
-                                    item.adminAvatarBg,
-                                    item.adminAvatarColor,
-                                  )}
-                                >
-                                  {item.adminInitials}
-                                </span>
-                                <span className="text-[14px] font-extrabold text-[#141B28]">
-                                  {item.adminName}
-                                </span>
-                              </div>
-                            </TableCell>
-
-                            {/* Action */}
-                            <TableCell className="px-4.5 py-4 align-middle">
-                              <div className="flex items-center gap-2.5">
-                                <span className="size-8.5 rounded-[10px] bg-[#F1F5FA] flex items-center justify-center shrink-0 border border-[#DCE2EB]/50">
-                                  {getActionIcon(item.action)}
-                                </span>
-                                <b className="text-[14px] font-extrabold text-[#141B28] font-normal">
-                                  {item.action}
-                                </b>
-                              </div>
-                            </TableCell>
-
-                            {/* Area */}
-                            <TableCell className="px-4.5 py-4 align-middle">
-                              <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#EEF3FA] text-[12px] font-bold text-[#012A5E]">
-                                {item.area}
-                              </span>
-                            </TableCell>
-
-                            {/* Context */}
-                            <TableCell className="px-4.5 py-4 align-middle">
-                              <span className="text-[14px] font-bold text-[#141B28]">
-                                {item.context}
-                              </span>
-                            </TableCell>
-                          </TableRow>
-                        ))
-                      ) : (
-                        <TableRow>
-                          <TableCell
-                            colSpan={5}
-                            className="py-12 text-center text-[#4F5B70]"
-                          >
-                            <div className="flex flex-col items-center justify-center gap-3">
-                              <p className="text-sm font-semibold">
-                                No audit events found matching your filters.
-                              </p>
-                              {isFiltered && (
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  onClick={handleResetFilters}
-                                  className="gap-2 text-xs font-semibold rounded-xl border-[#DCE2EB]"
-                                >
-                                  <RotateCcw className="size-3.5" />
-                                  Reset filters
-                                </Button>
-                              )}
-                            </div>
-                          </TableCell>
-                        </TableRow>
-                      )}
-                    </TableBody>
-                  </Table>
+                            <RotateCcw className="size-3.5" />
+                            Reset filters
+                          </Button>
+                        )}
+                      </div>
+                    }
+                  />
                 </div>
               </section>
             </div>

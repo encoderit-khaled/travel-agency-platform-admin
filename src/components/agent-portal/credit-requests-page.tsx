@@ -24,16 +24,13 @@ import {
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { Badge } from '#/components/ui/badge'
 import { Textarea } from '#/components/ui/textarea'
 import { Label } from '#/components/ui/label'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '#/components/ui/select'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '#/components/ui/select'
+import { DatePicker } from '#/components/ui/date-picker'
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { CreditRequestDetailsSheet } from './credit-request-details-sheet'
@@ -176,9 +173,27 @@ export function CreditRequestsPage({
         return false
       }
 
+      // Date Range filter
+      if (fromDate) {
+        const fromTs = new Date(fromDate).getTime()
+        const reqTs = new Date(req.submittedDate).getTime()
+        if (!isNaN(fromTs) && !isNaN(reqTs) && reqTs < fromTs) {
+          return false
+        }
+      }
+      if (toDate) {
+        const toDateObj = new Date(toDate)
+        toDateObj.setHours(23, 59, 59, 999)
+        const toTs = toDateObj.getTime()
+        const reqTs = new Date(req.submittedDate).getTime()
+        if (!isNaN(toTs) && !isNaN(reqTs) && reqTs > toTs) {
+          return false
+        }
+      }
+
       return true
     })
-  }, [requests, searchQuery, typeFilter, statusFilter])
+  }, [requests, searchQuery, typeFilter, statusFilter, fromDate, toDate])
 
   // Open details for a request
   const handleOpenDetails = (req: CreditRequest) => {
@@ -217,6 +232,177 @@ export function CreditRequestsPage({
     setSelectedRequestId(created.id)
     setIsSuccessDialogOpen(true)
   }
+
+  const columns = React.useMemo<ColumnDef<CreditRequest>[]>(
+    () => [
+      {
+        accessorKey: 'submittedDate',
+        header: 'Submitted',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <>
+              <span className="font-bold text-[#001A3D] block">
+                {req.submittedDate}
+              </span>
+              <span className="text-[11px] text-[#5A6E85] block">
+                {req.submittedTime}
+              </span>
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        accessorKey: 'requestType',
+        header: 'Request Type',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="flex items-start gap-2.5">
+              <div
+                className={cn(
+                  'size-6 rounded-md flex items-center justify-center shrink-0 mt-0.5',
+                  req.requestType === 'Credit-limit increase'
+                    ? 'bg-[#E8F2FC] text-[#0267B8]'
+                    : 'bg-[#EBFDF2] text-[#16A34A]',
+                )}
+              >
+                {req.requestType === 'Credit-limit increase' ? (
+                  <TrendingUp className="size-3.5" />
+                ) : (
+                  <Plus className="size-3.5 stroke-[2.5]" />
+                )}
+              </div>
+              <div className="space-y-0.5">
+                <span className="font-bold text-[#001A3D] block">
+                  {req.requestType}
+                </span>
+                <span className="text-[11px] text-[#5A6E85] block">
+                  {req.typeDescription}
+                </span>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        accessorKey: 'requestedAmount',
+        header: 'Requested Amount',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <>
+              <span className="font-bold text-[#001A3D] block">
+                {req.requestedAmount}
+              </span>
+              {req.adjustedAmount && (
+                <span className="text-[11px] text-[#B45309] font-medium block">
+                  {req.adjustedAmount}
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'Status',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <>
+              {req.status === 'Pending' && (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#E8F2FC] text-[#0267B8] border border-[#B8D8F8]">
+                  <Clock className="size-3" />
+                  Pending
+                </span>
+              )}
+              {req.status === 'Approved' && (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#EBFDF2] text-[#16A34A] border border-[#A7F3D0]">
+                  <CheckCircle2 className="size-3" />
+                  Approved
+                </span>
+              )}
+              {req.status === 'Adjusted' && (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
+                  <SlidersHorizontal className="size-3" />
+                  Adjusted
+                </span>
+              )}
+              {req.status === 'Rejected' && (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FEF2F2] text-[#DC2626] border border-[#FECACA]">
+                  <XCircle className="size-3" />
+                  Rejected
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        accessorKey: 'decision',
+        header: 'Decision',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <>
+              <span className="font-semibold text-[#001A3D] block">
+                {req.decision}
+              </span>
+              {req.decisionDate && (
+                <span className="text-[11px] text-[#5A6E85] block">
+                  {req.decisionDate}
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => handleOpenDetails(req)}
+              className="text-xs font-semibold text-[#001A3D] border-[#DCE2EB] bg-white hover:bg-[#F1F5F9] cursor-pointer"
+            >
+              View Details
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 sm:px-6 text-right',
+          cellClassName: 'py-3.5 px-4 sm:px-6 align-top text-right',
+        },
+      },
+    ],
+    [handleOpenDetails],
+  )
 
   return (
     <div className="min-h-screen flex bg-[#F4F6FA] text-[#001A3D]">
@@ -451,99 +637,107 @@ export function CreditRequestsPage({
                 </div>
 
                 {/* Filters Toolbar */}
-                <div className="p-4 sm:p-5 bg-[#F8FAFC] border-b border-[#EDF2F7] space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3">
+                <div className="p-4 sm:p-5 bg-[#F8FAFC] border-b border-[#EDF2F7]">
+                  <div className="flex flex-col xl:flex-row gap-3">
                     {/* Search Input */}
-                    <div className="lg:col-span-5 relative">
-                      <Search className="size-4 text-[#5A6E85] absolute left-3 top-1/2 -translate-y-1/2" />
-                      <Input
-                        type="text"
-                        placeholder="Search requests"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="pl-9 bg-white border-[#DCE2EB] text-xs h-9.5 rounded-lg focus-visible:ring-1 focus-visible:ring-[#0267B8]"
-                      />
+                    <div className="flex-1 min-w-55 space-y-1.5">
+                      <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
+                        Search
+                      </span>
+                      <div className="relative">
+                        <Search className="size-4 text-[#5A6E85] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        <Input
+                          type="text"
+                          placeholder="Search requests"
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          className="pl-9.5 bg-white border-[#DCE2EB] text-xs sm:text-sm h-10! rounded-xl focus-visible:ring-1 focus-visible:ring-[#0267B8]"
+                        />
+                      </div>
                     </div>
 
-                    {/* Request Type filter */}
-                    <div className="lg:col-span-2 space-y-1">
-                      <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
-                        Request Type
-                      </span>
-                      <Select
-                        value={typeFilter}
-                        onValueChange={(val) => setTypeFilter(val)}
-                      >
-                        <SelectTrigger className="w-full bg-white border-[#DCE2EB] text-xs h-9.5 rounded-lg">
-                          <SelectValue placeholder="All Types" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="All Types">All Types</SelectItem>
-                          <SelectItem value="Credit-limit increase">
-                            Credit-limit increase
-                          </SelectItem>
-                          <SelectItem value="Credit top-up">
-                            Credit top-up
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                    {/* Filter controls row */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+                      {/* Request Type filter */}
+                      <div className="space-y-1.5 min-w-32.5">
+                        <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
+                          Request Type
+                        </span>
+                        <Select
+                          value={typeFilter}
+                          onValueChange={(val) => setTypeFilter(val)}
+                        >
+                          <SelectTrigger className="w-full bg-white border-[#DCE2EB] text-xs sm:text-sm h-10! rounded-xl">
+                            <SelectValue placeholder="All Types" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="All Types">All Types</SelectItem>
+                            <SelectItem value="Credit-limit increase">
+                              Credit-limit increase
+                            </SelectItem>
+                            <SelectItem value="Credit top-up">
+                              Credit top-up
+                            </SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
 
-                    {/* Status filter */}
-                    <div className="lg:col-span-2 space-y-1">
-                      <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
-                        Status
-                      </span>
-                      <Select
-                        value={statusFilter}
-                        onValueChange={(val) => setStatusFilter(val)}
-                      >
-                        <SelectTrigger className="w-full bg-white border-[#DCE2EB] text-xs h-9.5 rounded-lg">
-                          <SelectValue placeholder="All Statuses" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="All Statuses">
-                            All Statuses
-                          </SelectItem>
-                          <SelectItem value="Pending">Pending</SelectItem>
-                          <SelectItem value="Approved">Approved</SelectItem>
-                          <SelectItem value="Adjusted">Adjusted</SelectItem>
-                          <SelectItem value="Rejected">Rejected</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                      {/* Status filter */}
+                      <div className="space-y-1.5 min-w-30">
+                        <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
+                          Status
+                        </span>
+                        <Select
+                          value={statusFilter}
+                          onValueChange={(val) => setStatusFilter(val)}
+                        >
+                          <SelectTrigger className="w-full bg-white border-[#DCE2EB] text-xs sm:text-sm h-10! rounded-xl">
+                            <SelectValue placeholder="All Statuses" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="All Statuses">
+                              All Statuses
+                            </SelectItem>
+                            <SelectItem value="Pending">Pending</SelectItem>
+                            <SelectItem value="Approved">Approved</SelectItem>
+                            <SelectItem value="Adjusted">Adjusted</SelectItem>
+                            <SelectItem value="Rejected">Rejected</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
 
-                    {/* From Date */}
-                    <div className="lg:col-span-1.5 space-y-1">
-                      <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
-                        From
-                      </span>
-                      <Input
-                        type="text"
-                        placeholder="dd-mm-yyyy"
-                        value={fromDate}
-                        onChange={(e) => setFromDate(e.target.value)}
-                        className="bg-white border-[#DCE2EB] text-xs h-9.5 rounded-lg"
-                      />
-                    </div>
+                      {/* From Date */}
+                      <div className="space-y-1.5 min-w-27.5">
+                        <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
+                          From
+                        </span>
+                        <DatePicker
+                          value={fromDate}
+                          onChange={setFromDate}
+                          placeholder="dd-mm-yy"
+                          className="h-10! rounded-xl bg-white border-[#DCE2EB] text-xs sm:text-sm"
+                          clearable
+                        />
+                      </div>
 
-                    {/* To Date */}
-                    <div className="lg:col-span-1.5 space-y-1">
-                      <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
-                        To
-                      </span>
-                      <Input
-                        type="text"
-                        placeholder="dd-mm-yyyy"
-                        value={toDate}
-                        onChange={(e) => setToDate(e.target.value)}
-                        className="bg-white border-[#DCE2EB] text-xs h-9.5 rounded-lg"
-                      />
+                      {/* To Date */}
+                      <div className="space-y-1.5 min-w-27.5">
+                        <span className="text-[10px] font-bold text-[#5A6E85] uppercase tracking-wider block">
+                          To
+                        </span>
+                        <DatePicker
+                          value={toDate}
+                          onChange={setToDate}
+                          placeholder="dd-mm-yy"
+                          className="h-10! rounded-xl bg-white border-[#DCE2EB] text-xs sm:text-sm"
+                          clearable
+                        />
+                      </div>
                     </div>
                   </div>
 
                   {/* Showing count */}
-                  <div className="text-xs text-[#5A6E85] pt-1 font-medium">
+                  <div className="text-xs text-[#5A6E85] pt-3 font-medium">
                     Showing{' '}
                     <span className="font-bold text-[#001A3D]">
                       {filteredRequests.length}
@@ -554,152 +748,35 @@ export function CreditRequestsPage({
 
                 {/* Table of Requests */}
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="border-b border-[#EDF2F7] bg-[#F8FAFC]/50 text-[11px] font-bold text-[#5A6E85] uppercase tracking-wider">
-                        <th className="py-3 px-4 sm:px-6">Submitted</th>
-                        <th className="py-3 px-4 sm:px-6">Request Type</th>
-                        <th className="py-3 px-4 sm:px-6">Requested Amount</th>
-                        <th className="py-3 px-4 sm:px-6">Status</th>
-                        <th className="py-3 px-4 sm:px-6">Decision</th>
-                        <th className="py-3 px-4 sm:px-6 text-right">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#EDF2F7] text-xs">
-                      {filteredRequests.length === 0 ? (
-                        <tr>
-                          <td
-                            colSpan={6}
-                            className="py-12 text-center text-[#5A6E85]"
-                          >
-                            <FileText className="size-8 mx-auto mb-2 text-[#94A3B8]" />
-                            <p className="font-semibold text-sm text-[#001A3D]">
-                              No credit requests found
-                            </p>
-                            <p className="text-xs text-[#64748B] mt-1">
-                              Try clearing filters or search criteria.
-                            </p>
-                          </td>
-                        </tr>
-                      ) : (
-                        filteredRequests.map((req) => (
-                          <tr
-                            key={req.id}
-                            className={cn(
-                              'hover:bg-[#F8FAFC] transition-colors',
-                              selectedRequestId === req.id &&
-                                isDetailsOpen &&
-                                'bg-[#F0F7FF]',
-                            )}
-                          >
-                            {/* Submitted */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top">
-                              <span className="font-bold text-[#001A3D] block">
-                                {req.submittedDate}
-                              </span>
-                              <span className="text-[11px] text-[#5A6E85] block">
-                                {req.submittedTime}
-                              </span>
-                            </td>
-
-                            {/* Request Type */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top">
-                              <div className="flex items-start gap-2.5">
-                                <div
-                                  className={cn(
-                                    'size-6 rounded-md flex items-center justify-center shrink-0 mt-0.5',
-                                    req.requestType === 'Credit-limit increase'
-                                      ? 'bg-[#E8F2FC] text-[#0267B8]'
-                                      : 'bg-[#EBFDF2] text-[#16A34A]',
-                                  )}
-                                >
-                                  {req.requestType ===
-                                  'Credit-limit increase' ? (
-                                    <TrendingUp className="size-3.5" />
-                                  ) : (
-                                    <Plus className="size-3.5 stroke-[2.5]" />
-                                  )}
-                                </div>
-                                <div className="space-y-0.5">
-                                  <span className="font-bold text-[#001A3D] block">
-                                    {req.requestType}
-                                  </span>
-                                  <span className="text-[11px] text-[#5A6E85] block">
-                                    {req.typeDescription}
-                                  </span>
-                                </div>
-                              </div>
-                            </td>
-
-                            {/* Requested Amount */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top">
-                              <span className="font-bold text-[#001A3D] block">
-                                {req.requestedAmount}
-                              </span>
-                              {req.adjustedAmount && (
-                                <span className="text-[11px] text-[#B45309] font-medium block">
-                                  {req.adjustedAmount}
-                                </span>
-                              )}
-                            </td>
-
-                            {/* Status Badge */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top">
-                              {req.status === 'Pending' && (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#E8F2FC] text-[#0267B8] border border-[#B8D8F8]">
-                                  <Clock className="size-3" />
-                                  Pending
-                                </span>
-                              )}
-                              {req.status === 'Approved' && (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#EBFDF2] text-[#16A34A] border border-[#A7F3D0]">
-                                  <CheckCircle2 className="size-3" />
-                                  Approved
-                                </span>
-                              )}
-                              {req.status === 'Adjusted' && (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
-                                  <SlidersHorizontal className="size-3" />
-                                  Adjusted
-                                </span>
-                              )}
-                              {req.status === 'Rejected' && (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FEF2F2] text-[#DC2626] border border-[#FECACA]">
-                                  <XCircle className="size-3" />
-                                  Rejected
-                                </span>
-                              )}
-                            </td>
-
-                            {/* Decision */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top">
-                              <span className="font-semibold text-[#001A3D] block">
-                                {req.decision}
-                              </span>
-                              {req.decisionDate && (
-                                <span className="text-[11px] text-[#5A6E85] block">
-                                  {req.decisionDate}
-                                </span>
-                              )}
-                            </td>
-
-                            {/* Action Button */}
-                            <td className="py-3.5 px-4 sm:px-6 align-top text-right">
-                              <Button
-                                type="button"
-                                variant="outline"
-                                size="sm"
-                                onClick={() => handleOpenDetails(req)}
-                                className="text-xs font-semibold text-[#001A3D] border-[#DCE2EB] bg-white hover:bg-[#F1F5F9] cursor-pointer"
-                              >
-                                View Details
-                              </Button>
-                            </td>
-                          </tr>
-                        ))
-                      )}
-                    </tbody>
-                  </table>
+                  <DataTable
+                    data={filteredRequests}
+                    columns={columns}
+                    getRowId={(row) => row.id}
+                    tableClassName="w-full text-left border-collapse"
+                    headerRowClassName="border-b border-[#EDF2F7] bg-[#F8FAFC]/50 text-[11px] font-bold text-[#5A6E85] uppercase tracking-wider hover:bg-[#F8FAFC]/50"
+                    headClassName="h-auto"
+                    bodyClassName="divide-y divide-[#EDF2F7] text-xs"
+                    rowClassName={(row) =>
+                      cn(
+                        'hover:bg-[#F8FAFC] transition-colors',
+                        selectedRequestId === row.original.id &&
+                          isDetailsOpen &&
+                          'bg-[#F0F7FF]',
+                      )
+                    }
+                    emptyCellClassName="py-12 text-center text-[#5A6E85]"
+                    empty={
+                      <>
+                        <FileText className="size-8 mx-auto mb-2 text-[#94A3B8]" />
+                        <p className="font-semibold text-sm text-[#001A3D]">
+                          No credit requests found
+                        </p>
+                        <p className="text-xs text-[#64748B] mt-1">
+                          Try clearing filters or search criteria.
+                        </p>
+                      </>
+                    }
+                  />
                 </div>
 
                 {/* Table Footer */}

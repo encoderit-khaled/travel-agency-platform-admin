@@ -10,7 +10,7 @@ import {
 } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -97,7 +97,7 @@ export function ApproveApplicationDialog({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogPopup className="max-w-xl p-6 sm:p-7">
+      <DialogContent className="max-w-xl p-6 sm:p-7">
         <DialogHeader className="gap-2">
           <div className="flex items-center gap-3">
             <div className="flex size-11 items-center justify-center rounded-xl bg-[#E8F5E9] text-[#2E7D32] shadow-2xs">
@@ -297,7 +297,7 @@ export function ApproveApplicationDialog({
             <span>{isSubmitting ? 'Approving...' : 'Confirm Approval'}</span>
           </Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

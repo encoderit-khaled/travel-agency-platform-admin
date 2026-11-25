@@ -24,7 +24,7 @@ function DialogBackdrop({
   )
 }
 
-function DialogPopup({
+function DialogContent({
   className,
   children,
   ...props
@@ -99,7 +99,7 @@ function DialogDescription({
   )
 }
 
-const DialogContent = DialogPopup
+const DialogPopup = DialogContent
 
 export {
   Dialog,
@@ -107,8 +107,8 @@ export {
   DialogPortal,
   DialogClose,
   DialogBackdrop,
-  DialogPopup,
   DialogContent,
+  DialogPopup,
   DialogHeader,
   DialogFooter,
   DialogTitle,

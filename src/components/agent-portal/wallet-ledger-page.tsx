@@ -34,14 +34,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { TopUpWalletDialog } from './top-up-wallet-dialog'
@@ -88,6 +82,7 @@ export function WalletLedgerPage({
 
   // Modals state
   const [exportOpen, setExportOpen] = React.useState(Boolean(isExportNode))
+  const [topUpOpen, setTopUpOpen] = React.useState(false)
 
   const activeTxId =
     initialSelectedTransactionId || initialTransactionId || 'tx-01'
@@ -247,6 +242,194 @@ export function WalletLedgerPage({
         )
     }
   }
+
+  const columns = React.useMemo<ColumnDef<WalletTransaction, unknown>[]>(() => {
+    const clickable = (tx: WalletTransaction, node: React.ReactNode) => (
+      <div className="contents" onClick={() => handleOpenTransaction(tx)}>
+        {node}
+      </div>
+    )
+
+    return [
+      {
+        accessorKey: 'dateTime',
+        header: 'Date & Time',
+        cell: ({ row }) => {
+          const tx = row.original
+          return clickable(
+            tx,
+            <div className="flex flex-col">
+              <span className="font-semibold text-xs text-[#001A3D]">
+                {tx.dateTime}
+              </span>
+              <span className="text-[11px] font-bold text-[#718096]">
+                {tx.time}
+              </span>
+            </div>,
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[130px]',
+          cellClassName: 'py-4 px-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'type',
+        header: 'Type',
+        cell: ({ row }) => {
+          const tx = row.original
+          return clickable(
+            tx,
+            <div className="flex items-center gap-2.5">
+              {getTypeIcon(tx.type)}
+              <span className="font-bold text-xs text-[#001A3D]">{tx.type}</span>
+            </div>,
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[200px]',
+          cellClassName: 'py-4 px-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'description',
+        header: 'Description',
+        cell: ({ row }) => {
+          const tx = row.original
+          return clickable(
+            tx,
+            <div className="flex flex-col">
+              <span className="font-semibold text-xs text-[#001A3D]">
+                {tx.description}
+              </span>
+              {tx.subtitle && (
+                <span className="text-[11px] text-[#718096]">{tx.subtitle}</span>
+              )}
+            </div>,
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[240px]',
+          cellClassName: 'py-4 px-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'reference',
+        header: 'Reference',
+        cell: ({ row }) => {
+          const tx = row.original
+          return clickable(
+            tx,
+            tx.reference !== '—' ? (
+              <span className="font-bold text-xs text-[#0267B8]">
+                {tx.reference}
+              </span>
+            ) : (
+              <span className="text-xs text-[#718096] font-medium">—</span>
+            ),
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[140px]',
+          cellClassName: 'py-4 px-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'direction',
+        header: 'Direction',
+        cell: ({ row }) => {
+          const tx = row.original
+          const isDebit = tx.direction === 'Debit'
+          return clickable(
+            tx,
+            isDebit ? (
+              <span className="inline-flex items-center gap-1.5 text-[#DC2626] font-bold text-xs bg-red-50 border border-red-100 px-2.5 py-1 rounded-full">
+                <MinusCircle className="size-3 text-[#DC2626]" />
+                Debit
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1.5 text-[#059669] font-bold text-xs bg-emerald-50 border border-emerald-100 px-2.5 py-1 rounded-full">
+                <PlusCircle className="size-3 text-[#059669]" />
+                Credit
+              </span>
+            ),
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[120px]',
+          cellClassName: 'py-4 px-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'amount',
+        header: 'Amount',
+        cell: ({ row }) => {
+          const tx = row.original
+          const isDebit = tx.direction === 'Debit'
+          return clickable(
+            tx,
+            <span
+              className={`font-bold text-xs ${
+                isDebit ? 'text-[#DC2626]' : 'text-[#059669]'
+              }`}
+            >
+              {tx.amount}
+            </span>,
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]',
+          cellClassName: 'py-4 px-4 align-middle text-right',
+        },
+      },
+      {
+        accessorKey: 'runningBalance',
+        header: 'Running Balance',
+        cell: ({ row }) =>
+          clickable(row.original, row.original.runningBalance),
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[160px]',
+          cellClassName:
+            'py-4 px-4 align-middle text-right font-extrabold text-xs text-[#001A3D]',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const tx = row.original
+          return clickable(
+            tx,
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={(e) => {
+                e.stopPropagation()
+                handleOpenTransaction(tx)
+              }}
+              className="h-8 rounded-lg border-[#DCE2EB] bg-white text-[#001A3D] font-bold text-xs hover:bg-[#F0F4F8] gap-1.5 shadow-2xs"
+            >
+              <Eye className="size-3.5 text-[#0267B8]" />
+              <span>View Details</span>
+            </Button>,
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]',
+          cellClassName: 'py-4 px-4 align-middle text-right',
+        },
+      },
+    ]
+  }, [getTypeIcon, handleOpenTransaction])
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col font-sans">
@@ -629,178 +812,45 @@ export function WalletLedgerPage({
 
               {/* Transactions Table */}
               <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-[#F8FAFC] border-b border-[#E6EAF0] hover:bg-[#F8FAFC]">
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[130px]">
-                        Date & Time
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[200px]">
-                        Type
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[240px]">
-                        Description
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[140px]">
-                        Reference
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[120px]">
-                        Direction
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]">
-                        Amount
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[160px]">
-                        Running Balance
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]">
-                        Actions
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {filteredTransactions.length === 0 ? (
-                      <TableRow>
-                        <TableCell
-                          colSpan={8}
-                          className="h-48 text-center text-[#5A6578]"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-2">
-                            <Info className="size-8 text-[#718096]" />
-                            <p className="font-bold text-sm text-[#001A3D]">
-                              No transactions found
-                            </p>
-                            <p className="text-xs text-[#5A6578]">
-                              Try adjusting your search or filter parameters.
-                            </p>
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
-                              onClick={clearFilters}
-                              className="mt-2 text-xs rounded-xl"
-                            >
-                              Reset Filters
-                            </Button>
-                          </div>
-                        </TableCell>
-                      </TableRow>
-                    ) : (
-                      filteredTransactions.map((tx) => {
-                        const isDebit = tx.direction === 'Debit'
-                        const isSelected =
-                          selectedTx?.id === tx.id && detailsDrawerOpen
-
-                        return (
-                          <TableRow
-                            key={tx.id}
-                            className={`border-b border-[#E6EAF0] transition-colors cursor-pointer ${
-                              isSelected ? 'bg-[#F0F6FE]' : 'hover:bg-[#F9FAFC]'
-                            }`}
-                            onClick={() => handleOpenTransaction(tx)}
-                          >
-                            {/* Date & Time */}
-                            <TableCell className="py-4 px-4 align-middle">
-                              <div className="flex flex-col">
-                                <span className="font-semibold text-xs text-[#001A3D]">
-                                  {tx.dateTime}
-                                </span>
-                                <span className="text-[11px] font-bold text-[#718096]">
-                                  {tx.time}
-                                </span>
-                              </div>
-                            </TableCell>
-
-                            {/* Type */}
-                            <TableCell className="py-4 px-4 align-middle">
-                              <div className="flex items-center gap-2.5">
-                                {getTypeIcon(tx.type)}
-                                <span className="font-bold text-xs text-[#001A3D]">
-                                  {tx.type}
-                                </span>
-                              </div>
-                            </TableCell>
-
-                            {/* Description */}
-                            <TableCell className="py-4 px-4 align-middle">
-                              <div className="flex flex-col">
-                                <span className="font-semibold text-xs text-[#001A3D]">
-                                  {tx.description}
-                                </span>
-                                {tx.subtitle && (
-                                  <span className="text-[11px] text-[#718096]">
-                                    {tx.subtitle}
-                                  </span>
-                                )}
-                              </div>
-                            </TableCell>
-
-                            {/* Reference */}
-                            <TableCell className="py-4 px-4 align-middle">
-                              {tx.reference !== '—' ? (
-                                <span className="font-bold text-xs text-[#0267B8]">
-                                  {tx.reference}
-                                </span>
-                              ) : (
-                                <span className="text-xs text-[#718096] font-medium">
-                                  —
-                                </span>
-                              )}
-                            </TableCell>
-
-                            {/* Direction */}
-                            <TableCell className="py-4 px-4 align-middle">
-                              {isDebit ? (
-                                <span className="inline-flex items-center gap-1.5 text-[#DC2626] font-bold text-xs bg-red-50 border border-red-100 px-2.5 py-1 rounded-full">
-                                  <MinusCircle className="size-3 text-[#DC2626]" />
-                                  Debit
-                                </span>
-                              ) : (
-                                <span className="inline-flex items-center gap-1.5 text-[#059669] font-bold text-xs bg-emerald-50 border border-emerald-100 px-2.5 py-1 rounded-full">
-                                  <PlusCircle className="size-3 text-[#059669]" />
-                                  Credit
-                                </span>
-                              )}
-                            </TableCell>
-
-                            {/* Amount */}
-                            <TableCell className="py-4 px-4 align-middle text-right">
-                              <span
-                                className={`font-bold text-xs ${
-                                  isDebit ? 'text-[#DC2626]' : 'text-[#059669]'
-                                }`}
-                              >
-                                {tx.amount}
-                              </span>
-                            </TableCell>
-
-                            {/* Running Balance */}
-                            <TableCell className="py-4 px-4 align-middle text-right font-extrabold text-xs text-[#001A3D]">
-                              {tx.runningBalance}
-                            </TableCell>
-
-                            {/* Actions */}
-                            <TableCell className="py-4 px-4 align-middle text-right">
-                              <Button
-                                type="button"
-                                variant="outline"
-                                size="sm"
-                                onClick={(e) => {
-                                  e.stopPropagation()
-                                  handleOpenTransaction(tx)
-                                }}
-                                className="h-8 rounded-lg border-[#DCE2EB] bg-white text-[#001A3D] font-bold text-xs hover:bg-[#F0F4F8] gap-1.5 shadow-2xs"
-                              >
-                                <Eye className="size-3.5 text-[#0267B8]" />
-                                <span>View Details</span>
-                              </Button>
-                            </TableCell>
-                          </TableRow>
-                        )
-                      })
-                    )}
-                  </TableBody>
-                </Table>
+                <DataTable
+                  data={filteredTransactions}
+                  columns={
+                    columns as unknown as ColumnDef<
+                      (typeof filteredTransactions)[number],
+                      unknown
+                    >[]
+                  }
+                  getRowId={(row) => row.id}
+                  headerRowClassName="bg-[#F8FAFC] border-b border-[#E6EAF0] hover:bg-[#F8FAFC]"
+                  rowClassName={(row) =>
+                    `border-b border-[#E6EAF0] transition-colors cursor-pointer ${
+                      selectedTx?.id === row.original.id && detailsDrawerOpen
+                        ? 'bg-[#F0F6FE]'
+                        : 'hover:bg-[#F9FAFC]'
+                    }`
+                  }
+                  emptyCellClassName="h-48 text-center text-[#5A6578]"
+                  empty={
+                    <div className="flex flex-col items-center justify-center space-y-2">
+                      <Info className="size-8 text-[#718096]" />
+                      <p className="font-bold text-sm text-[#001A3D]">
+                        No transactions found
+                      </p>
+                      <p className="text-xs text-[#5A6578]">
+                        Try adjusting your search or filter parameters.
+                      </p>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="sm"
+                        onClick={clearFilters}
+                        className="mt-2 text-xs rounded-xl"
+                      >
+                        Reset Filters
+                      </Button>
+                    </div>
+                  }
+                />
               </div>
 
               {/* Table Footer Disclaimers */}

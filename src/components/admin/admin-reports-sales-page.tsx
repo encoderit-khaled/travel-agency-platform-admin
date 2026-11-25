@@ -3,8 +3,6 @@ import {
   CalendarDays,
   DollarSign,
   Download,
-  Calendar,
-  ChevronDown,
   Check,
   TrendingUp,
   CreditCard,
@@ -15,7 +13,19 @@ import { AdminHeader } from './admin-header'
 import { AdminFooter } from './admin-footer'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
 import { Card } from '#/components/ui/card'
+import { BarListChart } from '#/components/ui/bar-list-chart'
+import { DatePicker } from '#/components/ui/date-picker'
+import { DataTable } from '#/components/ui/data-table'
+import { TableCell, TableRow } from '#/components/ui/table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import {
   REPORT_TABS,
@@ -221,6 +231,68 @@ export function AdminReportsSalesPage({
     }, 4000)
   }
 
+  const columns = React.useMemo<ColumnDef<SalesReportRow>[]>(
+    () => [
+      {
+        id: 'date',
+        header: 'Date',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold',
+          cellClassName:
+            'py-3.5 px-4.5 font-medium text-[#141B28] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.date,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold',
+          cellClassName:
+            'py-3.5 px-4.5 font-bold text-[#141B28] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold',
+          cellClassName: 'py-3.5 px-4.5 text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'channel',
+        header: 'Channel',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold',
+          cellClassName: 'py-3.5 px-4.5 text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.channel,
+      },
+      {
+        id: 'bookingCount',
+        header: 'Booking Count',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold text-right',
+          cellClassName: 'py-3.5 px-4.5 text-right font-bold text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.bookingCount,
+      },
+      {
+        id: 'amount',
+        header: 'Sales Amount',
+        meta: {
+          headerClassName: 'py-3 px-4.5 font-extrabold text-right',
+          cellClassName: 'py-3.5 px-4.5 text-right font-bold text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.amountFormatted,
+      },
+    ],
+    [],
+  )
+
   return (
     <SidebarProvider defaultOpen className="h-full min-h-0 w-auto">
       <div className="flex h-screen w-full overflow-hidden bg-[#F8FAFC]">
@@ -331,17 +403,15 @@ export function AdminReportsSalesPage({
                   >
                     From
                   </label>
-                  <div className="relative">
-                    <input
-                      id="f-from"
-                      type="date"
-                      value={filters.dateFrom}
-                      onChange={(e) =>
-                        setFilters({ ...filters, dateFrom: e.target.value })
-                      }
-                      className="w-full h-10 px-3.5 py-2 text-sm font-semibold rounded-xl border border-[#DCE2EB] bg-white text-[#141B28] focus:outline-none focus:border-[#0267B8] focus:ring-1 focus:ring-[#0267B8] shadow-2xs"
-                    />
-                  </div>
+                  <DatePicker
+                    id="f-from"
+                    value={filters.dateFrom}
+                    onChange={(dateFrom) =>
+                      setFilters({ ...filters, dateFrom })
+                    }
+                    placeholder="From"
+                    className="h-10 text-sm font-semibold"
+                  />
                 </div>
 
                 {/* To Date */}
@@ -352,17 +422,13 @@ export function AdminReportsSalesPage({
                   >
                     To
                   </label>
-                  <div className="relative">
-                    <input
-                      id="f-to"
-                      type="date"
-                      value={filters.dateTo}
-                      onChange={(e) =>
-                        setFilters({ ...filters, dateTo: e.target.value })
-                      }
-                      className="w-full h-10 px-3.5 py-2 text-sm font-semibold rounded-xl border border-[#DCE2EB] bg-white text-[#141B28] focus:outline-none focus:border-[#0267B8] focus:ring-1 focus:ring-[#0267B8] shadow-2xs"
-                    />
-                  </div>
+                  <DatePicker
+                    id="f-to"
+                    value={filters.dateTo}
+                    onChange={(dateTo) => setFilters({ ...filters, dateTo })}
+                    placeholder="To"
+                    className="h-10 text-sm font-semibold"
+                  />
                 </div>
 
                 {/* Service Select */}
@@ -373,23 +439,26 @@ export function AdminReportsSalesPage({
                   >
                     Service
                   </label>
-                  <div className="relative">
-                    <select
+                  <Select
+                    value={filters.service}
+                    onValueChange={(val) => {
+                      if (val) setFilters({ ...filters, service: val })
+                    }}
+                  >
+                    <SelectTrigger
                       id="f-svc"
-                      value={filters.service}
-                      onChange={(e) =>
-                        setFilters({ ...filters, service: e.target.value })
-                      }
-                      className="w-full h-10 appearance-none px-3.5 pr-8 py-2 text-sm font-semibold rounded-xl border border-[#DCE2EB] bg-white text-[#141B28] focus:outline-none focus:border-[#0267B8] focus:ring-1 focus:ring-[#0267B8] shadow-2xs cursor-pointer"
+                      className="w-full h-10 rounded-xl border-[#DCE2EB] bg-white text-sm font-semibold text-[#141B28] shadow-2xs"
                     >
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
                       {SERVICES_FILTER_OPTIONS.map((opt) => (
-                        <option key={opt} value={opt}>
+                        <SelectItem key={opt} value={opt}>
                           {opt}
-                        </option>
+                        </SelectItem>
                       ))}
-                    </select>
-                    <ChevronDown className="pointer-events-none absolute right-3 top-3 size-4 text-[#8C9BAE]" />
-                  </div>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 {/* Supplier Select */}
@@ -400,23 +469,26 @@ export function AdminReportsSalesPage({
                   >
                     Supplier
                   </label>
-                  <div className="relative">
-                    <select
+                  <Select
+                    value={filters.supplier}
+                    onValueChange={(val) => {
+                      if (val) setFilters({ ...filters, supplier: val })
+                    }}
+                  >
+                    <SelectTrigger
                       id="f-sup"
-                      value={filters.supplier}
-                      onChange={(e) =>
-                        setFilters({ ...filters, supplier: e.target.value })
-                      }
-                      className="w-full h-10 appearance-none px-3.5 pr-8 py-2 text-sm font-semibold rounded-xl border border-[#DCE2EB] bg-white text-[#141B28] focus:outline-none focus:border-[#0267B8] focus:ring-1 focus:ring-[#0267B8] shadow-2xs cursor-pointer"
+                      className="w-full h-10 rounded-xl border-[#DCE2EB] bg-white text-sm font-semibold text-[#141B28] shadow-2xs"
                     >
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
                       {SUPPLIERS_FILTER_OPTIONS.map((opt) => (
-                        <option key={opt} value={opt}>
+                        <SelectItem key={opt} value={opt}>
                           {opt}
-                        </option>
+                        </SelectItem>
                       ))}
-                    </select>
-                    <ChevronDown className="pointer-events-none absolute right-3 top-3 size-4 text-[#8C9BAE]" />
-                  </div>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 {/* Channel Select */}
@@ -427,23 +499,26 @@ export function AdminReportsSalesPage({
                   >
                     Channel
                   </label>
-                  <div className="relative">
-                    <select
+                  <Select
+                    value={filters.channel}
+                    onValueChange={(val) => {
+                      if (val) setFilters({ ...filters, channel: val })
+                    }}
+                  >
+                    <SelectTrigger
                       id="f-ch"
-                      value={filters.channel}
-                      onChange={(e) =>
-                        setFilters({ ...filters, channel: e.target.value })
-                      }
-                      className="w-full h-10 appearance-none px-3.5 pr-8 py-2 text-sm font-semibold rounded-xl border border-[#DCE2EB] bg-white text-[#141B28] focus:outline-none focus:border-[#0267B8] focus:ring-1 focus:ring-[#0267B8] shadow-2xs cursor-pointer"
+                      className="w-full h-10 rounded-xl border-[#DCE2EB] bg-white text-sm font-semibold text-[#141B28] shadow-2xs"
                     >
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
                       {CHANNELS_FILTER_OPTIONS.map((opt) => (
-                        <option key={opt} value={opt}>
+                        <SelectItem key={opt} value={opt}>
                           {opt}
-                        </option>
+                        </SelectItem>
                       ))}
-                    </select>
-                    <ChevronDown className="pointer-events-none absolute right-3 top-3 size-4 text-[#8C9BAE]" />
-                  </div>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 
@@ -568,40 +643,15 @@ export function AdminReportsSalesPage({
                     </Badge>
                   </div>
 
-                  {/* Values List */}
-                  <ul className="flex flex-col gap-3">
-                    {serviceBreakdown.map((item) => (
-                      <li
-                        key={item.id}
-                        className="flex items-center gap-3 sm:gap-4 text-sm"
-                      >
-                        {/* Service Name (fixed width 150px) */}
-                        <span className="w-28 sm:w-[150px] shrink-0 text-[13.5px] font-bold text-[#141B28] truncate">
-                          {item.service}
-                        </span>
-
-                        {/* Progress Bar Track & Bar */}
-                        <div className="flex-1 h-3 rounded-full bg-[#EEF2F7] overflow-hidden">
-                          <div
-                            className="h-full rounded-full bg-[#0267B8] transition-all duration-300"
-                            style={{
-                              width: `${Math.max(item.percentage, 1)}%`,
-                            }}
-                          />
-                        </div>
-
-                        {/* Amount & Booking Count */}
-                        <div className="w-20 sm:w-[84px] shrink-0 text-right flex flex-col items-end leading-tight">
-                          <span className="text-[13.5px] font-extrabold text-[#141B28]">
-                            {item.amountFormatted}
-                          </span>
-                          <small className="text-[11px] text-[#4F5B70]">
-                            {item.bookingText}
-                          </small>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
+                  <BarListChart
+                    name="Sales"
+                    labelWidth={150}
+                    data={serviceBreakdown.map((item) => ({
+                      label: item.service,
+                      value: item.percentage,
+                      detail: item.amountFormatted,
+                    }))}
+                  />
                 </Card>
               </div>
 
@@ -631,77 +681,34 @@ export function AdminReportsSalesPage({
 
                 {/* Table */}
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="bg-[#F8FAFC] border-b border-[#EEF1F5] text-[11.5px] font-extrabold uppercase tracking-wider text-[#4F5B70]">
-                        <th className="py-3 px-4.5 font-extrabold">Date</th>
-                        <th className="py-3 px-4.5 font-extrabold">Service</th>
-                        <th className="py-3 px-4.5 font-extrabold">Supplier</th>
-                        <th className="py-3 px-4.5 font-extrabold">Channel</th>
-                        <th className="py-3 px-4.5 font-extrabold text-right">
-                          Booking Count
-                        </th>
-                        <th className="py-3 px-4.5 font-extrabold text-right">
-                          Sales Amount
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#EEF1F5] text-sm">
-                      {displayedRows.map((row) => (
-                        <tr
-                          key={row.id}
-                          className="hover:bg-[#F8FAFC]/80 transition-colors"
-                        >
-                          <td className="py-3.5 px-4.5 font-medium text-[#141B28] whitespace-nowrap">
-                            {row.date}
-                          </td>
-                          <td className="py-3.5 px-4.5 font-bold text-[#141B28] whitespace-nowrap">
-                            {row.service}
-                          </td>
-                          <td className="py-3.5 px-4.5 text-[#4F5B70] whitespace-nowrap">
-                            {row.supplier}
-                          </td>
-                          <td className="py-3.5 px-4.5 text-[#4F5B70] whitespace-nowrap">
-                            {row.channel}
-                          </td>
-                          <td className="py-3.5 px-4.5 text-right font-bold text-[#141B28]">
-                            {row.bookingCount}
-                          </td>
-                          <td className="py-3.5 px-4.5 text-right font-bold text-[#141B28]">
-                            {row.amountFormatted}
-                          </td>
-                        </tr>
-                      ))}
-
-                      {displayedRows.length === 0 && (
-                        <tr>
-                          <td
-                            colSpan={6}
-                            className="py-12 text-center text-sm text-[#4F5B70]"
-                          >
-                            No sales data matching the selected filters.
-                          </td>
-                        </tr>
-                      )}
-                    </tbody>
-                    {/* Total Row */}
-                    <tfoot>
-                      <tr className="bg-[#F8FAFC] border-t border-[#DCE2EB] text-sm">
-                        <td
+                  <DataTable
+                    data={displayedRows}
+                    columns={columns}
+                    getRowId={(row) => row.id}
+                    tableClassName="w-full text-left border-collapse"
+                    headerRowClassName="bg-[#F8FAFC] border-b border-[#EEF1F5] text-[11.5px] font-extrabold uppercase tracking-wider text-[#4F5B70] hover:bg-[#F8FAFC]"
+                    headClassName="h-auto"
+                    bodyClassName="divide-y divide-[#EEF1F5] text-sm"
+                    rowClassName="hover:bg-[#F8FAFC]/80 transition-colors"
+                    empty="No sales data matching the selected filters."
+                    emptyCellClassName="py-12 text-center text-sm text-[#4F5B70]"
+                    afterRows={
+                      <TableRow className="bg-[#F8FAFC] border-t border-[#DCE2EB] text-sm">
+                        <TableCell
                           colSpan={4}
                           className="py-3.5 px-4.5 font-extrabold text-[#012A5E]"
                         >
                           Total
-                        </td>
-                        <td className="py-3.5 px-4.5 text-right font-extrabold text-[#012A5E]">
+                        </TableCell>
+                        <TableCell className="py-3.5 px-4.5 text-right font-extrabold text-[#012A5E]">
                           {totalBookings}
-                        </td>
-                        <td className="py-3.5 px-4.5 text-right font-extrabold text-[#012A5E]">
+                        </TableCell>
+                        <TableCell className="py-3.5 px-4.5 text-right font-extrabold text-[#012A5E]">
                           {formattedTotalSales}
-                        </td>
-                      </tr>
-                    </tfoot>
-                  </table>
+                        </TableCell>
+                      </TableRow>
+                    }
+                  />
                 </div>
               </Card>
             </div>
@@ -714,3 +721,4 @@ export function AdminReportsSalesPage({
     </SidebarProvider>
   )
 }
+

@@ -7,10 +7,23 @@ import {
   Pencil,
   Info,
   Bell,
+  Building2,
   ChevronDown,
-  Sparkles,
+  LogOut,
   Menu,
+  Settings,
+  Sparkles,
+  Users,
 } from 'lucide-react'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '#/components/ui/dropdown-menu'
 import { AdminSidebar } from './admin-sidebar'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import { Button } from '#/components/ui/button'
@@ -119,24 +132,61 @@ export function B2CCustomerDetailsPage({
               </button>
 
               {/* Profile Pill Menu (Node #990:3191) */}
-              <button
-                type="button"
-                className="flex items-center gap-2.5 p-1 pr-3 bg-white border border-[#DCE2EB] rounded-2xl shadow-2xs hover:border-[#C5CFDC] transition-all cursor-pointer group"
-                title="User profile"
-              >
-                <span className="size-8 rounded-xl bg-[#012A5E] flex items-center justify-center text-[#F1C134] text-xs font-extrabold shrink-0 group-hover:scale-105 transition-transform">
-                  SA
-                </span>
-                <span className="flex flex-col text-left leading-tight hidden sm:flex">
-                  <span className="text-[13.5px] font-extrabold text-[#141B28]">
-                    Sample Admin
+              <DropdownMenu>
+                <DropdownMenuTrigger
+                  className="flex items-center gap-2.5 p-1 pr-3 bg-white border border-[#DCE2EB] rounded-2xl shadow-2xs hover:border-[#C5CFDC] transition-all cursor-pointer group"
+                  title="User profile"
+                >
+                  <span className="size-8 rounded-xl bg-[#012A5E] flex items-center justify-center text-[#F1C134] text-xs font-extrabold shrink-0 group-hover:scale-105 transition-transform">
+                    SA
                   </span>
-                  <span className="text-[11.5px] font-medium text-[#4F5B70]">
-                    Super Admin
+                  <span className="flex flex-col text-left leading-tight hidden sm:flex">
+                    <span className="text-[13.5px] font-extrabold text-[#141B28]">
+                      Sample Admin
+                    </span>
+                    <span className="text-[11.5px] font-medium text-[#4F5B70]">
+                      Super Admin
+                    </span>
                   </span>
-                </span>
-                <ChevronDown className="size-4 text-[#8792A4] shrink-0 ml-0.5 group-hover:text-[#012A5E] transition-colors" />
-              </button>
+                  <ChevronDown className="size-4 text-[#8792A4] shrink-0 ml-0.5 group-hover:text-[#012A5E] transition-colors group-data-[popup-open]:rotate-180" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="end"
+                  className="w-64 rounded-2xl p-2 shadow-2xl"
+                >
+                  <DropdownMenuGroup>
+                    <DropdownMenuLabel className="px-3 py-2 normal-case tracking-normal">
+                      <p className="text-xs font-medium text-[#4F5B70]">
+                        Signed in as
+                      </p>
+                      <p className="text-sm font-extrabold text-[#012A5E] truncate">
+                        Sample Admin
+                      </p>
+                      <p className="text-xs font-semibold text-[#0267B8] truncate mt-0.5">
+                        Super Admin
+                      </p>
+                    </DropdownMenuLabel>
+                  </DropdownMenuGroup>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className="gap-2.5 px-3 py-2 text-xs font-semibold text-[#141C2E]">
+                    <Building2 className="size-4 text-[#4F5B70]" />
+                    <span>Agency Details</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="gap-2.5 px-3 py-2 text-xs font-semibold text-[#141C2E]">
+                    <Users className="size-4 text-[#4F5B70]" />
+                    <span>Roles & Permissions</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="gap-2.5 px-3 py-2 text-xs font-semibold text-[#141C2E]">
+                    <Settings className="size-4 text-[#4F5B70]" />
+                    <span>Account Settings</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem className="gap-2.5 px-3 py-2 text-xs font-bold text-rose-600 hover:bg-rose-50 hover:text-rose-600 focus:bg-rose-50 focus:text-rose-600">
+                    <LogOut className="size-4 text-rose-600" />
+                    <span>Log out</span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </header>
 

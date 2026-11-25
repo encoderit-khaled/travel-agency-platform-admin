@@ -191,7 +191,7 @@ function AdminSidebarInner({
       collapsible={collapsible}
       className={cn(
         'shrink-0 text-white select-none border-r border-white/10 transition-all duration-200',
-        'bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0F3F7D] [&_[data-slot=sidebar-inner]]:bg-transparent',
+        'bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0F3F7D] **:data-[slot=sidebar-inner]:bg-transparent',
         className,
       )}
     >

@@ -1,10 +1,17 @@
-import * as React from 'react'
 import {
   Outlet,
   createRootRoute,
   Link,
   useRouterState,
 } from '@tanstack/react-router'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from '#/components/ui/dropdown-menu'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import {
@@ -45,7 +52,6 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
-  const [navOpen, setNavOpen] = React.useState(false)
   const routerState = useRouterState()
   const pathname = routerState.location.pathname
   const search = routerState.location.search as {
@@ -884,61 +890,53 @@ function RootComponent() {
 
       {/* Floating Route Quick-Navigator Pill */}
       <div className="fixed bottom-4 left-4 z-50 print:hidden select-none">
-        <div className="relative">
-          <button
-            type="button"
-            onClick={() => setNavOpen((prev) => !prev)}
-            className="flex items-center gap-2 rounded-full border border-[#012A5E]/20 bg-[#012A5E] px-3.5 py-2 text-xs font-bold text-white shadow-lg backdrop-blur-md transition-all hover:bg-[#023B82] active:scale-95"
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            className="group flex items-center gap-2 rounded-full border border-[#012A5E]/20 bg-[#012A5E] px-3.5 py-2 text-xs font-bold text-white shadow-lg backdrop-blur-md transition-all hover:bg-[#023B82] active:scale-95 data-[popup-open]:bg-[#023B82]"
             aria-label="Toggle All Pages Navigator"
           >
             <Compass className="size-4 text-[#F1C134]" />
             <span>Routes & Pages</span>
-            <ChevronDown
-              className={`size-3.5 text-white/70 transition-transform duration-200 ${
-                navOpen ? 'rotate-180' : ''
-              }`}
-            />
-          </button>
-
-          {navOpen && (
-            <div className="absolute bottom-12 left-0 w-72 rounded-2xl border border-[#DCE2EB] bg-white p-2.5 shadow-2xl animate-in fade-in slide-in-from-bottom-2">
-              <div className="px-2.5 py-1.5 border-b border-[#F1F5F9] mb-1.5">
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#4F5B70]">
-                  Project Pages & Routes
-                </span>
-              </div>
-
-              <div className="flex flex-col gap-1">
-                {routesList.map((item) => {
-                  const Icon = item.icon
-                  return (
-                    <Link
-                      key={item.title}
-                      to={item.path}
-                      onClick={() => setNavOpen(false)}
-                      className={`flex items-center justify-between rounded-xl px-2.5 py-2 text-xs font-bold transition-colors ${
-                        item.active
-                          ? 'bg-[#EBF3FC] text-[#0267B8]'
-                          : 'text-[#141C2E] hover:bg-[#F4F6FA]'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2 min-w-0">
-                        <Icon className="size-4 shrink-0" />
-                        <span className="truncate">{item.title}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 shrink-0">
-                        <span className="rounded-md bg-black/5 px-1.5 py-0.5 text-[10px] font-semibold text-[#4F5B70]">
-                          {item.tag}
-                        </span>
-                        {item.active && <Check className="size-3.5 stroke-3" />}
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          )}
-        </div>
+            <ChevronDown className="size-3.5 text-white/70 transition-transform duration-200 group-data-[popup-open]:rotate-180" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            side="top"
+            align="start"
+            sideOffset={10}
+            className="w-72 max-h-[min(70vh,32rem)] overflow-y-auto rounded-2xl p-2.5 shadow-2xl"
+          >
+            <DropdownMenuGroup>
+              <DropdownMenuLabel className="px-2.5 py-1.5 mb-1.5 border-b border-[#F1F5F9]">
+                Project Pages & Routes
+              </DropdownMenuLabel>
+            </DropdownMenuGroup>
+            {routesList.map((item) => {
+              const Icon = item.icon
+              return (
+                <DropdownMenuItem
+                  key={item.title}
+                  render={<Link to={item.path} />}
+                  className={`justify-between rounded-xl px-2.5 py-2 text-xs font-bold ${
+                    item.active
+                      ? 'bg-[#EBF3FC] text-[#0267B8] hover:bg-[#EBF3FC] hover:text-[#0267B8] focus:bg-[#EBF3FC] focus:text-[#0267B8]'
+                      : 'text-[#141C2E]'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 min-w-0">
+                    <Icon className="size-4 shrink-0" />
+                    <span className="truncate">{item.title}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className="rounded-md bg-black/5 px-1.5 py-0.5 text-[10px] font-semibold text-[#4F5B70]">
+                      {item.tag}
+                    </span>
+                    {item.active && <Check className="size-3.5 stroke-3" />}
+                  </div>
+                </DropdownMenuItem>
+              )
+            })}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
 
       <TanStackDevtools

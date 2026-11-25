@@ -12,17 +12,18 @@ import {
   Calendar,
 } from 'lucide-react'
 import { Input } from '#/components/ui/input'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import { DatePicker } from '#/components/ui/date-picker'
-import {
-  Table,
-  TableHeader,
-  TableRow,
-  TableHead,
-  TableBody,
-  TableCell,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import type {
   CreditRequest,
   CreditRequestStatus,
@@ -108,6 +109,163 @@ export function CreditRequestsHistoryTable({
         )
     }
   }
+
+  const columns = React.useMemo<ColumnDef<CreditRequest>[]>(
+    () => [
+      {
+        accessorKey: 'submittedDate',
+        header: 'SUBMITTED',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="contents" onClick={() => onSelectRequest(req)}>
+              <div className="text-xs font-bold text-[#001A3D]">
+                {req.submittedDate}
+              </div>
+              <div className="text-[11px] text-[#64748B]">
+                {req.submittedTime}
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#64748B] py-3 pl-6',
+          cellClassName: 'py-4 pl-6',
+        },
+      },
+      {
+        accessorKey: 'requestType',
+        header: 'REQUEST TYPE',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="contents" onClick={() => onSelectRequest(req)}>
+              <div className="flex items-center gap-2.5">
+                <div
+                  className={cn(
+                    'size-8 rounded-lg flex items-center justify-center shrink-0',
+                    req.requestType === 'Credit-limit increase'
+                      ? 'bg-[#EBF4FE] text-[#0267B8]'
+                      : 'bg-[#E8F8F0] text-[#10B981]',
+                  )}
+                >
+                  {req.requestType === 'Credit-limit increase' ? (
+                    <TrendingUp className="size-4" />
+                  ) : (
+                    <Plus className="size-4" />
+                  )}
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-[#001A3D]">
+                    {req.requestType}
+                  </div>
+                  <div className="text-[11px] text-[#64748B]">
+                    {req.typeDescription}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#64748B] py-3',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'requestedAmount',
+        header: 'REQUESTED AMOUNT',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="contents" onClick={() => onSelectRequest(req)}>
+              <div className="text-xs font-bold text-[#001A3D]">
+                {req.requestedAmountNumeric
+                  ? `$${req.requestedAmountNumeric.toLocaleString()}`
+                  : req.requestedAmount}
+              </div>
+              {req.adjustedAmount && (
+                <div className="text-[11px] text-[#D97706] font-medium">
+                  {req.adjustedAmount}
+                </div>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#64748B] py-3',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'STATUS',
+        cell: ({ row }) => (
+          <div
+            className="contents"
+            onClick={() => onSelectRequest(row.original)}
+          >
+            {getStatusBadge(row.original.status)}
+          </div>
+        ),
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#64748B] py-3',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'decision',
+        header: 'DECISION',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="contents" onClick={() => onSelectRequest(req)}>
+              <div className="text-xs font-medium text-[#001A3D]">
+                {req.decision}
+              </div>
+              {req.decisionDate && (
+                <div className="text-[11px] text-[#64748B]">
+                  {req.decisionDate}
+                </div>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#64748B] py-3',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        id: 'action',
+        header: 'ACTION',
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <div className="contents" onClick={() => onSelectRequest(req)}>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onSelectRequest(req)
+                }}
+                className="size-8 p-0 rounded-lg hover:bg-[#E8F1FC] text-[#0267B8]"
+              >
+                <Eye className="size-4" />
+              </Button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#64748B] py-3 pr-6 text-right',
+          cellClassName: 'py-4 pr-6 text-right',
+        },
+      },
+    ],
+    [getStatusBadge, onSelectRequest],
+  )
 
   return (
     <div className="space-y-6">
@@ -211,32 +369,56 @@ export function CreditRequestsHistoryTable({
 
             {/* Request Type filter */}
             <div className="sm:col-span-3">
-              <select
+              <Select
                 value={typeFilter}
-                onChange={(e) => setTypeFilter(e.target.value)}
-                className="w-full h-10 px-3 rounded-xl border border-[#DCE2EB] text-xs font-medium bg-white text-[#001A3D] focus:outline-none focus:ring-1 focus:ring-[#0267B8]"
+                items={{
+                  all: 'All Types',
+                  'Credit-limit increase': 'Credit-limit increase',
+                  'Credit top-up': 'Credit top-up',
+                }}
+                onValueChange={(val) => {
+                  if (val) setTypeFilter(val)
+                }}
               >
-                <option value="all">All Types</option>
-                <option value="Credit-limit increase">
-                  Credit-limit increase
-                </option>
-                <option value="Credit top-up">Credit top-up</option>
-              </select>
+                <SelectTrigger className="w-full h-10 rounded-xl border-[#DCE2EB] bg-white text-xs font-medium text-[#001A3D]">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Types</SelectItem>
+                  <SelectItem value="Credit-limit increase">
+                    Credit-limit increase
+                  </SelectItem>
+                  <SelectItem value="Credit top-up">Credit top-up</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             {/* Status filter */}
             <div className="sm:col-span-2">
-              <select
+              <Select
                 value={statusFilter}
-                onChange={(e) => setStatusFilter(e.target.value)}
-                className="w-full h-10 px-3 rounded-xl border border-[#DCE2EB] text-xs font-medium bg-white text-[#001A3D] focus:outline-none focus:ring-1 focus:ring-[#0267B8]"
+                items={{
+                  all: 'All Statuses',
+                  Pending: 'Pending',
+                  Approved: 'Approved',
+                  Adjusted: 'Adjusted',
+                  Rejected: 'Rejected',
+                }}
+                onValueChange={(val) => {
+                  if (val) setStatusFilter(val)
+                }}
               >
-                <option value="all">All Statuses</option>
-                <option value="Pending">Pending</option>
-                <option value="Approved">Approved</option>
-                <option value="Adjusted">Adjusted</option>
-                <option value="Rejected">Rejected</option>
-              </select>
+                <SelectTrigger className="w-full h-10 rounded-xl border-[#DCE2EB] bg-white text-xs font-medium text-[#001A3D]">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Statuses</SelectItem>
+                  <SelectItem value="Pending">Pending</SelectItem>
+                  <SelectItem value="Approved">Approved</SelectItem>
+                  <SelectItem value="Adjusted">Adjusted</SelectItem>
+                  <SelectItem value="Rejected">Rejected</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             {/* Date filter with shadcn DatePicker & Calendar */}
@@ -259,123 +441,14 @@ export function CreditRequestsHistoryTable({
 
         {/* Table */}
         <div className="overflow-x-auto">
-          <Table>
-            <TableHeader className="bg-[#F8FAFC]">
-              <TableRow className="border-[#F1F5F9] hover:bg-transparent">
-                <TableHead className="text-xs font-bold text-[#64748B] py-3 pl-6">
-                  SUBMITTED
-                </TableHead>
-                <TableHead className="text-xs font-bold text-[#64748B] py-3">
-                  REQUEST TYPE
-                </TableHead>
-                <TableHead className="text-xs font-bold text-[#64748B] py-3">
-                  REQUESTED AMOUNT
-                </TableHead>
-                <TableHead className="text-xs font-bold text-[#64748B] py-3">
-                  STATUS
-                </TableHead>
-                <TableHead className="text-xs font-bold text-[#64748B] py-3">
-                  DECISION
-                </TableHead>
-                <TableHead className="text-xs font-bold text-[#64748B] py-3 pr-6 text-right">
-                  ACTION
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {filteredRequests.map((req) => (
-                <TableRow
-                  key={req.id}
-                  onClick={() => onSelectRequest(req)}
-                  className="border-[#F1F5F9] hover:bg-[#F8FAFC] cursor-pointer transition-colors"
-                >
-                  {/* SUBMITTED */}
-                  <TableCell className="py-4 pl-6">
-                    <div className="text-xs font-bold text-[#001A3D]">
-                      {req.submittedDate}
-                    </div>
-                    <div className="text-[11px] text-[#64748B]">
-                      {req.submittedTime}
-                    </div>
-                  </TableCell>
-
-                  {/* REQUEST TYPE */}
-                  <TableCell className="py-4">
-                    <div className="flex items-center gap-2.5">
-                      <div
-                        className={cn(
-                          'size-8 rounded-lg flex items-center justify-center shrink-0',
-                          req.requestType === 'Credit-limit increase'
-                            ? 'bg-[#EBF4FE] text-[#0267B8]'
-                            : 'bg-[#E8F8F0] text-[#10B981]',
-                        )}
-                      >
-                        {req.requestType === 'Credit-limit increase' ? (
-                          <TrendingUp className="size-4" />
-                        ) : (
-                          <Plus className="size-4" />
-                        )}
-                      </div>
-                      <div>
-                        <div className="text-xs font-bold text-[#001A3D]">
-                          {req.requestType}
-                        </div>
-                        <div className="text-[11px] text-[#64748B]">
-                          {req.typeDescription}
-                        </div>
-                      </div>
-                    </div>
-                  </TableCell>
-
-                  {/* REQUESTED AMOUNT */}
-                  <TableCell className="py-4">
-                    <div className="text-xs font-bold text-[#001A3D]">
-                      {req.requestedAmountNumeric
-                        ? `$${req.requestedAmountNumeric.toLocaleString()}`
-                        : req.requestedAmount}
-                    </div>
-                    {req.adjustedAmount && (
-                      <div className="text-[11px] text-[#D97706] font-medium">
-                        {req.adjustedAmount}
-                      </div>
-                    )}
-                  </TableCell>
-
-                  {/* STATUS */}
-                  <TableCell className="py-4">
-                    {getStatusBadge(req.status)}
-                  </TableCell>
-
-                  {/* DECISION */}
-                  <TableCell className="py-4">
-                    <div className="text-xs font-medium text-[#001A3D]">
-                      {req.decision}
-                    </div>
-                    {req.decisionDate && (
-                      <div className="text-[11px] text-[#64748B]">
-                        {req.decisionDate}
-                      </div>
-                    )}
-                  </TableCell>
-
-                  {/* ACTION */}
-                  <TableCell className="py-4 pr-6 text-right">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        onSelectRequest(req)
-                      }}
-                      className="size-8 p-0 rounded-lg hover:bg-[#E8F1FC] text-[#0267B8]"
-                    >
-                      <Eye className="size-4" />
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+          <DataTable
+            data={filteredRequests}
+            columns={columns}
+            getRowId={(row) => row.id}
+            headerClassName="bg-[#F8FAFC]"
+            headerRowClassName="border-[#F1F5F9] hover:bg-transparent"
+            rowClassName="border-[#F1F5F9] hover:bg-[#F8FAFC] cursor-pointer transition-colors"
+          />
         </div>
 
         {/* Footer Note */}

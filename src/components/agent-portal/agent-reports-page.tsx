@@ -2,7 +2,6 @@ import * as React from 'react'
 import { useForm, useStore } from '@tanstack/react-form'
 import {
   BarChart3,
-  Calendar,
   CalendarDays,
   Coins,
   CreditCard,
@@ -26,9 +25,6 @@ import {
   ChevronDown,
   ChevronRight,
   Database,
-  Briefcase,
-  Hotel,
-  ShieldCheck,
   FileText,
   FileCheck2,
   Ban,
@@ -36,8 +32,6 @@ import {
   Eye,
   Ticket,
   Car,
-  Smartphone,
-  Train,
   Package,
   Compass,
   ArrowDownToLine,
@@ -51,15 +45,14 @@ import {
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
+import { DatePicker } from '#/components/ui/date-picker'
 import { Badge } from '#/components/ui/badge'
+import { DataTable } from '#/components/ui/data-table'
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+  BarListChart,
+  StackedMeterChart,
+} from '#/components/ui/bar-list-chart'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Select,
   SelectContent,
@@ -428,52 +421,6 @@ export function AgentReportsPage({
     setPreviewOpen(true)
   }
 
-  // Icons for Service Breakdown
-  const renderServiceIcon = (service: string) => {
-    switch (service.toLowerCase()) {
-      case 'flight':
-        return <Plane className="size-4 text-[#0267B8]" />
-      case 'hotel':
-        return <Hotel className="size-4 text-[#0267B8]" />
-      case 'travel package':
-        return <Package className="size-4 text-[#0267B8]" />
-      case 'activity':
-        return <Compass className="size-4 text-[#0267B8]" />
-      case 'car rental':
-        return <Car className="size-4 text-[#0267B8]" />
-      case 'esim':
-        return <Smartphone className="size-4 text-[#0267B8]" />
-      case 'bus / train':
-        return <Train className="size-4 text-[#0267B8]" />
-      case 'travel insurance':
-        return <ShieldCheck className="size-4 text-[#0267B8]" />
-      default:
-        return <Briefcase className="size-4 text-[#0267B8]" />
-    }
-  }
-
-  // Icons for Status Breakdown
-  const renderStatusIcon = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'pending':
-        return <Clock className="size-3.5 text-[#B54708]" />
-      case 'confirmed':
-        return <CheckCircle2 className="size-3.5 text-[#0E6A3D]" />
-      case 'ticketed':
-        return <Ticket className="size-3.5 text-[#026AA2]" />
-      case 'issued':
-        return <FileCheck2 className="size-3.5 text-[#027A48]" />
-      case 'cancelled':
-        return <Ban className="size-3.5 text-[#475467]" />
-      case 'refunded':
-        return <RotateCcw className="size-3.5 text-[#344054]" />
-      case 'failed':
-        return <AlertCircle className="size-3.5 text-[#B42318]" />
-      default:
-        return <Info className="size-3.5 text-[#4F5B70]" />
-    }
-  }
-
   // Status Badge in Table
   const renderStatusBadge = (status: ReportBookingRecord['status']) => {
     switch (status) {
@@ -534,6 +481,734 @@ export function AgentReportsPage({
         )
     }
   }
+
+  const bookingRecordColumns = React.useMemo<
+    ColumnDef<ReportBookingRecord>[]
+  >(() => {
+    const head =
+      'font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4'
+    return [
+      {
+        id: 'ref',
+        header: 'Booking Reference',
+        meta: {
+          headerClassName: head,
+          cellClassName:
+            'font-mono text-xs font-bold text-[#012A5E] py-3.5 px-4',
+        },
+        cell: ({ row }) => row.original.ref,
+      },
+      {
+        id: 'customer',
+        header: 'Customer',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs font-semibold text-[#0F172A] py-3.5 px-4',
+        },
+        cell: ({ row }) => row.original.customer,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#334155] py-3.5 px-4',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'status',
+        header: 'Status',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'py-3.5 px-4',
+        },
+        cell: ({ row }) => renderStatusBadge(row.original.status),
+      },
+      {
+        id: 'createdBy',
+        header: 'Created By',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'py-3.5 px-4',
+        },
+        cell: ({ row }) => (
+          <div className="flex flex-col">
+            <span className="text-xs font-semibold text-[#0F172A]">
+              {row.original.createdBy}
+            </span>
+            <span className="text-[10px] text-[#64748B]">
+              {row.original.createdByType}
+            </span>
+          </div>
+        ),
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#94A3B8] py-3.5 px-4',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'bookingDate',
+        header: 'Booking Date',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#334155] py-3.5 px-4 whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.bookingDate,
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right py-3.5 px-4 whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() => handleViewBooking(row.original)}
+            className="h-8 px-3 text-xs font-semibold rounded-lg border-[#D0D5DD] bg-white text-[#344054] hover:bg-[#F8FAFC] shadow-2xs gap-1.5 cursor-pointer"
+          >
+            <Eye className="size-3.5 text-[#64748B]" />
+            <span>View Booking</span>
+          </Button>
+        ),
+      },
+    ]
+  }, [handleViewBooking, renderStatusBadge])
+
+  const salesServiceColumns = React.useMemo<
+    ColumnDef<(typeof SERVICE_BREAKDOWN_DATA)[number]>[]
+  >(() => {
+    const head = 'font-bold text-[#012A5E] text-xs'
+    return [
+      {
+        id: 'service',
+        header: 'Service Category',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-bold text-[#012A5E] text-xs',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'bookings',
+        header: 'Bookings',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center font-medium text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.bookingsCount,
+      },
+      {
+        id: 'grossSales',
+        header: 'Gross Sales',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.grossSales,
+      },
+      {
+        id: 'commission',
+        header: 'Commission',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold text-xs text-[#00875A]',
+        },
+        cell: ({ row }) => row.original.commissionEarned,
+      },
+      {
+        id: 'netSales',
+        header: 'Net Sales',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.netSales,
+      },
+      {
+        id: 'share',
+        header: 'Revenue Share',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => (
+          <div className="flex items-center justify-center gap-2">
+            <BarListChart
+              hideLabel
+              max={100}
+              className="h-2 w-16"
+              data={[
+                {
+                  label: 'Share',
+                  value: row.original.sharePercentage,
+                },
+              ]}
+            />
+            <span className="text-[11px] font-bold text-[#4F5B70] w-7 text-right">
+              {row.original.sharePercentage}%
+            </span>
+          </div>
+        ),
+      },
+    ]
+  }, [])
+
+  const commissionReportColumns = React.useMemo<
+    ColumnDef<CommissionRecord>[]
+  >(() => {
+    const head = 'font-bold text-[#012A5E] text-xs'
+    return [
+      {
+        id: 'bookingId',
+        header: 'Booking Ref',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-bold text-xs text-[#0267B8]',
+        },
+        cell: ({ row }) => {
+          const rec = row.original
+          const getServiceIcon = () => {
+            switch (rec.service) {
+              case 'Flight':
+                return <Plane className="size-3.5 text-[#0267B8]" />
+              case 'Hotel':
+                return <Building className="size-3.5 text-[#12B76A]" />
+              case 'Travel Package':
+                return <Package className="size-3.5 text-[#F79009]" />
+              case 'Activity':
+                return <Compass className="size-3.5 text-[#7F56D9]" />
+              case 'Car Rental':
+                return <Car className="size-3.5 text-[#06AED4]" />
+              default:
+                return <Coins className="size-3.5 text-[#4F5B70]" />
+            }
+          }
+          return (
+            <div
+              className="contents"
+              onClick={() => handleOpenCommissionDetails(rec)}
+            >
+              <div className="flex items-center gap-1.5">
+                {getServiceIcon()}
+                <span>{rec.bookingId}</span>
+              </div>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'customer',
+        header: 'Customer',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs font-semibold text-[#012A5E]',
+        },
+        cell: ({ row }) => (
+          <div
+            className="contents"
+            onClick={() => handleOpenCommissionDetails(row.original)}
+          >
+            {row.original.customer}
+          </div>
+        ),
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => (
+          <div
+            className="contents"
+            onClick={() => handleOpenCommissionDetails(row.original)}
+          >
+            {row.original.service}
+          </div>
+        ),
+      },
+      {
+        id: 'createdBy',
+        header: 'Created By',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => {
+          const rec = row.original
+          return (
+            <div
+              className="contents"
+              onClick={() => handleOpenCommissionDetails(rec)}
+            >
+              <div className="flex items-center gap-1">
+                <span>{rec.createdByName}</span>
+                <span
+                  className={`px-1.5 py-0.5 rounded text-[10px] font-medium ${
+                    rec.createdBySource === 'Sub-agent'
+                      ? 'bg-[#EBF7EF] text-[#0E6A3D]'
+                      : 'bg-[#F2F4F7] text-[#4F5B70]'
+                  }`}
+                >
+                  {rec.createdBySource}
+                </span>
+              </div>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'bookingStatus',
+        header: 'Booking Status',
+        meta: { headerClassName: head },
+        cell: ({ row }) => {
+          const rec = row.original
+          return (
+            <div
+              className="contents"
+              onClick={() => handleOpenCommissionDetails(rec)}
+            >
+              <Badge
+                variant="outline"
+                className={`text-[10px] font-semibold ${
+                  rec.bookingStatus === 'Confirmed'
+                    ? 'bg-[#EBF7EF] text-[#0E6A3D] border-[#C5E9D5]'
+                    : rec.bookingStatus === 'Refunded'
+                      ? 'bg-[#FFF6E3] text-[#B54708] border-[#FADBB3]'
+                      : 'bg-[#FEE4E2] text-[#B42318] border-[#FECDCA]'
+                }`}
+              >
+                {rec.bookingStatus}
+              </Badge>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'commissionStatus',
+        header: 'Commission Status',
+        meta: { headerClassName: head },
+        cell: ({ row }) => {
+          const rec = row.original
+          return (
+            <div
+              className="contents"
+              onClick={() => handleOpenCommissionDetails(rec)}
+            >
+              <span
+                className={`px-2 py-0.5 rounded-full text-[10px] font-bold inline-block ${
+                  rec.commissionStatus === 'Settled'
+                    ? 'bg-[#EBF7EF] text-[#0E6A3D]'
+                    : rec.commissionStatus === 'Pending'
+                      ? 'bg-[#FFF6E3] text-[#B54708]'
+                      : rec.commissionStatus === 'Earned'
+                        ? 'bg-[#E0F2FE] text-[#0369A1]'
+                        : 'bg-[#FEE4E2] text-[#B42318]'
+                }`}
+              >
+                {rec.commissionStatus}
+              </span>
+              {rec.reversedReason && (
+                <div className="text-[10px] text-[#4F5B70] mt-0.5">
+                  {rec.reversedReason}
+                </div>
+              )}
+            </div>
+          )
+        },
+      },
+      {
+        id: 'amount',
+        header: 'Commission',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right text-xs font-bold text-[#012A5E]',
+        },
+        cell: ({ row }) => (
+          <div
+            className="contents"
+            onClick={() => handleOpenCommissionDetails(row.original)}
+          >
+            {row.original.amount}
+          </div>
+        ),
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => (
+          <div className="contents" onClick={(e) => e.stopPropagation()}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => handleOpenCommissionDetails(row.original)}
+              className="h-7 px-2 text-xs text-[#0267B8] hover:text-[#014A85] hover:bg-[#EBF2FA] flex items-center gap-1 mx-auto cursor-pointer"
+            >
+              <Eye className="size-3.5" />
+              <span>Details</span>
+            </Button>
+          </div>
+        ),
+      },
+    ]
+  }, [handleOpenCommissionDetails])
+
+  const walletTransactionColumns = React.useMemo<
+    ColumnDef<WalletReportTransaction>[]
+  >(() => {
+    const head = 'font-bold text-[#012A5E] text-xs'
+    return [
+      {
+        id: 'id',
+        header: 'Transaction ID',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-mono font-bold text-xs text-[#0267B8]',
+        },
+        cell: ({ row }) => row.original.id,
+      },
+      {
+        id: 'dateTime',
+        header: 'Date & Time',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.dateTime,
+      },
+      {
+        id: 'type',
+        header: 'Type',
+        meta: { headerClassName: head },
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <Badge
+              className={cn(
+                'text-[10px] font-bold border',
+                tx.type === 'Top-up'
+                  ? 'bg-[#EBF2FA] text-[#0267B8] border-[#CFE4FA]'
+                  : tx.type === 'Commission Credit'
+                    ? 'bg-[#FEF7E0] text-[#B06000] border-[#FCE2A6]'
+                    : tx.type === 'Refund'
+                      ? 'bg-[#E6F4EA] text-[#137333] border-[#C3E6CD]'
+                      : tx.type === 'Manual Adjustment'
+                        ? 'bg-[#F4F6FA] text-[#4F5B70] border-[#DCE2EB]'
+                        : 'bg-[#F3E8FF] text-[#7E22CE] border-[#E9D5FF]',
+              )}
+            >
+              {tx.type}
+            </Badge>
+          )
+        },
+      },
+      {
+        id: 'description',
+        header: 'Description & Reference',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs',
+        },
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <>
+              <div className="font-semibold text-[#012A5E]">
+                {tx.description}
+              </div>
+              <div className="text-[11px] text-[#6B778C]">
+                Ref:{' '}
+                <span className="font-mono font-medium text-[#4F5B70]">
+                  {tx.reference}
+                </span>
+                {tx.subDescription ? ` · ${tx.subDescription}` : ''}
+              </div>
+            </>
+          )
+        },
+      },
+      {
+        id: 'source',
+        header: 'Channel / Source',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.source,
+      },
+      {
+        id: 'direction',
+        header: 'Direction',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <span
+              className={cn(
+                'inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold',
+                tx.direction === 'Credit'
+                  ? 'bg-[#E6F4EA] text-[#00875A]'
+                  : 'bg-[#FEECEB] text-[#DE350B]',
+              )}
+            >
+              {tx.direction === 'Credit' ? '+ Credit' : '- Debit'}
+            </span>
+          )
+        },
+      },
+      {
+        id: 'amount',
+        header: 'Amount',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-bold text-xs whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <span
+            className={
+              row.original.direction === 'Credit'
+                ? 'text-[#00875A]'
+                : 'text-[#DE350B]'
+            }
+          >
+            {row.original.amountFormatted}
+          </span>
+        ),
+      },
+      {
+        id: 'balance',
+        header: 'Balance After',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName:
+            'text-right font-mono font-bold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.runningBalanceFormatted,
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => (
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            onClick={() => {
+              setSelectedWalletTx(row.original)
+              setWalletDetailsOpen(true)
+            }}
+            className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:bg-[#EBF2FA] h-7 px-2.5 rounded-lg cursor-pointer"
+          >
+            Details
+          </Button>
+        ),
+      },
+    ]
+  }, [])
+
+  const creditRequestColumns = React.useMemo<
+    ColumnDef<CreditFacilityRequest>[]
+  >(() => {
+    const head = 'font-bold text-[#012A5E] text-xs'
+    return [
+      {
+        id: 'id',
+        header: 'Request ID',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-mono font-bold text-xs text-[#0267B8]',
+        },
+        cell: ({ row }) => row.original.id,
+      },
+      {
+        id: 'submitted',
+        header: 'Submitted Date',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => `${row.original.date} · ${row.original.time}`,
+      },
+      {
+        id: 'requestType',
+        header: 'Request Type',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs font-semibold text-[#012A5E]',
+        },
+        cell: ({ row }) => (
+          <>
+            <div>{row.original.requestType}</div>
+            <div className="text-[11px] text-[#6B778C] font-normal">
+              {row.original.typeDescription}
+            </div>
+          </>
+        ),
+      },
+      {
+        id: 'requestedAmount',
+        header: 'Requested Amount',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-bold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.requestedAmountFormatted,
+      },
+      {
+        id: 'approvedAmount',
+        header: 'Approved Amount',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-bold text-xs text-[#00875A]',
+        },
+        cell: ({ row }) => row.original.approvedAmountFormatted || '—',
+      },
+      {
+        id: 'status',
+        header: 'Status',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => {
+          const req = row.original
+          return (
+            <Badge
+              className={cn(
+                'text-[11px] font-bold border',
+                req.status === 'Approved'
+                  ? 'bg-[#E6F4EA] text-[#00875A] border-[#C3E6CD]'
+                  : req.status === 'Pending'
+                    ? 'bg-[#FEF7E0] text-[#B06000] border-[#FCE2A6]'
+                    : 'bg-[#FEECEB] text-[#DE350B] border-[#F8D7DA]',
+              )}
+            >
+              {req.status}
+            </Badge>
+          )
+        },
+      },
+      {
+        id: 'decisionNote',
+        header: 'Admin Decision Note',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70] max-w-xs truncate',
+        },
+        cell: ({ row }) => row.original.decisionNote,
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => (
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            onClick={() => {
+              setSelectedCreditRequest(row.original)
+              setCreditDetailsOpen(true)
+            }}
+            className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:bg-[#EBF2FA] h-7 px-2.5 rounded-lg cursor-pointer"
+          >
+            View Request
+          </Button>
+        ),
+      },
+    ]
+  }, [])
+
+  const subAgentPerformanceColumns = React.useMemo<
+    ColumnDef<(typeof SUBAGENT_PERFORMANCE_DATA)[number]>[]
+  >(() => {
+    const head = 'font-bold text-[#012A5E] text-xs'
+    return [
+      {
+        id: 'agentName',
+        header: 'Sub-agent Branch',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-bold text-[#012A5E] text-xs',
+        },
+        cell: ({ row }) => row.original.agentName,
+      },
+      {
+        id: 'location',
+        header: 'Location',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.location,
+      },
+      {
+        id: 'bookings',
+        header: 'Bookings',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center font-bold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.bookingsCount,
+      },
+      {
+        id: 'grossSales',
+        header: 'Gross Sales',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold text-xs text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.grossSales,
+      },
+      {
+        id: 'commission',
+        header: 'Commission',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold text-xs text-[#00875A]',
+        },
+        cell: ({ row }) => row.original.commissionEarned,
+      },
+      {
+        id: 'contribution',
+        header: 'Contribution',
+        meta: {
+          headerClassName: `${head} text-center`,
+          cellClassName: 'text-center',
+        },
+        cell: ({ row }) => (
+          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#EBF2FA] text-[#0267B8]">
+            {row.original.sharePercent}%
+          </span>
+        ),
+      },
+    ]
+  }, [])
 
   return (
     <div className="flex h-screen w-full bg-[#F4F6FA] overflow-hidden font-sans">
@@ -676,18 +1351,15 @@ export function AgentReportsPage({
                   <filterForm.Field
                     name="fromDate"
                     children={(field) => (
-                      <div className="relative">
-                        <Input
-                          type="date"
-                          value={field.state.value}
-                          onChange={(e) => {
-                            field.handleChange(e.target.value)
-                            filterForm.setFieldValue('periodPreset', 'custom')
-                          }}
-                          className="h-10 text-xs rounded-xl bg-white border-[#DCE2EB] text-[#012A5E] font-semibold pr-8"
-                        />
-                        <Calendar className="size-4 text-[#8C9BB0] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                      </div>
+                      <DatePicker
+                        value={field.state.value}
+                        onChange={(value) => {
+                          field.handleChange(value)
+                          filterForm.setFieldValue('periodPreset', 'custom')
+                        }}
+                        placeholder="From"
+                        className="h-10 text-xs rounded-xl bg-white border-[#DCE2EB] text-[#012A5E] font-semibold"
+                      />
                     )}
                   />
                 </div>
@@ -700,18 +1372,15 @@ export function AgentReportsPage({
                   <filterForm.Field
                     name="toDate"
                     children={(field) => (
-                      <div className="relative">
-                        <Input
-                          type="date"
-                          value={field.state.value}
-                          onChange={(e) => {
-                            field.handleChange(e.target.value)
-                            filterForm.setFieldValue('periodPreset', 'custom')
-                          }}
-                          className="h-10 text-xs rounded-xl bg-white border-[#DCE2EB] text-[#012A5E] font-semibold pr-8"
-                        />
-                        <Calendar className="size-4 text-[#8C9BB0] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                      </div>
+                      <DatePicker
+                        value={field.state.value}
+                        onChange={(value) => {
+                          field.handleChange(value)
+                          filterForm.setFieldValue('periodPreset', 'custom')
+                        }}
+                        placeholder="To"
+                        className="h-10 text-xs rounded-xl bg-white border-[#DCE2EB] text-[#012A5E] font-semibold"
+                      />
                     )}
                   />
                 </div>
@@ -968,34 +1637,14 @@ export function AgentReportsPage({
                       </span>
                     </div>
 
-                    {/* Service Rows */}
-                    <div className="space-y-3.5">
-                      {BOOKINGS_BY_SERVICE_DATA.map((srv) => (
-                        <div
-                          key={srv.id}
-                          className="flex items-center gap-3 text-xs"
-                        >
-                          {/* Label with Icon */}
-                          <div className="flex items-center gap-2 w-36 shrink-0 font-bold text-[#012A5E]">
-                            {renderServiceIcon(srv.service)}
-                            <span>{srv.service}</span>
-                          </div>
-
-                          {/* Progress Track & Bar */}
-                          <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                            <div
-                              className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                              style={{ width: `${srv.percentage}%` }}
-                            />
-                          </div>
-
-                          {/* Count & Share */}
-                          <div className="w-16 text-right shrink-0 font-extrabold text-[#012A5E]">
-                            {srv.count} · {srv.percentage}%
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                    <BarListChart
+                      name="Bookings"
+                      data={BOOKINGS_BY_SERVICE_DATA.map((srv) => ({
+                        label: srv.service,
+                        value: srv.count,
+                        detail: `${srv.count} · ${srv.percentage}%`,
+                      }))}
+                    />
                   </div>
                 </div>
 
@@ -1023,34 +1672,14 @@ export function AgentReportsPage({
                       </span>
                     </div>
 
-                    {/* Status Rows */}
-                    <div className="space-y-3.5">
-                      {BOOKINGS_BY_STATUS_DATA.map((st) => (
-                        <div
-                          key={st.id}
-                          className="flex items-center gap-3 text-xs"
-                        >
-                          {/* Label with Status Icon */}
-                          <div className="flex items-center gap-2 w-32 shrink-0 font-bold text-[#012A5E]">
-                            {renderStatusIcon(st.status)}
-                            <span>{st.status}</span>
-                          </div>
-
-                          {/* Progress Bar (proportional to 4 max) */}
-                          <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                            <div
-                              className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                              style={{ width: `${(st.count / 4) * 100}%` }}
-                            />
-                          </div>
-
-                          {/* Count */}
-                          <div className="w-12 text-right shrink-0 font-extrabold text-[#012A5E]">
-                            {st.count}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                    <BarListChart
+                      name="Bookings"
+                      data={BOOKINGS_BY_STATUS_DATA.map((st) => ({
+                        label: st.status,
+                        value: st.count,
+                        detail: String(st.count),
+                      }))}
+                    />
                   </div>
 
                   {/* Card Footer: Total */}
@@ -1134,96 +1763,16 @@ export function AgentReportsPage({
 
                 {/* Table */}
                 <div className="rounded-xl border border-[#DCE2EB] overflow-hidden">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow className="border-b border-[#DCE2EB]">
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Booking Reference
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Customer
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Service
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Status
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Created By
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Supplier
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                          Booking Date
-                        </TableHead>
-                        <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-right">
-                          Action
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {filteredBookingRecords.length === 0 ? (
-                        <TableRow>
-                          <TableCell
-                            colSpan={8}
-                            className="py-8 text-center text-xs text-[#64748B]"
-                          >
-                            No booking records match the selected filters.
-                          </TableCell>
-                        </TableRow>
-                      ) : (
-                        filteredBookingRecords.map((rec) => (
-                          <TableRow
-                            key={rec.id}
-                            className="hover:bg-[#F4F6FA]/60 border-b border-[#DCE2EB]/80 transition-colors"
-                          >
-                            <TableCell className="font-mono text-xs font-bold text-[#012A5E] py-3.5 px-4">
-                              {rec.ref}
-                            </TableCell>
-                            <TableCell className="text-xs font-semibold text-[#0F172A] py-3.5 px-4">
-                              {rec.customer}
-                            </TableCell>
-                            <TableCell className="text-xs text-[#334155] py-3.5 px-4">
-                              {rec.service}
-                            </TableCell>
-                            <TableCell className="py-3.5 px-4">
-                              {renderStatusBadge(rec.status)}
-                            </TableCell>
-                            <TableCell className="py-3.5 px-4">
-                              <div className="flex flex-col">
-                                <span className="text-xs font-semibold text-[#0F172A]">
-                                  {rec.createdBy}
-                                </span>
-                                <span className="text-[10px] text-[#64748B]">
-                                  {rec.createdByType}
-                                </span>
-                              </div>
-                            </TableCell>
-                            <TableCell className="text-xs text-[#94A3B8] py-3.5 px-4">
-                              {rec.supplier}
-                            </TableCell>
-                            <TableCell className="text-xs text-[#334155] py-3.5 px-4 whitespace-nowrap">
-                              {rec.bookingDate}
-                            </TableCell>
-                            <TableCell className="text-right py-3.5 px-4 whitespace-nowrap">
-                              <Button
-                                type="button"
-                                variant="outline"
-                                size="sm"
-                                onClick={() => handleViewBooking(rec)}
-                                className="h-8 px-3 text-xs font-semibold rounded-lg border-[#D0D5DD] bg-white text-[#344054] hover:bg-[#F8FAFC] shadow-2xs gap-1.5 cursor-pointer"
-                              >
-                                <Eye className="size-3.5 text-[#64748B]" />
-                                <span>View Booking</span>
-                              </Button>
-                            </TableCell>
-                          </TableRow>
-                        ))
-                      )}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={filteredBookingRecords}
+                    columns={bookingRecordColumns}
+                    getRowId={(row) => row.id}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="border-b border-[#DCE2EB] hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/60 border-b border-[#DCE2EB]/80 transition-colors"
+                    empty="No booking records match the selected filters."
+                    emptyCellClassName="py-8 text-center text-xs text-[#64748B]"
+                  />
                 </div>
 
                 {/* Table Footer Note */}
@@ -1440,64 +1989,13 @@ export function AgentReportsPage({
                 </div>
 
                 <div className="rounded-xl border border-[#DCE2EB] overflow-hidden">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Service Category
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Bookings
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Gross Sales
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Commission
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Net Sales
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Revenue Share
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {SERVICE_BREAKDOWN_DATA.map((item, idx) => (
-                        <TableRow key={idx} className="hover:bg-[#F4F6FA]/50">
-                          <TableCell className="font-bold text-[#012A5E] text-xs">
-                            {item.service}
-                          </TableCell>
-                          <TableCell className="text-center font-medium text-xs text-[#4F5B70]">
-                            {item.bookingsCount}
-                          </TableCell>
-                          <TableCell className="text-right font-semibold text-xs text-[#012A5E]">
-                            {item.grossSales}
-                          </TableCell>
-                          <TableCell className="text-right font-semibold text-xs text-[#00875A]">
-                            {item.commissionEarned}
-                          </TableCell>
-                          <TableCell className="text-right font-semibold text-xs text-[#012A5E]">
-                            {item.netSales}
-                          </TableCell>
-                          <TableCell className="text-center">
-                            <div className="flex items-center justify-center gap-2">
-                              <div className="w-16 bg-[#EBF2FA] h-2 rounded-full overflow-hidden">
-                                <div
-                                  className="bg-[#0267B8] h-full rounded-full"
-                                  style={{ width: `${item.sharePercentage}%` }}
-                                />
-                              </div>
-                              <span className="text-[11px] font-bold text-[#4F5B70] w-7 text-right">
-                                {item.sharePercentage}%
-                              </span>
-                            </div>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={SERVICE_BREAKDOWN_DATA}
+                    columns={salesServiceColumns}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/50"
+                  />
                 </div>
               </div>
             </div>
@@ -1792,168 +2290,16 @@ export function AgentReportsPage({
                 </div>
 
                 <div className="overflow-x-auto">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Booking Ref
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Customer
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Service
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Created By
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Booking Status
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Commission Status
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Commission
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Action
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {filteredCommissions.length === 0 ? (
-                        <TableRow>
-                          <TableCell
-                            colSpan={8}
-                            className="text-center py-8 text-xs text-[#4F5B70]"
-                          >
-                            No commission records match your search or filter
-                            criteria.
-                          </TableCell>
-                        </TableRow>
-                      ) : (
-                        filteredCommissions.map((rec) => {
-                          const getServiceIcon = () => {
-                            switch (rec.service) {
-                              case 'Flight':
-                                return (
-                                  <Plane className="size-3.5 text-[#0267B8]" />
-                                )
-                              case 'Hotel':
-                                return (
-                                  <Building className="size-3.5 text-[#12B76A]" />
-                                )
-                              case 'Travel Package':
-                                return (
-                                  <Package className="size-3.5 text-[#F79009]" />
-                                )
-                              case 'Activity':
-                                return (
-                                  <Compass className="size-3.5 text-[#7F56D9]" />
-                                )
-                              case 'Car Rental':
-                                return (
-                                  <Car className="size-3.5 text-[#06AED4]" />
-                                )
-                              default:
-                                return (
-                                  <Coins className="size-3.5 text-[#4F5B70]" />
-                                )
-                            }
-                          }
-
-                          return (
-                            <TableRow
-                              key={rec.id}
-                              className="hover:bg-[#F4F6FA]/70 cursor-pointer transition-colors"
-                              onClick={() => handleOpenCommissionDetails(rec)}
-                            >
-                              <TableCell className="font-bold text-xs text-[#0267B8]">
-                                <div className="flex items-center gap-1.5">
-                                  {getServiceIcon()}
-                                  <span>{rec.bookingId}</span>
-                                </div>
-                              </TableCell>
-                              <TableCell className="text-xs font-semibold text-[#012A5E]">
-                                {rec.customer}
-                              </TableCell>
-                              <TableCell className="text-xs text-[#4F5B70]">
-                                {rec.service}
-                              </TableCell>
-                              <TableCell className="text-xs text-[#4F5B70]">
-                                <div className="flex items-center gap-1">
-                                  <span>{rec.createdByName}</span>
-                                  <span
-                                    className={`px-1.5 py-0.5 rounded text-[10px] font-medium ${
-                                      rec.createdBySource === 'Sub-agent'
-                                        ? 'bg-[#EBF7EF] text-[#0E6A3D]'
-                                        : 'bg-[#F2F4F7] text-[#4F5B70]'
-                                    }`}
-                                  >
-                                    {rec.createdBySource}
-                                  </span>
-                                </div>
-                              </TableCell>
-                              <TableCell>
-                                <Badge
-                                  variant="outline"
-                                  className={`text-[10px] font-semibold ${
-                                    rec.bookingStatus === 'Confirmed'
-                                      ? 'bg-[#EBF7EF] text-[#0E6A3D] border-[#C5E9D5]'
-                                      : rec.bookingStatus === 'Refunded'
-                                        ? 'bg-[#FFF6E3] text-[#B54708] border-[#FADBB3]'
-                                        : 'bg-[#FEE4E2] text-[#B42318] border-[#FECDCA]'
-                                  }`}
-                                >
-                                  {rec.bookingStatus}
-                                </Badge>
-                              </TableCell>
-                              <TableCell>
-                                <span
-                                  className={`px-2 py-0.5 rounded-full text-[10px] font-bold inline-block ${
-                                    rec.commissionStatus === 'Settled'
-                                      ? 'bg-[#EBF7EF] text-[#0E6A3D]'
-                                      : rec.commissionStatus === 'Pending'
-                                        ? 'bg-[#FFF6E3] text-[#B54708]'
-                                        : rec.commissionStatus === 'Earned'
-                                          ? 'bg-[#E0F2FE] text-[#0369A1]'
-                                          : 'bg-[#FEE4E2] text-[#B42318]'
-                                  }`}
-                                >
-                                  {rec.commissionStatus}
-                                </span>
-                                {rec.reversedReason && (
-                                  <div className="text-[10px] text-[#4F5B70] mt-0.5">
-                                    {rec.reversedReason}
-                                  </div>
-                                )}
-                              </TableCell>
-                              <TableCell className="text-right text-xs font-bold text-[#012A5E]">
-                                {rec.amount}
-                              </TableCell>
-                              <TableCell
-                                className="text-center"
-                                onClick={(e) => e.stopPropagation()}
-                              >
-                                <Button
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() =>
-                                    handleOpenCommissionDetails(rec)
-                                  }
-                                  className="h-7 px-2 text-xs text-[#0267B8] hover:text-[#014A85] hover:bg-[#EBF2FA] flex items-center gap-1 mx-auto cursor-pointer"
-                                >
-                                  <Eye className="size-3.5" />
-                                  <span>Details</span>
-                                </Button>
-                              </TableCell>
-                            </TableRow>
-                          )
-                        })
-                      )}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={filteredCommissions}
+                    columns={commissionReportColumns}
+                    getRowId={(row) => row.id}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/70 cursor-pointer transition-colors"
+                    empty="No commission records match your search or filter criteria."
+                    emptyCellClassName="text-center py-8 text-xs text-[#4F5B70]"
+                  />
                 </div>
               </div>
 
@@ -2265,22 +2611,25 @@ export function AgentReportsPage({
                     </span>
                   </div>
 
-                  <div className="w-full bg-[#DCE2EB] h-3.5 rounded-full overflow-hidden flex shadow-inner">
-                    <div
-                      className="bg-[#0267B8] h-full rounded-l-full transition-all duration-500"
-                      style={{
-                        width: `${WALLET_CREDIT_REPORT_SUMMARY.creditUtilizationPercent}%`,
-                      }}
-                      title={`Used: ${WALLET_CREDIT_REPORT_SUMMARY.creditUsedFormatted} (${WALLET_CREDIT_REPORT_SUMMARY.creditUtilizationPercent}%)`}
-                    />
-                    <div
-                      className="bg-[#00875A]/20 h-full rounded-r-full transition-all duration-500"
-                      style={{
-                        width: `${100 - WALLET_CREDIT_REPORT_SUMMARY.creditUtilizationPercent}%`,
-                      }}
-                      title={`Available Headroom: ${WALLET_CREDIT_REPORT_SUMMARY.creditAvailableFormatted}`}
-                    />
-                  </div>
+                  <StackedMeterChart
+                    segments={[
+                      {
+                        key: 'used',
+                        label: 'Used credit',
+                        value:
+                          WALLET_CREDIT_REPORT_SUMMARY.creditUtilizationPercent,
+                        color: '#0267B8',
+                      },
+                      {
+                        key: 'available',
+                        label: 'Available headroom',
+                        value:
+                          100 -
+                          WALLET_CREDIT_REPORT_SUMMARY.creditUtilizationPercent,
+                        color: '#B7E4C7',
+                      },
+                    ]}
+                  />
 
                   <div className="flex items-center justify-between text-[11px] text-[#4F5B70] pt-1">
                     <span className="flex items-center gap-1.5 font-medium">
@@ -2696,142 +3045,16 @@ export function AgentReportsPage({
 
                 {/* Table */}
                 <div className="rounded-xl border border-[#DCE2EB] overflow-hidden">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Transaction ID
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Date & Time
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Type
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Description & Reference
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Channel / Source
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Direction
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Amount
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Balance After
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Action
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {filteredWalletTransactions.length === 0 ? (
-                        <TableRow>
-                          <TableCell
-                            colSpan={9}
-                            className="text-center py-8 text-xs text-[#6B778C]"
-                          >
-                            No matching wallet transactions found for the
-                            applied filter.
-                          </TableCell>
-                        </TableRow>
-                      ) : (
-                        filteredWalletTransactions.map((tx) => (
-                          <TableRow
-                            key={tx.id}
-                            className="hover:bg-[#F4F6FA]/50 transition-colors"
-                          >
-                            <TableCell className="font-mono font-bold text-xs text-[#0267B8]">
-                              {tx.id}
-                            </TableCell>
-                            <TableCell className="text-xs text-[#4F5B70] whitespace-nowrap">
-                              {tx.dateTime}
-                            </TableCell>
-                            <TableCell>
-                              <Badge
-                                className={cn(
-                                  'text-[10px] font-bold border',
-                                  tx.type === 'Top-up'
-                                    ? 'bg-[#EBF2FA] text-[#0267B8] border-[#CFE4FA]'
-                                    : tx.type === 'Commission Credit'
-                                      ? 'bg-[#FEF7E0] text-[#B06000] border-[#FCE2A6]'
-                                      : tx.type === 'Refund'
-                                        ? 'bg-[#E6F4EA] text-[#137333] border-[#C3E6CD]'
-                                        : tx.type === 'Manual Adjustment'
-                                          ? 'bg-[#F4F6FA] text-[#4F5B70] border-[#DCE2EB]'
-                                          : 'bg-[#F3E8FF] text-[#7E22CE] border-[#E9D5FF]',
-                                )}
-                              >
-                                {tx.type}
-                              </Badge>
-                            </TableCell>
-                            <TableCell className="text-xs">
-                              <div className="font-semibold text-[#012A5E]">
-                                {tx.description}
-                              </div>
-                              <div className="text-[11px] text-[#6B778C]">
-                                Ref:{' '}
-                                <span className="font-mono font-medium text-[#4F5B70]">
-                                  {tx.reference}
-                                </span>
-                                {tx.subDescription
-                                  ? ` · ${tx.subDescription}`
-                                  : ''}
-                              </div>
-                            </TableCell>
-                            <TableCell className="text-xs text-[#4F5B70]">
-                              {tx.source}
-                            </TableCell>
-                            <TableCell className="text-center">
-                              <span
-                                className={cn(
-                                  'inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold',
-                                  tx.direction === 'Credit'
-                                    ? 'bg-[#E6F4EA] text-[#00875A]'
-                                    : 'bg-[#FEECEB] text-[#DE350B]',
-                                )}
-                              >
-                                {tx.direction === 'Credit'
-                                  ? '+ Credit'
-                                  : '- Debit'}
-                              </span>
-                            </TableCell>
-                            <TableCell
-                              className={cn(
-                                'text-right font-bold text-xs whitespace-nowrap',
-                                tx.direction === 'Credit'
-                                  ? 'text-[#00875A]'
-                                  : 'text-[#DE350B]',
-                              )}
-                            >
-                              {tx.amountFormatted}
-                            </TableCell>
-                            <TableCell className="text-right font-mono font-bold text-xs text-[#012A5E]">
-                              {tx.runningBalanceFormatted}
-                            </TableCell>
-                            <TableCell className="text-center">
-                              <Button
-                                type="button"
-                                variant="ghost"
-                                size="sm"
-                                onClick={() => {
-                                  setSelectedWalletTx(tx)
-                                  setWalletDetailsOpen(true)
-                                }}
-                                className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:bg-[#EBF2FA] h-7 px-2.5 rounded-lg cursor-pointer"
-                              >
-                                Details
-                              </Button>
-                            </TableCell>
-                          </TableRow>
-                        ))
-                      )}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={filteredWalletTransactions}
+                    columns={walletTransactionColumns}
+                    getRowId={(row) => row.id}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/50 transition-colors"
+                    empty="No matching wallet transactions found for the applied filter."
+                    emptyCellClassName="text-center py-8 text-xs text-[#6B778C]"
+                  />
                 </div>
               </div>
 
@@ -2862,94 +3085,14 @@ export function AgentReportsPage({
                 </div>
 
                 <div className="rounded-xl border border-[#DCE2EB] overflow-hidden">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Request ID
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Submitted Date
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Request Type
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Requested Amount
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Approved Amount
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Status
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Admin Decision Note
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Action
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {CREDIT_FACILITY_REQUESTS.map((req) => (
-                        <TableRow
-                          key={req.id}
-                          className="hover:bg-[#F4F6FA]/50 transition-colors"
-                        >
-                          <TableCell className="font-mono font-bold text-xs text-[#0267B8]">
-                            {req.id}
-                          </TableCell>
-                          <TableCell className="text-xs text-[#4F5B70] whitespace-nowrap">
-                            {req.date} · {req.time}
-                          </TableCell>
-                          <TableCell className="text-xs font-semibold text-[#012A5E]">
-                            <div>{req.requestType}</div>
-                            <div className="text-[11px] text-[#6B778C] font-normal">
-                              {req.typeDescription}
-                            </div>
-                          </TableCell>
-                          <TableCell className="text-right font-bold text-xs text-[#012A5E]">
-                            {req.requestedAmountFormatted}
-                          </TableCell>
-                          <TableCell className="text-right font-bold text-xs text-[#00875A]">
-                            {req.approvedAmountFormatted || '—'}
-                          </TableCell>
-                          <TableCell className="text-center">
-                            <Badge
-                              className={cn(
-                                'text-[11px] font-bold border',
-                                req.status === 'Approved'
-                                  ? 'bg-[#E6F4EA] text-[#00875A] border-[#C3E6CD]'
-                                  : req.status === 'Pending'
-                                    ? 'bg-[#FEF7E0] text-[#B06000] border-[#FCE2A6]'
-                                    : 'bg-[#FEECEB] text-[#DE350B] border-[#F8D7DA]',
-                              )}
-                            >
-                              {req.status}
-                            </Badge>
-                          </TableCell>
-                          <TableCell className="text-xs text-[#4F5B70] max-w-xs truncate">
-                            {req.decisionNote}
-                          </TableCell>
-                          <TableCell className="text-center">
-                            <Button
-                              type="button"
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => {
-                                setSelectedCreditRequest(req)
-                                setCreditDetailsOpen(true)
-                              }}
-                              className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:bg-[#EBF2FA] h-7 px-2.5 rounded-lg cursor-pointer"
-                            >
-                              View Request
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={CREDIT_FACILITY_REQUESTS}
+                    columns={creditRequestColumns}
+                    getRowId={(row) => row.id}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/50 transition-colors"
+                  />
                 </div>
               </div>
             </div>
@@ -2978,56 +3121,13 @@ export function AgentReportsPage({
                 </div>
 
                 <div className="rounded-xl border border-[#DCE2EB] overflow-hidden">
-                  <Table>
-                    <TableHeader className="bg-[#F8F9FB]">
-                      <TableRow>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Sub-agent Branch
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs">
-                          Location
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Bookings
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Gross Sales
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-right">
-                          Commission
-                        </TableHead>
-                        <TableHead className="font-bold text-[#012A5E] text-xs text-center">
-                          Contribution
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {SUBAGENT_PERFORMANCE_DATA.map((sub, idx) => (
-                        <TableRow key={idx} className="hover:bg-[#F4F6FA]/50">
-                          <TableCell className="font-bold text-[#012A5E] text-xs">
-                            {sub.agentName}
-                          </TableCell>
-                          <TableCell className="text-xs text-[#4F5B70]">
-                            {sub.location}
-                          </TableCell>
-                          <TableCell className="text-center font-bold text-xs text-[#012A5E]">
-                            {sub.bookingsCount}
-                          </TableCell>
-                          <TableCell className="text-right font-semibold text-xs text-[#012A5E]">
-                            {sub.grossSales}
-                          </TableCell>
-                          <TableCell className="text-right font-semibold text-xs text-[#00875A]">
-                            {sub.commissionEarned}
-                          </TableCell>
-                          <TableCell className="text-center">
-                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#EBF2FA] text-[#0267B8]">
-                              {sub.sharePercent}%
-                            </span>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={SUBAGENT_PERFORMANCE_DATA}
+                    columns={subAgentPerformanceColumns}
+                    headerClassName="bg-[#F8F9FB]"
+                    headerRowClassName="hover:bg-transparent"
+                    rowClassName="hover:bg-[#F4F6FA]/50"
+                  />
                 </div>
               </div>
             </div>

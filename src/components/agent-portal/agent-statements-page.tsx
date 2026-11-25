@@ -14,14 +14,8 @@ import {
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import { DatePicker } from '#/components/ui/date-picker'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { AgentStatementsExportDialog } from './agent-statements-export-dialog'
@@ -32,7 +26,13 @@ import {
   initialStatementCreditUsage,
   initialStatementCommissions,
 } from './agent-statements-data'
-import type { BookingStatus, CommissionStatus } from './agent-statements-types'
+import type {
+  BookingStatus,
+  CommissionStatus,
+  StatementBooking,
+  StatementCommission,
+  StatementWalletTransaction,
+} from './agent-statements-types'
 
 interface AgentStatementsPageProps {
   initialExportOpen?: boolean
@@ -238,6 +238,216 @@ export function AgentStatementsPage({
       </span>
     )
   }
+
+  const statementBookingColumns = React.useMemo<
+    ColumnDef<StatementBooking>[]
+  >(() => {
+    const head = 'text-xs font-bold text-[#4F5B70]'
+    return [
+      {
+        id: 'reference',
+        header: 'Booking Reference',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-semibold text-[#0267B8]',
+        },
+        cell: ({ row }) => row.original.reference,
+      },
+      {
+        id: 'customer',
+        header: 'Customer',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.customer,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'createdBy',
+        header: 'Created By',
+        meta: { headerClassName: head },
+        cell: ({ row }) => (
+          <div className="space-y-0.5">
+            <div className="font-medium text-[#141B28]">
+              {row.original.createdBy}
+            </div>
+            <div className="text-[10px] text-[#4F5B70]">
+              {row.original.creatorType}
+            </div>
+          </div>
+        ),
+      },
+      {
+        id: 'date',
+        header: 'Booking Date',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.date,
+      },
+      {
+        id: 'status',
+        header: 'Booking Status',
+        meta: { headerClassName: head },
+        cell: ({ row }) => renderBookingStatusBadge(row.original.status),
+      },
+      {
+        id: 'amount',
+        header: 'Booking Amount',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.amount,
+      },
+    ]
+  }, [renderBookingStatusBadge])
+
+  const statementWalletColumns = React.useMemo<
+    ColumnDef<StatementWalletTransaction>[]
+  >(() => {
+    const head = 'text-xs font-bold text-[#4F5B70]'
+    return [
+      {
+        id: 'dateTime',
+        header: 'Date / Time',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#4F5B70] whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.dateTime,
+      },
+      {
+        id: 'type',
+        header: 'Type',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-semibold text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.type,
+      },
+      {
+        id: 'description',
+        header: 'Description',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.description,
+      },
+      {
+        id: 'reference',
+        header: 'Reference',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#0267B8] font-mono',
+        },
+        cell: ({ row }) => row.original.reference,
+      },
+      {
+        id: 'direction',
+        header: 'Direction',
+        meta: { headerClassName: head },
+        cell: ({ row }) => renderWalletDirectionBadge(row.original.direction),
+      },
+      {
+        id: 'amount',
+        header: 'Amount',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-semibold',
+        },
+        cell: ({ row }) => (
+          <span
+            className={
+              row.original.direction === 'Credit'
+                ? 'text-[#0E6A3D]'
+                : 'text-[#D92D20]'
+            }
+          >
+            {row.original.amount}
+          </span>
+        ),
+      },
+      {
+        id: 'runningBalance',
+        header: 'Running Balance',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.runningBalance,
+      },
+    ]
+  }, [renderWalletDirectionBadge])
+
+  const statementCommissionColumns = React.useMemo<
+    ColumnDef<StatementCommission>[]
+  >(() => {
+    const head = 'text-xs font-bold text-[#4F5B70]'
+    return [
+      {
+        id: 'bookingReference',
+        header: 'Booking',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'font-semibold text-[#0267B8]',
+        },
+        cell: ({ row }) => row.original.bookingReference,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: head,
+          cellClassName: 'text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'status',
+        header: 'Commission Status',
+        meta: { headerClassName: head },
+        cell: ({ row }) => renderCommissionStatusBadge(row.original.status),
+      },
+      {
+        id: 'commissionAmount',
+        header: 'Commission',
+        meta: {
+          headerClassName: `${head} text-right`,
+          cellClassName: 'text-right font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.commissionAmount,
+      },
+      {
+        id: 'settlementImpact',
+        header: 'Settlement / Impact',
+        meta: { headerClassName: head },
+        cell: ({ row }) => (
+          <div className="space-y-0.5">
+            <div className="font-medium text-[#141B28]">
+              {row.original.settlementImpact}
+            </div>
+            {row.original.impactNote && (
+              <div className="text-[10px] text-[#D92D20]">
+                {row.original.impactNote}
+              </div>
+            )}
+          </div>
+        ),
+      },
+    ]
+  }, [renderCommissionStatusBadge])
 
   return (
     <div className="min-h-screen bg-[#F4F6FA] flex flex-col font-sans text-[#141B28]">
@@ -617,70 +827,14 @@ export function AgentStatementsPage({
                   {/* Section Content: Table */}
                   {bookingsExpanded && (
                     <div className="overflow-x-auto">
-                      <Table>
-                        <TableHeader className="bg-[#F8FAFC]">
-                          <TableRow className="border-b border-[#E6EAF0]">
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Booking Reference
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Customer
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Service
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Created By
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Booking Date
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Booking Status
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70] text-right">
-                              Booking Amount
-                            </TableHead>
-                          </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                          {initialStatementBookings.map((b) => (
-                            <TableRow
-                              key={b.id}
-                              className="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
-                            >
-                              <TableCell className="font-semibold text-[#0267B8]">
-                                {b.reference}
-                              </TableCell>
-                              <TableCell className="font-medium text-[#141B28]">
-                                {b.customer}
-                              </TableCell>
-                              <TableCell className="text-[#4F5B70]">
-                                {b.service}
-                              </TableCell>
-                              <TableCell>
-                                <div className="space-y-0.5">
-                                  <div className="font-medium text-[#141B28]">
-                                    {b.createdBy}
-                                  </div>
-                                  <div className="text-[10px] text-[#4F5B70]">
-                                    {b.creatorType}
-                                  </div>
-                                </div>
-                              </TableCell>
-                              <TableCell className="text-[#4F5B70] whitespace-nowrap">
-                                {b.date}
-                              </TableCell>
-                              <TableCell>
-                                {renderBookingStatusBadge(b.status)}
-                              </TableCell>
-                              <TableCell className="text-right font-medium text-[#141B28]">
-                                {b.amount}
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
+                      <DataTable
+                        data={initialStatementBookings}
+                        columns={statementBookingColumns}
+                        getRowId={(row) => row.id}
+                        headerClassName="bg-[#F8FAFC]"
+                        headerRowClassName="border-b border-[#E6EAF0] hover:bg-transparent"
+                        rowClassName="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
+                      />
 
                       {/* Informational footnote */}
                       <div className="p-3 bg-[#FAFBFD] border-t border-[#E6EAF0] text-[11px] text-[#4F5B70] flex items-center gap-2">
@@ -733,69 +887,14 @@ export function AgentStatementsPage({
                   {/* Section Content: Table */}
                   {walletExpanded && (
                     <div className="overflow-x-auto">
-                      <Table>
-                        <TableHeader className="bg-[#F8FAFC]">
-                          <TableRow className="border-b border-[#E6EAF0]">
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Date / Time
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Type
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Description
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Reference
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Direction
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70] text-right">
-                              Amount
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70] text-right">
-                              Running Balance
-                            </TableHead>
-                          </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                          {initialStatementWalletTransactions.map((tx) => (
-                            <TableRow
-                              key={tx.id}
-                              className="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
-                            >
-                              <TableCell className="text-[#4F5B70] whitespace-nowrap">
-                                {tx.dateTime}
-                              </TableCell>
-                              <TableCell className="font-semibold text-[#141B28]">
-                                {tx.type}
-                              </TableCell>
-                              <TableCell className="text-[#4F5B70]">
-                                {tx.description}
-                              </TableCell>
-                              <TableCell className="text-[#0267B8] font-mono">
-                                {tx.reference}
-                              </TableCell>
-                              <TableCell>
-                                {renderWalletDirectionBadge(tx.direction)}
-                              </TableCell>
-                              <TableCell
-                                className={`text-right font-semibold ${
-                                  tx.direction === 'Credit'
-                                    ? 'text-[#0E6A3D]'
-                                    : 'text-[#D92D20]'
-                                }`}
-                              >
-                                {tx.amount}
-                              </TableCell>
-                              <TableCell className="text-right font-medium text-[#141B28]">
-                                {tx.runningBalance}
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
+                      <DataTable
+                        data={initialStatementWalletTransactions}
+                        columns={statementWalletColumns}
+                        getRowId={(row) => row.id}
+                        headerClassName="bg-[#F8FAFC]"
+                        headerRowClassName="border-b border-[#E6EAF0] hover:bg-transparent"
+                        rowClassName="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
+                      />
 
                       {/* Informational footnote */}
                       <div className="p-3 bg-[#FAFBFD] border-t border-[#E6EAF0] text-[11px] text-[#4F5B70] flex items-center gap-2">
@@ -930,60 +1029,14 @@ export function AgentStatementsPage({
                   {/* Section Content: Table */}
                   {commissionsExpanded && (
                     <div className="overflow-x-auto">
-                      <Table>
-                        <TableHeader className="bg-[#F8FAFC]">
-                          <TableRow className="border-b border-[#E6EAF0]">
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Booking
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Service
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Commission Status
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70] text-right">
-                              Commission
-                            </TableHead>
-                            <TableHead className="text-xs font-bold text-[#4F5B70]">
-                              Settlement / Impact
-                            </TableHead>
-                          </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                          {initialStatementCommissions.map((c) => (
-                            <TableRow
-                              key={c.id}
-                              className="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
-                            >
-                              <TableCell className="font-semibold text-[#0267B8]">
-                                {c.bookingReference}
-                              </TableCell>
-                              <TableCell className="text-[#141B28]">
-                                {c.service}
-                              </TableCell>
-                              <TableCell>
-                                {renderCommissionStatusBadge(c.status)}
-                              </TableCell>
-                              <TableCell className="text-right font-medium text-[#141B28]">
-                                {c.commissionAmount}
-                              </TableCell>
-                              <TableCell>
-                                <div className="space-y-0.5">
-                                  <div className="font-medium text-[#141B28]">
-                                    {c.settlementImpact}
-                                  </div>
-                                  {c.impactNote && (
-                                    <div className="text-[10px] text-[#D92D20]">
-                                      {c.impactNote}
-                                    </div>
-                                  )}
-                                </div>
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
+                      <DataTable
+                        data={initialStatementCommissions}
+                        columns={statementCommissionColumns}
+                        getRowId={(row) => row.id}
+                        headerClassName="bg-[#F8FAFC]"
+                        headerRowClassName="border-b border-[#E6EAF0] hover:bg-transparent"
+                        rowClassName="hover:bg-[#F9FAFC] border-b border-[#F0F2F6] text-xs transition-colors"
+                      />
 
                       {/* Informational footnote */}
                       <div className="p-3 bg-[#FAFBFD] border-t border-[#E6EAF0] text-[11px] text-[#4F5B70] flex items-center gap-2">

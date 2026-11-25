@@ -35,6 +35,7 @@ import { AdminHeader } from './admin-header'
 import { AdminFooter } from './admin-footer'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import { Input } from '#/components/ui/input'
+import { DatePicker } from '#/components/ui/date-picker'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import {
@@ -44,14 +45,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import { BarListChart } from '#/components/ui/bar-list-chart'
+import type { ColumnDef } from '@tanstack/react-table'
 import { BookingDetailsDialog } from './booking-details-dialog'
 import { ExportReportDialog } from './export-report-dialog'
 import {
@@ -75,8 +71,28 @@ import type {
   BookingRecordItem,
   BookingStatus,
 } from './admin-reports-bookings-types'
-import type { ReportTab } from './admin-reports-sales-types'
+import type { ReportTab, SalesReportRow } from './admin-reports-sales-types'
+import type { PaymentReportItem } from './admin-reports-types'
 import { cn } from '#/lib/utils'
+
+const DEFAULT_REPORT_FROM = '2026-09-01'
+const DEFAULT_REPORT_TO = '2026-09-30'
+
+function formatReportDate(value: string) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value)
+  if (!match) return value
+  const date = new Date(
+    Number(match[1]),
+    Number(match[2]) - 1,
+    Number(match[3]),
+  )
+  if (Number.isNaN(date.getTime())) return value
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  })
+}
 
 export interface AdminReportsPageProps {
   initialTab?: ReportTab
@@ -148,8 +164,8 @@ function getStatusBadge(status: BookingStatus) {
 export function AdminReportsPage({
   initialTab = 'bookings',
   initialNodeId = '1005-5341',
-  initialFrom = '01/09/2026',
-  initialTo = '30/09/2026',
+  initialFrom = DEFAULT_REPORT_FROM,
+  initialTo = DEFAULT_REPORT_TO,
   initialService = 'All Services',
   initialSupplier = 'All Suppliers',
   initialChannel = 'All Channels',
@@ -200,8 +216,8 @@ export function AdminReportsPage({
 
   // Reset filters
   const handleResetFilters = () => {
-    setDateFrom('01/09/2026')
-    setDateTo('30/09/2026')
+    setDateFrom(DEFAULT_REPORT_FROM)
+    setDateTo(DEFAULT_REPORT_TO)
     setSelectedService('All Services')
     setSelectedSupplier('All Suppliers')
     setSelectedChannel('All Channels')
@@ -211,8 +227,8 @@ export function AdminReportsPage({
       service: 'All Services',
       supplier: 'All Suppliers',
       channel: 'All Channels',
-      from: '01/09/2026',
-      to: '30/09/2026',
+      from: DEFAULT_REPORT_FROM,
+      to: DEFAULT_REPORT_TO,
     })
   }
 
@@ -287,6 +303,298 @@ export function AdminReportsPage({
   const cancelledCount = React.useMemo(() => {
     return filteredBookings.filter((b) => b.status === 'Cancelled').length
   }, [filteredBookings])
+
+  const bookingHeaderClass =
+    'font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4'
+
+  const bookingColumns = React.useMemo<ColumnDef<BookingRecordItem>[]>(
+    () => [
+      {
+        id: 'bookingRef',
+        header: 'Booking Ref',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 font-bold text-[#012A5E] text-xs font-mono',
+        },
+        cell: ({ row }) => {
+          const b = row.original
+          return (
+            <>
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedBooking(b)
+                  setIsDetailsOpen(true)
+                }}
+                className="hover:underline hover:text-[#0267B8] cursor-pointer text-left font-bold"
+              >
+                {b.bookingRef}
+              </button>
+              <span className="block text-[10px] text-[#8C9BAE] font-normal font-sans">
+                PNR: {b.pnr}
+              </span>
+            </>
+          )
+        },
+      },
+      {
+        id: 'dateTime',
+        header: 'Date & Time',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#141B28] whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <>
+            <div>{row.original.date}</div>
+            <div className="text-[10px] text-[#8C9BAE]">
+              {row.original.time}
+            </div>
+          </>
+        ),
+      },
+      {
+        id: 'customer',
+        header: 'Customer / Booker',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#141B28]',
+        },
+        cell: ({ row }) => (
+          <>
+            <div className="font-bold text-[#012A5E]">
+              {row.original.customerName}
+            </div>
+            <div className="text-[11px] text-[#64748B] truncate max-w-[180px]">
+              {row.original.customerEmail}
+            </div>
+          </>
+        ),
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#141B28]',
+        },
+        cell: ({ row }) => (
+          <div className="flex items-center gap-1.5 font-semibold text-[#012A5E]">
+            {getServiceIcon(row.original.service)}
+            <span>{row.original.service}</span>
+          </div>
+        ),
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'channel',
+        header: 'Channel',
+        meta: {
+          headerClassName: bookingHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => (
+          <span className="bg-[#F4F6FA] text-[#012A5E] px-2 py-0.5 rounded text-[11px] font-medium border border-[#E2E8F0]">
+            {row.original.channel}
+          </span>
+        ),
+      },
+      {
+        id: 'amount',
+        header: 'Amount',
+        meta: {
+          headerClassName: `${bookingHeaderClass} text-right`,
+          cellClassName:
+            'py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]',
+        },
+        cell: ({ row }) => `$${row.original.amountFormatted}`,
+      },
+      {
+        id: 'status',
+        header: 'Status',
+        meta: {
+          headerClassName: `${bookingHeaderClass} text-center`,
+          cellClassName: 'py-3 px-4 text-center',
+        },
+        cell: ({ row }) => getStatusBadge(row.original.status),
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName: `${bookingHeaderClass} text-right`,
+          cellClassName: 'py-3 px-4 text-right',
+        },
+        cell: ({ row }) => {
+          const b = row.original
+          return (
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                setSelectedBooking(b)
+                setIsDetailsOpen(true)
+              }}
+              className="h-8 px-2.5 text-xs text-[#0267B8] hover:bg-[#EBF2FA] hover:text-[#012A5E] rounded-lg cursor-pointer"
+            >
+              <Eye className="size-3.5 mr-1" />
+              <span>View</span>
+            </Button>
+          )
+        },
+      },
+    ],
+    [bookingHeaderClass, setIsDetailsOpen, setSelectedBooking],
+  )
+
+  const reportHeaderClass =
+    'font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4'
+
+  const salesColumns = React.useMemo<ColumnDef<SalesReportRow>[]>(
+    () => [
+      {
+        id: 'date',
+        header: 'Date',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.date,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs font-semibold text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'channel',
+        header: 'Channel',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.channel,
+      },
+      {
+        id: 'bookingCount',
+        header: 'Booking Count',
+        meta: {
+          headerClassName: `${reportHeaderClass} text-center`,
+          cellClassName:
+            'py-3 px-4 text-xs text-center font-bold text-[#012A5E]',
+        },
+        cell: ({ row }) => row.original.bookingCount,
+      },
+      {
+        id: 'amount',
+        header: 'Sales Amount',
+        meta: {
+          headerClassName: `${reportHeaderClass} text-right`,
+          cellClassName:
+            'py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]',
+        },
+        cell: ({ row }) => `$${row.original.amountFormatted}`,
+      },
+    ],
+    [reportHeaderClass],
+  )
+
+  const paymentColumns = React.useMemo<ColumnDef<PaymentReportItem>[]>(
+    () => [
+      {
+        id: 'date',
+        header: 'Date',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs font-medium text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.date,
+      },
+      {
+        id: 'bookingRef',
+        header: 'Booking Ref',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs font-bold text-[#012A5E] font-mono',
+        },
+        cell: ({ row }) => row.original.bookingReference,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#141B28]',
+        },
+        cell: ({ row }) => row.original.service,
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: reportHeaderClass,
+          cellClassName: 'py-3 px-4 text-xs text-[#4F5B70]',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'status',
+        header: 'Status',
+        meta: {
+          headerClassName: `${reportHeaderClass} text-center`,
+          cellClassName: 'py-3 px-4 text-center',
+        },
+        cell: ({ row }) => (
+          <span
+            className={cn(
+              'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold border',
+              row.original.paymentStatus === 'Paid' &&
+                'bg-[#E6F9F0] text-[#0E9355] border-[#A6E8C4]',
+              row.original.paymentStatus === 'Refunded' &&
+                'bg-[#EDE9FE] text-[#6366F1] border-[#DDD6FE]',
+              row.original.paymentStatus === 'Failed' &&
+                'bg-[#FEE2E2] text-[#DC2626] border-[#FECACA]',
+            )}
+          >
+            {row.original.paymentStatus}
+          </span>
+        ),
+      },
+      {
+        id: 'amount',
+        header: 'Amount',
+        meta: {
+          headerClassName: `${reportHeaderClass} text-right`,
+          cellClassName:
+            'py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]',
+        },
+        cell: ({ row }) => `$${row.original.paymentAmount.toFixed(2)}`,
+      },
+    ],
+    [reportHeaderClass],
+  )
 
   return (
     <SidebarProvider defaultOpen>
@@ -395,12 +703,11 @@ export function AdminReportsPage({
                   >
                     From
                   </label>
-                  <Input
+                  <DatePicker
                     id="f-from"
-                    type="text"
                     value={dateFrom}
-                    onChange={(e) => setDateFrom(e.target.value)}
-                    placeholder="01/09/2026"
+                    onChange={setDateFrom}
+                    placeholder="From"
                     className="h-10 bg-white border-[#DCE2EB] rounded-xl text-xs text-[#141B28] font-medium"
                   />
                 </div>
@@ -413,12 +720,11 @@ export function AdminReportsPage({
                   >
                     To
                   </label>
-                  <Input
+                  <DatePicker
                     id="f-to"
-                    type="text"
                     value={dateTo}
-                    onChange={(e) => setDateTo(e.target.value)}
-                    placeholder="30/09/2026"
+                    onChange={setDateTo}
+                    placeholder="To"
                     className="h-10 bg-white border-[#DCE2EB] rounded-xl text-xs text-[#141B28] font-medium"
                   />
                 </div>
@@ -553,7 +859,8 @@ export function AdminReportsPage({
                     Report period:
                   </span>
                   <span>
-                    {appliedFilters.from} – {appliedFilters.to}
+                    {formatReportDate(appliedFilters.from)} –{' '}
+                    {formatReportDate(appliedFilters.to)}
                   </span>
                   <span>·</span>
                   <span className="bg-[#EBF2FA] text-[#012A5E] px-2 py-0.5 rounded font-medium text-[11px]">
@@ -707,28 +1014,14 @@ export function AdminReportsPage({
                         </span>
                       </div>
 
-                      <div className="space-y-3.5">
-                        {BOOKINGS_BY_SERVICE_ITEMS.map((item) => (
-                          <div
-                            key={item.id}
-                            className="flex items-center gap-3 text-xs"
-                          >
-                            <div className="flex items-center gap-2 w-36 shrink-0 font-bold text-[#012A5E]">
-                              {getServiceIcon(item.label)}
-                              <span>{item.label}</span>
-                            </div>
-                            <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                              <div
-                                className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                                style={{ width: `${item.percentage * 3.5}%` }}
-                              />
-                            </div>
-                            <div className="w-24 text-right shrink-0 font-extrabold text-[#012A5E]">
-                              {item.count} · {item.percentage}%
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                      <BarListChart
+                        name="Bookings"
+                        data={BOOKINGS_BY_SERVICE_ITEMS.map((item) => ({
+                          label: item.label,
+                          value: item.count,
+                          detail: `${item.count} · ${item.percentage}%`,
+                        }))}
+                      />
                     </div>
                     <div className="border-t border-[#EEF1F5] pt-3.5 mt-5 flex items-center justify-between text-xs font-extrabold text-[#012A5E]">
                       <span>Total Service Bookings</span>
@@ -759,42 +1052,15 @@ export function AdminReportsPage({
                         </span>
                       </div>
 
-                      <div className="space-y-4">
-                        {BOOKINGS_BY_STATUS_ITEMS.map((st) => (
-                          <div
-                            key={st.id}
-                            className="flex items-center gap-3 text-xs"
-                          >
-                            <div className="flex items-center gap-2 w-32 shrink-0 font-bold text-[#012A5E]">
-                              {st.label === 'Confirmed' && (
-                                <CheckCircle2 className="size-3.5 text-emerald-600" />
-                              )}
-                              {st.label === 'Completed' && (
-                                <CheckCircle2 className="size-3.5 text-[#0267B8]" />
-                              )}
-                              {st.label === 'Pending' && (
-                                <Clock className="size-3.5 text-amber-600" />
-                              )}
-                              {st.label === 'Cancelled' && (
-                                <XCircle className="size-3.5 text-rose-600" />
-                              )}
-                              <span>{st.label}</span>
-                            </div>
-                            <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                              <div
-                                className="h-full rounded-full transition-all duration-500"
-                                style={{
-                                  width: `${(st.count / 6) * 100}%`,
-                                  backgroundColor: st.color,
-                                }}
-                              />
-                            </div>
-                            <div className="w-20 text-right shrink-0 font-extrabold text-[#012A5E]">
-                              {st.count} bookings
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                      <BarListChart
+                        name="Bookings"
+                        data={BOOKINGS_BY_STATUS_ITEMS.map((st) => ({
+                          label: st.label,
+                          value: st.count,
+                          detail: `${st.count} bookings`,
+                          color: st.color,
+                        }))}
+                      />
                     </div>
                     <div className="border-t border-[#EEF1F5] pt-3.5 mt-5 flex items-center justify-between text-xs font-extrabold text-[#012A5E]">
                       <span>Total Tracked Statuses</span>
@@ -825,27 +1091,14 @@ export function AdminReportsPage({
                         </span>
                       </div>
 
-                      <div className="space-y-3.5">
-                        {BOOKINGS_BY_CHANNEL_ITEMS.map((ch) => (
-                          <div
-                            key={ch.id}
-                            className="flex items-center gap-3 text-xs"
-                          >
-                            <div className="w-36 shrink-0 font-bold text-[#012A5E]">
-                              {ch.label}
-                            </div>
-                            <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                              <div
-                                className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                                style={{ width: `${ch.percentage * 2.2}%` }}
-                              />
-                            </div>
-                            <div className="w-28 text-right shrink-0 font-extrabold text-[#012A5E]">
-                              {ch.count} ({ch.percentage}%)
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                      <BarListChart
+                        name="Bookings"
+                        data={BOOKINGS_BY_CHANNEL_ITEMS.map((ch) => ({
+                          label: ch.label,
+                          value: ch.count,
+                          detail: `${ch.count} (${ch.percentage}%)`,
+                        }))}
+                      />
                     </div>
                     <div className="border-t border-[#EEF1F5] pt-3.5 mt-5 flex items-center justify-between text-xs font-extrabold text-[#012A5E]">
                       <span>Total Channel Volume</span>
@@ -876,27 +1129,15 @@ export function AdminReportsPage({
                         </span>
                       </div>
 
-                      <div className="space-y-3.5">
-                        {BOOKINGS_BY_SUPPLIER_ITEMS.map((sup) => (
-                          <div
-                            key={sup.id}
-                            className="flex items-center gap-3 text-xs"
-                          >
-                            <div className="w-40 shrink-0 font-bold text-[#012A5E] truncate">
-                              {sup.label}
-                            </div>
-                            <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                              <div
-                                className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                                style={{ width: `${sup.percentage * 3.8}%` }}
-                              />
-                            </div>
-                            <div className="w-24 text-right shrink-0 font-extrabold text-[#012A5E]">
-                              {sup.count} ({sup.percentage}%)
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                      <BarListChart
+                        name="Bookings"
+                        labelWidth={160}
+                        data={BOOKINGS_BY_SUPPLIER_ITEMS.map((sup) => ({
+                          label: sup.label,
+                          value: sup.count,
+                          detail: `${sup.count} (${sup.percentage}%)`,
+                        }))}
+                      />
                     </div>
                     <div className="border-t border-[#EEF1F5] pt-3.5 mt-5 flex items-center justify-between text-xs font-extrabold text-[#012A5E]">
                       <span>Total Supplier Bookings</span>
@@ -975,156 +1216,34 @@ export function AdminReportsPage({
 
                   {/* Responsive Table */}
                   <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader className="bg-[#F8FAFC]">
-                        <TableRow className="border-b border-[#DCE2EB] hover:bg-transparent">
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Booking Ref
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Date & Time
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Customer / Booker
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Service
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Supplier
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Channel
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-right">
-                            Amount
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-center">
-                            Status
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-right">
-                            Action
-                          </TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {filteredBookings.length === 0 ? (
-                          <TableRow>
-                            <TableCell
-                              colSpan={9}
-                              className="text-center py-12 text-[#64748B] text-xs"
-                            >
-                              <div className="flex flex-col items-center justify-center gap-2">
-                                <Ticket className="size-8 text-[#A0AEC0]" />
-                                <span className="font-bold text-[#012A5E]">
-                                  No bookings match current filters
-                                </span>
-                                <span className="text-xs text-[#8C9BAE]">
-                                  Try adjusting your dates or dropdown filters
-                                </span>
-                                <Button
-                                  type="button"
-                                  variant="outline"
-                                  onClick={handleResetFilters}
-                                  className="mt-2 text-xs rounded-xl border-[#DCE2EB]"
-                                >
-                                  Reset Filters
-                                </Button>
-                              </div>
-                            </TableCell>
-                          </TableRow>
-                        ) : (
-                          filteredBookings.map((b) => (
-                            <TableRow
-                              key={b.id}
-                              className="border-b border-[#EEF1F5] hover:bg-[#F9FAFC] transition-colors"
-                            >
-                              {/* Booking Reference */}
-                              <TableCell className="py-3 px-4 font-bold text-[#012A5E] text-xs font-mono">
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    setSelectedBooking(b)
-                                    setIsDetailsOpen(true)
-                                  }}
-                                  className="hover:underline hover:text-[#0267B8] cursor-pointer text-left font-bold"
-                                >
-                                  {b.bookingRef}
-                                </button>
-                                <span className="block text-[10px] text-[#8C9BAE] font-normal font-sans">
-                                  PNR: {b.pnr}
-                                </span>
-                              </TableCell>
-
-                              {/* Date */}
-                              <TableCell className="py-3 px-4 text-xs text-[#141B28] whitespace-nowrap">
-                                <div>{b.date}</div>
-                                <div className="text-[10px] text-[#8C9BAE]">
-                                  {b.time}
-                                </div>
-                              </TableCell>
-
-                              {/* Customer */}
-                              <TableCell className="py-3 px-4 text-xs text-[#141B28]">
-                                <div className="font-bold text-[#012A5E]">
-                                  {b.customerName}
-                                </div>
-                                <div className="text-[11px] text-[#64748B] truncate max-w-[180px]">
-                                  {b.customerEmail}
-                                </div>
-                              </TableCell>
-
-                              {/* Service */}
-                              <TableCell className="py-3 px-4 text-xs text-[#141B28]">
-                                <div className="flex items-center gap-1.5 font-semibold text-[#012A5E]">
-                                  {getServiceIcon(b.service)}
-                                  <span>{b.service}</span>
-                                </div>
-                              </TableCell>
-
-                              {/* Supplier */}
-                              <TableCell className="py-3 px-4 text-xs text-[#4F5B70]">
-                                {b.supplier}
-                              </TableCell>
-
-                              {/* Channel */}
-                              <TableCell className="py-3 px-4 text-xs text-[#4F5B70]">
-                                <span className="bg-[#F4F6FA] text-[#012A5E] px-2 py-0.5 rounded text-[11px] font-medium border border-[#E2E8F0]">
-                                  {b.channel}
-                                </span>
-                              </TableCell>
-
-                              {/* Amount */}
-                              <TableCell className="py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]">
-                                ${b.amountFormatted}
-                              </TableCell>
-
-                              {/* Status */}
-                              <TableCell className="py-3 px-4 text-center">
-                                {getStatusBadge(b.status)}
-                              </TableCell>
-
-                              {/* Action */}
-                              <TableCell className="py-3 px-4 text-right">
-                                <Button
-                                  type="button"
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() => {
-                                    setSelectedBooking(b)
-                                    setIsDetailsOpen(true)
-                                  }}
-                                  className="h-8 px-2.5 text-xs text-[#0267B8] hover:bg-[#EBF2FA] hover:text-[#012A5E] rounded-lg cursor-pointer"
-                                >
-                                  <Eye className="size-3.5 mr-1" />
-                                  <span>View</span>
-                                </Button>
-                              </TableCell>
-                            </TableRow>
-                          ))
-                        )}
-                      </TableBody>
-                    </Table>
+                    <DataTable
+                      data={filteredBookings}
+                      columns={bookingColumns}
+                      getRowId={(booking) => booking.id}
+                      headerClassName="bg-[#F8FAFC]"
+                      headerRowClassName="border-b border-[#DCE2EB] hover:bg-transparent"
+                      rowClassName="border-b border-[#EEF1F5] hover:bg-[#F9FAFC] transition-colors"
+                      emptyCellClassName="text-center py-12 text-[#64748B] text-xs"
+                      empty={
+                        <div className="flex flex-col items-center justify-center gap-2">
+                          <Ticket className="size-8 text-[#A0AEC0]" />
+                          <span className="font-bold text-[#012A5E]">
+                            No bookings match current filters
+                          </span>
+                          <span className="text-xs text-[#8C9BAE]">
+                            Try adjusting your dates or dropdown filters
+                          </span>
+                          <Button
+                            type="button"
+                            variant="outline"
+                            onClick={handleResetFilters}
+                            className="mt-2 text-xs rounded-xl border-[#DCE2EB]"
+                          >
+                            Reset Filters
+                          </Button>
+                        </div>
+                      }
+                    />
                   </div>
 
                   {/* Table Footer */}
@@ -1224,28 +1343,14 @@ export function AdminReportsPage({
                     </span>
                   </div>
 
-                  <div className="space-y-3.5">
-                    {INITIAL_SERVICE_BREAKDOWNS.map((item) => (
-                      <div
-                        key={item.id}
-                        className="flex items-center gap-3 text-xs"
-                      >
-                        <div className="flex items-center gap-2 w-36 shrink-0 font-bold text-[#012A5E]">
-                          {getServiceIcon(item.service)}
-                          <span>{item.service}</span>
-                        </div>
-                        <div className="flex-1 bg-[#DEE8F5]/50 h-2.5 rounded-full overflow-hidden">
-                          <div
-                            className="bg-[#0267B8] h-full rounded-full transition-all duration-500"
-                            style={{ width: `${item.percentage}%` }}
-                          />
-                        </div>
-                        <div className="w-40 text-right shrink-0 font-extrabold text-[#012A5E]">
-                          ${item.amountFormatted} · {item.bookingText}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  <BarListChart
+                    name="Sales"
+                    data={INITIAL_SERVICE_BREAKDOWNS.map((item) => ({
+                      label: item.service,
+                      value: item.percentage,
+                      detail: `$${item.amountFormatted}`,
+                    }))}
+                  />
                 </div>
 
                 {/* Sales Report Table */}
@@ -1266,57 +1371,14 @@ export function AdminReportsPage({
                   </div>
 
                   <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader className="bg-[#F8FAFC]">
-                        <TableRow className="border-b border-[#DCE2EB]">
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Date
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Service
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Supplier
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Channel
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-center">
-                            Booking Count
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-right">
-                            Sales Amount
-                          </TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {INITIAL_SALES_REPORT_ROWS.map((row) => (
-                          <TableRow
-                            key={row.id}
-                            className="border-b border-[#EEF1F5]"
-                          >
-                            <TableCell className="py-3 px-4 text-xs font-medium text-[#141B28]">
-                              {row.date}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs font-semibold text-[#012A5E]">
-                              {row.service}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-[#4F5B70]">
-                              {row.supplier}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-[#4F5B70]">
-                              {row.channel}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-center font-bold text-[#012A5E]">
-                              {row.bookingCount}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]">
-                              ${row.amountFormatted}
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                    <DataTable
+                      data={INITIAL_SALES_REPORT_ROWS}
+                      columns={salesColumns}
+                      getRowId={(row) => row.id}
+                      headerClassName="bg-[#F8FAFC]"
+                      headerRowClassName="border-b border-[#DCE2EB] hover:bg-transparent"
+                      rowClassName="border-b border-[#EEF1F5]"
+                    />
                   </div>
                 </section>
               </div>
@@ -1365,43 +1427,31 @@ export function AdminReportsPage({
                   <h3 className="text-base font-bold text-[#012A5E]">
                     Payment Methods Distribution
                   </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-[#012A5E]">
-                        Credit / Debit Card (Stripe Gateway)
-                      </span>
-                      <span className="font-extrabold text-[#012A5E]">
-                        $3,195.00 (62%)
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#EBF2FA] h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-[#0267B8] h-full w-[62%] rounded-full" />
-                    </div>
-
-                    <div className="flex items-center justify-between text-xs pt-2">
-                      <span className="font-bold text-[#012A5E]">
-                        B2B Agent Wallet Balance
-                      </span>
-                      <span className="font-extrabold text-[#012A5E]">
-                        $1,250.00 (24%)
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#EBF2FA] h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-[#6366F1] h-full w-[24%] rounded-full" />
-                    </div>
-
-                    <div className="flex items-center justify-between text-xs pt-2">
-                      <span className="font-bold text-[#012A5E]">
-                        Credit Facility (Corporate / Post-Paid)
-                      </span>
-                      <span className="font-extrabold text-[#012A5E]">
-                        $710.00 (14%)
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#EBF2FA] h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-[#10B981] h-full w-[14%] rounded-full" />
-                    </div>
-                  </div>
+                  <BarListChart
+                    name="Payments"
+                    max={100}
+                    labelWidth={220}
+                    data={[
+                      {
+                        label: 'Card',
+                        value: 62,
+                        detail: '$3,195.00',
+                        color: '#0267B8',
+                      },
+                      {
+                        label: 'Wallet',
+                        value: 24,
+                        detail: '$1,250.00',
+                        color: '#6366F1',
+                      },
+                      {
+                        label: 'Credit',
+                        value: 14,
+                        detail: '$710.00',
+                        color: '#10B981',
+                      },
+                    ]}
+                  />
                 </div>
 
                 {/* Payments Table */}
@@ -1417,69 +1467,14 @@ export function AdminReportsPage({
                     </div>
                   </div>
                   <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader className="bg-[#F8FAFC]">
-                        <TableRow className="border-b border-[#DCE2EB]">
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Date
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Booking Ref
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Service
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4">
-                            Supplier
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-center">
-                            Status
-                          </TableHead>
-                          <TableHead className="font-extrabold text-[#64748B] text-[11px] uppercase tracking-wider py-3.5 px-4 text-right">
-                            Amount
-                          </TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {INITIAL_PAYMENT_REPORTS.map((row) => (
-                          <TableRow
-                            key={row.id}
-                            className="border-b border-[#EEF1F5]"
-                          >
-                            <TableCell className="py-3 px-4 text-xs font-medium text-[#141B28]">
-                              {row.date}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs font-bold text-[#012A5E] font-mono">
-                              {row.bookingReference}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-[#141B28]">
-                              {row.service}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-[#4F5B70]">
-                              {row.supplier}
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-center">
-                              <span
-                                className={cn(
-                                  'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold border',
-                                  row.paymentStatus === 'Paid' &&
-                                    'bg-[#E6F9F0] text-[#0E9355] border-[#A6E8C4]',
-                                  row.paymentStatus === 'Refunded' &&
-                                    'bg-[#EDE9FE] text-[#6366F1] border-[#DDD6FE]',
-                                  row.paymentStatus === 'Failed' &&
-                                    'bg-[#FEE2E2] text-[#DC2626] border-[#FECACA]',
-                                )}
-                              >
-                                {row.paymentStatus}
-                              </span>
-                            </TableCell>
-                            <TableCell className="py-3 px-4 text-xs text-right font-extrabold text-[#012A5E]">
-                              ${row.paymentAmount.toFixed(2)}
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                    <DataTable
+                      data={INITIAL_PAYMENT_REPORTS}
+                      columns={paymentColumns}
+                      getRowId={(row) => row.id}
+                      headerClassName="bg-[#F8FAFC]"
+                      headerRowClassName="border-b border-[#DCE2EB] hover:bg-transparent"
+                      rowClassName="border-b border-[#EEF1F5]"
+                    />
                   </div>
                 </section>
               </div>
@@ -1528,31 +1523,25 @@ export function AdminReportsPage({
                   <h3 className="text-base font-bold text-[#012A5E]">
                     Commission Breakdown by Channel
                   </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-[#012A5E]">
-                        B2C Direct Channels (100% Platform Retained)
-                      </span>
-                      <span className="font-extrabold text-[#012A5E]">
-                        $225.70
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#EBF2FA] h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-[#137333] h-full w-[40%] rounded-full" />
-                    </div>
-
-                    <div className="flex items-center justify-between text-xs pt-2">
-                      <span className="font-bold text-[#012A5E]">
-                        B2B Agent Shared Margins (Paid out to Partners)
-                      </span>
-                      <span className="font-extrabold text-[#012A5E]">
-                        $342.50
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#EBF2FA] h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-[#0267B8] h-full w-[60%] rounded-full" />
-                    </div>
-                  </div>
+                  <BarListChart
+                    name="Commission"
+                    max={100}
+                    labelWidth={180}
+                    data={[
+                      {
+                        label: 'B2C Direct',
+                        value: 40,
+                        detail: '$225.70',
+                        color: '#137333',
+                      },
+                      {
+                        label: 'B2B Agent',
+                        value: 60,
+                        detail: '$342.50',
+                        color: '#0267B8',
+                      },
+                    ]}
+                  />
                 </div>
               </div>
             )}
@@ -1575,8 +1564,8 @@ export function AdminReportsPage({
           onOpenChange={setIsExportOpen}
           records={filteredBookings}
           reportName="Admin Reports - Bookings"
-          dateFrom={appliedFilters.from}
-          dateTo={appliedFilters.to}
+          dateFrom={formatReportDate(appliedFilters.from)}
+          dateTo={formatReportDate(appliedFilters.to)}
         />
       </div>
     </SidebarProvider>

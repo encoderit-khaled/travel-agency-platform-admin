@@ -26,14 +26,9 @@ import {
 } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Button } from '#/components/ui/button'
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '#/components/ui/table'
+import { BarListChart } from '#/components/ui/bar-list-chart'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Select,
   SelectContent,
@@ -343,6 +338,100 @@ export function SubAgentPerformancePage({
     }
   }
 
+  const bookingColumns = React.useMemo<ColumnDef<SubAgentBookingRecord>[]>(
+    () => [
+      {
+        accessorKey: 'ref',
+        header: 'Booking Reference',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <button
+              onClick={() => handleOpenBooking(bk)}
+              className="hover:underline cursor-pointer flex items-center gap-1 font-mono text-xs"
+            >
+              <span>{bk.ref}</span>
+            </button>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-extrabold text-[#5B6B82]',
+          cellClassName: 'font-bold text-xs text-[#0267B8]',
+        },
+      },
+      {
+        accessorKey: 'customer',
+        header: 'Customer',
+        cell: ({ row }) => (
+          <>
+            <div className="font-bold text-xs text-[#012A5E]">
+              {row.original.customer}
+            </div>
+            <div className="text-[11px] text-[#64748B]">
+              Booked on behalf of customer
+            </div>
+          </>
+        ),
+        meta: {
+          headerClassName: 'text-xs font-extrabold text-[#5B6B82]',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'Service',
+        cell: ({ row }) => (
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#012A5E]">
+            {getServiceBadgeIcon(row.original.service)}
+            <span>{row.original.service}</span>
+          </span>
+        ),
+        meta: {
+          headerClassName: 'text-xs font-extrabold text-[#5B6B82]',
+        },
+      },
+      {
+        accessorKey: 'travelDate',
+        header: 'Travel Date',
+        cell: ({ row }) => row.original.travelDate,
+        meta: {
+          headerClassName: 'text-xs font-extrabold text-[#5B6B82]',
+          cellClassName: 'text-xs font-medium text-[#5B6B82]',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'Status',
+        cell: ({ row }) => getStatusBadge(row.original.status),
+        meta: {
+          headerClassName: 'text-xs font-extrabold text-[#5B6B82]',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handleOpenBooking(bk)}
+              className="bg-white border-[#DCE2EB] text-[#012A5E] hover:bg-[#F4F6FA] text-xs font-bold h-8 rounded-lg cursor-pointer"
+            >
+              View Booking
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-xs font-extrabold text-[#5B6B82] text-right',
+          cellClassName: 'text-right',
+        },
+      },
+    ],
+    [handleOpenBooking, getServiceBadgeIcon, getStatusBadge],
+  )
+
   const mainBody = (
     <div className="space-y-5">
       {/* Sub-agent Report Info Aside */}
@@ -621,29 +710,16 @@ export function SubAgentPerformancePage({
               </span>
             </div>
 
-            <div className="mt-4 space-y-3">
-              {servicesList.map((svc) => {
-                const IconComponent = svc.icon
-                const percentage = (svc.count / 5) * 100
-                return (
-                  <div key={svc.id} className="flex items-center gap-3 text-xs">
-                    <div className="flex items-center gap-2 w-36 shrink-0 text-[#012A5E] font-bold">
-                      <IconComponent className="size-3.5 text-[#0267B8]" />
-                      <span>{svc.name}</span>
-                    </div>
-                    <div className="flex-1 bg-[#F1F5F9] h-2.5 rounded-full overflow-hidden">
-                      <div
-                        className="bg-[#0267B8] h-full rounded-full transition-all duration-300"
-                        style={{ width: `${percentage}%` }}
-                      />
-                    </div>
-                    <div className="w-20 text-right text-[#5B6B82] font-semibold shrink-0">
-                      {svc.count} {svc.count === 1 ? 'booking' : 'bookings'}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+            <BarListChart
+              className="mt-4"
+              name="Bookings"
+              color="#0267B8"
+              data={servicesList.map((svc) => ({
+                label: svc.name,
+                value: svc.count,
+                detail: `${svc.count} ${svc.count === 1 ? 'booking' : 'bookings'}`,
+              }))}
+            />
           </div>
         </section>
 
@@ -671,31 +747,17 @@ export function SubAgentPerformancePage({
               </span>
             </div>
 
-            <div className="mt-4 space-y-3.5">
-              {statusList.map((st) => {
-                const percentage = (st.count / 5) * 100
-                return (
-                  <div
-                    key={st.status}
-                    className="flex items-center gap-3 text-xs"
-                  >
-                    <div className="flex items-center gap-2 w-32 shrink-0 text-[#012A5E] font-bold">
-                      <span className={`size-2 rounded-full ${st.dotColor}`} />
-                      <span>{st.status}</span>
-                    </div>
-                    <div className="flex-1 bg-[#F1F5F9] h-2.5 rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full transition-all duration-300 ${st.count > 0 ? 'bg-[#012A5E]' : 'bg-transparent'}`}
-                        style={{ width: `${percentage}%` }}
-                      />
-                    </div>
-                    <div className="w-20 text-right text-[#5B6B82] font-semibold shrink-0">
-                      {st.count} {st.count === 1 ? 'booking' : 'bookings'}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+            <BarListChart
+              className="mt-4"
+              name="Bookings"
+              color="#012A5E"
+              data={statusList.map((st) => ({
+                label: st.status,
+                value: st.count,
+                detail: `${st.count} ${st.count === 1 ? 'booking' : 'bookings'}`,
+                color: st.count > 0 ? '#012A5E' : '#F1F5F9',
+              }))}
+            />
           </div>
         </section>
       </div>
@@ -843,86 +905,15 @@ export function SubAgentPerformancePage({
 
         {/* Bookings Table */}
         <div className="overflow-x-auto rounded-xl border border-[#DCE2EB]">
-          <Table>
-            <TableHeader>
-              <TableRow className="bg-[#F4F6FA] hover:bg-[#F4F6FA]">
-                <TableHead className="text-xs font-extrabold text-[#5B6B82]">
-                  Booking Reference
-                </TableHead>
-                <TableHead className="text-xs font-extrabold text-[#5B6B82]">
-                  Customer
-                </TableHead>
-                <TableHead className="text-xs font-extrabold text-[#5B6B82]">
-                  Service
-                </TableHead>
-                <TableHead className="text-xs font-extrabold text-[#5B6B82]">
-                  Travel Date
-                </TableHead>
-                <TableHead className="text-xs font-extrabold text-[#5B6B82]">
-                  Status
-                </TableHead>
-                <TableHead className="text-xs font-extrabold text-[#5B6B82] text-right">
-                  Actions
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {filteredBookings.length === 0 ? (
-                <TableRow>
-                  <TableCell
-                    colSpan={6}
-                    className="text-center py-8 text-xs text-[#5B6B82]"
-                  >
-                    No booking records match the selected filters.
-                  </TableCell>
-                </TableRow>
-              ) : (
-                filteredBookings.map((bk) => (
-                  <TableRow
-                    key={bk.id}
-                    className="hover:bg-[#F8FAFC] transition-colors"
-                  >
-                    <TableCell className="font-bold text-xs text-[#0267B8]">
-                      <button
-                        onClick={() => handleOpenBooking(bk)}
-                        className="hover:underline cursor-pointer flex items-center gap-1 font-mono text-xs"
-                      >
-                        <span>{bk.ref}</span>
-                      </button>
-                    </TableCell>
-                    <TableCell>
-                      <div className="font-bold text-xs text-[#012A5E]">
-                        {bk.customer}
-                      </div>
-                      <div className="text-[11px] text-[#64748B]">
-                        Booked on behalf of customer
-                      </div>
-                    </TableCell>
-                    <TableCell>
-                      <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#012A5E]">
-                        {getServiceBadgeIcon(bk.service)}
-                        <span>{bk.service}</span>
-                      </span>
-                    </TableCell>
-                    <TableCell className="text-xs font-medium text-[#5B6B82]">
-                      {bk.travelDate}
-                    </TableCell>
-                    <TableCell>{getStatusBadge(bk.status)}</TableCell>
-                    <TableCell className="text-right">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => handleOpenBooking(bk)}
-                        className="bg-white border-[#DCE2EB] text-[#012A5E] hover:bg-[#F4F6FA] text-xs font-bold h-8 rounded-lg cursor-pointer"
-                      >
-                        View Booking
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))
-              )}
-            </TableBody>
-          </Table>
+          <DataTable
+            data={filteredBookings}
+            columns={bookingColumns}
+            getRowId={(row) => row.id}
+            headerRowClassName="bg-[#F4F6FA] hover:bg-[#F4F6FA]"
+            rowClassName="hover:bg-[#F8FAFC] transition-colors"
+            empty="No booking records match the selected filters."
+            emptyCellClassName="text-center py-8 text-xs text-[#5B6B82]"
+          />
         </div>
 
         {/* View All Bookings Link */}

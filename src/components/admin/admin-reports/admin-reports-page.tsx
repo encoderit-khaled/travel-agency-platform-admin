@@ -21,12 +21,12 @@ import {
   AlertCircle,
   TrendingUp,
   Receipt,
-  Calendar,
   Layers,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import { Input } from '#/components/ui/input'
+import { DatePicker } from '#/components/ui/date-picker'
 import {
   Select,
   SelectContent,
@@ -34,14 +34,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import { BarListChart } from '#/components/ui/bar-list-chart'
+import { TableCell, TableRow } from '#/components/ui/table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import { AdminSidebar } from '../admin-sidebar'
 import { AdminHeader } from '../admin-header'
@@ -334,8 +330,115 @@ export function AdminReportsPage({
           ? 'Bookings'
           : 'Payments'
 
+  const columns = React.useMemo<ColumnDef<CommissionReportRow>[]>(
+    () => [
+      {
+        id: 'date',
+        header: 'Date',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5 pl-5',
+          cellClassName:
+            'text-xs font-medium text-[#001A3D] pl-5 py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.date,
+      },
+      {
+        id: 'service',
+        header: 'Service',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5',
+          cellClassName: 'text-xs text-[#001A3D] py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <div className="flex items-center gap-2">
+            {getServiceIcon(row.original.service)}
+            <span className="font-medium">{row.original.service}</span>
+          </div>
+        ),
+      },
+      {
+        id: 'supplier',
+        header: 'Supplier',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5',
+          cellClassName: 'text-xs text-[#5D6B82] py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) => row.original.supplier,
+      },
+      {
+        id: 'channel',
+        header: 'Channel',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5',
+          cellClassName: 'text-xs py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) => getChannelBadge(row.original.channel),
+      },
+      {
+        id: 'bookingCount',
+        header: 'Booking Count',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5 text-right',
+          cellClassName: 'text-xs font-semibold text-[#001A3D] text-right py-3',
+        },
+        cell: ({ row }) => row.original.bookingCount,
+      },
+      {
+        id: 'salesAmount',
+        header: 'Sales Amount',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5 text-right',
+          cellClassName:
+            'text-xs font-medium text-[#001A3D] text-right py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) =>
+          `$${row.original.salesAmount.toLocaleString('en-US', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}`,
+      },
+      {
+        id: 'rate',
+        header: 'Rate',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5 text-right',
+          cellClassName: 'text-xs font-medium text-[#5D6B82] text-right py-3',
+        },
+        cell: ({ row }) => `${row.original.commissionRate.toFixed(1)}%`,
+      },
+      {
+        id: 'commission',
+        header: 'Commission',
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#001A3D] py-3.5 text-right',
+          cellClassName:
+            'text-xs font-bold text-[#0265FF] text-right py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) =>
+          `$${row.original.commissionAmount.toLocaleString('en-US', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}`,
+      },
+      {
+        id: 'status',
+        header: 'Status',
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#001A3D] py-3.5 text-center pr-5',
+          cellClassName: 'text-xs text-center pr-5 py-3 whitespace-nowrap',
+        },
+        cell: ({ row }) => getStatusBadge(row.original.status),
+      },
+    ],
+    [],
+  )
+
   return (
-    <SidebarProvider defaultOpen className="h-screen w-screen overflow-hidden flex bg-[#F8FAFC]">
+    <SidebarProvider
+      defaultOpen
+      className="h-screen w-screen overflow-hidden flex bg-[#F8FAFC]"
+    >
       {/* Admin Sidebar with active "Reports" */}
       <AdminSidebar currentTab="Reports" />
 
@@ -494,15 +597,13 @@ export function AdminReportsPage({
                   >
                     From
                   </label>
-                  <div className="relative">
-                    <Input
-                      id="f-from"
-                      type="date"
-                      value={fromDate}
-                      onChange={(e) => setFromDate(e.target.value)}
-                      className="h-10 text-xs bg-[#F8FAFC] border-[#E2E8F0] focus-visible:ring-[#0265FF]"
-                    />
-                  </div>
+                  <DatePicker
+                    id="f-from"
+                    value={fromDate}
+                    onChange={setFromDate}
+                    placeholder="From"
+                    className="h-10 text-xs bg-[#F8FAFC] border-[#E2E8F0]"
+                  />
                 </div>
 
                 {/* To Date */}
@@ -513,15 +614,13 @@ export function AdminReportsPage({
                   >
                     To
                   </label>
-                  <div className="relative">
-                    <Input
-                      id="f-to"
-                      type="date"
-                      value={toDate}
-                      onChange={(e) => setToDate(e.target.value)}
-                      className="h-10 text-xs bg-[#F8FAFC] border-[#E2E8F0] focus-visible:ring-[#0265FF]"
-                    />
-                  </div>
+                  <DatePicker
+                    id="f-to"
+                    value={toDate}
+                    onChange={setToDate}
+                    placeholder="To"
+                    className="h-10 text-xs bg-[#F8FAFC] border-[#E2E8F0]"
+                  />
                 </div>
 
                 {/* Service Select */}
@@ -560,7 +659,9 @@ export function AdminReportsPage({
                   </label>
                   <Select
                     value={supplierFilter}
-                    onValueChange={(v) => setSupplierFilter(v as SupplierFilter)}
+                    onValueChange={(v) =>
+                      setSupplierFilter(v as SupplierFilter)
+                    }
                   >
                     <SelectTrigger
                       id="f-sup"
@@ -614,7 +715,10 @@ export function AdminReportsPage({
 
               {/* Filter Summary Footer (div.rf-f) */}
               <div className="pt-3 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                <div id="fsum" className="flex items-center flex-wrap gap-2 text-xs">
+                <div
+                  id="fsum"
+                  className="flex items-center flex-wrap gap-2 text-xs"
+                >
                   <span className="text-[#5D6B82] font-medium mr-1">
                     Report period
                   </span>
@@ -765,7 +869,8 @@ export function AdminReportsPage({
                   <p className="text-[11px] text-amber-600 font-medium mt-1">
                     {
                       filteredRows.filter(
-                        (r) => r.status === 'Pending' || r.status === 'In-Review',
+                        (r) =>
+                          r.status === 'Pending' || r.status === 'In-Review',
                       ).length
                     }{' '}
                     pending verification
@@ -800,51 +905,22 @@ export function AdminReportsPage({
                 </span>
               </div>
 
-              {/* Service Values List */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                {dynamicServiceBreakdown.map((item) => (
-                  <div key={item.service} className="space-y-1.5">
-                    <div className="flex items-center justify-between text-xs font-medium">
-                      <div className="flex items-center gap-2">
-                        {getServiceIcon(item.service)}
-                        <span className="text-[#001A3D] font-semibold">
-                          {item.service}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="font-bold text-[#001A3D]">
-                          $
-                          {item.amount.toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2,
-                          })}
-                        </span>
-                        <small className="text-[#5D6B82] text-[11px]">
-                          ({item.bookingCount}{' '}
-                          {item.bookingCount === 1 ? 'booking' : 'bookings'})
-                        </small>
-                      </div>
-                    </div>
-
-                    {/* Progress Bar */}
-                    <div className="h-2 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
-                      <div
-                        className="h-full rounded-full transition-all duration-300"
-                        style={{
-                          width: `${Math.min(100, Math.max(4, item.percentage))}%`,
-                          backgroundColor: item.color,
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <BarListChart
+                name={activeTab === 'commissions' ? 'Commission' : 'Sales'}
+                data={dynamicServiceBreakdown.map((item) => ({
+                  label: item.service,
+                  value: item.percentage,
+                  color: item.color,
+                  detail: `$${item.amount.toLocaleString('en-US', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}`,
+                }))}
+              />
             </section>
 
             {/* Data Table Section (section.tc2) */}
-            <section
-              className="tc2 bg-white border border-[#E2E8F0] rounded-xl shadow-xs overflow-hidden"
-            >
+            <section className="tc2 bg-white border border-[#E2E8F0] rounded-xl shadow-xs overflow-hidden">
               {/* Table Header Container */}
               <div className="p-5 border-b border-[#E2E8F0] flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
@@ -887,134 +963,49 @@ export function AdminReportsPage({
 
               {/* Table */}
               <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader className="bg-[#F8FAFC]">
-                    <TableRow className="border-b border-[#E2E8F0] hover:bg-transparent">
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 pl-5">
-                        Date
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5">
-                        Service
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5">
-                        Supplier
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5">
-                        Channel
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 text-right">
-                        Booking Count
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 text-right">
-                        Sales Amount
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 text-right">
-                        Rate
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 text-right">
-                        Commission
-                      </TableHead>
-                      <TableHead className="text-xs font-bold text-[#001A3D] py-3.5 text-center pr-5">
-                        Status
-                      </TableHead>
+                <DataTable
+                  data={filteredRows}
+                  columns={columns}
+                  getRowId={(row) => row.id}
+                  headerClassName="bg-[#F8FAFC]"
+                  headerRowClassName="border-b border-[#E2E8F0] hover:bg-transparent"
+                  rowClassName="border-b border-[#F1F5F9] hover:bg-slate-50/80 transition-colors"
+                  emptyCellClassName="h-32 text-center text-xs text-[#5D6B82]"
+                  empty="No commission records found matching the selected filters."
+                  afterRows={
+                    <TableRow className="bg-[#F8FAFC] border-t-2 border-[#CBD5E1] font-bold hover:bg-[#F8FAFC]">
+                      <TableCell
+                        colSpan={4}
+                        className="text-xs font-bold text-[#001A3D] pl-5 py-3.5"
+                      >
+                        Total ({filteredRows.length} rows)
+                      </TableCell>
+                      <TableCell className="text-xs font-bold text-[#001A3D] text-right py-3.5">
+                        {totalBookings}
+                      </TableCell>
+                      <TableCell className="text-xs font-bold text-[#001A3D] text-right py-3.5 whitespace-nowrap">
+                        $
+                        {totalSales.toLocaleString('en-US', {
+                          minimumFractionDigits: 2,
+                          maximumFractionDigits: 2,
+                        })}
+                      </TableCell>
+                      <TableCell className="text-xs font-bold text-[#5D6B82] text-right py-3.5">
+                        -
+                      </TableCell>
+                      <TableCell className="text-xs font-bold text-[#0265FF] text-right py-3.5 whitespace-nowrap">
+                        $
+                        {totalCommission.toLocaleString('en-US', {
+                          minimumFractionDigits: 2,
+                          maximumFractionDigits: 2,
+                        })}
+                      </TableCell>
+                      <TableCell className="text-xs text-center pr-5 py-3.5 text-[#5D6B82]">
+                        Summary
+                      </TableCell>
                     </TableRow>
-                  </TableHeader>
-
-                  <TableBody>
-                    {filteredRows.length === 0 ? (
-                      <TableRow>
-                        <TableCell
-                          colSpan={9}
-                          className="h-32 text-center text-xs text-[#5D6B82]"
-                        >
-                          No commission records found matching the selected
-                          filters.
-                        </TableCell>
-                      </TableRow>
-                    ) : (
-                      filteredRows.map((row) => (
-                        <TableRow
-                          key={row.id}
-                          className="border-b border-[#F1F5F9] hover:bg-slate-50/80 transition-colors"
-                        >
-                          <TableCell className="text-xs font-medium text-[#001A3D] pl-5 py-3 whitespace-nowrap">
-                            {row.date}
-                          </TableCell>
-                          <TableCell className="text-xs text-[#001A3D] py-3 whitespace-nowrap">
-                            <div className="flex items-center gap-2">
-                              {getServiceIcon(row.service)}
-                              <span className="font-medium">{row.service}</span>
-                            </div>
-                          </TableCell>
-                          <TableCell className="text-xs text-[#5D6B82] py-3 whitespace-nowrap">
-                            {row.supplier}
-                          </TableCell>
-                          <TableCell className="text-xs py-3 whitespace-nowrap">
-                            {getChannelBadge(row.channel)}
-                          </TableCell>
-                          <TableCell className="text-xs font-semibold text-[#001A3D] text-right py-3">
-                            {row.bookingCount}
-                          </TableCell>
-                          <TableCell className="text-xs font-medium text-[#001A3D] text-right py-3 whitespace-nowrap">
-                            $
-                            {row.salesAmount.toLocaleString('en-US', {
-                              minimumFractionDigits: 2,
-                              maximumFractionDigits: 2,
-                            })}
-                          </TableCell>
-                          <TableCell className="text-xs font-medium text-[#5D6B82] text-right py-3">
-                            {row.commissionRate.toFixed(1)}%
-                          </TableCell>
-                          <TableCell className="text-xs font-bold text-[#0265FF] text-right py-3 whitespace-nowrap">
-                            $
-                            {row.commissionAmount.toLocaleString('en-US', {
-                              minimumFractionDigits: 2,
-                              maximumFractionDigits: 2,
-                            })}
-                          </TableCell>
-                          <TableCell className="text-xs text-center pr-5 py-3 whitespace-nowrap">
-                            {getStatusBadge(row.status)}
-                          </TableCell>
-                        </TableRow>
-                      ))
-                    )}
-
-                    {/* Summary Row at Bottom (Figma match) */}
-                    {filteredRows.length > 0 && (
-                      <TableRow className="bg-[#F8FAFC] border-t-2 border-[#CBD5E1] font-bold hover:bg-[#F8FAFC]">
-                        <TableCell
-                          colSpan={4}
-                          className="text-xs font-bold text-[#001A3D] pl-5 py-3.5"
-                        >
-                          Total ({filteredRows.length} rows)
-                        </TableCell>
-                        <TableCell className="text-xs font-bold text-[#001A3D] text-right py-3.5">
-                          {totalBookings}
-                        </TableCell>
-                        <TableCell className="text-xs font-bold text-[#001A3D] text-right py-3.5 whitespace-nowrap">
-                          $
-                          {totalSales.toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2,
-                          })}
-                        </TableCell>
-                        <TableCell className="text-xs font-bold text-[#5D6B82] text-right py-3.5">
-                          -
-                        </TableCell>
-                        <TableCell className="text-xs font-bold text-[#0265FF] text-right py-3.5 whitespace-nowrap">
-                          $
-                          {totalCommission.toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2,
-                          })}
-                        </TableCell>
-                        <TableCell className="text-xs text-center pr-5 py-3.5 text-[#5D6B82]">
-                          Summary
-                        </TableCell>
-                      </TableRow>
-                    )}
-                  </TableBody>
-                </Table>
+                  }
+                />
               </div>
             </section>
           </div>

@@ -23,6 +23,8 @@ import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Select,
   SelectContent,
@@ -231,6 +233,221 @@ export function AgentManagementOverviewPage({
     filterPermissions !== 'all' ||
     filterMarkup !== 'all' ||
     filterBooking !== 'all'
+
+  const columns = React.useMemo<ColumnDef<SubAgent>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'Sub-agent',
+        cell: ({ row }) => {
+          const agent = row.original
+          return (
+            <div className="flex items-center gap-3">
+              <div className="size-10 rounded-xl bg-[#D7E3F4] text-[#012A5E] font-extrabold text-xs flex items-center justify-center shrink-0 shadow-2xs">
+                {agent.avatarInitials}
+              </div>
+              <div className="flex flex-col gap-0.5">
+                <span className="text-sm font-bold text-[#012A5E] group-hover:text-[#0267B8] transition-colors">
+                  {agent.name}
+                </span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[11px] font-semibold text-[#4F5B70] bg-[#F4F6FA] px-2 py-0.5 rounded-md border border-[#E6EAF0]">
+                    {agent.role}
+                  </span>
+                  {agent.status === 'suspended' && (
+                    <span className="text-[10px] font-extrabold text-[#D9383A] bg-[#FDF2F2] px-1.5 py-0.5 rounded-md">
+                      Suspended
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-5 sm:px-6',
+          cellClassName: 'py-4.5 px-5 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'login',
+        header: 'Login / Contact',
+        cell: ({ row }) => {
+          const agent = row.original
+          return (
+            <div className="flex flex-col gap-1">
+              <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#9AA6B9]">
+                Login
+              </span>
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-[#012A5E]">
+                <Mail className="size-3.5 text-[#0267B8] shrink-0" />
+                <span className="truncate max-w-[190px]">{agent.email}</span>
+              </div>
+              {agent.phone && (
+                <div className="flex items-center gap-1.5 text-[11px] font-medium text-[#4F5B70]">
+                  <Phone className="size-3 text-[#9AA6B9] shrink-0" />
+                  <span>{agent.phone}</span>
+                </div>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-4 sm:px-6',
+          cellClassName: 'py-4.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'permissions',
+        header: 'Permissions',
+        cell: ({ row }) => {
+          const agent = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              {agent.permissionsConfigured ? (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
+                  <Check className="size-3 stroke-[3]" />
+                  <span>Configured</span>
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#F1F5F9] text-[#4F5B70]">
+                  <Minus className="size-3" />
+                  <span>Not configured</span>
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={() => handleOpenPermissions(agent)}
+                className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                <span>View Permissions</span>
+                <ArrowRight className="size-3" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-4 sm:px-6',
+          cellClassName: 'py-4.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'markup',
+        header: 'Markup',
+        cell: ({ row }) => {
+          const agent = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              {agent.markupConfigured ? (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
+                  <Check className="size-3 stroke-[3]" />
+                  <span>Configured</span>
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#F1F5F9] text-[#4F5B70]">
+                  <Minus className="size-3" />
+                  <span>Not configured</span>
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={() => handleOpenMarkup(agent)}
+                className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                <span>View Markup</span>
+                <ArrowRight className="size-3" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-4 sm:px-6',
+          cellClassName: 'py-4.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'bookings',
+        header: 'Bookings',
+        cell: ({ row }) => {
+          const agent = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              <span
+                className={cn(
+                  'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold',
+                  agent.bookingsCount > 0
+                    ? 'bg-[#EBFBF3] text-[#137A48]'
+                    : 'bg-[#F1F5F9] text-[#4F5B70]',
+                )}
+              >
+                <Ticket className="size-3" />
+                <span>
+                  {agent.bookingsCount > 0
+                    ? `${agent.bookingsCount} booking${agent.bookingsCount > 1 ? 's' : ''}`
+                    : 'No bookings'}
+                </span>
+              </span>
+              <button
+                type="button"
+                onClick={() => handleOpenBookings(agent)}
+                className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                <span>View Bookings</span>
+                <ArrowRight className="size-3" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-4 sm:px-6',
+          cellClassName: 'py-4.5 px-4 sm:px-6 align-top',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const agent = row.original
+          const isFirstRow = row.index === 0
+          return (
+            <div className="inline-flex items-center justify-end gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => handleOpenDetails(agent)}
+                aria-label={`View Sub-agent ${agent.name}`}
+                className="size-9 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA] hover:border-[#0267B8]/40"
+              >
+                <Eye className="size-4" />
+              </Button>
+              <SubAgentActionDropdown
+                subAgent={agent}
+                onViewDetails={handleOpenDetails}
+                onConfigurePermissions={handleOpenPermissions}
+                onConfigureMarkup={handleOpenMarkup}
+                onViewBookings={handleOpenBookings}
+                onEditDetails={handleOpenDetails}
+                onDeactivate={handleOpenDeactivate}
+                forceOpen={isFirstRow && previewDropdownOpen}
+              />
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3.5 px-5 sm:px-6 text-right',
+          cellClassName: 'py-4.5 px-5 sm:px-6 align-top text-right',
+        },
+      },
+    ],
+    [
+      handleOpenBookings,
+      handleOpenDeactivate,
+      handleOpenDetails,
+      handleOpenMarkup,
+      handleOpenPermissions,
+      previewDropdownOpen,
+    ],
+  )
 
   return (
     <div className="min-h-screen bg-[#F4F6FA] flex flex-col antialiased font-sans text-[#141C2E]">
@@ -669,210 +886,39 @@ export function AgentManagementOverviewPage({
 
               {/* Table Body (Figma table.sat #665:7009) */}
               <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b border-[#E6EAF0] bg-[#F8FAFC] text-[12px] font-extrabold uppercase tracking-wider text-[#4F5B70]">
-                      <th className="py-3.5 px-5 sm:px-6">Sub-agent</th>
-                      <th className="py-3.5 px-4 sm:px-6">Login / Contact</th>
-                      <th className="py-3.5 px-4 sm:px-6">Permissions</th>
-                      <th className="py-3.5 px-4 sm:px-6">Markup</th>
-                      <th className="py-3.5 px-4 sm:px-6">Bookings</th>
-                      <th className="py-3.5 px-5 sm:px-6 text-right">
-                        Actions
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E6EAF0]">
-                    {filteredSubAgents.length === 0 ? (
-                      <tr>
-                        <td colSpan={6} className="py-12 px-6 text-center">
-                          <div className="flex flex-col items-center justify-center gap-2 max-w-sm mx-auto">
-                            <div className="size-12 rounded-full bg-[#F4F6FA] flex items-center justify-center text-[#9AA6B9]">
-                              <Search className="size-6" />
-                            </div>
-                            <h4 className="text-sm font-bold text-[#012A5E]">
-                              No Sub-agents found
-                            </h4>
-                            <p className="text-xs text-[#4F5B70]">
-                              No sub-agents match the active search and filter
-                              criteria. Try resetting your filters.
-                            </p>
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              onClick={handleClearFilters}
-                              className="mt-2 text-xs font-bold text-[#0267B8]"
-                            >
-                              Reset filters
-                            </Button>
-                          </div>
-                        </td>
-                      </tr>
-                    ) : (
-                      filteredSubAgents.map((agent, index) => {
-                        const isFirstRow = index === 0
-                        return (
-                          <tr
-                            key={agent.id}
-                            className="hover:bg-[#F8FAFC] transition-colors group"
-                          >
-                            {/* Column 1: Sub-agent (Avatar + Name + Role Badge) */}
-                            <td className="py-4.5 px-5 sm:px-6 align-top">
-                              <div className="flex items-center gap-3">
-                                <div className="size-10 rounded-xl bg-[#D7E3F4] text-[#012A5E] font-extrabold text-xs flex items-center justify-center shrink-0 shadow-2xs">
-                                  {agent.avatarInitials}
-                                </div>
-                                <div className="flex flex-col gap-0.5">
-                                  <span className="text-sm font-bold text-[#012A5E] group-hover:text-[#0267B8] transition-colors">
-                                    {agent.name}
-                                  </span>
-                                  <div className="flex items-center gap-1.5">
-                                    <span className="text-[11px] font-semibold text-[#4F5B70] bg-[#F4F6FA] px-2 py-0.5 rounded-md border border-[#E6EAF0]">
-                                      {agent.role}
-                                    </span>
-                                    {agent.status === 'suspended' && (
-                                      <span className="text-[10px] font-extrabold text-[#D9383A] bg-[#FDF2F2] px-1.5 py-0.5 rounded-md">
-                                        Suspended
-                                      </span>
-                                    )}
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-
-                            {/* Column 2: Login / Contact */}
-                            <td className="py-4.5 px-4 sm:px-6 align-top">
-                              <div className="flex flex-col gap-1">
-                                <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#9AA6B9]">
-                                  Login
-                                </span>
-                                <div className="flex items-center gap-1.5 text-xs font-semibold text-[#012A5E]">
-                                  <Mail className="size-3.5 text-[#0267B8] shrink-0" />
-                                  <span className="truncate max-w-[190px]">
-                                    {agent.email}
-                                  </span>
-                                </div>
-                                {agent.phone && (
-                                  <div className="flex items-center gap-1.5 text-[11px] font-medium text-[#4F5B70]">
-                                    <Phone className="size-3 text-[#9AA6B9] shrink-0" />
-                                    <span>{agent.phone}</span>
-                                  </div>
-                                )}
-                              </div>
-                            </td>
-
-                            {/* Column 3: Permissions Badge & Link */}
-                            <td className="py-4.5 px-4 sm:px-6 align-top">
-                              <div className="flex flex-col items-start gap-1.5">
-                                {agent.permissionsConfigured ? (
-                                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                                    <Check className="size-3 stroke-[3]" />
-                                    <span>Configured</span>
-                                  </span>
-                                ) : (
-                                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#F1F5F9] text-[#4F5B70]">
-                                    <Minus className="size-3" />
-                                    <span>Not configured</span>
-                                  </span>
-                                )}
-                                <button
-                                  type="button"
-                                  onClick={() => handleOpenPermissions(agent)}
-                                  className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
-                                >
-                                  <span>View Permissions</span>
-                                  <ArrowRight className="size-3" />
-                                </button>
-                              </div>
-                            </td>
-
-                            {/* Column 4: Markup Badge & Link */}
-                            <td className="py-4.5 px-4 sm:px-6 align-top">
-                              <div className="flex flex-col items-start gap-1.5">
-                                {agent.markupConfigured ? (
-                                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                                    <Check className="size-3 stroke-[3]" />
-                                    <span>Configured</span>
-                                  </span>
-                                ) : (
-                                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#F1F5F9] text-[#4F5B70]">
-                                    <Minus className="size-3" />
-                                    <span>Not configured</span>
-                                  </span>
-                                )}
-                                <button
-                                  type="button"
-                                  onClick={() => handleOpenMarkup(agent)}
-                                  className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
-                                >
-                                  <span>View Markup</span>
-                                  <ArrowRight className="size-3" />
-                                </button>
-                              </div>
-                            </td>
-
-                            {/* Column 5: Bookings Badge & Link */}
-                            <td className="py-4.5 px-4 sm:px-6 align-top">
-                              <div className="flex flex-col items-start gap-1.5">
-                                <span
-                                  className={cn(
-                                    'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold',
-                                    agent.bookingsCount > 0
-                                      ? 'bg-[#EBFBF3] text-[#137A48]'
-                                      : 'bg-[#F1F5F9] text-[#4F5B70]',
-                                  )}
-                                >
-                                  <Ticket className="size-3" />
-                                  <span>
-                                    {agent.bookingsCount > 0
-                                      ? `${agent.bookingsCount} booking${agent.bookingsCount > 1 ? 's' : ''}`
-                                      : 'No bookings'}
-                                  </span>
-                                </span>
-                                <button
-                                  type="button"
-                                  onClick={() => handleOpenBookings(agent)}
-                                  className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
-                                >
-                                  <span>View Bookings</span>
-                                  <ArrowRight className="size-3" />
-                                </button>
-                              </div>
-                            </td>
-
-                            {/* Column 6: Actions (View Sub-agent Button + Table Action Dropdown #665:7388) */}
-                            <td className="py-4.5 px-5 sm:px-6 align-top text-right">
-                              <div className="inline-flex items-center justify-end gap-2">
-                                {/* Primary View Button (Figma View Sub-agent #665:7084) */}
-                                <Button
-                                  variant="outline"
-                                  size="icon"
-                                  onClick={() => handleOpenDetails(agent)}
-                                  aria-label={`View Sub-agent ${agent.name}`}
-                                  className="size-9 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA] hover:border-[#0267B8]/40"
-                                >
-                                  <Eye className="size-4" />
-                                </Button>
-
-                                {/* More Actions Dropdown Menu (Figma #665:7388 / #665:7389) */}
-                                <SubAgentActionDropdown
-                                  subAgent={agent}
-                                  onViewDetails={handleOpenDetails}
-                                  onConfigurePermissions={handleOpenPermissions}
-                                  onConfigureMarkup={handleOpenMarkup}
-                                  onViewBookings={handleOpenBookings}
-                                  onEditDetails={handleOpenDetails}
-                                  onDeactivate={handleOpenDeactivate}
-                                  forceOpen={isFirstRow && previewDropdownOpen}
-                                />
-                              </div>
-                            </td>
-                          </tr>
-                        )
-                      })
-                    )}
-                  </tbody>
-                </table>
+                <DataTable
+                  data={filteredSubAgents}
+                  columns={columns}
+                  getRowId={(row) => row.id}
+                  tableClassName="w-full text-left border-collapse"
+                  headerRowClassName="border-b border-[#E6EAF0] bg-[#F8FAFC] text-[12px] font-extrabold uppercase tracking-wider text-[#4F5B70] hover:bg-[#F8FAFC]"
+                  headClassName="h-auto"
+                  bodyClassName="divide-y divide-[#E6EAF0]"
+                  rowClassName="hover:bg-[#F8FAFC] transition-colors group"
+                  emptyCellClassName="py-12 px-6 text-center"
+                  empty={
+                    <div className="flex flex-col items-center justify-center gap-2 max-w-sm mx-auto">
+                      <div className="size-12 rounded-full bg-[#F4F6FA] flex items-center justify-center text-[#9AA6B9]">
+                        <Search className="size-6" />
+                      </div>
+                      <h4 className="text-sm font-bold text-[#012A5E]">
+                        No Sub-agents found
+                      </h4>
+                      <p className="text-xs text-[#4F5B70]">
+                        No sub-agents match the active search and filter
+                        criteria. Try resetting your filters.
+                      </p>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={handleClearFilters}
+                        className="mt-2 text-xs font-bold text-[#0267B8]"
+                      >
+                        Reset filters
+                      </Button>
+                    </div>
+                  }
+                />
               </div>
             </section>
           </main>

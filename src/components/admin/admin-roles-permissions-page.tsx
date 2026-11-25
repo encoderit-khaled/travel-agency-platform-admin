@@ -1,5 +1,11 @@
 import * as React from 'react'
 import {
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+} from '@tanstack/react-table'
+import type { ColumnDef } from '@tanstack/react-table'
+import {
   ShieldCheck,
   Shield,
   Sliders,
@@ -32,6 +38,13 @@ import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import { Input } from '#/components/ui/input'
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
+import {
   Table,
   TableHeader,
   TableRow,
@@ -52,6 +65,7 @@ import {
 } from './admin-roles-permissions-data'
 import type {
   AdminRoleId,
+  PermissionAreaItem,
   PermissionStatus,
   RolePermissionMatrix,
   AdminRolesPermissionsPageProps as Props,
@@ -63,6 +77,15 @@ export interface AdminRolesPermissionsPageProps extends Props {
   initialRole?: AdminRoleId | string
   initialEditMode?: boolean
 }
+
+type PermissionMatrixRow =
+  | { kind: 'section'; id: string; label: string }
+  | {
+      kind: 'permission'
+      id: string
+      area: PermissionAreaItem
+      groupLabel: string
+    }
 
 const AREA_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   dashboard: LayoutDashboard,
@@ -265,6 +288,119 @@ export function AdminRolesPermissionsPage({
         return FileText
     }
   }
+
+  const matrixRows = React.useMemo<PermissionMatrixRow[]>(() => {
+    const rows: PermissionMatrixRow[] = []
+    if (filteredCoreAreas.length > 0) {
+      rows.push({
+        kind: 'section',
+        id: 'section-core-admin',
+        label: `Core Admin (${filteredCoreAreas.length})`,
+      })
+      for (const area of filteredCoreAreas) {
+        rows.push({
+          kind: 'permission',
+          id: area.id,
+          area,
+          groupLabel: 'Core Admin Area',
+        })
+      }
+    }
+    if (filteredPlatformAreas.length > 0) {
+      rows.push({
+        kind: 'section',
+        id: 'section-platform-modules',
+        label: `Platform Modules (${filteredPlatformAreas.length})`,
+      })
+      for (const area of filteredPlatformAreas) {
+        rows.push({
+          kind: 'permission',
+          id: area.id,
+          area,
+          groupLabel: 'Platform Module Area',
+        })
+      }
+    }
+    return rows
+  }, [filteredCoreAreas, filteredPlatformAreas])
+
+  const columns = React.useMemo<ColumnDef<PermissionMatrixRow>[]>(() => {
+    const areaColumn: ColumnDef<PermissionMatrixRow> = {
+      id: 'area',
+      header: 'Permission area',
+      meta: {
+        headerClassName:
+          'w-[200px] text-xs font-bold text-[#001A3D] py-3.5 pl-5',
+        cellClassName: 'py-3 pl-5 pr-2',
+      },
+      cell: ({ row }) => {
+        if (row.original.kind !== 'permission') return null
+        const area = row.original.area
+        const Icon = AREA_ICONS[area.id] ?? Shield
+        return (
+          <div className="flex items-center gap-2.5">
+            <div className="size-7 rounded bg-slate-100 text-slate-600 flex items-center justify-center shrink-0">
+              <Icon className="size-3.5" />
+            </div>
+            <div>
+              <div className="text-xs font-bold text-[#001A3D]">
+                {area.name}
+              </div>
+              <div className="text-[11px] text-slate-400">
+                {row.original.groupLabel}
+              </div>
+            </div>
+          </div>
+        )
+      },
+    }
+
+    const roleColumns: ColumnDef<PermissionMatrixRow>[] = ADMIN_ROLES.map(
+      (role) => {
+        const isSelected = selectedRole === role.id
+        return {
+          id: role.id,
+          header: () => (
+            <div className="flex items-center justify-center gap-1">
+              <span>{role.name}</span>
+              {isSelected && (
+                <span className="size-1.5 rounded-full bg-[#001A3D]" />
+              )}
+            </div>
+          ),
+          meta: {
+            headerClassName: cn(
+              'text-center text-xs font-bold py-3.5 px-3 transition-colors cursor-pointer select-none',
+              isSelected
+                ? 'text-[#001A3D] bg-[#F2F7FD] border-x border-[#001A3D]/20 shadow-2xs font-extrabold'
+                : 'text-slate-600 hover:text-[#001A3D]',
+            ),
+            cellClassName: cn(
+              'text-center py-3 px-2 transition-colors select-none',
+              isSelected ? 'bg-[#F2F7FD]/70 border-x border-[#001A3D]/10' : '',
+            ),
+          },
+          cell: ({ row }) => {
+            if (row.original.kind !== 'permission') return null
+            const currentMap = isEditMode
+              ? draftMatrix[role.id]
+              : matrix[role.id]
+            const status = currentMap[row.original.area.id] ?? 'not-configured'
+            return renderStatusPill(status, isEditMode)
+          },
+        }
+      },
+    )
+
+    return [areaColumn, ...roleColumns]
+  }, [draftMatrix, isEditMode, matrix, renderStatusPill, selectedRole])
+
+  const table = useReactTable({
+    data: matrixRows,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+    getRowId: (row) => row.id,
+  })
 
   return (
     <SidebarProvider defaultOpen>
@@ -478,16 +614,30 @@ export function AdminRolesPermissionsPage({
                       />
                     </div>
 
-                    <select
+                    <Select
                       value={statusFilter}
-                      onChange={(e) => setStatusFilter(e.target.value)}
-                      className="h-8 text-xs px-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-600 focus:outline-none"
+                      items={{
+                        all: 'All statuses',
+                        visible: 'Visible',
+                        hidden: 'Hidden',
+                        'not-configured': 'Not configured',
+                      }}
+                      onValueChange={(val) => {
+                        if (val) setStatusFilter(val)
+                      }}
                     >
-                      <option value="all">All statuses</option>
-                      <option value="visible">Visible</option>
-                      <option value="hidden">Hidden</option>
-                      <option value="not-configured">Not configured</option>
-                    </select>
+                      <SelectTrigger className="h-8 w-[148px] rounded-lg bg-slate-50 border-slate-200 text-xs text-slate-600">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All statuses</SelectItem>
+                        <SelectItem value="visible">Visible</SelectItem>
+                        <SelectItem value="hidden">Hidden</SelectItem>
+                        <SelectItem value="not-configured">
+                          Not configured
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
                 </div>
 
@@ -495,168 +645,98 @@ export function AdminRolesPermissionsPage({
                 <div className="overflow-x-auto">
                   <Table className="w-full">
                     <TableHeader className="bg-[#F8FAFC]">
-                      <TableRow className="border-b border-slate-200 hover:bg-transparent">
-                        <TableHead className="w-[200px] text-xs font-bold text-[#001A3D] py-3.5 pl-5">
-                          Permission area
-                        </TableHead>
-                        {ADMIN_ROLES.map((role) => {
-                          const isSelected = selectedRole === role.id
-                          return (
+                      {table.getHeaderGroups().map((headerGroup) => (
+                        <TableRow
+                          key={headerGroup.id}
+                          className="border-b border-slate-200 hover:bg-transparent"
+                        >
+                          {headerGroup.headers.map((header) => (
                             <TableHead
-                              key={role.id}
-                              onClick={() => setSelectedRole(role.id)}
-                              className={cn(
-                                'text-center text-xs font-bold py-3.5 px-3 transition-colors cursor-pointer select-none',
-                                isSelected
-                                  ? 'text-[#001A3D] bg-[#F2F7FD] border-x border-[#001A3D]/20 shadow-2xs font-extrabold'
-                                  : 'text-slate-600 hover:text-[#001A3D]',
-                              )}
+                              key={header.id}
+                              colSpan={header.colSpan}
+                              onClick={
+                                header.column.id === 'area'
+                                  ? undefined
+                                  : () =>
+                                      setSelectedRole(
+                                        header.column.id as AdminRoleId,
+                                      )
+                              }
+                              className={
+                                header.column.columnDef.meta?.headerClassName
+                              }
                             >
-                              <div className="flex items-center justify-center gap-1">
-                                <span>{role.name}</span>
-                                {isSelected && (
-                                  <span className="size-1.5 rounded-full bg-[#001A3D]" />
-                                )}
-                              </div>
+                              {header.isPlaceholder
+                                ? null
+                                : flexRender(
+                                    header.column.columnDef.header,
+                                    header.getContext(),
+                                  )}
                             </TableHead>
-                          )
-                        })}
-                      </TableRow>
+                          ))}
+                        </TableRow>
+                      ))}
                     </TableHeader>
 
                     <TableBody>
-                      {/* Section 1: Core Admin */}
-                      {filteredCoreAreas.length > 0 && (
-                        <>
-                          <TableRow className="bg-[#F8FAFC]/80 border-y border-slate-200/80 hover:bg-[#F8FAFC]">
-                            <TableCell
-                              colSpan={6}
-                              className="py-2 px-5 text-[11px] font-extrabold uppercase tracking-wider text-[#174A7C]"
-                            >
-                              Core Admin ({filteredCoreAreas.length})
-                            </TableCell>
-                          </TableRow>
-
-                          {filteredCoreAreas.map((area) => {
-                            const Icon = AREA_ICONS[area.id] ?? Shield
-                            return (
-                              <TableRow
-                                key={area.id}
-                                className="border-b border-slate-100 hover:bg-slate-50/70 transition-colors"
-                              >
-                                <TableCell className="py-3 pl-5 pr-2">
-                                  <div className="flex items-center gap-2.5">
-                                    <div className="size-7 rounded bg-slate-100 text-slate-600 flex items-center justify-center shrink-0">
-                                      <Icon className="size-3.5" />
-                                    </div>
-                                    <div>
-                                      <div className="text-xs font-bold text-[#001A3D]">
-                                        {area.name}
-                                      </div>
-                                      <div className="text-[11px] text-slate-400">
-                                        Core Admin Area
-                                      </div>
-                                    </div>
-                                  </div>
-                                </TableCell>
-
-                                {ADMIN_ROLES.map((role) => {
-                                  const isSelected = selectedRole === role.id
-                                  const currentMap = isEditMode
-                                    ? draftMatrix[role.id]
-                                    : matrix[role.id]
-                                  const status = currentMap[area.id] ?? 'not-configured'
-
-                                  return (
-                                    <TableCell
-                                      key={role.id}
-                                      onClick={() => handleCellClick(area.id, role.id)}
-                                      className={cn(
-                                        'text-center py-3 px-2 transition-colors select-none',
-                                        isSelected
-                                          ? 'bg-[#F2F7FD]/70 border-x border-[#001A3D]/10'
-                                          : '',
-                                      )}
-                                    >
-                                      {renderStatusPill(status, isEditMode)}
-                                    </TableCell>
-                                  )
-                                })}
-                              </TableRow>
-                            )
-                          })}
-                        </>
-                      )}
-
-                      {/* Section 2: Platform Modules */}
-                      {filteredPlatformAreas.length > 0 && (
-                        <>
-                          <TableRow className="bg-[#F8FAFC]/80 border-y border-slate-200/80 hover:bg-[#F8FAFC]">
-                            <TableCell
-                              colSpan={6}
-                              className="py-2 px-5 text-[11px] font-extrabold uppercase tracking-wider text-[#174A7C]"
-                            >
-                              Platform Modules ({filteredPlatformAreas.length})
-                            </TableCell>
-                          </TableRow>
-
-                          {filteredPlatformAreas.map((area) => {
-                            const Icon = AREA_ICONS[area.id] ?? Shield
-                            return (
-                              <TableRow
-                                key={area.id}
-                                className="border-b border-slate-100 hover:bg-slate-50/70 transition-colors"
-                              >
-                                <TableCell className="py-3 pl-5 pr-2">
-                                  <div className="flex items-center gap-2.5">
-                                    <div className="size-7 rounded bg-slate-100 text-slate-600 flex items-center justify-center shrink-0">
-                                      <Icon className="size-3.5" />
-                                    </div>
-                                    <div>
-                                      <div className="text-xs font-bold text-[#001A3D]">
-                                        {area.name}
-                                      </div>
-                                      <div className="text-[11px] text-slate-400">
-                                        Platform Module Area
-                                      </div>
-                                    </div>
-                                  </div>
-                                </TableCell>
-
-                                {ADMIN_ROLES.map((role) => {
-                                  const isSelected = selectedRole === role.id
-                                  const currentMap = isEditMode
-                                    ? draftMatrix[role.id]
-                                    : matrix[role.id]
-                                  const status = currentMap[area.id] ?? 'not-configured'
-
-                                  return (
-                                    <TableCell
-                                      key={role.id}
-                                      onClick={() => handleCellClick(area.id, role.id)}
-                                      className={cn(
-                                        'text-center py-3 px-2 transition-colors select-none',
-                                        isSelected
-                                          ? 'bg-[#F2F7FD]/70 border-x border-[#001A3D]/10'
-                                          : '',
-                                      )}
-                                    >
-                                      {renderStatusPill(status, isEditMode)}
-                                    </TableCell>
-                                  )
-                                })}
-                              </TableRow>
-                            )
-                          })}
-                        </>
-                      )}
-
-                      {filteredCoreAreas.length === 0 && filteredPlatformAreas.length === 0 && (
+                      {table.getRowModel().rows.length === 0 ? (
                         <TableRow>
-                          <TableCell colSpan={6} className="text-center py-12 text-slate-400 text-xs">
+                          <TableCell
+                            colSpan={6}
+                            className="text-center py-12 text-slate-400 text-xs"
+                          >
                             No permission areas match your search filter.
                           </TableCell>
                         </TableRow>
+                      ) : (
+                        table.getRowModel().rows.map((row) => {
+                          if (row.original.kind === 'section') {
+                            return (
+                              <TableRow
+                                key={row.id}
+                                className="bg-[#F8FAFC]/80 border-y border-slate-200/80 hover:bg-[#F8FAFC]"
+                              >
+                                <TableCell
+                                  colSpan={6}
+                                  className="py-2 px-5 text-[11px] font-extrabold uppercase tracking-wider text-[#174A7C]"
+                                >
+                                  {row.original.label}
+                                </TableCell>
+                              </TableRow>
+                            )
+                          }
+
+                          const areaId = row.original.area.id
+                          return (
+                            <TableRow
+                              key={row.id}
+                              className="border-b border-slate-100 hover:bg-slate-50/70 transition-colors"
+                            >
+                              {row.getVisibleCells().map((cell) => (
+                                <TableCell
+                                  key={cell.id}
+                                  onClick={
+                                    cell.column.id === 'area'
+                                      ? undefined
+                                      : () =>
+                                          handleCellClick(
+                                            areaId,
+                                            cell.column.id as AdminRoleId,
+                                          )
+                                  }
+                                  className={
+                                    cell.column.columnDef.meta?.cellClassName
+                                  }
+                                >
+                                  {flexRender(
+                                    cell.column.columnDef.cell,
+                                    cell.getContext(),
+                                  )}
+                                </TableCell>
+                              ))}
+                            </TableRow>
+                          )
+                        })
                       )}
                     </TableBody>
                   </Table>

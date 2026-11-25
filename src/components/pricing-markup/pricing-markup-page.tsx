@@ -25,7 +25,9 @@ import {
   HelpCircle,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { DataTable } from '#/components/ui/data-table'
 import { Input } from '#/components/ui/input'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Select,
   SelectContent,
@@ -328,6 +330,311 @@ export function PricingMarkupPage({
     }
   }
 
+  const adminColumns = React.useMemo<ColumnDef<AdminPricingRule>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'RULE',
+        cell: ({ row }) => {
+          const rule = row.original
+          return (
+            <>
+              <button
+                type="button"
+                onClick={() => handleViewDetails(rule)}
+                className="font-bold text-[#0267B8] hover:underline text-left block"
+              >
+                {rule.name}
+              </button>
+              <span className="text-[10px] font-semibold text-[#0267B8] bg-[#EBF3FC] border border-[#BFDBFE] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
+                <Lock className="size-2.5" />
+                Admin
+              </span>
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4',
+        },
+      },
+      {
+        accessorKey: 'scope',
+        header: 'SCOPE',
+        cell: ({ row }) => row.original.scope,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-medium text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'SERVICE',
+        cell: ({ row }) => {
+          const rule = row.original
+          const ServiceIcon = getServiceIcon(rule.service)
+          return (
+            <span className="inline-flex items-center gap-1.5">
+              <ServiceIcon className="size-3.5 text-[#0267B8]" />
+              {rule.service}
+            </span>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-medium text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'supplier',
+        header: 'SUPPLIER',
+        cell: ({ row }) => row.original.supplier,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 text-[#64748B]',
+        },
+      },
+      {
+        accessorKey: 'type',
+        header: 'TYPE',
+        cell: ({ row }) => row.original.type,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 text-[#64748B]',
+        },
+      },
+      {
+        accessorKey: 'value',
+        header: 'VALUE',
+        cell: ({ row }) => row.original.value,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-bold text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'appliedTo',
+        header: 'APPLIED TO',
+        cell: ({ row }) => row.original.appliedTo,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 text-[#001A3D] font-medium',
+        },
+      },
+      {
+        id: 'status',
+        header: 'STATUS',
+        cell: () => (
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <CheckCircle2 className="size-3 text-emerald-600" />
+            Active
+          </span>
+        ),
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'ACTIONS',
+        cell: ({ row }) => {
+          const rule = row.original
+          return (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => handleViewDetails(rule)}
+              className="border-[#DCE2EB] text-xs font-semibold text-[#0267B8] h-8 rounded-lg hover:bg-[#EBF3FC]"
+            >
+              <Eye className="size-3.5 mr-1" />
+              View Details
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 text-right',
+          cellClassName: 'py-3.5 px-4 text-right',
+        },
+      },
+    ],
+    [handleViewDetails, getServiceIcon],
+  )
+
+  const agentColumns = React.useMemo<ColumnDef<AgentMarkupRule>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'RULE',
+        cell: ({ row }) => {
+          const rule = row.original
+          return (
+            <>
+              <button
+                type="button"
+                onClick={() => handleViewDetails(rule)}
+                className="font-bold text-[#0267B8] hover:underline text-left block"
+              >
+                {rule.name}
+              </button>
+              <span className="text-[10px] font-semibold text-[#B45309] bg-[#FEF3C7] border border-[#FDE68A] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
+                <Tag className="size-2.5" />
+                Agent
+              </span>
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4',
+        },
+      },
+      {
+        accessorKey: 'scope',
+        header: 'SCOPE',
+        cell: ({ row }) => row.original.scope,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-medium text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'SERVICE',
+        cell: ({ row }) => {
+          const rule = row.original
+          const ServiceIcon = getServiceIcon(rule.service)
+          return (
+            <span className="inline-flex items-center gap-1.5">
+              <ServiceIcon className="size-3.5 text-[#0267B8]" />
+              {rule.service}
+            </span>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-medium text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'supplier',
+        header: 'SUPPLIER',
+        cell: ({ row }) => row.original.supplier,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 text-[#64748B]',
+        },
+      },
+      {
+        accessorKey: 'type',
+        header: 'TYPE',
+        cell: ({ row }) => row.original.type,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 text-[#64748B]',
+        },
+      },
+      {
+        accessorKey: 'value',
+        header: 'MARKUP',
+        cell: ({ row }) => row.original.value,
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4 font-bold text-[#001A3D]',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'STATUS',
+        cell: ({ row }) =>
+          row.original.status === 'active' ? (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <CheckCircle2 className="size-3 text-emerald-600" />
+              Active
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-50 text-slate-600 border border-slate-200">
+              <XCircle className="size-3 text-slate-500" />
+              Inactive
+            </span>
+          ),
+        meta: {
+          headerClassName: 'py-3 px-4',
+          cellClassName: 'py-3.5 px-4',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'ACTIONS',
+        cell: ({ row }) => {
+          const rule = row.original
+          return (
+            <div className="flex items-center justify-end gap-1.5">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => handleOpenEditRule(rule)}
+                className="h-8 px-2 text-xs font-semibold text-[#001A3D] hover:bg-[#F1F3F7]"
+              >
+                <Settings className="size-3.5 mr-1" />
+                Edit
+              </Button>
+
+              {rule.status === 'active' ? (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => handlePromptDisable(rule)}
+                  className="h-8 px-2 text-xs font-semibold text-[#B45309] hover:bg-amber-50"
+                >
+                  <MinusCircle className="size-3.5 mr-1" />
+                  Disable
+                </Button>
+              ) : (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => handleToggleEnable(rule)}
+                  className="h-8 px-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-50"
+                >
+                  <CheckCircle2 className="size-3.5 mr-1" />
+                  Enable
+                </Button>
+              )}
+
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => handlePromptRemove(rule)}
+                className="h-8 px-2 text-xs font-semibold text-[#D92D20] hover:bg-red-50"
+              >
+                <Trash2 className="size-3.5 mr-1" />
+                Remove
+              </Button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 text-right',
+          cellClassName: 'py-3.5 px-4 text-right',
+        },
+      },
+    ],
+    [
+      handleViewDetails,
+      getServiceIcon,
+      handleOpenEditRule,
+      handlePromptDisable,
+      handleToggleEnable,
+      handlePromptRemove,
+    ],
+  )
+
   return (
     <div className="min-h-screen bg-[#F4F6FA] flex">
       {/* Sidebar with active Pricing & Markup */}
@@ -625,96 +932,18 @@ export function PricingMarkupPage({
 
               {/* Table */}
               <div className="overflow-x-auto">
-                <table className="w-full text-left text-xs border-collapse">
-                  <thead>
-                    <tr className="bg-[#F8FAFC] text-[#475467] font-bold border-b border-[#E2E8F0]">
-                      <th className="py-3 px-4">RULE</th>
-                      <th className="py-3 px-4">SCOPE</th>
-                      <th className="py-3 px-4">SERVICE</th>
-                      <th className="py-3 px-4">SUPPLIER</th>
-                      <th className="py-3 px-4">TYPE</th>
-                      <th className="py-3 px-4">VALUE</th>
-                      <th className="py-3 px-4">APPLIED TO</th>
-                      <th className="py-3 px-4">STATUS</th>
-                      <th className="py-3 px-4 text-right">ACTIONS</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E2E8F0]">
-                    {filteredAdminRules.length > 0 ? (
-                      filteredAdminRules.map((rule) => {
-                        const ServiceIcon = getServiceIcon(rule.service)
-                        return (
-                          <tr
-                            key={rule.id}
-                            className="hover:bg-[#F8FAFC] transition-colors"
-                          >
-                            <td className="py-3.5 px-4">
-                              <button
-                                type="button"
-                                onClick={() => handleViewDetails(rule)}
-                                className="font-bold text-[#0267B8] hover:underline text-left block"
-                              >
-                                {rule.name}
-                              </button>
-                              <span className="text-[10px] font-semibold text-[#0267B8] bg-[#EBF3FC] border border-[#BFDBFE] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
-                                <Lock className="size-2.5" />
-                                Admin
-                              </span>
-                            </td>
-                            <td className="py-3.5 px-4 font-medium text-[#001A3D]">
-                              {rule.scope}
-                            </td>
-                            <td className="py-3.5 px-4 font-medium text-[#001A3D]">
-                              <span className="inline-flex items-center gap-1.5">
-                                <ServiceIcon className="size-3.5 text-[#0267B8]" />
-                                {rule.service}
-                              </span>
-                            </td>
-                            <td className="py-3.5 px-4 text-[#64748B]">
-                              {rule.supplier}
-                            </td>
-                            <td className="py-3.5 px-4 text-[#64748B]">
-                              {rule.type}
-                            </td>
-                            <td className="py-3.5 px-4 font-bold text-[#001A3D]">
-                              {rule.value}
-                            </td>
-                            <td className="py-3.5 px-4 text-[#001A3D] font-medium">
-                              {rule.appliedTo}
-                            </td>
-                            <td className="py-3.5 px-4">
-                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                <CheckCircle2 className="size-3 text-emerald-600" />
-                                Active
-                              </span>
-                            </td>
-                            <td className="py-3.5 px-4 text-right">
-                              <Button
-                                type="button"
-                                variant="outline"
-                                size="sm"
-                                onClick={() => handleViewDetails(rule)}
-                                className="border-[#DCE2EB] text-xs font-semibold text-[#0267B8] h-8 rounded-lg hover:bg-[#EBF3FC]"
-                              >
-                                <Eye className="size-3.5 mr-1" />
-                                View Details
-                              </Button>
-                            </td>
-                          </tr>
-                        )
-                      })
-                    ) : (
-                      <tr>
-                        <td
-                          colSpan={9}
-                          className="py-8 text-center text-xs text-[#64748B]"
-                        >
-                          No admin pricing rules match your filters.
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
+                <DataTable
+                  data={filteredAdminRules}
+                  columns={adminColumns}
+                  getRowId={(row) => row.id}
+                  tableClassName="w-full text-left text-xs border-collapse"
+                  headerRowClassName="bg-[#F8FAFC] text-[#475467] font-bold border-b border-[#E2E8F0] hover:bg-[#F8FAFC]"
+                  headClassName="h-auto"
+                  bodyClassName="divide-y divide-[#E2E8F0]"
+                  rowClassName="hover:bg-[#F8FAFC] transition-colors"
+                  empty="No admin pricing rules match your filters."
+                  emptyCellClassName="py-8 text-center text-xs text-[#64748B]"
+                />
               </div>
 
               {/* Table Footer note */}
@@ -764,136 +993,18 @@ export function PricingMarkupPage({
 
               {/* Table */}
               <div className="overflow-x-auto">
-                <table className="w-full text-left text-xs border-collapse">
-                  <thead>
-                    <tr className="bg-[#F8FAFC] text-[#475467] font-bold border-b border-[#E2E8F0]">
-                      <th className="py-3 px-4">RULE</th>
-                      <th className="py-3 px-4">SCOPE</th>
-                      <th className="py-3 px-4">SERVICE</th>
-                      <th className="py-3 px-4">SUPPLIER</th>
-                      <th className="py-3 px-4">TYPE</th>
-                      <th className="py-3 px-4">MARKUP</th>
-                      <th className="py-3 px-4">STATUS</th>
-                      <th className="py-3 px-4 text-right">ACTIONS</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E2E8F0]">
-                    {filteredAgentRules.length > 0 ? (
-                      filteredAgentRules.map((rule) => {
-                        const ServiceIcon = getServiceIcon(rule.service)
-                        return (
-                          <tr
-                            key={rule.id}
-                            className="hover:bg-[#F8FAFC] transition-colors"
-                          >
-                            <td className="py-3.5 px-4">
-                              <button
-                                type="button"
-                                onClick={() => handleViewDetails(rule)}
-                                className="font-bold text-[#0267B8] hover:underline text-left block"
-                              >
-                                {rule.name}
-                              </button>
-                              <span className="text-[10px] font-semibold text-[#B45309] bg-[#FEF3C7] border border-[#FDE68A] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
-                                <Tag className="size-2.5" />
-                                Agent
-                              </span>
-                            </td>
-                            <td className="py-3.5 px-4 font-medium text-[#001A3D]">
-                              {rule.scope}
-                            </td>
-                            <td className="py-3.5 px-4 font-medium text-[#001A3D]">
-                              <span className="inline-flex items-center gap-1.5">
-                                <ServiceIcon className="size-3.5 text-[#0267B8]" />
-                                {rule.service}
-                              </span>
-                            </td>
-                            <td className="py-3.5 px-4 text-[#64748B]">
-                              {rule.supplier}
-                            </td>
-                            <td className="py-3.5 px-4 text-[#64748B]">
-                              {rule.type}
-                            </td>
-                            <td className="py-3.5 px-4 font-bold text-[#001A3D]">
-                              {rule.value}
-                            </td>
-                            <td className="py-3.5 px-4">
-                              {rule.status === 'active' ? (
-                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                  <CheckCircle2 className="size-3 text-emerald-600" />
-                                  Active
-                                </span>
-                              ) : (
-                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-50 text-slate-600 border border-slate-200">
-                                  <XCircle className="size-3 text-slate-500" />
-                                  Inactive
-                                </span>
-                              )}
-                            </td>
-                            <td className="py-3.5 px-4 text-right">
-                              <div className="flex items-center justify-end gap-1.5">
-                                <Button
-                                  type="button"
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() => handleOpenEditRule(rule)}
-                                  className="h-8 px-2 text-xs font-semibold text-[#001A3D] hover:bg-[#F1F3F7]"
-                                >
-                                  <Settings className="size-3.5 mr-1" />
-                                  Edit
-                                </Button>
-
-                                {rule.status === 'active' ? (
-                                  <Button
-                                    type="button"
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={() => handlePromptDisable(rule)}
-                                    className="h-8 px-2 text-xs font-semibold text-[#B45309] hover:bg-amber-50"
-                                  >
-                                    <MinusCircle className="size-3.5 mr-1" />
-                                    Disable
-                                  </Button>
-                                ) : (
-                                  <Button
-                                    type="button"
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={() => handleToggleEnable(rule)}
-                                    className="h-8 px-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-50"
-                                  >
-                                    <CheckCircle2 className="size-3.5 mr-1" />
-                                    Enable
-                                  </Button>
-                                )}
-
-                                <Button
-                                  type="button"
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() => handlePromptRemove(rule)}
-                                  className="h-8 px-2 text-xs font-semibold text-[#D92D20] hover:bg-red-50"
-                                >
-                                  <Trash2 className="size-3.5 mr-1" />
-                                  Remove
-                                </Button>
-                              </div>
-                            </td>
-                          </tr>
-                        )
-                      })
-                    ) : (
-                      <tr>
-                        <td
-                          colSpan={8}
-                          className="py-8 text-center text-xs text-[#64748B]"
-                        >
-                          No markup rules match your filters.
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
+                <DataTable
+                  data={filteredAgentRules}
+                  columns={agentColumns}
+                  getRowId={(row) => row.id}
+                  tableClassName="w-full text-left text-xs border-collapse"
+                  headerRowClassName="bg-[#F8FAFC] text-[#475467] font-bold border-b border-[#E2E8F0] hover:bg-[#F8FAFC]"
+                  headClassName="h-auto"
+                  bodyClassName="divide-y divide-[#E2E8F0]"
+                  rowClassName="hover:bg-[#F8FAFC] transition-colors"
+                  empty="No markup rules match your filters."
+                  emptyCellClassName="py-8 text-center text-xs text-[#64748B]"
+                />
               </div>
 
               {/* Table Footer note */}

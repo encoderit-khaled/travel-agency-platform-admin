@@ -31,17 +31,23 @@ function DropdownMenuGroup({ className, ...props }: MenuPrimitive.Group.Props) {
 
 function DropdownMenuContent({
   className,
+  side = 'bottom',
   sideOffset = 6,
   align = 'start',
   children,
   ...props
 }: MenuPrimitive.Popup.Props & {
+  side?: 'top' | 'bottom' | 'left' | 'right'
   sideOffset?: number
   align?: 'start' | 'center' | 'end'
 }) {
   return (
     <MenuPrimitive.Portal>
-      <MenuPrimitive.Positioner sideOffset={sideOffset} align={align}>
+      <MenuPrimitive.Positioner
+        side={side}
+        sideOffset={sideOffset}
+        align={align}
+      >
         <MenuPrimitive.Popup
           data-slot="dropdown-menu-content"
           className={cn(

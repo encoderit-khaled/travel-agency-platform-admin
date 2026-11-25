@@ -20,7 +20,7 @@ import {
 } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -57,7 +57,7 @@ export function ETicketPreviewDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogPopup className="max-w-2xl w-full p-0 overflow-hidden bg-white rounded-3xl shadow-2xl border border-[#DCE2EB]">
+      <DialogContent className="max-w-2xl w-full p-0 overflow-hidden bg-white rounded-3xl shadow-2xl border border-[#DCE2EB]">
         {/* Modal Top Bar */}
         <div className="bg-[#012A5E] text-white px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
@@ -343,7 +343,7 @@ export function ETicketPreviewDialog({
             </Button>
           </div>
         </div>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

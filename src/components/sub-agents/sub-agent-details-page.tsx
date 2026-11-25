@@ -23,14 +23,8 @@ import {
 } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Button } from '#/components/ui/button'
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   AgentPortalSidebar,
   AgentPortalHeader,
@@ -103,6 +97,167 @@ export function SubAgentDetailsPage({
     setSelectedBooking(bk)
     setIsBookingSheetOpen(true)
   }
+
+  const bookingColumns = React.useMemo<ColumnDef<SubAgentBookingRecord>[]>(
+    () => [
+      {
+        id: 'reference',
+        header: 'BOOKING REFERENCE / CUSTOMER',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <>
+              <div className="font-mono text-xs font-bold text-[#0267B8]">
+                {bk.ref}
+              </div>
+              <div className="text-xs font-extrabold text-[#012A5E] mt-0.5">
+                {bk.customer}
+              </div>
+            </>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3',
+          cellClassName: 'py-3',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'SERVICE',
+        cell: ({ row }) => (
+          <div className="flex items-center gap-2 text-xs font-bold text-[#012A5E]">
+            {getServiceIcon(row.original.service)}
+            <span>{row.original.service}</span>
+          </div>
+        ),
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3',
+          cellClassName: 'py-3',
+        },
+      },
+      {
+        accessorKey: 'travelDate',
+        header: 'TRAVEL DATE',
+        cell: ({ row }) => row.original.travelDate,
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3',
+          cellClassName: 'py-3 text-xs font-semibold text-[#4F5B70]',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'STATUS',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <>
+              {bk.status === 'Ticketed' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
+                  <Ticket className="size-3" />
+                  Ticketed
+                </span>
+              )}
+              {bk.status === 'Confirmed' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
+                  <CheckCircle2 className="size-3" />
+                  Confirmed
+                </span>
+              )}
+              {bk.status === 'Pending' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#FEF6E7] text-[#9A6400] border border-amber-200">
+                  <Clock className="size-3" />
+                  Pending
+                </span>
+              )}
+              {bk.status === 'Cancelled' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#F1F3F6] text-[#64748B] border border-slate-200">
+                  <XCircle className="size-3" />
+                  Cancelled
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3',
+          cellClassName: 'py-3',
+        },
+      },
+      {
+        accessorKey: 'documentStatus',
+        header: 'DOCUMENT',
+        cell: ({ row }) => {
+          const bk = row.original
+          return bk.documentStatus === 'E-ticket available' ? (
+            <div className="space-y-0.5">
+              <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
+                <CheckCircle2 className="size-3.5 text-emerald-600" />
+                <span>E-ticket available</span>
+              </div>
+              <button
+                onClick={() => handleOpenBooking(bk)}
+                className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
+              >
+                <span>View E-ticket</span>
+                <ArrowRight className="size-2.5" />
+              </button>
+            </div>
+          ) : bk.documentStatus === 'Voucher available' ? (
+            <div className="space-y-0.5">
+              <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
+                <CheckCircle2 className="size-3.5 text-emerald-600" />
+                <span>Voucher available</span>
+              </div>
+              <button
+                onClick={() => handleOpenBooking(bk)}
+                className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
+              >
+                <span>View Voucher</span>
+                <ArrowRight className="size-2.5" />
+              </button>
+            </div>
+          ) : (
+            <span className="text-xs text-[#8C9BAE] font-medium">
+              {bk.documentStatus}
+            </span>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3',
+          cellClassName: 'py-3',
+        },
+      },
+      {
+        id: 'action',
+        header: 'ACTION',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <Button
+              onClick={() => handleOpenBooking(bk)}
+              variant="outline"
+              size="sm"
+              className="border-[#DCE2EB] text-[#012A5E] hover:bg-[#EAF4FD] hover:text-[#0267B8] font-bold text-xs h-8 px-3 rounded-lg gap-1.5 cursor-pointer bg-white"
+            >
+              <Eye className="size-3.5" />
+              <span>View Booking</span>
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3 pr-4',
+          cellClassName: 'py-3 text-right pr-4',
+        },
+      },
+    ],
+    [handleOpenBooking],
+  )
 
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[#F4F6FA] text-[#012A5E]">
@@ -448,139 +603,14 @@ export function SubAgentDetailsPage({
 
                 {/* Table */}
                 <div className="overflow-x-auto rounded-xl border border-[#E6EAF0]">
-                  <Table>
-                    <TableHeader className="bg-[#F8FAFC]">
-                      <TableRow className="border-[#E6EAF0]">
-                        <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3">
-                          BOOKING REFERENCE / CUSTOMER
-                        </TableHead>
-                        <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3">
-                          SERVICE
-                        </TableHead>
-                        <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3">
-                          TRAVEL DATE
-                        </TableHead>
-                        <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3">
-                          STATUS
-                        </TableHead>
-                        <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3">
-                          DOCUMENT
-                        </TableHead>
-                        <TableHead className="text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3 pr-4">
-                          ACTION
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {bookings.map((bk) => (
-                        <TableRow
-                          key={bk.id}
-                          className="hover:bg-[#F8FAFC] border-[#E6EAF0] transition-colors"
-                        >
-                          {/* Booking Ref / Customer */}
-                          <TableCell className="py-3">
-                            <div className="font-mono text-xs font-bold text-[#0267B8]">
-                              {bk.ref}
-                            </div>
-                            <div className="text-xs font-extrabold text-[#012A5E] mt-0.5">
-                              {bk.customer}
-                            </div>
-                          </TableCell>
-
-                          {/* Service */}
-                          <TableCell className="py-3">
-                            <div className="flex items-center gap-2 text-xs font-bold text-[#012A5E]">
-                              {getServiceIcon(bk.service)}
-                              <span>{bk.service}</span>
-                            </div>
-                          </TableCell>
-
-                          {/* Travel Date */}
-                          <TableCell className="py-3 text-xs font-semibold text-[#4F5B70]">
-                            {bk.travelDate}
-                          </TableCell>
-
-                          {/* Status */}
-                          <TableCell className="py-3">
-                            {bk.status === 'Ticketed' && (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
-                                <Ticket className="size-3" />
-                                Ticketed
-                              </span>
-                            )}
-                            {bk.status === 'Confirmed' && (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
-                                <CheckCircle2 className="size-3" />
-                                Confirmed
-                              </span>
-                            )}
-                            {bk.status === 'Pending' && (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#FEF6E7] text-[#9A6400] border border-amber-200">
-                                <Clock className="size-3" />
-                                Pending
-                              </span>
-                            )}
-                            {bk.status === 'Cancelled' && (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#F1F3F6] text-[#64748B] border border-slate-200">
-                                <XCircle className="size-3" />
-                                Cancelled
-                              </span>
-                            )}
-                          </TableCell>
-
-                          {/* Document */}
-                          <TableCell className="py-3">
-                            {bk.documentStatus === 'E-ticket available' ? (
-                              <div className="space-y-0.5">
-                                <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
-                                  <CheckCircle2 className="size-3.5 text-emerald-600" />
-                                  <span>E-ticket available</span>
-                                </div>
-                                <button
-                                  onClick={() => handleOpenBooking(bk)}
-                                  className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
-                                >
-                                  <span>View E-ticket</span>
-                                  <ArrowRight className="size-2.5" />
-                                </button>
-                              </div>
-                            ) : bk.documentStatus === 'Voucher available' ? (
-                              <div className="space-y-0.5">
-                                <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
-                                  <CheckCircle2 className="size-3.5 text-emerald-600" />
-                                  <span>Voucher available</span>
-                                </div>
-                                <button
-                                  onClick={() => handleOpenBooking(bk)}
-                                  className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
-                                >
-                                  <span>View Voucher</span>
-                                  <ArrowRight className="size-2.5" />
-                                </button>
-                              </div>
-                            ) : (
-                              <span className="text-xs text-[#8C9BAE] font-medium">
-                                {bk.documentStatus}
-                              </span>
-                            )}
-                          </TableCell>
-
-                          {/* Action Button */}
-                          <TableCell className="py-3 text-right pr-4">
-                            <Button
-                              onClick={() => handleOpenBooking(bk)}
-                              variant="outline"
-                              size="sm"
-                              className="border-[#DCE2EB] text-[#012A5E] hover:bg-[#EAF4FD] hover:text-[#0267B8] font-bold text-xs h-8 px-3 rounded-lg gap-1.5 cursor-pointer bg-white"
-                            >
-                              <Eye className="size-3.5" />
-                              <span>View Booking</span>
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                  <DataTable
+                    data={bookings}
+                    columns={bookingColumns}
+                    getRowId={(row) => row.id}
+                    headerClassName="bg-[#F8FAFC]"
+                    headerRowClassName="border-[#E6EAF0] hover:bg-[#F8FAFC]"
+                    rowClassName="hover:bg-[#F8FAFC] border-[#E6EAF0] transition-colors"
+                  />
                 </div>
               </div>
 

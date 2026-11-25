@@ -16,16 +16,17 @@ import {
   Shield,
   Percent,
 } from 'lucide-react'
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '#/components/ui/table'
 import { Input } from '#/components/ui/input'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { Button } from '#/components/ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '#/components/ui/dropdown-menu'
 import {
   Select,
   SelectTrigger,
@@ -89,7 +90,6 @@ export function SubAgentsTable({
       setOpenDropdownId(dropdownSubAgentId || subAgents[0]?.id || null)
     }
   }, [initialDropdownOpen, dropdownSubAgentId, subAgents])
-  const dropdownRef = React.useRef<HTMLDivElement>(null)
 
   // Filter sub-agents
   const filteredSubAgents = React.useMemo(() => {
@@ -126,24 +126,280 @@ export function SubAgentsTable({
     })
   }, [subAgents, searchQuery, statusFilter, bookingFilter])
 
-  // Close dropdown menu on outside click
-  React.useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setOpenDropdownId(null)
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
-
   const hasActiveFilters =
     searchQuery.trim() !== '' ||
     statusFilter !== 'all' ||
     bookingFilter !== 'all'
+
+  const columns = React.useMemo<ColumnDef<SubAgent>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'Sub-agent',
+        cell: ({ row }) => {
+          const sa = row.original
+          return (
+            <div className="flex items-start gap-3">
+              <div className="size-10 rounded-xl bg-[#012A5E] text-[#F1C134] font-extrabold text-xs flex items-center justify-center shrink-0 shadow-2xs">
+                {sa.avatarInitials}
+              </div>
+              <div className="flex flex-col min-w-0">
+                <span className="font-extrabold text-[#141C2E] text-sm leading-snug">
+                  {sa.name}
+                </span>
+                <div className="mt-1 flex items-center gap-1.5">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#EAF4FD] text-[#0267B8] text-[11px] font-bold">
+                    {sa.role}
+                  </span>
+                  {sa.status === 'suspended' && (
+                    <span className="inline-flex items-center px-1.5 py-0.2 rounded bg-red-100 text-red-700 text-[10px] font-bold">
+                      Suspended
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[300px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
+          cellClassName: 'py-4 pl-6 align-top',
+        },
+      },
+      {
+        id: 'login',
+        header: 'Login / Contact',
+        cell: ({ row }) => {
+          const sa = row.original
+          return (
+            <div className="flex flex-col gap-1 text-xs">
+              <span className="text-[11px] font-bold text-[#8C9BAE] uppercase tracking-wider">
+                Login
+              </span>
+              <div className="flex items-center gap-1.5 font-semibold text-[#141C2E]">
+                <Mail className="size-3.5 text-[#0267B8] shrink-0" />
+                <span className="truncate max-w-[200px]" title={sa.email}>
+                  {sa.email}
+                </span>
+              </div>
+              {sa.phone && (
+                <div className="flex items-center gap-1.5 font-medium text-[#4F5B70] mt-0.5">
+                  <Phone className="size-3.5 text-[#8C9BAE] shrink-0" />
+                  <span>{sa.phone}</span>
+                </div>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[280px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-top',
+        },
+      },
+      {
+        id: 'permissions',
+        header: 'Permissions',
+        cell: ({ row }) => {
+          const sa = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              {sa.permissionsConfigured ? (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAFBF1] text-[#0B6A45] text-xs font-bold">
+                  <Check className="size-3.5" />
+                  Configured
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F1F3F6] text-[#4F5B70] text-xs font-bold">
+                  <Minus className="size-3" />
+                  Not configured
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={() => onViewPermissions(sa)}
+                className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
+              >
+                <span>View Permissions</span>
+                <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[200px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-top',
+        },
+      },
+      {
+        id: 'markup',
+        header: 'Markup',
+        cell: ({ row }) => {
+          const sa = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              {sa.markupConfigured ? (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAFBF1] text-[#0B6A45] text-xs font-bold">
+                  <Check className="size-3.5" />
+                  Configured
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F1F3F6] text-[#4F5B70] text-xs font-bold">
+                  <Minus className="size-3" />
+                  Not configured
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={() => onViewMarkup(sa)}
+                className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
+              >
+                <span>View Markup</span>
+                <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[180px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-top',
+        },
+      },
+      {
+        id: 'bookings',
+        header: 'Bookings',
+        cell: ({ row }) => {
+          const sa = row.original
+          return (
+            <div className="flex flex-col items-start gap-1.5">
+              <span className="text-xs font-extrabold text-[#141C2E]">
+                {sa.bookingsCount === 0
+                  ? 'No bookings'
+                  : `${sa.bookingsCount} ${sa.bookingsCount === 1 ? 'booking' : 'bookings'}`}
+              </span>
+              <button
+                type="button"
+                onClick={() => onViewBookings(sa)}
+                className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
+              >
+                <span>View Bookings</span>
+                <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+              </button>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[160px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-top',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const sa = row.original
+          const isDropdownOpen = openDropdownId === sa.id
+          return (
+            <div className="relative inline-flex items-center justify-end gap-1.5">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => onViewDetails(sa)}
+                className="size-9 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]"
+                title={`View ${sa.name} Details`}
+                aria-label={`View Sub-agent ${sa.name}`}
+              >
+                <Eye className="size-4" />
+              </Button>
+              <DropdownMenu
+                open={isDropdownOpen}
+                onOpenChange={(open) =>
+                  setOpenDropdownId(open ? sa.id : null)
+                }
+              >
+                <DropdownMenuTrigger
+                  className={`size-9 rounded-xl border border-[#DCE2EB] bg-white text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA] ${
+                    isDropdownOpen
+                      ? 'bg-[#F4F6FA] text-[#012A5E] border-[#012A5E]/30'
+                      : ''
+                  }`}
+                  title={`More actions for ${sa.name}`}
+                  aria-label={`More actions for ${sa.name}`}
+                >
+                  <MoreHorizontal className="size-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="end"
+                  className="w-52 p-1.5 text-left"
+                >
+                  <DropdownMenuItem
+                    onClick={() => onViewDetails(sa)}
+                    className="gap-2.5 px-3 py-2 text-xs font-bold text-[#141C2E]"
+                  >
+                    <Eye className="size-3.5 text-[#0267B8]" />
+                    <span>View Details</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => onViewPermissions(sa)}
+                    className="gap-2.5 px-3 py-2 text-xs font-bold text-[#141C2E]"
+                  >
+                    <Shield className="size-3.5 text-[#0267B8]" />
+                    <span>Configure Permissions</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => onViewMarkup(sa)}
+                    className="gap-2.5 px-3 py-2 text-xs font-bold text-[#141C2E]"
+                  >
+                    <Percent className="size-3.5 text-[#B45309]" />
+                    <span>Set Markup Rules</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => onViewBookings(sa)}
+                    className="gap-2.5 px-3 py-2 text-xs font-bold text-[#141C2E]"
+                  >
+                    <CalendarDays className="size-3.5 text-[#0B6A45]" />
+                    <span>View Bookings</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator className="bg-[#F1F3F6]" />
+                  <DropdownMenuItem
+                    onClick={() => onToggleStatus(sa)}
+                    className={`gap-2.5 px-3 py-2 text-xs font-bold ${
+                      sa.status === 'active'
+                        ? 'text-red-600 hover:bg-red-50 hover:text-red-600 focus:bg-red-50 focus:text-red-600'
+                        : 'text-emerald-600 hover:bg-emerald-50 hover:text-emerald-600 focus:bg-emerald-50 focus:text-emerald-600'
+                    }`}
+                  >
+                    <span>
+                      {sa.status === 'active'
+                        ? 'Suspend Sub-agent'
+                        : 'Reactivate Sub-agent'}
+                    </span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[120px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 text-right pr-6',
+          cellClassName: 'py-4 pr-6 align-top text-right',
+        },
+      },
+    ],
+    [
+      onToggleStatus,
+      onViewBookings,
+      onViewDetails,
+      onViewMarkup,
+      onViewPermissions,
+      openDropdownId,
+    ],
+  )
 
   return (
     <section className="bg-white rounded-[18px] border border-[#DCE2EB] shadow-[0_1px_3px_rgba(0,0,0,0.04)] overflow-hidden">
@@ -270,294 +526,28 @@ export function SubAgentsTable({
       </div>
 
       {/* Sub-agents Table */}
-      <div className="overflow-x-auto" ref={dropdownRef}>
-        <Table className="w-full min-w-[940px]">
-          <TableHeader>
-            <TableRow className="bg-[#D7E3F4]/50 hover:bg-[#D7E3F4]/50 border-y border-[#DCE2EB]">
-              <TableHead className="w-[300px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6">
-                Sub-agent
-              </TableHead>
-              <TableHead className="w-[280px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                Login / Contact
-              </TableHead>
-              <TableHead className="w-[200px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                Permissions
-              </TableHead>
-              <TableHead className="w-[180px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                Markup
-              </TableHead>
-              <TableHead className="w-[160px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                Bookings
-              </TableHead>
-              <TableHead className="w-[120px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 text-right pr-6">
-                Actions
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-
-          <TableBody>
-            {filteredSubAgents.length === 0 ? (
-              <TableRow>
-                <TableCell colSpan={6} className="h-64 text-center">
-                  <div className="max-w-md mx-auto py-8">
-                    <EmptyState
-                      title="No matching sub-agents"
-                      description="No sub-agents match the applied search query or status filter. Try clearing your search parameters."
-                      action={{
-                        label: 'Reset all filters',
-                        onClick: onClearFilters,
-                      }}
-                    />
-                  </div>
-                </TableCell>
-              </TableRow>
-            ) : (
-              filteredSubAgents.map((sa) => {
-                const isDropdownOpen = openDropdownId === sa.id
-
-                return (
-                  <TableRow
-                    key={sa.id}
-                    className="hover:bg-[#F8FAFC] border-b border-[#E6EAF0] transition-colors"
-                  >
-                    {/* Column 1: Sub-agent Name & Avatar */}
-                    <TableCell className="py-4 pl-6 align-top">
-                      <div className="flex items-start gap-3">
-                        <div className="size-10 rounded-xl bg-[#012A5E] text-[#F1C134] font-extrabold text-xs flex items-center justify-center shrink-0 shadow-2xs">
-                          {sa.avatarInitials}
-                        </div>
-                        <div className="flex flex-col min-w-0">
-                          <span className="font-extrabold text-[#141C2E] text-sm leading-snug">
-                            {sa.name}
-                          </span>
-                          <div className="mt-1 flex items-center gap-1.5">
-                            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#EAF4FD] text-[#0267B8] text-[11px] font-bold">
-                              {sa.role}
-                            </span>
-                            {sa.status === 'suspended' && (
-                              <span className="inline-flex items-center px-1.5 py-0.2 rounded bg-red-100 text-red-700 text-[10px] font-bold">
-                                Suspended
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </TableCell>
-
-                    {/* Column 2: Login / Contact */}
-                    <TableCell className="py-4 align-top">
-                      <div className="flex flex-col gap-1 text-xs">
-                        <span className="text-[11px] font-bold text-[#8C9BAE] uppercase tracking-wider">
-                          Login
-                        </span>
-                        <div className="flex items-center gap-1.5 font-semibold text-[#141C2E]">
-                          <Mail className="size-3.5 text-[#0267B8] shrink-0" />
-                          <span
-                            className="truncate max-w-[200px]"
-                            title={sa.email}
-                          >
-                            {sa.email}
-                          </span>
-                        </div>
-                        {sa.phone && (
-                          <div className="flex items-center gap-1.5 font-medium text-[#4F5B70] mt-0.5">
-                            <Phone className="size-3.5 text-[#8C9BAE] shrink-0" />
-                            <span>{sa.phone}</span>
-                          </div>
-                        )}
-                      </div>
-                    </TableCell>
-
-                    {/* Column 3: Permissions */}
-                    <TableCell className="py-4 align-top">
-                      <div className="flex flex-col items-start gap-1.5">
-                        {sa.permissionsConfigured ? (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAFBF1] text-[#0B6A45] text-xs font-bold">
-                            <Check className="size-3.5" />
-                            Configured
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F1F3F6] text-[#4F5B70] text-xs font-bold">
-                            <Minus className="size-3" />
-                            Not configured
-                          </span>
-                        )}
-
-                        <button
-                          type="button"
-                          onClick={() => onViewPermissions(sa)}
-                          className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
-                        >
-                          <span>View Permissions</span>
-                          <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                        </button>
-                      </div>
-                    </TableCell>
-
-                    {/* Column 4: Markup */}
-                    <TableCell className="py-4 align-top">
-                      <div className="flex flex-col items-start gap-1.5">
-                        {sa.markupConfigured ? (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAFBF1] text-[#0B6A45] text-xs font-bold">
-                            <Check className="size-3.5" />
-                            Configured
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F1F3F6] text-[#4F5B70] text-xs font-bold">
-                            <Minus className="size-3" />
-                            Not configured
-                          </span>
-                        )}
-
-                        <button
-                          type="button"
-                          onClick={() => onViewMarkup(sa)}
-                          className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
-                        >
-                          <span>View Markup</span>
-                          <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                        </button>
-                      </div>
-                    </TableCell>
-
-                    {/* Column 5: Bookings */}
-                    <TableCell className="py-4 align-top">
-                      <div className="flex flex-col items-start gap-1.5">
-                        <span className="text-xs font-extrabold text-[#141C2E]">
-                          {sa.bookingsCount === 0
-                            ? 'No bookings'
-                            : `${sa.bookingsCount} ${sa.bookingsCount === 1 ? 'booking' : 'bookings'}`}
-                        </span>
-
-                        <button
-                          type="button"
-                          onClick={() => onViewBookings(sa)}
-                          className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
-                        >
-                          <span>View Bookings</span>
-                          <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                        </button>
-                      </div>
-                    </TableCell>
-
-                    {/* Column 6: Actions */}
-                    <TableCell className="py-4 pr-6 align-top text-right">
-                      <div className="relative inline-flex items-center justify-end gap-1.5">
-                        {/* Primary View Details Button */}
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          onClick={() => onViewDetails(sa)}
-                          className="size-9 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]"
-                          title={`View ${sa.name} Details`}
-                          aria-label={`View Sub-agent ${sa.name}`}
-                        >
-                          <Eye className="size-4" />
-                        </Button>
-
-                        {/* More Actions Dropdown Trigger */}
-                        <div className="relative">
-                          <Button
-                            variant="outline"
-                            size="icon"
-                            onClick={() =>
-                              setOpenDropdownId((curr) =>
-                                curr === sa.id ? null : sa.id,
-                              )
-                            }
-                            className={`size-9 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA] ${
-                              isDropdownOpen
-                                ? 'bg-[#F4F6FA] text-[#012A5E] border-[#012A5E]/30'
-                                : ''
-                            }`}
-                            title={`More actions for ${sa.name}`}
-                            aria-label={`More actions for ${sa.name}`}
-                          >
-                            <MoreHorizontal className="size-4" />
-                          </Button>
-
-                          {/* Action Dropdown Menu */}
-                          {isDropdownOpen && (
-                            <div className="absolute right-0 mt-1.5 w-52 rounded-xl bg-white border border-[#DCE2EB] shadow-xl p-1.5 z-40 text-left animate-in fade-in slide-in-from-top-1">
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setOpenDropdownId(null)
-                                  onViewDetails(sa)
-                                }}
-                                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-bold text-[#141C2E] hover:bg-[#F4F6FA] transition-colors"
-                              >
-                                <Eye className="size-3.5 text-[#0267B8]" />
-                                <span>View Details</span>
-                              </button>
-
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setOpenDropdownId(null)
-                                  onViewPermissions(sa)
-                                }}
-                                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-bold text-[#141C2E] hover:bg-[#F4F6FA] transition-colors"
-                              >
-                                <Shield className="size-3.5 text-[#0267B8]" />
-                                <span>Configure Permissions</span>
-                              </button>
-
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setOpenDropdownId(null)
-                                  onViewMarkup(sa)
-                                }}
-                                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-bold text-[#141C2E] hover:bg-[#F4F6FA] transition-colors"
-                              >
-                                <Percent className="size-3.5 text-[#B45309]" />
-                                <span>Set Markup Rules</span>
-                              </button>
-
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setOpenDropdownId(null)
-                                  onViewBookings(sa)
-                                }}
-                                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-bold text-[#141C2E] hover:bg-[#F4F6FA] transition-colors"
-                              >
-                                <CalendarDays className="size-3.5 text-[#0B6A45]" />
-                                <span>View Bookings</span>
-                              </button>
-
-                              <div className="h-px bg-[#F1F3F6] my-1" />
-
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setOpenDropdownId(null)
-                                  onToggleStatus(sa)
-                                }}
-                                className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-bold transition-colors ${
-                                  sa.status === 'active'
-                                    ? 'text-red-600 hover:bg-red-50'
-                                    : 'text-emerald-600 hover:bg-emerald-50'
-                                }`}
-                              >
-                                <span>
-                                  {sa.status === 'active'
-                                    ? 'Suspend Sub-agent'
-                                    : 'Reactivate Sub-agent'}
-                                </span>
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                )
-              })
-            )}
-          </TableBody>
-        </Table>
+      <div className="overflow-x-auto">
+        <DataTable
+          data={filteredSubAgents}
+          columns={columns}
+          getRowId={(row) => row.id}
+          tableClassName="w-full min-w-[940px]"
+          headerRowClassName="bg-[#D7E3F4]/50 hover:bg-[#D7E3F4]/50 border-y border-[#DCE2EB]"
+          rowClassName="hover:bg-[#F8FAFC] border-b border-[#E6EAF0] transition-colors"
+          emptyCellClassName="h-64 text-center"
+          empty={
+            <div className="max-w-md mx-auto py-8">
+              <EmptyState
+                title="No matching sub-agents"
+                description="No sub-agents match the applied search query or status filter. Try clearing your search parameters."
+                action={{
+                  label: 'Reset all filters',
+                  onClick: onClearFilters,
+                }}
+              />
+            </div>
+          }
+        />
       </div>
 
       {/* Table Footer matching Figma #665:7284 */}

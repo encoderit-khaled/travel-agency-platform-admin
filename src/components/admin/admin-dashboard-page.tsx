@@ -18,6 +18,7 @@ import {
 import { AdminSidebar } from './admin-sidebar'
 import { AdminHeader } from './admin-header'
 import { AdminFooter } from './admin-footer'
+import { BarListChart } from '#/components/ui/bar-list-chart'
 import {
   DASHBOARD_KPIS,
   TOTAL_BOOKINGS,
@@ -142,45 +143,18 @@ function BookingStatusOverview({
           </Badge>
         </div>
 
-        {/* Status list */}
-        <ul className="mt-4 flex flex-col gap-3">
-          {statuses.map((item) => (
-            <li
-              key={item.id}
-              className="group flex items-center gap-3.5 transition-colors"
-            >
-              {/* Badge */}
-              <span
-                className={cn(
-                  'inline-flex w-[105px] shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-semibold shadow-2xs',
-                  item.badgeBg,
-                  item.badgeBorder,
-                  item.badgeText,
-                )}
-              >
-                <span className={cn('size-1.5 rounded-full', item.barColor)} />
-                <span className="truncate">{item.label}</span>
-              </span>
-
-              {/* Progress bar container */}
-              <div className="relative h-3 flex-1 overflow-hidden rounded-full bg-[#EEF2F7]">
-                <div
-                  className={cn(
-                    'h-full rounded-full transition-all duration-500 ease-out',
-                    item.barColor,
-                  )}
-                  style={{ width: `${item.percentage}%` }}
-                  title={`${item.label}: ${item.count} (${item.percentage}%)`}
-                />
-              </div>
-
-              {/* Value */}
-              <span className="w-16 shrink-0 text-right text-sm font-bold text-[#141B28]">
-                {item.count.toLocaleString()}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <BarListChart
+          className="mt-4"
+          name="Bookings"
+          max={100}
+          labelWidth={110}
+          data={statuses.map((item) => ({
+            label: item.label,
+            value: item.percentage,
+            detail: item.count.toLocaleString(),
+            color: item.barColor.match(/#[0-9A-Fa-f]{3,8}/)?.[0] ?? '#0267B8',
+          }))}
+        />
       </div>
 
       {/* Footer Total */}

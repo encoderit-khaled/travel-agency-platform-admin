@@ -30,7 +30,9 @@ import {
   MinusCircle,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { DataTable } from '#/components/ui/data-table'
 import { Label } from '#/components/ui/label'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Sheet,
   SheetContent,
@@ -203,6 +205,71 @@ export function SubAgentMarkupPage({
     setRules((prev) => prev.filter((r) => r.id !== id))
     showToast('Markup rule removed.')
   }
+
+  const columns = React.useMemo<ColumnDef<MarkupRuleItem>[]>(
+    () => [
+      {
+        id: 'scope',
+        header: 'Scope / Target',
+        cell: ({ row }) => {
+          const r = row.original
+          return r.scope === 'all' ? 'All services' : r.service || r.supplier
+        },
+        meta: {
+          headerClassName: 'py-2.5 px-3',
+          cellClassName: 'py-2.5 px-3 font-black text-[#012A5E]',
+        },
+      },
+      {
+        accessorKey: 'type',
+        header: 'Type',
+        cell: ({ row }) => row.original.type,
+        meta: {
+          headerClassName: 'py-2.5 px-3',
+          cellClassName: 'py-2.5 px-3 capitalize text-[#4F5B70]',
+        },
+      },
+      {
+        id: 'value',
+        header: 'Rate / Amount',
+        cell: ({ row }) => {
+          const r = row.original
+          return r.type === 'percentage' ? `+${r.value}%` : `+BDT ${r.value}`
+        },
+        meta: {
+          headerClassName: 'py-2.5 px-3',
+          cellClassName: 'py-2.5 px-3 font-black text-[#B45309]',
+        },
+      },
+      {
+        accessorKey: 'description',
+        header: 'Description',
+        cell: ({ row }) => row.original.description,
+        meta: {
+          headerClassName: 'py-2.5 px-3',
+          cellClassName: 'py-2.5 px-3 text-[#4F5B70] max-w-xs truncate',
+        },
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        cell: ({ row }) => (
+          <button
+            type="button"
+            onClick={() => handleDeleteRule(row.original.id)}
+            className="text-gray-400 hover:text-red-600 p-1 cursor-pointer transition-colors"
+          >
+            <Trash2 className="size-3.5" />
+          </button>
+        ),
+        meta: {
+          headerClassName: 'py-2.5 px-3 text-right',
+          cellClassName: 'py-2.5 px-3 text-right',
+        },
+      },
+    ],
+    [handleDeleteRule],
+  )
 
   return (
     <div className="flex min-h-screen bg-[#F4F6FA] text-[#012A5E] antialiased">
@@ -598,48 +665,17 @@ export function SubAgentMarkupPage({
                   ) : (
                     <div className="space-y-3">
                       <div className="overflow-x-auto rounded-xl border border-[#DCE2EB]">
-                        <table className="w-full text-xs text-left">
-                          <thead className="bg-[#F8FAFC] text-[#64748B] uppercase tracking-wider font-bold border-b border-[#DCE2EB]">
-                            <tr>
-                              <th className="py-2.5 px-3">Scope / Target</th>
-                              <th className="py-2.5 px-3">Type</th>
-                              <th className="py-2.5 px-3">Rate / Amount</th>
-                              <th className="py-2.5 px-3">Description</th>
-                              <th className="py-2.5 px-3 text-right">Action</th>
-                            </tr>
-                          </thead>
-                          <tbody className="divide-y divide-[#EEF1F5]">
-                            {rules.map((r) => (
-                              <tr key={r.id} className="hover:bg-[#FAFBFD]">
-                                <td className="py-2.5 px-3 font-black text-[#012A5E]">
-                                  {r.scope === 'all'
-                                    ? 'All services'
-                                    : r.service || r.supplier}
-                                </td>
-                                <td className="py-2.5 px-3 capitalize text-[#4F5B70]">
-                                  {r.type}
-                                </td>
-                                <td className="py-2.5 px-3 font-black text-[#B45309]">
-                                  {r.type === 'percentage'
-                                    ? `+${r.value}%`
-                                    : `+BDT ${r.value}`}
-                                </td>
-                                <td className="py-2.5 px-3 text-[#4F5B70] max-w-xs truncate">
-                                  {r.description}
-                                </td>
-                                <td className="py-2.5 px-3 text-right">
-                                  <button
-                                    type="button"
-                                    onClick={() => handleDeleteRule(r.id)}
-                                    className="text-gray-400 hover:text-red-600 p-1 cursor-pointer transition-colors"
-                                  >
-                                    <Trash2 className="size-3.5" />
-                                  </button>
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                        <DataTable
+                          data={rules}
+                          columns={columns}
+                          getRowId={(row) => row.id}
+                          tableClassName="w-full text-xs text-left"
+                          headerClassName="bg-[#F8FAFC] text-[#64748B] uppercase tracking-wider font-bold border-b border-[#DCE2EB]"
+                          headerRowClassName="hover:bg-transparent"
+                          headClassName="h-auto"
+                          bodyClassName="divide-y divide-[#EEF1F5]"
+                          rowClassName="hover:bg-[#FAFBFD]"
+                        />
                       </div>
                     </div>
                   )}

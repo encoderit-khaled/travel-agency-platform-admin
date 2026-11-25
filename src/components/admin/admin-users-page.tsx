@@ -19,7 +19,9 @@ import { AdminSidebar } from './admin-sidebar'
 import { AdminHeader } from './admin-header'
 import { AdminFooter } from './admin-footer'
 import { Button } from '#/components/ui/button'
+import { DataTable } from '#/components/ui/data-table'
 import { Input } from '#/components/ui/input'
+import type { ColumnDef } from '@tanstack/react-table'
 import { Label } from '#/components/ui/label'
 import {
   Select,
@@ -135,6 +137,100 @@ export function AdminUsersPage({
         return <Shield className="size-3 text-[#012A5E]" />
     }
   }
+
+  const columns = React.useMemo<ColumnDef<AdminUser>[]>(
+    () => [
+      {
+        id: 'user',
+        header: 'Admin User',
+        meta: {
+          headerClassName:
+            'px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase',
+          cellClassName: 'px-5 py-4 whitespace-nowrap',
+        },
+        cell: ({ row }) => {
+          const user = row.original
+          return (
+            <div className="flex items-center gap-3">
+              <div
+                className={`size-9 rounded-full flex items-center justify-center text-xs font-black shrink-0 shadow-2xs ${
+                  user.avatarBg === 'saffron'
+                    ? 'bg-[#F1C134] text-[#001A3D]'
+                    : 'bg-[#01559A] text-white'
+                }`}
+              >
+                {user.initials}
+              </div>
+              <div className="flex flex-col">
+                <span className="text-sm font-bold text-[#012A5E]">
+                  {user.name}
+                </span>
+                {user.status === 'suspended' && (
+                  <span className="text-[10px] font-bold text-amber-600">
+                    Suspended
+                  </span>
+                )}
+              </div>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'email',
+        header: 'Admin Email',
+        meta: {
+          headerClassName:
+            'px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase',
+          cellClassName: 'px-5 py-4 whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <span className="text-sm text-[#4F5B70] font-normal">
+            {row.original.email}
+          </span>
+        ),
+      },
+      {
+        id: 'role',
+        header: 'Role',
+        meta: {
+          headerClassName:
+            'px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase',
+          cellClassName: 'px-5 py-4 whitespace-nowrap',
+        },
+        cell: ({ row }) => (
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-[#EEF2F7] text-[#012A5E] border border-[#DCE2EB]">
+            {getRoleIcon(row.original.role)}
+            <span>{row.original.role}</span>
+          </span>
+        ),
+      },
+      {
+        id: 'actions',
+        header: () => <span className="sr-only">Actions</span>,
+        meta: {
+          headerClassName:
+            'px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase text-right',
+          cellClassName: 'px-5 py-4 whitespace-nowrap text-right',
+        },
+        cell: ({ row }) => {
+          const user = row.original
+          return (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => setSelectedUserToManage(user)}
+              className="h-8.5 px-3.5 rounded-[11px] bg-white border border-[#C5CFDC] text-[#012A5E] hover:bg-[#EEF2F7] font-bold text-xs inline-flex items-center gap-1.5 shadow-2xs cursor-pointer"
+            >
+              <UserCog className="size-3.5 text-[#012A5E]" />
+              <span>Manage User</span>
+            </Button>
+          )
+        },
+      },
+    ],
+    [getRoleIcon],
+  )
 
   return (
     <SidebarProvider defaultOpen>
@@ -417,86 +513,16 @@ export function AdminUsersPage({
                 </div>
               ) : (
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="bg-[#EEF2F7] border-b border-[#EEF1F5]">
-                        <th className="px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase">
-                          Admin User
-                        </th>
-                        <th className="px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase">
-                          Admin Email
-                        </th>
-                        <th className="px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase">
-                          Role
-                        </th>
-                        <th className="px-5 py-3 text-xs font-bold text-[#4F5B70] tracking-wider uppercase text-right">
-                          <span className="sr-only">Actions</span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#EEF1F5]">
-                      {filteredUsers.map((user) => (
-                        <tr
-                          key={user.id}
-                          className="hover:bg-[#F8FAFC] transition-colors group"
-                        >
-                          {/* Col 1: Admin User (Avatar + Name) */}
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <div className="flex items-center gap-3">
-                              <div
-                                className={`size-9 rounded-full flex items-center justify-center text-xs font-black shrink-0 shadow-2xs ${
-                                  user.avatarBg === 'saffron'
-                                    ? 'bg-[#F1C134] text-[#001A3D]'
-                                    : 'bg-[#01559A] text-white'
-                                }`}
-                              >
-                                {user.initials}
-                              </div>
-                              <div className="flex flex-col">
-                                <span className="text-sm font-bold text-[#012A5E]">
-                                  {user.name}
-                                </span>
-                                {user.status === 'suspended' && (
-                                  <span className="text-[10px] font-bold text-amber-600">
-                                    Suspended
-                                  </span>
-                                )}
-                              </div>
-                            </div>
-                          </td>
-
-                          {/* Col 2: Admin Email */}
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <span className="text-sm text-[#4F5B70] font-normal">
-                              {user.email}
-                            </span>
-                          </td>
-
-                          {/* Col 3: Role Badge */}
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-[#EEF2F7] text-[#012A5E] border border-[#DCE2EB]">
-                              {getRoleIcon(user.role)}
-                              <span>{user.role}</span>
-                            </span>
-                          </td>
-
-                          {/* Col 4: Action Button (Manage User) */}
-                          <td className="px-5 py-4 whitespace-nowrap text-right">
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setSelectedUserToManage(user)}
-                              className="h-8.5 px-3.5 rounded-[11px] bg-white border border-[#C5CFDC] text-[#012A5E] hover:bg-[#EEF2F7] font-bold text-xs inline-flex items-center gap-1.5 shadow-2xs cursor-pointer"
-                            >
-                              <UserCog className="size-3.5 text-[#012A5E]" />
-                              <span>Manage User</span>
-                            </Button>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                  <DataTable
+                    data={filteredUsers}
+                    columns={columns}
+                    getRowId={(user) => user.id}
+                    tableClassName="w-full text-left border-collapse"
+                    headerRowClassName="bg-[#EEF2F7] border-b border-[#EEF1F5] hover:bg-[#EEF2F7]"
+                    headClassName="h-auto"
+                    bodyClassName="divide-y divide-[#EEF1F5]"
+                    rowClassName="hover:bg-[#F8FAFC] transition-colors group"
+                  />
                 </div>
               )}
             </section>

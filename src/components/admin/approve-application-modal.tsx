@@ -1,7 +1,7 @@
 import { CheckCircle2, Mail } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -39,7 +39,7 @@ export function ApproveApplicationModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogPopup className="max-w-[540px] p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
+      <DialogContent className="max-w-135 p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
         <DialogHeader className="gap-0 text-left">
           {/* Circular Green Icon Badge matching Figma #648:1247 */}
           <div className="size-11 rounded-full bg-[#E8F5E9] flex items-center justify-center text-[#2E7D32] mb-4">
@@ -103,7 +103,7 @@ export function ApproveApplicationModal({
             Confirm Approval
           </Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

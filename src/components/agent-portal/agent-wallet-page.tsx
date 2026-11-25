@@ -24,6 +24,8 @@ import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { TopUpWalletDialog } from './top-up-wallet-dialog'
 import { WalletLedgerExportDialog } from './wallet-ledger-export-dialog'
 import { BookingPreviewSheet } from './booking-preview-sheet'
@@ -142,6 +144,169 @@ export function AgentWalletPage({
       AGENT_BOOKINGS_DATA[0]
     setSelectedBooking(booking)
   }
+
+  const columns = React.useMemo<ColumnDef<WalletTransactionItem>[]>(
+    () => [
+      {
+        accessorKey: 'dateTime',
+        header: 'Date / Time',
+        cell: ({ row }) => row.original.dateTime,
+        meta: {
+          headerClassName: 'py-3 px-4 w-[231px]',
+          cellClassName:
+            'py-4 px-4 font-medium text-[#012A5E] whitespace-nowrap text-xs sm:text-sm',
+        },
+      },
+      {
+        accessorKey: 'type',
+        header: 'Type',
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <div className="flex items-center gap-2">
+              {tx.type === 'Top-up' && (
+                <span className="size-6 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                  <ArrowDownLeft className="size-3.5" />
+                </span>
+              )}
+              {tx.type === 'Booking Debit' && (
+                <span className="size-6 rounded-md bg-rose-50 text-rose-600 flex items-center justify-center">
+                  <ArrowUpRight className="size-3.5" />
+                </span>
+              )}
+              {tx.type === 'Refund' && (
+                <span className="size-6 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center">
+                  <RotateCcw className="size-3.5" />
+                </span>
+              )}
+              {tx.type === 'Commission Credit' && (
+                <span className="size-6 rounded-md bg-amber-50 text-amber-600 flex items-center justify-center">
+                  <Coins className="size-3.5" />
+                </span>
+              )}
+              {tx.type === 'Manual Adjustment' && (
+                <span className="size-6 rounded-md bg-slate-100 text-slate-600 flex items-center justify-center">
+                  <SlidersHorizontal className="size-3.5" />
+                </span>
+              )}
+              <span className="font-semibold text-[#012A5E] text-xs sm:text-sm">
+                {tx.type}
+              </span>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 w-[257px]',
+          cellClassName: 'py-4 px-4 whitespace-nowrap',
+        },
+      },
+      {
+        accessorKey: 'description',
+        header: 'Description',
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <div className="space-y-0.5">
+              <span className="font-medium text-[#012A5E] text-xs sm:text-sm">
+                {tx.description}
+              </span>
+              {tx.subDescription && (
+                <p className="text-[11px] text-[#4F5B70]">
+                  {tx.subDescription}
+                </p>
+              )}
+              {tx.linkText && (
+                <div className="pt-0.5">
+                  <a
+                    href={tx.linkHref}
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:underline"
+                  >
+                    <span>{tx.linkText}</span>
+                    <ArrowRight className="size-3" />
+                  </a>
+                </div>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 w-[277px]',
+          cellClassName: 'py-4 px-4',
+        },
+      },
+      {
+        accessorKey: 'reference',
+        header: 'Reference',
+        cell: ({ row }) => {
+          const tx = row.original
+          return tx.reference !== '—' ? (
+            <button
+              type="button"
+              onClick={() => handleBookingClick(tx.reference)}
+              className="font-semibold text-[#0267B8] underline hover:text-[#012A5E] cursor-pointer"
+            >
+              {tx.reference}
+            </button>
+          ) : (
+            <span className="text-[#8D99AE]">—</span>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 w-[176px]',
+          cellClassName: 'py-4 px-4 whitespace-nowrap text-xs sm:text-sm',
+        },
+      },
+      {
+        accessorKey: 'amount',
+        header: 'Amount',
+        cell: ({ row }) => {
+          const tx = row.original
+          return (
+            <div className="flex flex-col items-end">
+              <span
+                className={cn(
+                  'font-bold text-xs sm:text-sm',
+                  tx.direction === 'credit' && 'text-emerald-600',
+                  tx.direction === 'debit' && 'text-rose-600',
+                  tx.direction === 'adjustment' && 'text-[#012A5E]',
+                )}
+              >
+                {tx.amount}
+              </span>
+              <span
+                className={cn(
+                  'text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full inline-block mt-0.5',
+                  tx.direction === 'credit' && 'bg-emerald-50 text-emerald-700',
+                  tx.direction === 'debit' && 'bg-rose-50 text-rose-700',
+                  tx.direction === 'adjustment' &&
+                    'bg-slate-100 text-slate-700',
+                )}
+              >
+                {tx.direction === 'credit' && 'Credit'}
+                {tx.direction === 'debit' && 'Debit'}
+                {tx.direction === 'adjustment' && 'Adjustment'}
+              </span>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'py-3 px-4 text-right w-[198px]',
+          cellClassName: 'py-4 px-4 text-right whitespace-nowrap',
+        },
+      },
+      {
+        accessorKey: 'runningBalance',
+        header: 'Running Balance',
+        cell: ({ row }) => row.original.runningBalance,
+        meta: {
+          headerClassName: 'py-3 px-4 text-right w-[202px]',
+          cellClassName:
+            'py-4 px-4 text-right whitespace-nowrap font-extrabold text-[#012A5E] text-xs sm:text-sm',
+        },
+      },
+    ],
+    [handleBookingClick],
+  )
 
   return (
     <div className="min-h-screen bg-[#F4F6FA] flex text-[#001A3D]">
@@ -492,147 +657,16 @@ export function AgentWalletPage({
             {/* Table Card */}
             <div className="bg-white rounded-2xl border border-[#DCE2EB] shadow-xs overflow-hidden">
               <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse text-sm">
-                  <thead>
-                    <tr className="bg-[#EBF1F9] border-b border-[#DCE2EB] text-xs font-semibold text-[#4F5B70]">
-                      <th className="py-3 px-4 w-[231px]">Date / Time</th>
-                      <th className="py-3 px-4 w-[257px]">Type</th>
-                      <th className="py-3 px-4 w-[277px]">Description</th>
-                      <th className="py-3 px-4 w-[176px]">Reference</th>
-                      <th className="py-3 px-4 text-right w-[198px]">Amount</th>
-                      <th className="py-3 px-4 text-right w-[202px]">
-                        Running Balance
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#EBF0F7]">
-                    {WALLET_TRANSACTIONS.map((tx) => {
-                      return (
-                        <tr
-                          key={tx.id}
-                          className="hover:bg-[#F9FAFC] transition-colors"
-                        >
-                          {/* Date / Time */}
-                          <td className="py-4 px-4 font-medium text-[#012A5E] whitespace-nowrap text-xs sm:text-sm">
-                            {tx.dateTime}
-                          </td>
-
-                          {/* Type */}
-                          <td className="py-4 px-4 whitespace-nowrap">
-                            <div className="flex items-center gap-2">
-                              {tx.type === 'Top-up' && (
-                                <span className="size-6 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center">
-                                  <ArrowDownLeft className="size-3.5" />
-                                </span>
-                              )}
-                              {tx.type === 'Booking Debit' && (
-                                <span className="size-6 rounded-md bg-rose-50 text-rose-600 flex items-center justify-center">
-                                  <ArrowUpRight className="size-3.5" />
-                                </span>
-                              )}
-                              {tx.type === 'Refund' && (
-                                <span className="size-6 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center">
-                                  <RotateCcw className="size-3.5" />
-                                </span>
-                              )}
-                              {tx.type === 'Commission Credit' && (
-                                <span className="size-6 rounded-md bg-amber-50 text-amber-600 flex items-center justify-center">
-                                  <Coins className="size-3.5" />
-                                </span>
-                              )}
-                              {tx.type === 'Manual Adjustment' && (
-                                <span className="size-6 rounded-md bg-slate-100 text-slate-600 flex items-center justify-center">
-                                  <SlidersHorizontal className="size-3.5" />
-                                </span>
-                              )}
-                              <span className="font-semibold text-[#012A5E] text-xs sm:text-sm">
-                                {tx.type}
-                              </span>
-                            </div>
-                          </td>
-
-                          {/* Description */}
-                          <td className="py-4 px-4">
-                            <div className="space-y-0.5">
-                              <span className="font-medium text-[#012A5E] text-xs sm:text-sm">
-                                {tx.description}
-                              </span>
-                              {tx.subDescription && (
-                                <p className="text-[11px] text-[#4F5B70]">
-                                  {tx.subDescription}
-                                </p>
-                              )}
-                              {tx.linkText && (
-                                <div className="pt-0.5">
-                                  <a
-                                    href={tx.linkHref}
-                                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:underline"
-                                  >
-                                    <span>{tx.linkText}</span>
-                                    <ArrowRight className="size-3" />
-                                  </a>
-                                </div>
-                              )}
-                            </div>
-                          </td>
-
-                          {/* Reference */}
-                          <td className="py-4 px-4 whitespace-nowrap text-xs sm:text-sm">
-                            {tx.reference !== '—' ? (
-                              <button
-                                type="button"
-                                onClick={() => handleBookingClick(tx.reference)}
-                                className="font-semibold text-[#0267B8] underline hover:text-[#012A5E] cursor-pointer"
-                              >
-                                {tx.reference}
-                              </button>
-                            ) : (
-                              <span className="text-[#8D99AE]">—</span>
-                            )}
-                          </td>
-
-                          {/* Amount */}
-                          <td className="py-4 px-4 text-right whitespace-nowrap">
-                            <div className="flex flex-col items-end">
-                              <span
-                                className={cn(
-                                  'font-bold text-xs sm:text-sm',
-                                  tx.direction === 'credit' &&
-                                    'text-emerald-600',
-                                  tx.direction === 'debit' && 'text-rose-600',
-                                  tx.direction === 'adjustment' &&
-                                    'text-[#012A5E]',
-                                )}
-                              >
-                                {tx.amount}
-                              </span>
-                              <span
-                                className={cn(
-                                  'text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full inline-block mt-0.5',
-                                  tx.direction === 'credit' &&
-                                    'bg-emerald-50 text-emerald-700',
-                                  tx.direction === 'debit' &&
-                                    'bg-rose-50 text-rose-700',
-                                  tx.direction === 'adjustment' &&
-                                    'bg-slate-100 text-slate-700',
-                                )}
-                              >
-                                {tx.direction === 'credit' && 'Credit'}
-                                {tx.direction === 'debit' && 'Debit'}
-                                {tx.direction === 'adjustment' && 'Adjustment'}
-                              </span>
-                            </div>
-                          </td>
-
-                          {/* Running Balance */}
-                          <td className="py-4 px-4 text-right whitespace-nowrap font-extrabold text-[#012A5E] text-xs sm:text-sm">
-                            {tx.runningBalance}
-                          </td>
-                        </tr>
-                      )
-                    })}
-                  </tbody>
-                </table>
+                <DataTable
+                  data={WALLET_TRANSACTIONS}
+                  columns={columns}
+                  getRowId={(row) => row.id}
+                  tableClassName="w-full text-left border-collapse text-sm"
+                  headerRowClassName="bg-[#EBF1F9] border-b border-[#DCE2EB] text-xs font-semibold text-[#4F5B70] hover:bg-[#EBF1F9]"
+                  headClassName="h-auto"
+                  bodyClassName="divide-y divide-[#EBF0F7]"
+                  rowClassName="hover:bg-[#F9FAFC] transition-colors"
+                />
               </div>
 
               {/* Table Footer Bar */}

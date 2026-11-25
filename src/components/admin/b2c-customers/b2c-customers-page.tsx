@@ -14,14 +14,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { EmptyState } from '#/components/ui/empty-state'
 import { SignInBadge } from './signin-badge'
 import { B2CCustomerDetailsView } from './b2c-customer-details-view'
@@ -113,6 +107,111 @@ export function B2CCustomersPage({
         { label: 'Admin Panel', href: '/admin' },
         { label: 'B2C Customers', active: true },
       ]
+
+  const columns = React.useMemo<ColumnDef<B2CCustomer>[]>(
+    () => [
+      {
+        id: 'customer',
+        header: 'Customer',
+        meta: {
+          headerClassName:
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[220px]',
+          cellClassName: 'py-3.5 px-5',
+        },
+        cell: ({ row }) => {
+          const customer = row.original
+          return (
+            <div className="flex items-center gap-3">
+              <div
+                className={cn(
+                  'size-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 select-none',
+                  customer.avatarColor === 'dark'
+                    ? 'bg-[#012A5E] text-white'
+                    : 'bg-[#EAF4FD] text-[#012A5E] border border-[#C6DCF2]',
+                )}
+              >
+                {customer.initials}
+              </div>
+              <span className="text-sm font-bold text-[#141B28] truncate">
+                {customer.name}
+              </span>
+            </div>
+          )
+        },
+      },
+      {
+        id: 'email',
+        header: 'Email',
+        meta: {
+          headerClassName:
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[200px]',
+          cellClassName: 'py-3.5 px-5 text-sm',
+        },
+        cell: ({ row }) =>
+          row.original.email ? (
+            <span className="text-[#141B28]">{row.original.email}</span>
+          ) : (
+            <span className="text-[#8792A4] italic font-normal">Not added</span>
+          ),
+      },
+      {
+        id: 'mobile',
+        header: 'Mobile',
+        meta: {
+          headerClassName:
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[160px]',
+          cellClassName: 'py-3.5 px-5 text-sm',
+        },
+        cell: ({ row }) =>
+          row.original.mobile ? (
+            <span className="text-[#141B28]">{row.original.mobile}</span>
+          ) : (
+            <span className="text-[#8792A4] italic font-normal">Not added</span>
+          ),
+      },
+      {
+        id: 'signin',
+        header: 'Sign-in',
+        meta: {
+          headerClassName:
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[150px]',
+          cellClassName: 'py-3.5 px-5',
+        },
+        cell: ({ row }) => (
+          <div className="flex flex-wrap items-center gap-1.5">
+            {row.original.signinMethods.map((method) => (
+              <SignInBadge key={method} method={method} />
+            ))}
+          </div>
+        ),
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        meta: {
+          headerClassName:
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider text-right w-[140px]',
+          cellClassName: 'py-3.5 px-5 text-right',
+        },
+        cell: ({ row }) => {
+          const customer = row.original
+          return (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => setSelectedCustomer(customer)}
+              className="h-8 rounded-xl border-[#C5CFDC] text-[#012A5E] hover:bg-[#EEF2F7] text-xs font-bold gap-1.5 shadow-2xs cursor-pointer"
+            >
+              <Eye className="size-3.5" />
+              <span>View Customer</span>
+            </Button>
+          )
+        },
+      },
+    ],
+    [setSelectedCustomer],
+  )
 
   return (
     <SidebarProvider
@@ -246,103 +345,14 @@ export function B2CCustomersPage({
                     </div>
                   ) : (
                     <div className="overflow-x-auto">
-                      <Table>
-                        <TableHeader className="bg-transparent border-b border-[#EEF1F5]">
-                          <TableRow className="hover:bg-transparent">
-                            <TableHead className="py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[220px]">
-                              Customer
-                            </TableHead>
-                            <TableHead className="py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[200px]">
-                              Email
-                            </TableHead>
-                            <TableHead className="py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[160px]">
-                              Mobile
-                            </TableHead>
-                            <TableHead className="py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[150px]">
-                              Sign-in
-                            </TableHead>
-                            <TableHead className="py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider text-right w-[140px]">
-                              Action
-                            </TableHead>
-                          </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                          {filteredCustomers.map((customer) => (
-                            <TableRow
-                              key={customer.id}
-                              className="border-b border-[#EEF1F5] hover:bg-[#F9FAFC] transition-colors"
-                            >
-                              {/* Customer Cell */}
-                              <TableCell className="py-3.5 px-5">
-                                <div className="flex items-center gap-3">
-                                  <div
-                                    className={cn(
-                                      'size-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 select-none',
-                                      customer.avatarColor === 'dark'
-                                        ? 'bg-[#012A5E] text-white'
-                                        : 'bg-[#EAF4FD] text-[#012A5E] border border-[#C6DCF2]',
-                                    )}
-                                  >
-                                    {customer.initials}
-                                  </div>
-                                  <span className="text-sm font-bold text-[#141B28] truncate">
-                                    {customer.name}
-                                  </span>
-                                </div>
-                              </TableCell>
-
-                              {/* Email Cell */}
-                              <TableCell className="py-3.5 px-5 text-sm">
-                                {customer.email ? (
-                                  <span className="text-[#141B28]">
-                                    {customer.email}
-                                  </span>
-                                ) : (
-                                  <span className="text-[#8792A4] italic font-normal">
-                                    Not added
-                                  </span>
-                                )}
-                              </TableCell>
-
-                              {/* Mobile Cell */}
-                              <TableCell className="py-3.5 px-5 text-sm">
-                                {customer.mobile ? (
-                                  <span className="text-[#141B28]">
-                                    {customer.mobile}
-                                  </span>
-                                ) : (
-                                  <span className="text-[#8792A4] italic font-normal">
-                                    Not added
-                                  </span>
-                                )}
-                              </TableCell>
-
-                              {/* Sign-in Badges Cell */}
-                              <TableCell className="py-3.5 px-5">
-                                <div className="flex flex-wrap items-center gap-1.5">
-                                  {customer.signinMethods.map((method) => (
-                                    <SignInBadge key={method} method={method} />
-                                  ))}
-                                </div>
-                              </TableCell>
-
-                              {/* Action Cell */}
-                              <TableCell className="py-3.5 px-5 text-right">
-                                <Button
-                                  type="button"
-                                  variant="outline"
-                                  size="sm"
-                                  onClick={() => setSelectedCustomer(customer)}
-                                  className="h-8 rounded-xl border-[#C5CFDC] text-[#012A5E] hover:bg-[#EEF2F7] text-xs font-bold gap-1.5 shadow-2xs cursor-pointer"
-                                >
-                                  <Eye className="size-3.5" />
-                                  <span>View Customer</span>
-                                </Button>
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
+                      <DataTable
+                        data={filteredCustomers}
+                        columns={columns}
+                        getRowId={(customer) => customer.id}
+                        headerClassName="bg-transparent border-b border-[#EEF1F5]"
+                        headerRowClassName="hover:bg-transparent"
+                        rowClassName="border-b border-[#EEF1F5] hover:bg-[#F9FAFC] transition-colors"
+                      />
                     </div>
                   )}
                 </section>

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { CircleX as XCircle, Building2, User } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -60,7 +60,7 @@ export function RejectApplicationDialog({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogPopup className="max-w-xl p-6 sm:p-7">
+      <DialogContent className="max-w-xl p-6 sm:p-7">
         <DialogHeader className="gap-2">
           <div className="flex items-center gap-3">
             <div className="flex size-11 items-center justify-center rounded-xl bg-[#FEE2E2] text-[#DC2626] shadow-2xs">
@@ -181,7 +181,7 @@ export function RejectApplicationDialog({
             <span>{isSubmitting ? 'Rejecting...' : 'Confirm Rejection'}</span>
           </Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

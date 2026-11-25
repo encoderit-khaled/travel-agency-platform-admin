@@ -24,14 +24,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import { AdminSidebar } from '../admin-sidebar'
@@ -490,6 +484,45 @@ function ExchangeRatesPanel({
   onSave: () => void
   onChangeDrafts: React.Dispatch<React.SetStateAction<ExchangeRateItem[]>>
 }) {
+  const columns = React.useMemo<ColumnDef<ExchangeRateItem>[]>(
+    () => [
+      {
+        id: 'from',
+        header: 'From',
+        meta: {
+          headerClassName: 'px-5 text-[11px] tracking-wider text-[#64748B]',
+          cellClassName: 'px-5 py-3.5 font-bold text-[#001A3D]',
+        },
+        cell: ({ row }) => row.original.fromCurrency,
+      },
+      {
+        id: 'to',
+        header: 'To',
+        meta: {
+          headerClassName: 'px-5 text-[11px] tracking-wider text-[#64748B]',
+          cellClassName: 'px-5 py-3.5 font-bold text-[#001A3D]',
+        },
+        cell: ({ row }) => (
+          <span className="inline-flex items-center gap-1.5">
+            <ChevronRight className="size-3.5 text-[#94A3B8]" />
+            {row.original.toCurrency}
+          </span>
+        ),
+      },
+      {
+        id: 'rate',
+        header: 'Exchange Rate',
+        meta: {
+          headerClassName:
+            'px-5 text-right text-[11px] tracking-wider text-[#64748B]',
+          cellClassName: 'px-5 py-3.5 text-right font-bold text-[#001A3D]',
+        },
+        cell: ({ row }) => row.original.rate,
+      },
+    ],
+    [],
+  )
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -647,39 +680,12 @@ function ExchangeRatesPanel({
             {rates.length} {rates.length === 1 ? 'exchange rate' : 'exchange rates'}
           </p>
           <div className="overflow-hidden rounded-xl border border-[#E2E8F0]">
-            <Table>
-              <TableHeader>
-                <TableRow className="hover:bg-transparent">
-                  <TableHead className="px-5 text-[11px] tracking-wider text-[#64748B]">
-                    From
-                  </TableHead>
-                  <TableHead className="px-5 text-[11px] tracking-wider text-[#64748B]">
-                    To
-                  </TableHead>
-                  <TableHead className="px-5 text-right text-[11px] tracking-wider text-[#64748B]">
-                    Exchange Rate
-                  </TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {rates.map((rate) => (
-                  <TableRow key={rate.id}>
-                    <TableCell className="px-5 py-3.5 font-bold text-[#001A3D]">
-                      {rate.fromCurrency}
-                    </TableCell>
-                    <TableCell className="px-5 py-3.5 font-bold text-[#001A3D]">
-                      <span className="inline-flex items-center gap-1.5">
-                        <ChevronRight className="size-3.5 text-[#94A3B8]" />
-                        {rate.toCurrency}
-                      </span>
-                    </TableCell>
-                    <TableCell className="px-5 py-3.5 text-right font-bold text-[#001A3D]">
-                      {rate.rate}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+            <DataTable
+              data={rates}
+              columns={columns}
+              getRowId={(rate) => rate.id}
+              headerRowClassName="hover:bg-transparent"
+            />
           </div>
         </div>
       )}

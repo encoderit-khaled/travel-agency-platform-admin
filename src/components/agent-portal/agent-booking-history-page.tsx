@@ -32,13 +32,14 @@ import {
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
 import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '#/components/ui/table'
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   Sheet,
   SheetContent,
@@ -432,6 +433,144 @@ export function AgentBookingHistoryPage({
       </div>
     )
   }
+
+  const columns = React.useMemo<ColumnDef<AgentBookingItem>[]>(
+    () => [
+      {
+        accessorKey: 'ref',
+        header: 'Booking Reference',
+        cell: ({ row }) => {
+          const booking = row.original
+          return (
+            <button
+              type="button"
+              onClick={() => setSelectedBooking(booking)}
+              className="text-[#0267B8] hover:text-[#012A5E] hover:underline cursor-pointer transition-colors"
+            >
+              {booking.ref}
+            </button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
+          cellClassName: 'py-4 pl-6 align-middle font-mono text-sm font-bold',
+        },
+      },
+      {
+        accessorKey: 'customer',
+        header: 'Customer',
+        cell: ({ row }) => (
+          <div className="flex flex-col gap-0.5">
+            <span className="font-bold text-sm text-[#0F172A]">
+              {row.original.customer}
+            </span>
+            <span className="inline-flex items-center gap-1 text-[11px] text-[#64748B]">
+              <span className="size-1.5 rounded-full bg-slate-300 inline-block" />
+              On behalf
+            </span>
+          </div>
+        ),
+        meta: {
+          headerClassName:
+            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'Service',
+        cell: ({ row }) => {
+          const booking = row.original
+          return (
+            <div className="flex items-center gap-2 text-sm font-semibold text-[#012A5E]">
+              {renderServiceIcon(booking.service)}
+              <span>{booking.service}</span>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[155px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'travelDate',
+        header: 'Travel / Service Date',
+        cell: ({ row }) => row.original.travelDate,
+        meta: {
+          headerClassName:
+            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName:
+            'py-4 align-middle text-sm font-medium text-[#0F172A]',
+        },
+      },
+      {
+        id: 'createdBy',
+        header: 'Created By',
+        cell: ({ row }) =>
+          renderCreatedByBadge(
+            row.original.createdByName,
+            row.original.createdBySource,
+          ),
+        meta: {
+          headerClassName:
+            'w-[200px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-middle',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'Status',
+        cell: ({ row }) => renderStatusBadge(row.original.status),
+        meta: {
+          headerClassName:
+            'w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-middle',
+        },
+      },
+      {
+        id: 'documents',
+        header: 'Documents',
+        cell: ({ row }) => renderDocumentCell(row.original),
+        meta: {
+          headerClassName:
+            'w-[220px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-4 align-middle',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const booking = row.original
+          return (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSelectedBooking(booking)}
+              className="h-8.5 px-3 rounded-lg border-[#DCE2EB] text-xs font-bold text-[#012A5E] hover:bg-[#F4F6FA] hover:text-[#0267B8] shadow-2xs gap-1.5 cursor-pointer"
+            >
+              <Eye className="size-3.5 text-[#0267B8]" />
+              View Booking
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pr-6 text-right',
+          cellClassName: 'py-4 pr-6 align-middle text-right',
+        },
+      },
+    ],
+    [
+      renderCreatedByBadge,
+      renderDocumentCell,
+      renderServiceIcon,
+      renderStatusBadge,
+    ],
+  )
 
   return (
     <div className="min-h-screen bg-[#F6F8FB] flex flex-col antialiased text-[#1E293B]">
@@ -913,15 +1052,30 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Booking Source
                       </span>
-                      <select
+                      <Select
                         value={sourceFilter}
-                        onChange={(e) => setSourceFilter(e.target.value)}
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          all: 'All Bookings',
+                          parent: 'Parent Agent Only',
+                          subagent: 'Sub-agents Only',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setSourceFilter(val)
+                        }}
                       >
-                        <option value="all">All Bookings</option>
-                        <option value="parent">Parent Agent Only</option>
-                        <option value="subagent">Sub-agents Only</option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[160px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All Bookings</SelectItem>
+                          <SelectItem value="parent">
+                            Parent Agent Only
+                          </SelectItem>
+                          <SelectItem value="subagent">
+                            Sub-agents Only
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Created By */}
@@ -929,19 +1083,38 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Created By
                       </span>
-                      <select
+                      <Select
                         value={createdByFilter}
-                        onChange={(e) => setCreatedByFilter(e.target.value)}
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          all: 'All',
+                          'Skyline Demo Travels Ltd': 'Skyline Demo Travels Ltd',
+                          'Mirpur Desk': 'Mirpur Desk',
+                          'Banani Desk': 'Banani Desk',
+                          'Uttara Desk': 'Uttara Desk',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setCreatedByFilter(val)
+                        }}
                       >
-                        <option value="all">All</option>
-                        <option value="Skyline Demo Travels Ltd">
-                          Skyline Demo Travels Ltd
-                        </option>
-                        <option value="Mirpur Desk">Mirpur Desk</option>
-                        <option value="Banani Desk">Banani Desk</option>
-                        <option value="Uttara Desk">Uttara Desk</option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[180px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All</SelectItem>
+                          <SelectItem value="Skyline Demo Travels Ltd">
+                            Skyline Demo Travels Ltd
+                          </SelectItem>
+                          <SelectItem value="Mirpur Desk">
+                            Mirpur Desk
+                          </SelectItem>
+                          <SelectItem value="Banani Desk">
+                            Banani Desk
+                          </SelectItem>
+                          <SelectItem value="Uttara Desk">
+                            Uttara Desk
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Service */}
@@ -949,23 +1122,44 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Service
                       </span>
-                      <select
+                      <Select
                         value={serviceFilter}
-                        onChange={(e) => setServiceFilter(e.target.value)}
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          all: 'All Services',
+                          Flight: 'Flight',
+                          Hotel: 'Hotel',
+                          'Travel Package': 'Travel Package',
+                          Activity: 'Activity',
+                          'Car Rental': 'Car Rental',
+                          'Bus / Train': 'Bus / Train',
+                          eSIM: 'eSIM',
+                          'Travel Insurance': 'Travel Insurance',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setServiceFilter(val)
+                        }}
                       >
-                        <option value="all">All Services</option>
-                        <option value="Flight">Flight</option>
-                        <option value="Hotel">Hotel</option>
-                        <option value="Travel Package">Travel Package</option>
-                        <option value="Activity">Activity</option>
-                        <option value="Car Rental">Car Rental</option>
-                        <option value="Bus / Train">Bus / Train</option>
-                        <option value="eSIM">eSIM</option>
-                        <option value="Travel Insurance">
-                          Travel Insurance
-                        </option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[150px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All Services</SelectItem>
+                          <SelectItem value="Flight">Flight</SelectItem>
+                          <SelectItem value="Hotel">Hotel</SelectItem>
+                          <SelectItem value="Travel Package">
+                            Travel Package
+                          </SelectItem>
+                          <SelectItem value="Activity">Activity</SelectItem>
+                          <SelectItem value="Car Rental">Car Rental</SelectItem>
+                          <SelectItem value="Bus / Train">
+                            Bus / Train
+                          </SelectItem>
+                          <SelectItem value="eSIM">eSIM</SelectItem>
+                          <SelectItem value="Travel Insurance">
+                            Travel Insurance
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Status */}
@@ -973,22 +1167,36 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Status
                       </span>
-                      <select
+                      <Select
                         value={statusDropdownFilter}
-                        onChange={(e) =>
-                          setStatusDropdownFilter(e.target.value)
-                        }
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          all: 'All Statuses',
+                          confirmed: 'Confirmed',
+                          ticketed: 'Ticketed',
+                          issued: 'Issued',
+                          pending: 'Pending',
+                          cancelled: 'Cancelled',
+                          refunded: 'Refunded',
+                          failed: 'Failed',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setStatusDropdownFilter(val)
+                        }}
                       >
-                        <option value="all">All Statuses</option>
-                        <option value="confirmed">Confirmed</option>
-                        <option value="ticketed">Ticketed</option>
-                        <option value="issued">Issued</option>
-                        <option value="pending">Pending</option>
-                        <option value="cancelled">Cancelled</option>
-                        <option value="refunded">Refunded</option>
-                        <option value="failed">Failed</option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[140px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All Statuses</SelectItem>
+                          <SelectItem value="confirmed">Confirmed</SelectItem>
+                          <SelectItem value="ticketed">Ticketed</SelectItem>
+                          <SelectItem value="issued">Issued</SelectItem>
+                          <SelectItem value="pending">Pending</SelectItem>
+                          <SelectItem value="cancelled">Cancelled</SelectItem>
+                          <SelectItem value="refunded">Refunded</SelectItem>
+                          <SelectItem value="failed">Failed</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Travel / Service Date */}
@@ -996,15 +1204,28 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Travel / Service Date
                       </span>
-                      <select
+                      <Select
                         value={dateFilter}
-                        onChange={(e) => setDateFilter(e.target.value)}
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          all: 'All dates',
+                          dec_2026: 'December 2026',
+                          jan_2027: 'January 2027',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setDateFilter(val)
+                        }}
                       >
-                        <option value="all">All dates</option>
-                        <option value="dec_2026">December 2026</option>
-                        <option value="jan_2027">January 2027</option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[140px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All dates</SelectItem>
+                          <SelectItem value="dec_2026">
+                            December 2026
+                          </SelectItem>
+                          <SelectItem value="jan_2027">January 2027</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Sort by */}
@@ -1012,16 +1233,36 @@ export function AgentBookingHistoryPage({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#64748B] pl-1">
                         Sort by
                       </span>
-                      <select
+                      <Select
                         value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value)}
-                        className="h-10 px-3 py-1 rounded-xl bg-white border border-[#DCE2EB] text-xs font-semibold text-[#012A5E] focus:outline-none focus:ring-1 focus:ring-[#0267B8] cursor-pointer"
+                        items={{
+                          soonest: 'Travel date — Soonest',
+                          latest: 'Travel date — Latest',
+                          ref: 'Booking Reference',
+                          customer: 'Customer Name',
+                        }}
+                        onValueChange={(val) => {
+                          if (val) setSortBy(val)
+                        }}
                       >
-                        <option value="soonest">Travel date — Soonest</option>
-                        <option value="latest">Travel date — Latest</option>
-                        <option value="ref">Booking Reference</option>
-                        <option value="customer">Customer Name</option>
-                      </select>
+                        <SelectTrigger className="h-10 min-w-[180px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="soonest">
+                            Travel date — Soonest
+                          </SelectItem>
+                          <SelectItem value="latest">
+                            Travel date — Latest
+                          </SelectItem>
+                          <SelectItem value="ref">
+                            Booking Reference
+                          </SelectItem>
+                          <SelectItem value="customer">
+                            Customer Name
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {/* Reset Button */}
@@ -1052,137 +1293,34 @@ export function AgentBookingHistoryPage({
 
               {/* Data Table */}
               <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-[#EBF2FA] border-y border-[#DCE2EB] hover:bg-[#EBF2FA]">
-                      <TableHead className="w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6">
-                        Booking Reference
-                      </TableHead>
-                      <TableHead className="w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Customer
-                      </TableHead>
-                      <TableHead className="w-[155px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Service
-                      </TableHead>
-                      <TableHead className="w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Travel / Service Date
-                      </TableHead>
-                      <TableHead className="w-[200px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Created By
-                      </TableHead>
-                      <TableHead className="w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Status
-                      </TableHead>
-                      <TableHead className="w-[220px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5">
-                        Documents
-                      </TableHead>
-                      <TableHead className="w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pr-6 text-right">
-                        Actions
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {filteredBookings.length > 0 ? (
-                      filteredBookings.map((booking) => (
-                        <TableRow
-                          key={booking.id}
-                          className="hover:bg-[#F9FAFC] border-b border-[#F1F3F6] transition-colors"
-                        >
-                          {/* Booking Reference */}
-                          <TableCell className="py-4 pl-6 align-middle font-mono text-sm font-bold">
-                            <button
-                              type="button"
-                              onClick={() => setSelectedBooking(booking)}
-                              className="text-[#0267B8] hover:text-[#012A5E] hover:underline cursor-pointer transition-colors"
-                            >
-                              {booking.ref}
-                            </button>
-                          </TableCell>
-
-                          {/* Customer */}
-                          <TableCell className="py-4 align-middle">
-                            <div className="flex flex-col gap-0.5">
-                              <span className="font-bold text-sm text-[#0F172A]">
-                                {booking.customer}
-                              </span>
-                              <span className="inline-flex items-center gap-1 text-[11px] text-[#64748B]">
-                                <span className="size-1.5 rounded-full bg-slate-300 inline-block" />
-                                On behalf
-                              </span>
-                            </div>
-                          </TableCell>
-
-                          {/* Service */}
-                          <TableCell className="py-4 align-middle">
-                            <div className="flex items-center gap-2 text-sm font-semibold text-[#012A5E]">
-                              {renderServiceIcon(booking.service)}
-                              <span>{booking.service}</span>
-                            </div>
-                          </TableCell>
-
-                          {/* Travel Date */}
-                          <TableCell className="py-4 align-middle text-sm font-medium text-[#0F172A]">
-                            {booking.travelDate}
-                          </TableCell>
-
-                          {/* Created By */}
-                          <TableCell className="py-4 align-middle">
-                            {renderCreatedByBadge(
-                              booking.createdByName,
-                              booking.createdBySource,
-                            )}
-                          </TableCell>
-
-                          {/* Status */}
-                          <TableCell className="py-4 align-middle">
-                            {renderStatusBadge(booking.status)}
-                          </TableCell>
-
-                          {/* Documents */}
-                          <TableCell className="py-4 align-middle">
-                            {renderDocumentCell(booking)}
-                          </TableCell>
-
-                          {/* Actions */}
-                          <TableCell className="py-4 pr-6 align-middle text-right">
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setSelectedBooking(booking)}
-                              className="h-8.5 px-3 rounded-lg border-[#DCE2EB] text-xs font-bold text-[#012A5E] hover:bg-[#F4F6FA] hover:text-[#0267B8] shadow-2xs gap-1.5 cursor-pointer"
-                            >
-                              <Eye className="size-3.5 text-[#0267B8]" />
-                              View Booking
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      ))
-                    ) : (
-                      <TableRow>
-                        <TableCell colSpan={8} className="py-12 text-center">
-                          <div className="max-w-sm mx-auto space-y-2">
-                            <Ticket className="size-8 text-slate-300 mx-auto" />
-                            <p className="text-sm font-bold text-[#012A5E]">
-                              No bookings found matching filters
-                            </p>
-                            <p className="text-xs text-[#64748B]">
-                              Try adjusting your search terms or clearing the
-                              active filters.
-                            </p>
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              onClick={resetFilters}
-                              className="mt-2 text-xs"
-                            >
-                              Clear all filters
-                            </Button>
-                          </div>
-                        </TableCell>
-                      </TableRow>
-                    )}
-                  </TableBody>
-                </Table>
+                <DataTable
+                  data={filteredBookings}
+                  columns={columns}
+                  getRowId={(row) => row.id}
+                  headerRowClassName="bg-[#EBF2FA] border-y border-[#DCE2EB] hover:bg-[#EBF2FA]"
+                  rowClassName="hover:bg-[#F9FAFC] border-b border-[#F1F3F6] transition-colors"
+                  emptyCellClassName="py-12 text-center"
+                  empty={
+                    <div className="max-w-sm mx-auto space-y-2">
+                      <Ticket className="size-8 text-slate-300 mx-auto" />
+                      <p className="text-sm font-bold text-[#012A5E]">
+                        No bookings found matching filters
+                      </p>
+                      <p className="text-xs text-[#64748B]">
+                        Try adjusting your search terms or clearing the
+                        active filters.
+                      </p>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={resetFilters}
+                        className="mt-2 text-xs"
+                      >
+                        Clear all filters
+                      </Button>
+                    </div>
+                  }
+                />
               </div>
 
               {/* Table Pagination */}

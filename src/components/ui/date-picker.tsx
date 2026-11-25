@@ -22,15 +22,27 @@ function formatDateToYMD(date: Date): string {
   return `${year}-${month}-${day}`
 }
 
-function formatDisplayDate(ymdString?: string): string {
-  if (!ymdString) return ''
-  const parts = ymdString.split('-')
-  if (parts.length !== 3) return ymdString
-  const y = parseInt(parts[0], 10)
-  const m = parseInt(parts[1], 10) - 1
-  const d = parseInt(parts[2], 10)
-  const date = new Date(y, m, d)
-  if (isNaN(date.getTime())) return ymdString
+function parseDateValue(value?: string): Date | undefined {
+  if (!value) return undefined
+
+  const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value)
+  if (iso) {
+    const date = new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]))
+    return Number.isNaN(date.getTime()) ? undefined : date
+  }
+
+  const dmy = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(value)
+  if (dmy) {
+    const date = new Date(Number(dmy[3]), Number(dmy[2]) - 1, Number(dmy[1]))
+    return Number.isNaN(date.getTime()) ? undefined : date
+  }
+
+  return undefined
+}
+
+function formatDisplayDate(value?: string): string {
+  const date = parseDateValue(value)
+  if (!date) return value ?? ''
 
   return date.toLocaleDateString('en-GB', {
     day: 'numeric',
@@ -78,24 +90,36 @@ export function DatePicker({
         <span className="truncate">{displayText}</span>
         <div className="flex items-center gap-1.5 shrink-0 ml-2">
           {clearable && value && (
-            <button
-              type="button"
+            <span
+              role="button"
+              tabIndex={0}
               onClick={handleClear}
-              className="p-0.5 rounded-full hover:bg-slate-100 text-[#8792A6] hover:text-[#141B28] transition-colors"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  e.stopPropagation()
+                  onChange?.('')
+                }
+              }}
+              className="p-0.5 rounded-full hover:bg-slate-100 text-[#8792A6] hover:text-[#141B28] transition-colors cursor-pointer"
               aria-label="Clear date"
             >
               <X className="size-3.5" />
-            </button>
+            </span>
           )}
           <CalendarIcon className="size-4 text-[#8792A6]" />
         </div>
       </PopoverTrigger>
 
-      <PopoverContent
-        className="p-0 border-none shadow-2xl bg-transparent"
-        align="start"
-      >
-        <Calendar selected={value} onSelect={handleSelect} />
+      <PopoverContent className="w-auto p-0" align="start">
+        <Calendar
+          mode="single"
+          selected={parseDateValue(value)}
+          defaultMonth={parseDateValue(value)}
+          onSelect={(date) => {
+            if (date) handleSelect(date)
+          }}
+        />
       </PopoverContent>
     </Popover>
   )

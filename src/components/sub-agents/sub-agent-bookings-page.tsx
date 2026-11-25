@@ -28,13 +28,14 @@ import { Link, useNavigate } from '@tanstack/react-router'
 import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
 import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from '#/components/ui/table'
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import {
   AgentPortalSidebar,
   AgentPortalHeader,
@@ -107,6 +108,189 @@ export function SubAgentBookingsPage({
     setSelectedBooking(bk)
     setIsBookingSheetOpen(true)
   }
+
+  const bookingColumns = React.useMemo<ColumnDef<SubAgentBookingRecord>[]>(
+    () => [
+      {
+        accessorKey: 'ref',
+        header: 'Booking Reference',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <button
+              onClick={() => handleOpenBooking(bk)}
+              className="font-mono text-xs font-extrabold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer block text-left"
+            >
+              {bk.ref}
+            </button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pl-6 min-w-[180px]',
+          cellClassName: 'py-4 pl-6',
+        },
+      },
+      {
+        accessorKey: 'customer',
+        header: 'Customer',
+        cell: ({ row }) => (
+          <>
+            <div className="text-xs font-extrabold text-[#012A5E]">
+              {row.original.customer}
+            </div>
+            <div className="text-[11px] text-[#64748B] flex items-center gap-1 mt-0.5">
+              <Users className="size-3 text-[#94A3B8]" />
+              <span>Booked on behalf of customer</span>
+            </div>
+          </>
+        ),
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[220px]',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'Service',
+        cell: ({ row }) => (
+          <div className="flex items-center gap-2 text-xs font-bold text-[#012A5E]">
+            {getServiceIcon(row.original.service)}
+            <span>{row.original.service}</span>
+          </div>
+        ),
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[150px]',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'travelDate',
+        header: 'Travel / Service Date',
+        cell: ({ row }) => row.original.travelDate,
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]',
+          cellClassName: 'py-4 text-xs font-semibold text-[#4F5B70]',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'Status',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <>
+              {bk.status === 'Ticketed' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
+                  <CheckCircle2 className="size-3" />
+                  Ticketed
+                </span>
+              )}
+              {bk.status === 'Confirmed' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
+                  <CheckCircle2 className="size-3" />
+                  Confirmed
+                </span>
+              )}
+              {bk.status === 'Pending' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#FEF6E7] text-[#9A6400] border border-amber-200">
+                  <Clock className="size-3" />
+                  Pending
+                </span>
+              )}
+              {bk.status === 'Cancelled' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#F1F3F6] text-[#64748B] border border-slate-200">
+                  <XCircle className="size-3" />
+                  Cancelled
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[130px]',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        accessorKey: 'documentStatus',
+        header: 'Documents',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <div className="space-y-1">
+              {bk.documentStatus === 'E-ticket available' ? (
+                <>
+                  <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
+                    <CheckCircle2 className="size-3.5 text-emerald-600" />
+                    <span>E-ticket available</span>
+                  </div>
+                  <button
+                    onClick={() => handleOpenBooking(bk)}
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
+                  >
+                    <span>View E-ticket</span>
+                    <ArrowRight className="size-3" />
+                  </button>
+                </>
+              ) : bk.documentStatus === 'Voucher available' ? (
+                <>
+                  <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
+                    <CheckCircle2 className="size-3.5 text-emerald-600" />
+                    <span>Voucher available</span>
+                  </div>
+                  <button
+                    onClick={() => handleOpenBooking(bk)}
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
+                  >
+                    <span>View Voucher</span>
+                    <ArrowRight className="size-3" />
+                  </button>
+                </>
+              ) : (
+                <span className="text-xs text-[#8C9BAE]">
+                  {bk.documentStatus}
+                </span>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]',
+          cellClassName: 'py-4',
+        },
+      },
+      {
+        id: 'action',
+        header: 'Action',
+        cell: ({ row }) => {
+          const bk = row.original
+          return (
+            <Button
+              onClick={() => handleOpenBooking(bk)}
+              variant="outline"
+              size="sm"
+              className="border-[#DCE2EB] text-[#012A5E] hover:bg-[#EAF4FD] hover:text-[#0267B8] font-bold text-xs h-8 px-3 rounded-lg gap-1.5 cursor-pointer bg-white"
+            >
+              <Eye className="size-3.5" />
+              <span>View Booking</span>
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pr-6 min-w-[140px]',
+          cellClassName: 'py-4 text-right pr-6',
+        },
+      },
+    ],
+    [handleOpenBooking],
+  )
 
   // Counts for status pills matching Figma
   const counts = React.useMemo(() => {
@@ -617,18 +801,32 @@ export function SubAgentBookingsPage({
             <label className="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">
               Service
             </label>
-            <select
+            <Select
               value={selectedService}
-              onChange={(e) => setSelectedService(e.target.value)}
-              className="w-full h-9 px-3 text-xs bg-white border border-[#DCE2EB] text-[#012A5E] rounded-lg focus:outline-none focus:border-[#0267B8] font-medium"
+              items={{
+                all: 'All Services',
+                flight: 'Flight',
+                hotel: 'Hotel',
+                'travel package': 'Travel Package',
+                activity: 'Activity',
+                'car rental': 'Car Rental',
+              }}
+              onValueChange={(val) => {
+                if (val) setSelectedService(val)
+              }}
             >
-              <option value="all">All Services</option>
-              <option value="flight">Flight</option>
-              <option value="hotel">Hotel</option>
-              <option value="travel package">Travel Package</option>
-              <option value="activity">Activity</option>
-              <option value="car rental">Car Rental</option>
-            </select>
+              <SelectTrigger className="w-full h-9 rounded-lg bg-white border-[#DCE2EB] text-xs font-medium text-[#012A5E]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Services</SelectItem>
+                <SelectItem value="flight">Flight</SelectItem>
+                <SelectItem value="hotel">Hotel</SelectItem>
+                <SelectItem value="travel package">Travel Package</SelectItem>
+                <SelectItem value="activity">Activity</SelectItem>
+                <SelectItem value="car rental">Car Rental</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Status filter */}
@@ -636,17 +834,30 @@ export function SubAgentBookingsPage({
             <label className="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">
               Status
             </label>
-            <select
+            <Select
               value={selectedStatus}
-              onChange={(e) => setSelectedStatus(e.target.value)}
-              className="w-full h-9 px-3 text-xs bg-white border border-[#DCE2EB] text-[#012A5E] rounded-lg focus:outline-none focus:border-[#0267B8] font-medium"
+              items={{
+                all: 'All Statuses',
+                ticketed: 'Ticketed',
+                confirmed: 'Confirmed',
+                pending: 'Pending',
+                cancelled: 'Cancelled',
+              }}
+              onValueChange={(val) => {
+                if (val) setSelectedStatus(val)
+              }}
             >
-              <option value="all">All Statuses</option>
-              <option value="ticketed">Ticketed</option>
-              <option value="confirmed">Confirmed</option>
-              <option value="pending">Pending</option>
-              <option value="cancelled">Cancelled</option>
-            </select>
+              <SelectTrigger className="w-full h-9 rounded-lg bg-white border-[#DCE2EB] text-xs font-medium text-[#012A5E]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Statuses</SelectItem>
+                <SelectItem value="ticketed">Ticketed</SelectItem>
+                <SelectItem value="confirmed">Confirmed</SelectItem>
+                <SelectItem value="pending">Pending</SelectItem>
+                <SelectItem value="cancelled">Cancelled</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Travel date */}
@@ -654,16 +865,28 @@ export function SubAgentBookingsPage({
             <label className="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">
               Travel date
             </label>
-            <select
+            <Select
               value={selectedTravelDate}
-              onChange={(e) => setSelectedTravelDate(e.target.value)}
-              className="w-full h-9 px-3 text-xs bg-white border border-[#DCE2EB] text-[#012A5E] rounded-lg focus:outline-none focus:border-[#0267B8] font-medium"
+              items={{
+                all: 'All dates',
+                upcoming: 'Upcoming',
+                '30days': 'Next 30 days',
+                thisyear: 'This year (2026-2027)',
+              }}
+              onValueChange={(val) => {
+                if (val) setSelectedTravelDate(val)
+              }}
             >
-              <option value="all">All dates</option>
-              <option value="upcoming">Upcoming</option>
-              <option value="30days">Next 30 days</option>
-              <option value="thisyear">This year (2026-2027)</option>
-            </select>
+              <SelectTrigger className="w-full h-9 rounded-lg bg-white border-[#DCE2EB] text-xs font-medium text-[#012A5E]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All dates</SelectItem>
+                <SelectItem value="upcoming">Upcoming</SelectItem>
+                <SelectItem value="30days">Next 30 days</SelectItem>
+                <SelectItem value="thisyear">This year (2026-2027)</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Sort by */}
@@ -671,15 +894,26 @@ export function SubAgentBookingsPage({
             <label className="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">
               Sort by
             </label>
-            <select
+            <Select
               value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="w-full h-9 px-3 text-xs bg-white border border-[#DCE2EB] text-[#012A5E] rounded-lg focus:outline-none focus:border-[#0267B8] font-medium"
+              items={{
+                oldest: 'Oldest travel date',
+                newest: 'Newest travel date',
+                ref: 'Booking reference',
+              }}
+              onValueChange={(val) => {
+                if (val) setSortBy(val)
+              }}
             >
-              <option value="oldest">Oldest travel date</option>
-              <option value="newest">Newest travel date</option>
-              <option value="ref">Booking reference</option>
-            </select>
+              <SelectTrigger className="w-full h-9 rounded-lg bg-white border-[#DCE2EB] text-xs font-medium text-[#012A5E]">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="oldest">Oldest travel date</SelectItem>
+                <SelectItem value="newest">Newest travel date</SelectItem>
+                <SelectItem value="ref">Booking reference</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
 
@@ -716,187 +950,41 @@ export function SubAgentBookingsPage({
 
         {/* Bookings Table */}
         <div className="overflow-x-auto">
-          <Table>
-            <TableHeader className="bg-[#F4F7FB]">
-              <TableRow className="border-[#E6EAF0]">
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pl-6 min-w-[180px]">
-                  Booking Reference
-                </TableHead>
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[220px]">
-                  Customer
-                </TableHead>
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[150px]">
-                  Service
-                </TableHead>
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]">
-                  Travel / Service Date
-                </TableHead>
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[130px]">
-                  Status
-                </TableHead>
-                <TableHead className="text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]">
-                  Documents
-                </TableHead>
-                <TableHead className="text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pr-6 min-w-[140px]">
-                  Action
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {filteredBookings.length === 0 ? (
-                <TableRow>
-                  <TableCell colSpan={7} className="py-12 text-center">
-                    <div className="flex flex-col items-center justify-center space-y-2">
-                      <div className="size-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
-                        <Search className="size-5" />
-                      </div>
-                      <div className="text-sm font-bold text-[#012A5E]">
-                        No bookings match your filters
-                      </div>
-                      <div className="text-xs text-[#64748B]">
-                        Try searching with different terms or reset your
-                        filters.
-                      </div>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => {
-                          setSearchQuery('')
-                          setSelectedService('all')
-                          setSelectedStatus('all')
-                          setStatusChipFilter(null)
-                        }}
-                        className="mt-2 text-xs font-bold text-[#0267B8] border-[#DCE2EB]"
-                      >
-                        Reset All Filters
-                      </Button>
-                    </div>
-                  </TableCell>
-                </TableRow>
-              ) : (
-                filteredBookings.map((bk) => (
-                  <TableRow
-                    key={bk.id}
-                    className="hover:bg-[#F8FAFC] border-[#E6EAF0] transition-colors"
-                  >
-                    {/* Booking Reference */}
-                    <TableCell className="py-4 pl-6">
-                      <button
-                        onClick={() => handleOpenBooking(bk)}
-                        className="font-mono text-xs font-extrabold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer block text-left"
-                      >
-                        {bk.ref}
-                      </button>
-                    </TableCell>
-
-                    {/* Customer */}
-                    <TableCell className="py-4">
-                      <div className="text-xs font-extrabold text-[#012A5E]">
-                        {bk.customer}
-                      </div>
-                      <div className="text-[11px] text-[#64748B] flex items-center gap-1 mt-0.5">
-                        <Users className="size-3 text-[#94A3B8]" />
-                        <span>Booked on behalf of customer</span>
-                      </div>
-                    </TableCell>
-
-                    {/* Service */}
-                    <TableCell className="py-4">
-                      <div className="flex items-center gap-2 text-xs font-bold text-[#012A5E]">
-                        {getServiceIcon(bk.service)}
-                        <span>{bk.service}</span>
-                      </div>
-                    </TableCell>
-
-                    {/* Travel Date */}
-                    <TableCell className="py-4 text-xs font-semibold text-[#4F5B70]">
-                      {bk.travelDate}
-                    </TableCell>
-
-                    {/* Status Badge */}
-                    <TableCell className="py-4">
-                      {bk.status === 'Ticketed' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
-                          <CheckCircle2 className="size-3" />
-                          Ticketed
-                        </span>
-                      )}
-                      {bk.status === 'Confirmed' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#EAFBF1] text-[#0B6A45] border border-emerald-200">
-                          <CheckCircle2 className="size-3" />
-                          Confirmed
-                        </span>
-                      )}
-                      {bk.status === 'Pending' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#FEF6E7] text-[#9A6400] border border-amber-200">
-                          <Clock className="size-3" />
-                          Pending
-                        </span>
-                      )}
-                      {bk.status === 'Cancelled' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#F1F3F6] text-[#64748B] border border-slate-200">
-                          <XCircle className="size-3" />
-                          Cancelled
-                        </span>
-                      )}
-                    </TableCell>
-
-                    {/* Documents */}
-                    <TableCell className="py-4">
-                      <div className="space-y-1">
-                        {bk.documentStatus === 'E-ticket available' ? (
-                          <>
-                            <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
-                              <CheckCircle2 className="size-3.5 text-emerald-600" />
-                              <span>E-ticket available</span>
-                            </div>
-                            <button
-                              onClick={() => handleOpenBooking(bk)}
-                              className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
-                            >
-                              <span>View E-ticket</span>
-                              <ArrowRight className="size-3" />
-                            </button>
-                          </>
-                        ) : bk.documentStatus === 'Voucher available' ? (
-                          <>
-                            <div className="text-xs font-bold text-[#0B6A45] flex items-center gap-1">
-                              <CheckCircle2 className="size-3.5 text-emerald-600" />
-                              <span>Voucher available</span>
-                            </div>
-                            <button
-                              onClick={() => handleOpenBooking(bk)}
-                              className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
-                            >
-                              <span>View Voucher</span>
-                              <ArrowRight className="size-3" />
-                            </button>
-                          </>
-                        ) : (
-                          <span className="text-xs text-[#8C9BAE]">
-                            {bk.documentStatus}
-                          </span>
-                        )}
-                      </div>
-                    </TableCell>
-
-                    {/* Action */}
-                    <TableCell className="py-4 text-right pr-6">
-                      <Button
-                        onClick={() => handleOpenBooking(bk)}
-                        variant="outline"
-                        size="sm"
-                        className="border-[#DCE2EB] text-[#012A5E] hover:bg-[#EAF4FD] hover:text-[#0267B8] font-bold text-xs h-8 px-3 rounded-lg gap-1.5 cursor-pointer bg-white"
-                      >
-                        <Eye className="size-3.5" />
-                        <span>View Booking</span>
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))
-              )}
-            </TableBody>
-          </Table>
+          <DataTable
+            data={filteredBookings}
+            columns={bookingColumns}
+            getRowId={(row) => row.id}
+            headerClassName="bg-[#F4F7FB]"
+            headerRowClassName="border-[#E6EAF0] hover:bg-[#F8FAFC]"
+            rowClassName="hover:bg-[#F8FAFC] border-[#E6EAF0] transition-colors"
+            emptyCellClassName="py-12 text-center"
+            empty={
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <div className="size-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+                  <Search className="size-5" />
+                </div>
+                <div className="text-sm font-bold text-[#012A5E]">
+                  No bookings match your filters
+                </div>
+                <div className="text-xs text-[#64748B]">
+                  Try searching with different terms or reset your filters.
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    setSearchQuery('')
+                    setSelectedService('all')
+                    setSelectedStatus('all')
+                    setStatusChipFilter(null)
+                  }}
+                  className="mt-2 text-xs font-bold text-[#0267B8] border-[#DCE2EB]"
+                >
+                  Reset All Filters
+                </Button>
+              </div>
+            }
+          />
         </div>
 
         {/* Pagination Bar */}

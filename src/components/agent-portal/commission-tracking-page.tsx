@@ -34,14 +34,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/components/ui/select'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { CommissionDetailsSheet } from './commission-details-sheet'
@@ -164,6 +158,237 @@ export function CommissionTrackingPage({
         return Plane
     }
   }
+
+  const columns = React.useMemo<ColumnDef<CommissionRecord>[]>(
+    () => [
+      {
+        accessorKey: 'bookingId',
+        header: 'Booking',
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <button
+              type="button"
+              onClick={() => handleOpenDetails(record)}
+              className="text-left font-extrabold text-[#0066CC] hover:underline cursor-pointer"
+            >
+              {record.bookingId}
+            </button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName:
+            'font-extrabold text-xs text-[#0066CC] hover:underline cursor-pointer py-3.5',
+        },
+      },
+      {
+        accessorKey: 'service',
+        header: 'Service',
+        cell: ({ row }) => {
+          const record = row.original
+          const ServiceIcon = getServiceIcon(record.service)
+          return (
+            <div className="flex items-center gap-1.5 text-xs font-bold text-[#001A3D]">
+              <ServiceIcon className="size-3.5 text-[#0066CC] shrink-0" />
+              <span>{record.service}</span>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-3.5',
+        },
+      },
+      {
+        accessorKey: 'customer',
+        header: 'Customer',
+        cell: ({ row }) => row.original.customer,
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'text-xs font-bold text-[#001A3D] py-3.5',
+        },
+      },
+      {
+        id: 'createdBy',
+        header: 'Created By',
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <div className="space-y-0.5">
+              <p className="text-xs font-bold text-[#001A3D]">
+                {record.createdByName}
+              </p>
+              <div className="flex items-center gap-1 text-[10px] text-[#5A6E85]">
+                <Users className="size-2.5 text-[#0066CC]" />
+                <span>{record.createdBySource}</span>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-3.5',
+        },
+      },
+      {
+        accessorKey: 'bookingStatus',
+        header: 'Booking Status',
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <>
+              {record.bookingStatus === 'Confirmed' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#ECFDF5] text-[#107C41] border-[#A7F3D0] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <CheckCircle2 className="size-3" />
+                  Confirmed
+                </Badge>
+              )}
+              {record.bookingStatus === 'Refunded' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <RotateCcw className="size-3" />
+                  Refunded
+                </Badge>
+              )}
+              {record.bookingStatus === 'Cancelled' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <AlertCircle className="size-3" />
+                  Cancelled
+                </Badge>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-3.5',
+        },
+      },
+      {
+        accessorKey: 'commissionStatus',
+        header: 'Commission Status',
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <>
+              {record.commissionStatus === 'Pending' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#EFF6FF] text-[#0284C7] border-[#BFDBFE] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <Clock className="size-3" />
+                  Pending
+                </Badge>
+              )}
+              {record.commissionStatus === 'Earned' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#FEF6E9] text-[#D97706] border-[#FDE3B5] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <TrendingUp className="size-3" />
+                  Earned
+                </Badge>
+              )}
+              {record.commissionStatus === 'Settled' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#ECFDF5] text-[#059669] border-[#A7F3D0] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <CheckCircle2 className="size-3" />
+                  Settled
+                </Badge>
+              )}
+              {record.commissionStatus === 'Commission reversed' && (
+                <Badge
+                  variant="outline"
+                  className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
+                >
+                  <RotateCcw className="size-3" />
+                  Commission reversed
+                </Badge>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-3.5',
+        },
+      },
+      {
+        accessorKey: 'amount',
+        header: 'Commission',
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <div className="space-y-0.5">
+              <p className="text-xs font-bold text-[#001A3D]">{record.amount}</p>
+              {record.reversedReason && (
+                <p className="text-[10px] text-[#5A6E85] max-w-37.5 leading-tight">
+                  {record.reversedReason}
+                </p>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'py-3.5',
+        },
+      },
+      {
+        accessorKey: 'supplier',
+        header: 'Supplier',
+        cell: ({ row }) => row.original.supplier,
+        meta: {
+          headerClassName:
+            'text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'text-xs text-[#5A6E85] py-3.5',
+        },
+      },
+      {
+        id: 'actions',
+        header: () => <span className="sr-only">Actions</span>,
+        cell: ({ row }) => {
+          const record = row.original
+          return (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => handleOpenDetails(record)}
+              className="rounded-lg border-[#DCE2EB] bg-white hover:bg-slate-50 text-[#001A3D] font-bold text-xs px-2.5 py-1.5 h-auto shadow-xs flex items-center gap-1.5 ml-auto cursor-pointer"
+            >
+              <Eye className="size-3 text-[#0066CC]" />
+              <span>View Details</span>
+            </Button>
+          )
+        },
+        meta: {
+          headerClassName:
+            'text-right text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5',
+          cellClassName: 'text-right py-3.5',
+        },
+      },
+    ],
+    [getServiceIcon, handleOpenDetails],
+  )
 
   return (
     <div className="min-h-screen bg-[#F4F6FA] flex">
@@ -640,208 +865,22 @@ export function CommissionTrackingPage({
 
             {/* Table */}
             <div className="rounded-xl border border-[#E6EAF0] overflow-x-auto bg-white shadow-xs">
-              <Table>
-                <TableHeader className="bg-[#F8FAFC]">
-                  <TableRow className="border-b border-[#E6EAF0]">
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Booking
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Service
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Customer
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Created By
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Booking Status
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Commission Status
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Commission
-                    </TableHead>
-                    <TableHead className="text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      Supplier
-                    </TableHead>
-                    <TableHead className="text-right text-[11px] font-extrabold text-[#5A6E85] uppercase tracking-wider py-3.5">
-                      <span className="sr-only">Actions</span>
-                    </TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {filteredRecords.length === 0 ? (
-                    <TableRow>
-                      <TableCell
-                        colSpan={9}
-                        className="text-center py-8 text-xs text-[#5A6E85]"
-                      >
-                        No commission records found matching the active filters.
-                      </TableCell>
-                    </TableRow>
-                  ) : (
-                    filteredRecords.map((record) => {
-                      const ServiceIcon = getServiceIcon(record.service)
-                      const isReversed =
-                        record.commissionStatus === 'Commission reversed'
-                      return (
-                        <TableRow
-                          key={record.id}
-                          className={cn(
-                            'border-b border-[#E6EAF0] hover:bg-[#F8FAFC] transition-colors',
-                            isReversed && 'bg-slate-50/50',
-                          )}
-                        >
-                          {/* Booking */}
-                          <TableCell className="font-extrabold text-xs text-[#0066CC] hover:underline cursor-pointer py-3.5">
-                            <button
-                              type="button"
-                              onClick={() => handleOpenDetails(record)}
-                              className="text-left font-extrabold text-[#0066CC] hover:underline cursor-pointer"
-                            >
-                              {record.bookingId}
-                            </button>
-                          </TableCell>
-
-                          {/* Service */}
-                          <TableCell className="py-3.5">
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-[#001A3D]">
-                              <ServiceIcon className="size-3.5 text-[#0066CC] shrink-0" />
-                              <span>{record.service}</span>
-                            </div>
-                          </TableCell>
-
-                          {/* Customer */}
-                          <TableCell className="text-xs font-bold text-[#001A3D] py-3.5">
-                            {record.customer}
-                          </TableCell>
-
-                          {/* Created By */}
-                          <TableCell className="py-3.5">
-                            <div className="space-y-0.5">
-                              <p className="text-xs font-bold text-[#001A3D]">
-                                {record.createdByName}
-                              </p>
-                              <div className="flex items-center gap-1 text-[10px] text-[#5A6E85]">
-                                <Users className="size-2.5 text-[#0066CC]" />
-                                <span>{record.createdBySource}</span>
-                              </div>
-                            </div>
-                          </TableCell>
-
-                          {/* Booking Status */}
-                          <TableCell className="py-3.5">
-                            {record.bookingStatus === 'Confirmed' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#ECFDF5] text-[#107C41] border-[#A7F3D0] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <CheckCircle2 className="size-3" />
-                                Confirmed
-                              </Badge>
-                            )}
-                            {record.bookingStatus === 'Refunded' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <RotateCcw className="size-3" />
-                                Refunded
-                              </Badge>
-                            )}
-                            {record.bookingStatus === 'Cancelled' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <AlertCircle className="size-3" />
-                                Cancelled
-                              </Badge>
-                            )}
-                          </TableCell>
-
-                          {/* Commission Status */}
-                          <TableCell className="py-3.5">
-                            {record.commissionStatus === 'Pending' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#EFF6FF] text-[#0284C7] border-[#BFDBFE] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <Clock className="size-3" />
-                                Pending
-                              </Badge>
-                            )}
-                            {record.commissionStatus === 'Earned' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#FEF6E9] text-[#D97706] border-[#FDE3B5] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <TrendingUp className="size-3" />
-                                Earned
-                              </Badge>
-                            )}
-                            {record.commissionStatus === 'Settled' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#ECFDF5] text-[#059669] border-[#A7F3D0] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <CheckCircle2 className="size-3" />
-                                Settled
-                              </Badge>
-                            )}
-                            {record.commissionStatus ===
-                              'Commission reversed' && (
-                              <Badge
-                                variant="outline"
-                                className="bg-[#F1F5F9] text-[#475569] border-[#CBD5E1] text-[11px] font-semibold py-0.5 px-2 rounded-full flex items-center gap-1 w-fit"
-                              >
-                                <RotateCcw className="size-3" />
-                                Commission reversed
-                              </Badge>
-                            )}
-                          </TableCell>
-
-                          {/* Commission Amount */}
-                          <TableCell className="py-3.5">
-                            <div className="space-y-0.5">
-                              <p className="text-xs font-bold text-[#001A3D]">
-                                {record.amount}
-                              </p>
-                              {record.reversedReason && (
-                                <p className="text-[10px] text-[#5A6E85] max-w-37.5 leading-tight">
-                                  {record.reversedReason}
-                                </p>
-                              )}
-                            </div>
-                          </TableCell>
-
-                          {/* Supplier */}
-                          <TableCell className="text-xs text-[#5A6E85] py-3.5">
-                            {record.supplier}
-                          </TableCell>
-
-                          {/* Actions */}
-                          <TableCell className="text-right py-3.5">
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
-                              onClick={() => handleOpenDetails(record)}
-                              className="rounded-lg border-[#DCE2EB] bg-white hover:bg-slate-50 text-[#001A3D] font-bold text-xs px-2.5 py-1.5 h-auto shadow-xs flex items-center gap-1.5 ml-auto cursor-pointer"
-                            >
-                              <Eye className="size-3 text-[#0066CC]" />
-                              <span>View Details</span>
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      )
-                    })
-                  )}
-                </TableBody>
-              </Table>
+              <DataTable
+                data={filteredRecords}
+                columns={columns}
+                getRowId={(row) => row.id}
+                headerClassName="bg-[#F8FAFC]"
+                headerRowClassName="border-b border-[#E6EAF0] hover:bg-transparent"
+                rowClassName={(row) =>
+                  cn(
+                    'border-b border-[#E6EAF0] hover:bg-[#F8FAFC] transition-colors',
+                    row.original.commissionStatus === 'Commission reversed' &&
+                      'bg-slate-50/50',
+                  )
+                }
+                emptyCellClassName="text-center py-8 text-xs text-[#5A6E85]"
+                empty="No commission records found matching the active filters."
+              />
             </div>
 
             {/* Table Footnote */}

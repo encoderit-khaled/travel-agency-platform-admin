@@ -2,7 +2,7 @@ import * as React from 'react'
 import { PauseCircle, Info } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -49,7 +49,7 @@ export function SuspendAgentModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogPopup className="max-w-[540px] p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
+      <DialogContent className="max-w-135 p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
         <DialogHeader className="gap-0 text-left">
           {/* Circular Amber Icon Badge matching Figma #648:1251 */}
           <div className="size-11 rounded-full bg-[#FFF8E1] flex items-center justify-center text-[#B45309] mb-4">
@@ -136,7 +136,7 @@ export function SuspendAgentModal({
             Confirm Suspension
           </Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

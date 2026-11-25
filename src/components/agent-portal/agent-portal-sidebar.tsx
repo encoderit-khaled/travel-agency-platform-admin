@@ -219,7 +219,7 @@ export function AgentPortalSidebar({
       <aside
         className={cn(
           'shrink-0 flex flex-col justify-between text-white select-none transition-all duration-200 ease-in-out',
-          'bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0F3F7D] [&_[data-slot=sidebar-inner]]:bg-transparent',
+          'bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0F3F7D] **:data-[slot=sidebar-inner]:bg-transparent',
           className,
           isCollapsed && !isMobileOpen ? 'w-17' : 'w-64',
           isMobileOpen

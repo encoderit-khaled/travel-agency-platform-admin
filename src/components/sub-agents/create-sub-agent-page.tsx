@@ -19,6 +19,13 @@ import {
 } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Input } from '#/components/ui/input'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
 import { Textarea } from '#/components/ui/textarea'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
@@ -31,6 +38,7 @@ import { SubAgentCreatedDialog } from './sub-agent-created-dialog'
 import { INITIAL_SUB_AGENT_DATA } from './data'
 import type {
   CreateSubAgentFormData,
+  MarkupType,
   PermissionPreset,
   PermissionStatus,
 } from './types'
@@ -844,23 +852,33 @@ export function CreateSubAgentPage() {
                           <label className="text-[11px] font-semibold text-[#4F5B70]">
                             Markup Type
                           </label>
-                          <select
+                          <Select
                             value={formData.markupType}
-                            onChange={(e) =>
-                              setFormData((prev) => ({
-                                ...prev,
-                                markupType: e.target.value as any,
-                              }))
-                            }
-                            className="h-9 px-3 rounded-xl border border-[#DCE2EB] bg-white text-xs font-medium focus:border-[#0267B8] outline-none"
+                            items={{
+                              percentage: 'Percentage on base fare (%)',
+                              fixed: 'Fixed fee per ticket (BDT)',
+                            }}
+                            onValueChange={(val) => {
+                              if (val === 'percentage' || val === 'fixed') {
+                                setFormData((prev) => ({
+                                  ...prev,
+                                  markupType: val satisfies MarkupType,
+                                }))
+                              }
+                            }}
                           >
-                            <option value="percentage">
-                              Percentage on base fare (%)
-                            </option>
-                            <option value="fixed">
-                              Fixed fee per ticket (BDT)
-                            </option>
-                          </select>
+                            <SelectTrigger className="h-9 w-full rounded-xl border-[#DCE2EB] bg-white text-xs font-medium">
+                              <SelectValue />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value="percentage">
+                                Percentage on base fare (%)
+                              </SelectItem>
+                              <SelectItem value="fixed">
+                                Fixed fee per ticket (BDT)
+                              </SelectItem>
+                            </SelectContent>
+                          </Select>
                         </div>
 
                         <div className="flex flex-col gap-1">

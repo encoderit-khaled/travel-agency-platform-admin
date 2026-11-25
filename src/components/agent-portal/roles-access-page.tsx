@@ -23,6 +23,13 @@ import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import { Input } from '#/components/ui/input'
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/components/ui/select'
+import {
   Dialog,
   DialogContent,
   DialogHeader,
@@ -30,14 +37,8 @@ import {
   DialogDescription,
   DialogFooter,
 } from '#/components/ui/dialog'
-import {
-  Table,
-  TableHeader,
-  TableRow,
-  TableHead,
-  TableBody,
-  TableCell,
-} from '#/components/ui/table'
+import { DataTable } from '#/components/ui/data-table'
+import type { ColumnDef } from '@tanstack/react-table'
 import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { OwnerAccessSummaryDialog } from './owner-access-summary-dialog'
@@ -48,7 +49,10 @@ import {
   TEAM_ACCESS_HOLDERS,
   PERMISSION_MATRIX_DATA,
 } from './roles-access-data'
-import type { TeamAccessHolder } from './roles-access-types'
+import type {
+  PermissionMatrixItem,
+  TeamAccessHolder,
+} from './roles-access-types'
 import type { SubAgent, SubAgentPermission } from './types'
 import { INITIAL_SUB_AGENTS } from './data'
 import { cn } from '#/lib/utils'
@@ -252,6 +256,239 @@ export function RolesAccessPage({
       </span>
     )
   }
+
+  const teamColumns = React.useMemo<ColumnDef<TeamAccessHolder>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'Member / Desk',
+        cell: ({ row }) => {
+          const member = row.original
+          return (
+            <div className="flex items-center gap-2.5">
+              <span
+                className={cn(
+                  'size-8 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border',
+                  member.role === 'Agent Owner'
+                    ? 'bg-[#012A5E] text-[#F1C134] border-[#012A5E]'
+                    : 'bg-[#F1F5F9] text-[#012A5E] border-[#E2E8F0]',
+                )}
+              >
+                {member.initials}
+              </span>
+              <div>
+                <p className="text-xs font-bold text-[#141C2E] flex items-center gap-1.5">
+                  <span>{member.name}</span>
+                  {member.role === 'Agent Owner' && (
+                    <Badge className="bg-[#FEF3C7] text-[#92400E] border-none text-[10px] font-bold px-1.5 py-0 h-4">
+                      Primary
+                    </Badge>
+                  )}
+                </p>
+                <p className="text-[11px] text-[#5A6882]">{member.email}</p>
+              </div>
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882]',
+          cellClassName: 'font-medium',
+        },
+      },
+      {
+        accessorKey: 'role',
+        header: 'Assigned Role',
+        cell: ({ row }) => {
+          const member = row.original
+          return (
+            <Badge
+              variant="outline"
+              className={cn(
+                'text-xs font-semibold',
+                member.role === 'Agent Owner'
+                  ? 'bg-[#EBF3FC] text-[#012A5E] border-[#C5D7ED]'
+                  : 'bg-gray-50 text-gray-700 border-gray-200',
+              )}
+            >
+              {member.role}
+            </Badge>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882]',
+        },
+      },
+      {
+        accessorKey: 'preset',
+        header: 'Access Preset',
+        cell: ({ row }) => (
+          <span className="text-xs font-medium capitalize text-[#5A6882]">
+            {row.original.preset}
+          </span>
+        ),
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882]',
+        },
+      },
+      {
+        accessorKey: 'status',
+        header: 'Status',
+        cell: ({ row }) => {
+          const member = row.original
+          return (
+            <>
+              {member.status === 'full-access' ? (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <CheckCircle2 className="size-3 text-emerald-600" />
+                  Full Unrestricted
+                </span>
+              ) : member.status === 'configured' ? (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <CheckCircle2 className="size-3 text-emerald-600" />
+                  Configured
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+                  <AlertCircle className="size-3 text-amber-600" />
+                  Needs Configuration
+                </span>
+              )}
+            </>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882]',
+        },
+      },
+      {
+        id: 'privileges',
+        header: 'Effective Privileges',
+        cell: ({ row }) => {
+          const member = row.original
+          return member.role === 'Agent Owner'
+            ? 'All 12 Modules Granted (Full Admin)'
+            : member.status === 'configured'
+              ? `${member.permissionsCount ?? 0} operational privileges active`
+              : 'Pending initial permissions setup (0 active)'
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882]',
+          cellClassName: 'text-xs text-[#5A6882]',
+        },
+      },
+      {
+        id: 'actions',
+        header: 'Actions',
+        cell: ({ row }) => {
+          const member = row.original
+          return (
+            <div className="flex items-center justify-end gap-1">
+              {member.role === 'Agent Owner' ? (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  type="button"
+                  onClick={handleOpenOwnerModal}
+                  className="text-xs text-[#0267B8] hover:text-[#012A5E] font-semibold cursor-pointer"
+                >
+                  View Summary
+                </Button>
+              ) : (
+                <>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    type="button"
+                    onClick={() => handleOpenDeskDetails(member)}
+                    className="text-xs text-[#0267B8] hover:text-[#012A5E] font-semibold cursor-pointer"
+                  >
+                    Details
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    type="button"
+                    onClick={() => handleOpenQuickConfig(member.id)}
+                    className="text-xs rounded-lg border-[#DCE2EB] text-[#012A5E] hover:bg-[#F1F5F9] font-semibold cursor-pointer h-7 px-2.5"
+                  >
+                    Configure
+                  </Button>
+                </>
+              )}
+            </div>
+          )
+        },
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882] text-right',
+          cellClassName: 'text-right',
+        },
+      },
+    ],
+    [handleOpenDeskDetails, handleOpenOwnerModal, handleOpenQuickConfig],
+  )
+
+  const matrixColumns = React.useMemo<ColumnDef<PermissionMatrixItem>[]>(
+    () => [
+      {
+        accessorKey: 'name',
+        header: 'Module & Capability',
+        cell: ({ row }) => (
+          <div>
+            <span className="text-[10px] uppercase font-bold text-[#0267B8] block">
+              {row.original.category}
+            </span>
+            <span>{row.original.name}</span>
+          </div>
+        ),
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882] w-1/4',
+          cellClassName: 'font-semibold text-xs text-[#141C2E]',
+        },
+      },
+      {
+        accessorKey: 'description',
+        header: 'Description',
+        cell: ({ row }) => row.original.description,
+        meta: {
+          headerClassName: 'text-xs font-bold text-[#5A6882] w-1/3',
+          cellClassName: 'text-xs text-[#5A6882] leading-relaxed',
+        },
+      },
+      {
+        accessorKey: 'ownerAccess',
+        header: 'Agent Owner',
+        cell: ({ row }) => renderMatrixStatusBadge(row.original.ownerAccess),
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#012A5E] text-center w-1/6',
+          cellClassName: 'text-center',
+        },
+      },
+      {
+        accessorKey: 'subAgentStandard',
+        header: 'Sub-agent (Standard)',
+        cell: ({ row }) =>
+          renderMatrixStatusBadge(row.original.subAgentStandard),
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#012A5E] text-center w-1/6',
+          cellClassName: 'text-center',
+        },
+      },
+      {
+        accessorKey: 'subAgentLimited',
+        header: 'Sub-agent (Limited)',
+        cell: ({ row }) =>
+          renderMatrixStatusBadge(row.original.subAgentLimited),
+        meta: {
+          headerClassName:
+            'text-xs font-bold text-[#012A5E] text-center w-1/6',
+          cellClassName: 'text-center',
+        },
+      },
+    ],
+    [renderMatrixStatusBadge],
+  )
 
   return (
     <div className="flex min-h-screen bg-[#F8FAFC] text-[#141C2E]">
@@ -765,172 +1002,47 @@ export function RolesAccessPage({
                       <span className="text-[#5A6882] font-medium mr-1">
                         Role:
                       </span>
-                      <select
+                      <Select
                         value={teamRoleFilter}
-                        onChange={(e) =>
-                          setTeamRoleFilter(
-                            e.target.value as 'all' | 'owner' | 'staff',
-                          )
-                        }
-                        className="h-7 text-xs bg-[#F8FAFC] border border-[#E2E8F0] rounded-lg px-2 text-[#141C2E] focus:outline-none focus:ring-1 focus:ring-[#0267B8]"
+                        items={{
+                          all: 'All Roles',
+                          owner: 'Agent Owner',
+                          staff: 'Sub-agent / staff',
+                        }}
+                        onValueChange={(val) => {
+                          if (
+                            val === 'all' ||
+                            val === 'owner' ||
+                            val === 'staff'
+                          ) {
+                            setTeamRoleFilter(val)
+                          }
+                        }}
                       >
-                        <option value="all">All Roles</option>
-                        <option value="owner">Agent Owner</option>
-                        <option value="staff">Sub-agent / staff</option>
-                      </select>
+                        <SelectTrigger className="h-7! w-[158px] rounded-lg bg-[#F8FAFC] border-[#E2E8F0] px-2 text-xs text-[#141C2E]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All Roles</SelectItem>
+                          <SelectItem value="owner">Agent Owner</SelectItem>
+                          <SelectItem value="staff">
+                            Sub-agent / staff
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
                   </div>
 
                   {/* Team Access Table */}
                   <div className="rounded-xl border border-[#E2E8F0] overflow-hidden">
-                    <Table>
-                      <TableHeader className="bg-[#F8FAFC]">
-                        <TableRow>
-                          <TableHead className="text-xs font-bold text-[#5A6882]">
-                            Member / Desk
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882]">
-                            Assigned Role
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882]">
-                            Access Preset
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882]">
-                            Status
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882]">
-                            Effective Privileges
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882] text-right">
-                            Actions
-                          </TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {filteredTeamMembers.map((member) => (
-                          <TableRow
-                            key={member.id}
-                            className="hover:bg-[#F8FAFC]/75 transition-colors"
-                          >
-                            <TableCell className="font-medium">
-                              <div className="flex items-center gap-2.5">
-                                <span
-                                  className={cn(
-                                    'size-8 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border',
-                                    member.role === 'Agent Owner'
-                                      ? 'bg-[#012A5E] text-[#F1C134] border-[#012A5E]'
-                                      : 'bg-[#F1F5F9] text-[#012A5E] border-[#E2E8F0]',
-                                  )}
-                                >
-                                  {member.initials}
-                                </span>
-                                <div>
-                                  <p className="text-xs font-bold text-[#141C2E] flex items-center gap-1.5">
-                                    <span>{member.name}</span>
-                                    {member.role === 'Agent Owner' && (
-                                      <Badge className="bg-[#FEF3C7] text-[#92400E] border-none text-[10px] font-bold px-1.5 py-0 h-4">
-                                        Primary
-                                      </Badge>
-                                    )}
-                                  </p>
-                                  <p className="text-[11px] text-[#5A6882]">
-                                    {member.email}
-                                  </p>
-                                </div>
-                              </div>
-                            </TableCell>
-
-                            <TableCell>
-                              <Badge
-                                variant="outline"
-                                className={cn(
-                                  'text-xs font-semibold',
-                                  member.role === 'Agent Owner'
-                                    ? 'bg-[#EBF3FC] text-[#012A5E] border-[#C5D7ED]'
-                                    : 'bg-gray-50 text-gray-700 border-gray-200',
-                                )}
-                              >
-                                {member.role}
-                              </Badge>
-                            </TableCell>
-
-                            <TableCell>
-                              <span className="text-xs font-medium capitalize text-[#5A6882]">
-                                {member.preset}
-                              </span>
-                            </TableCell>
-
-                            <TableCell>
-                              {member.status === 'full-access' ? (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                  <CheckCircle2 className="size-3 text-emerald-600" />
-                                  Full Unrestricted
-                                </span>
-                              ) : member.status === 'configured' ? (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                  <CheckCircle2 className="size-3 text-emerald-600" />
-                                  Configured
-                                </span>
-                              ) : (
-                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
-                                  <AlertCircle className="size-3 text-amber-600" />
-                                  Needs Configuration
-                                </span>
-                              )}
-                            </TableCell>
-
-                            <TableCell className="text-xs text-[#5A6882]">
-                              {member.role === 'Agent Owner'
-                                ? 'All 12 Modules Granted (Full Admin)'
-                                : member.status === 'configured'
-                                  ? `${member.permissionsCount ?? 0} operational privileges active`
-                                  : 'Pending initial permissions setup (0 active)'}
-                            </TableCell>
-
-                            <TableCell className="text-right">
-                              <div className="flex items-center justify-end gap-1">
-                                {member.role === 'Agent Owner' ? (
-                                  <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    type="button"
-                                    onClick={handleOpenOwnerModal}
-                                    className="text-xs text-[#0267B8] hover:text-[#012A5E] font-semibold cursor-pointer"
-                                  >
-                                    View Summary
-                                  </Button>
-                                ) : (
-                                  <>
-                                    <Button
-                                      variant="ghost"
-                                      size="sm"
-                                      type="button"
-                                      onClick={() =>
-                                        handleOpenDeskDetails(member)
-                                      }
-                                      className="text-xs text-[#0267B8] hover:text-[#012A5E] font-semibold cursor-pointer"
-                                    >
-                                      Details
-                                    </Button>
-                                    <Button
-                                      variant="outline"
-                                      size="sm"
-                                      type="button"
-                                      onClick={() =>
-                                        handleOpenQuickConfig(member.id)
-                                      }
-                                      className="text-xs rounded-lg border-[#DCE2EB] text-[#012A5E] hover:bg-[#F1F5F9] font-semibold cursor-pointer h-7 px-2.5"
-                                    >
-                                      Configure
-                                    </Button>
-                                  </>
-                                )}
-                              </div>
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                    <DataTable
+                      data={filteredTeamMembers}
+                      columns={teamColumns}
+                      getRowId={(row) => row.id}
+                      headerClassName="bg-[#F8FAFC]"
+                      headerRowClassName="hover:bg-transparent"
+                      rowClassName="hover:bg-[#F8FAFC]/75 transition-colors"
+                    />
                   </div>
                 </div>
               </div>
@@ -1007,56 +1119,14 @@ export function RolesAccessPage({
 
                   {/* Matrix Table */}
                   <div className="rounded-xl border border-[#E2E8F0] overflow-hidden">
-                    <Table>
-                      <TableHeader className="bg-[#F8FAFC]">
-                        <TableRow>
-                          <TableHead className="text-xs font-bold text-[#5A6882] w-1/4">
-                            Module & Capability
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#5A6882] w-1/3">
-                            Description
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#012A5E] text-center w-1/6">
-                            Agent Owner
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#012A5E] text-center w-1/6">
-                            Sub-agent (Standard)
-                          </TableHead>
-                          <TableHead className="text-xs font-bold text-[#012A5E] text-center w-1/6">
-                            Sub-agent (Limited)
-                          </TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {filteredMatrix.map((row) => (
-                          <TableRow
-                            key={row.id}
-                            className="hover:bg-[#F8FAFC]/50"
-                          >
-                            <TableCell className="font-semibold text-xs text-[#141C2E]">
-                              <div>
-                                <span className="text-[10px] uppercase font-bold text-[#0267B8] block">
-                                  {row.category}
-                                </span>
-                                <span>{row.name}</span>
-                              </div>
-                            </TableCell>
-                            <TableCell className="text-xs text-[#5A6882] leading-relaxed">
-                              {row.description}
-                            </TableCell>
-                            <TableCell className="text-center">
-                              {renderMatrixStatusBadge(row.ownerAccess)}
-                            </TableCell>
-                            <TableCell className="text-center">
-                              {renderMatrixStatusBadge(row.subAgentStandard)}
-                            </TableCell>
-                            <TableCell className="text-center">
-                              {renderMatrixStatusBadge(row.subAgentLimited)}
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                    <DataTable
+                      data={filteredMatrix}
+                      columns={matrixColumns}
+                      getRowId={(row) => row.id}
+                      headerClassName="bg-[#F8FAFC]"
+                      headerRowClassName="hover:bg-transparent"
+                      rowClassName="hover:bg-[#F8FAFC]/50"
+                    />
                   </div>
 
                   {/* Summary note */}

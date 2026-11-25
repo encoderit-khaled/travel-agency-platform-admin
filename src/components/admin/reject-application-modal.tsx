@@ -2,7 +2,7 @@ import * as React from 'react'
 import { CircleX as XCircle } from 'lucide-react'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -50,7 +50,7 @@ export function RejectApplicationModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogPopup className="max-w-[540px] p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
+      <DialogContent className="max-w-135 p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
         <DialogHeader className="gap-0 text-left">
           {/* Circular Red Icon Badge matching Figma #648:1249 */}
           <div className="size-11 rounded-full bg-[#FCE8E6] flex items-center justify-center text-[#C62828] mb-4">
@@ -132,7 +132,7 @@ export function RejectApplicationModal({
             Confirm Rejection
           </Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   )
 }

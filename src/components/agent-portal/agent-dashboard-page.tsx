@@ -36,11 +36,13 @@ import { Input } from '#/components/ui/input'
 import { DatePicker } from '#/components/ui/date-picker'
 import {
   Dialog,
-  DialogPopup,
+  DialogContent,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogDescription,
 } from '#/components/ui/dialog'
+import { Label } from '#/components/ui/label'
 import { cn } from 'cn'
 
 type TravelServiceType =
@@ -1194,9 +1196,9 @@ export function AgentDashboardPage({
 
       {/* Modal 1: Start New Booking Dialog */}
       <Dialog open={bookingModalOpen} onOpenChange={setBookingModalOpen}>
-        <DialogPopup className="max-w-xl">
+        <DialogContent className="sm:max-w-3xl overflow-x-hidden">
           <DialogHeader>
-            <DialogTitle className="text-xl font-extrabold text-[#012A5E] flex items-center gap-2">
+            <DialogTitle className="flex items-center gap-2 text-xl font-extrabold text-[#012A5E]">
               <Plane className="size-5 text-[#0267B8]" />
               Start New Booking — {selectedService}
             </DialogTitle>
@@ -1206,18 +1208,18 @@ export function AgentDashboardPage({
             </DialogDescription>
           </DialogHeader>
 
-          <div className="space-y-4 py-2">
-            <div className="flex gap-2 overflow-x-auto pb-1">
+          <div className="min-w-0 space-y-4">
+            <div className="flex min-w-0 gap-2 overflow-x-auto pb-1">
               {travelServices.map((s) => (
                 <button
                   key={s.id}
                   type="button"
                   onClick={() => setSelectedService(s.id)}
                   className={cn(
-                    'px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-colors border',
+                    'rounded-lg border px-3 py-1.5 text-xs font-bold whitespace-nowrap transition-colors',
                     selectedService === s.id
-                      ? 'bg-[#012A5E] text-white border-[#012A5E]'
-                      : 'bg-[#F4F6FA] text-[#4F5B70] border-[#DCE2EB] hover:bg-white',
+                      ? 'border-[#012A5E] bg-[#012A5E] text-white'
+                      : 'border-[#DCE2EB] bg-[#F4F6FA] text-[#4F5B70] hover:bg-white',
                   )}
                 >
                   {s.label}
@@ -1225,21 +1227,21 @@ export function AgentDashboardPage({
               ))}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label className="text-xs font-bold text-[#012A5E] block mb-1">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="space-y-1">
+                <Label className="text-xs font-bold text-[#012A5E]">
                   Origin / Departure
-                </label>
+                </Label>
                 <Input
                   defaultValue="Hazrat Shahjalal Intl (DAC), Dhaka"
                   placeholder="City or Airport"
                   className="rounded-xl border-[#DCE2EB] text-xs"
                 />
               </div>
-              <div>
-                <label className="text-xs font-bold text-[#012A5E] block mb-1">
+              <div className="space-y-1">
+                <Label className="text-xs font-bold text-[#012A5E]">
                   Destination
-                </label>
+                </Label>
                 <Input
                   defaultValue="Heathrow Airport (LHR), London"
                   placeholder="City or Airport"
@@ -1248,20 +1250,20 @@ export function AgentDashboardPage({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label className="text-xs font-bold text-[#012A5E] block mb-1">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="space-y-1">
+                <Label className="text-xs font-bold text-[#012A5E]">
                   Travel Dates
-                </label>
+                </Label>
                 <DatePicker
                   value="2026-12-01"
-                  className="rounded-xl border-[#DCE2EB] text-xs h-9"
+                  className="h-9 rounded-xl border-[#DCE2EB] text-xs"
                 />
               </div>
-              <div>
-                <label className="text-xs font-bold text-[#012A5E] block mb-1">
+              <div className="space-y-1">
+                <Label className="text-xs font-bold text-[#012A5E]">
                   Customer / Passenger
-                </label>
+                </Label>
                 <Input
                   defaultValue="1 Adult · Economy"
                   placeholder="Passenger details"
@@ -1270,42 +1272,42 @@ export function AgentDashboardPage({
               </div>
             </div>
 
-            <div className="p-3 rounded-xl bg-[#EBF3FC] border border-[#0267B8]/20 flex items-center justify-between text-xs">
-              <span className="text-[#012A5E] font-medium">
+            <div className="flex items-center justify-between gap-3 rounded-xl border border-[#0267B8]/20 bg-[#EBF3FC] p-3 text-xs">
+              <span className="font-medium text-[#012A5E]">
                 Applied Agent Margin:
               </span>
-              <span className="font-extrabold text-[#0267B8]">
+              <span className="font-extrabold whitespace-nowrap text-[#0267B8]">
                 +5.0% Standard B2B Markup
               </span>
             </div>
           </div>
 
-          <div className="flex justify-end gap-2 pt-2 border-t border-[#F1F5F9]">
+          <DialogFooter className="border-[#F1F5F9]">
             <Button
               variant="outline"
               size="sm"
               onClick={() => setBookingModalOpen(false)}
-              className="rounded-xl text-xs font-semibold"
+              className="rounded-full px-5 text-xs font-semibold"
             >
               Cancel
             </Button>
             <Button
               size="sm"
               onClick={() => {
-                alert(`Search initiated for ${selectedService}!`)
+                window.alert(`Search initiated for ${selectedService}!`)
                 setBookingModalOpen(false)
               }}
-              className="rounded-xl text-xs font-bold bg-[#F1C134] text-[#012A5E] hover:bg-[#E5B52E]"
+              className="rounded-full bg-[#F1C134] px-5 text-xs font-bold text-[#012A5E] hover:bg-[#E5B52E]"
             >
               Search Fares & Inventory
             </Button>
-          </div>
-        </DialogPopup>
+          </DialogFooter>
+        </DialogContent>
       </Dialog>
 
       {/* Modal 2: Top Up Wallet Dialog */}
       <Dialog open={topUpModalOpen} onOpenChange={setTopUpModalOpen}>
-        <DialogPopup className="max-w-md">
+        <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle className="text-lg font-extrabold text-[#012A5E] flex items-center gap-2">
               <Wallet className="size-5 text-[#0267B8]" />
@@ -1366,12 +1368,12 @@ export function AgentDashboardPage({
               Proceed to Payment
             </Button>
           </div>
-        </DialogPopup>
+        </DialogContent>
       </Dialog>
 
       {/* Modal 3: Request Credit Dialog */}
       <Dialog open={creditModalOpen} onOpenChange={setCreditModalOpen}>
-        <DialogPopup className="max-w-md">
+        <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle className="text-lg font-extrabold text-[#012A5E] flex items-center gap-2">
               <CreditCard className="size-5 text-purple-600" />
@@ -1423,12 +1425,12 @@ export function AgentDashboardPage({
               Submit Application
             </Button>
           </div>
-        </DialogPopup>
+        </DialogContent>
       </Dialog>
 
       {/* Modal 4: Sub-agent Modal */}
       <Dialog open={subAgentModalOpen} onOpenChange={setSubAgentModalOpen}>
-        <DialogPopup className="max-w-md">
+        <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle className="text-lg font-extrabold text-[#012A5E] flex items-center gap-2">
               <Users className="size-5 text-[#0267B8]" />
@@ -1488,7 +1490,7 @@ export function AgentDashboardPage({
               Send Invite
             </Button>
           </div>
-        </DialogPopup>
+        </DialogContent>
       </Dialog>
     </div>
   )
