@@ -11,12 +11,22 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AdminAuditLogRouteImport } from './routes/admin-audit-log'
+import { Route as AdminDashboardRouteImport } from './routes/admin-dashboard'
+import { Route as AdminLoginRouteImport } from './routes/admin-login'
+import { Route as AdminReportsRouteImport } from './routes/admin-reports'
+import { Route as AdminRolesPermissionsRouteImport } from './routes/admin-roles-permissions'
+import { Route as AdminUsersRouteImport } from './routes/admin-users'
 import { Route as AgentRouteImport } from './routes/agent'
 import { Route as AgentBookingDetailsRouteImport } from './routes/agent-booking-details'
 import { Route as AgentDashboardRouteImport } from './routes/agent-dashboard'
+import { Route as B2cCustomersRouteImport } from './routes/b2c-customers'
 import { Route as BookingsRouteImport } from './routes/bookings'
+import { Route as CollapsedSidebarRouteImport } from './routes/collapsed-sidebar'
 import { Route as CommissionsRouteImport } from './routes/commissions'
 import { Route as CreditRouteImport } from './routes/credit'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as PlatformSettingsRouteImport } from './routes/platform-settings'
 import { Route as PricingMarkupRouteImport } from './routes/pricing-markup'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as ReportsRouteImport } from './routes/reports'
@@ -44,6 +54,36 @@ const AdminRoute = AdminRouteImport.update({
   path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminAuditLogRoute = AdminAuditLogRouteImport.update({
+  id: '/admin-audit-log',
+  path: '/admin-audit-log',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminDashboardRoute = AdminDashboardRouteImport.update({
+  id: '/admin-dashboard',
+  path: '/admin-dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin-login',
+  path: '/admin-login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminReportsRoute = AdminReportsRouteImport.update({
+  id: '/admin-reports',
+  path: '/admin-reports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRolesPermissionsRoute = AdminRolesPermissionsRouteImport.update({
+  id: '/admin-roles-permissions',
+  path: '/admin-roles-permissions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/admin-users',
+  path: '/admin-users',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AgentRoute = AgentRouteImport.update({
   id: '/agent',
   path: '/agent',
@@ -59,9 +99,19 @@ const AgentDashboardRoute = AgentDashboardRouteImport.update({
   path: '/agent-dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const B2cCustomersRoute = B2cCustomersRouteImport.update({
+  id: '/b2c-customers',
+  path: '/b2c-customers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BookingsRoute = BookingsRouteImport.update({
   id: '/bookings',
   path: '/bookings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CollapsedSidebarRoute = CollapsedSidebarRouteImport.update({
+  id: '/collapsed-sidebar',
+  path: '/collapsed-sidebar',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CommissionsRoute = CommissionsRouteImport.update({
@@ -72,6 +122,16 @@ const CommissionsRoute = CommissionsRouteImport.update({
 const CreditRoute = CreditRouteImport.update({
   id: '/credit',
   path: '/credit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformSettingsRoute = PlatformSettingsRouteImport.update({
+  id: '/platform-settings',
+  path: '/platform-settings',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingMarkupRoute = PricingMarkupRouteImport.update({
@@ -158,12 +218,22 @@ const SubAgentsPermissionsRoute = SubAgentsPermissionsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/admin-audit-log': typeof AdminAuditLogRoute
+  '/admin-dashboard': typeof AdminDashboardRoute
+  '/admin-login': typeof AdminLoginRoute
+  '/admin-reports': typeof AdminReportsRoute
+  '/admin-roles-permissions': typeof AdminRolesPermissionsRoute
+  '/admin-users': typeof AdminUsersRoute
   '/agent': typeof AgentRoute
   '/agent-booking-details': typeof AgentBookingDetailsRoute
   '/agent-dashboard': typeof AgentDashboardRoute
+  '/b2c-customers': typeof B2cCustomersRoute
   '/bookings': typeof BookingsRoute
+  '/collapsed-sidebar': typeof CollapsedSidebarRoute
   '/commissions': typeof CommissionsRoute
   '/credit': typeof CreditRoute
+  '/login': typeof LoginRoute
+  '/platform-settings': typeof PlatformSettingsRoute
   '/pricing-markup': typeof PricingMarkupRoute
   '/register': typeof RegisterRoute
   '/reports': typeof ReportsRoute
@@ -184,12 +254,22 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/admin-audit-log': typeof AdminAuditLogRoute
+  '/admin-dashboard': typeof AdminDashboardRoute
+  '/admin-login': typeof AdminLoginRoute
+  '/admin-reports': typeof AdminReportsRoute
+  '/admin-roles-permissions': typeof AdminRolesPermissionsRoute
+  '/admin-users': typeof AdminUsersRoute
   '/agent': typeof AgentRoute
   '/agent-booking-details': typeof AgentBookingDetailsRoute
   '/agent-dashboard': typeof AgentDashboardRoute
+  '/b2c-customers': typeof B2cCustomersRoute
   '/bookings': typeof BookingsRoute
+  '/collapsed-sidebar': typeof CollapsedSidebarRoute
   '/commissions': typeof CommissionsRoute
   '/credit': typeof CreditRoute
+  '/login': typeof LoginRoute
+  '/platform-settings': typeof PlatformSettingsRoute
   '/pricing-markup': typeof PricingMarkupRoute
   '/register': typeof RegisterRoute
   '/reports': typeof ReportsRoute
@@ -211,12 +291,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/admin-audit-log': typeof AdminAuditLogRoute
+  '/admin-dashboard': typeof AdminDashboardRoute
+  '/admin-login': typeof AdminLoginRoute
+  '/admin-reports': typeof AdminReportsRoute
+  '/admin-roles-permissions': typeof AdminRolesPermissionsRoute
+  '/admin-users': typeof AdminUsersRoute
   '/agent': typeof AgentRoute
   '/agent-booking-details': typeof AgentBookingDetailsRoute
   '/agent-dashboard': typeof AgentDashboardRoute
+  '/b2c-customers': typeof B2cCustomersRoute
   '/bookings': typeof BookingsRoute
+  '/collapsed-sidebar': typeof CollapsedSidebarRoute
   '/commissions': typeof CommissionsRoute
   '/credit': typeof CreditRoute
+  '/login': typeof LoginRoute
+  '/platform-settings': typeof PlatformSettingsRoute
   '/pricing-markup': typeof PricingMarkupRoute
   '/register': typeof RegisterRoute
   '/reports': typeof ReportsRoute
@@ -239,12 +329,22 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/admin'
+    | '/admin-audit-log'
+    | '/admin-dashboard'
+    | '/admin-login'
+    | '/admin-reports'
+    | '/admin-roles-permissions'
+    | '/admin-users'
     | '/agent'
     | '/agent-booking-details'
     | '/agent-dashboard'
+    | '/b2c-customers'
     | '/bookings'
+    | '/collapsed-sidebar'
     | '/commissions'
     | '/credit'
+    | '/login'
+    | '/platform-settings'
     | '/pricing-markup'
     | '/register'
     | '/reports'
@@ -265,12 +365,22 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/admin'
+    | '/admin-audit-log'
+    | '/admin-dashboard'
+    | '/admin-login'
+    | '/admin-reports'
+    | '/admin-roles-permissions'
+    | '/admin-users'
     | '/agent'
     | '/agent-booking-details'
     | '/agent-dashboard'
+    | '/b2c-customers'
     | '/bookings'
+    | '/collapsed-sidebar'
     | '/commissions'
     | '/credit'
+    | '/login'
+    | '/platform-settings'
     | '/pricing-markup'
     | '/register'
     | '/reports'
@@ -291,12 +401,22 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/admin'
+    | '/admin-audit-log'
+    | '/admin-dashboard'
+    | '/admin-login'
+    | '/admin-reports'
+    | '/admin-roles-permissions'
+    | '/admin-users'
     | '/agent'
     | '/agent-booking-details'
     | '/agent-dashboard'
+    | '/b2c-customers'
     | '/bookings'
+    | '/collapsed-sidebar'
     | '/commissions'
     | '/credit'
+    | '/login'
+    | '/platform-settings'
     | '/pricing-markup'
     | '/register'
     | '/reports'
@@ -318,12 +438,22 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
+  AdminAuditLogRoute: typeof AdminAuditLogRoute
+  AdminDashboardRoute: typeof AdminDashboardRoute
+  AdminLoginRoute: typeof AdminLoginRoute
+  AdminReportsRoute: typeof AdminReportsRoute
+  AdminRolesPermissionsRoute: typeof AdminRolesPermissionsRoute
+  AdminUsersRoute: typeof AdminUsersRoute
   AgentRoute: typeof AgentRoute
   AgentBookingDetailsRoute: typeof AgentBookingDetailsRoute
   AgentDashboardRoute: typeof AgentDashboardRoute
+  B2cCustomersRoute: typeof B2cCustomersRoute
   BookingsRoute: typeof BookingsRoute
+  CollapsedSidebarRoute: typeof CollapsedSidebarRoute
   CommissionsRoute: typeof CommissionsRoute
   CreditRoute: typeof CreditRoute
+  LoginRoute: typeof LoginRoute
+  PlatformSettingsRoute: typeof PlatformSettingsRoute
   PricingMarkupRoute: typeof PricingMarkupRoute
   RegisterRoute: typeof RegisterRoute
   ReportsRoute: typeof ReportsRoute
@@ -351,6 +481,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-audit-log': {
+      id: '/admin-audit-log'
+      path: '/admin-audit-log'
+      fullPath: '/admin-audit-log'
+      preLoaderRoute: typeof AdminAuditLogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-dashboard': {
+      id: '/admin-dashboard'
+      path: '/admin-dashboard'
+      fullPath: '/admin-dashboard'
+      preLoaderRoute: typeof AdminDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-login': {
+      id: '/admin-login'
+      path: '/admin-login'
+      fullPath: '/admin-login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-reports': {
+      id: '/admin-reports'
+      path: '/admin-reports'
+      fullPath: '/admin-reports'
+      preLoaderRoute: typeof AdminReportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-roles-permissions': {
+      id: '/admin-roles-permissions'
+      path: '/admin-roles-permissions'
+      fullPath: '/admin-roles-permissions'
+      preLoaderRoute: typeof AdminRolesPermissionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-users': {
+      id: '/admin-users'
+      path: '/admin-users'
+      fullPath: '/admin-users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/agent': {
       id: '/agent'
       path: '/agent'
@@ -372,11 +544,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AgentDashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/b2c-customers': {
+      id: '/b2c-customers'
+      path: '/b2c-customers'
+      fullPath: '/b2c-customers'
+      preLoaderRoute: typeof B2cCustomersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bookings': {
       id: '/bookings'
       path: '/bookings'
       fullPath: '/bookings'
       preLoaderRoute: typeof BookingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/collapsed-sidebar': {
+      id: '/collapsed-sidebar'
+      path: '/collapsed-sidebar'
+      fullPath: '/collapsed-sidebar'
+      preLoaderRoute: typeof CollapsedSidebarRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/commissions': {
@@ -391,6 +577,20 @@ declare module '@tanstack/react-router' {
       path: '/credit'
       fullPath: '/credit'
       preLoaderRoute: typeof CreditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform-settings': {
+      id: '/platform-settings'
+      path: '/platform-settings'
+      fullPath: '/platform-settings'
+      preLoaderRoute: typeof PlatformSettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing-markup': {
@@ -535,12 +735,22 @@ const SubAgentsRouteWithChildren = SubAgentsRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
+  AdminAuditLogRoute: AdminAuditLogRoute,
+  AdminDashboardRoute: AdminDashboardRoute,
+  AdminLoginRoute: AdminLoginRoute,
+  AdminReportsRoute: AdminReportsRoute,
+  AdminRolesPermissionsRoute: AdminRolesPermissionsRoute,
+  AdminUsersRoute: AdminUsersRoute,
   AgentRoute: AgentRoute,
   AgentBookingDetailsRoute: AgentBookingDetailsRoute,
   AgentDashboardRoute: AgentDashboardRoute,
+  B2cCustomersRoute: B2cCustomersRoute,
   BookingsRoute: BookingsRoute,
+  CollapsedSidebarRoute: CollapsedSidebarRoute,
   CommissionsRoute: CommissionsRoute,
   CreditRoute: CreditRoute,
+  LoginRoute: LoginRoute,
+  PlatformSettingsRoute: PlatformSettingsRoute,
   PricingMarkupRoute: PricingMarkupRoute,
   RegisterRoute: RegisterRoute,
   ReportsRoute: ReportsRoute,

@@ -1,0 +1,312 @@
+      - id: 1084:3797
+        name: Platform Settings - View Default Cancellation Policies
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          gap: 10px
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 58720
+            y: 402
+          dimensions:
+            width: 1920
+        children:
+          - id: 1084:3794
+            name: View Default Cancellation Policies 1
+            type: RECTANGLE
+            layout: layout_fa9366f8
+            fills:
+              - type: IMAGE
+                imageRef: 31af19e4f37d89c57714919dd652a98194687395
+                scaleMode: FILL
+                objectFit: cover
+                isBackground: false
+                imageDownloadArguments:
+                  needsCropping: false
+                  requiresImageDimensions: false
+          - id: 1084:3915
+            name: Admin navigation
+            template: EL-d4935436
+            children:
+              - id: 1084:3916
+                name: div.sb-hd
+                template: EL-19ed2d5b
+                children:
+                  - id: 1084:3917
+                    name: Aero Wing Admin Panel — Dashboard
+                    template: EL-27a7f8c4
+                    children:
+                      - id: 1084:3918
+                        name: AeroWing Admin — Dashboard
+                        template: EL-280eabfe
+                        children:
+                          - id: 1084:3919
+                            name: AeroWing — Explore, Book, Travel
+                            template: EL-966c7e52
+                      - id: 1084:3920
+                        name: span.sb-lab
+                        template: EL-4c261f7f
+                        children:
+                          - id: 1084:3921
+                            template: EL-a0b6cf5b
+              - id: 1084:3922
+                name: Admin
+                template: EL-0b230fa2
+                children:
+                  - id: 1084:3923
+                    name: div.sb-g
+                    template: EL-e9077466
+                    children:
+                      - id: 1084:3924
+                        name: p#g-ov
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3925
+                            template: EL-ad79941c
+                      - id: 1084:3926
+                        name: a.sb-i
+                        template: EL-7041e0b0
+                        children:
+                          - id: 1084:3927
+                            name: Frame
+                            template: EL-b1d338df
+                          - id: 1084:3932
+                            name: span.sb-t
+                            template: EL-2f9fe287
+                            children:
+                              - id: 1084:3933
+                                template: EL-b9328c9b
+                  - id: 1084:3934
+                    name: div.sb-g
+                    template: EL-301f98e1
+                    children:
+                      - id: 1084:3935
+                        name: p#g-core
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3936
+                            template: EL-a5e6b4d2
+                      - id: 1084:3937
+                        name: ul
+                        template: EL-6e926975
+                        children:
+                          - id: 1084:3938
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3939
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3941
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3942
+                                    template: EL-8cc0c44d
+                          - id: 1084:3943
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3944
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3947
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3948
+                                    template: EL-c45ae915
+                          - id: 1084:3949
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3950
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3953
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3954
+                                    template: EL-40ae2791
+                          - id: 1084:3955
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3956
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3961
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3962
+                                    template: EL-557136c9
+                  - id: 1084:3963
+                    name: div.sb-g
+                    template: EL-301f98e1
+                    children:
+                      - id: 1084:3964
+                        name: p#g-mod
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3965
+                            template: EL-eff13b88
+                      - id: 1084:3966
+                        name: ul
+                        template: EL-43323dcb
+                        children:
+                          - id: 1084:3967
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3968
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3970
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3971
+                                    template: EL-4074d9e1
+                          - id: 1084:3972
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3973
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3976
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3977
+                                    template: EL-618e9697
+                          - id: 1084:3978
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3979
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3981
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3982
+                                    template: EL-d10a515e
+                          - id: 1084:3983
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3984
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3987
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3988
+                                    template: EL-970eec68
+                          - id: 1084:3989
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3990
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3992
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3993
+                                    template: EL-344c29b0
+                          - id: 1084:4011
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:4012
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:4015
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:4016
+                                    template: EL-2fd65db2
+                          - id: 1084:4017
+                            name: a.sb-i
+                            template: EL-5e380d8c
+                            children:
+                              - id: 1084:4018
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:4021
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:4022
+                                    template: EL-09476c5f
+              - id: 1084:4023
+                name: div.sb-ft
+                template: EL-ab88c726
+                children:
+                  - id: 1084:4024
+                    name: Collapse sidebar
+                    template: EL-04eca728
+                    children:
+                      - id: 1084:4025
+                        name: Frame
+                        template: EL-b1d338df
+                      - id: 1084:4028
+                        name: span#sb-col-l
+                        template: EL-83bc679e
+                        children:
+                          - id: 1084:4029
+                            template: EL-1fd2da9e
+      - id: 1084:3798
+        name: Platform Settings - Add Default Cancellation Policies
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          gap: 10px
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 56710
+            y: 402
+          dimensions:
+            width: 1920
+        children:
+          - id: 1084:3795
+            name: Add Default Cancellation Policies 1
+            type: RECTANGLE
+            layout:
+              mode: none
+              sizing:
+                horizontal: fill
+                vertical: fixed
+              dimensions:
+                height: 1049
+            fills:
+              - type: IMAGE
+                imageRef: 8944dad98daa19e52388a56b5647cae5fe42fb84
+                scaleMode: FILL
+                objectFit: cover
+                isBackground: false
+                imageDownloadArguments:
+                  needsCropping: false
+                  requiresImageDimensions: false
+          - id: 1084:3799
+            name: Admin navigation
+            template: EL-d4935436
+            children:
+              - id: 1084:3800
+                name: div.sb-hd
+                template: EL-19ed2d5b
+                children:

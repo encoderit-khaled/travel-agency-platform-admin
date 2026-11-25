@@ -1,0 +1,281 @@
+18350:                             template: EL-1fd2da9e
+18351:       - id: 1015:7536
+18352:         name: Platform Settings - Exchange Rates Add
+18353:         type: FRAME
+18354:         layout:
+18355:           mode: column
+18356:           alignItems: stretch
+18357:           gap: 10px
+18358:           sizing:
+18359:             horizontal: fixed
+18360:             vertical: hug
+18361:           locationRelativeToParent:
+18362:             x: 44650
+18363:             y: 402
+18364:           dimensions:
+18365:             width: 1920
+18366:         children:
+18367:           - id: 1015:7528
+18368:             name: Add Exchange Rates 1
+18369:             type: RECTANGLE
+18370:             layout:
+18371:               mode: none
+18372:               sizing:
+18373:                 horizontal: fill
+18374:                 vertical: fixed
+18375:               dimensions:
+18376:                 height: 969
+18377:             fills:
+18378:               - type: IMAGE
+18379:                 imageRef: 16f8c69adacc3590e674263f7ab3cf0390eb3728
+18380:                 scaleMode: FILL
+18381:                 objectFit: cover
+18382:                 isBackground: false
+18383:                 imageDownloadArguments:
+18384:                   needsCropping: false
+18385:                   requiresImageDimensions: false
+18386:           - id: 1080:2670
+18387:             name: Admin navigation
+18388:             template: EL-d4935436
+18389:             children:
+18390:               - id: 1080:2671
+18391:                 name: div.sb-hd
+18392:                 template: EL-19ed2d5b
+18393:                 children:
+18394:                   - id: 1080:2672
+18395:                     name: Aero Wing Admin Panel — Dashboard
+18396:                     template: EL-27a7f8c4
+18397:                     children:
+18398:                       - id: 1080:2673
+18399:                         name: AeroWing Admin — Dashboard
+18400:                         template: EL-280eabfe
+18401:                         children:
+18402:                           - id: 1080:2674
+18403:                             name: AeroWing — Explore, Book, Travel
+18404:                             template: EL-966c7e52
+18405:                       - id: 1080:2675
+18406:                         name: span.sb-lab
+18407:                         template: EL-4c261f7f
+18408:                         children:
+18409:                           - id: 1080:2676
+18410:                             template: EL-a0b6cf5b
+18411:               - id: 1080:2677
+18412:                 name: Admin
+18413:                 template: EL-0b230fa2
+18414:                 children:
+18415:                   - id: 1080:2678
+18416:                     name: div.sb-g
+18417:                     template: EL-e9077466
+18418:                     children:
+18419:                       - id: 1080:2679
+18420:                         name: p#g-ov
+18421:                         template: EL-d8c5a118
+18422:                         children:
+18423:                           - id: 1080:2680
+18424:                             template: EL-ad79941c
+18425:                       - id: 1080:2681
+18426:                         name: a.sb-i
+18427:                         template: EL-7041e0b0
+18428:                         children:
+18429:                           - id: 1080:2682
+18430:                             name: Frame
+18431:                             template: EL-b1d338df
+18432:                           - id: 1080:2687
+18433:                             name: span.sb-t
+18434:                             template: EL-2f9fe287
+18435:                             children:
+18436:                               - id: 1080:2688
+18437:                                 template: EL-b9328c9b
+18438:                   - id: 1080:2689
+18439:                     name: div.sb-g
+18440:                     template: EL-301f98e1
+18441:                     children:
+18442:                       - id: 1080:2690
+18443:                         name: p#g-core
+18444:                         template: EL-d8c5a118
+18445:                         children:
+18446:                           - id: 1080:2691
+18447:                             template: EL-a5e6b4d2
+18448:                       - id: 1080:2692
+18449:                         name: ul
+18450:                         template: EL-6e926975
+18451:                         children:
+18452:                           - id: 1080:2693
+18453:                             name: a.sb-i
+18454:                             template: EL-7041e0b0
+18455:                             children:
+18456:                               - id: 1080:2694
+18457:                                 name: Frame
+18458:                                 template: EL-b1d338df
+18459:                               - id: 1080:2696
+18460:                                 name: span.sb-t
+18461:                                 template: EL-2f9fe287
+18462:                                 children:
+18463:                                   - id: 1080:2697
+18464:                                     template: EL-8cc0c44d
+18465:                           - id: 1080:2698
+18466:                             name: a.sb-i
+18467:                             template: EL-7041e0b0
+18468:                             children:
+18469:                               - id: 1080:2699
+18470:                                 name: Frame
+18471:                                 template: EL-b1d338df
+18472:                               - id: 1080:2702
+18473:                                 name: span.sb-t
+18474:                                 template: EL-2f9fe287
+18475:                                 children:
+18476:                                   - id: 1080:2703
+18477:                                     template: EL-c45ae915
+18478:                           - id: 1080:2704
+18479:                             name: a.sb-i
+18480:                             template: EL-7041e0b0
+18481:                             children:
+18482:                               - id: 1080:2705
+18483:                                 name: Frame
+18484:                                 template: EL-b1d338df
+18485:                               - id: 1080:2708
+18486:                                 name: span.sb-t
+18487:                                 template: EL-2f9fe287
+18488:                                 children:
+18489:                                   - id: 1080:2709
+18490:                                     template: EL-40ae2791
+18491:                           - id: 1080:2710
+18492:                             name: a.sb-i
+18493:                             template: EL-7041e0b0
+18494:                             children:
+18495:                               - id: 1080:2711
+18496:                                 name: Frame
+18497:                                 template: EL-b1d338df
+18498:                               - id: 1080:2716
+18499:                                 name: span.sb-t
+18500:                                 template: EL-2f9fe287
+18501:                                 children:
+18502:                                   - id: 1080:2717
+18503:                                     template: EL-557136c9
+18504:                   - id: 1080:2718
+18505:                     name: div.sb-g
+18506:                     template: EL-301f98e1
+18507:                     children:
+18508:                       - id: 1080:2719
+18509:                         name: p#g-mod
+18510:                         template: EL-d8c5a118
+18511:                         children:
+18512:                           - id: 1080:2720
+18513:                             template: EL-eff13b88
+18514:                       - id: 1080:2721
+18515:                         name: ul
+18516:                         template: EL-43323dcb
+18517:                         children:
+18518:                           - id: 1080:2722
+18519:                             name: a.sb-i
+18520:                             template: EL-703abc35
+18521:                             children:
+18522:                               - id: 1080:2723
+18523:                                 name: Frame
+18524:                                 template: EL-f1890f3e
+18525:                               - id: 1080:2725
+18526:                                 name: span.sb-t
+18527:                                 template: EL-2f9fe287
+18528:                                 children:
+18529:                                   - id: 1080:2726
+18530:                                     template: EL-4074d9e1
+18531:                           - id: 1080:2727
+18532:                             name: a.sb-i
+18533:                             template: EL-703abc35
+18534:                             children:
+18535:                               - id: 1080:2728
+18536:                                 name: Frame
+18537:                                 template: EL-f1890f3e
+18538:                               - id: 1080:2731
+18539:                                 name: span.sb-t
+18540:                                 template: EL-2f9fe287
+18541:                                 children:
+18542:                                   - id: 1080:2732
+18543:                                     template: EL-618e9697
+18544:                           - id: 1080:2733
+18545:                             name: a.sb-i
+18546:                             template: EL-703abc35
+18547:                             children:
+18548:                               - id: 1080:2734
+18549:                                 name: Frame
+18550:                                 template: EL-f1890f3e
+18551:                               - id: 1080:2736
+18552:                                 name: span.sb-t
+18553:                                 template: EL-2f9fe287
+18554:                                 children:
+18555:                                   - id: 1080:2737
+18556:                                     template: EL-d10a515e
+18557:                           - id: 1080:2738
+18558:                             name: a.sb-i
+18559:                             template: EL-703abc35
+18560:                             children:
+18561:                               - id: 1080:2739
+18562:                                 name: Frame
+18563:                                 template: EL-f1890f3e
+18564:                               - id: 1080:2742
+18565:                                 name: span.sb-t
+18566:                                 template: EL-2f9fe287
+18567:                                 children:
+18568:                                   - id: 1080:2743
+18569:                                     template: EL-970eec68
+18570:                           - id: 1080:2744
+18571:                             name: a.sb-i
+18572:                             template: EL-703abc35
+18573:                             children:
+18574:                               - id: 1080:2745
+18575:                                 name: Frame
+18576:                                 template: EL-f1890f3e
+18577:                               - id: 1080:2747
+18578:                                 name: span.sb-t
+18579:                                 template: EL-2f9fe287
+18580:                                 children:
+18581:                                   - id: 1080:2748
+18582:                                     template: EL-344c29b0
+18583:                           - id: 1080:2766
+18584:                             name: a.sb-i
+18585:                             template: EL-703abc35
+18586:                             children:
+18587:                               - id: 1080:2767
+18588:                                 name: Frame
+18589:                                 template: EL-f1890f3e
+18590:                               - id: 1080:2770
+18591:                                 name: span.sb-t
+18592:                                 template: EL-2f9fe287
+18593:                                 children:
+18594:                                   - id: 1080:2771
+18595:                                     template: EL-2fd65db2
+18596:                           - id: 1080:2772
+18597:                             name: a.sb-i
+18598:                             template: EL-5e380d8c
+18599:                             children:
+18600:                               - id: 1080:2773
+18601:                                 name: Frame
+18602:                                 template: EL-f1890f3e
+18603:                               - id: 1080:2776
+18604:                                 name: span.sb-t
+18605:                                 template: EL-2f9fe287
+18606:                                 children:
+18607:                                   - id: 1080:2777
+18608:                                     template: EL-09476c5f
+18609:               - id: 1080:2778
+18610:                 name: div.sb-ft
+18611:                 template: EL-ab88c726
+18612:                 children:
+18613:                   - id: 1080:2779
+18614:                     name: Collapse sidebar
+18615:                     template: EL-04eca728
+18616:                     children:
+18617:                       - id: 1080:2780
+18618:                         name: Frame
+18619:                         template: EL-b1d338df
+18620:                       - id: 1080:2783
+18621:                         name: span#sb-col-l
+18622:                         template: EL-83bc679e
+18623:                         children:
+18624:                           - id: 1080:2784
+18625:                             template: EL-1fd2da9e
+18626:       - id: 1022:7537
+18627:         name: Platform Settings - Exchange Rates View
+18628:         type: FRAME
+18629:         layout:
+18630:           mode: column

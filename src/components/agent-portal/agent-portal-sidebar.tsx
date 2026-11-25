@@ -169,7 +169,7 @@ export function AgentPortalSidebar({
   const financialNavItems = [
     { label: 'Wallet', icon: Wallet },
     { label: 'Credit', icon: CreditCard },
-    { label: 'Commissions', icon: Coins },
+    { label: 'Commissions', icon: Percent },
     { label: 'Statements', icon: FileText },
     { label: 'Reports', icon: BarChart3 },
   ]
@@ -301,23 +301,23 @@ export function AgentPortalSidebar({
                     title={item.label}
                     onClick={() => handleNavClick(item.label)}
                     className={cn(
-                      'w-full flex items-center rounded-xl text-sm font-semibold transition-all cursor-pointer',
+                      'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
                         : 'gap-3 px-3 py-2.5 text-left',
                       isActive
-                        ? 'bg-white/12 text-white shadow-xs backdrop-blur-xs font-bold ring-1 ring-white/20'
-                        : 'text-[#C9D7EA] hover:text-white hover:bg-white/6',
+                        ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
+                        : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
                     )}
                   >
                     <Icon
                       className={cn(
-                        'size-4.5 shrink-0',
+                        'size-4.5 shrink-0 transition-colors',
                         isActive ? 'text-[#F1C134]' : 'text-[#C9D7EA]',
                       )}
                     />
                     {(!isCollapsed || isMobileOpen) && (
-                      <span>{item.label}</span>
+                      <span className="truncate">{item.label}</span>
                     )}
                   </button>
                 )
@@ -346,23 +346,23 @@ export function AgentPortalSidebar({
                     title={item.label}
                     onClick={() => handleNavClick(item.label)}
                     className={cn(
-                      'w-full flex items-center rounded-xl text-sm font-semibold transition-all cursor-pointer',
+                      'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
                         : 'gap-3 px-3 py-2.5 text-left',
                       isActive
-                        ? 'bg-white/12 text-white shadow-xs backdrop-blur-xs font-bold ring-1 ring-white/20'
-                        : 'text-[#C9D7EA] hover:text-white hover:bg-white/6',
+                        ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
+                        : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
                     )}
                   >
                     <Icon
                       className={cn(
-                        'size-4.5 shrink-0',
+                        'size-4.5 shrink-0 transition-colors',
                         isActive ? 'text-[#F1C134]' : 'text-[#C9D7EA]',
                       )}
                     />
                     {(!isCollapsed || isMobileOpen) && (
-                      <span>{item.label}</span>
+                      <span className="truncate">{item.label}</span>
                     )}
                   </button>
                 )
@@ -391,23 +391,23 @@ export function AgentPortalSidebar({
                     title={item.label}
                     onClick={() => handleNavClick(item.label)}
                     className={cn(
-                      'w-full flex items-center rounded-xl text-sm font-semibold transition-all cursor-pointer',
+                      'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
                         : 'gap-3 px-3 py-2.5 text-left',
                       isActive
-                        ? 'bg-white/12 text-white shadow-xs backdrop-blur-xs font-bold ring-1 ring-white/20'
-                        : 'text-[#C9D7EA] hover:text-white hover:bg-white/6',
+                        ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
+                        : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
                     )}
                   >
                     <Icon
                       className={cn(
-                        'size-4.5 shrink-0',
+                        'size-4.5 shrink-0 transition-colors',
                         isActive ? 'text-[#F1C134]' : 'text-[#C9D7EA]',
                       )}
                     />
                     {(!isCollapsed || isMobileOpen) && (
-                      <span>{item.label}</span>
+                      <span className="truncate">{item.label}</span>
                     )}
                   </button>
                 )

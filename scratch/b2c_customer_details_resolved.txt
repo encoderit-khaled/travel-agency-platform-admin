@@ -1,0 +1,1031 @@
+      id=990:2945
+        name="B2C Customer Details"
+        
+        
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+        
+        
+          id=990:2946
+            name="div"
+            
+            
+              
+              
+              
+                
+                
+            
+              id=1080:1394
+                name="Admin navigation"
+                tpl=EL-b4d5d5d0 type=FRAME
+                
+                  id=1080:1395
+                    name="div.sb-hd"
+                    tpl=EL-19ed2d5b type=FRAME
+                    
+                      id=1080:1396
+                        name="Aero Wing Admin Panel — Dashboard"
+                        tpl=EL-27a7f8c4 type=FRAME
+                        
+                          id=1080:1397
+                            name="AeroWing Admin — Dashboard"
+                            tpl=EL-280eabfe type=FRAME
+                            
+                              id=1080:1398
+                                name="AeroWing — Explore, Book, Travel"
+                                tpl=EL-966c7e52 type=FRAME
+                          id=1080:1399
+                            name="span.sb-lab"
+                            tpl=EL-4c261f7f type=FRAME
+                            
+                              id=1080:1400
+                                tpl=EL-a0b6cf5b type=TEXT tpl_text="Admin Panel"
+                  id=1080:1401
+                    name="Admin"
+                    tpl=EL-0b230fa2 type=FRAME
+                    
+                      id=1080:1402
+                        name="div.sb-g"
+                        tpl=EL-e9077466 type=FRAME
+                        
+                          id=1080:1403
+                            name="p#g-ov"
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:1404
+                                tpl=EL-ad79941c type=TEXT tpl_text="Overview"
+                          id=1080:1405
+                            name="a.sb-i"
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:1406
+                                name="Frame"
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:1411
+                                name="span.sb-t"
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:1412
+                                    tpl=EL-b9328c9b type=TEXT tpl_text="Dashboard"
+                      id=1080:1413
+                        name="div.sb-g"
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=1080:1414
+                            name="p#g-core"
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:1415
+                                tpl=EL-a5e6b4d2 type=TEXT tpl_text="Core Admin"
+                          id=1080:1416
+                            name="ul"
+                            tpl=EL-6e926975 type=FRAME
+                            
+                              id=1080:1417
+                                name="a.sb-i"
+                                tpl=EL-bdff8199 type=FRAME
+                                
+                                  id=1080:1418
+                                    name="Frame"
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:1420
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1421
+                                        tpl=EL-37053aef type=TEXT tpl_text="B2C Customers"
+                              id=1080:1422
+                                name="a.sb-i"
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:1423
+                                    name="Frame"
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:1426
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1427
+                                        tpl=EL-c45ae915 type=TEXT tpl_text="Admin Users"
+                              id=1080:1428
+                                name="a.sb-i"
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:1429
+                                    name="Frame"
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:1432
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1433
+                                        tpl=EL-40ae2791 type=TEXT tpl_text="Roles & Permissions"
+                              id=1080:1434
+                                name="a.sb-i"
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:1435
+                                    name="Frame"
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:1440
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1441
+                                        tpl=EL-557136c9 type=TEXT tpl_text="Audit Log"
+                      id=1080:1442
+                        name="div.sb-g"
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=1080:1443
+                            name="p#g-mod"
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:1444
+                                tpl=EL-eff13b88 type=TEXT tpl_text="Platform Modules"
+                          id=1080:1445
+                            name="ul"
+                            tpl=EL-43323dcb type=FRAME
+                            
+                              id=1080:1446
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1447
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1449
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1450
+                                        tpl=EL-4074d9e1 type=TEXT tpl_text="Bookings"
+                              id=1080:1451
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1452
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1455
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1456
+                                        tpl=EL-618e9697 type=TEXT tpl_text="Agents"
+                              id=1080:1457
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1458
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1460
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1461
+                                        tpl=EL-d10a515e type=TEXT tpl_text="Suppliers"
+                              id=1080:1462
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1463
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1466
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1467
+                                        tpl=EL-970eec68 type=TEXT tpl_text="Pricing & Promotions"
+                              id=1080:1468
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1469
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1471
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1472
+                                        tpl=EL-344c29b0 type=TEXT tpl_text="Reviews"
+                              id=1080:1490
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1491
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1494
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1495
+                                        tpl=EL-2fd65db2 type=TEXT tpl_text="Reports"
+                              id=1080:1496
+                                name="a.sb-i"
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:1497
+                                    name="Frame"
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:1500
+                                    name="span.sb-t"
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:1501
+                                        tpl=EL-09476c5f type=TEXT tpl_text="Platform Settings"
+                  id=1080:1502
+                    name="div.sb-ft"
+                    tpl=EL-ab88c726 type=FRAME
+                    
+                      id=1080:1503
+                        name="Collapse sidebar"
+                        tpl=EL-04eca728 type=FRAME
+                        
+                          id=1080:1504
+                            name="Frame"
+                            tpl=EL-b1d338df type=IMAGE-SVG
+                          id=1080:1507
+                            name="span#sb-col-l"
+                            tpl=EL-83bc679e type=FRAME
+                            
+                              id=1080:1508
+                                tpl=EL-1fd2da9e type=TEXT tpl_text="Collapse"
+              id=990:3062
+                name="Main column"
+                
+                
+                
+                  id=990:3063
+                    name="main"
+                    
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                    
+                      id=990:3064
+                        name="div#page"
+                        
+                        
+                          
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=990:3065
+                            name="a.back"
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                            
+                              id=990:3066
+                                name="Frame"
+                                tpl=EL-f652840d type=IMAGE-SVG
+                              id=990:3068
+                                
+                                
+                                text="Back to B2C Customers"
+                                
+                                
+                          id=990:3069
+                            name="div.ph2"
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                              id=990:3070
+                                name="div"
+                                tpl=EL-7c39d4fd type=FRAME
+                                
+                                  id=990:3071
+                                    name="span"
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=990:3072
+                                        tpl=EL-fea8bcb3 type=TEXT tpl_text="Core Admin"
+                                  id=990:3073
+                                    name="h1"
+                                    tpl=EL-681edddb type=FRAME
+                                    
+                                      id=990:3074
+                                        
+                                        
+                                        text="Customer Profile"
+                                        
+                                        
+                                  id=990:3075
+                                    name="p"
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=990:3076
+                                        
+                                        
+                                        text="View and manage the customer’s basic profile information."
+                                        
+                                        
+                          id=990:3077
+                            name="section.idc"
+                            
+                            
+                              
+                              
+                                
+                              
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                              
+                                
+                            
+                            
+                            
+                            
+                              id=990:3078
+                                name="'::after'"
+                                
+                                
+                                  
+                                  
+                                    
+                                    
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                    
+                                
+                                  
+                                    
+                                
+                              id=990:3079
+                                name="span.pf-av"
+                                
+                                
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                    
+                                
+                                
+                                
+                                  id=990:3080
+                                    
+                                    
+                                    text="DC"
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                    
+                              id=990:3081
+                                name="div.idc-t"
+                                tpl=EL-b45a9547 type=FRAME
+                                
+                                  id=990:3082
+                                    name="h2#id-h"
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                      id=990:3083
+                                        
+                                        
+                                        text="Demo Customer"
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                        
+                                      id=990:3084
+                                        name="span.tag"
+                                        tpl=EL-ea7b03b4 type=FRAME
+                                        
+                                          id=990:3085
+                                            
+                                            
+                                            text="Sample data"
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                            
+                                  id=990:3086
+                                    name="div.idc-m"
+                                    tpl=EL-9cc7660f type=FRAME
+                                    
+                                      id=990:3087
+                                        name="span"
+                                        tpl=EL-5cb7385b type=FRAME
+                                        
+                                          id=990:3088
+                                            name="Frame"
+                                            tpl=EL-d4302386 type=IMAGE-SVG
+                                          id=990:3090
+                                            
+                                            
+                                            text="B2C Customer"
+                                            
+                                            
+                                      id=990:3091
+                                        name="span"
+                                        
+                                        
+                                        
+                                        
+                                        
+                                          id=990:3092
+                                            name="Frame"
+                                            tpl=EL-62b4d877 type=IMAGE-SVG
+                                          id=990:3095
+                                            tpl=EL-f83f3747 type=TEXT tpl_text="Email"
+                          id=990:3096
+                            name="div"
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                              id=990:3097
+                                name="div.mcol"
+                                tpl=EL-6cb81979 type=FRAME
+                                
+                                  id=990:3098
+                                    name="section.pc3"
+                                    tpl=EL-ed86ce35 type=FRAME
+                                    
+                                      id=990:3099
+                                        name="div.pc3-h"
+                                        tpl=EL-89de18e1 type=FRAME
+                                        
+                                          id=990:3100
+                                            name="div"
+                                            tpl=EL-5d197b60 type=FRAME
+                                            
+                                              id=990:3101
+                                                name="span.kpi-ic"
+                                                tpl=EL-a3dd0e0a type=FRAME
+                                                
+                                                  id=990:3102
+                                                    name="Frame"
+                                                    tpl=EL-f652840d type=IMAGE-SVG
+                                              id=990:3104
+                                                name="h2#pi-h"
+                                                tpl=EL-2f9fe287 type=FRAME
+                                                
+                                                  id=990:3105
+                                                    
+                                                    
+                                                    text="Profile Information"
+                                                    
+                                                    
+                                          id=990:3106
+                                            name="button#ed-b"
+                                            tpl=EL-54a3e44b type=FRAME
+                                            
+                                              id=990:3107
+                                                name="Frame"
+                                                tpl=EL-d40fb4e5 type=IMAGE-SVG
+                                              id=990:3110
+                                                
+                                                
+                                                text="Edit Profile"
+                                                
+                                                
+                                      id=990:3111
+                                        name="div"
+                                        tpl=EL-329d8a59 type=FRAME
+                                        
+                                          id=990:3112
+                                            name="dt"
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=990:3113
+                                                
+                                                
+                                                text="Full Name"
+                                                
+                                                
+                                          id=990:3114
+                                            name="dd#fn-v"
+                                            tpl=EL-773c6f36 type=FRAME
+                                            
+                                              id=990:3115
+                                                
+                                                
+                                                text="Demo Customer"
+                                                
+                                                
+                                  id=990:3116
+                                    name="section.pc3"
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                      id=990:3117
+                                        name="div.pc3-h"
+                                        tpl=EL-998e62e2 type=FRAME
+                                        
+                                          id=990:3118
+                                            name="div"
+                                            tpl=EL-5d197b60 type=FRAME
+                                            
+                                              id=990:3119
+                                                name="span.kpi-ic"
+                                                tpl=EL-a3dd0e0a type=FRAME
+                                                
+                                                  id=990:3120
+                                                    name="Frame"
+                                                    tpl=EL-f652840d type=IMAGE-SVG
+                                              id=990:3123
+                                                name="h2#sc-h"
+                                                tpl=EL-2f9fe287 type=FRAME
+                                                
+                                                  id=990:3124
+                                                    
+                                                    
+                                                    text="Sign-in & Contact"
+                                                    
+                                                    
+                                      id=990:3125
+                                        name="dl.kv2"
+                                        
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                          id=990:3126
+                                            name="div"
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                              
+                                            
+                                              id=990:3127
+                                                name="dt"
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=990:3128
+                                                    
+                                                    
+                                                    text="Email"
+                                                    
+                                                    
+                                              id=990:3129
+                                                name="dd#em-v"
+                                                tpl=EL-773c6f36 type=FRAME
+                                                
+                                                  id=990:3130
+                                                    
+                                                    
+                                                    text="demo.customer@example.com"
+                                                    
+                                                    
+                                          id=990:3131
+                                            name="div"
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                              
+                                            
+                                              id=990:3132
+                                                name="dt"
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=990:3133
+                                                    
+                                                    
+                                                    text="Mobile"
+                                                    
+                                                    
+                                              id=990:3134
+                                                name="dd#mb-v"
+                                                tpl=EL-bb66f4c9 type=FRAME
+                                                
+                                                  id=990:3135
+                                                    name="span"
+                                                    
+                                                    
+                                                      
+                                                      
+                                                      
+                                                        
+                                                        
+                                                    
+                                                      id=990:3136
+                                                        
+                                                        
+                                                        text="Not added"
+                                                        
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                        
+                                          id=990:3137
+                                            name="div"
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                              
+                                            
+                                              id=990:3138
+                                                name="dt"
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=990:3139
+                                                    tpl=EL-524c1fb6 type=TEXT tpl_text="Sign-in Context"
+                                              id=990:3140
+                                                name="dd#sx-v"
+                                                tpl=EL-bb66f4c9 type=FRAME
+                                                
+                                                  id=990:3141
+                                                    name="span.sic"
+                                                    
+                                                    
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      
+                                                        
+                                                        
+                                                    
+                                                      id=990:3142
+                                                        name="span"
+                                                        tpl=EL-32aa1743 type=FRAME
+                                                        
+                                                          id=990:3143
+                                                            name="Frame"
+                                                            tpl=EL-62b4d877 type=IMAGE-SVG
+                                                          id=990:3146
+                                                            tpl=EL-f83f3747 type=TEXT tpl_text="Email"
+                                      id=990:3147
+                                        name="p"
+                                        tpl=EL-f96bbce8 type=FRAME
+                                        
+                                          id=990:3148
+                                            name="svg:margin"
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            
+                                              id=990:3149
+                                                name="Frame"
+                                                tpl=EL-d40fb4e5 type=IMAGE-SVG
+                                          id=990:3153
+                                            name="span"
+                                            tpl=EL-2a66e910 type=FRAME
+                                            
+                                              id=990:3154
+                                                
+                                                
+                                                text="Sign-in and contact details are read-only here."
+                                                
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                
+                              id=990:3155
+                                name="section.pc3"
+                                
+                                
+                                  
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                
+                                
+                                
+                                
+                                
+                                  id=990:3156
+                                    name="div.pc3-h"
+                                    tpl=EL-998e62e2 type=FRAME
+                                    
+                                      id=990:3157
+                                        name="div"
+                                        tpl=EL-5d197b60 type=FRAME
+                                        
+                                          id=990:3158
+                                            name="span.kpi-ic"
+                                            tpl=EL-a3dd0e0a type=FRAME
+                                            
+                                              id=990:3159
+                                                name="Frame"
+                                                tpl=EL-f652840d type=IMAGE-SVG
+                                          id=990:3161
+                                            name="h2#ac-h"
+                                            tpl=EL-2f9fe287 type=FRAME
+                                            
+                                              id=990:3162
+                                                
+                                                
+                                                text="Customer Account"
+                                                
+                                                
+                                  id=990:3163
+                                    name="dl.kv2"
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                      id=990:3164
+                                        name="div"
+                                        tpl=EL-329d8a59 type=FRAME
+                                        
+                                          id=990:3165
+                                            name="dt"
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=990:3166
+                                                
+                                                
+                                                text="Account Type"
+                                                
+                                                
+                                          id=990:3167
+                                            name="dd"
+                                            tpl=EL-773c6f36 type=FRAME
+                                            
+                                              id=990:3168
+                                                
+                                                
+                                                text="B2C Customer"
+                                                
+                                                
+                                      id=990:3169
+                                        name="div"
+                                        tpl=EL-329d8a59 type=FRAME
+                                        
+                                          id=990:3170
+                                            name="dt"
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=990:3171
+                                                tpl=EL-524c1fb6 type=TEXT tpl_text="Sign-in Context"
+                                          id=990:3172
+                                            name="dd#ac-sx"
+                                            tpl=EL-773c6f36 type=FRAME
+                                            
+                                              id=990:3173
+                                                
+                                                
+                                                text="Email"
+                                                
+                                                
+                  id=990:3174
+                    name="footer.ft2"
+                    
+                    
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                    
+                    
+                    
+                    
+                      id=990:3175
+                        tpl=EL-64a79c70 type=TEXT tpl_text="© 2026 AeroWing. All rights reserved."
+                  id=990:3176
+                    name="header"
+                    tpl=EL-c8d2d5b1 type=FRAME
+                    
+                      id=990:3177
+                        name="Breadcrumb:margin"
+                        
+                        
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=990:3178
+                            name="Breadcrumb"
+                            tpl=EL-235879b0 type=FRAME
+                            
+                              id=990:3179
+                                name="li"
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=990:3180
+                                    tpl=EL-fdff9110 type=TEXT tpl_text="Admin Panel"
+                              id=990:3181
+                                name="li"
+                                tpl=EL-bbedda7b type=FRAME
+                                
+                                  id=990:3182
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text="/"
+                                  id=990:3183
+                                    
+                                    
+                                    text="B2C Customers"
+                                    
+                                    
+                              id=990:3184
+                                name="li"
+                                
+                                
+                                  
+                                  
+                                  
+                                    
+                                    
+                                
+                                  id=990:3185
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text="/"
+                                  id=990:3186
+                                    
+                                    
+                                    text="Customer Profile"
+                                    
+                                    
+                      id=990:3187
+                        name="div.tb-a"
+                        tpl=EL-235879b0 type=FRAME
+                        
+                          id=990:3188
+                            name="Notifications"
+                            tpl=EL-58e2a7b0 type=FRAME
+                            
+                              id=990:3189
+                                name="Frame"
+                                tpl=EL-d2f5d0a6 type=IMAGE-SVG
+                          id=990:3191
+                            name="button menu#pf-b"
+                            tpl=EL-0ccd4aea type=FRAME
+                            
+                              id=990:3192
+                                name="span.pf-av"
+                                tpl=EL-a8b2764a type=FRAME
+                                
+                                  id=990:3193
+                                    tpl=EL-5321e56d type=TEXT tpl_text="SA"
+                              id=990:3194
+                                name="span.pf-t"
+                                tpl=EL-6e7b525c type=FRAME
+                                
+                                  id=990:3195
+                                    name="b"
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=990:3196
+                                        tpl=EL-2df750f6 type=TEXT tpl_text="Sample Admin"
+                                  id=990:3197
+                                    name="small#pf-role"
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=990:3198
+                                        tpl=EL-a8ebef05 type=TEXT tpl_text="Super Admin"
+                              id=990:3199
+                                name="Frame"
+                                tpl=EL-d40fb4e5 type=IMAGE-SVG

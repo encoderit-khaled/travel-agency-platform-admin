@@ -1,0 +1,2793 @@
+      - id: 984:976
+        name: Admin Roles Permissions
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 8470
+            y: 402
+          dimensions:
+            width: 1920
+        fills: White Catskill White (7:6)
+        children:
+          - id: 984:977
+            name: div
+            template: EL-d1ac142c
+            children:
+              - id: 984:978
+                name: Admin navigation
+                template: EL-b4d5d5d0
+                children:
+                  - id: 984:1851
+                    name: div.sb-hd
+                    template: EL-19ed2d5b
+                    children:
+                      - id: 984:1852
+                        name: Aero Wing Admin Panel — Dashboard
+                        template: EL-27a7f8c4
+                        children:
+                          - id: 984:1853
+                            name: AeroWing Admin — Dashboard
+                            template: EL-280eabfe
+                            children:
+                              - id: 984:1854
+                                name: AeroWing — Explore, Book, Travel
+                                template: EL-966c7e52
+                          - id: 984:1855
+                            name: span.sb-lab
+                            template: EL-4c261f7f
+                            children:
+                              - id: 984:1856
+                                template: EL-a0b6cf5b
+                  - id: 984:985
+                    name: Admin
+                    template: EL-0b230fa2
+                    children:
+                      - id: 984:986
+                        name: div.sb-g
+                        template: EL-e9077466
+                        children:
+                          - id: 984:987
+                            name: p#g-ov
+                            template: EL-d8c5a118
+                            children:
+                              - id: 984:988
+                                template: EL-ad79941c
+                          - id: 984:989
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 984:990
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 984:995
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 984:996
+                                    template: EL-b9328c9b
+                      - id: 984:997
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 984:998
+                            name: p#g-core
+                            template: EL-d8c5a118
+                            children:
+                              - id: 984:999
+                                template: EL-a5e6b4d2
+                          - id: 984:1000
+                            name: ul
+                            template: EL-6e926975
+                            children:
+                              - id: 984:1001
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 984:1002
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 984:1004
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1005
+                                        template: EL-8cc0c44d
+                              - id: 984:1006
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 984:1007
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 984:1010
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1011
+                                        template: EL-c45ae915
+                              - id: 984:1012
+                                name: a.sb-i
+                                template: EL-bdff8199
+                                children:
+                                  - id: 984:1013
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 984:1016
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1017
+                                        template: EL-ac3d52ca
+                              - id: 984:1018
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 984:1019
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 984:1024
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1025
+                                        template: EL-557136c9
+                      - id: 984:1026
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 984:1027
+                            name: p#g-mod
+                            template: EL-d8c5a118
+                            children:
+                              - id: 984:1028
+                                template: EL-eff13b88
+                          - id: 984:1029
+                            name: ul
+                            template: EL-43323dcb
+                            children:
+                              - id: 984:1030
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1031
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1033
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1034
+                                        template: EL-4074d9e1
+                              - id: 984:1035
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1036
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1039
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1040
+                                        template: EL-618e9697
+                              - id: 984:1041
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1042
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1044
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1045
+                                        template: EL-d10a515e
+                              - id: 984:1046
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1047
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1050
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1051
+                                        template: EL-970eec68
+                              - id: 984:1052
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1053
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1055
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1056
+                                        template: EL-344c29b0
+                              - id: 984:1074
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1075
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1078
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1079
+                                        template: EL-2fd65db2
+                              - id: 984:1080
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 984:1081
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 984:1084
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 984:1085
+                                        template: EL-09476c5f
+                  - id: 984:1086
+                    name: div.sb-ft
+                    template: EL-ab88c726
+                    children:
+                      - id: 984:1087
+                        name: Collapse sidebar
+                        template: EL-04eca728
+                        children:
+                          - id: 984:1088
+                            name: Frame
+                            template: EL-b1d338df
+                          - id: 984:1091
+                            name: span#sb-col-l
+                            template: EL-83bc679e
+                            children:
+                              - id: 984:1092
+                                template: EL-1fd2da9e
+              - id: 984:1093
+                name: Main column
+                type: FRAME
+                layout:
+                  mode: none
+                  sizing:
+                    horizontal: fill
+                    vertical: fixed
+                  dimensions:
+                    height: 1945.63
+                children:
+                  - id: 984:1094
+                    name: main
+                    template: EL-0af6044c
+                    children:
+                      - id: 984:1095
+                        name: div
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          alignItems: stretch
+                          gap: 18px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 984:1096
+                            name: div.ph2
+                            template: EL-7b655d35
+                            children:
+                              - id: 984:1097
+                                name: div
+                                template: EL-7c39d4fd
+                                children:
+                                  - id: 984:1098
+                                    name: span
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 984:1099
+                                        template: EL-fea8bcb3
+                                  - id: 984:1100
+                                    name: h1
+                                    template: EL-681edddb
+                                    children:
+                                      - id: 984:1101
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Roles & Permissions
+                                        textStyle: style_47de102a
+                                        fills: Midnight Blue
+                                  - id: 984:1102
+                                    name: p
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 984:1103
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Configure access for predefined Admin roles.
+                                        textStyle: style_be48c804
+                                        fills: Comet
+                              - id: 984:1104
+                                name: div.ph2-a
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  alignItems: center
+                                  wrap: true
+                                  gap: 10px
+                                  sizing:
+                                    horizontal: hug
+                                    vertical: hug
+                                children:
+                                  - id: 984:1105
+                                    name: button.btn
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      padding: 10.630000114440918px 18px 11.369999885559082px
+                                      justifyContent: center
+                                      alignItems: center
+                                      gap: 10px
+                                      sizing:
+                                        horizontal: hug
+                                        vertical: hug
+                                    fills: Midnight Blue
+                                    strokes: Black 0%
+                                    strokeWeight: 1px
+                                    borderRadius: 12px
+                                    children:
+                                      - id: 984:1106
+                                        name: Frame
+                                        template: EL-f652840d
+                                      - id: 984:1109
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Edit Permissions
+                                        textStyle: style_08f7abaf
+                                        fills: White
+                          - id: 984:1110
+                            name: p.ib2
+                            type: FRAME
+                            layout:
+                              mode: row
+                              alignSelf: stretch
+                              padding: 18px 16px 14px
+                              gap: 12px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            fills: Hawkes Blue (664:5963)
+                            strokes: Link Water (664:5964)
+                            strokeWeight: 1px
+                            borderRadius: 14px
+                            children:
+                              - id: 984:1111
+                                name: svg:margin
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 1px 0px 0px
+                                  sizing:
+                                    horizontal: fixed
+                                    vertical: fixed
+                                  dimensions:
+                                    width: 19
+                                    height: 20
+                                children:
+                                  - id: 984:1112
+                                    name: Frame
+                                    template: EL-b1d338df
+                              - id: 984:1116
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Role names are predefined. Exact permission assignments are configured by the platform administrator and are not defined by the current project source.
+                                textStyle: style_15012661
+                                fills: Chathams Blue
+                          - id: 984:1117
+                            name: Predefined Admin roles
+                            type: FRAME
+                            layout:
+                              mode: row
+                              alignSelf: stretch
+                              justifyContent: center
+                              gap: 12px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 984:1118
+                                name: li
+                                template: EL-8af0cbd5
+                                children:
+                                  - id: 984:1119
+                                    name: button.rcb
+                                    type: FRAME
+                                    layout: layout_eade742b
+                                    fills:
+                                      - type: GRADIENT_LINEAR
+                                        gradient: linear-gradient(159deg, rgba(242, 247, 253, 1) 0%, rgba(255, 255, 255, 1) 100%)
+                                    strokes: Midnight Blue
+                                    strokeWeight: 1px
+                                    borderRadius: 16px
+                                    children:
+                                      - id: 984:1120
+                                        name: button.rcb:shadow
+                                        type: RECTANGLE
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          position: absolute
+                                          locationRelativeToParent:
+                                            x: 0
+                                            y: 0
+                                          dimensions:
+                                            width: 310.39
+                                            height: 122.5
+                                        fills: White 0.2%
+                                        effects:
+                                          boxShadow: inset 0px 0px 0px 2px rgba(1, 42, 94, 1)
+                                        borderRadius: 16px
+                                      - id: 984:1121
+                                        name: span
+                                        type: FRAME
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          dimensions:
+                                            width: 117.11
+                                            height: 22.5
+                                        children:
+                                          - id: 984:1122
+                                            name: Frame
+                                            template: EL-179fbc21
+                                          - id: 984:1124
+                                            type: TEXT
+                                            layout:
+                                              mode: none
+                                              sizing: {}
+                                              locationRelativeToParent:
+                                                x: 24
+                                                y: -1
+                                              dimensions:
+                                                width: 95.13
+                                                height: 23
+                                            text: Super Admin
+                                            textStyle: style_ac8daa02
+                                            fills: Midnight Blue
+                                      - id: 984:1125
+                                        name: span:margin
+                                        template: EL-d2bf2676
+                                        children:
+                                          - id: 984:1126
+                                            name: span
+                                            template: EL-f47f396a
+                                            children:
+                                              - id: 984:1127
+                                                template: EL-486f6a16
+                                      - id: 984:1128
+                                        name: span
+                                        template: EL-e3ecd737
+                                        children:
+                                          - id: 984:1129
+                                            template: EL-c03004df
+                                          - id: 984:1130
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 984:1131
+                                                template: EL-27f9f2b6
+                              - id: 984:1132
+                                name: li
+                                template: EL-8af0cbd5
+                                children:
+                                  - id: 984:1133
+                                    name: button.rcb
+                                    template: EL-132bff77
+                                    children:
+                                      - id: 984:1134
+                                        name: span
+                                        type: FRAME
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          dimensions:
+                                            width: 103.19
+                                            height: 22.5
+                                        children:
+                                          - id: 984:1135
+                                            name: Frame
+                                            template: EL-179fbc21
+                                          - id: 984:1137
+                                            type: TEXT
+                                            layout:
+                                              mode: none
+                                              sizing: {}
+                                              locationRelativeToParent:
+                                                x: 24
+                                                y: -1
+                                              dimensions:
+                                                width: 83.19
+                                                height: 23
+                                            text: Operations
+                                            textStyle: style_ac8daa02
+                                            fills: Midnight Blue
+                                      - id: 984:1138
+                                        name: span:margin
+                                        template: EL-d2bf2676
+                                        children:
+                                          - id: 984:1139
+                                            name: span
+                                            template: EL-f47f396a
+                                            children:
+                                              - id: 984:1140
+                                                template: EL-486f6a16
+                                      - id: 984:1141
+                                        name: span
+                                        template: EL-e3ecd737
+                                        children:
+                                          - id: 984:1142
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: 4 users
+                                            textStyle: style_c80e55f1
+                                            fills: Mirage
+                                          - id: 984:1143
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 984:1144
+                                                template: EL-27f9f2b6
+                              - id: 984:1145
+                                name: li
+                                template: EL-8af0cbd5
+                                children:
+                                  - id: 984:1146
+                                    name: button.rcb
+                                    template: EL-132bff77
+                                    children:
+                                      - id: 984:1147
+                                        name: span
+                                        type: FRAME
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          dimensions:
+                                            width: 80.67
+                                            height: 22.5
+                                        children:
+                                          - id: 984:1148
+                                            name: Frame
+                                            template: EL-179fbc21
+                                          - id: 984:1150
+                                            type: TEXT
+                                            layout:
+                                              mode: none
+                                              sizing: {}
+                                              locationRelativeToParent:
+                                                x: 24
+                                                y: -1
+                                              dimensions:
+                                                width: 58.16
+                                                height: 23
+                                            text: Finance
+                                            textStyle: style_ac8daa02
+                                            fills: Midnight Blue
+                                      - id: 984:1151
+                                        name: span:margin
+                                        template: EL-d2bf2676
+                                        children:
+                                          - id: 984:1152
+                                            name: span
+                                            template: EL-f47f396a
+                                            children:
+                                              - id: 984:1153
+                                                template: EL-486f6a16
+                                      - id: 984:1154
+                                        name: span
+                                        template: EL-e3ecd737
+                                        children:
+                                          - id: 984:1155
+                                            template: EL-c03004df
+                                          - id: 984:1156
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 984:1157
+                                                template: EL-27f9f2b6
+                              - id: 984:1158
+                                name: li
+                                template: EL-8af0cbd5
+                                children:
+                                  - id: 984:1159
+                                    name: button.rcb
+                                    template: EL-132bff77
+                                    children:
+                                      - id: 984:1160
+                                        name: span
+                                        type: FRAME
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          dimensions:
+                                            width: 81.81
+                                            height: 22.5
+                                        children:
+                                          - id: 984:1161
+                                            name: Frame
+                                            template: EL-179fbc21
+                                          - id: 984:1163
+                                            type: TEXT
+                                            layout:
+                                              mode: none
+                                              sizing: {}
+                                              locationRelativeToParent:
+                                                x: 24
+                                                y: -1
+                                              dimensions:
+                                                width: 61.13
+                                                height: 23
+                                            text: Support
+                                            textStyle: style_ac8daa02
+                                            fills: Midnight Blue
+                                      - id: 984:1164
+                                        name: span:margin
+                                        template: EL-d2bf2676
+                                        children:
+                                          - id: 984:1165
+                                            name: span
+                                            template: EL-f47f396a
+                                            children:
+                                              - id: 984:1166
+                                                template: EL-486f6a16
+                                      - id: 984:1167
+                                        name: span
+                                        template: EL-e3ecd737
+                                        children:
+                                          - id: 984:1168
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: 3 users
+                                            textStyle: style_c80e55f1
+                                            fills: Mirage
+                                          - id: 984:1169
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 984:1170
+                                                template: EL-27f9f2b6
+                              - id: 984:1171
+                                name: li
+                                template: EL-8af0cbd5
+                                children:
+                                  - id: 984:1172
+                                    name: button.rcb
+                                    template: EL-132bff77
+                                    children:
+                                      - id: 984:1173
+                                        name: span
+                                        type: FRAME
+                                        layout:
+                                          mode: none
+                                          sizing:
+                                            horizontal: fixed
+                                            vertical: fixed
+                                          dimensions:
+                                            width: 80.63
+                                            height: 22.5
+                                        children:
+                                          - id: 984:1174
+                                            name: Frame
+                                            template: EL-179fbc21
+                                          - id: 984:1176
+                                            type: TEXT
+                                            layout:
+                                              mode: none
+                                              sizing: {}
+                                              locationRelativeToParent:
+                                                x: 24
+                                                y: -1
+                                              dimensions:
+                                                width: 62.19
+                                                height: 23
+                                            text: Content
+                                            textStyle: style_ac8daa02
+                                            fills: Midnight Blue
+                                      - id: 984:1177
+                                        name: span:margin
+                                        template: EL-d2bf2676
+                                        children:
+                                          - id: 984:1178
+                                            name: span
+                                            template: EL-f47f396a
+                                            children:
+                                              - id: 984:1179
+                                                template: EL-486f6a16
+                                      - id: 984:1180
+                                        name: span
+                                        template: EL-e3ecd737
+                                        children:
+                                          - id: 984:1181
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: 1 user
+                                            textStyle: style_c80e55f1
+                                            fills: Mirage
+                                          - id: 984:1182
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 984:1183
+                                                template: EL-27f9f2b6
+                          - id: 984:1184
+                            name: div.rpg
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignSelf: stretch
+                              padding: 2px 0px 0px
+                              alignItems: stretch
+                              gap: 20px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 984:1185
+                                name: section
+                                template: EL-89825985
+                                children:
+                                  - id: 984:1186
+                                    name: div.mc-h
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      alignSelf: stretch
+                                      padding: 18px 20px
+                                      alignItems: center
+                                      wrap: true
+                                      gap: 10px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    strokes: Athens Gray
+                                    strokeWeight: 0px 0px 1px
+                                    children:
+                                      - id: 984:1187
+                                        name: div
+                                        template: EL-bfbba51a
+                                        children:
+                                          - id: 984:1188
+                                            name: h2#mx-h
+                                            template: EL-dfdf56f9
+                                            children:
+                                              - id: 984:1189
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Permission Matrix
+                                                textStyle: style_aefbca38
+                                                fills: Midnight Blue
+                                          - id: 984:1190
+                                            name: p
+                                            template: EL-dfdf56f9
+                                            children:
+                                              - id: 984:1191
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: High-level access by Admin area.
+                                                textStyle: style_f3f7ae19
+                                                fills: Comet
+                                  - id: 984:1192
+                                    name: table
+                                    template: EL-e9077466
+                                    children:
+                                      - id: 984:1193
+                                        name: tr
+                                        template: EL-8a10e53c
+                                        children:
+                                          - id: 984:1194
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 10px 10px 10px 20px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 383.52
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 984:1195
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Permission area
+                                                textStyle:
+                                                  fontFamily: Manrope
+                                                  fontStyle: Bold
+                                                  fontWeight: 800
+                                                  fontSize: 12
+                                                  lineHeight: 16px
+                                                  textAlignHorizontal: LEFT
+                                                  textAlignVertical: CENTER
+                                                fills: Comet
+                                          - id: 984:1196
+                                            name: th.sel
+                                            type: FRAME
+                                            layout: layout_49c5b63f
+                                            fills: Selago
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            effects:
+                                              boxShadow: inset 0px -3px 0px 0px rgba(1, 42, 94, 1)
+                                            borderRadius: 12px
+                                            children:
+                                              - id: 984:1197
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Super Admin
+                                                textStyle: style_58e91ec3
+                                                fills: Midnight Blue
+                                          - id: 984:1198
+                                            name: th
+                                            template: EL-fa08dcfb
+                                            children:
+                                              - id: 984:1199
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Operations
+                                                textStyle: style_58e91ec3
+                                                fills: Comet
+                                          - id: 984:1200
+                                            name: th
+                                            template: EL-fa08dcfb
+                                            children:
+                                              - id: 984:1201
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Finance
+                                                textStyle: style_58e91ec3
+                                                fills: Comet
+                                          - id: 984:1202
+                                            name: th
+                                            template: EL-fa08dcfb
+                                            children:
+                                              - id: 984:1203
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Support
+                                                textStyle: style_58e91ec3
+                                                fills: Comet
+                                          - id: 984:1204
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 10px
+                                              alignItems: center
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 242.92
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 984:1205
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Content
+                                                textStyle: style_58e91ec3
+                                                fills: Comet
+                                      - id: 984:1206
+                                        name: tbody
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 984:1207
+                                            name: th
+                                            template: EL-eb419917
+                                            children:
+                                              - id: 984:1208
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Core Admin
+                                                textStyle: style_240937e7
+                                                fills: Comet
+                                          - id: 984:1209
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1210
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1211
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1212
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1215
+                                                        template: EL-c72bfb92
+                                              - id: 984:1216
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1217
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1218
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1221
+                                                        template: EL-c72bfb92
+                                              - id: 984:1222
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1223
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1224
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1227
+                                                        template: EL-c72bfb92
+                                              - id: 984:1228
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1229
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1230
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1233
+                                                        template: EL-c72bfb92
+                                              - id: 984:1234
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1235
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1236
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1239
+                                                        template: EL-c72bfb92
+                                              - id: 984:1240
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1241
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Dashboard
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1242
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1243
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1244
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1245
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1248
+                                                        template: EL-c72bfb92
+                                              - id: 984:1249
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1250
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1251
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1254
+                                                        template: EL-c72bfb92
+                                              - id: 984:1255
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1256
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1257
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1260
+                                                        template: EL-c72bfb92
+                                              - id: 984:1261
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1262
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1263
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1266
+                                                        template: EL-c72bfb92
+                                              - id: 984:1267
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1268
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1269
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1272
+                                                        template: EL-c72bfb92
+                                              - id: 984:1273
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1274
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: B2C Customers
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1275
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1276
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1277
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1278
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1281
+                                                        template: EL-c72bfb92
+                                              - id: 984:1282
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1283
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1284
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1287
+                                                        template: EL-c72bfb92
+                                              - id: 984:1288
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1289
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1290
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1293
+                                                        template: EL-c72bfb92
+                                              - id: 984:1294
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1295
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1296
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1299
+                                                        template: EL-c72bfb92
+                                              - id: 984:1300
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1301
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1302
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1305
+                                                        template: EL-c72bfb92
+                                              - id: 984:1306
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1307
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Admin Users
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1308
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1309
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1310
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1311
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1314
+                                                        template: EL-c72bfb92
+                                              - id: 984:1315
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1316
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1317
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1320
+                                                        template: EL-c72bfb92
+                                              - id: 984:1321
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1322
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1323
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1326
+                                                        template: EL-c72bfb92
+                                              - id: 984:1327
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1328
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1329
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1332
+                                                        template: EL-c72bfb92
+                                              - id: 984:1333
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1334
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1335
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1338
+                                                        template: EL-c72bfb92
+                                              - id: 984:1339
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1340
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Roles & Permissions
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1341
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1342
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1343
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1344
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1347
+                                                        template: EL-c72bfb92
+                                              - id: 984:1348
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1349
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1350
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1353
+                                                        template: EL-c72bfb92
+                                              - id: 984:1354
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1355
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1356
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1359
+                                                        template: EL-c72bfb92
+                                              - id: 984:1360
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1361
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1362
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1365
+                                                        template: EL-c72bfb92
+                                              - id: 984:1366
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1367
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1368
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1371
+                                                        template: EL-c72bfb92
+                                              - id: 984:1372
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1373
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Audit Log
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1374
+                                            name: th
+                                            template: EL-eb419917
+                                            children:
+                                              - id: 984:1375
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Platform Modules
+                                                textStyle: style_240937e7
+                                                fills: Comet
+                                          - id: 984:1376
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1377
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1378
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1379
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1382
+                                                        template: EL-c72bfb92
+                                              - id: 984:1383
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1384
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1385
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1388
+                                                        template: EL-c72bfb92
+                                              - id: 984:1389
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1390
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1391
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1394
+                                                        template: EL-c72bfb92
+                                              - id: 984:1395
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1396
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1397
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1400
+                                                        template: EL-c72bfb92
+                                              - id: 984:1401
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1402
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1403
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1406
+                                                        template: EL-c72bfb92
+                                              - id: 984:1407
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1408
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Bookings
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1409
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1410
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1411
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1412
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1415
+                                                        template: EL-c72bfb92
+                                              - id: 984:1416
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1417
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1418
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1421
+                                                        template: EL-c72bfb92
+                                              - id: 984:1422
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1423
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1424
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1427
+                                                        template: EL-c72bfb92
+                                              - id: 984:1428
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1429
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1430
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1433
+                                                        template: EL-c72bfb92
+                                              - id: 984:1434
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1435
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1436
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1439
+                                                        template: EL-c72bfb92
+                                              - id: 984:1440
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1441
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Agents
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1442
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1443
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1444
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1445
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1448
+                                                        template: EL-c72bfb92
+                                              - id: 984:1449
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1450
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1451
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1454
+                                                        template: EL-c72bfb92
+                                              - id: 984:1455
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1456
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1457
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1460
+                                                        template: EL-c72bfb92
+                                              - id: 984:1461
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1462
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1463
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1466
+                                                        template: EL-c72bfb92
+                                              - id: 984:1467
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1468
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1469
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1472
+                                                        template: EL-c72bfb92
+                                              - id: 984:1473
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1474
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Suppliers
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1475
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1476
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1477
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1478
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1481
+                                                        template: EL-c72bfb92
+                                              - id: 984:1482
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1483
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1484
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1487
+                                                        template: EL-c72bfb92
+                                              - id: 984:1488
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1489
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1490
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1493
+                                                        template: EL-c72bfb92
+                                              - id: 984:1494
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1495
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1496
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1499
+                                                        template: EL-c72bfb92
+                                              - id: 984:1500
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1501
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1502
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1505
+                                                        template: EL-c72bfb92
+                                              - id: 984:1506
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1507
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Pricing & Promotions
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1508
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1509
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1510
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1511
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1514
+                                                        template: EL-c72bfb92
+                                              - id: 984:1515
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1516
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1517
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1520
+                                                        template: EL-c72bfb92
+                                              - id: 984:1521
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1522
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1523
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1526
+                                                        template: EL-c72bfb92
+                                              - id: 984:1527
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1528
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1529
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1532
+                                                        template: EL-c72bfb92
+                                              - id: 984:1533
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1534
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1535
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1538
+                                                        template: EL-c72bfb92
+                                              - id: 984:1539
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1540
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Reviews
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1541
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1542
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1543
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1544
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1547
+                                                        template: EL-c72bfb92
+                                              - id: 984:1548
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1549
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1550
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1553
+                                                        template: EL-c72bfb92
+                                              - id: 984:1554
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1555
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1556
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1559
+                                                        template: EL-c72bfb92
+                                              - id: 984:1560
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1561
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1562
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1565
+                                                        template: EL-c72bfb92
+                                              - id: 984:1566
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1567
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1568
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1571
+                                                        template: EL-c72bfb92
+                                              - id: 984:1572
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1573
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Notifications
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1574
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1575
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1576
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1577
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1580
+                                                        template: EL-c72bfb92
+                                              - id: 984:1581
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1582
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1583
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1586
+                                                        template: EL-c72bfb92
+                                              - id: 984:1587
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1588
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1589
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1592
+                                                        template: EL-c72bfb92
+                                              - id: 984:1593
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1594
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1595
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1598
+                                                        template: EL-c72bfb92
+                                              - id: 984:1599
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1600
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1601
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1604
+                                                        template: EL-c72bfb92
+                                              - id: 984:1605
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1606
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: CRM / WhatsApp
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1607
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1608
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1609
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1610
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1613
+                                                        template: EL-c72bfb92
+                                              - id: 984:1614
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1615
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1616
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1619
+                                                        template: EL-c72bfb92
+                                              - id: 984:1620
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1621
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1622
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1625
+                                                        template: EL-c72bfb92
+                                              - id: 984:1626
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1627
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1628
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1631
+                                                        template: EL-c72bfb92
+                                              - id: 984:1632
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1633
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1634
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1637
+                                                        template: EL-c72bfb92
+                                              - id: 984:1638
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1639
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Content
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1640
+                                            name: tr
+                                            template: EL-c4b13774
+                                            children:
+                                              - id: 984:1641
+                                                name: td.sel
+                                                template: EL-ba5caf95
+                                                children:
+                                                  - id: 984:1642
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1643
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1646
+                                                        template: EL-c72bfb92
+                                              - id: 984:1647
+                                                name: td
+                                                template: EL-0185509f
+                                                children:
+                                                  - id: 984:1648
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1649
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1652
+                                                        template: EL-c72bfb92
+                                              - id: 984:1653
+                                                name: td
+                                                template: EL-4d30ea12
+                                                children:
+                                                  - id: 984:1654
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1655
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1658
+                                                        template: EL-c72bfb92
+                                              - id: 984:1659
+                                                name: td
+                                                template: EL-3fcb57eb
+                                                children:
+                                                  - id: 984:1660
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1661
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1664
+                                                        template: EL-c72bfb92
+                                              - id: 984:1665
+                                                name: td
+                                                template: EL-04ba2a6f
+                                                children:
+                                                  - id: 984:1666
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1667
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1670
+                                                        template: EL-c72bfb92
+                                              - id: 984:1671
+                                                name: th
+                                                template: EL-90504830
+                                                children:
+                                                  - id: 984:1672
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Reports
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                          - id: 984:1673
+                                            name: tr
+                                            type: FRAME
+                                            layout:
+                                              mode: none
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: fixed
+                                              dimensions:
+                                                height: 46.38
+                                            children:
+                                              - id: 984:1674
+                                                name: td.sel
+                                                type: FRAME
+                                                layout: layout_b9baf4e6
+                                                fills: Selago (95:305)
+                                                borderRadius: 12px
+                                                children:
+                                                  - id: 984:1675
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1676
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1679
+                                                        template: EL-c72bfb92
+                                              - id: 984:1680
+                                                name: td
+                                                type: FRAME
+                                                layout: layout_4d08cec4
+                                                children:
+                                                  - id: 984:1681
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1682
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1685
+                                                        template: EL-c72bfb92
+                                              - id: 984:1686
+                                                name: td
+                                                type: FRAME
+                                                layout: layout_2e794de1
+                                                children:
+                                                  - id: 984:1687
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1688
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1691
+                                                        template: EL-c72bfb92
+                                              - id: 984:1692
+                                                name: td
+                                                type: FRAME
+                                                layout: layout_47317ecc
+                                                children:
+                                                  - id: 984:1693
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1694
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1697
+                                                        template: EL-c72bfb92
+                                              - id: 984:1698
+                                                name: td
+                                                type: FRAME
+                                                layout: layout_bb3ebacc
+                                                children:
+                                                  - id: 984:1699
+                                                    name: span
+                                                    template: EL-57b4e922
+                                                    children:
+                                                      - id: 984:1700
+                                                        name: Frame
+                                                        template: EL-62b4d877
+                                                      - id: 984:1703
+                                                        template: EL-c72bfb92
+                                              - id: 984:1704
+                                                name: th
+                                                type: FRAME
+                                                layout: layout_809b289f
+                                                fills: White
+                                                children:
+                                                  - id: 984:1705
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Platform Settings
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                              - id: 984:1706
+                                name: div.side
+                                type: FRAME
+                                layout:
+                                  mode: grid
+                                  alignSelf: stretch
+                                  gridTemplateColumns: minmax(0,1.50fr) minmax(0,1fr)
+                                  gridTemplateRows: 510.50px
+                                  gap: 20px
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: fixed
+                                  dimensions:
+                                    height: 510.5
+                                children:
+                                  - id: 984:1707
+                                    name: section.sc3
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignSelf: start
+                                      padding: 18px 20px
+                                      alignItems: stretch
+                                      gap: 2px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    fills: White
+                                    strokes: Mystic
+                                    strokeWeight: 1px
+                                    borderRadius: 18px
+                                    children:
+                                      - id: 984:1708
+                                        name: h2#mp-h
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 984:1709
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: Menu Access Preview
+                                            textStyle: style_20d87fa3
+                                            fills: Midnight Blue
+                                      - id: 984:1710
+                                        name: p.sub
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 984:1711
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: '{ts1}Admin menu for {/ts1}{ts2}**Super Admin**{/ts2}{ts1} based on the current configuration.{/ts1}'
+                                            boldWeight: 700
+                                            textStyle: style_f3f7ae19
+                                            fills: Comet
+                                      - id: 984:1712
+                                        name: div
+                                        type: FRAME
+                                        layout:
+                                          mode: row
+                                          alignSelf: stretch
+                                          padding: 22px 10px 10px
+                                          justifyContent: center
+                                          gap: 14px
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        fills: fill_bbc54479
+                                        borderRadius: 14px
+                                        children:
+                                          - id: 984:1713
+                                            name: div
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 6px 0px 170px
+                                              alignItems: center
+                                              gap: 6px
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 984:1714
+                                                name: h3
+                                                template: EL-b3d92507
+                                                children:
+                                                  - id: 984:1715
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Core Admin
+                                                    textStyle: style_1472f9f9
+                                                    fills: Wild Blue Yonder
+                                              - id: 984:1716
+                                                name: ul
+                                                template: EL-6e926975
+                                                children:
+                                                  - id: 984:1717
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1718
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1719
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Dashboard
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1720
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1721
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1722
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1723
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1724
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: B2C Customers
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1725
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1726
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1727
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1728
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1729
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Admin Users
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1730
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1731
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1732
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1733
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1734
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Roles & Permissions
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1735
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1736
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1737
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1738
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1739
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Audit Log
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1740
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1741
+                                                            template: EL-7cd4643f
+                                          - id: 984:1742
+                                            name: div
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 6px 0px 0px
+                                              alignItems: center
+                                              gap: 6px
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 984:1743
+                                                name: h3
+                                                template: EL-b3d92507
+                                                children:
+                                                  - id: 984:1744
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Platform Modules
+                                                    textStyle: style_1472f9f9
+                                                    fills: Wild Blue Yonder
+                                              - id: 984:1745
+                                                name: ul
+                                                template: EL-6e926975
+                                                children:
+                                                  - id: 984:1746
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1747
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1748
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Bookings
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1749
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1750
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1751
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1752
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1753
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Agents
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1754
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1755
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1756
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1757
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1758
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Suppliers
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1759
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1760
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1761
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1762
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1763
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Pricing & Promotions
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1764
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1765
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1766
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1767
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1768
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Reviews
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1769
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1770
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1771
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1772
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1773
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Notifications
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1774
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1775
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1776
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1777
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1778
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: CRM / WhatsApp
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1779
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1780
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1781
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1782
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1783
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Content
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1784
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1785
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1786
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1787
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1788
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Reports
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1789
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1790
+                                                            template: EL-7cd4643f
+                                                  - id: 984:1791
+                                                    name: li
+                                                    template: EL-267b0375
+                                                    children:
+                                                      - id: 984:1792
+                                                        name: span
+                                                        template: EL-2f9fe287
+                                                        children:
+                                                          - id: 984:1793
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Platform Settings
+                                                            textStyle: style_c80e55f1
+                                                            fills: Pigeon Post
+                                                      - id: 984:1794
+                                                        name: span
+                                                        template: EL-1fee5a49
+                                                        children:
+                                                          - id: 984:1795
+                                                            template: EL-7cd4643f
+                                      - id: 984:1796
+                                        name: p.mp-k
+                                        type: FRAME
+                                        layout:
+                                          mode: row
+                                          alignSelf: stretch
+                                          padding: 10px 0px 0px
+                                          alignItems: stretch
+                                          wrap: true
+                                          gap: 6px 12px
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        children:
+                                          - id: 984:1797
+                                            name: span
+                                            template: EL-46dbad38
+                                            children:
+                                              - id: 984:1798
+                                                name: i
+                                                type: RECTANGLE
+                                                layout: layout_48b6cb3a
+                                                fills: Eucalyptus
+                                                borderRadius: 4.5px
+                                              - id: 984:1799
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Visible
+                                                textStyle: style_f15527d8
+                                                fills: Comet
+                                          - id: 984:1800
+                                            name: span
+                                            template: EL-46dbad38
+                                            children:
+                                              - id: 984:1801
+                                                name: i
+                                                type: RECTANGLE
+                                                layout: layout_48b6cb3a
+                                                fills:
+                                                  - '#8C97A8'
+                                                borderRadius: 4.5px
+                                              - id: 984:1802
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Hidden
+                                                textStyle: style_f15527d8
+                                                fills: Comet
+                                          - id: 984:1803
+                                            name: span
+                                            template: EL-46dbad38
+                                            children:
+                                              - id: 984:1804
+                                                name: i
+                                                type: RECTANGLE
+                                                layout: layout_48b6cb3a
+                                                fills: Geyser
+                                                borderRadius: 4.5px
+                                              - id: 984:1805
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Not configured
+                                                textStyle: style_f15527d8
+                                                fills: Comet
+                                  - id: 984:1806
+                                    name: section.sc3
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignSelf: start
+                                      padding: 18px 20px
+                                      alignItems: stretch
+                                      gap: 4px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    fills: Early Dawn
+                                    strokes: Buff (287:488)
+                                    strokeWeight: 1px
+                                    borderRadius: 18px
+                                    children:
+                                      - id: 984:1807
+                                        name: div
+                                        template: EL-c094fdcc
+                                        children:
+                                          - id: 984:1808
+                                            name: Frame
+                                            template: EL-d2f5d0a6
+                                          - id: 984:1810
+                                            name: div
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              alignItems: stretch
+                                              gap: 4px
+                                              sizing:
+                                                horizontal: hug
+                                                vertical: hug
+                                            children:
+                                              - id: 984:1811
+                                                name: h2#en-h
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 984:1812
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Permissions apply beyond navigation
+                                                    textStyle: style_20d87fa3
+                                                    fills: Saddle Brown
+                                              - id: 984:1813
+                                                name: p
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 984:1814
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Hiding a menu item is not authorization. The same permission must also be enforced\nby the backend/API.
+                                                    textStyle: style_15012661
+                                                    fills: Saddle Brown
+                                      - id: 984:1815
+                                        name: p.aud
+                                        template: EL-f96bbce8
+                                        children:
+                                          - id: 984:1816
+                                            name: svg:margin
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 1px 0px 0px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: fixed
+                                              dimensions:
+                                                width: 15
+                                                height: 16
+                                            children:
+                                              - id: 984:1817
+                                                name: Frame
+                                                template: EL-494805ba
+                                          - id: 984:1822
+                                            name: span
+                                            template: EL-2a66e910
+                                            children:
+                                              - id: 984:1823
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Permission changes may be recorded in the Audit Log.
+                                                textStyle: style_15012661
+                                                fills: Saddle Brown
+                  - id: 984:1824
+                    name: footer.ft2
+                    type: FRAME
+                    layout:
+                      mode: column
+                      padding: 16px 28px
+                      sizing:
+                        horizontal: fixed
+                        vertical: hug
+                      locationRelativeToParent:
+                        x: 0
+                        y: 1893.88
+                      dimensions:
+                        width: 1656
+                    fills: White
+                    strokes: Mystic
+                    strokeWeight: 1px 0px 0px
+                    children:
+                      - id: 984:1825
+                        template: EL-64a79c70
+                  - id: 984:1826
+                    name: header
+                    template: EL-d14effc8
+                    children:
+                      - id: 984:1827
+                        name: Breadcrumb:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 0px 1119.56005859375px 0px 0px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 984:1828
+                            name: Breadcrumb
+                            template: EL-235879b0
+                            children:
+                              - id: 984:1829
+                                name: li
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 984:1830
+                                    template: EL-fdff9110
+                              - id: 984:1831
+                                name: li
+                                template: EL-bbedda7b
+                                children:
+                                  - id: 984:1832
+                                    template: EL-db7ddb8d
+                                  - id: 984:1833
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Roles & Permissions
+                                    textStyle: style_857f4816
+                                    fills: Mirage
+                      - id: 984:1834
+                        name: div.tb-a
+                        template: EL-235879b0
+                        children:
+                          - id: 984:1835
+                            name: Notifications
+                            template: EL-58e2a7b0
+                            children:
+                              - id: 984:1836
+                                name: Frame
+                                template: EL-d2f5d0a6
+                          - id: 984:1838
+                            name: button menu#pf-b
+                            template: EL-0ccd4aea
+                            children:
+                              - id: 984:1839
+                                name: span.pf-av
+                                template: EL-a8b2764a
+                                children:
+                                  - id: 984:1840
+                                    template: EL-5321e56d
+                              - id: 984:1841
+                                name: span.pf-t
+                                template: EL-6e7b525c
+                                children:
+                                  - id: 984:1842
+                                    name: b
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 984:1843
+                                        template: EL-2df750f6
+                                  - id: 984:1844
+                                    name: small#pf-role
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 984:1845
+                                        template: EL-a8ebef05
+                              - id: 984:1846
+                                name: Frame
+                                template: EL-d40fb4e5

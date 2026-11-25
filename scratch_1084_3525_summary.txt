@@ -1,0 +1,515 @@
+20156:         name: Platform Settings - Default Cancellation Policies
+20171:           - id: 1084:3526
+20172:             name: div
+20173:             template: EL-d1ac142c
+20175:               - id: 1084:3527
+20177:                 template: EL-b4d5d5d0
+20179:                   - id: 1084:3786
+20180:                     name: div.sb-hd
+20181:                     template: EL-19ed2d5b
+20183:                       - id: 1084:3787
+20184:                         name: Aero Wing Admin Panel — Dashboard
+20185:                         template: EL-27a7f8c4
+20187:                           - id: 1084:3788
+20188:                             name: AeroWing Admin — Dashboard
+20189:                             template: EL-280eabfe
+20191:                               - id: 1084:3789
+20192:                                 name: AeroWing — Explore, Book, Travel
+20193:                                 template: EL-966c7e52
+20194:                           - id: 1084:3790
+20195:                             name: span.sb-lab
+20196:                             template: EL-4c261f7f
+20198:                               - id: 1084:3791
+20199:                                 template: EL-a0b6cf5b
+20200:                   - id: 1084:3534
+20201:                     name: Admin
+20202:                     template: EL-0b230fa2
+20204:                       - id: 1084:3535
+20205:                         name: div.sb-g
+20206:                         template: EL-e9077466
+20208:                           - id: 1084:3536
+20209:                             name: p#g-ov
+20210:                             template: EL-d8c5a118
+20212:                               - id: 1084:3537
+20213:                                 template: EL-ad79941c
+20214:                           - id: 1084:3538
+20215:                             name: a.sb-i
+20216:                             template: EL-7041e0b0
+20218:                               - id: 1084:3539
+20219:                                 name: Frame
+20220:                                 template: EL-b1d338df
+20221:                               - id: 1084:3544
+20222:                                 name: span.sb-t
+20223:                                 template: EL-2f9fe287
+20225:                                   - id: 1084:3545
+20226:                                     template: EL-b9328c9b
+20227:                       - id: 1084:3546
+20228:                         name: div.sb-g
+20229:                         template: EL-301f98e1
+20231:                           - id: 1084:3547
+20232:                             name: p#g-core
+20233:                             template: EL-d8c5a118
+20235:                               - id: 1084:3548
+20236:                                 template: EL-a5e6b4d2
+20237:                           - id: 1084:3549
+20238:                             name: ul
+20239:                             template: EL-6e926975
+20241:                               - id: 1084:3550
+20242:                                 name: a.sb-i
+20243:                                 template: EL-7041e0b0
+20245:                                   - id: 1084:3551
+20246:                                     name: Frame
+20247:                                     template: EL-b1d338df
+20248:                                   - id: 1084:3553
+20249:                                     name: span.sb-t
+20250:                                     template: EL-2f9fe287
+20252:                                       - id: 1084:3554
+20253:                                         template: EL-8cc0c44d
+20254:                               - id: 1084:3555
+20255:                                 name: a.sb-i
+20256:                                 template: EL-7041e0b0
+20258:                                   - id: 1084:3556
+20259:                                     name: Frame
+20260:                                     template: EL-b1d338df
+20261:                                   - id: 1084:3559
+20262:                                     name: span.sb-t
+20263:                                     template: EL-2f9fe287
+20265:                                       - id: 1084:3560
+20266:                                         template: EL-c45ae915
+20267:                               - id: 1084:3561
+20268:                                 name: a.sb-i
+20269:                                 template: EL-7041e0b0
+20271:                                   - id: 1084:3562
+20272:                                     name: Frame
+20273:                                     template: EL-b1d338df
+20274:                                   - id: 1084:3565
+20275:                                     name: span.sb-t
+20276:                                     template: EL-2f9fe287
+20278:                                       - id: 1084:3566
+20279:                                         template: EL-40ae2791
+20280:                               - id: 1084:3567
+20281:                                 name: a.sb-i
+20282:                                 template: EL-7041e0b0
+20284:                                   - id: 1084:3568
+20285:                                     name: Frame
+20286:                                     template: EL-b1d338df
+20287:                                   - id: 1084:3573
+20288:                                     name: span.sb-t
+20289:                                     template: EL-2f9fe287
+20291:                                       - id: 1084:3574
+20292:                                         template: EL-557136c9
+20293:                       - id: 1084:3575
+20294:                         name: div.sb-g
+20295:                         template: EL-301f98e1
+20297:                           - id: 1084:3576
+20298:                             name: p#g-mod
+20299:                             template: EL-d8c5a118
+20301:                               - id: 1084:3577
+20302:                                 template: EL-eff13b88
+20303:                           - id: 1084:3578
+20304:                             name: ul
+20305:                             template: EL-43323dcb
+20307:                               - id: 1084:3579
+20308:                                 name: a.sb-i
+20309:                                 template: EL-703abc35
+20311:                                   - id: 1084:3580
+20312:                                     name: Frame
+20313:                                     template: EL-f1890f3e
+20314:                                   - id: 1084:3582
+20315:                                     name: span.sb-t
+20316:                                     template: EL-2f9fe287
+20318:                                       - id: 1084:3583
+20319:                                         template: EL-4074d9e1
+20320:                               - id: 1084:3584
+20321:                                 name: a.sb-i
+20322:                                 template: EL-703abc35
+20324:                                   - id: 1084:3585
+20325:                                     name: Frame
+20326:                                     template: EL-f1890f3e
+20327:                                   - id: 1084:3588
+20328:                                     name: span.sb-t
+20329:                                     template: EL-2f9fe287
+20331:                                       - id: 1084:3589
+20332:                                         template: EL-618e9697
+20333:                               - id: 1084:3590
+20334:                                 name: a.sb-i
+20335:                                 template: EL-703abc35
+20337:                                   - id: 1084:3591
+20338:                                     name: Frame
+20339:                                     template: EL-f1890f3e
+20340:                                   - id: 1084:3593
+20341:                                     name: span.sb-t
+20342:                                     template: EL-2f9fe287
+20344:                                       - id: 1084:3594
+20345:                                         template: EL-d10a515e
+20346:                               - id: 1084:3595
+20347:                                 name: a.sb-i
+20348:                                 template: EL-703abc35
+20350:                                   - id: 1084:3596
+20351:                                     name: Frame
+20352:                                     template: EL-f1890f3e
+20353:                                   - id: 1084:3599
+20354:                                     name: span.sb-t
+20355:                                     template: EL-2f9fe287
+20357:                                       - id: 1084:3600
+20358:                                         template: EL-970eec68
+20359:                               - id: 1084:3601
+20360:                                 name: a.sb-i
+20361:                                 template: EL-703abc35
+20363:                                   - id: 1084:3602
+20364:                                     name: Frame
+20365:                                     template: EL-f1890f3e
+20366:                                   - id: 1084:3604
+20367:                                     name: span.sb-t
+20368:                                     template: EL-2f9fe287
+20370:                                       - id: 1084:3605
+20371:                                         template: EL-344c29b0
+20372:                               - id: 1084:3623
+20373:                                 name: a.sb-i
+20374:                                 template: EL-703abc35
+20376:                                   - id: 1084:3624
+20377:                                     name: Frame
+20378:                                     template: EL-f1890f3e
+20379:                                   - id: 1084:3627
+20380:                                     name: span.sb-t
+20381:                                     template: EL-2f9fe287
+20383:                                       - id: 1084:3628
+20384:                                         template: EL-2fd65db2
+20385:                               - id: 1084:3629
+20386:                                 name: a.sb-i
+20387:                                 template: EL-5e380d8c
+20389:                                   - id: 1084:3630
+20390:                                     name: Frame
+20391:                                     template: EL-f1890f3e
+20392:                                   - id: 1084:3633
+20393:                                     name: span.sb-t
+20394:                                     template: EL-2f9fe287
+20396:                                       - id: 1084:3634
+20397:                                         template: EL-09476c5f
+20398:                   - id: 1084:3635
+20399:                     name: div.sb-ft
+20400:                     template: EL-ab88c726
+20402:                       - id: 1084:3636
+20403:                         name: Collapse sidebar
+20404:                         template: EL-04eca728
+20406:                           - id: 1084:3637
+20407:                             name: Frame
+20408:                             template: EL-b1d338df
+20409:                           - id: 1084:3640
+20410:                             name: span#sb-col-l
+20411:                             template: EL-83bc679e
+20413:                               - id: 1084:3641
+20414:                                 template: EL-1fd2da9e
+20415:               - id: 1084:3642
+20416:                 name: Main column
+20417:                 template: EL-ba6dbac3
+20419:                   - id: 1084:3643
+20420:                     name: main
+20435:                       - id: 1084:3644
+20436:                         name: div#page
+20437:                         template: EL-acfb41d2
+20439:                           - id: 1084:3645
+20440:                             name: div.ph2
+20441:                             template: EL-eeae19b6
+20443:                               - id: 1084:3646
+20444:                                 name: div
+20445:                                 template: EL-7c39d4fd
+20447:                                   - id: 1084:3647
+20448:                                     name: span
+20449:                                     template: EL-dfdf56f9
+20451:                                       - id: 1084:3648
+20452:                                         template: EL-71780814
+20453:                                   - id: 1084:3649
+20454:                                     name: h1
+20455:                                     template: EL-681edddb
+20457:                                       - id: 1084:3650
+20458:                                         template: EL-9ef94fed
+20459:                                   - id: 1084:3651
+20460:                                     name: p
+20461:                                     template: EL-dfdf56f9
+20463:                                       - id: 1084:3652
+20464:                                         template: EL-1e386fd0
+20465:                           - id: 1084:3653
+20466:                             name: div
+20467:                             template: EL-4848f3c9
+20469:                               - id: 1084:3654
+20470:                                 name: Platform Settings sections
+20471:                                 template: EL-edec8867
+20473:                                   - id: 1084:3655
+20474:                                     name: p.sn-t
+20475:                                     template: EL-35d46e41
+20477:                                       - id: 1084:3656
+20478:                                         template: EL-346d9904
+20479:                                   - id: 1084:3657
+20480:                                     name: ul
+20481:                                     template: EL-99324298
+20483:                                       - id: 1084:3658
+20484:                                         name: a
+20485:                                         template: EL-4f737013
+20487:                                           - id: 1084:3659
+20488:                                             name: Frame
+20489:                                             template: EL-f652840d
+20490:                                           - id: 1084:3662
+20491:                                             name: span
+20492:                                             template: EL-2f9fe287
+20494:                                               - id: 1084:3663
+20495:                                                 template: EL-6f816bfa
+20496:                                       - id: 1084:3664
+20497:                                         name: a
+20498:                                         template: EL-4f737013
+20500:                                           - id: 1084:3665
+20501:                                             name: Frame
+20502:                                             template: EL-f652840d
+20503:                                           - id: 1084:3668
+20504:                                             name: span
+20505:                                             template: EL-2f9fe287
+20507:                                               - id: 1084:3669
+20508:                                                 template: EL-8a26a9c6
+20509:                                       - id: 1084:3670
+20510:                                         name: a
+20511:                                         template: EL-7a7e402c
+20513:                                           - id: 1084:3671
+20514:                                             name: Frame
+20515:                                             template: EL-f652840d
+20516:                                           - id: 1084:3675
+20517:                                             name: span
+20518:                                             template: EL-9c64f842
+20520:                                               - id: 1084:3676
+20521:                                                 template: EL-8441eb82
+20522:                                       - id: 1084:3677
+20523:                                         name: a
+20524:                                         template: EL-4f737013
+20526:                                           - id: 1084:3678
+20527:                                             name: Frame
+20528:                                             template: EL-f652840d
+20529:                                           - id: 1084:3681
+20530:                                             name: span
+20531:                                             template: EL-2f9fe287
+20533:                                               - id: 1084:3682
+20534:                                                 template: EL-d5fa3a7e
+20535:                                       - id: 1084:3683
+20536:                                         name: a
+20537:                                         template: EL-7e1cb58c
+20539:                                           - id: 1084:3684
+20540:                                             name: Frame
+20541:                                             template: EL-f652840d
+20542:                                           - id: 1084:3687
+20543:                                             name: span
+20544:                                             template: EL-d88c26b7
+20546:                                               - id: 1084:3688
+20549:                                                 text: Default Cancellation\nPolicies
+20552:                                           - id: 1084:3689
+20553:                                             name: '::before'
+20554:                                             template: EL-63bbb173
+20555:                               - id: 1084:3690
+20556:                                 name: div.sm2
+20557:                                 template: EL-6cb81979
+20559:                                   - id: 1084:3691
+20560:                                     name: section.pc3
+20561:                                     template: EL-ed86ce35
+20563:                                       - id: 1084:3692
+20564:                                         name: div.pc3-h
+20565:                                         template: EL-89de18e1
+20567:                                           - id: 1084:3693
+20568:                                             name: div
+20569:                                             template: EL-65631a79
+20571:                                               - id: 1084:3694
+20572:                                                 name: span.kpi-ic:margin
+20573:                                                 template: EL-6fedf062
+20575:                                                   - id: 1084:3695
+20576:                                                     name: span.kpi-ic
+20577:                                                     template: EL-a3dd0e0a
+20579:                                                       - id: 1084:3696
+20580:                                                         name: Frame
+20581:                                                         template: EL-f652840d
+20582:                                               - id: 1084:3699
+20583:                                                 name: div.ph-t
+20584:                                                 template: EL-bfbba51a
+20586:                                                   - id: 1084:3700
+20587:                                                     name: h2#tx-h
+20588:                                                     template: EL-dfdf56f9
+20590:                                                       - id: 1084:3701
+20593:                                                         text: Default Cancellation Policies
+20596:                                                   - id: 1084:3702
+20597:                                                     name: p.sub
+20598:                                                     template: EL-dfdf56f9
+20600:                                                       - id: 1084:3703
+20603:                                                         text: Manage the platform’s default cancellation-policy information.
+20606:                                           - id: 1084:3704
+20607:                                             name: button.btn
+20608:                                             template: EL-54a3e44b
+20610:                                               - id: 1084:3705
+20611:                                                 name: Frame
+20612:                                                 template: EL-d40fb4e5
+20613:                                               - id: 1084:3708
+20616:                                                 text: Configure Default Policy
+20619:                                       - id: 1084:3709
+20620:                                         name: div.lg-ns
+20621:                                         template: EL-e166912b
+20623:                                           - id: 1084:3710
+20624:                                             name: span.es-ic:margin
+20625:                                             template: EL-09bdb517
+20627:                                               - id: 1084:3711
+20628:                                                 name: span.es-ic
+20629:                                                 template: EL-7d103126
+20631:                                                   - id: 1084:3712
+20632:                                                     name: Frame
+20633:                                                     template: EL-f1b0f0c9
+20634:                                           - id: 1084:3715
+20635:                                             name: h3:margin
+20636:                                             template: EL-f7be1f40
+20638:                                               - id: 1084:3716
+20639:                                                 name: h3
+20640:                                                 template: EL-83bc679e
+20642:                                                   - id: 1084:3717
+20645:                                                     text: No confirmed default cancellation policy configured
+20648:                                           - id: 1084:3718
+20649:                                             name: p
+20659:                                               - id: 1084:3719
+20662:                                                 text: Default cancellation-policy information will appear here once the\nrequired policy terms are supplied.
+20665:                                   - id: 1084:3720
+20666:                                     name: div.lg-n
+20680:                                       - id: 1084:3721
+20681:                                         name: aside.inf
+20682:                                         template: EL-1ddebd21
+20684:                                           - id: 1084:3722
+20685:                                             name: span.kpi-ic
+20686:                                             template: EL-d097bf4c
+20688:                                               - id: 1084:3723
+20689:                                                 name: Frame
+20690:                                                 template: EL-f652840d
+20691:                                           - id: 1084:3727
+20692:                                             name: div
+20693:                                             template: EL-969ff3e5
+20695:                                               - id: 1084:3728
+20696:                                                 name: h2#inf-h
+20697:                                                 template: EL-cec2587e
+20699:                                                   - id: 1084:3729
+20702:                                                     text: Default policy configuration
+20705:                                               - id: 1084:3730
+20706:                                                 name: p
+20707:                                                 template: EL-7ceba3d1
+20709:                                                   - id: 1084:3731
+20712:                                                     text: These settings provide default cancellation-policy information. The applicable policy for an actual booking\nmay depend on booking and supplier data handled by the cancellation/refund workflow.
+20715:                                       - id: 1084:3732
+20716:                                         name: section.pc3
+20717:                                         template: EL-dd10c9e3
+20719:                                           - id: 1084:3733
+20720:                                             name: h2#td-h
+20721:                                             template: EL-e9077466
+20723:                                               - id: 1084:3734
+20726:                                                 text: Policy details
+20729:                                           - id: 1084:3735
+20730:                                             name: dl.kvn
+20731:                                             template: EL-1519dabc
+20733:                                               - id: 1084:3736
+20734:                                                 name: div
+20735:                                                 template: EL-c094fdcc
+20737:                                                   - id: 1084:3737
+20738:                                                     name: span.kpi-ic
+20739:                                                     template: EL-4265f66b
+20741:                                                       - id: 1084:3738
+20742:                                                         name: Frame
+20743:                                                         template: EL-f1890f3e
+20744:                                                   - id: 1084:3741
+20745:                                                     name: div
+20746:                                                     template: EL-a5a366d0
+20748:                                                       - id: 1084:3742
+20749:                                                         name: dt
+20750:                                                         template: EL-dfdf56f9
+20752:                                                           - id: 1084:3743
+20753:                                                             template: EL-3095a45c
+20754:                                                       - id: 1084:3744
+20755:                                                         name: dd
+20756:                                                         template: EL-dfdf56f9
+20758:                                                           - id: 1084:3745
+20761:                                                             text: This screen manages platform default cancellation-policy\ninformation.
+20764:                                               - id: 1084:3746
+20765:                                                 name: div
+20766:                                                 template: EL-c094fdcc
+20768:                                                   - id: 1084:3747
+20769:                                                     name: span.kpi-ic
+20770:                                                     template: EL-4265f66b
+20772:                                                       - id: 1084:3748
+20773:                                                         name: Frame
+20774:                                                         template: EL-f1890f3e
+20775:                                                   - id: 1084:3751
+20776:                                                     name: div
+20777:                                                     template: EL-a5a366d0
+20779:                                                       - id: 1084:3752
+20780:                                                         name: dt
+20781:                                                         template: EL-dfdf56f9
+20783:                                                           - id: 1084:3753
+20786:                                                             text: Booking application
+20789:                                                       - id: 1084:3754
+20790:                                                         name: dd
+20791:                                                         template: EL-dfdf56f9
+20793:                                                           - id: 1084:3755
+20796:                                                             text: Actual booking policy application is handled by the\ncancellation/refund workflow.
+20799:                   - id: 1084:3756
+20800:                     name: footer.ft2
+20801:                     template: EL-a365c360
+20803:                       - id: 1084:3757
+20804:                         template: EL-64a79c70
+20805:                   - id: 1084:3758
+20806:                     name: header
+20807:                     template: EL-75174d8d
+20809:                       - id: 1084:3759
+20810:                         name: Breadcrumb:margin
+20819:                           - id: 1084:3760
+20820:                             name: Breadcrumb
+20821:                             template: EL-235879b0
+20823:                               - id: 1084:3761
+20824:                                 name: li
+20825:                                 template: EL-2f9fe287
+20827:                                   - id: 1084:3762
+20828:                                     template: EL-fdff9110
+20829:                               - id: 1084:3763
+20830:                                 name: li
+20831:                                 template: EL-bbedda7b
+20833:                                   - id: 1084:3764
+20834:                                     template: EL-db7ddb8d
+20835:                                   - id: 1084:3765
+20836:                                     template: EL-261de5e1
+20837:                               - id: 1084:3766
+20838:                                 name: li
+20839:                                 template: EL-bbedda7b
+20841:                                   - id: 1084:3767
+20842:                                     template: EL-db7ddb8d
+20843:                                   - id: 1084:3768
+20846:                                     text: Default Cancellation Policies
+20849:                       - id: 1084:3769
+20850:                         name: div.tb-a
+20851:                         template: EL-235879b0
+20853:                           - id: 1084:3770
+20854:                             name: Notifications
+20855:                             template: EL-58e2a7b0
+20857:                               - id: 1084:3771
+20858:                                 name: Frame
+20859:                                 template: EL-d2f5d0a6
+20860:                           - id: 1084:3773
+20861:                             name: button menu#pf-b
+20862:                             template: EL-0ccd4aea
+20864:                               - id: 1084:3774
+20865:                                 name: span.pf-av
+20866:                                 template: EL-a8b2764a
+20868:                                   - id: 1084:3775
+20869:                                     template: EL-5321e56d
+20870:                               - id: 1084:3776
+20871:                                 name: span.pf-t
+20872:                                 template: EL-6e7b525c
+20874:                                   - id: 1084:3777
+20875:                                     name: b
+20876:                                     template: EL-dfdf56f9
+20878:                                       - id: 1084:3778
+20879:                                         template: EL-2df750f6
+20880:                                   - id: 1084:3779
+20881:                                     name: small#pf-role
+20882:                                     template: EL-dfdf56f9
+20884:                                       - id: 1084:3780
+20885:                                         template: EL-a8ebef05
+20886:                               - id: 1084:3781
+20887:                                 name: Frame
+20888:                                 template: EL-d40fb4e5
+20889:       - id: 1084:3797
+20890:         name: Platform Settings - View Default Cancellation Policies

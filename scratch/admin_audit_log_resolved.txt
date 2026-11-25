@@ -1,0 +1,1613 @@
+      id=995:3669
+        name='Admin Audit Log'
+        
+        
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+        
+        
+          id=995:3670
+            name='div'
+            tpl=EL-d1ac142c type=FRAME
+            
+              id=995:3671
+                name='Admin navigation'
+                tpl=EL-b4d5d5d0 type=FRAME
+                
+                  id=995:4118
+                    name='div.sb-hd'
+                    tpl=EL-19ed2d5b type=FRAME
+                    
+                      id=995:4119
+                        name='Aero Wing Admin Panel — Dashboard'
+                        tpl=EL-27a7f8c4 type=FRAME
+                        
+                          id=995:4120
+                            name='AeroWing Admin — Dashboard'
+                            tpl=EL-280eabfe type=FRAME
+                            
+                              id=995:4121
+                                name='AeroWing — Explore, Book, Travel'
+                                tpl=EL-966c7e52 type=FRAME
+                          id=995:4122
+                            name='span.sb-lab'
+                            tpl=EL-4c261f7f type=FRAME
+                            
+                              id=995:4123
+                                tpl=EL-a0b6cf5b type=TEXT tpl_text='Admin Panel'
+                  id=995:3678
+                    name='Admin'
+                    tpl=EL-0b230fa2 type=FRAME
+                    
+                      id=995:3679
+                        name='div.sb-g'
+                        tpl=EL-e9077466 type=FRAME
+                        
+                          id=995:3680
+                            name='p#g-ov'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=995:3681
+                                tpl=EL-ad79941c type=TEXT tpl_text='Overview'
+                          id=995:3682
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=995:3683
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=995:3688
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=995:3689
+                                    tpl=EL-b9328c9b type=TEXT tpl_text='Dashboard'
+                      id=995:3690
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=995:3691
+                            name='p#g-core'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=995:3692
+                                tpl=EL-a5e6b4d2 type=TEXT tpl_text='Core Admin'
+                          id=995:3693
+                            name='ul'
+                            tpl=EL-6e926975 type=FRAME
+                            
+                              id=995:3694
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=995:3695
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=995:3697
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3698
+                                        tpl=EL-8cc0c44d type=TEXT tpl_text='B2C Customers'
+                              id=995:3699
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=995:3700
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=995:3703
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3704
+                                        tpl=EL-c45ae915 type=TEXT tpl_text='Admin Users'
+                              id=995:3705
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=995:3706
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=995:3709
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3710
+                                        tpl=EL-40ae2791 type=TEXT tpl_text='Roles & Permissions'
+                              id=995:3711
+                                name='a.sb-i'
+                                tpl=EL-bdff8199 type=FRAME
+                                
+                                  id=995:3712
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=995:3717
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3718
+                                        
+                                        
+                                        text='Audit Log'
+                                        
+                                        
+                      id=995:3719
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=995:3720
+                            name='p#g-mod'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=995:3721
+                                tpl=EL-eff13b88 type=TEXT tpl_text='Platform Modules'
+                          id=995:3722
+                            name='ul'
+                            tpl=EL-43323dcb type=FRAME
+                            
+                              id=995:3723
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3724
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3726
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3727
+                                        tpl=EL-4074d9e1 type=TEXT tpl_text='Bookings'
+                              id=995:3728
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3729
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3732
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3733
+                                        tpl=EL-618e9697 type=TEXT tpl_text='Agents'
+                              id=995:3734
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3735
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3737
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3738
+                                        tpl=EL-d10a515e type=TEXT tpl_text='Suppliers'
+                              id=995:3739
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3740
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3743
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3744
+                                        tpl=EL-970eec68 type=TEXT tpl_text='Pricing & Promotions'
+                              id=995:3745
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3746
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3748
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3749
+                                        tpl=EL-344c29b0 type=TEXT tpl_text='Reviews'
+                              id=995:3767
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3768
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3771
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3772
+                                        tpl=EL-2fd65db2 type=TEXT tpl_text='Reports'
+                              id=995:3773
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=995:3774
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=995:3777
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=995:3778
+                                        tpl=EL-09476c5f type=TEXT tpl_text='Platform Settings'
+                  id=995:3779
+                    name='div.sb-ft'
+                    tpl=EL-ab88c726 type=FRAME
+                    
+                      id=995:3780
+                        name='Collapse sidebar'
+                        tpl=EL-04eca728 type=FRAME
+                        
+                          id=995:3781
+                            name='Frame'
+                            tpl=EL-b1d338df type=IMAGE-SVG
+                          id=995:3784
+                            name='span#sb-col-l'
+                            tpl=EL-83bc679e type=FRAME
+                            
+                              id=995:3785
+                                tpl=EL-1fd2da9e type=TEXT tpl_text='Collapse'
+              id=995:3786
+                name='Main column'
+                tpl=EL-ba6dbac3 type=FRAME
+                
+                  id=995:3787
+                    name='main'
+                    
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                    
+                      id=995:3788
+                        name='div#page'
+                        tpl=EL-acfb41d2 type=FRAME
+                        
+                          id=995:3789
+                            name='div.ph2'
+                            tpl=EL-eeae19b6 type=FRAME
+                            
+                              id=995:3790
+                                name='div'
+                                tpl=EL-7c39d4fd type=FRAME
+                                
+                                  id=995:3791
+                                    name='span'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=995:3792
+                                        tpl=EL-fea8bcb3 type=TEXT tpl_text='Core Admin'
+                                  id=995:3793
+                                    name='h1'
+                                    tpl=EL-681edddb type=FRAME
+                                    
+                                      id=995:3794
+                                        
+                                        
+                                        text='Audit Log'
+                                        
+                                        
+                                  id=995:3795
+                                    name='p'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=995:3796
+                                        
+                                        
+                                        text='Review key actions performed in the Admin Panel.'
+                                        
+                                        
+                          id=995:3797
+                            name='section.tc2'
+                            tpl=EL-89825985 type=FRAME
+                            
+                              id=995:3798
+                                name='div'
+                                
+                                
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                
+                                
+                                
+                                  id=995:3799
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 type=FRAME
+                                    
+                                      id=995:3800
+                                        name='label'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=995:3801
+                                            
+                                            
+                                            text='Search Audit Log'
+                                            
+                                            
+                                      id=995:3802
+                                        name='div.srch'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=995:3803
+                                            name='input'
+                                            tpl=EL-47eb2fb3 type=FRAME
+                                            
+                                              id=995:3804
+                                                name='div#placeholder'
+                                                
+                                                
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                
+                                                  id=995:3805
+                                                    
+                                                    
+                                                    text='Search by Admin, action or context'
+                                                    
+                                                    
+                                              id=995:3806
+                                                name='div#text-field-container'
+                                                
+                                                
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                
+                                                  id=995:3807
+                                                    name='div#editing-view-port'
+                                                    tpl=EL-bf86a654 type=FRAME
+                                                  id=995:3808
+                                                    name='div#search-clear:margin'
+                                                    tpl=EL-e5aab63e type=FRAME
+                                          id=995:3809
+                                            name='Frame'
+                                            tpl=EL-ae553238 type=IMAGE-SVG
+                                  id=995:3812
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 type=FRAME
+                                    
+                                      id=995:3813
+                                        name='label'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=995:3814
+                                            
+                                            
+                                            text='Area'
+                                            
+                                            
+                                      id=995:3815
+                                        name='select#far'
+                                        tpl=EL-16ccc5eb type=FRAME
+                                        
+                                          id=995:3816
+                                            name='image'
+                                            tpl=EL-1b0fe9bb type=IMAGE-SVG
+                                          id=995:3818
+                                            name='div'
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=995:3819
+                                                
+                                                
+                                                text='All Areas'
+                                                
+                                                
+                                  id=995:3820
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 type=FRAME
+                                    
+                                      id=995:3821
+                                        name='label'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=995:3822
+                                            
+                                            
+                                            text='Admin'
+                                            
+                                            
+                                      id=995:3823
+                                        name='select#fad'
+                                        tpl=EL-16ccc5eb type=FRAME
+                                        
+                                          id=995:3824
+                                            name='image'
+                                            tpl=EL-1b0fe9bb type=IMAGE-SVG
+                                          id=995:3826
+                                            name='div'
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=995:3827
+                                                
+                                                
+                                                text='All Admins'
+                                                
+                                                
+                              id=995:3828
+                                name='p#res'
+                                tpl=EL-c825e244 type=FRAME
+                                
+                                  id=995:3829
+                                    
+                                    
+                                    text='10 audit events · Newest first'
+                                    
+                                    
+                                  id=995:3830
+                                    name='span.tag'
+                                    tpl=EL-ea7b03b4 type=FRAME
+                                    
+                                      id=995:3831
+                                        tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                              id=995:3832
+                                name='table'
+                                tpl=EL-62cf3512 type=FRAME
+                                
+                                  id=995:3833
+                                    name='tr'
+                                    tpl=EL-8a10e53c type=FRAME
+                                    
+                                      id=995:3834
+                                        name='th.c-t'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                        
+                                        
+                                        
+                                          id=995:3835
+                                            
+                                            
+                                            text='Date & Time'
+                                            
+                                            
+                                      id=995:3836
+                                        name='th.c-ad'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                        
+                                        
+                                        
+                                          id=995:3837
+                                            
+                                            
+                                            text='Admin'
+                                            
+                                            
+                                      id=995:3838
+                                        name='th.c-act'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                        
+                                        
+                                        
+                                          id=995:3839
+                                            
+                                            
+                                            text='Action'
+                                            
+                                            
+                                      id=995:3840
+                                        name='th.c-ar'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                        
+                                        
+                                        
+                                          id=995:3841
+                                            
+                                            
+                                            text='Area'
+                                            
+                                            
+                                      id=995:3842
+                                        name='th.c-cx'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        
+                                        
+                                        
+                                        
+                                          id=995:3843
+                                            
+                                            
+                                            text='Context'
+                                            
+                                            
+                                  id=995:3844
+                                    name='tbody'
+                                    tpl=EL-e9077466 type=FRAME
+                                    
+                                      id=995:3845
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3846
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3847
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3848
+                                                    tpl=EL-43869185 type=TEXT tpl_text='Today'
+                                              id=995:3849
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3850
+                                                    
+                                                    
+                                                    text='09:42'
+                                                    
+                                                    
+                                          id=995:3851
+                                            name='td.c-ad'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3852
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3853
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c type=FRAME
+                                                    
+                                                      id=995:3854
+                                                        tpl=EL-43af7896 type=TEXT tpl_text='SA'
+                                                  id=995:3855
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3856
+                                                        tpl=EL-d8404f02 type=TEXT tpl_text='Sample Admin'
+                                          id=995:3857
+                                            name='td.c-act'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3858
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3859
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3860
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3863
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3864
+                                                        tpl=EL-5c2aa727 type=TEXT tpl_text='Role permissions updated'
+                                          id=995:3865
+                                            name='td.c-ar'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3866
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3867
+                                                    tpl=EL-82ed9797 type=TEXT tpl_text='Roles & Permissions'
+                                          id=995:3868
+                                            name='td.c-cx'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3869
+                                                
+                                                
+                                                text='Operations'
+                                                
+                                                
+                                      id=995:3870
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3871
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3872
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3873
+                                                    tpl=EL-43869185 type=TEXT tpl_text='Today'
+                                              id=995:3874
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3875
+                                                    
+                                                    
+                                                    text='09:15'
+                                                    
+                                                    
+                                          id=995:3876
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:3877
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3878
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c type=FRAME
+                                                    
+                                                      id=995:3879
+                                                        tpl=EL-43af7896 type=TEXT tpl_text='SA'
+                                                  id=995:3880
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3881
+                                                        tpl=EL-d8404f02 type=TEXT tpl_text='Sample Admin'
+                                          id=995:3882
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:3883
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3884
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3885
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3888
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3889
+                                                        tpl=EL-746278af type=TEXT tpl_text='Admin account updated'
+                                          id=995:3890
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:3891
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3892
+                                                    tpl=EL-e0e071e1 type=TEXT tpl_text='Admin Users'
+                                          id=995:3893
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:3894
+                                                
+                                                
+                                                text='Demo Operations User'
+                                                
+                                                
+                                      id=995:3895
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3896
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3897
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3898
+                                                    tpl=EL-43869185 type=TEXT tpl_text='Today'
+                                              id=995:3899
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3900
+                                                    
+                                                    
+                                                    text='08:57'
+                                                    
+                                                    
+                                          id=995:3901
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:3902
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3903
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 type=FRAME
+                                                    
+                                                      id=995:3904
+                                                        tpl=EL-0317490e type=TEXT tpl_text='DA'
+                                                  id=995:3905
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3906
+                                                        tpl=EL-5a9f0a6e type=TEXT tpl_text='Demo Admin'
+                                          id=995:3907
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:3908
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3909
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3910
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3913
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3914
+                                                        tpl=EL-609ca6f9 type=TEXT tpl_text='Customer profile viewed'
+                                          id=995:3915
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:3916
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3917
+                                                    tpl=EL-f27a949d type=TEXT tpl_text='B2C Customers'
+                                          id=995:3918
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:3919
+                                                tpl=EL-f546562e type=TEXT tpl_text='Demo Customer'
+                                      id=995:3920
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3921
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3922
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3923
+                                                    tpl=EL-121b01dd type=TEXT tpl_text='Yesterday'
+                                              id=995:3924
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3925
+                                                    
+                                                    
+                                                    text='17:20'
+                                                    
+                                                    
+                                          id=995:3926
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:3927
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3928
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c type=FRAME
+                                                    
+                                                      id=995:3929
+                                                        tpl=EL-43af7896 type=TEXT tpl_text='SA'
+                                                  id=995:3930
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3931
+                                                        tpl=EL-d8404f02 type=TEXT tpl_text='Sample Admin'
+                                          id=995:3932
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:3933
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3934
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3935
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3937
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3938
+                                                        tpl=EL-ab2b1721 type=TEXT tpl_text='Admin account created'
+                                          id=995:3939
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:3940
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3941
+                                                    tpl=EL-e0e071e1 type=TEXT tpl_text='Admin Users'
+                                          id=995:3942
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:3943
+                                                
+                                                
+                                                text='Demo Content User'
+                                                
+                                                
+                                      id=995:3944
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3945
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3946
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3947
+                                                    tpl=EL-121b01dd type=TEXT tpl_text='Yesterday'
+                                              id=995:3948
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3949
+                                                    
+                                                    
+                                                    text='15:04'
+                                                    
+                                                    
+                                          id=995:3950
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:3951
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3952
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 type=FRAME
+                                                    
+                                                      id=995:3953
+                                                        tpl=EL-0317490e type=TEXT tpl_text='DA'
+                                                  id=995:3954
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3955
+                                                        tpl=EL-5a9f0a6e type=TEXT tpl_text='Demo Admin'
+                                          id=995:3956
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:3957
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3958
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3959
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3962
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3963
+                                                        
+                                                        
+                                                        text='Customer profile updated'
+                                                        
+                                                        
+                                          id=995:3964
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:3965
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3966
+                                                    tpl=EL-f27a949d type=TEXT tpl_text='B2C Customers'
+                                          id=995:3967
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:3968
+                                                tpl=EL-f546562e type=TEXT tpl_text='Demo Customer'
+                                      id=995:3969
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3970
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3971
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3972
+                                                    tpl=EL-121b01dd type=TEXT tpl_text='Yesterday'
+                                              id=995:3973
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3974
+                                                    
+                                                    
+                                                    text='11:36'
+                                                    
+                                                    
+                                          id=995:3975
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:3976
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:3977
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c type=FRAME
+                                                    
+                                                      id=995:3978
+                                                        tpl=EL-43af7896 type=TEXT tpl_text='SA'
+                                                  id=995:3979
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3980
+                                                        tpl=EL-d8404f02 type=TEXT tpl_text='Sample Admin'
+                                          id=995:3981
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:3982
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:3983
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:3984
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:3987
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:3988
+                                                        tpl=EL-609ca6f9 type=TEXT tpl_text='Customer profile viewed'
+                                          id=995:3989
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:3990
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:3991
+                                                    tpl=EL-f27a949d type=TEXT tpl_text='B2C Customers'
+                                          id=995:3992
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:3993
+                                                
+                                                
+                                                text='Sample Customer Two'
+                                                
+                                                
+                                      id=995:3994
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:3995
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:3996
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3997
+                                                    tpl=EL-3db4ca42 type=TEXT tpl_text='2 days ago'
+                                              id=995:3998
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:3999
+                                                    
+                                                    
+                                                    text='16:48'
+                                                    
+                                                    
+                                          id=995:4000
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:4001
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:4002
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 type=FRAME
+                                                    
+                                                      id=995:4003
+                                                        tpl=EL-0317490e type=TEXT tpl_text='DA'
+                                                  id=995:4004
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4005
+                                                        tpl=EL-5a9f0a6e type=TEXT tpl_text='Demo Admin'
+                                          id=995:4006
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:4007
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:4008
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:4009
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:4012
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4013
+                                                        tpl=EL-5c2aa727 type=TEXT tpl_text='Role permissions updated'
+                                          id=995:4014
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:4015
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:4016
+                                                    tpl=EL-82ed9797 type=TEXT tpl_text='Roles & Permissions'
+                                          id=995:4017
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:4018
+                                                
+                                                
+                                                text='Content'
+                                                
+                                                
+                                      id=995:4019
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:4020
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:4021
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4022
+                                                    tpl=EL-3db4ca42 type=TEXT tpl_text='2 days ago'
+                                              id=995:4023
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4024
+                                                    
+                                                    
+                                                    text='10:12'
+                                                    
+                                                    
+                                          id=995:4025
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:4026
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:4027
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 type=FRAME
+                                                    
+                                                      id=995:4028
+                                                        tpl=EL-0317490e type=TEXT tpl_text='DA'
+                                                  id=995:4029
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4030
+                                                        tpl=EL-5a9f0a6e type=TEXT tpl_text='Demo Admin'
+                                          id=995:4031
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:4032
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:4033
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:4034
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:4037
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4038
+                                                        tpl=EL-746278af type=TEXT tpl_text='Admin account updated'
+                                          id=995:4039
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:4040
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:4041
+                                                    tpl=EL-e0e071e1 type=TEXT tpl_text='Admin Users'
+                                          id=995:4042
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:4043
+                                                
+                                                
+                                                text='Demo Finance User'
+                                                
+                                                
+                                      id=995:4044
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=995:4045
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 type=FRAME
+                                            
+                                              id=995:4046
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4047
+                                                    tpl=EL-622300d3 type=TEXT tpl_text='3 days ago'
+                                              id=995:4048
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4049
+                                                    
+                                                    
+                                                    text='14:25'
+                                                    
+                                                    
+                                          id=995:4050
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 type=FRAME
+                                            
+                                              id=995:4051
+                                                name='div'
+                                                tpl=EL-12e2d7a9 type=FRAME
+                                                
+                                                  id=995:4052
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 type=FRAME
+                                                    
+                                                      id=995:4053
+                                                        tpl=EL-0317490e type=TEXT tpl_text='DA'
+                                                  id=995:4054
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4055
+                                                        tpl=EL-5a9f0a6e type=TEXT tpl_text='Demo Admin'
+                                          id=995:4056
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 type=FRAME
+                                            
+                                              id=995:4057
+                                                name='div.act'
+                                                tpl=EL-0d17f23d type=FRAME
+                                                
+                                                  id=995:4058
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a type=FRAME
+                                                    
+                                                      id=995:4059
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=995:4062
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 type=FRAME
+                                                    
+                                                      id=995:4063
+                                                        tpl=EL-609ca6f9 type=TEXT tpl_text='Customer profile viewed'
+                                          id=995:4064
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 type=FRAME
+                                            
+                                              id=995:4065
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:4066
+                                                    tpl=EL-f27a949d type=TEXT tpl_text='B2C Customers'
+                                          id=995:4067
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 type=FRAME
+                                            
+                                              id=995:4068
+                                                
+                                                
+                                                text='Google Demo Customer'
+                                                
+                                                
+                                      id=995:4069
+                                        name='tr'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                        
+                                          id=995:4070
+                                            name='td.c-t'
+                                            
+                                            
+                                            
+                                              id=995:4071
+                                                name='time'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4072
+                                                    tpl=EL-622300d3 type=TEXT tpl_text='3 days ago'
+                                              id=995:4073
+                                                name='span'
+                                                tpl=EL-e9077466 type=FRAME
+                                                
+                                                  id=995:4074
+                                                    
+                                                    
+                                                    text='09:03'
+                                                    
+                                                    
+                                          id=995:4075
+                                            name='div'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4076
+                                                name='span.pf-av'
+                                                tpl=EL-1a07318c type=FRAME
+                                                
+                                                  id=995:4077
+                                                    tpl=EL-43af7896 type=TEXT tpl_text='SA'
+                                              id=995:4078
+                                                name='span'
+                                                tpl=EL-2f9fe287 type=FRAME
+                                                
+                                                  id=995:4079
+                                                    tpl=EL-d8404f02 type=TEXT tpl_text='Sample Admin'
+                                          id=995:4080
+                                            name='div.act'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4081
+                                                name='span'
+                                                tpl=EL-6f56fe6a type=FRAME
+                                                
+                                                  id=995:4082
+                                                    name='Frame'
+                                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                              id=995:4084
+                                                name='b'
+                                                tpl=EL-2f9fe287 type=FRAME
+                                                
+                                                  id=995:4085
+                                                    tpl=EL-ab2b1721 type=TEXT tpl_text='Admin account created'
+                                          id=995:4086
+                                            name='td.c-ar'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4087
+                                                name='span'
+                                                tpl=EL-6803616e type=FRAME
+                                                
+                                                  id=995:4088
+                                                    tpl=EL-e0e071e1 type=TEXT tpl_text='Admin Users'
+                                          id=995:4089
+                                            name='td.c-cx'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4090
+                                                
+                                                
+                                                text='Demo Support User'
+                                                
+                                                
+                  id=995:4091
+                    name='footer.ft2'
+                    tpl=EL-a365c360 type=FRAME
+                    
+                      id=995:4092
+                        tpl=EL-64a79c70 type=TEXT tpl_text='© 2026 AeroWing. All rights reserved.'
+                  id=995:4093
+                    name='header'
+                    tpl=EL-c8d2d5b1 type=FRAME
+                    
+                      id=995:4094
+                        name='Breadcrumb:margin'
+                        
+                        
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=995:4095
+                            name='Breadcrumb'
+                            tpl=EL-235879b0 type=FRAME
+                            
+                              id=995:4096
+                                name='li'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=995:4097
+                                    tpl=EL-fdff9110 type=TEXT tpl_text='Admin Panel'
+                              id=995:4098
+                                name='li'
+                                tpl=EL-bbedda7b type=FRAME
+                                
+                                  id=995:4099
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text='/'
+                                  id=995:4100
+                                    
+                                    
+                                    text='Audit Log'
+                                    
+                                    
+                      id=995:4101
+                        name='div.tb-a'
+                        tpl=EL-235879b0 type=FRAME
+                        
+                          id=995:4102
+                            name='Notifications'
+                            tpl=EL-58e2a7b0 type=FRAME
+                            
+                              id=995:4103
+                                name='Frame'
+                                tpl=EL-d2f5d0a6 type=IMAGE-SVG
+                          id=995:4105
+                            name='button menu#pf-b'
+                            tpl=EL-0ccd4aea type=FRAME
+                            
+                              id=995:4106
+                                name='span.pf-av'
+                                tpl=EL-a8b2764a type=FRAME
+                                
+                                  id=995:4107
+                                    tpl=EL-5321e56d type=TEXT tpl_text='SA'
+                              id=995:4108
+                                name='span.pf-t'
+                                tpl=EL-6e7b525c type=FRAME
+                                
+                                  id=995:4109
+                                    name='b'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=995:4110
+                                        tpl=EL-2df750f6 type=TEXT tpl_text='Sample Admin'
+                                  id=995:4111
+                                    name='small#pf-role'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=995:4112
+                                        tpl=EL-a8ebef05 type=TEXT tpl_text='Super Admin'
+                              id=995:4113
+                                name='Frame'
+                                tpl=EL-d40fb4e5 type=IMAGE-SVG

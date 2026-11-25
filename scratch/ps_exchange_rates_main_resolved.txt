@@ -1,0 +1,275 @@
+      id=1015:7535
+        name='Platform Settings - Exchange Rates'
+        
+        
+          
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+        
+          id=1015:7530
+            name='Exchange Rates 1'
+            
+            
+              
+              
+                
+                
+              
+                
+            
+              
+                
+                
+                
+                
+                
+                  
+                  
+          id=1080:2554
+            name='Admin navigation'
+            tpl=EL-d4935436 type=FRAME
+            
+              id=1080:2555
+                name='div.sb-hd'
+                tpl=EL-19ed2d5b type=FRAME
+                
+                  id=1080:2556
+                    name='Aero Wing Admin Panel — Dashboard'
+                    tpl=EL-27a7f8c4 type=FRAME
+                    
+                      id=1080:2557
+                        name='AeroWing Admin — Dashboard'
+                        tpl=EL-280eabfe type=FRAME
+                        
+                          id=1080:2558
+                            name='AeroWing — Explore, Book, Travel'
+                            tpl=EL-966c7e52 type=FRAME
+                      id=1080:2559
+                        name='span.sb-lab'
+                        tpl=EL-4c261f7f type=FRAME
+                        
+                          id=1080:2560
+                            tpl=EL-a0b6cf5b type=TEXT tpl_text='Admin Panel'
+              id=1080:2561
+                name='Admin'
+                tpl=EL-0b230fa2 type=FRAME
+                
+                  id=1080:2562
+                    name='div.sb-g'
+                    tpl=EL-e9077466 type=FRAME
+                    
+                      id=1080:2563
+                        name='p#g-ov'
+                        tpl=EL-d8c5a118 type=FRAME
+                        
+                          id=1080:2564
+                            tpl=EL-ad79941c type=TEXT tpl_text='Overview'
+                      id=1080:2565
+                        name='a.sb-i'
+                        tpl=EL-7041e0b0 type=FRAME
+                        
+                          id=1080:2566
+                            name='Frame'
+                            tpl=EL-b1d338df type=IMAGE-SVG
+                          id=1080:2571
+                            name='span.sb-t'
+                            tpl=EL-2f9fe287 type=FRAME
+                            
+                              id=1080:2572
+                                tpl=EL-b9328c9b type=TEXT tpl_text='Dashboard'
+                  id=1080:2573
+                    name='div.sb-g'
+                    tpl=EL-301f98e1 type=FRAME
+                    
+                      id=1080:2574
+                        name='p#g-core'
+                        tpl=EL-d8c5a118 type=FRAME
+                        
+                          id=1080:2575
+                            tpl=EL-a5e6b4d2 type=TEXT tpl_text='Core Admin'
+                      id=1080:2576
+                        name='ul'
+                        tpl=EL-6e926975 type=FRAME
+                        
+                          id=1080:2577
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:2578
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:2580
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2581
+                                    tpl=EL-8cc0c44d type=TEXT tpl_text='B2C Customers'
+                          id=1080:2582
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:2583
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:2586
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2587
+                                    tpl=EL-c45ae915 type=TEXT tpl_text='Admin Users'
+                          id=1080:2588
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:2589
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:2592
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2593
+                                    tpl=EL-40ae2791 type=TEXT tpl_text='Roles & Permissions'
+                          id=1080:2594
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:2595
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:2600
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2601
+                                    tpl=EL-557136c9 type=TEXT tpl_text='Audit Log'
+                  id=1080:2602
+                    name='div.sb-g'
+                    tpl=EL-301f98e1 type=FRAME
+                    
+                      id=1080:2603
+                        name='p#g-mod'
+                        tpl=EL-d8c5a118 type=FRAME
+                        
+                          id=1080:2604
+                            tpl=EL-eff13b88 type=TEXT tpl_text='Platform Modules'
+                      id=1080:2605
+                        name='ul'
+                        tpl=EL-43323dcb type=FRAME
+                        
+                          id=1080:2606
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2607
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2609
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2610
+                                    tpl=EL-4074d9e1 type=TEXT tpl_text='Bookings'
+                          id=1080:2611
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2612
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2615
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2616
+                                    tpl=EL-618e9697 type=TEXT tpl_text='Agents'
+                          id=1080:2617
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2618
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2620
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2621
+                                    tpl=EL-d10a515e type=TEXT tpl_text='Suppliers'
+                          id=1080:2622
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2623
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2626
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2627
+                                    tpl=EL-970eec68 type=TEXT tpl_text='Pricing & Promotions'
+                          id=1080:2628
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2629
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2631
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2632
+                                    tpl=EL-344c29b0 type=TEXT tpl_text='Reviews'
+                          id=1080:2650
+                            name='a.sb-i'
+                            tpl=EL-703abc35 type=FRAME
+                            
+                              id=1080:2651
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2654
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2655
+                                    tpl=EL-2fd65db2 type=TEXT tpl_text='Reports'
+                          id=1080:2656
+                            name='a.sb-i'
+                            tpl=EL-5e380d8c type=FRAME
+                            
+                              id=1080:2657
+                                name='Frame'
+                                tpl=EL-f1890f3e type=IMAGE-SVG
+                              id=1080:2660
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2661
+                                    tpl=EL-09476c5f type=TEXT tpl_text='Platform Settings'
+              id=1080:2662
+                name='div.sb-ft'
+                tpl=EL-ab88c726 type=FRAME
+                
+                  id=1080:2663
+                    name='Collapse sidebar'
+                    tpl=EL-04eca728 type=FRAME
+                    
+                      id=1080:2664
+                        name='Frame'
+                        tpl=EL-b1d338df type=IMAGE-SVG
+                      id=1080:2667
+                        name='span#sb-col-l'
+                        tpl=EL-83bc679e type=FRAME
+                        
+                          id=1080:2668
+                            tpl=EL-1fd2da9e type=TEXT tpl_text='Collapse'

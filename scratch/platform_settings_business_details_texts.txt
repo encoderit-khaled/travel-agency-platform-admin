@@ -1,0 +1,51 @@
+Admin Panel
+Overview
+Dashboard
+Core Admin
+B2C Customers
+Admin Users
+Roles & Permissions
+Audit Log
+Platform Modules
+Bookings
+Agents
+Suppliers
+Pricing & Promotions
+Reviews
+Reports
+Platform Settings
+Collapse
+Platform Settings
+Platform Settings
+Manage core platform configuration.
+Settings
+Business Details
+Languages
+Currencies & Exchange\nRates
+Tax Defaults
+Default Cancellation\nPolicies
+Business Details
+Manage basic business information used by the platform.
+Edit Business Details
+Business Name
+Aero Wing
+Sample data
+Primary business name used in the platform configuration.
+Platform configuration
+These settings control shared platform configuration.
+Other settings
+Languages
+Manage platform languages.
+Currencies & Exchange Rates
+Manage supported currencies and conversion rates.
+Tax Defaults
+Manage default tax configuration.
+Default Cancellation Policies
+Manage default cancellation-policy configuration.
+© 2026 AeroWing. All rights reserved.
+Admin Panel
+/
+Platform Settings
+SA
+Sample Admin
+Super Admin

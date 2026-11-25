@@ -1,0 +1,203 @@
+        name: Platform Settings - Languages - Add Languages
+          [1009:6825]
+            name: Add Languages 1
+          [1080:2090]
+            name: Admin navigation
+            tmpl(EL-d4935436)
+              [1080:2091]
+                name: div.sb-hd
+                tmpl(EL-19ed2d5b)
+                  [1080:2092]
+                    name: Aero Wing Admin Panel — Dashboard
+                    tmpl(EL-27a7f8c4)
+                      [1080:2093]
+                        name: AeroWing Admin — Dashboard
+                        tmpl(EL-280eabfe)
+                          [1080:2094]
+                            name: AeroWing — Explore, Book, Travel
+                            tmpl(EL-966c7e52)
+                      [1080:2095]
+                        name: span.sb-lab
+                        tmpl(EL-4c261f7f)
+                          [1080:2096]
+                            tmpl(EL-a0b6cf5b) text="Admin Panel"
+              [1080:2097]
+                name: Admin
+                tmpl(EL-0b230fa2)
+                  [1080:2098]
+                    name: div.sb-g
+                    tmpl(EL-e9077466)
+                      [1080:2099]
+                        name: p#g-ov
+                        tmpl(EL-d8c5a118)
+                          [1080:2100]
+                            tmpl(EL-ad79941c) text="Overview"
+                      [1080:2101]
+                        name: a.sb-i
+                        tmpl(EL-7041e0b0)
+                          [1080:2102]
+                            name: Frame
+                            tmpl(EL-b1d338df)
+                          [1080:2107]
+                            name: span.sb-t
+                            tmpl(EL-2f9fe287)
+                              [1080:2108]
+                                tmpl(EL-b9328c9b) text="Dashboard"
+                  [1080:2109]
+                    name: div.sb-g
+                    tmpl(EL-301f98e1)
+                      [1080:2110]
+                        name: p#g-core
+                        tmpl(EL-d8c5a118)
+                          [1080:2111]
+                            tmpl(EL-a5e6b4d2) text="Core Admin"
+                      [1080:2112]
+                        name: ul
+                        tmpl(EL-6e926975)
+                          [1080:2113]
+                            name: a.sb-i
+                            tmpl(EL-7041e0b0)
+                              [1080:2114]
+                                name: Frame
+                                tmpl(EL-b1d338df)
+                              [1080:2116]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2117]
+                                    tmpl(EL-8cc0c44d) text="B2C Customers"
+                          [1080:2118]
+                            name: a.sb-i
+                            tmpl(EL-7041e0b0)
+                              [1080:2119]
+                                name: Frame
+                                tmpl(EL-b1d338df)
+                              [1080:2122]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2123]
+                                    tmpl(EL-c45ae915) text="Admin Users"
+                          [1080:2124]
+                            name: a.sb-i
+                            tmpl(EL-7041e0b0)
+                              [1080:2125]
+                                name: Frame
+                                tmpl(EL-b1d338df)
+                              [1080:2128]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2129]
+                                    tmpl(EL-40ae2791) text="Roles & Permissions"
+                          [1080:2130]
+                            name: a.sb-i
+                            tmpl(EL-7041e0b0)
+                              [1080:2131]
+                                name: Frame
+                                tmpl(EL-b1d338df)
+                              [1080:2136]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2137]
+                                    tmpl(EL-557136c9) text="Audit Log"
+                  [1080:2138]
+                    name: div.sb-g
+                    tmpl(EL-301f98e1)
+                      [1080:2139]
+                        name: p#g-mod
+                        tmpl(EL-d8c5a118)
+                          [1080:2140]
+                            tmpl(EL-eff13b88) text="Platform Modules"
+                      [1080:2141]
+                        name: ul
+                        tmpl(EL-43323dcb)
+                          [1080:2142]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2143]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2145]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2146]
+                                    tmpl(EL-4074d9e1) text="Bookings"
+                          [1080:2147]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2148]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2151]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2152]
+                                    tmpl(EL-618e9697) text="Agents"
+                          [1080:2153]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2154]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2156]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2157]
+                                    tmpl(EL-d10a515e) text="Suppliers"
+                          [1080:2158]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2159]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2162]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2163]
+                                    tmpl(EL-970eec68) text="Pricing & Promotions"
+                          [1080:2164]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2165]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2167]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2168]
+                                    tmpl(EL-344c29b0) text="Reviews"
+                          [1080:2186]
+                            name: a.sb-i
+                            tmpl(EL-703abc35)
+                              [1080:2187]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2190]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2191]
+                                    tmpl(EL-2fd65db2) text="Reports"
+                          [1080:2192]
+                            name: a.sb-i
+                            tmpl(EL-5e380d8c)
+                              [1080:2193]
+                                name: Frame
+                                tmpl(EL-f1890f3e)
+                              [1080:2196]
+                                name: span.sb-t
+                                tmpl(EL-2f9fe287)
+                                  [1080:2197]
+                                    tmpl(EL-09476c5f) text="Platform Settings"
+              [1080:2198]
+                name: div.sb-ft
+                tmpl(EL-ab88c726)
+                  [1080:2199]
+                    name: Collapse sidebar
+                    tmpl(EL-04eca728)
+                      [1080:2200]
+                        name: Frame
+                        tmpl(EL-b1d338df)
+                      [1080:2203]
+                        name: span#sb-col-l
+                        tmpl(EL-83bc679e)
+                          [1080:2204]
+                            tmpl(EL-1fd2da9e) text="Collapse"
+      [1009:6827]

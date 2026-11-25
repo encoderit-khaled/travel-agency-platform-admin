@@ -1,0 +1,2403 @@
+id: 1005:4738
+        name: Admin Reports - Sales
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 20530
+            y: 402
+          dimensions:
+            width: 1920
+        fills: White Catskill White (7:6)
+        children:
+          - id: 1005:4739
+            name: div
+            template: EL-d1ac142c
+            children:
+              - id: 1005:4740
+                name: Admin navigation
+                template: EL-b4d5d5d0
+                children:
+                  - id: 1005:5334
+                    name: div.sb-hd
+                    template: EL-19ed2d5b
+                    children:
+                      - id: 1005:5335
+                        name: Aero Wing Admin Panel — Dashboard
+                        template: EL-27a7f8c4
+                        children:
+                          - id: 1005:5336
+                            name: AeroWing Admin — Dashboard
+                            template: EL-280eabfe
+                            children:
+                              - id: 1005:5337
+                                name: AeroWing — Explore, Book, Travel
+                                template: EL-966c7e52
+                          - id: 1005:5338
+                            name: span.sb-lab
+                            template: EL-4c261f7f
+                            children:
+                              - id: 1005:5339
+                                template: EL-a0b6cf5b
+                  - id: 1005:4747
+                    name: Admin
+                    template: EL-0b230fa2
+                    children:
+                      - id: 1005:4748
+                        name: div.sb-g
+                        template: EL-e9077466
+                        children:
+                          - id: 1005:4749
+                            name: p#g-ov
+                            template: EL-d8c5a118
+                            children:
+                              - id: 1005:4750
+                                template: EL-ad79941c
+                          - id: 1005:4751
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1005:4752
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1005:4757
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1005:4758
+                                    template: EL-b9328c9b
+                      - id: 1005:4759
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 1005:4760
+                            name: p#g-core
+                            template: EL-d8c5a118
+                            children:
+                              - id: 1005:4761
+                                template: EL-a5e6b4d2
+                          - id: 1005:4762
+                            name: ul
+                            template: EL-6e926975
+                            children:
+                              - id: 1005:4763
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 1005:4764
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 1005:4766
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4767
+                                        template: EL-8cc0c44d
+                              - id: 1005:4768
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 1005:4769
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 1005:4772
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4773
+                                        template: EL-c45ae915
+                              - id: 1005:4774
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 1005:4775
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 1005:4778
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4779
+                                        template: EL-40ae2791
+                              - id: 1005:4780
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 1005:4781
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 1005:4786
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4787
+                                        template: EL-557136c9
+                      - id: 1005:4788
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 1005:4789
+                            name: p#g-mod
+                            template: EL-d8c5a118
+                            children:
+                              - id: 1005:4790
+                                template: EL-eff13b88
+                          - id: 1005:4791
+                            name: ul
+                            template: EL-43323dcb
+                            children:
+                              - id: 1005:4792
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4793
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4795
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4796
+                                        template: EL-4074d9e1
+                              - id: 1005:4797
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4798
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4801
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4802
+                                        template: EL-618e9697
+                              - id: 1005:4803
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4804
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4806
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4807
+                                        template: EL-d10a515e
+                              - id: 1005:4808
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4809
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4812
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4813
+                                        template: EL-970eec68
+                              - id: 1005:4814
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4815
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4817
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4818
+                                        template: EL-344c29b0
+                              - id: 1005:4836
+                                name: a.sb-i
+                                template: EL-5e380d8c
+                                children:
+                                  - id: 1005:4837
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4840
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4841
+                                        template: EL-2fd65db2
+                              - id: 1005:4842
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 1005:4843
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 1005:4846
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 1005:4847
+                                        template: EL-09476c5f
+                  - id: 1005:4848
+                    name: div.sb-ft
+                    template: EL-ab88c726
+                    children:
+                      - id: 1005:4849
+                        name: Collapse sidebar
+                        template: EL-04eca728
+                        children:
+                          - id: 1005:4850
+                            name: Frame
+                            template: EL-b1d338df
+                          - id: 1005:4853
+                            name: span#sb-col-l
+                            template: EL-83bc679e
+                            children:
+                              - id: 1005:4854
+                                template: EL-1fd2da9e
+              - id: 1005:4855
+                name: Main column
+                type: FRAME
+                layout:
+                  mode: none
+                  sizing:
+                    horizontal: fill
+                    vertical: fixed
+                  dimensions:
+                    height: 1975
+                children:
+                  - id: 1005:4856
+                    name: main
+                    template: EL-0af6044c
+                    children:
+                      - id: 1005:4857
+                        name: div#page
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          alignItems: stretch
+                          gap: 16px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 1005:4858
+                            name: div.ph2
+                            type: FRAME
+                            layout:
+                              mode: row
+                              alignSelf: stretch
+                              padding: 0px 0px 6px
+                              justifyContent: space-between
+                              alignItems: flex-end
+                              wrap: true
+                              gap: 12px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 1005:4859
+                                name: div
+                                template: EL-7c39d4fd
+                                children:
+                                  - id: 1005:4860
+                                    name: span
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 1005:4861
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Reports
+                                        textStyle: style_26b1bc04
+                                        fills: Science Blue
+                                  - id: 1005:4862
+                                    name: h1
+                                    template: EL-681edddb
+                                    children:
+                                      - id: 1005:4863
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Reports
+                                        textStyle: style_47de102a
+                                        fills: Midnight Blue
+                                  - id: 1005:4864
+                                    name: p
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 1005:4865
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Review platform sales, bookings, payments and commissions.
+                                        textStyle: style_be48c804
+                                        fills: Comet
+                              - id: 1005:4866
+                                name: div.ph2-a
+                                template: EL-09b753fa
+                                children:
+                                  - id: 1005:4867
+                                    name: button#exp
+                                    template: EL-817d7bc9
+                                    children:
+                                      - id: 1005:4868
+                                        name: Frame
+                                        template: EL-f652840d
+                                      - id: 1005:4870
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Export CSV
+                                        textStyle: style_08f7abaf
+                                        fills: White
+                          - id: 1005:4871
+                            name: div.rtw
+                            template: EL-e446672f
+                            children:
+                              - id: 1005:4872
+                                name: Report type
+                                template: EL-3c93974b
+                                children:
+                                  - id: 1005:4873
+                                    name: button#tab-sales
+                                    type: FRAME
+                                    layout:
+                                      mode: none
+                                      sizing:
+                                        horizontal: fixed
+                                        vertical: fixed
+                                      dimensions:
+                                        width: 97.33
+                                        height: 48
+                                    borderRadius: 10px 10px 0px 0px
+                                    children:
+                                      - id: 1005:4874
+                                        name: Frame
+                                        template: EL-5b347ece
+                                      - id: 1005:4877
+                                        type: TEXT
+                                        layout:
+                                          mode: none
+                                          sizing: {}
+                                          locationRelativeToParent:
+                                            x: 41.16
+                                            y: 11.75
+                                          dimensions:
+                                            width: 41.19
+                                            height: 23
+                                        text: Sales
+                                        textStyle: style_9f98af39
+                                        fills: Midnight Blue
+                                      - id: 1005:4878
+                                        name: '::after'
+                                        type: RECTANGLE
+                                        layout:
+                                          mode: none
+                                          sizing: {}
+                                          locationRelativeToParent:
+                                            x: 10
+                                            y: 46
+                                          dimensions:
+                                            width: 77.33
+                                            height: 3
+                                        fills: Midnight Blue
+                                        borderRadius: 3px 3px 0px 0px
+                                  - id: 1005:4879
+                                    name: button#tab-bookings
+                                    type: FRAME
+                                    layout:
+                                      mode: none
+                                      sizing:
+                                        horizontal: fixed
+                                        vertical: fixed
+                                      dimensions:
+                                        width: 126.22
+                                        height: 48
+                                    borderRadius: 10px 10px 0px 0px
+                                    children:
+                                      - id: 1005:4880
+                                        name: Frame
+                                        template: EL-5b347ece
+                                      - id: 1005:4882
+                                        type: TEXT
+                                        layout:
+                                          mode: none
+                                          sizing: {}
+                                          locationRelativeToParent:
+                                            x: 42.11
+                                            y: 11.75
+                                          dimensions:
+                                            width: 68.11
+                                            height: 23
+                                        text: Bookings
+                                        textStyle: style_012ce37b
+                                        fills: Comet
+                                  - id: 1005:4883
+                                    name: button#tab-payments
+                                    type: FRAME
+                                    layout:
+                                      mode: none
+                                      sizing:
+                                        horizontal: fixed
+                                        vertical: fixed
+                                      dimensions:
+                                        width: 128.48
+                                        height: 48
+                                    borderRadius: 10px 10px 0px 0px
+                                    children:
+                                      - id: 1005:4884
+                                        name: Frame
+                                        template: EL-5b347ece
+                                      - id: 1005:4887
+                                        type: TEXT
+                                        layout:
+                                          mode: none
+                                          sizing: {}
+                                          locationRelativeToParent:
+                                            x: 40.74
+                                            y: 11.75
+                                          dimensions:
+                                            width: 73.18
+                                            height: 23
+                                        text: Payments
+                                        textStyle: style_012ce37b
+                                        fills: Comet
+                                  - id: 1005:4888
+                                    name: button#tab-commissions
+                                    type: FRAME
+                                    layout:
+                                      mode: none
+                                      sizing:
+                                        horizontal: fixed
+                                        vertical: fixed
+                                      dimensions:
+                                        width: 156.45
+                                        height: 48
+                                    borderRadius: 10px 10px 0px 0px
+                                    children:
+                                      - id: 1005:4889
+                                        name: Frame
+                                        template: EL-5b347ece
+                                      - id: 1005:4893
+                                        type: TEXT
+                                        layout:
+                                          mode: none
+                                          sizing: {}
+                                          locationRelativeToParent:
+                                            x: 41.72
+                                            y: 11.75
+                                          dimensions:
+                                            width: 99.15
+                                            height: 23
+                                        text: Commissions
+                                        textStyle: style_012ce37b
+                                        fills: Comet
+                          - id: 1005:4894
+                            name: Report filters
+                            template: EL-89825985
+                            children:
+                              - id: 1005:4895
+                                name: div.rf-g
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  alignSelf: stretch
+                                  padding: 16px 18px 6px
+                                  justifyContent: center
+                                  gap: 12px
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                children:
+                                  - id: 1005:4896
+                                    name: div.fld
+                                    template: EL-b45a9547
+                                    children:
+                                      - id: 1005:4897
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:4898
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: From
+                                            textStyle: style_857f4816
+                                            fills: Mirage
+                                      - id: 1005:4899
+                                        name: input#f-from
+                                        template: EL-ecada7e8
+                                        children:
+                                          - id: 1005:4900
+                                            name: div
+                                            type: FRAME
+                                            layout:
+                                              mode: row
+                                              alignSelf: stretch
+                                              alignItems: center
+                                              gap: '-5.684341886080802e-14px'
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 1005:4901
+                                                name: div#date-time-edit
+                                                template: EL-f676945a
+                                                children:
+                                                  - id: 1005:4902
+                                                    name: div
+                                                    template: EL-9a194f76
+                                                    children:
+                                                      - id: 1005:4903
+                                                        template: EL-e1550df3
+                                                      - id: 1005:4904
+                                                        template: EL-1eb29d66
+                                                      - id: 1005:4905
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: '01'
+                                                        textStyle: style_e567879e
+                                                        fills: Mirage
+                                                      - id: 1005:4906
+                                                        template: EL-1eb29d66
+                                                      - id: 1005:4907
+                                                        template: EL-1a800f45
+                                              - id: 1005:4908
+                                                name: div menu#picker
+                                                template: EL-7051fbfc
+                                                children:
+                                                  - id: 1005:4909
+                                                    name: image
+                                                    template: EL-8eaefd82
+                                  - id: 1005:4912
+                                    name: div.fld
+                                    template: EL-b45a9547
+                                    children:
+                                      - id: 1005:4913
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:4914
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: To
+                                            textStyle: style_857f4816
+                                            fills: Mirage
+                                      - id: 1005:4915
+                                        name: input#f-to
+                                        template: EL-ecada7e8
+                                        children:
+                                          - id: 1005:4916
+                                            name: div
+                                            type: FRAME
+                                            layout:
+                                              mode: row
+                                              alignSelf: stretch
+                                              alignItems: center
+                                              gap: '-0.009999999776482582px'
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 1005:4917
+                                                name: div#date-time-edit
+                                                template: EL-f676945a
+                                                children:
+                                                  - id: 1005:4918
+                                                    name: div
+                                                    template: EL-9a194f76
+                                                    children:
+                                                      - id: 1005:4919
+                                                        template: EL-e1550df3
+                                                      - id: 1005:4920
+                                                        template: EL-1eb29d66
+                                                      - id: 1005:4921
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: '30'
+                                                        textStyle: style_e567879e
+                                                        fills: Mirage
+                                                      - id: 1005:4922
+                                                        template: EL-1eb29d66
+                                                      - id: 1005:4923
+                                                        template: EL-1a800f45
+                                              - id: 1005:4924
+                                                name: div menu#picker
+                                                template: EL-7051fbfc
+                                                children:
+                                                  - id: 1005:4925
+                                                    name: image
+                                                    template: EL-8eaefd82
+                                  - id: 1005:4928
+                                    name: div.fld
+                                    template: EL-b45a9547
+                                    children:
+                                      - id: 1005:4929
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:4930
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: Service
+                                            textStyle: style_857f4816
+                                            fills: Mirage
+                                      - id: 1005:4931
+                                        name: select#f-svc
+                                        template: EL-16ccc5eb
+                                        children:
+                                          - id: 1005:4932
+                                            name: image
+                                            template: EL-85a92002
+                                          - id: 1005:4934
+                                            name: div
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 1005:4935
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: All Services
+                                                textStyle: style_e567879e
+                                                fills: Mirage
+                                  - id: 1005:4936
+                                    name: div.fld
+                                    template: EL-b45a9547
+                                    children:
+                                      - id: 1005:4937
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:4938
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: Supplier
+                                            textStyle: style_857f4816
+                                            fills: Mirage
+                                      - id: 1005:4939
+                                        name: select#f-sup
+                                        template: EL-16ccc5eb
+                                        children:
+                                          - id: 1005:4940
+                                            name: image
+                                            template: EL-85a92002
+                                          - id: 1005:4942
+                                            name: div
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 1005:4943
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: All Suppliers
+                                                textStyle: style_e567879e
+                                                fills: Mirage
+                                  - id: 1005:4944
+                                    name: div.fld
+                                    template: EL-b45a9547
+                                    children:
+                                      - id: 1005:4945
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:4946
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: Channel
+                                            textStyle: style_857f4816
+                                            fills: Mirage
+                                      - id: 1005:4947
+                                        name: select#f-ch
+                                        template: EL-16ccc5eb
+                                        children:
+                                          - id: 1005:4948
+                                            name: image
+                                            template: EL-85a92002
+                                          - id: 1005:4950
+                                            name: div
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 1005:4951
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: All Channels
+                                                textStyle: style_e567879e
+                                                fills: Mirage
+                              - id: 1005:4952
+                                name: div.rf-f
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  alignSelf: stretch
+                                  padding: 10px 18px 16px
+                                  justifyContent: space-between
+                                  alignItems: center
+                                  wrap: true
+                                  gap: 10px
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                children:
+                                  - id: 1005:4953
+                                    name: p#fsum
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      alignItems: center
+                                      wrap: true
+                                      gap: 6px 8px
+                                      sizing:
+                                        horizontal: hug
+                                        vertical: hug
+                                    children:
+                                      - id: 1005:4954
+                                        name: span
+                                        template: EL-2f9fe287
+                                        children:
+                                          - id: 1005:4955
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: Report period
+                                            textStyle: style_e6a95020
+                                            fills: Comet
+                                      - id: 1005:4956
+                                        name: span.fch
+                                        template: EL-6803616e
+                                        children:
+                                          - id: 1005:4957
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: 1 Sep 2026 – 30 Sep 2026
+                                            textStyle: style_e0b4c12d
+                                            fills: Midnight Blue
+                                      - id: 1005:4958
+                                        name: span.fch
+                                        template: EL-6803616e
+                                        children:
+                                          - id: 1005:4959
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: All Services
+                                            textStyle: style_e0b4c12d
+                                            fills: Midnight Blue
+                                      - id: 1005:4960
+                                        name: span.fch
+                                        template: EL-6803616e
+                                        children:
+                                          - id: 1005:4961
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: All Suppliers
+                                            textStyle: style_e0b4c12d
+                                            fills: Midnight Blue
+                                      - id: 1005:4962
+                                        name: span.fch
+                                        template: EL-6803616e
+                                        children:
+                                          - id: 1005:4963
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: All Channels
+                                            textStyle: style_e0b4c12d
+                                            fills: Midnight Blue
+                                  - id: 1005:4964
+                                    name: button#apply
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      padding: 9.630000114440918px 18px 10.369999885559082px
+                                      justifyContent: center
+                                      alignItems: center
+                                      sizing:
+                                        horizontal: hug
+                                        vertical: hug
+                                    fills: White
+                                    strokes: Heather
+                                    strokeWeight: 1px
+                                    borderRadius: 12px
+                                    children:
+                                      - id: 1005:4965
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Apply Filters
+                                        textStyle: style_08f7abaf
+                                        fills: Midnight Blue
+                          - id: 1005:4966
+                            name: div#panel
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignSelf: stretch
+                              padding: 4px 0px 0px
+                              alignItems: stretch
+                              gap: 20px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 1005:4967
+                                name: div
+                                template: EL-bff1719b
+                                children:
+                                  - id: 1005:4968
+                                    name: div
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignItems: stretch
+                                      gap: 16px
+                                      sizing:
+                                        horizontal: fixed
+                                        vertical: hug
+                                      dimensions:
+                                        width: 300
+                                    children:
+                                      - id: 1005:4969
+                                        name: div.kpi
+                                        template: EL-4431dcc6
+                                        children:
+                                          - id: 1005:4970
+                                            name: div.kpi-t
+                                            template: EL-bb582553
+                                            children:
+                                              - id: 1005:4971
+                                                name: span.kpi-ic
+                                                template: EL-46f55cb2
+                                                children:
+                                                  - id: 1005:4972
+                                                    name: Frame
+                                                    template: EL-a73b2a19
+                                              - id: 1005:4974
+                                                name: span.tag
+                                                template: EL-ea7b03b4
+                                                children:
+                                                  - id: 1005:4975
+                                                    template: EL-27f9f2b6
+                                          - id: 1005:4976
+                                            name: div
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 1005:4977
+                                                name: p.kpi-l
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 1005:4978
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Booking Count
+                                                    textStyle: style_94747b76
+                                                    fills: Comet
+                                              - id: 1005:4979
+                                                name: p.kpi-v
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 1005:4980
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: '16'
+                                                    textStyle: style_9bf557fd
+                                                    fills: Mirage
+                                          - id: 1005:4981
+                                            name: '::after'
+                                            template: EL-dbc05c97
+                                      - id: 1005:4982
+                                        name: div.kpi
+                                        template: EL-4431dcc6
+                                        children:
+                                          - id: 1005:4983
+                                            name: div.kpi-t
+                                            template: EL-bb582553
+                                            children:
+                                              - id: 1005:4984
+                                                name: span.kpi-ic
+                                                template: EL-aef92fc1
+                                                children:
+                                                  - id: 1005:4985
+                                                    name: Frame
+                                                    template: EL-a73b2a19
+                                              - id: 1005:4988
+                                                name: span.tag
+                                                template: EL-ea7b03b4
+                                                children:
+                                                  - id: 1005:4989
+                                                    template: EL-27f9f2b6
+                                          - id: 1005:4990
+                                            name: div
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 1005:4991
+                                                name: p.kpi-l
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 1005:4992
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Sales Amount
+                                                    textStyle: style_94747b76
+                                                    fills: Comet
+                                              - id: 1005:4993
+                                                name: p.kpi-v
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 1005:4994
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: 5,155.00
+                                                    textStyle: style_9bf557fd
+                                                    fills: Mirage
+                                              - id: 1005:4995
+                                                name: p.kpi-n
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 1005:4996
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Sample amount
+                                                    textStyle: style_8f1384da
+                                                    fills: Comet
+                                          - id: 1005:4997
+                                            name: '::after'
+                                            template: EL-dbc05c97
+                                  - id: 1005:4998
+                                    name: section#w-ch
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      padding: 20px 22px
+                                      alignItems: stretch
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    fills: White
+                                    strokes: Mystic
+                                    strokeWeight: 1px
+                                    borderRadius: 18px
+                                    children:
+                                      - id: 1005:4999
+                                        name: div.wd-h:margin
+                                        template: EL-f8534a1a
+                                        children:
+                                          - id: 1005:5000
+                                            name: div.wd-h
+                                            template: EL-c319309c
+                                            children:
+                                              - id: 1005:5001
+                                                name: div
+                                                template: EL-bfbba51a
+                                                children:
+                                                  - id: 1005:5002
+                                                    name: h2#ch-h
+                                                    template: EL-dfdf56f9
+                                                    children:
+                                                      - id: 1005:5003
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: Sales by Service
+                                                        textStyle: style_aefbca38
+                                                        fills: Midnight Blue
+                                                  - id: 1005:5004
+                                                    name: p
+                                                    template: EL-dfdf56f9
+                                                    children:
+                                                      - id: 1005:5005
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: Sales Amount per service for the selected filters.
+                                                        textStyle: style_f3f7ae19
+                                                        fills: Comet
+                                              - id: 1005:5006
+                                                name: span.tag
+                                                template: EL-ea7b03b4
+                                                children:
+                                                  - id: 1005:5007
+                                                    template: EL-27f9f2b6
+                                      - id: 1005:5008
+                                        name: Sales by Service values
+                                        template: EL-1519dabc
+                                        children:
+                                          - id: 1005:5009
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5010
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5011
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Flights
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5012
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5014
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5015
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 1,575.00
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                                  - id: 1005:5016
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5017
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: 4 bookings
+                                                        textStyle: style_b07d89fc
+                                                        fills: Comet
+                                          - id: 1005:5018
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5019
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5020
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Hotels
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5021
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5023
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5024
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '870.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                                  - id: 1005:5025
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5026
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: 3 bookings
+                                                        textStyle: style_b07d89fc
+                                                        fills: Comet
+                                          - id: 1005:5027
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5028
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5029
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Travel Packages
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5030
+                                                name: span
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  justifyContent: center
+                                                  alignItems: stretch
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: fixed
+                                                  dimensions:
+                                                    width: 992
+                                                    height: 12
+                                                fills: Catskill White
+                                                borderRadius: 999px
+                                                children:
+                                                  - id: 1005:5031
+                                                    name: span.svc
+                                                    type: RECTANGLE
+                                                    layout: layout_617da2ef
+                                                    fills: Science Blue
+                                                    borderRadius: 999px
+                                              - id: 1005:5032
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5033
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 2,230.00
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                                  - id: 1005:5034
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5035
+                                                        template: EL-e85b90bc
+                                          - id: 1005:5036
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5037
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5038
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Activities
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5039
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5041
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5042
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '180.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                                  - id: 1005:5043
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5044
+                                                        template: EL-e85b90bc
+                                          - id: 1005:5045
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5046
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5047
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Car Rental
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5048
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5050
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5051
+                                                    template: EL-64e3aa5f
+                                                  - id: 1005:5052
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5053
+                                                        template: EL-b40c7e4c
+                                          - id: 1005:5054
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5055
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5056
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: eSIM
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5057
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5059
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5060
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '55.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                                  - id: 1005:5061
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5062
+                                                        template: EL-e85b90bc
+                                          - id: 1005:5063
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5064
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5065
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Bus / Train
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5066
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5068
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5069
+                                                    template: EL-e56ca4b2
+                                                  - id: 1005:5070
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5071
+                                                        template: EL-b40c7e4c
+                                          - id: 1005:5072
+                                            name: li
+                                            template: EL-279bfa35
+                                            children:
+                                              - id: 1005:5073
+                                                name: span
+                                                template: EL-fb54cfa0
+                                                children:
+                                                  - id: 1005:5074
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Travel Insurance
+                                                    textStyle: style_c967ff2b
+                                                    fills: Mirage
+                                              - id: 1005:5075
+                                                name: span
+                                                template: EL-ffbfdf46
+                                              - id: 1005:5077
+                                                name: span
+                                                template: EL-f0b6ad64
+                                                children:
+                                                  - id: 1005:5078
+                                                    template: EL-edefcf7a
+                                                  - id: 1005:5079
+                                                    name: small
+                                                    template: EL-8432426e
+                                                    children:
+                                                      - id: 1005:5080
+                                                        template: EL-b40c7e4c
+                              - id: 1005:5081
+                                name: section.tc2
+                                type: FRAME
+                                layout: layout_222d185b
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                children:
+                                  - id: 1005:5082
+                                    name: div.wd-h
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      alignSelf: stretch
+                                      padding: 16px 18px 0px
+                                      justifyContent: space-between
+                                      wrap: true
+                                      gap: 10px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    children:
+                                      - id: 1005:5083
+                                        name: div
+                                        template: EL-bfbba51a
+                                        children:
+                                          - id: 1005:5084
+                                            name: h2#tb-h
+                                            template: EL-dfdf56f9
+                                            children:
+                                              - id: 1005:5085
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Sales Report
+                                                textStyle: style_aefbca38
+                                                fills: Midnight Blue
+                                          - id: 1005:5086
+                                            name: p
+                                            template: EL-dfdf56f9
+                                            children:
+                                              - id: 1005:5087
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: 15 rows · grouped by date, service, supplier and channel
+                                                textStyle: style_f3f7ae19
+                                                fills: Comet
+                                      - id: 1005:5088
+                                        name: span.tag
+                                        template: EL-ea7b03b4
+                                        children:
+                                          - id: 1005:5089
+                                            template: EL-27f9f2b6
+                                  - id: 1005:5090
+                                    name: table
+                                    template: EL-e9077466
+                                    children:
+                                      - id: 1005:5091
+                                        name: tr
+                                        template: EL-8a10e53c
+                                        children:
+                                          - id: 1005:5092
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 221.97
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5093
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Date
+                                                textStyle: style_16201471
+                                                fills: Comet
+                                          - id: 1005:5094
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 278.59
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5095
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Service
+                                                textStyle: style_16201471
+                                                fills: Comet
+                                          - id: 1005:5096
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 275.25
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5097
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Supplier
+                                                textStyle: style_16201471
+                                                fills: Comet
+                                          - id: 1005:5098
+                                            name: th
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 288.31
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5099
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Channel
+                                                textStyle: style_16201471
+                                                fills: Comet
+                                          - id: 1005:5100
+                                            name: th.num
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 274.42
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5101
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Booking Count
+                                                textStyle: style_749124bd
+                                                fills: Comet
+                                          - id: 1005:5102
+                                            name: th.num
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 11.5px 18px 11.25px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 259.45
+                                            fills: Catskill White (7:976)
+                                            strokes: Athens Gray
+                                            strokeWeight: 0px 0px 1px
+                                            children:
+                                              - id: 1005:5103
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Sales Amount
+                                                textStyle: style_749124bd
+                                                fills: Comet
+                                      - id: 1005:5104
+                                        name: tbody
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 1005:5105
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5106
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5107
+                                                    template: EL-6dd35536
+                                              - id: 1005:5108
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5109
+                                                    template: EL-fad1cc47
+                                              - id: 1005:5110
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5111
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5112
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5113
+                                                    template: EL-6890b037
+                                              - id: 1005:5114
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5115
+                                                    template: EL-00cd7806
+                                              - id: 1005:5116
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5117
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '420.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5118
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5119
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5120
+                                                    template: EL-6dd35536
+                                              - id: 1005:5121
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5122
+                                                    template: EL-eb0957da
+                                              - id: 1005:5123
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5124
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5125
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5126
+                                                    template: EL-f5d49cf6
+                                              - id: 1005:5127
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5128
+                                                    template: EL-00cd7806
+                                              - id: 1005:5129
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5130
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '310.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5131
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5132
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5133
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 3 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5134
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5135
+                                                    template: EL-6481cf21
+                                              - id: 1005:5136
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5137
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5138
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5139
+                                                    template: EL-0ce3f6ed
+                                              - id: 1005:5140
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5141
+                                                    template: EL-00cd7806
+                                              - id: 1005:5142
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5143
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 1,250.00
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5144
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5145
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5146
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 5 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5147
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5148
+                                                    template: EL-662bdc1c
+                                              - id: 1005:5149
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5150
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5151
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5152
+                                                    template: EL-6890b037
+                                              - id: 1005:5153
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5154
+                                                    template: EL-00cd7806
+                                              - id: 1005:5155
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5156
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '85.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5157
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5158
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5159
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 6 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5160
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5161
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Car Rental
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5162
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5163
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5164
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5165
+                                                    template: EL-f5d49cf6
+                                              - id: 1005:5166
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5167
+                                                    template: EL-00cd7806
+                                              - id: 1005:5168
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5169
+                                                    template: EL-64e3aa5f
+                                          - id: 1005:5170
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5171
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5172
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 8 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5173
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5174
+                                                    template: EL-a0f0034e
+                                              - id: 1005:5175
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5176
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5177
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5178
+                                                    template: EL-6890b037
+                                              - id: 1005:5179
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5180
+                                                    template: EL-00cd7806
+                                              - id: 1005:5181
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5182
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '25.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5183
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5184
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5185
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 9 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5186
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5187
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Bus / Train
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5188
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5189
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5190
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5191
+                                                    template: EL-0ce3f6ed
+                                              - id: 1005:5192
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5193
+                                                    template: EL-00cd7806
+                                              - id: 1005:5194
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5195
+                                                    template: EL-e56ca4b2
+                                          - id: 1005:5196
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5197
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5198
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 10 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5199
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5200
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Travel Insurance
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5201
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5202
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5203
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5204
+                                                    template: EL-f5d49cf6
+                                              - id: 1005:5205
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5206
+                                                    template: EL-00cd7806
+                                              - id: 1005:5207
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5208
+                                                    template: EL-edefcf7a
+                                          - id: 1005:5209
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5210
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5211
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 12 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5212
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5213
+                                                    template: EL-fad1cc47
+                                              - id: 1005:5214
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5215
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5216
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5217
+                                                    template: EL-0ce3f6ed
+                                              - id: 1005:5218
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5219
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '2'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                              - id: 1005:5220
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5221
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '745.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5222
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5223
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5224
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 15 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5225
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5226
+                                                    template: EL-eb0957da
+                                              - id: 1005:5227
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5228
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5229
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5230
+                                                    template: EL-6890b037
+                                              - id: 1005:5231
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5232
+                                                    template: EL-00cd7806
+                                              - id: 1005:5233
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5234
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '270.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5235
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5236
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5237
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 17 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5238
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5239
+                                                    template: EL-eb0957da
+                                              - id: 1005:5240
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5241
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5242
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5243
+                                                    template: EL-0ce3f6ed
+                                              - id: 1005:5244
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5245
+                                                    template: EL-00cd7806
+                                              - id: 1005:5246
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5247
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '290.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5248
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5249
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5250
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 19 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5251
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5252
+                                                    template: EL-fad1cc47
+                                              - id: 1005:5253
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5254
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5255
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5256
+                                                    template: EL-f5d49cf6
+                                              - id: 1005:5257
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5258
+                                                    template: EL-00cd7806
+                                              - id: 1005:5259
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5260
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '410.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5261
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5262
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5263
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 22 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5264
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5265
+                                                    template: EL-662bdc1c
+                                              - id: 1005:5266
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5267
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5268
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5269
+                                                    template: EL-0ce3f6ed
+                                              - id: 1005:5270
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5271
+                                                    template: EL-00cd7806
+                                              - id: 1005:5272
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5273
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '95.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5274
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5275
+                                                name: td.c-d
+                                                template: EL-36a130be
+                                                children:
+                                                  - id: 1005:5276
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 24 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5277
+                                                name: td.c-s
+                                                template: EL-5055dfb9
+                                                children:
+                                                  - id: 1005:5278
+                                                    template: EL-a0f0034e
+                                              - id: 1005:5279
+                                                name: td.c-su
+                                                template: EL-ba6a5fc4
+                                                children:
+                                                  - id: 1005:5280
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5281
+                                                name: td.c-ch
+                                                template: EL-a1ddcd63
+                                                children:
+                                                  - id: 1005:5282
+                                                    template: EL-f5d49cf6
+                                              - id: 1005:5283
+                                                name: td.num
+                                                template: EL-0039d9eb
+                                                children:
+                                                  - id: 1005:5284
+                                                    template: EL-00cd7806
+                                              - id: 1005:5285
+                                                name: td.num
+                                                template: EL-34883486
+                                                children:
+                                                  - id: 1005:5286
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '30.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                          - id: 1005:5287
+                                            name: tr
+                                            template: EL-8a10e53c
+                                            children:
+                                              - id: 1005:5288
+                                                name: td.c-d
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 221.97
+                                                children:
+                                                  - id: 1005:5289
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: 27 Sep 2026
+                                                    textStyle: style_39e93c2c
+                                                    fills: Mirage
+                                              - id: 1005:5290
+                                                name: td.c-s
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 278.59
+                                                children:
+                                                  - id: 1005:5291
+                                                    template: EL-6481cf21
+                                              - id: 1005:5292
+                                                name: td.c-su
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 275.25
+                                                children:
+                                                  - id: 1005:5293
+                                                    template: EL-89a27cc5
+                                              - id: 1005:5294
+                                                name: td.c-ch
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 288.31
+                                                children:
+                                                  - id: 1005:5295
+                                                    template: EL-6890b037
+                                              - id: 1005:5296
+                                                name: td.num
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  alignItems: flex-end
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 274.42
+                                                children:
+                                                  - id: 1005:5297
+                                                    template: EL-00cd7806
+                                              - id: 1005:5298
+                                                name: td.num
+                                                type: FRAME
+                                                layout:
+                                                  mode: column
+                                                  padding: 14px 18px 15px
+                                                  alignItems: flex-end
+                                                  sizing:
+                                                    horizontal: fixed
+                                                    vertical: hug
+                                                  dimensions:
+                                                    width: 259.45
+                                                children:
+                                                  - id: 1005:5299
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '980.00'
+                                                    textStyle: style_3a4967d7
+                                                    fills: Mirage
+                                      - id: 1005:5300
+                                        name: tr
+                                        template: EL-8a10e53c
+                                        children:
+                                          - id: 1005:5301
+                                            name: td
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 14px 18px
+                                              sizing:
+                                                horizontal: fixed
+                                                vertical: hug
+                                              dimensions:
+                                                width: 1064.13
+                                            fills: Catskill White (7:976)
+                                            strokes: Catskill White (856:2825)
+                                            strokeWeight: 1px 0px 0px
+                                            children:
+                                              - id: 1005:5302
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Total
+                                                textStyle: style_cf58f31f
+                                                fills: Midnight Blue
+                                          - id: 1005:5303
+                                            name: td.num
+                                            type: FRAME
+                                            layout: layout_7043efbf
+                                            fills: Catskill White (7:976)
+                                            strokes: Catskill White (856:2825)
+                                            strokeWeight: 1px 0px 0px
+                                            children:
+                                              - id: 1005:5304
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '16'
+                                                textStyle: style_3a4967d7
+                                                fills: Midnight Blue
+                                          - id: 1005:5305
+                                            name: td.num
+                                            type: FRAME
+                                            layout: layout_502e4940
+                                            fills: Catskill White (7:976)
+                                            strokes: Catskill White (856:2825)
+                                            strokeWeight: 1px 0px 0px
+                                            children:
+                                              - id: 1005:5306
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: 5,155.00
+                                                textStyle: style_3a4967d7
+                                                fills: Midnight Blue
+                  - id: 1005:5307
+                    name: footer.ft2
+                    type: FRAME
+                    layout:
+                      mode: column
+                      padding: 16px 28px
+                      sizing:
+                        horizontal: fixed
+                        vertical: hug
+                      locationRelativeToParent:
+                        x: 0
+                        y: 1923.25
+                      dimensions:
+                        width: 1656
+                    fills: White
+                    strokes: Mystic
+                    strokeWeight: 1px 0px 0px
+                    children:
+                      - id: 1005:5308
+                        template: EL-64a79c70
+                  - id: 1005:5309
+                    name: header
+                    template: EL-c8d2d5b1
+                    children:
+                      - id: 1005:5310
+                        name: Breadcrumb:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 0px 1199.4100341796875px 0px 0px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 1005:5311
+                            name: Breadcrumb
+                            template: EL-235879b0
+                            children:
+                              - id: 1005:5312
+                                name: li
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1005:5313
+                                    template: EL-fdff9110
+                              - id: 1005:5314
+                                name: li
+                                template: EL-bbedda7b
+                                children:
+                                  - id: 1005:5315
+                                    template: EL-db7ddb8d
+                                  - id: 1005:5316
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Reports
+                                    textStyle: style_857f4816
+                                    fills: Mirage
+                      - id: 1005:5317
+                        name: div.tb-a
+                        template: EL-235879b0
+                        children:
+                          - id: 1005:5318
+                            name: Notifications
+                            template: EL-58e2a7b0
+                            children:
+                              - id: 1005:5319
+                                name: Frame
+                                template: EL-d2f5d0a6
+                          - id: 1005:5321
+                            name: button menu#pf-b
+                            template: EL-0ccd4aea
+                            children:
+                              - id: 1005:5322
+                                name: span.pf-av
+                                template: EL-a8b2764a
+                                children:
+                                  - id: 1005:5323
+                                    template: EL-5321e56d
+                              - id: 1005:5324
+                                name: span.pf-t
+                                template: EL-6e7b525c
+                                children:
+                                  - id: 1005:5325
+                                    name: b
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 1005:5326
+                                        template: EL-2df750f6
+                                  - id: 1005:5327
+                                    name: small#pf-role
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 1005:5328
+                                        template: EL-a8ebef05
+                              - id: 1005:5329
+                                name: Frame
+                                template: EL-d40fb4e5
+      - 

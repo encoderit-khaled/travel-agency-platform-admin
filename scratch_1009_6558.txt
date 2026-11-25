@@ -1,0 +1,324 @@
+              [1009:6675]
+                name: Main column
+                tmpl(EL-ba6dbac3)
+                  [1009:6676]
+                    name: main
+                    tmpl(EL-3bf98912)
+                      [1009:6677]
+                        name: div#page
+                        tmpl(EL-acfb41d2)
+                          [1009:6678]
+                            name: div.ph2
+                            tmpl(EL-eeae19b6)
+                              [1009:6679]
+                                name: div
+                                tmpl(EL-7c39d4fd)
+                                  [1009:6680]
+                                    name: span
+                                    tmpl(EL-dfdf56f9)
+                                      [1009:6681]
+                                        tmpl(EL-71780814) text="Platform Settings"
+                                  [1009:6682]
+                                    name: h1
+                                    tmpl(EL-681edddb)
+                                      [1009:6683]
+                                        tmpl(EL-9ef94fed) text="Platform Settings"
+                                  [1009:6684]
+                                    name: p
+                                    tmpl(EL-dfdf56f9)
+                                      [1009:6685]
+                                        tmpl(EL-1e386fd0) text="Manage core platform configuration."
+                          [1009:6686]
+                            name: div
+                            tmpl(EL-4848f3c9)
+                              [1009:6687]
+                                name: Platform Settings sections
+                                tmpl(EL-edec8867)
+                                  [1009:6688]
+                                    name: p.sn-t
+                                    tmpl(EL-35d46e41)
+                                      [1009:6689]
+                                        tmpl(EL-346d9904) text="Settings"
+                                  [1009:6690]
+                                    name: ul
+                                    tmpl(EL-99324298)
+                                      [1009:6691]
+                                        name: a
+                                        tmpl(EL-4f737013)
+                                          [1009:6692]
+                                            name: Frame
+                                            tmpl(EL-f652840d)
+                                          [1009:6695]
+                                            name: span
+                                            tmpl(EL-2f9fe287)
+                                              [1009:6696]
+                                                tmpl(EL-6f816bfa) text="Business Details"
+                                      [1009:6697]
+                                        name: a
+                                        tmpl(EL-62920570)
+                                          [1009:6698]
+                                            name: Frame
+                                            tmpl(EL-f652840d)
+                                          [1009:6701]
+                                            name: span
+                                            tmpl(EL-2f9fe287)
+                                              [1009:6702]
+                                                type: TEXT
+                                                text: Languages
+                                          [1009:6703]
+                                            name: '::before'
+                                            tmpl(EL-7e93a610)
+                                      [1009:6704]
+                                        name: a
+                                        tmpl(EL-7a7e402c)
+                                          [1009:6705]
+                                            name: Frame
+                                            tmpl(EL-f652840d)
+                                          [1009:6709]
+                                            name: span
+                                            tmpl(EL-9c64f842)
+                                              [1009:6710]
+                                                tmpl(EL-8441eb82) text="Currencies & Exchange\nRates"
+                                      [1009:6711]
+                                        name: a
+                                        tmpl(EL-4f737013)
+                                          [1009:6712]
+                                            name: Frame
+                                            tmpl(EL-f652840d)
+                                          [1009:6715]
+                                            name: span
+                                            tmpl(EL-2f9fe287)
+                                              [1009:6716]
+                                                tmpl(EL-d5fa3a7e) text="Tax Defaults"
+                                      [1009:6717]
+                                        name: a
+                                        tmpl(EL-7a7e402c)
+                                          [1009:6718]
+                                            name: Frame
+                                            tmpl(EL-f652840d)
+                                          [1009:6721]
+                                            name: span
+                                            tmpl(EL-d88c26b7)
+                                              [1009:6722]
+                                                tmpl(EL-86f22a0c) text="Default Cancellation\nPolicies"
+                              [1009:6723]
+                                name: div.sm2
+                                tmpl(EL-6cb81979)
+                                  [1009:6724]
+                                    name: section.pc3
+                                    tmpl(EL-ed86ce35)
+                                      [1009:6725]
+                                        name: div.pc3-h
+                                        tmpl(EL-89de18e1)
+                                          [1009:6726]
+                                            name: div
+                                            tmpl(EL-65631a79)
+                                              [1009:6727]
+                                                name: span.kpi-ic:margin
+                                                tmpl(EL-6fedf062)
+                                                  [1009:6728]
+                                                    name: span.kpi-ic
+                                                    tmpl(EL-a3dd0e0a)
+                                                      [1009:6729]
+                                                        name: Frame
+                                                        tmpl(EL-f652840d)
+                                              [1009:6732]
+                                                name: div.ph-t
+                                                tmpl(EL-bfbba51a)
+                                                  [1009:6733]
+                                                    name: h2#lg-h
+                                                    tmpl(EL-dfdf56f9)
+                                                      [1009:6734]
+                                                        type: TEXT
+                                                        text: Languages
+                                                  [1009:6735]
+                                                    name: p.sub
+                                                    tmpl(EL-dfdf56f9)
+                                                      [1009:6736]
+                                                        type: TEXT
+                                                        text: Manage the languages available across the Aero Wing Website and Mobile App.
+                                          [1009:6737]
+                                            name: button#cfg
+                                            tmpl(EL-54a3e44b)
+                                              [1009:6738]
+                                                name: Frame
+                                                tmpl(EL-d40fb4e5)
+                                              [1009:6741]
+                                                type: TEXT
+                                                text: Configure Languages
+                                      [1009:6742]
+                                        name: div.lg-ns
+                                        tmpl(EL-e166912b)
+                                          [1009:6743]
+                                            name: span.es-ic:margin
+                                            tmpl(EL-09bdb517)
+                                              [1009:6744]
+                                                name: span.es-ic
+                                                tmpl(EL-7d103126)
+                                                  [1009:6745]
+                                                    name: Frame
+                                                    tmpl(EL-f1b0f0c9)
+                                          [1009:6748]
+                                            name: h3:margin
+                                            tmpl(EL-f7be1f40)
+                                              [1009:6749]
+                                                name: h3
+                                                tmpl(EL-83bc679e)
+                                                  [1009:6750]
+                                                    type: TEXT
+                                                    text: No confirmed language list loaded
+                                          [1009:6751]
+                                            name: p
+                                              [1009:6752]
+                                                type: TEXT
+                                                text: Configured languages will appear here once the agreed language list\nis supplied.
+                                  [1009:6753]
+                                    name: div.lg-n
+                                    tmpl(EL-bff1719b)
+                                      [1009:6754]
+                                        name: aside.inf
+                                          [1009:6755]
+                                            name: span.kpi-ic
+                                            tmpl(EL-d097bf4c)
+                                              [1009:6756]
+                                                name: Frame
+                                                tmpl(EL-f652840d)
+                                          [1009:6760]
+                                            name: div
+                                              [1009:6761]
+                                                name: h2#inf-h
+                                                tmpl(EL-dfdf56f9)
+                                                  [1009:6762]
+                                                    type: TEXT
+                                                    text: Language configuration
+                                              [1009:6763]
+                                                name: p
+                                                tmpl(EL-e9077466)
+                                                  [1009:6764]
+                                                    type: TEXT
+                                                    text: The final language list must use the languages agreed with the Client. Content translations are supplied by the Client.
+                                      [1009:6765]
+                                        name: section.pc3
+                                          [1009:6766]
+                                            name: h2#ap-h
+                                            tmpl(EL-e9077466)
+                                              [1009:6767]
+                                                type: TEXT
+                                                text: Language details
+                                          [1009:6768]
+                                            name: dl.kvn
+                                            tmpl(EL-1519dabc)
+                                              [1009:6769]
+                                                name: div
+                                                tmpl(EL-c094fdcc)
+                                                  [1009:6770]
+                                                    name: span.kpi-ic
+                                                    tmpl(EL-4265f66b)
+                                                      [1009:6771]
+                                                        name: Frame
+                                                        tmpl(EL-f1890f3e)
+                                                  [1009:6774]
+                                                    name: div
+                                                    tmpl(EL-bfbba51a)
+                                                      [1009:6775]
+                                                        name: dt
+                                                        tmpl(EL-dfdf56f9)
+                                                          [1009:6776]
+                                                            tmpl(EL-ed21c370) text="Applies to"
+                                                      [1009:6777]
+                                                        name: dd
+                                                        tmpl(EL-dfdf56f9)
+                                                          [1009:6778]
+                                                            type: TEXT
+                                                            text: Website and Mobile App
+                                              [1009:6779]
+                                                name: div
+                                                tmpl(EL-c094fdcc)
+                                                  [1009:6780]
+                                                    name: span.kpi-ic
+                                                    tmpl(EL-4265f66b)
+                                                      [1009:6781]
+                                                        name: Frame
+                                                        tmpl(EL-f1890f3e)
+                                                  [1009:6783]
+                                                    name: div
+                                                    tmpl(EL-bfbba51a)
+                                                      [1009:6784]
+                                                        name: dt
+                                                        tmpl(EL-dfdf56f9)
+                                                          [1009:6785]
+                                                            type: TEXT
+                                                            text: Translations
+                                                      [1009:6786]
+                                                        name: dd
+                                                        tmpl(EL-dfdf56f9)
+                                                          [1009:6787]
+                                                            type: TEXT
+                                                            text: Content translations are supplied by the Client.
+                  [1009:6788]
+                    name: footer.ft2
+                    tmpl(EL-a365c360)
+                      [1009:6789]
+                        tmpl(EL-64a79c70) text="© 2026 AeroWing. All rights reserved."
+                  [1009:6790]
+                    name: header
+                    tmpl(EL-c8d2d5b1)
+                      [1009:6791]
+                        name: Breadcrumb:margin
+                          [1009:6792]
+                            name: Breadcrumb
+                            tmpl(EL-235879b0)
+                              [1009:6793]
+                                name: li
+                                tmpl(EL-2f9fe287)
+                                  [1009:6794]
+                                    tmpl(EL-fdff9110) text="Admin Panel"
+                              [1009:6795]
+                                name: li
+                                tmpl(EL-bbedda7b)
+                                  [1009:6796]
+                                    tmpl(EL-db7ddb8d) text="/"
+                                  [1009:6797]
+                                    tmpl(EL-261de5e1) text="Platform Settings"
+                              [1009:6798]
+                                name: li
+                                tmpl(EL-bbedda7b)
+                                  [1009:6799]
+                                    tmpl(EL-db7ddb8d) text="/"
+                                  [1009:6800]
+                                    type: TEXT
+                                    text: Languages
+                      [1009:6801]
+                        name: div.tb-a
+                        tmpl(EL-235879b0)
+                          [1009:6802]
+                            name: Notifications
+                            tmpl(EL-58e2a7b0)
+                              [1009:6803]
+                                name: Frame
+                                tmpl(EL-d2f5d0a6)
+                          [1009:6805]
+                            name: button menu#pf-b
+                            tmpl(EL-0ccd4aea)
+                              [1009:6806]
+                                name: span.pf-av
+                                tmpl(EL-a8b2764a)
+                                  [1009:6807]
+                                    tmpl(EL-5321e56d) text="SA"
+                              [1009:6808]
+                                name: span.pf-t
+                                tmpl(EL-6e7b525c)
+                                  [1009:6809]
+                                    name: b
+                                    tmpl(EL-dfdf56f9)
+                                      [1009:6810]
+                                        tmpl(EL-2df750f6) text="Sample Admin"
+                                  [1009:6811]
+                                    name: small#pf-role
+                                    tmpl(EL-dfdf56f9)
+                                      [1009:6812]
+                                        tmpl(EL-a8ebef05) text="Super Admin"
+                              [1009:6813]
+                                name: Frame
+                                tmpl(EL-d40fb4e5)
+      [1009:6944]

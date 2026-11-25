@@ -1,0 +1,1349 @@
+              id=995:3786
+                name='Main column'
+                tpl=EL-ba6dbac3 tpl_type=FRAME
+                
+                  id=995:3787
+                    name='main'
+                    type=FRAME
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                    
+                      id=995:3788
+                        name='div#page'
+                        tpl=EL-acfb41d2 tpl_type=FRAME
+                        
+                          id=995:3789
+                            name='div.ph2'
+                            tpl=EL-eeae19b6 tpl_type=FRAME
+                            
+                              id=995:3790
+                                name='div'
+                                tpl=EL-7c39d4fd tpl_type=FRAME
+                                
+                                  id=995:3791
+                                    name='span'
+                                    tpl=EL-dfdf56f9 tpl_type=FRAME
+                                    
+                                      id=995:3792
+                                        tpl=EL-fea8bcb3 tpl_type=TEXT tpl_text='Core Admin' tpl_fills='Science Blue'
+                                  id=995:3793
+                                    name='h1'
+                                    tpl=EL-681edddb tpl_type=FRAME
+                                    
+                                      id=995:3794
+                                        type=TEXT
+                                        
+                                        text='Audit Log'
+                                        
+                                        fills='Midnight Blue'
+                                  id=995:3795
+                                    name='p'
+                                    tpl=EL-dfdf56f9 tpl_type=FRAME
+                                    
+                                      id=995:3796
+                                        type=TEXT
+                                        
+                                        text='Review key actions performed in the Admin Panel.'
+                                        
+                                        fills='Comet'
+                          id=995:3797
+                            name='section.tc2'
+                            tpl=EL-89825985 tpl_type=FRAME tpl_fills='White'
+                            
+                              id=995:3798
+                                name='div'
+                                type=FRAME
+                                
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                
+                                
+                                
+                                  id=995:3799
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 tpl_type=FRAME
+                                    
+                                      id=995:3800
+                                        name='label'
+                                        tpl=EL-e9077466 tpl_type=FRAME
+                                        
+                                          id=995:3801
+                                            type=TEXT
+                                            
+                                            text='Search Audit Log'
+                                            
+                                            fills='Mirage'
+                                      id=995:3802
+                                        name='div.srch'
+                                        tpl=EL-e9077466 tpl_type=FRAME
+                                        
+                                          id=995:3803
+                                            name='input'
+                                            tpl=EL-47eb2fb3 tpl_type=FRAME tpl_fills='White'
+                                            
+                                              id=995:3804
+                                                name='div#placeholder'
+                                                type=FRAME
+                                                
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                
+                                                  id=995:3805
+                                                    type=TEXT
+                                                    
+                                                    text='Search by Admin, action or context'
+                                                    
+                                                    fills='Regent Gray'
+                                              id=995:3806
+                                                name='div#text-field-container'
+                                                type=FRAME
+                                                
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                
+                                                  id=995:3807
+                                                    name='div#editing-view-port'
+                                                    tpl=EL-bf86a654 tpl_type=FRAME
+                                                  id=995:3808
+                                                    name='div#search-clear:margin'
+                                                    tpl=EL-e5aab63e tpl_type=FRAME
+                                          id=995:3809
+                                            name='Frame'
+                                            tpl=EL-ae553238 tpl_type=IMAGE-SVG
+                                  id=995:3812
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 tpl_type=FRAME
+                                    
+                                      id=995:3813
+                                        name='label'
+                                        tpl=EL-e9077466 tpl_type=FRAME
+                                        
+                                          id=995:3814
+                                            type=TEXT
+                                            
+                                            text='Area'
+                                            
+                                            fills='Mirage'
+                                      id=995:3815
+                                        name='select#far'
+                                        tpl=EL-16ccc5eb tpl_type=FRAME tpl_fills='White'
+                                        
+                                          id=995:3816
+                                            name='image'
+                                            tpl=EL-1b0fe9bb tpl_type=IMAGE-SVG
+                                          id=995:3818
+                                            name='div'
+                                            tpl=EL-e9077466 tpl_type=FRAME
+                                            
+                                              id=995:3819
+                                                type=TEXT
+                                                
+                                                text='All Areas'
+                                                
+                                                fills='Mirage'
+                                  id=995:3820
+                                    name='div.fld'
+                                    tpl=EL-ea5f8869 tpl_type=FRAME
+                                    
+                                      id=995:3821
+                                        name='label'
+                                        tpl=EL-e9077466 tpl_type=FRAME
+                                        
+                                          id=995:3822
+                                            type=TEXT
+                                            
+                                            text='Admin'
+                                            
+                                            fills='Mirage'
+                                      id=995:3823
+                                        name='select#fad'
+                                        tpl=EL-16ccc5eb tpl_type=FRAME tpl_fills='White'
+                                        
+                                          id=995:3824
+                                            name='image'
+                                            tpl=EL-1b0fe9bb tpl_type=IMAGE-SVG
+                                          id=995:3826
+                                            name='div'
+                                            tpl=EL-e9077466 tpl_type=FRAME
+                                            
+                                              id=995:3827
+                                                type=TEXT
+                                                
+                                                text='All Admins'
+                                                
+                                                fills='Mirage'
+                              id=995:3828
+                                name='p#res'
+                                tpl=EL-c825e244 tpl_type=FRAME tpl_fills='Catskill White (7:976)'
+                                
+                                  id=995:3829
+                                    type=TEXT
+                                    
+                                    text='10 audit events · Newest first'
+                                    
+                                    fills='Comet'
+                                  id=995:3830
+                                    name='span.tag'
+                                    tpl=EL-ea7b03b4 tpl_type=FRAME tpl_fills='Catskill White'
+                                    
+                                      id=995:3831
+                                        tpl=EL-27f9f2b6 tpl_type=TEXT tpl_text='Sample data' tpl_fills='Comet'
+                              id=995:3832
+                                name='table'
+                                tpl=EL-62cf3512 tpl_type=FRAME
+                                
+                                  id=995:3833
+                                    name='tr'
+                                    tpl=EL-8a10e53c tpl_type=FRAME
+                                    
+                                      id=995:3834
+                                        name='th.c-t'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        fills='Catskill White (7:976)'
+                                        
+                                        
+                                        
+                                          id=995:3835
+                                            type=TEXT
+                                            
+                                            text='Date & Time'
+                                            
+                                            fills='Comet'
+                                      id=995:3836
+                                        name='th.c-ad'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        fills='Catskill White (7:976)'
+                                        
+                                        
+                                        
+                                          id=995:3837
+                                            type=TEXT
+                                            
+                                            text='Admin'
+                                            
+                                            fills='Comet'
+                                      id=995:3838
+                                        name='th.c-act'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        fills='Catskill White (7:976)'
+                                        
+                                        
+                                        
+                                          id=995:3839
+                                            type=TEXT
+                                            
+                                            text='Action'
+                                            
+                                            fills='Comet'
+                                      id=995:3840
+                                        name='th.c-ar'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        fills='Catskill White (7:976)'
+                                        
+                                        
+                                        
+                                          id=995:3841
+                                            type=TEXT
+                                            
+                                            text='Area'
+                                            
+                                            fills='Comet'
+                                      id=995:3842
+                                        name='th.c-cx'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                        fills='Catskill White (7:976)'
+                                        
+                                        
+                                        
+                                          id=995:3843
+                                            type=TEXT
+                                            
+                                            text='Context'
+                                            
+                                            fills='Comet'
+                                  id=995:3844
+                                    name='tbody'
+                                    tpl=EL-e9077466 tpl_type=FRAME
+                                    
+                                      id=995:3845
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3846
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3847
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3848
+                                                    tpl=EL-43869185 tpl_type=TEXT tpl_text='Today' tpl_fills='Mirage'
+                                              id=995:3849
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3850
+                                                    type=TEXT
+                                                    
+                                                    text='09:42'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3851
+                                            name='td.c-ad'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3852
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3853
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c tpl_type=FRAME tpl_fills='Midnight Blue'
+                                                    
+                                                      id=995:3854
+                                                        tpl=EL-43af7896 tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                                                  id=995:3855
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3856
+                                                        tpl=EL-d8404f02 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                          id=995:3857
+                                            name='td.c-act'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3858
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3859
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3860
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3863
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3864
+                                                        tpl=EL-5c2aa727 tpl_type=TEXT tpl_text='Role permissions updated' tpl_fills='Mirage'
+                                          id=995:3865
+                                            name='td.c-ar'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3866
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3867
+                                                    tpl=EL-82ed9797 tpl_type=TEXT tpl_text='Roles & Permissions' tpl_fills='Midnight Blue'
+                                          id=995:3868
+                                            name='td.c-cx'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                              id=995:3869
+                                                type=TEXT
+                                                
+                                                text='Operations'
+                                                
+                                                fills='Mirage'
+                                      id=995:3870
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3871
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3872
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3873
+                                                    tpl=EL-43869185 tpl_type=TEXT tpl_text='Today' tpl_fills='Mirage'
+                                              id=995:3874
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3875
+                                                    type=TEXT
+                                                    
+                                                    text='09:15'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3876
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:3877
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3878
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c tpl_type=FRAME tpl_fills='Midnight Blue'
+                                                    
+                                                      id=995:3879
+                                                        tpl=EL-43af7896 tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                                                  id=995:3880
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3881
+                                                        tpl=EL-d8404f02 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                          id=995:3882
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:3883
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3884
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3885
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3888
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3889
+                                                        tpl=EL-746278af tpl_type=TEXT tpl_text='Admin account updated' tpl_fills='Mirage'
+                                          id=995:3890
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:3891
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3892
+                                                    tpl=EL-e0e071e1 tpl_type=TEXT tpl_text='Admin Users' tpl_fills='Midnight Blue'
+                                          id=995:3893
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:3894
+                                                type=TEXT
+                                                
+                                                text='Demo Operations User'
+                                                
+                                                fills='Mirage'
+                                      id=995:3895
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3896
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3897
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3898
+                                                    tpl=EL-43869185 tpl_type=TEXT tpl_text='Today' tpl_fills='Mirage'
+                                              id=995:3899
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3900
+                                                    type=TEXT
+                                                    
+                                                    text='08:57'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3901
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:3902
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3903
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 tpl_type=FRAME tpl_fills='Hawkes Blue'
+                                                    
+                                                      id=995:3904
+                                                        tpl=EL-0317490e tpl_type=TEXT tpl_text='DA' tpl_fills='Endeavour'
+                                                  id=995:3905
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3906
+                                                        tpl=EL-5a9f0a6e tpl_type=TEXT tpl_text='Demo Admin' tpl_fills='Mirage'
+                                          id=995:3907
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:3908
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3909
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3910
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3913
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3914
+                                                        tpl=EL-609ca6f9 tpl_type=TEXT tpl_text='Customer profile viewed' tpl_fills='Mirage'
+                                          id=995:3915
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:3916
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3917
+                                                    tpl=EL-f27a949d tpl_type=TEXT tpl_text='B2C Customers' tpl_fills='Midnight Blue'
+                                          id=995:3918
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:3919
+                                                tpl=EL-f546562e tpl_type=TEXT tpl_text='Demo Customer' tpl_fills='Mirage'
+                                      id=995:3920
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3921
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3922
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3923
+                                                    tpl=EL-121b01dd tpl_type=TEXT tpl_text='Yesterday' tpl_fills='Mirage'
+                                              id=995:3924
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3925
+                                                    type=TEXT
+                                                    
+                                                    text='17:20'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3926
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:3927
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3928
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c tpl_type=FRAME tpl_fills='Midnight Blue'
+                                                    
+                                                      id=995:3929
+                                                        tpl=EL-43af7896 tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                                                  id=995:3930
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3931
+                                                        tpl=EL-d8404f02 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                          id=995:3932
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:3933
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3934
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3935
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3937
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3938
+                                                        tpl=EL-ab2b1721 tpl_type=TEXT tpl_text='Admin account created' tpl_fills='Mirage'
+                                          id=995:3939
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:3940
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3941
+                                                    tpl=EL-e0e071e1 tpl_type=TEXT tpl_text='Admin Users' tpl_fills='Midnight Blue'
+                                          id=995:3942
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:3943
+                                                type=TEXT
+                                                
+                                                text='Demo Content User'
+                                                
+                                                fills='Mirage'
+                                      id=995:3944
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3945
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3946
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3947
+                                                    tpl=EL-121b01dd tpl_type=TEXT tpl_text='Yesterday' tpl_fills='Mirage'
+                                              id=995:3948
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3949
+                                                    type=TEXT
+                                                    
+                                                    text='15:04'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3950
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:3951
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3952
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 tpl_type=FRAME tpl_fills='Hawkes Blue'
+                                                    
+                                                      id=995:3953
+                                                        tpl=EL-0317490e tpl_type=TEXT tpl_text='DA' tpl_fills='Endeavour'
+                                                  id=995:3954
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3955
+                                                        tpl=EL-5a9f0a6e tpl_type=TEXT tpl_text='Demo Admin' tpl_fills='Mirage'
+                                          id=995:3956
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:3957
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3958
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3959
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3962
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3963
+                                                        type=TEXT
+                                                        
+                                                        text='Customer profile updated'
+                                                        
+                                                        fills='Mirage'
+                                          id=995:3964
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:3965
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3966
+                                                    tpl=EL-f27a949d tpl_type=TEXT tpl_text='B2C Customers' tpl_fills='Midnight Blue'
+                                          id=995:3967
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:3968
+                                                tpl=EL-f546562e tpl_type=TEXT tpl_text='Demo Customer' tpl_fills='Mirage'
+                                      id=995:3969
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3970
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3971
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3972
+                                                    tpl=EL-121b01dd tpl_type=TEXT tpl_text='Yesterday' tpl_fills='Mirage'
+                                              id=995:3973
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3974
+                                                    type=TEXT
+                                                    
+                                                    text='11:36'
+                                                    
+                                                    fills='Comet'
+                                          id=995:3975
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:3976
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:3977
+                                                    name='span.pf-av'
+                                                    tpl=EL-1a07318c tpl_type=FRAME tpl_fills='Midnight Blue'
+                                                    
+                                                      id=995:3978
+                                                        tpl=EL-43af7896 tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                                                  id=995:3979
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3980
+                                                        tpl=EL-d8404f02 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                          id=995:3981
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:3982
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:3983
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:3984
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:3987
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:3988
+                                                        tpl=EL-609ca6f9 tpl_type=TEXT tpl_text='Customer profile viewed' tpl_fills='Mirage'
+                                          id=995:3989
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:3990
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:3991
+                                                    tpl=EL-f27a949d tpl_type=TEXT tpl_text='B2C Customers' tpl_fills='Midnight Blue'
+                                          id=995:3992
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:3993
+                                                type=TEXT
+                                                
+                                                text='Sample Customer Two'
+                                                
+                                                fills='Mirage'
+                                      id=995:3994
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:3995
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:3996
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3997
+                                                    tpl=EL-3db4ca42 tpl_type=TEXT tpl_text='2 days ago' tpl_fills='Mirage'
+                                              id=995:3998
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:3999
+                                                    type=TEXT
+                                                    
+                                                    text='16:48'
+                                                    
+                                                    fills='Comet'
+                                          id=995:4000
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:4001
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:4002
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 tpl_type=FRAME tpl_fills='Hawkes Blue'
+                                                    
+                                                      id=995:4003
+                                                        tpl=EL-0317490e tpl_type=TEXT tpl_text='DA' tpl_fills='Endeavour'
+                                                  id=995:4004
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4005
+                                                        tpl=EL-5a9f0a6e tpl_type=TEXT tpl_text='Demo Admin' tpl_fills='Mirage'
+                                          id=995:4006
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:4007
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:4008
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:4009
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:4012
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4013
+                                                        tpl=EL-5c2aa727 tpl_type=TEXT tpl_text='Role permissions updated' tpl_fills='Mirage'
+                                          id=995:4014
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:4015
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:4016
+                                                    tpl=EL-82ed9797 tpl_type=TEXT tpl_text='Roles & Permissions' tpl_fills='Midnight Blue'
+                                          id=995:4017
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:4018
+                                                type=TEXT
+                                                
+                                                text='Content'
+                                                
+                                                fills='Mirage'
+                                      id=995:4019
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:4020
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:4021
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4022
+                                                    tpl=EL-3db4ca42 tpl_type=TEXT tpl_text='2 days ago' tpl_fills='Mirage'
+                                              id=995:4023
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4024
+                                                    type=TEXT
+                                                    
+                                                    text='10:12'
+                                                    
+                                                    fills='Comet'
+                                          id=995:4025
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:4026
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:4027
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 tpl_type=FRAME tpl_fills='Hawkes Blue'
+                                                    
+                                                      id=995:4028
+                                                        tpl=EL-0317490e tpl_type=TEXT tpl_text='DA' tpl_fills='Endeavour'
+                                                  id=995:4029
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4030
+                                                        tpl=EL-5a9f0a6e tpl_type=TEXT tpl_text='Demo Admin' tpl_fills='Mirage'
+                                          id=995:4031
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:4032
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:4033
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:4034
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:4037
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4038
+                                                        tpl=EL-746278af tpl_type=TEXT tpl_text='Admin account updated' tpl_fills='Mirage'
+                                          id=995:4039
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:4040
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:4041
+                                                    tpl=EL-e0e071e1 tpl_type=TEXT tpl_text='Admin Users' tpl_fills='Midnight Blue'
+                                          id=995:4042
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:4043
+                                                type=TEXT
+                                                
+                                                text='Demo Finance User'
+                                                
+                                                fills='Mirage'
+                                      id=995:4044
+                                        name='tr'
+                                        tpl=EL-8a10e53c tpl_type=FRAME
+                                        
+                                          id=995:4045
+                                            name='td.c-t'
+                                            tpl=EL-04c43b89 tpl_type=FRAME
+                                            
+                                              id=995:4046
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4047
+                                                    tpl=EL-622300d3 tpl_type=TEXT tpl_text='3 days ago' tpl_fills='Mirage'
+                                              id=995:4048
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4049
+                                                    type=TEXT
+                                                    
+                                                    text='14:25'
+                                                    
+                                                    fills='Comet'
+                                          id=995:4050
+                                            name='td.c-ad'
+                                            tpl=EL-a1dc69e2 tpl_type=FRAME
+                                            
+                                              id=995:4051
+                                                name='div'
+                                                tpl=EL-12e2d7a9 tpl_type=FRAME
+                                                
+                                                  id=995:4052
+                                                    name='span.pf-av'
+                                                    tpl=EL-d236c7d8 tpl_type=FRAME tpl_fills='Hawkes Blue'
+                                                    
+                                                      id=995:4053
+                                                        tpl=EL-0317490e tpl_type=TEXT tpl_text='DA' tpl_fills='Endeavour'
+                                                  id=995:4054
+                                                    name='span'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4055
+                                                        tpl=EL-5a9f0a6e tpl_type=TEXT tpl_text='Demo Admin' tpl_fills='Mirage'
+                                          id=995:4056
+                                            name='td.c-act'
+                                            tpl=EL-12818f58 tpl_type=FRAME
+                                            
+                                              id=995:4057
+                                                name='div.act'
+                                                tpl=EL-0d17f23d tpl_type=FRAME
+                                                
+                                                  id=995:4058
+                                                    name='span'
+                                                    tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                    
+                                                      id=995:4059
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                                  id=995:4062
+                                                    name='b'
+                                                    tpl=EL-2f9fe287 tpl_type=FRAME
+                                                    
+                                                      id=995:4063
+                                                        tpl=EL-609ca6f9 tpl_type=TEXT tpl_text='Customer profile viewed' tpl_fills='Mirage'
+                                          id=995:4064
+                                            name='td.c-ar'
+                                            tpl=EL-ee8496a6 tpl_type=FRAME
+                                            
+                                              id=995:4065
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:4066
+                                                    tpl=EL-f27a949d tpl_type=TEXT tpl_text='B2C Customers' tpl_fills='Midnight Blue'
+                                          id=995:4067
+                                            name='td.c-cx'
+                                            tpl=EL-ede01ae2 tpl_type=FRAME
+                                            
+                                              id=995:4068
+                                                type=TEXT
+                                                
+                                                text='Google Demo Customer'
+                                                
+                                                fills='Mirage'
+                                      id=995:4069
+                                        name='tr'
+                                        type=FRAME
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                        
+                                          id=995:4070
+                                            name='td.c-t'
+                                            type=FRAME
+                                            
+                                            
+                                              id=995:4071
+                                                name='time'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4072
+                                                    tpl=EL-622300d3 tpl_type=TEXT tpl_text='3 days ago' tpl_fills='Mirage'
+                                              id=995:4073
+                                                name='span'
+                                                tpl=EL-e9077466 tpl_type=FRAME
+                                                
+                                                  id=995:4074
+                                                    type=TEXT
+                                                    
+                                                    text='09:03'
+                                                    
+                                                    fills='Comet'
+                                          id=995:4075
+                                            name='div'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4076
+                                                name='span.pf-av'
+                                                tpl=EL-1a07318c tpl_type=FRAME tpl_fills='Midnight Blue'
+                                                
+                                                  id=995:4077
+                                                    tpl=EL-43af7896 tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                                              id=995:4078
+                                                name='span'
+                                                tpl=EL-2f9fe287 tpl_type=FRAME
+                                                
+                                                  id=995:4079
+                                                    tpl=EL-d8404f02 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                          id=995:4080
+                                            name='div.act'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4081
+                                                name='span'
+                                                tpl=EL-6f56fe6a tpl_type=FRAME tpl_fills='fill_2093ec7c'
+                                                
+                                                  id=995:4082
+                                                    name='Frame'
+                                                    tpl=EL-f1890f3e tpl_type=IMAGE-SVG
+                                              id=995:4084
+                                                name='b'
+                                                tpl=EL-2f9fe287 tpl_type=FRAME
+                                                
+                                                  id=995:4085
+                                                    tpl=EL-ab2b1721 tpl_type=TEXT tpl_text='Admin account created' tpl_fills='Mirage'
+                                          id=995:4086
+                                            name='td.c-ar'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4087
+                                                name='span'
+                                                tpl=EL-6803616e tpl_type=FRAME tpl_fills='Link Water (7:616)'
+                                                
+                                                  id=995:4088
+                                                    tpl=EL-e0e071e1 tpl_type=TEXT tpl_text='Admin Users' tpl_fills='Midnight Blue'
+                                          id=995:4089
+                                            name='td.c-cx'
+                                            type=FRAME
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=995:4090
+                                                type=TEXT
+                                                
+                                                text='Demo Support User'
+                                                
+                                                fills='Mirage'
+                  id=995:4091
+                    name='footer.ft2'
+                    tpl=EL-a365c360 tpl_type=FRAME tpl_fills='White'
+                    
+                      id=995:4092
+                        tpl=EL-64a79c70 tpl_type=TEXT tpl_text='© 2026 AeroWing. All rights reserved.' tpl_fills='Comet'
+                  id=995:4093
+                    name='header'
+                    tpl=EL-c8d2d5b1 tpl_type=FRAME tpl_fills='White 92%'
+                    
+                      id=995:4094
+                        name='Breadcrumb:margin'
+                        type=FRAME
+                        
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=995:4095
+                            name='Breadcrumb'
+                            tpl=EL-235879b0 tpl_type=FRAME
+                            
+                              id=995:4096
+                                name='li'
+                                tpl=EL-2f9fe287 tpl_type=FRAME
+                                
+                                  id=995:4097
+                                    tpl=EL-fdff9110 tpl_type=TEXT tpl_text='Admin Panel' tpl_fills='Comet'
+                              id=995:4098
+                                name='li'
+                                tpl=EL-bbedda7b tpl_type=FRAME
+                                
+                                  id=995:4099
+                                    tpl=EL-db7ddb8d tpl_type=TEXT tpl_text='/' tpl_fills='Gull Gray'
+                                  id=995:4100
+                                    type=TEXT
+                                    
+                                    text='Audit Log'
+                                    
+                                    fills='Mirage'
+                      id=995:4101
+                        name='div.tb-a'
+                        tpl=EL-235879b0 tpl_type=FRAME
+                        
+                          id=995:4102
+                            name='Notifications'
+                            tpl=EL-58e2a7b0 tpl_type=FRAME
+                            
+                              id=995:4103
+                                name='Frame'
+                                tpl=EL-d2f5d0a6 tpl_type=IMAGE-SVG
+                          id=995:4105
+                            name='button menu#pf-b'
+                            tpl=EL-0ccd4aea tpl_type=FRAME tpl_fills='White'
+                            
+                              id=995:4106
+                                name='span.pf-av'
+                                tpl=EL-a8b2764a tpl_type=FRAME tpl_fills='Midnight Blue'
+                                
+                                  id=995:4107
+                                    tpl=EL-5321e56d tpl_type=TEXT tpl_text='SA' tpl_fills='Saffron'
+                              id=995:4108
+                                name='span.pf-t'
+                                tpl=EL-6e7b525c tpl_type=FRAME
+                                
+                                  id=995:4109
+                                    name='b'
+                                    tpl=EL-dfdf56f9 tpl_type=FRAME
+                                    
+                                      id=995:4110
+                                        tpl=EL-2df750f6 tpl_type=TEXT tpl_text='Sample Admin' tpl_fills='Mirage'
+                                  id=995:4111
+                                    name='small#pf-role'
+                                    tpl=EL-dfdf56f9 tpl_type=FRAME
+                                    
+                                      id=995:4112
+                                        tpl=EL-a8ebef05 tpl_type=TEXT tpl_text='Super Admin' tpl_fills='Comet'
+                              id=995:4113
+                                name='Frame'
+                                tpl=EL-d40fb4e5 tpl_type=IMAGE-SVG

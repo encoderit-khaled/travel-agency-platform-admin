@@ -1,0 +1,470 @@
+=== EL-0ccd4aea ===
+    type: FRAME
+    layout:
+      mode: row
+      padding: 4px 10px 4px 4px
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 14px
+
+=== EL-235879b0 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      gap: 8px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-2a66e910 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: hug
+        vertical: fill
+
+=== EL-2df750f6 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Mirage
+
+=== EL-2f9fe287 ===
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-329d8a59 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 3px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-32aa1743 ===
+    type: FRAME
+    layout: layout_6070fb8c
+    fills: Link Water (7:616)
+    borderRadius: 999px
+
+=== EL-524c1fb6 ===
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Sign-in Context
+    textStyle: style_e0b4c12d
+    fills: Comet
+
+=== EL-5321e56d ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: SA
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Saffron
+
+=== EL-54a3e44b ===
+    type: FRAME
+    layout:
+      mode: row
+      padding: 9px 14px 10px
+      justifyContent: center
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 11px
+
+=== EL-58e2a7b0 ===
+    type: FRAME
+    layout:
+      mode: column
+      padding: 11px 6px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 44
+        height: 44
+    borderRadius: 12px
+
+=== EL-5cb7385b ===
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1.5px 9px 1.75px 7px
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White (660:4703)
+    borderRadius: 999px
+
+=== EL-5d197b60 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-62b4d877 ===
+    type: IMAGE-SVG
+    layout: layout_73bebfab
+
+=== EL-64a79c70 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: © 2026 AeroWing. All rights reserved.
+    textStyle: style_8f1384da
+    fills: Comet
+
+=== EL-681edddb ===
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 1px 0px 0px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-6cb81979 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 20px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-6e7b525c ===
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-773c6f36 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 0px 0px 1.5px
+      alignItems: center
+      wrap: true
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 22.5
+
+=== EL-7c39d4fd ===
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 3px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-89de18e1 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: center
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-998e62e2 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-9cc7660f ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 6px 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-a3dd0e0a ===
+    type: FRAME
+    layout:
+      mode: column
+      padding: 9px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 36
+        height: 36
+    fills: Hawkes Blue
+    borderRadius: 10px
+
+=== EL-a8b2764a ===
+    type: FRAME
+    layout:
+      mode: column
+      justifyContent: center
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 38
+        height: 38
+    fills: Midnight Blue
+    borderRadius: 11px
+
+=== EL-a8ebef05 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: Super Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 12
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+
+=== EL-b45a9547 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-bb66f4c9 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-bbedda7b ===
+    type: FRAME
+    layout:
+      mode: row
+      gap: 7.989999771118164px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-c8d2d5b1 ===
+    type: FRAME
+    layout:
+      mode: row
+      padding: 0px 28px
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1656
+        height: 68
+    fills: White 92%
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+    effects: effect_84e86613
+
+=== EL-d2f5d0a6 ===
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 22
+        height: 22
+
+=== EL-d40fb4e5 ===
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 16
+        height: 16
+
+=== EL-d4302386 ===
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 12
+        height: 12
+
+=== EL-db7ddb8d ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: /
+    textStyle: style_e94c23d2
+    fills: Gull Gray
+
+=== EL-dfdf56f9 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-e9077466 ===
+    type: FRAME
+    layout: layout_5c79c5b1
+
+=== EL-ea7b03b4 ===
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1px 8px
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 999px
+
+=== EL-ed86ce35 ===
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 20px 22px
+      alignItems: stretch
+      gap: 16px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+
+=== EL-f652840d ===
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 18
+        height: 18
+
+=== EL-f83f3747 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: Email
+    textStyle: style_d455df39
+    fills: Midnight Blue
+
+=== EL-f96bbce8 ===
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-fdff9110 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Panel
+    textStyle: style_e94c23d2
+    fills: Comet
+
+=== EL-fea8bcb3 ===
+    type: TEXT
+    layout: layout_177c5efc
+    text: Core Admin
+    textStyle: style_26b1bc04
+    fills: Science Blue
+

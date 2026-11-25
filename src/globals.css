@@ -197,3 +197,8 @@ body {
     page-break-inside: avoid;
   }
 }
+
+.currency-settings-tabs [role='tab'][aria-selected='true'] {
+  color: #012a5e;
+  border-bottom-color: #012a5e;
+}

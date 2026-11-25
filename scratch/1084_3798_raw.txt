@@ -1,0 +1,4082 @@
+      - id: 1084:3798
+        name: Platform Settings - Add Default Cancellation Policies
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          gap: 10px
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 56710
+            y: 402
+          dimensions:
+            width: 1920
+        children:
+          - id: 1084:3795
+            name: Add Default Cancellation Policies 1
+            type: RECTANGLE
+            layout:
+              mode: none
+              sizing:
+                horizontal: fill
+                vertical: fixed
+              dimensions:
+                height: 1049
+            fills:
+              - type: IMAGE
+                imageRef: 8944dad98daa19e52388a56b5647cae5fe42fb84
+                scaleMode: FILL
+                objectFit: cover
+                isBackground: false
+                imageDownloadArguments:
+                  needsCropping: false
+                  requiresImageDimensions: false
+          - id: 1084:3799
+            name: Admin navigation
+            template: EL-d4935436
+            children:
+              - id: 1084:3800
+                name: div.sb-hd
+                template: EL-19ed2d5b
+                children:
+                  - id: 1084:3801
+                    name: Aero Wing Admin Panel — Dashboard
+                    template: EL-27a7f8c4
+                    children:
+                      - id: 1084:3802
+                        name: AeroWing Admin — Dashboard
+                        template: EL-280eabfe
+                        children:
+                          - id: 1084:3803
+                            name: AeroWing — Explore, Book, Travel
+                            template: EL-966c7e52
+                      - id: 1084:3804
+                        name: span.sb-lab
+                        template: EL-4c261f7f
+                        children:
+                          - id: 1084:3805
+                            template: EL-a0b6cf5b
+              - id: 1084:3806
+                name: Admin
+                template: EL-0b230fa2
+                children:
+                  - id: 1084:3807
+                    name: div.sb-g
+                    template: EL-e9077466
+                    children:
+                      - id: 1084:3808
+                        name: p#g-ov
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3809
+                            template: EL-ad79941c
+                      - id: 1084:3810
+                        name: a.sb-i
+                        template: EL-7041e0b0
+                        children:
+                          - id: 1084:3811
+                            name: Frame
+                            template: EL-b1d338df
+                          - id: 1084:3816
+                            name: span.sb-t
+                            template: EL-2f9fe287
+                            children:
+                              - id: 1084:3817
+                                template: EL-b9328c9b
+                  - id: 1084:3818
+                    name: div.sb-g
+                    template: EL-301f98e1
+                    children:
+                      - id: 1084:3819
+                        name: p#g-core
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3820
+                            template: EL-a5e6b4d2
+                      - id: 1084:3821
+                        name: ul
+                        template: EL-6e926975
+                        children:
+                          - id: 1084:3822
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3823
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3825
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3826
+                                    template: EL-8cc0c44d
+                          - id: 1084:3827
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3828
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3831
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3832
+                                    template: EL-c45ae915
+                          - id: 1084:3833
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3834
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3837
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3838
+                                    template: EL-40ae2791
+                          - id: 1084:3839
+                            name: a.sb-i
+                            template: EL-7041e0b0
+                            children:
+                              - id: 1084:3840
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 1084:3845
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3846
+                                    template: EL-557136c9
+                  - id: 1084:3847
+                    name: div.sb-g
+                    template: EL-301f98e1
+                    children:
+                      - id: 1084:3848
+                        name: p#g-mod
+                        template: EL-d8c5a118
+                        children:
+                          - id: 1084:3849
+                            template: EL-eff13b88
+                      - id: 1084:3850
+                        name: ul
+                        template: EL-43323dcb
+                        children:
+                          - id: 1084:3851
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3852
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3854
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3855
+                                    template: EL-4074d9e1
+                          - id: 1084:3856
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3857
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3860
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3861
+                                    template: EL-618e9697
+                          - id: 1084:3862
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3863
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3865
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3866
+                                    template: EL-d10a515e
+                          - id: 1084:3867
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3868
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3871
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3872
+                                    template: EL-970eec68
+                          - id: 1084:3873
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3874
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3876
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3877
+                                    template: EL-344c29b0
+                          - id: 1084:3895
+                            name: a.sb-i
+                            template: EL-703abc35
+                            children:
+                              - id: 1084:3896
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3899
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3900
+                                    template: EL-2fd65db2
+                          - id: 1084:3901
+                            name: a.sb-i
+                            template: EL-5e380d8c
+                            children:
+                              - id: 1084:3902
+                                name: Frame
+                                template: EL-f1890f3e
+                              - id: 1084:3905
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 1084:3906
+                                    template: EL-09476c5f
+              - id: 1084:3907
+                name: div.sb-ft
+                template: EL-ab88c726
+                children:
+                  - id: 1084:3908
+                    name: Collapse sidebar
+                    template: EL-04eca728
+                    children:
+                      - id: 1084:3909
+                        name: Frame
+                        template: EL-b1d338df
+                      - id: 1084:3912
+                        name: span#sb-col-l
+                        template: EL-83bc679e
+                        children:
+                          - id: 1084:3913
+                            template: EL-1fd2da9e
+globalVars:
+  styles:
+    White Catskill White:
+      - '#EEF2F7'
+    White 6%:
+      - rgba(255, 255, 255, 0.06)
+    White 7%:
+      - rgba(255, 255, 255, 0.07)
+    Saffron:
+      - '#F1C134'
+    White:
+      - '#FFFFFF'
+    Saffron 14%:
+      - rgba(241, 193, 52, 0.14)
+    Saffron 35%:
+      - rgba(241, 193, 52, 0.35)
+    layout_177c5efc:
+      mode: none
+      sizing:
+        horizontal: hug
+        vertical: hug
+    layout_56d3c81c:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: hug
+    layout_5c79c5b1:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    Periwinkle Gray:
+      - '#C9D7EA'
+    style_8f1384da:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 12.5
+      lineHeight: 18.75px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Nepal:
+      - '#8FA5C3'
+    Midnight Blue:
+      - '#012A5E'
+    Mystic:
+      - '#DCE2EB'
+    style_be48c804:
+      fontFamily: Manrope
+      fontStyle: Regular
+      fontWeight: 500
+      fontSize: 15
+      lineHeight: 22.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Comet:
+      - '#4F5B70'
+    style_cf58f31f:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Mirage:
+      - '#141B28'
+    Heather:
+      - '#C5CFDC'
+    Regent Gray:
+      - '#8792A4'
+    style_f3f7ae19:
+      fontFamily: Manrope
+      fontStyle: Regular
+      fontWeight: 500
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Catskill White:
+      - '#EEF2F7'
+    Black 0%:
+      - rgba(0, 0, 0, 0)
+    Science Blue:
+      - '#0267B8'
+    Athens Gray:
+      - '#EEF1F5'
+    Chathams Blue:
+      - '#0F3F7D'
+    style_c967ff2b:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_c6a3c9ed:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 12.5
+      lineHeight: 18.75px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    layout_fa9366f8:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 953
+    White Catskill White (7:6):
+      - '#F4F6FA'
+    fill_bbc54479:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(4, 34, 74, 1) 0%, rgba(0, 26, 61, 1) 100%)
+    style_2b587743:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 10.5
+      lineHeight: 15.75px
+      letterSpacing: 0.1em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Wild Blue Yonder:
+      - '#7F96B5'
+    layout_56042251:
+      mode: row
+      alignSelf: stretch
+      padding: 10.5px 12px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fill_183fb985:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(90deg, rgba(10, 118, 204, 0.32) 0%, rgba(10, 118, 204, 0.12) 100%)
+    effect_a6f27370:
+      boxShadow: inset 3px 0px 0px 0px rgba(241, 193, 52, 1)
+    layout_1655a44c:
+      mode: column
+      alignSelf: stretch
+      padding: 14px 0px 0px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    style_325b630c:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Pigeon Post:
+      - '#B9C9DE'
+    layout_1d4dd0e1:
+      mode: row
+      alignSelf: stretch
+      padding: 8.880000114440918px 12px 8.869999885559082px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    style_d5fe13bf:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Rock Blue:
+      - '#A6B8D1'
+    style_26b1bc04:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 12
+      lineHeight: 18px
+      letterSpacing: 0.08em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_47de102a:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 30
+      lineHeight: 38px
+      letterSpacing: '-0.01em'
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_e6a95020:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_3b2f0454:
+      mode: column
+      padding: 11px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 42
+        height: 42
+    style_94747b76:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_43eafae1:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 30
+      lineHeight: 36px
+      letterSpacing: '-0.01em'
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fill_48bd18ed:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 50% 50%, rgba(10, 118, 204, 0.08) 0%, rgba(10, 118, 204, 0) 100%)
+    Egg Sour:
+      - '#FFF6DA'
+    Apple Green:
+      - '#EAF7F0'
+    Jewel:
+      - '#157F4A'
+    Hawkes Blue:
+      - '#EAF4FD'
+    style_aefbca38:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 16.5
+      lineHeight: 23px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_222d185b:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    layout_d2eb2aa9:
+      mode: row
+      padding: 2px 9px 2px 7px
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    Buff:
+      - '#F1D98A'
+    layout_73bebfab:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 13
+        height: 13
+    Cinnamon:
+      - '#7A4F00'
+    style_d455df39:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 12
+      lineHeight: 18px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_3a4967d7:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: RIGHT
+      textAlignVertical: CENTER
+    Narvik:
+      - '#ECF8F1'
+    Fringy Flower:
+      - '#BFE5CF'
+    layout_617da2ef:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fill
+    Eucalyptus:
+      - '#1F9D61'
+    Selago:
+      - '#E8F1FB'
+    Link Water:
+      - '#C6DCF2'
+    Endeavour:
+      - '#01559A'
+    Catskill White (710:20114):
+      - '#F1F4F8'
+    Provincial Pink:
+      - '#FEF3F2'
+    Mandys Pink:
+      - '#F5C2BC'
+    Thunderbird:
+      - '#B42318'
+    Catskill White (7:976):
+      - '#F8FAFC'
+    Catskill White (856:2825):
+      - '#E6EBF2'
+    layout_d9d5a9ac:
+      mode: column
+      padding: 10px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 38
+        height: 38
+    White 0.2%:
+      - rgba(255, 255, 255, 0)
+    style_53cdfbde:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14.5
+      lineHeight: 21.75px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_5405da97:
+      mode: row
+      alignSelf: stretch
+      padding: 12px 14px
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fill_2093ec7c:
+      - '#F1F5FA'
+    style_2cfdd1d3:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 12.5
+      lineHeight: 18.75px
+      textAlignHorizontal: RIGHT
+      textAlignVertical: CENTER
+    Catskill White (660:4703):
+      - '#E8EDF5'
+    style_3a13c6f7:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11.5
+      lineHeight: 17.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_c6fb220c:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 900
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    White 92%:
+      - rgba(255, 255, 255, 0.92)
+    effect_84e86613:
+      backdropFilter: blur(8px)
+    style_e94c23d2:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Gull Gray:
+      - '#9AA5B6'
+    style_857f4816:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_12ff1aea:
+      mode: row
+      padding: 10.630000114440918px 16px 11.369999885559082px
+      justifyContent: center
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    style_08f7abaf:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14.5
+      lineHeight: 21.75px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_8bf6e9e8:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 26
+      lineHeight: 32px
+      letterSpacing: '-0.01em'
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_096a568b:
+      fontFamily: Manrope
+      fontStyle: Regular
+      fontWeight: 500
+      fontSize: 15
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_e567879e:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 15
+      lineHeight: 22.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_16201471:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11.5
+      lineHeight: 17.25px
+      letterSpacing: 0.06em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_11a0e869:
+      mode: column
+      justifyContent: center
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 40
+        height: 40
+    style_0468e614:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_39e93c2c:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_e239a3e6:
+      mode: column
+      padding: 14px 18px
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 343.3
+    style_bb12b1a7:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    Hawkes Blue (664:5963):
+      - '#F2F8FE'
+    Link Water (664:5964):
+      - '#CFE3F6'
+    style_15012661:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 13.5
+      lineHeight: 20px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_eade742b:
+      mode: column
+      alignSelf: stretch
+      padding: 14px 16px
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    style_ac8daa02:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 15
+      lineHeight: 22.5px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_c80e55f1:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 12.5
+      lineHeight: 18.75px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_49c5b63f:
+      mode: column
+      padding: 10px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 242.89
+    style_58e91ec3:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 12
+      lineHeight: 16px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_240937e7:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11
+      lineHeight: 16.5px
+      letterSpacing: 0.08em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_b9baf4e6:
+      mode: column
+      padding: 10px 10px 11.130000114440918px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 383.52
+        y: 0
+      dimensions:
+        width: 242.89
+    Selago (95:305):
+      - '#F7FAFE'
+    Catskill White (7:11):
+      - '#F4F6FA'
+    Geyser:
+      - '#C9D2DF'
+    layout_4d08cec4:
+      mode: column
+      padding: 10px 10px 11.130000114440918px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 626.41
+        y: 0
+      dimensions:
+        width: 242.89
+    layout_2e794de1:
+      mode: column
+      padding: 10px 10px 11.130000114440918px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 869.3
+        y: 0
+      dimensions:
+        width: 242.89
+    layout_47317ecc:
+      mode: column
+      padding: 10px 10px 11.130000114440918px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 1112.19
+        y: 0
+      dimensions:
+        width: 242.89
+    layout_bb3ebacc:
+      mode: column
+      padding: 10px 10px 11.130000114440918px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 1355.08
+        y: 0
+      dimensions:
+        width: 242.92
+    layout_809b289f:
+      mode: column
+      padding: 12.5600004196167px 10px 12.819999694824219px 20px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 383.52
+    style_20d87fa3:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 16
+      lineHeight: 22px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    ts1:
+      fills:
+        - '#4F5B70'
+    ts2:
+      fontStyle: Bold
+      fills:
+        - '#4F5B70'
+    style_1472f9f9:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 10
+      lineHeight: 15px
+      letterSpacing: 0.1em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_48b6cb3a:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 9
+        height: 9
+    style_f15527d8:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 600
+      fontSize: 12
+      lineHeight: 18px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    Early Dawn:
+      - '#FFF8E6'
+    Buff (287:488):
+      - '#F3D98A'
+    Saddle Brown:
+      - '#5C3B00'
+    layout_6070fb8c:
+      mode: row
+      alignSelf: stretch
+      padding: 2px 9px 2px 7px
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: fill
+    Link Water (7:616):
+      - '#EEF3FA'
+    layout_5e844072:
+      mode: column
+      padding: 14px 18px
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 188.83
+    style_e0b4c12d:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 12.5
+      lineHeight: 18.75px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_28959669:
+      mode: column
+      padding: 14px 18px
+      alignItems: stretch
+      gap: 1px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 170
+    layout_2dabf9c8:
+      mode: column
+      justifyContent: center
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 32
+        height: 32
+    style_e35d88a1:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 12
+      lineHeight: 18px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_9f98af39:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 15
+      lineHeight: 22.5px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_012ce37b:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 15
+      lineHeight: 22.5px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_9bf557fd:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 28
+      lineHeight: 34px
+      letterSpacing: '-0.01em'
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_b07d89fc:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 11.5
+      lineHeight: 17.25px
+      textAlignHorizontal: RIGHT
+      textAlignVertical: CENTER
+    style_749124bd:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11.5
+      lineHeight: 17.25px
+      letterSpacing: 0.06em
+      textCase: UPPER
+      textAlignHorizontal: RIGHT
+      textAlignVertical: CENTER
+    layout_7043efbf:
+      mode: column
+      padding: 14px 18px
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 274.42
+    layout_502e4940:
+      mode: column
+      padding: 14px 18px
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 259.45
+    layout_7e1f60ad:
+      mode: row
+      alignSelf: stretch
+      padding: 13.5px 12px
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fill_70fb3ac9:
+      - '#EEF4FB'
+    style_03a12ba4:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 19px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_cd52462b:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 14
+      lineHeight: 19px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    layout_4eafd330:
+      mode: row
+      alignSelf: stretch
+      padding: 8px 12px
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    style_8fd4b277:
+      fontFamily: Manrope
+      fontStyle: Regular
+      fontWeight: 500
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    style_c9eafb49:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 16.5
+      lineHeight: 24.75px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    style_f70b28e3:
+      fontFamily: Manrope
+      fontStyle: Regular
+      fontWeight: 500
+      fontSize: 14
+      lineHeight: 21px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fill_010c3b93:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(167deg, rgba(243, 248, 254, 1) 0%, rgba(255, 255, 255, 1) 100%)
+elements:
+  EL-dfdf56f9:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-280eabfe:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 8px 12px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    borderRadius: 12px
+  EL-966c7e52:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 161
+        height: 36
+    fills:
+      - type: IMAGE
+        imageRef: 6314bcf91784ce8b96f7ab208754cc28da16f127
+        scaleMode: STRETCH
+        objectFit: fill
+        isBackground: false
+        imageDownloadArguments:
+          needsCropping: true
+          requiresImageDimensions: false
+          cropTransform:
+            - - 1
+              - 0
+              - 0
+            - - 0
+              - 1.000014305114746
+              - -0.000007151029876695247
+          filenameSuffix: ecfad5
+  EL-494805ba:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 15
+        height: 15
+  EL-e9077466:
+    type: FRAME
+    layout: layout_5c79c5b1
+  EL-a75c3b19:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-ea7b03b4:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1px 8px
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 999px
+  EL-27f9f2b6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample data
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11
+      lineHeight: 16.5px
+      letterSpacing: 0.03em
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+  EL-a73b2a19:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 20
+        height: 20
+  EL-bfbba51a:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 2px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-d1ac142c:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-b4d5d5d0:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 264
+        height: 1200
+    fills: fill_bbc54479
+  EL-19ed2d5b:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 15px 16px 10px
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+    strokes: White 7%
+    strokeWeight: 0px 0px 1px
+  EL-27a7f8c4:
+    type: FRAME
+    layout:
+      mode: column
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    borderRadius: 12px
+  EL-4c261f7f:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 86.52
+        height: 16.5
+  EL-a0b6cf5b:
+    type: TEXT
+    layout:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: -1
+      dimensions:
+        width: 83.16
+        height: 17
+    text: Admin Panel
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11
+      lineHeight: 16.5px
+      letterSpacing: 0.09em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Saffron
+  EL-0b230fa2:
+    type: FRAME
+    layout:
+      mode: column
+      overflowScroll:
+        - y
+      alignSelf: stretch
+      padding: 14px 12px 18px
+      alignItems: stretch
+      gap: 16px
+      sizing:
+        horizontal: fill
+        vertical: fill
+  EL-d8c5a118:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 0px 12px 8px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-ad79941c:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Overview
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+  EL-bdff8199:
+    type: FRAME
+    layout: layout_56042251
+    fills: fill_183fb985
+    effects: effect_a6f27370
+    borderRadius: 11px
+  EL-b1d338df:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 19
+        height: 19
+  EL-2f9fe287:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-301f98e1:
+    type: FRAME
+    layout: layout_1655a44c
+    strokes: White 7%
+    strokeWeight: 1px 0px 0px
+  EL-a5e6b4d2:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Core Admin
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+  EL-6e926975:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 2px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-7041e0b0:
+    type: FRAME
+    layout: layout_56042251
+    borderRadius: 11px
+  EL-8cc0c44d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2C Customers
+    textStyle: style_325b630c
+    fills: Pigeon Post
+  EL-c45ae915:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Users
+    textStyle: style_325b630c
+    fills: Pigeon Post
+  EL-40ae2791:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Roles & Permissions
+    textStyle: style_325b630c
+    fills: Pigeon Post
+  EL-557136c9:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Audit Log
+    textStyle: style_325b630c
+    fills: Pigeon Post
+  EL-eff13b88:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Platform Modules
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+  EL-43323dcb:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      gap: 2px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-703abc35:
+    type: FRAME
+    layout: layout_1d4dd0e1
+    borderRadius: 11px
+  EL-f1890f3e:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 17
+        height: 17
+  EL-4074d9e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Bookings
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-618e9697:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Agents
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-d10a515e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Suppliers
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-970eec68:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Pricing & Promotions
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-344c29b0:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Reviews
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-2fd65db2:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Reports
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-09476c5f:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Platform Settings
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+  EL-ab88c726:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 10px 12px 14px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    strokes: White 7%
+    strokeWeight: 1px 0px 0px
+  EL-04eca728:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 10.880000114440918px 12px 10.869999885559082px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    borderRadius: 11px
+  EL-83bc679e:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-1fd2da9e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Collapse
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Wild Blue Yonder
+  EL-0af6044c:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 28px 28px 40px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 68
+      dimensions:
+        width: 1656
+  EL-acfb41d2:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 22px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-7b655d35:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: flex-end
+      wrap: true
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-7c39d4fd:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 3px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-681edddb:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 1px 0px 0px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-d40fb4e5:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 16
+        height: 16
+  EL-f7218847:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 18px 20px 23px
+      alignItems: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-bb582553:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-aef92fc1:
+    type: FRAME
+    layout: layout_3b2f0454
+    fills: Midnight Blue
+    borderRadius: 12px
+  EL-53a7a43c:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 304
+        y: -39
+      dimensions:
+        width: 120
+        height: 120
+    fills: fill_48bd18ed
+    borderRadius: 60px
+  EL-243631c0:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Admin Users
+    textStyle: style_94747b76
+    fills: Comet
+  EL-46f55cb2:
+    type: FRAME
+    layout: layout_3b2f0454
+    fills: Hawkes Blue
+    borderRadius: 12px
+  EL-f8534a1a:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 0px 0px 16px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-c319309c:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-1519dabc:
+    type: FRAME
+    layout: layout_222d185b
+  EL-74650fe4:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-62b4d877:
+    type: IMAGE-SVG
+    layout: layout_73bebfab
+  EL-9dd62ce4:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 12
+    fills: Catskill White
+    borderRadius: 999px
+  EL-adbc2baf:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 64
+  EL-9b1c0f19:
+    type: FRAME
+    layout: layout_d2eb2aa9
+    fills: Selago
+    strokes: Link Water
+    strokeWeight: 1px
+    borderRadius: 999px
+  EL-2a66e910:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: hug
+        vertical: fill
+  EL-bc40306a:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-1ba56e07:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 8px 12px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    strokes: Catskill White (856:2825)
+    strokeWeight: 1px
+    borderRadius: 14px
+  EL-cab67d74:
+    type: FRAME
+    layout: layout_d9d5a9ac
+    fills: White
+    borderRadius: 11px
+  EL-3d024053:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 38
+        height: 38
+    fills: White 0.2%
+    effects:
+      boxShadow: 0px 0px 0px 1px rgba(225, 232, 241, 1)
+    borderRadius: 11px
+  EL-f652840d:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 18
+        height: 18
+  EL-317cf97d:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 0px 0px 7.75px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-38fddc5a:
+    type: FRAME
+    layout: layout_d9d5a9ac
+    fills: fill_2093ec7c
+    borderRadius: 11px
+  EL-a26bffb3:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 1.5px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 844.11
+  EL-de24eeb5:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 4px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-53173af5:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Sample Admin
+    textStyle: style_8f1384da
+    fills: Comet
+  EL-ef7898e7:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 73.89
+  EL-02fac3db:
+    type: FRAME
+    layout: layout_5405da97
+    fills: White
+    strokes: Athens Gray
+    strokeWeight: 1px 0px 0px
+  EL-c6f62e52:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Demo Admin
+    textStyle: style_8f1384da
+    fills: Comet
+  EL-e2a5820c:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 1.5px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 821.02
+  EL-85b2c02d:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 96.98
+  EL-5132315e:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 14px 0px 0px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-bca47167:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 9px 0px 10px
+      alignItems: center
+      gap: 6px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    borderRadius: 8px
+  EL-358a1981:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 8px 12px
+      justifyContent: space-between
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    borderRadius: 11px
+  EL-5cb7385b:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1.5px 9px 1.75px 7px
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White (660:4703)
+    borderRadius: 999px
+  EL-d4302386:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 12
+        height: 12
+  EL-41691f1b:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Super Admin
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+  EL-866b6ed6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '2'
+    textStyle: style_c6fb220c
+    fills: Mirage
+  EL-fcf06162:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Operations
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+  EL-39910436:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Finance
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+  EL-70b8e7e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Support
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+  EL-84b602b1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Content
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+  EL-64a79c70:
+    type: TEXT
+    layout: layout_177c5efc
+    text: © 2026 AeroWing. All rights reserved.
+    textStyle: style_8f1384da
+    fills: Comet
+  EL-d14effc8:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 0px 28px
+      alignItems: center
+      gap: 14.010000228881836px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1656
+        height: 68
+    fills: White 92%
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+    effects: effect_84e86613
+  EL-235879b0:
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      gap: 8px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-fdff9110:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Panel
+    textStyle: style_e94c23d2
+    fills: Comet
+  EL-bbedda7b:
+    type: FRAME
+    layout:
+      mode: row
+      gap: 7.989999771118164px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-db7ddb8d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: /
+    textStyle: style_e94c23d2
+    fills: Gull Gray
+  EL-58e2a7b0:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 11px 6px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 44
+        height: 44
+    borderRadius: 12px
+  EL-d2f5d0a6:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 22
+        height: 22
+  EL-0ccd4aea:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 4px 10px 4px 4px
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 14px
+  EL-a8b2764a:
+    type: FRAME
+    layout:
+      mode: column
+      justifyContent: center
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 38
+        height: 38
+    fills: Midnight Blue
+    borderRadius: 11px
+  EL-5321e56d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: SA
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Saffron
+  EL-6e7b525c:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-2df750f6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Mirage
+  EL-a8ebef05:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Super Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 12
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+  EL-b9328c9b:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Dashboard
+    textStyle: style_325b630c
+    fills: Pigeon Post
+  EL-fea8bcb3:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Core Admin
+    textStyle: style_26b1bc04
+    fills: Science Blue
+  EL-09b753fa:
+    type: FRAME
+    layout:
+      mode: row
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-817d7bc9:
+    type: FRAME
+    layout: layout_12ff1aea
+    fills: Midnight Blue
+    strokes: Black 0%
+    strokeWeight: 1px
+    borderRadius: 12px
+  EL-cf9b51dc:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 16px 18px
+      alignItems: stretch
+      gap: 10px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 240
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-263fbe4b:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 159
+        y: -39
+      dimensions:
+        width: 120
+        height: 120
+    fills: fill_48bd18ed
+    borderRadius: 60px
+  EL-89825985:
+    type: FRAME
+    layout: layout_5c79c5b1
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-84761bda:
+    type: FRAME
+    layout:
+      mode: grid
+      alignSelf: stretch
+      padding: 16px 18px
+      gridTemplateColumns: minmax(0,1fr) 220px
+      gridTemplateRows: 71.50px
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 104.5
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-ea5f8869:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: end
+      alignItems: stretch
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-47eb2fb3:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 46
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 12px
+  EL-f61575a4:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 1px 0px 2px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 43
+        y: 13.75
+      dimensions:
+        width: 1256
+  EL-37d38f7c:
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 43
+        y: 11.75
+      dimensions:
+        width: 1270
+  EL-bf86a654:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 22.5
+  EL-e5aab63e:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 14
+        height: 10
+  EL-ae553238:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 14
+        y: 14
+      dimensions:
+        width: 18
+        height: 18
+  EL-16ccc5eb:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 9.75px 38px 10.75px 16px
+      justifyContent: center
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 12px
+  EL-921d740d:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 189
+        y: 14
+      dimensions:
+        width: 18
+        height: 18
+  EL-c825e244:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 10px 18px
+      alignItems: center
+      wrap: true
+      gap: 6px 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-62cf3512:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 0.5px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-8a10e53c:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-7c3f8b63:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 480.72
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-12e2d7a9:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-a5d32acd:
+    type: FRAME
+    layout: layout_11a0e869
+    fills: Midnight Blue
+    borderRadius: 12px
+  EL-422a0bc7:
+    type: FRAME
+    layout: layout_e239a3e6
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-611c3705:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 8px 14px 9px
+      alignItems: center
+      gap: 6px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 11px
+  EL-2cdf3875:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Manage User
+    textStyle: style_bb12b1a7
+    fills: Midnight Blue
+  EL-72c3a95f:
+    type: FRAME
+    layout: layout_11a0e869
+    fills: Hawkes Blue
+    borderRadius: 12px
+  EL-aad83124:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 23.5px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 498.84
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-0c83701e:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 22.190000534057617px 18px 24.559999465942383px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 275.14
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-c8d2d5b1:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 0px 28px
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1656
+        height: 68
+    fills: White 92%
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+    effects: effect_84e86613
+  EL-ac3d52ca:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Roles & Permissions
+    textStyle: style_cf58f31f
+    fills: White
+  EL-8af0cbd5:
+    type: FRAME
+    layout:
+      mode: column
+      justifyContent: center
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-179fbc21:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 3.25
+      dimensions:
+        width: 16
+        height: 16
+  EL-d2bf2676:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 18px 0px 0px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-f47f396a:
+    type: FRAME
+    layout:
+      mode: row
+      justifyContent: center
+      alignItems: center
+      wrap: true
+      gap: 4px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-486f6a16:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Predefined Admin role
+    textStyle: style_c6a3c9ed
+    fills: Comet
+  EL-e3ecd737:
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      wrap: true
+      gap: 4px 8px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-c03004df:
+    type: TEXT
+    layout: layout_177c5efc
+    text: 2 users
+    textStyle: style_c80e55f1
+    fills: Mirage
+  EL-132bff77:
+    type: FRAME
+    layout: layout_eade742b
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 16px
+  EL-fa08dcfb:
+    type: FRAME
+    layout: layout_49c5b63f
+    fills: Catskill White (7:976)
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-eb419917:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 14px 10px 8px 20px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-c4b13774:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 47.38
+  EL-ba5caf95:
+    type: FRAME
+    layout: layout_b9baf4e6
+    fills: Selago (95:305)
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+    borderRadius: 12px
+  EL-57b4e922:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 2.5px 9px 2.75px 7px
+      justifyContent: center
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White (7:11)
+    strokes: Geyser
+    strokeWeight: 1px
+    strokeDashes:
+      - 3
+      - 2
+    borderRadius: 999px
+  EL-c72bfb92:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Not configured
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11.5
+      lineHeight: 17.25px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Comet
+  EL-0185509f:
+    type: FRAME
+    layout: layout_4d08cec4
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-4d30ea12:
+    type: FRAME
+    layout: layout_2e794de1
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-3fcb57eb:
+    type: FRAME
+    layout: layout_47317ecc
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-04ba2a6f:
+    type: FRAME
+    layout: layout_bb3ebacc
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-90504830:
+    type: FRAME
+    layout: layout_809b289f
+    fills: White
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-b3d92507:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 420
+  EL-267b0375:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 6.619999885559082px 8px 6.630000114440918px
+      justifyContent: space-between
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+    borderRadius: 8px
+  EL-1fee5a49:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 1px 7px
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White 6%
+    borderRadius: 999px
+  EL-7cd4643f:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Not configured
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 10.5
+      lineHeight: 15.75px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills:
+      - '#9FB0C7'
+  EL-46dbad38:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      gap: 6px
+      sizing:
+        horizontal: hug
+        vertical: fill
+  EL-c094fdcc:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-f96bbce8:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-37053aef:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2C Customers
+    textStyle: style_cf58f31f
+    fills: White
+  EL-ba6dbac3:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 1200
+  EL-eeae19b6:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: flex-end
+      wrap: true
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-2f70dd62:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 439.81
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-fab3ff72:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Not added
+    textStyle: style_39e93c2c
+    fills: Comet
+  EL-7ea9c059:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: stretch
+      wrap: true
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-32aa1743:
+    type: FRAME
+    layout: layout_6070fb8c
+    fills: Link Water (7:616)
+    borderRadius: 999px
+  EL-f83f3747:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Email
+    textStyle: style_d455df39
+    fills: Midnight Blue
+  EL-265a6c02:
+    type: FRAME
+    layout: layout_5e844072
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-6b8f61df:
+    type: TEXT
+    layout: layout_177c5efc
+    text: View Customer
+    textStyle: style_bb12b1a7
+    fills: Midnight Blue
+  EL-2220be42:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 24px 18px 23px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 421.31
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-a8611a86:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 23px 18px 24px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 244.81
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-c2fa8b0c:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 22.5px 18px 21.5px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 303.23
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-17cff92d:
+    type: FRAME
+    layout: layout_6070fb8c
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 999px
+  EL-0c324cd4:
+    type: FRAME
+    layout: layout_73bebfab
+  EL-4a9aa239:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Google
+    textStyle: style_d455df39
+    fills: Mirage
+  EL-cadb7655:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 24px 18px 23px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 244.81
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-82786d15:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 23.5px 18px 22.5px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 303.23
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-4c77f272:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Mobile
+    textStyle: style_d455df39
+    fills: Midnight Blue
+  EL-a365c360:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 16px 28px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 1148.25
+      dimensions:
+        width: 1656
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px 0px 0px
+  EL-b45a9547:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-9cc7660f:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 6px 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-6cb81979:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 20px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-ed86ce35:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 20px 22px
+      alignItems: stretch
+      gap: 16px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-89de18e1:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: center
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-5d197b60:
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-a3dd0e0a:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 9px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 36
+        height: 36
+    fills: Hawkes Blue
+    borderRadius: 10px
+  EL-54a3e44b:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 9px 14px 10px
+      justifyContent: center
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 11px
+  EL-329d8a59:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 3px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-773c6f36:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 0px 0px 1.5px
+      alignItems: center
+      wrap: true
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 22.5
+  EL-998e62e2:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-bb66f4c9:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-524c1fb6:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Sign-in Context
+    textStyle: style_e0b4c12d
+    fills: Comet
+  EL-1b0fe9bb:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 179
+        y: 14
+      dimensions:
+        width: 18
+        height: 18
+  EL-04c43b89:
+    type: FRAME
+    layout: layout_28959669
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-43869185:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Today
+    textStyle: style_c967ff2b
+    fills: Mirage
+  EL-1a07318c:
+    type: FRAME
+    layout: layout_2dabf9c8
+    fills: Midnight Blue
+    borderRadius: 10px
+  EL-43af7896:
+    type: TEXT
+    layout: layout_177c5efc
+    text: SA
+    textStyle: style_e35d88a1
+    fills: Saffron
+  EL-d8404f02:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample Admin
+    textStyle: style_325b630c
+    fills: Mirage
+  EL-0d17f23d:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-6f56fe6a:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 8.5px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 34
+        height: 34
+    fills: fill_2093ec7c
+    borderRadius: 10px
+  EL-5c2aa727:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Role permissions updated
+    textStyle: style_cf58f31f
+    fills: Mirage
+  EL-6803616e:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 3px 10px
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Link Water (7:616)
+    borderRadius: 999px
+  EL-82ed9797:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Roles & Permissions
+    textStyle: style_e0b4c12d
+    fills: Midnight Blue
+  EL-a1dc69e2:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 18.5px 18px 17.5px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 312.8
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-12818f58:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 17.5px 18px 16.5px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 450.34
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-746278af:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin account updated
+    textStyle: style_cf58f31f
+    fills: Mirage
+  EL-ee8496a6:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 22.1299991607666px 18px 21.1200008392334px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 318.42
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-e0e071e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Users
+    textStyle: style_e0b4c12d
+    fills: Midnight Blue
+  EL-ede01ae2:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 23.5px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 346.44
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-d236c7d8:
+    type: FRAME
+    layout: layout_2dabf9c8
+    fills: Hawkes Blue
+    borderRadius: 10px
+  EL-0317490e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: DA
+    textStyle: style_e35d88a1
+    fills: Endeavour
+  EL-5a9f0a6e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Demo Admin
+    textStyle: style_325b630c
+    fills: Mirage
+  EL-609ca6f9:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Customer profile viewed
+    textStyle: style_cf58f31f
+    fills: Mirage
+  EL-f27a949d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2C Customers
+    textStyle: style_e0b4c12d
+    fills: Midnight Blue
+  EL-f546562e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Demo Customer
+    textStyle: style_325b630c
+    fills: Mirage
+  EL-121b01dd:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Yesterday
+    textStyle: style_c967ff2b
+    fills: Mirage
+  EL-ab2b1721:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin account created
+    textStyle: style_cf58f31f
+    fills: Mirage
+  EL-3db4ca42:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: 2 days ago
+    textStyle: style_c967ff2b
+    fills: Mirage
+  EL-622300d3:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: 3 days ago
+    textStyle: style_c967ff2b
+    fills: Mirage
+  EL-5e380d8c:
+    type: FRAME
+    layout: layout_1d4dd0e1
+    fills: fill_183fb985
+    effects: effect_a6f27370
+    borderRadius: 11px
+  EL-e446672f:
+    type: FRAME
+    layout:
+      mode: column
+      overflowScroll:
+        - x
+        - y
+      alignSelf: stretch
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+  EL-3c93974b:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 4px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-5b347ece:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 16
+        y: 15
+      dimensions:
+        width: 18
+        height: 18
+  EL-ecada7e8:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 9.75px 12px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Heather
+    strokeWeight: 1px
+    borderRadius: 12px
+  EL-f676945a:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-9a194f76:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1px 0.9900000095367432px 1px 1px
+      gap: 1px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-e1550df3:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '09'
+    textStyle: style_e567879e
+    fills: Mirage
+  EL-1eb29d66:
+    type: TEXT
+    layout: layout_177c5efc
+    text: /
+    textStyle: style_e567879e
+    fills: Mirage
+  EL-1a800f45:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '2026'
+    textStyle: style_e567879e
+    fills: Mirage
+  EL-7051fbfc:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 2px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 19
+        height: 19
+  EL-8eaefd82:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 15
+        height: 14.06
+  EL-85a92002:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 271.8
+        y: 14
+      dimensions:
+        width: 18
+        height: 18
+  EL-bff1719b:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 20px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-4431dcc6:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 18px 20px 100.62999725341797px
+      alignItems: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-dbc05c97:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 219
+        y: -39
+      dimensions:
+        width: 120
+        height: 120
+    fills: fill_48bd18ed
+    borderRadius: 60px
+  EL-279bfa35:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: center
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-fb54cfa0:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 150
+  EL-ffbfdf46:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 992
+        height: 12
+    fills: Catskill White
+    borderRadius: 999px
+  EL-f0b6ad64:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      gap: 0.5px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 64
+  EL-8432426e:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: flex-end
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-e85b90bc:
+    type: TEXT
+    layout: layout_177c5efc
+    text: 2 bookings
+    textStyle: style_b07d89fc
+    fills: Comet
+  EL-64e3aa5f:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '140.00'
+    textStyle: style_3a4967d7
+    fills: Mirage
+  EL-b40c7e4c:
+    type: TEXT
+    layout: layout_177c5efc
+    text: 1 booking
+    textStyle: style_b07d89fc
+    fills: Comet
+  EL-e56ca4b2:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '60.00'
+    textStyle: style_3a4967d7
+    fills: Mirage
+  EL-edefcf7a:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '45.00'
+    textStyle: style_3a4967d7
+    fills: Mirage
+  EL-36a130be:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 221.97
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-6dd35536:
+    type: TEXT
+    layout: layout_177c5efc
+    text: 2 Sep 2026
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-5055dfb9:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 278.59
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-fad1cc47:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Flights
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-ba6a5fc4:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 275.25
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-89a27cc5:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample supplier
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-a1ddcd63:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 18px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 288.31
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-6890b037:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2C Website
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-0039d9eb:
+    type: FRAME
+    layout: layout_7043efbf
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-00cd7806:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '1'
+    textStyle: style_3a4967d7
+    fills: Mirage
+  EL-34883486:
+    type: FRAME
+    layout: layout_502e4940
+    strokes: Athens Gray
+    strokeWeight: 0px 0px 1px
+  EL-eb0957da:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Hotels
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-f5d49cf6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Mobile App
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-6481cf21:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Travel Packages
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-0ce3f6ed:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2B Agent Portal
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-662bdc1c:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Activities
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-a0f0034e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: eSIM
+    textStyle: style_39e93c2c
+    fills: Mirage
+  EL-d4935436:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 264
+        height: 1200
+    fills: fill_bbc54479
+  EL-71780814:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Platform Settings
+    textStyle: style_26b1bc04
+    fills: Science Blue
+  EL-9ef94fed:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Platform Settings
+    textStyle: style_47de102a
+    fills: Midnight Blue
+  EL-1e386fd0:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Manage core platform configuration.
+    textStyle: style_be48c804
+    fills: Comet
+  EL-4848f3c9:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      gap: 24px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-edec8867:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 12px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 260
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-35d46e41:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 5.5px 10px 9.75px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-346d9904:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Settings
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11.5
+      lineHeight: 17.25px
+      letterSpacing: 0.08em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+  EL-99324298:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 4px
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-62920570:
+    type: FRAME
+    layout: layout_7e1f60ad
+    fills: fill_70fb3ac9
+    borderRadius: 12px
+  EL-7e93a610:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 0
+        y: 10
+      dimensions:
+        width: 3
+        height: 26
+    fills: Saffron
+    borderRadius: 0px 3px 3px 0px
+  EL-4f737013:
+    type: FRAME
+    layout: layout_7e1f60ad
+    borderRadius: 12px
+  EL-8a26a9c6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Languages
+    textStyle: style_cd52462b
+    fills: Mirage
+  EL-7a7e402c:
+    type: FRAME
+    layout: layout_4eafd330
+    borderRadius: 12px
+  EL-9c64f842:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 0px 25.15999984741211px 0px 0px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-8441eb82:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Currencies & Exchange\nRates
+    textStyle: style_cd52462b
+    fills: Mirage
+  EL-d5fa3a7e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Tax Defaults
+    textStyle: style_cd52462b
+    fills: Mirage
+  EL-d88c26b7:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 0px 47.27000045776367px 0px 0px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-86f22a0c:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Default Cancellation\nPolicies
+    textStyle: style_cd52462b
+    fills: Mirage
+  EL-65631a79:
+    type: FRAME
+    layout:
+      mode: row
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-6fedf062:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 2px 0px 0px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 36
+        height: 38
+  EL-d097bf4c:
+    type: FRAME
+    layout: layout_d9d5a9ac
+    fills: Hawkes Blue
+    borderRadius: 11px
+  EL-c788009b:
+    type: FRAME
+    layout:
+      mode: grid
+      alignSelf: stretch
+      padding: 16px
+      gridTemplateColumns: 40px minmax(0,1fr) 18px
+      gridTemplateRows: 21.75px 19.50px
+      gap: 4px 12px
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 79.25
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 16px
+  EL-79cf0927:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: center
+      padding: 10.5px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      gridRow: span 2
+      dimensions:
+        width: 40
+        height: 40
+    fills: Hawkes Blue
+    borderRadius: 12px
+  EL-dfe24a38:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+  EL-878e8ec1:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      gridRow: span 2
+      alignSelf: center
+      dimensions:
+        width: 18
+        height: 18
+  EL-3bf98912:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 28px 28px 419.25px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 68
+      dimensions:
+        width: 1656
+  EL-6f816bfa:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Business Details
+    textStyle: style_cd52462b
+    fills: Mirage
+  EL-e166912b:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 30px 16px
+      alignItems: center
+      gap: 6px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills:
+      - '#FAFCFE'
+    strokes:
+      - '#CBD5E3'
+    strokeWeight: 1px
+    strokeDashes:
+      - 3
+      - 2
+    borderRadius: 16px
+  EL-09bdb517:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 0px 0px 6px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 52
+        height: 58
+  EL-7d103126:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 14px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 52
+        height: 52
+    fills: Catskill White (710:20114)
+    borderRadius: 15px
+  EL-f1b0f0c9:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 24
+        height: 24
+  EL-f7be1f40:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 16.5px 0px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-4265f66b:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 9.5px 0px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 36
+        height: 36
+    fills: Hawkes Blue
+    borderRadius: 10px
+  EL-ed21c370:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Applies to
+    textStyle: style_e0b4c12d
+    fills: Comet
+  EL-261de5e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Platform Settings
+    textStyle: style_e94c23d2
+    fills: Comet
+  EL-7e1cb58c:
+    type: FRAME
+    layout: layout_4eafd330
+    fills: fill_70fb3ac9
+    borderRadius: 12px
+  EL-63bbb173:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 0
+        y: 10
+      dimensions:
+        width: 3
+        height: 34
+    fills: Saffron
+    borderRadius: 0px 3px 3px 0px
+  EL-02d66acd:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 14
+        y: 14.5
+      dimensions:
+        width: 17
+        height: 17
+  EL-1ddebd21:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: start
+      padding: 16px 18px
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 99
+    fills: fill_010c3b93
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 16px
+  EL-969ff3e5:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 644.52
+        height: 65
+  EL-cec2587e:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: -1
+      dimensions:
+        width: 644.52
+  EL-dd10c9e3:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: start
+      padding: 17px 20px 18px
+      alignItems: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+  EL-a5a366d0:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 1.375px
+      sizing:
+        horizontal: hug
+        vertical: hug
+  EL-75174d8d:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 0px 28px
+      alignItems: center
+      gap: 13.99899959564209px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1656
+        height: 68
+    fills: White 92%
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+    effects: effect_84e86613
+  EL-7ceba3d1:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 24.5
+      dimensions:
+        width: 644.52
+  EL-3095a45c:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Scope
+    textStyle: style_e0b4c12d
+    fills: Comet

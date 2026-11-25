@@ -1,0 +1,875 @@
+      id=1015:7243
+        name='Platform Settings - Display Currencies'
+        
+        
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+        
+        
+          id=1015:7244
+            name='div'
+            tpl=EL-d1ac142c type=FRAME
+            
+              id=1080:2206
+                name='Admin navigation'
+                tpl=EL-b4d5d5d0 type=FRAME
+                
+                  id=1080:2207
+                    name='div.sb-hd'
+                    tpl=EL-19ed2d5b type=FRAME
+                    
+                      id=1080:2208
+                        name='Aero Wing Admin Panel — Dashboard'
+                        tpl=EL-27a7f8c4 type=FRAME
+                        
+                          id=1080:2209
+                            name='AeroWing Admin — Dashboard'
+                            tpl=EL-280eabfe type=FRAME
+                            
+                              id=1080:2210
+                                name='AeroWing — Explore, Book, Travel'
+                                tpl=EL-966c7e52 type=FRAME
+                          id=1080:2211
+                            name='span.sb-lab'
+                            tpl=EL-4c261f7f type=FRAME
+                            
+                              id=1080:2212
+                                tpl=EL-a0b6cf5b type=TEXT tpl_text='Admin Panel'
+                  id=1080:2213
+                    name='Admin'
+                    tpl=EL-0b230fa2 type=FRAME
+                    
+                      id=1080:2214
+                        name='div.sb-g'
+                        tpl=EL-e9077466 type=FRAME
+                        
+                          id=1080:2215
+                            name='p#g-ov'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:2216
+                                tpl=EL-ad79941c type=TEXT tpl_text='Overview'
+                          id=1080:2217
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=1080:2218
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=1080:2223
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1080:2224
+                                    tpl=EL-b9328c9b type=TEXT tpl_text='Dashboard'
+                      id=1080:2225
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=1080:2226
+                            name='p#g-core'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:2227
+                                tpl=EL-a5e6b4d2 type=TEXT tpl_text='Core Admin'
+                          id=1080:2228
+                            name='ul'
+                            tpl=EL-6e926975 type=FRAME
+                            
+                              id=1080:2229
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:2230
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:2232
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2233
+                                        tpl=EL-8cc0c44d type=TEXT tpl_text='B2C Customers'
+                              id=1080:2234
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:2235
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:2238
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2239
+                                        tpl=EL-c45ae915 type=TEXT tpl_text='Admin Users'
+                              id=1080:2240
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:2241
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:2244
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2245
+                                        tpl=EL-40ae2791 type=TEXT tpl_text='Roles & Permissions'
+                              id=1080:2246
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=1080:2247
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=1080:2252
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2253
+                                        tpl=EL-557136c9 type=TEXT tpl_text='Audit Log'
+                      id=1080:2254
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=1080:2255
+                            name='p#g-mod'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=1080:2256
+                                tpl=EL-eff13b88 type=TEXT tpl_text='Platform Modules'
+                          id=1080:2257
+                            name='ul'
+                            tpl=EL-43323dcb type=FRAME
+                            
+                              id=1080:2258
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2259
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2261
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2262
+                                        tpl=EL-4074d9e1 type=TEXT tpl_text='Bookings'
+                              id=1080:2263
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2264
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2267
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2268
+                                        tpl=EL-618e9697 type=TEXT tpl_text='Agents'
+                              id=1080:2269
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2270
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2272
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2273
+                                        tpl=EL-d10a515e type=TEXT tpl_text='Suppliers'
+                              id=1080:2274
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2275
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2278
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2279
+                                        tpl=EL-970eec68 type=TEXT tpl_text='Pricing & Promotions'
+                              id=1080:2280
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2281
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2283
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2284
+                                        tpl=EL-344c29b0 type=TEXT tpl_text='Reviews'
+                              id=1080:2302
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=1080:2303
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2306
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2307
+                                        tpl=EL-2fd65db2 type=TEXT tpl_text='Reports'
+                              id=1080:2308
+                                name='a.sb-i'
+                                tpl=EL-5e380d8c type=FRAME
+                                
+                                  id=1080:2309
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=1080:2312
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=1080:2313
+                                        tpl=EL-09476c5f type=TEXT tpl_text='Platform Settings'
+                  id=1080:2314
+                    name='div.sb-ft'
+                    tpl=EL-ab88c726 type=FRAME
+                    
+                      id=1080:2315
+                        name='Collapse sidebar'
+                        tpl=EL-04eca728 type=FRAME
+                        
+                          id=1080:2316
+                            name='Frame'
+                            tpl=EL-b1d338df type=IMAGE-SVG
+                          id=1080:2319
+                            name='span#sb-col-l'
+                            tpl=EL-83bc679e type=FRAME
+                            
+                              id=1080:2320
+                                tpl=EL-1fd2da9e type=TEXT tpl_text='Collapse'
+              id=1015:7360
+                name='Main column'
+                tpl=EL-ba6dbac3 type=FRAME
+                
+                  id=1015:7361
+                    name='main'
+                    
+                    
+                      
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                    
+                      id=1015:7362
+                        name='div#page'
+                        tpl=EL-acfb41d2 type=FRAME
+                        
+                          id=1015:7363
+                            name='div.ph2'
+                            tpl=EL-eeae19b6 type=FRAME
+                            
+                              id=1015:7364
+                                name='div'
+                                tpl=EL-7c39d4fd type=FRAME
+                                
+                                  id=1015:7365
+                                    name='span'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=1015:7366
+                                        tpl=EL-71780814 type=TEXT tpl_text='Platform Settings'
+                                  id=1015:7367
+                                    name='h1'
+                                    tpl=EL-681edddb type=FRAME
+                                    
+                                      id=1015:7368
+                                        tpl=EL-9ef94fed type=TEXT tpl_text='Platform Settings'
+                                  id=1015:7369
+                                    name='p'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=1015:7370
+                                        tpl=EL-1e386fd0 type=TEXT tpl_text='Manage core platform configuration.'
+                          id=1015:7371
+                            name='div'
+                            tpl=EL-4848f3c9 type=FRAME
+                            
+                              id=1015:7372
+                                name='Platform Settings sections'
+                                tpl=EL-edec8867 type=FRAME
+                                
+                                  id=1015:7373
+                                    name='p.sn-t'
+                                    tpl=EL-35d46e41 type=FRAME
+                                    
+                                      id=1015:7374
+                                        tpl=EL-346d9904 type=TEXT tpl_text='Settings'
+                                  id=1015:7375
+                                    name='ul'
+                                    tpl=EL-99324298 type=FRAME
+                                    
+                                      id=1015:7376
+                                        name='a'
+                                        tpl=EL-4f737013 type=FRAME
+                                        
+                                          id=1015:7377
+                                            name='Frame'
+                                            tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7380
+                                            name='span'
+                                            tpl=EL-2f9fe287 type=FRAME
+                                            
+                                              id=1015:7381
+                                                tpl=EL-6f816bfa type=TEXT tpl_text='Business Details'
+                                      id=1015:7382
+                                        name='a'
+                                        tpl=EL-4f737013 type=FRAME
+                                        
+                                          id=1015:7383
+                                            name='Frame'
+                                            tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7386
+                                            name='span'
+                                            tpl=EL-2f9fe287 type=FRAME
+                                            
+                                              id=1015:7387
+                                                tpl=EL-8a26a9c6 type=TEXT tpl_text='Languages'
+                                      id=1015:7388
+                                        name='a'
+                                        tpl=EL-7e1cb58c type=FRAME
+                                        
+                                          id=1015:7389
+                                            name='Frame'
+                                            tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7393
+                                            name='span'
+                                            tpl=EL-9c64f842 type=FRAME
+                                            
+                                              id=1015:7394
+                                                
+                                                
+                                                text='Currencies & Exchange\nRates'
+                                                
+                                                
+                                          id=1015:7395
+                                            name=''::before''
+                                            tpl=EL-63bbb173 type=RECTANGLE
+                                      id=1015:7396
+                                        name='a'
+                                        tpl=EL-4f737013 type=FRAME
+                                        
+                                          id=1015:7397
+                                            name='Frame'
+                                            tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7400
+                                            name='span'
+                                            tpl=EL-2f9fe287 type=FRAME
+                                            
+                                              id=1015:7401
+                                                tpl=EL-d5fa3a7e type=TEXT tpl_text='Tax Defaults'
+                                      id=1015:7402
+                                        name='a'
+                                        tpl=EL-7a7e402c type=FRAME
+                                        
+                                          id=1015:7403
+                                            name='Frame'
+                                            tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7406
+                                            name='span'
+                                            tpl=EL-d88c26b7 type=FRAME
+                                            
+                                              id=1015:7407
+                                                tpl=EL-86f22a0c type=TEXT tpl_text='Default Cancellation\nPolicies'
+                              id=1015:7408
+                                name='div.sm2'
+                                tpl=EL-6cb81979 type=FRAME
+                                
+                                  id=1015:7409
+                                    name='section.pc3'
+                                    tpl=EL-ed86ce35 type=FRAME
+                                    
+                                      id=1015:7410
+                                        name='div.pc3-h'
+                                        tpl=EL-998e62e2 type=FRAME
+                                        
+                                          id=1015:7411
+                                            name='div'
+                                            tpl=EL-65631a79 type=FRAME
+                                            
+                                              id=1015:7412
+                                                name='span.kpi-ic:margin'
+                                                tpl=EL-6fedf062 type=FRAME
+                                                
+                                                  id=1015:7413
+                                                    name='span.kpi-ic'
+                                                    tpl=EL-a3dd0e0a type=FRAME
+                                                    
+                                                      id=1015:7414
+                                                        name='Frame'
+                                                        tpl=EL-f652840d type=IMAGE-SVG
+                                              id=1015:7418
+                                                name='div.ph-t'
+                                                tpl=EL-bfbba51a type=FRAME
+                                                
+                                                  id=1015:7419
+                                                    name='h2#cx-h'
+                                                    tpl=EL-dfdf56f9 type=FRAME
+                                                    
+                                                      id=1015:7420
+                                                        
+                                                        
+                                                        text='Currencies & Exchange Rates'
+                                                        
+                                                        
+                                                  id=1015:7421
+                                                    name='p.sub'
+                                                    tpl=EL-dfdf56f9 type=FRAME
+                                                    
+                                                      id=1015:7422
+                                                        
+                                                        
+                                                        text='Manage display currencies and the exchange rates used for price conversion.'
+                                                        
+                                                        
+                                      id=1015:7423
+                                        name='div.ctw'
+                                        tpl=EL-e446672f type=FRAME
+                                        
+                                          id=1015:7424
+                                            name='Currency settings'
+                                            tpl=EL-3c93974b type=FRAME
+                                            
+                                              id=1015:7425
+                                                name='button#tab-cur'
+                                                
+                                                
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                
+                                                
+                                                  id=1015:7426
+                                                    name='Frame'
+                                                    tpl=EL-02d66acd type=IMAGE-SVG
+                                                  id=1015:7430
+                                                    
+                                                    
+                                                      
+                                                      
+                                                      
+                                                        
+                                                        
+                                                      
+                                                        
+                                                        
+                                                    text='Display Currencies'
+                                                    
+                                                    
+                                                  id=1015:7431
+                                                    name=''::after''
+                                                    
+                                                    
+                                                      
+                                                      
+                                                      
+                                                        
+                                                        
+                                                      
+                                                        
+                                                        
+                                                    
+                                                    
+                                              id=1015:7432
+                                                name='button#tab-rates'
+                                                
+                                                
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                
+                                                
+                                                  id=1015:7433
+                                                    name='Frame'
+                                                    tpl=EL-02d66acd type=IMAGE-SVG
+                                                  id=1015:7436
+                                                    
+                                                    
+                                                      
+                                                      
+                                                      
+                                                        
+                                                        
+                                                      
+                                                        
+                                                        
+                                                    text='Exchange Rates'
+                                                    
+                                                    
+                                      id=1015:7437
+                                        name='div#pn-cur'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                        
+                                          id=1015:7438
+                                            name='div.cpn-h'
+                                            tpl=EL-c319309c type=FRAME
+                                            
+                                              id=1015:7439
+                                                name='div'
+                                                tpl=EL-bfbba51a type=FRAME
+                                                
+                                                  id=1015:7440
+                                                    name='h3#dc-h'
+                                                    tpl=EL-dfdf56f9 type=FRAME
+                                                    
+                                                      id=1015:7441
+                                                        
+                                                        
+                                                        text='Display Currencies'
+                                                        
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                        
+                                                  id=1015:7442
+                                                    name='p'
+                                                    tpl=EL-dfdf56f9 type=FRAME
+                                                    
+                                                      id=1015:7443
+                                                        
+                                                        
+                                                        text='Currencies customers can select for price display.'
+                                                        
+                                                        
+                                              id=1015:7444
+                                                name='button#c-ed'
+                                                tpl=EL-54a3e44b type=FRAME
+                                                
+                                                  id=1015:7445
+                                                    name='Frame'
+                                                    tpl=EL-d40fb4e5 type=IMAGE-SVG
+                                                  id=1015:7448
+                                                    
+                                                    
+                                                    text='Configure Currencies'
+                                                    
+                                                    
+                                          id=1015:7449
+                                            name='div.lg-ns'
+                                            tpl=EL-e166912b type=FRAME
+                                            
+                                              id=1015:7450
+                                                name='span.es-ic:margin'
+                                                tpl=EL-09bdb517 type=FRAME
+                                                
+                                                  id=1015:7451
+                                                    name='span.es-ic'
+                                                    tpl=EL-7d103126 type=FRAME
+                                                    
+                                                      id=1015:7452
+                                                        name='Frame'
+                                                        tpl=EL-f1b0f0c9 type=IMAGE-SVG
+                                              id=1015:7456
+                                                name='h3:margin'
+                                                tpl=EL-f7be1f40 type=FRAME
+                                                
+                                                  id=1015:7457
+                                                    name='h3'
+                                                    tpl=EL-83bc679e type=FRAME
+                                                    
+                                                      id=1015:7458
+                                                        
+                                                        
+                                                        text='No confirmed currency configuration loaded'
+                                                        
+                                                        
+                                              id=1015:7459
+                                                name='p'
+                                                
+                                                
+                                                  
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                
+                                                  id=1015:7460
+                                                    
+                                                    
+                                                    text='Configured display currencies and exchange rates will appear here\nonce the platform currency configuration is supplied.'
+                                                    
+                                                    
+                                  id=1015:7461
+                                    name='div.lg-n'
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                      
+                                        
+                                    
+                                      id=1015:7462
+                                        name='aside.inf'
+                                        tpl=EL-1ddebd21 type=FRAME
+                                        
+                                          id=1015:7463
+                                            name='span.kpi-ic'
+                                            tpl=EL-d097bf4c type=FRAME
+                                            
+                                              id=1015:7464
+                                                name='Frame'
+                                                tpl=EL-f652840d type=IMAGE-SVG
+                                          id=1015:7468
+                                            name='div'
+                                            tpl=EL-969ff3e5 type=FRAME
+                                            
+                                              id=1015:7469
+                                                name='h2#inf-h'
+                                                tpl=EL-cec2587e type=FRAME
+                                                
+                                                  id=1015:7470
+                                                    
+                                                    
+                                                    text='Display currency vs payment currency'
+                                                    
+                                                    
+                                              id=1015:7471
+                                                name='p'
+                                                
+                                                
+                                                  
+                                                  
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                    
+                                                  
+                                                    
+                                                
+                                                  id=1015:7472
+                                                    
+                                                    
+                                                    text='Exchange rates control customer-facing price conversion. Payment is charged only in currencies enabled on the Client’s Stripe account.'
+                                                    
+                                                    
+                                      id=1015:7473
+                                        name='section.pc3'
+                                        tpl=EL-dd10c9e3 type=FRAME
+                                        
+                                          id=1015:7474
+                                            name='h2#cd-h'
+                                            tpl=EL-e9077466 type=FRAME
+                                            
+                                              id=1015:7475
+                                                
+                                                
+                                                text='Currency details'
+                                                
+                                                
+                                          id=1015:7476
+                                            name='dl.kvn'
+                                            tpl=EL-1519dabc type=FRAME
+                                            
+                                              id=1015:7477
+                                                name='div'
+                                                tpl=EL-c094fdcc type=FRAME
+                                                
+                                                  id=1015:7478
+                                                    name='span.kpi-ic'
+                                                    tpl=EL-4265f66b type=FRAME
+                                                    
+                                                      id=1015:7479
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=1015:7482
+                                                    name='div'
+                                                    tpl=EL-bfbba51a type=FRAME
+                                                    
+                                                      id=1015:7483
+                                                        name='dt'
+                                                        tpl=EL-dfdf56f9 type=FRAME
+                                                        
+                                                          id=1015:7484
+                                                            tpl=EL-ed21c370 type=TEXT tpl_text='Applies to'
+                                                      id=1015:7485
+                                                        name='dd'
+                                                        tpl=EL-dfdf56f9 type=FRAME
+                                                        
+                                                          id=1015:7486
+                                                            
+                                                            
+                                                            text='Customer-facing price display'
+                                                            
+                                                            
+                                              id=1015:7487
+                                                name='div'
+                                                tpl=EL-c094fdcc type=FRAME
+                                                
+                                                  id=1015:7488
+                                                    name='span.kpi-ic'
+                                                    tpl=EL-4265f66b type=FRAME
+                                                    
+                                                      id=1015:7489
+                                                        name='Frame'
+                                                        tpl=EL-f1890f3e type=IMAGE-SVG
+                                                  id=1015:7492
+                                                    name='div'
+                                                    tpl=EL-a5a366d0 type=FRAME
+                                                    
+                                                      id=1015:7493
+                                                        name='dt'
+                                                        tpl=EL-dfdf56f9 type=FRAME
+                                                        
+                                                          id=1015:7494
+                                                            
+                                                            
+                                                            text='Payment currencies'
+                                                            
+                                                            
+                                                      id=1015:7495
+                                                        name='dd'
+                                                        tpl=EL-dfdf56f9 type=FRAME
+                                                        
+                                                          id=1015:7496
+                                                            
+                                                            
+                                                            text='Payment availability for a currency is controlled separately by the\ncurrencies enabled on the Client’s Stripe account.'
+                                                            
+                                                            
+                  id=1015:7497
+                    name='footer.ft2'
+                    tpl=EL-a365c360 type=FRAME
+                    
+                      id=1015:7498
+                        tpl=EL-64a79c70 type=TEXT tpl_text='© 2026 AeroWing. All rights reserved.'
+                  id=1015:7499
+                    name='header'
+                    tpl=EL-75174d8d type=FRAME
+                    
+                      id=1015:7500
+                        name='Breadcrumb:margin'
+                        
+                        
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=1015:7501
+                            name='Breadcrumb'
+                            tpl=EL-235879b0 type=FRAME
+                            
+                              id=1015:7502
+                                name='li'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=1015:7503
+                                    tpl=EL-fdff9110 type=TEXT tpl_text='Admin Panel'
+                              id=1015:7504
+                                name='li'
+                                tpl=EL-bbedda7b type=FRAME
+                                
+                                  id=1015:7505
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text='/'
+                                  id=1015:7506
+                                    tpl=EL-261de5e1 type=TEXT tpl_text='Platform Settings'
+                              id=1015:7507
+                                name='li'
+                                tpl=EL-bbedda7b type=FRAME
+                                
+                                  id=1015:7508
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text='/'
+                                  id=1015:7509
+                                    
+                                    
+                                    text='Currencies & Exchange Rates'
+                                    
+                                    
+                      id=1015:7510
+                        name='div.tb-a'
+                        tpl=EL-235879b0 type=FRAME
+                        
+                          id=1015:7511
+                            name='Notifications'
+                            tpl=EL-58e2a7b0 type=FRAME
+                            
+                              id=1015:7512
+                                name='Frame'
+                                tpl=EL-d2f5d0a6 type=IMAGE-SVG
+                          id=1015:7514
+                            name='button menu#pf-b'
+                            tpl=EL-0ccd4aea type=FRAME
+                            
+                              id=1015:7515
+                                name='span.pf-av'
+                                tpl=EL-a8b2764a type=FRAME
+                                
+                                  id=1015:7516
+                                    tpl=EL-5321e56d type=TEXT tpl_text='SA'
+                              id=1015:7517
+                                name='span.pf-t'
+                                tpl=EL-6e7b525c type=FRAME
+                                
+                                  id=1015:7518
+                                    name='b'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=1015:7519
+                                        tpl=EL-2df750f6 type=TEXT tpl_text='Sample Admin'
+                                  id=1015:7520
+                                    name='small#pf-role'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=1015:7521
+                                        tpl=EL-a8ebef05 type=TEXT tpl_text='Super Admin'
+                              id=1015:7522
+                                name='Frame'
+                                tpl=EL-d40fb4e5 type=IMAGE-SVG

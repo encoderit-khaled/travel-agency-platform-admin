@@ -1,0 +1,623 @@
+              - id: 1084:3642
+                name: Main column
+                template: EL-ba6dbac3
+    [TPL]     type: FRAME
+                children:
+                  - id: 1084:3643
+                    name: main
+                    type: FRAME
+                    layout:
+                      mode: column
+                      padding: 28px 28px 375.75px
+                      alignItems: stretch
+                      sizing:
+                        horizontal: fixed
+                        vertical: hug
+                      locationRelativeToParent:
+                        x: 0
+                        y: 68
+                      dimensions:
+                        width: 1656
+                    children:
+                      - id: 1084:3644
+                        name: div#page
+                        template: EL-acfb41d2
+    [TPL]     type: FRAME
+                        children:
+                          - id: 1084:3645
+                            name: div.ph2
+                            template: EL-eeae19b6
+    [TPL]     type: FRAME
+                            children:
+                              - id: 1084:3646
+                                name: div
+                                template: EL-7c39d4fd
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3647
+                                    name: span
+                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3648
+                                        template: EL-71780814
+    [TPL]     type: TEXT
+    [TPL]     text: Platform Settings
+    [TPL]     fills: Science Blue
+                                  - id: 1084:3649
+                                    name: h1
+                                    template: EL-681edddb
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3650
+                                        template: EL-9ef94fed
+    [TPL]     type: TEXT
+    [TPL]     text: Platform Settings
+    [TPL]     fills: Midnight Blue
+                                  - id: 1084:3651
+                                    name: p
+                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3652
+                                        template: EL-1e386fd0
+    [TPL]     type: TEXT
+    [TPL]     text: Manage core platform configuration.
+    [TPL]     fills: Comet
+                          - id: 1084:3653
+                            name: div
+                            template: EL-4848f3c9
+    [TPL]     type: FRAME
+                            children:
+                              - id: 1084:3654
+                                name: Platform Settings sections
+                                template: EL-edec8867
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                                children:
+                                  - id: 1084:3655
+                                    name: p.sn-t
+                                    template: EL-35d46e41
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3656
+                                        template: EL-346d9904
+    [TPL]     type: TEXT
+    [TPL]     text: Settings
+    [TPL]     fills: Comet
+                                  - id: 1084:3657
+                                    name: ul
+                                    template: EL-99324298
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3658
+                                        name: a
+                                        template: EL-4f737013
+    [TPL]     type: FRAME
+                                        children:
+                                          - id: 1084:3659
+                                            name: Frame
+                                            template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3662
+                                            name: span
+                                            template: EL-2f9fe287
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3663
+                                                template: EL-6f816bfa
+    [TPL]     type: TEXT
+    [TPL]     text: Business Details
+    [TPL]     fills: Mirage
+                                      - id: 1084:3664
+                                        name: a
+                                        template: EL-4f737013
+    [TPL]     type: FRAME
+                                        children:
+                                          - id: 1084:3665
+                                            name: Frame
+                                            template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3668
+                                            name: span
+                                            template: EL-2f9fe287
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3669
+                                                template: EL-8a26a9c6
+    [TPL]     type: TEXT
+    [TPL]     text: Languages
+    [TPL]     fills: Mirage
+                                      - id: 1084:3670
+                                        name: a
+                                        template: EL-7a7e402c
+    [TPL]     type: FRAME
+                                        children:
+                                          - id: 1084:3671
+                                            name: Frame
+                                            template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3675
+                                            name: span
+                                            template: EL-9c64f842
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3676
+                                                template: EL-8441eb82
+    [TPL]     type: TEXT
+    [TPL]     text: Currencies & Exchange\nRates
+    [TPL]     fills: Mirage
+                                      - id: 1084:3677
+                                        name: a
+                                        template: EL-4f737013
+    [TPL]     type: FRAME
+                                        children:
+                                          - id: 1084:3678
+                                            name: Frame
+                                            template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3681
+                                            name: span
+                                            template: EL-2f9fe287
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3682
+                                                template: EL-d5fa3a7e
+    [TPL]     type: TEXT
+    [TPL]     text: Tax Defaults
+    [TPL]     fills: Mirage
+                                      - id: 1084:3683
+                                        name: a
+                                        template: EL-7e1cb58c
+    [TPL]     type: FRAME
+    [TPL]     fills: fill_70fb3ac9
+                                        children:
+                                          - id: 1084:3684
+                                            name: Frame
+                                            template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3687
+                                            name: span
+                                            template: EL-d88c26b7
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3688
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Default Cancellation\nPolicies
+                                                textStyle: style_03a12ba4
+                                                fills: Midnight Blue
+                                          - id: 1084:3689
+                                            name: '::before'
+                                            template: EL-63bbb173
+    [TPL]     type: RECTANGLE
+    [TPL]     fills: Saffron
+                              - id: 1084:3690
+                                name: div.sm2
+                                template: EL-6cb81979
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3691
+                                    name: section.pc3
+                                    template: EL-ed86ce35
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                                    children:
+                                      - id: 1084:3692
+                                        name: div.pc3-h
+                                        template: EL-89de18e1
+    [TPL]     type: FRAME
+                                        children:
+                                          - id: 1084:3693
+                                            name: div
+                                            template: EL-65631a79
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3694
+                                                name: span.kpi-ic:margin
+                                                template: EL-6fedf062
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3695
+                                                    name: span.kpi-ic
+                                                    template: EL-a3dd0e0a
+    [TPL]     type: FRAME
+    [TPL]     fills: Hawkes Blue
+                                                    children:
+                                                      - id: 1084:3696
+                                                        name: Frame
+                                                        template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                              - id: 1084:3699
+                                                name: div.ph-t
+                                                template: EL-bfbba51a
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3700
+                                                    name: h2#tx-h
+                                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                    children:
+                                                      - id: 1084:3701
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: Default Cancellation Policies
+                                                        textStyle: style_aefbca38
+                                                        fills: Midnight Blue
+                                                  - id: 1084:3702
+                                                    name: p.sub
+                                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                    children:
+                                                      - id: 1084:3703
+                                                        type: TEXT
+                                                        layout: layout_177c5efc
+                                                        text: Manage the platform’s default cancellation-policy information.
+                                                        textStyle: style_8fd4b277
+                                                        fills: Comet
+                                          - id: 1084:3704
+                                            name: button.btn
+                                            template: EL-54a3e44b
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                                            children:
+                                              - id: 1084:3705
+                                                name: Frame
+                                                template: EL-d40fb4e5
+    [TPL]     type: IMAGE-SVG
+                                              - id: 1084:3708
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Configure Default Policy
+                                                textStyle: style_bb12b1a7
+                                                fills: Midnight Blue
+                                      - id: 1084:3709
+                                        name: div.lg-ns
+                                        template: EL-e166912b
+    [TPL]     type: FRAME
+    [TPL]     fills:
+                                        children:
+                                          - id: 1084:3710
+                                            name: span.es-ic:margin
+                                            template: EL-09bdb517
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3711
+                                                name: span.es-ic
+                                                template: EL-7d103126
+    [TPL]     type: FRAME
+    [TPL]     fills: Catskill White (710:20114)
+                                                children:
+                                                  - id: 1084:3712
+                                                    name: Frame
+                                                    template: EL-f1b0f0c9
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3715
+                                            name: h3:margin
+                                            template: EL-f7be1f40
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3716
+                                                name: h3
+                                                template: EL-83bc679e
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3717
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: No confirmed default cancellation policy configured
+                                                    textStyle: style_c9eafb49
+                                                    fills: Midnight Blue
+                                          - id: 1084:3718
+                                            name: p
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 22.520000457763672px
+                                              alignItems: center
+                                              sizing:
+                                                horizontal: hug
+                                                vertical: hug
+                                            children:
+                                              - id: 1084:3719
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Default cancellation-policy information will appear here once the\nrequired policy terms are supplied.
+                                                textStyle: style_f70b28e3
+                                                fills: Comet
+                                  - id: 1084:3720
+                                    name: div.lg-n
+                                    type: FRAME
+                                    layout:
+                                      mode: grid
+                                      alignSelf: stretch
+                                      gridTemplateColumns: minmax(0,1.30fr) minmax(0,1fr)
+                                      gridTemplateRows: 213px
+                                      gap: 20px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: fixed
+                                      dimensions:
+                                        height: 213
+                                    children:
+                                      - id: 1084:3721
+                                        name: aside.inf
+                                        template: EL-1ddebd21
+    [TPL]     type: FRAME
+    [TPL]     fills: fill_010c3b93
+                                        children:
+                                          - id: 1084:3722
+                                            name: span.kpi-ic
+                                            template: EL-d097bf4c
+    [TPL]     type: FRAME
+    [TPL]     fills: Hawkes Blue
+                                            children:
+                                              - id: 1084:3723
+                                                name: Frame
+                                                template: EL-f652840d
+    [TPL]     type: IMAGE-SVG
+                                          - id: 1084:3727
+                                            name: div
+                                            template: EL-969ff3e5
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3728
+                                                name: h2#inf-h
+                                                template: EL-cec2587e
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3729
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Default policy configuration
+                                                    textStyle: style_ac8daa02
+                                                    fills: Midnight Blue
+                                              - id: 1084:3730
+                                                name: p
+                                                template: EL-7ceba3d1
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3731
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: These settings provide default cancellation-policy information. The applicable policy for an actual booking\nmay depend on booking and supplier data handled by the cancellation/refund workflow.
+                                                    textStyle: style_8fd4b277
+                                                    fills: Comet
+                                      - id: 1084:3732
+                                        name: section.pc3
+                                        template: EL-dd10c9e3
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                                        children:
+                                          - id: 1084:3733
+                                            name: h2#td-h
+                                            template: EL-e9077466
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3734
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: Policy details
+                                                textStyle: style_ac8daa02
+                                                fills: Midnight Blue
+                                          - id: 1084:3735
+                                            name: dl.kvn
+                                            template: EL-1519dabc
+    [TPL]     type: FRAME
+                                            children:
+                                              - id: 1084:3736
+                                                name: div
+                                                template: EL-c094fdcc
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3737
+                                                    name: span.kpi-ic
+                                                    template: EL-4265f66b
+    [TPL]     type: FRAME
+    [TPL]     fills: Hawkes Blue
+                                                    children:
+                                                      - id: 1084:3738
+                                                        name: Frame
+                                                        template: EL-f1890f3e
+    [TPL]     type: IMAGE-SVG
+                                                  - id: 1084:3741
+                                                    name: div
+                                                    template: EL-a5a366d0
+    [TPL]     type: FRAME
+                                                    children:
+                                                      - id: 1084:3742
+                                                        name: dt
+                                                        template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                        children:
+                                                          - id: 1084:3743
+                                                            template: EL-3095a45c
+    [TPL]     type: TEXT
+    [TPL]     text: Scope
+    [TPL]     fills: Comet
+                                                      - id: 1084:3744
+                                                        name: dd
+                                                        template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                        children:
+                                                          - id: 1084:3745
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: This screen manages platform default cancellation-policy\ninformation.
+                                                            textStyle: style_53cdfbde
+                                                            fills: Mirage
+                                              - id: 1084:3746
+                                                name: div
+                                                template: EL-c094fdcc
+    [TPL]     type: FRAME
+                                                children:
+                                                  - id: 1084:3747
+                                                    name: span.kpi-ic
+                                                    template: EL-4265f66b
+    [TPL]     type: FRAME
+    [TPL]     fills: Hawkes Blue
+                                                    children:
+                                                      - id: 1084:3748
+                                                        name: Frame
+                                                        template: EL-f1890f3e
+    [TPL]     type: IMAGE-SVG
+                                                  - id: 1084:3751
+                                                    name: div
+                                                    template: EL-a5a366d0
+    [TPL]     type: FRAME
+                                                    children:
+                                                      - id: 1084:3752
+                                                        name: dt
+                                                        template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                        children:
+                                                          - id: 1084:3753
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Booking application
+                                                            textStyle: style_e0b4c12d
+                                                            fills: Comet
+                                                      - id: 1084:3754
+                                                        name: dd
+                                                        template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                                        children:
+                                                          - id: 1084:3755
+                                                            type: TEXT
+                                                            layout: layout_177c5efc
+                                                            text: Actual booking policy application is handled by the\ncancellation/refund workflow.
+                                                            textStyle: style_53cdfbde
+                                                            fills: Mirage
+                  - id: 1084:3756
+                    name: footer.ft2
+                    template: EL-a365c360
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                    children:
+                      - id: 1084:3757
+                        template: EL-64a79c70
+    [TPL]     type: TEXT
+    [TPL]     text: © 2026 AeroWing. All rights reserved.
+    [TPL]     fills: Comet
+                  - id: 1084:3758
+                    name: header
+                    template: EL-75174d8d
+    [TPL]     type: FRAME
+    [TPL]     fills: White 92%
+                    children:
+                      - id: 1084:3759
+                        name: Breadcrumb:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 0px 944.031005859375px 0px 0px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 1084:3760
+                            name: Breadcrumb
+                            template: EL-235879b0
+    [TPL]     type: FRAME
+                            children:
+                              - id: 1084:3761
+                                name: li
+                                template: EL-2f9fe287
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3762
+                                    template: EL-fdff9110
+    [TPL]     type: TEXT
+    [TPL]     text: Admin Panel
+    [TPL]     fills: Comet
+                              - id: 1084:3763
+                                name: li
+                                template: EL-bbedda7b
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3764
+                                    template: EL-db7ddb8d
+    [TPL]     type: TEXT
+    [TPL]     text: /
+    [TPL]     fills: Gull Gray
+                                  - id: 1084:3765
+                                    template: EL-261de5e1
+    [TPL]     type: TEXT
+    [TPL]     text: Platform Settings
+    [TPL]     fills: Comet
+                              - id: 1084:3766
+                                name: li
+                                template: EL-bbedda7b
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3767
+                                    template: EL-db7ddb8d
+    [TPL]     type: TEXT
+    [TPL]     text: /
+    [TPL]     fills: Gull Gray
+                                  - id: 1084:3768
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Default Cancellation Policies
+                                    textStyle: style_857f4816
+                                    fills: Mirage
+                      - id: 1084:3769
+                        name: div.tb-a
+                        template: EL-235879b0
+    [TPL]     type: FRAME
+                        children:
+                          - id: 1084:3770
+                            name: Notifications
+                            template: EL-58e2a7b0
+    [TPL]     type: FRAME
+                            children:
+                              - id: 1084:3771
+                                name: Frame
+                                template: EL-d2f5d0a6
+    [TPL]     type: IMAGE-SVG
+                          - id: 1084:3773
+                            name: button menu#pf-b
+                            template: EL-0ccd4aea
+    [TPL]     type: FRAME
+    [TPL]     fills: White
+                            children:
+                              - id: 1084:3774
+                                name: span.pf-av
+                                template: EL-a8b2764a
+    [TPL]     type: FRAME
+    [TPL]     fills: Midnight Blue
+                                children:
+                                  - id: 1084:3775
+                                    template: EL-5321e56d
+    [TPL]     type: TEXT
+    [TPL]     text: SA
+    [TPL]     fills: Saffron
+                              - id: 1084:3776
+                                name: span.pf-t
+                                template: EL-6e7b525c
+    [TPL]     type: FRAME
+                                children:
+                                  - id: 1084:3777
+                                    name: b
+                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3778
+                                        template: EL-2df750f6
+    [TPL]     type: TEXT
+    [TPL]     text: Sample Admin
+    [TPL]     fills: Mirage
+                                  - id: 1084:3779
+                                    name: small#pf-role
+                                    template: EL-dfdf56f9
+    [TPL]     type: FRAME
+                                    children:
+                                      - id: 1084:3780
+                                        template: EL-a8ebef05
+    [TPL]     type: TEXT
+    [TPL]     text: Super Admin
+    [TPL]     fills: Comet
+                              - id: 1084:3781
+                                name: Frame
+                                template: EL-d40fb4e5
+    [TPL]     type: IMAGE-SVG

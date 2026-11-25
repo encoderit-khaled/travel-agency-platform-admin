@@ -1,15 +1,22 @@
 import * as React from 'react'
 import {
   LayoutDashboard,
-  CalendarDays,
   Users,
+  UserCheck,
   Briefcase,
-  Wallet,
   Percent,
   BarChart3,
   Bell,
   Settings,
   ChevronDown,
+  Key,
+  List,
+  Ticket,
+  Tag,
+  Plug,
+  MessageSquare,
+  PanelLeftClose,
+  PanelLeftOpen,
 } from 'lucide-react'
 import {
   Sidebar,
@@ -26,6 +33,7 @@ import {
   SidebarProvider,
   SidebarRail,
   SidebarSeparator,
+  useSidebar,
 } from '#/components/ui/sidebar'
 import { cn } from 'cn'
 
@@ -35,6 +43,23 @@ export interface AdminSidebarProps {
   className?: string
   onCloseMobile?: () => void
   collapsible?: 'offcanvas' | 'icon' | 'none'
+  defaultOpen?: boolean
+}
+
+function navItemClass(active: boolean) {
+  return cn(
+    'relative h-auto gap-3 rounded-xl px-3 py-2.5 text-sm transition-colors [&_svg]:size-4.5',
+    active
+      ? 'bg-white/12 font-semibold text-[#F1C134] shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15 hover:text-[#F1C134] active:bg-white/15 active:text-[#F1C134]'
+      : 'bg-transparent font-medium text-[#C9D7EA] hover:bg-white/6 hover:text-white active:bg-white/6 active:text-white',
+  )
+}
+
+function navIconClass(active: boolean) {
+  return cn(
+    'size-4.5 shrink-0 transition-colors',
+    active ? 'text-[#F1C134]' : 'text-[#C9D7EA]',
+  )
 }
 
 function AdminSidebarInner({
@@ -46,20 +71,53 @@ function AdminSidebarInner({
 }: AdminSidebarProps) {
   const [agentsExpanded, setAgentsExpanded] = React.useState(true)
 
-  const navItems = [
-    { label: 'Dashboard', icon: LayoutDashboard, href: '#' },
-    { label: 'Bookings', icon: CalendarDays, href: '#' },
-    { label: 'Customers', icon: Users, href: '#' },
+  const activeSubItem = currentTab || 'Agent Applications'
+
+  const isDashboardActive = activeSubItem === 'Dashboard'
+
+  const overviewItems = [
+    {
+      label: 'Dashboard',
+      icon: LayoutDashboard,
+      href: '/admin?view=dashboard',
+      active: isDashboardActive,
+    },
   ]
 
-  const activeSubItem = currentTab || 'Agent Applications'
+  const coreAdminItems = [
+    {
+      label: 'B2C Customers',
+      icon: Users,
+      href: '/b2c-customers',
+      active:
+        activeSubItem === 'B2C Customers' || activeSubItem === 'Customers',
+    },
+    {
+      label: 'Admin Users',
+      icon: UserCheck,
+      href: '/admin-users?node-id=975-3024',
+      active: activeSubItem === 'Admin Users',
+    },
+    {
+      label: 'Roles & Permissions',
+      icon: Key,
+      href: '/roles-access',
+      active: activeSubItem === 'Roles & Permissions',
+    },
+    {
+      label: 'Audit Log',
+      icon: List,
+      href: '/admin-audit-log',
+      active: activeSubItem === 'Audit Log',
+    },
+  ]
 
   const agentSubItems = [
     {
       label: 'Agent Applications',
       badge: pendingCount > 0 ? String(pendingCount) : undefined,
       active: activeSubItem === 'Agent Applications',
-      href: '/admin',
+      href: '/admin?tab=pending',
     },
     {
       label: 'Approved Agents',
@@ -73,12 +131,59 @@ function AdminSidebarInner({
     },
   ]
 
-  const secondaryNavItems = [
-    { label: 'Wallet & Credit', icon: Wallet, href: '#' },
-    { label: 'Commissions', icon: Percent, href: '#' },
-    { label: 'Reports', icon: BarChart3, href: '#' },
-    { label: 'Notifications', icon: Bell, href: '#' },
-    { label: 'Settings', icon: Settings, href: '#' },
+  const moduleNavItems = [
+    {
+      label: 'Bookings',
+      icon: Ticket,
+      href: '/bookings',
+      active: activeSubItem === 'Bookings',
+    },
+    {
+      label: 'Integrations',
+      icon: Plug,
+      href: '#',
+      active: activeSubItem === 'Integrations',
+    },
+    {
+      label: 'Pricing & Markup',
+      icon: Tag,
+      href: '/pricing-markup',
+      active: activeSubItem === 'Pricing & Markup',
+    },
+    {
+      label: 'Commissions',
+      icon: Percent,
+      href: '/admin-reports?node-id=1005-5346',
+      active: activeSubItem === 'Commissions',
+    },
+    {
+      label: 'Notifications',
+      icon: Bell,
+      href: '#',
+      active: activeSubItem === 'Notifications',
+    },
+    {
+      label: 'Support',
+      icon: MessageSquare,
+      href: '#',
+      active: activeSubItem === 'Support',
+    },
+    {
+      label: 'Reports',
+      icon: BarChart3,
+      href: '/admin-reports?node-id=1005-5341&tab=bookings',
+      active: activeSubItem === 'Reports',
+    },
+    {
+      label: 'Platform Settings',
+      icon: Settings,
+      href: '/platform-settings?section=languages',
+      active:
+        activeSubItem === 'Settings' ||
+        activeSubItem === 'Platform Settings' ||
+        activeSubItem === 'Business Details' ||
+        activeSubItem === 'Languages',
+    },
   ]
 
   return (
@@ -130,32 +235,76 @@ function AdminSidebarInner({
 
       {/* Main Navigation Content */}
       <SidebarContent className="px-3 py-3 gap-1 group-data-[collapsible=icon]:px-1.5">
+        {/* Overview Group */}
         <SidebarGroup className="p-0">
           <SidebarGroupContent>
             <SidebarMenu className="gap-1">
-              {navItems.map((item) => {
+              {overviewItems.map((item) => {
                 const Icon = item.icon
                 return (
                   <SidebarMenuItem key={item.label}>
                     <SidebarMenuButton
                       tooltip={item.label}
+                      className={navItemClass(item.active)}
                       render={
-                        <a
-                          href={item.href}
-                          onClick={onCloseMobile}
-                          className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-[#C9D7EA] hover:text-white hover:bg-white/5 transition-colors"
-                        />
+                        <a href={item.href} onClick={onCloseMobile} />
                       }
                     >
-                      <Icon className="size-4.5 shrink-0 text-[#8C9BAE]" />
+                      <Icon className={navIconClass(item.active)} />
                       <span>{item.label}</span>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 )
               })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
 
+        <SidebarSeparator className="my-2 bg-white/10 group-data-[collapsible=icon]:my-1" />
+
+        {/* Core Admin Group */}
+        <SidebarGroup className="p-0">
+          <div className="px-3 py-1 group-data-[collapsible=icon]:hidden">
+            <SidebarGroupLabel className="text-[10px] font-bold text-[#8C9BAE] uppercase tracking-wider px-0 h-auto py-0">
+              Core Admin
+            </SidebarGroupLabel>
+          </div>
+          <SidebarGroupContent>
+            <SidebarMenu className="gap-1">
+              {coreAdminItems.map((item) => {
+                const Icon = item.icon
+                return (
+                  <SidebarMenuItem key={item.label}>
+                    <SidebarMenuButton
+                      tooltip={item.label}
+                      className={navItemClass(item.active)}
+                      render={
+                        <a href={item.href} onClick={onCloseMobile} />
+                      }
+                    >
+                      <Icon className={navIconClass(item.active)} />
+                      <span>{item.label}</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                )
+              })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarSeparator className="my-2 bg-white/10 group-data-[collapsible=icon]:my-1" />
+
+        {/* Platform Modules Group */}
+        <SidebarGroup className="p-0">
+          <div className="px-3 py-1 group-data-[collapsible=icon]:hidden">
+            <SidebarGroupLabel className="text-[10px] font-bold text-[#8C9BAE] uppercase tracking-wider px-0 h-auto py-0">
+              Platform Modules
+            </SidebarGroupLabel>
+          </div>
+          <SidebarGroupContent>
+            <SidebarMenu className="gap-1">
               {/* Agents Expandable Section */}
-              <SidebarMenuItem className="mt-1">
+              <SidebarMenuItem>
                 <SidebarMenuButton
                   type="button"
                   tooltip="Agents"
@@ -182,10 +331,10 @@ function AdminSidebarInner({
                           href={sub.href}
                           onClick={onCloseMobile}
                           className={cn(
-                            'flex items-center justify-between gap-2 px-3 py-2 rounded-lg text-sm transition-all',
+                            'relative flex items-center justify-between gap-2 rounded-xl px-3 py-2 text-sm transition-colors',
                             sub.active
-                              ? 'bg-[#273B4B] border-l-2 border-[#F1C134] text-white font-bold shadow-xs'
-                              : 'text-[#8C9BAE] hover:text-white hover:bg-white/5 font-medium border-l-2 border-transparent',
+                              ? 'bg-white/12 font-semibold text-[#F1C134] shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
+                              : 'bg-transparent font-medium text-[#C9D7EA] hover:bg-white/6 hover:text-white',
                           )}
                         >
                           <span className="truncate whitespace-nowrap">
@@ -202,31 +351,19 @@ function AdminSidebarInner({
                   </ul>
                 )}
               </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
 
-        <SidebarSeparator className="my-2 bg-white/10 group-data-[collapsible=icon]:my-1" />
-
-        {/* Secondary Navigation */}
-        <SidebarGroup className="p-0">
-          <SidebarGroupContent>
-            <SidebarMenu className="gap-1">
-              {secondaryNavItems.map((item) => {
+              {moduleNavItems.map((item) => {
                 const Icon = item.icon
                 return (
                   <SidebarMenuItem key={item.label}>
                     <SidebarMenuButton
                       tooltip={item.label}
+                      className={navItemClass(item.active)}
                       render={
-                        <a
-                          href={item.href}
-                          onClick={onCloseMobile}
-                          className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-[#C9D7EA] hover:text-white hover:bg-white/5 transition-colors"
-                        />
+                        <a href={item.href} onClick={onCloseMobile} />
                       }
                     >
-                      <Icon className="size-4.5 shrink-0 text-[#8C9BAE]" />
+                      <Icon className={navIconClass(item.active)} />
                       <span>{item.label}</span>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -238,14 +375,37 @@ function AdminSidebarInner({
       </SidebarContent>
 
       {/* Sidebar Footer */}
-      <SidebarFooter className="p-4 border-t border-white/10 group-data-[collapsible=icon]:hidden">
-        <p className="text-[11px] text-[#8C9BAE] font-medium leading-relaxed">
-          M2.1 · Agent Registration & Approval
-        </p>
+      <SidebarFooter className="p-3 border-t border-white/10 flex flex-col items-center justify-center">
+        <AdminSidebarFooterToggle />
       </SidebarFooter>
 
       <SidebarRail />
     </Sidebar>
+  )
+}
+
+function AdminSidebarFooterToggle() {
+  const { state, toggleSidebar } = useSidebar()
+  const isCollapsed = state === 'collapsed'
+
+  return (
+    <div className="w-full flex items-center justify-between group-data-[collapsible=icon]:justify-center">
+      <p className="text-[11px] text-[#8C9BAE] font-medium leading-relaxed group-data-[collapsible=icon]:hidden">
+        M15 · Admin Panel Core
+      </p>
+      <button
+        type="button"
+        onClick={toggleSidebar}
+        title={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+        className="size-8 rounded-lg flex items-center justify-center text-[#8C9BAE] hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+      >
+        {isCollapsed ? (
+          <PanelLeftOpen className="size-5" />
+        ) : (
+          <PanelLeftClose className="size-5" />
+        )}
+      </button>
+    </div>
   )
 }
 
@@ -256,7 +416,10 @@ export function AdminSidebar(props: AdminSidebarProps) {
   }
 
   return (
-    <SidebarProvider defaultOpen className="h-full min-h-0 w-auto">
+    <SidebarProvider
+      defaultOpen={props.defaultOpen ?? true}
+      className="h-full min-h-0 w-auto"
+    >
       <AdminSidebarInner {...props} />
     </SidebarProvider>
   )

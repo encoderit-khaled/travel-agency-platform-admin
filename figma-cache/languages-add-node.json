@@ -1,0 +1,467 @@
+{
+  "id": "1009:6944",
+  "name": "Platform Settings - Languages - Add Languages",
+  "type": "FRAME",
+  "layout": {
+    "mode": "column",
+    "alignItems": "stretch",
+    "gap": "10px",
+    "sizing": {
+      "horizontal": "fixed",
+      "vertical": "hug"
+    },
+    "locationRelativeToParent": {
+      "x": 34600,
+      "y": 402
+    },
+    "dimensions": {
+      "width": 1920
+    }
+  },
+  "children": [
+    {
+      "id": "1009:6825",
+      "name": "Add Languages 1",
+      "type": "RECTANGLE",
+      "layout": "layout_fa9366f8",
+      "fills": [
+        {
+          "type": "IMAGE",
+          "imageRef": "983228dfa1d412ea63c0b5d16af6708db6700bcf",
+          "scaleMode": "FILL",
+          "objectFit": "cover",
+          "isBackground": false,
+          "imageDownloadArguments": {
+            "needsCropping": false,
+            "requiresImageDimensions": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "1080:2090",
+      "name": "Admin navigation",
+      "template": "EL-d4935436",
+      "children": [
+        {
+          "id": "1080:2091",
+          "name": "div.sb-hd",
+          "template": "EL-19ed2d5b",
+          "children": [
+            {
+              "id": "1080:2092",
+              "name": "Aero Wing Admin Panel — Dashboard",
+              "template": "EL-27a7f8c4",
+              "children": [
+                {
+                  "id": "1080:2093",
+                  "name": "AeroWing Admin — Dashboard",
+                  "template": "EL-280eabfe",
+                  "children": [
+                    {
+                      "id": "1080:2094",
+                      "name": "AeroWing — Explore, Book, Travel",
+                      "template": "EL-966c7e52"
+                    }
+                  ]
+                },
+                {
+                  "id": "1080:2095",
+                  "name": "span.sb-lab",
+                  "template": "EL-4c261f7f",
+                  "children": [
+                    {
+                      "id": "1080:2096",
+                      "template": "EL-a0b6cf5b"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1080:2097",
+          "name": "Admin",
+          "template": "EL-0b230fa2",
+          "children": [
+            {
+              "id": "1080:2098",
+              "name": "div.sb-g",
+              "template": "EL-e9077466",
+              "children": [
+                {
+                  "id": "1080:2099",
+                  "name": "p#g-ov",
+                  "template": "EL-d8c5a118",
+                  "children": [
+                    {
+                      "id": "1080:2100",
+                      "template": "EL-ad79941c"
+                    }
+                  ]
+                },
+                {
+                  "id": "1080:2101",
+                  "name": "a.sb-i",
+                  "template": "EL-7041e0b0",
+                  "children": [
+                    {
+                      "id": "1080:2102",
+                      "name": "Frame",
+                      "template": "EL-b1d338df"
+                    },
+                    {
+                      "id": "1080:2107",
+                      "name": "span.sb-t",
+                      "template": "EL-2f9fe287",
+                      "children": [
+                        {
+                          "id": "1080:2108",
+                          "template": "EL-b9328c9b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1080:2109",
+              "name": "div.sb-g",
+              "template": "EL-301f98e1",
+              "children": [
+                {
+                  "id": "1080:2110",
+                  "name": "p#g-core",
+                  "template": "EL-d8c5a118",
+                  "children": [
+                    {
+                      "id": "1080:2111",
+                      "template": "EL-a5e6b4d2"
+                    }
+                  ]
+                },
+                {
+                  "id": "1080:2112",
+                  "name": "ul",
+                  "template": "EL-6e926975",
+                  "children": [
+                    {
+                      "id": "1080:2113",
+                      "name": "a.sb-i",
+                      "template": "EL-7041e0b0",
+                      "children": [
+                        {
+                          "id": "1080:2114",
+                          "name": "Frame",
+                          "template": "EL-b1d338df"
+                        },
+                        {
+                          "id": "1080:2116",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2117",
+                              "template": "EL-8cc0c44d"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2118",
+                      "name": "a.sb-i",
+                      "template": "EL-7041e0b0",
+                      "children": [
+                        {
+                          "id": "1080:2119",
+                          "name": "Frame",
+                          "template": "EL-b1d338df"
+                        },
+                        {
+                          "id": "1080:2122",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2123",
+                              "template": "EL-c45ae915"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2124",
+                      "name": "a.sb-i",
+                      "template": "EL-7041e0b0",
+                      "children": [
+                        {
+                          "id": "1080:2125",
+                          "name": "Frame",
+                          "template": "EL-b1d338df"
+                        },
+                        {
+                          "id": "1080:2128",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2129",
+                              "template": "EL-40ae2791"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2130",
+                      "name": "a.sb-i",
+                      "template": "EL-7041e0b0",
+                      "children": [
+                        {
+                          "id": "1080:2131",
+                          "name": "Frame",
+                          "template": "EL-b1d338df"
+                        },
+                        {
+                          "id": "1080:2136",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2137",
+                              "template": "EL-557136c9"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1080:2138",
+              "name": "div.sb-g",
+              "template": "EL-301f98e1",
+              "children": [
+                {
+                  "id": "1080:2139",
+                  "name": "p#g-mod",
+                  "template": "EL-d8c5a118",
+                  "children": [
+                    {
+                      "id": "1080:2140",
+                      "template": "EL-eff13b88"
+                    }
+                  ]
+                },
+                {
+                  "id": "1080:2141",
+                  "name": "ul",
+                  "template": "EL-43323dcb",
+                  "children": [
+                    {
+                      "id": "1080:2142",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2143",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2145",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2146",
+                              "template": "EL-4074d9e1"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2147",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2148",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2151",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2152",
+                              "template": "EL-618e9697"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2153",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2154",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2156",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2157",
+                              "template": "EL-d10a515e"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2158",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2159",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2162",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2163",
+                              "template": "EL-970eec68"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2164",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2165",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2167",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2168",
+                              "template": "EL-344c29b0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2186",
+                      "name": "a.sb-i",
+                      "template": "EL-703abc35",
+                      "children": [
+                        {
+                          "id": "1080:2187",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2190",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2191",
+                              "template": "EL-2fd65db2"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1080:2192",
+                      "name": "a.sb-i",
+                      "template": "EL-5e380d8c",
+                      "children": [
+                        {
+                          "id": "1080:2193",
+                          "name": "Frame",
+                          "template": "EL-f1890f3e"
+                        },
+                        {
+                          "id": "1080:2196",
+                          "name": "span.sb-t",
+                          "template": "EL-2f9fe287",
+                          "children": [
+                            {
+                              "id": "1080:2197",
+                              "template": "EL-09476c5f"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1080:2198",
+          "name": "div.sb-ft",
+          "template": "EL-ab88c726",
+          "children": [
+            {
+              "id": "1080:2199",
+              "name": "Collapse sidebar",
+              "template": "EL-04eca728",
+              "children": [
+                {
+                  "id": "1080:2200",
+                  "name": "Frame",
+                  "template": "EL-b1d338df"
+                },
+                {
+                  "id": "1080:2203",
+                  "name": "span#sb-col-l",
+                  "template": "EL-83bc679e",
+                  "children": [
+                    {
+                      "id": "1080:2204",
+                      "template": "EL-1fd2da9e"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

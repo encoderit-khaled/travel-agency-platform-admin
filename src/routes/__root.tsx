@@ -32,6 +32,11 @@ import {
   FileSpreadsheet,
   Coins,
   CreditCard,
+  Lock,
+  HelpCircle,
+  Users,
+  TrendingUp,
+  CalendarDays,
 } from 'lucide-react'
 import '../globals.css'
 
@@ -627,6 +632,195 @@ function RootComponent() {
       tag: 'Step 02',
       icon: Layers,
       active: pathname === '/register' && currentStep === 2,
+    },
+    {
+      title: 'Admin: Login (M15)',
+      path: '/admin-login?node-id=965-1410',
+      tag: 'Figma #965:1410',
+      icon: Lock,
+      active:
+        (pathname === '/admin-login' &&
+          (search as any).view !== 'trouble' &&
+          (search as any)['node-id'] !== '965-1500' &&
+          (search as any).nodeId !== '965:1500') ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '965-1410' ||
+            (search as any).nodeId === '965:1410' ||
+            (search as any).view === 'login')) ||
+        (pathname === '/' &&
+          ((search as any)['node-id'] === '965-1410' ||
+            (search as any).nodeId === '965:1410')),
+    },
+    {
+      title: 'Admin: Trouble Signing In',
+      path: '/admin-login?view=trouble&node-id=965-1500',
+      tag: 'Figma #965:1500',
+      icon: HelpCircle,
+      active:
+        (pathname === '/admin-login' &&
+          ((search as any).view === 'trouble' ||
+            (search as any)['node-id'] === '965-1500' ||
+            (search as any).nodeId === '965:1500')) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '965-1500' ||
+            (search as any).nodeId === '965:1500' ||
+            (search as any).view === 'trouble')) ||
+        (pathname === '/' &&
+          ((search as any)['node-id'] === '965-1500' ||
+            (search as any).nodeId === '965:1500')),
+    },
+    {
+      title: 'Admin: Users (M15)',
+      path: '/admin-users?node-id=975-3024',
+      tag: 'Figma #975:3024',
+      icon: Users,
+      active:
+        pathname === '/admin-users' ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '975-3024' ||
+            (search as any).nodeId === '975:3024' ||
+            (search as any).view === 'users')),
+    },
+    {
+      title: 'Admin: Roles & Permissions (M15)',
+      path: '/admin-roles-permissions?node-id=984-976',
+      tag: 'Figma #984:976',
+      icon: ShieldCheck,
+      active:
+        (pathname === '/admin-roles-permissions' &&
+          (search as any)['node-id'] !== '984-1859' &&
+          (search as any).nodeId !== '984:1859' &&
+          !(search as any).edit) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '984-976' ||
+            (search as any).nodeId === '984:976' ||
+            (search as any).view === 'roles-permissions' ||
+            (search as any).tab === 'roles-permissions')) ||
+        (pathname === '/roles-access' &&
+          ((search as any)['node-id'] === '984-976' ||
+            (search as any).nodeId === '984:976')),
+    },
+    {
+      title: 'Admin: Roles & Permissions - Edit Permissions (M15)',
+      path: '/admin-roles-permissions?node-id=984-1859&edit=true',
+      tag: 'Figma #984:1859',
+      icon: Shield,
+      active:
+        (pathname === '/admin-roles-permissions' &&
+          ((search as any)['node-id'] === '984-1859' ||
+            (search as any).nodeId === '984:1859' ||
+            Boolean((search as any).edit))) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '984-1859' ||
+            (search as any).nodeId === '984:1859')) ||
+        (pathname === '/roles-access' &&
+          ((search as any)['node-id'] === '984-1859' ||
+            (search as any).nodeId === '984:1859')),
+    },
+    {
+      title: 'Admin: B2C Customers (M15)',
+      path: '/b2c-customers?node-id=984-2269',
+      tag: 'Figma #984:2269',
+      icon: Users,
+      active:
+        pathname === '/b2c-customers' &&
+        (search as any)['node-id'] !== '990-2945' &&
+        (search as any).nodeId !== '990:2945' &&
+        (search as any).view !== 'details',
+    },
+    {
+      title: 'Admin: B2C Customer Details (M15)',
+      path: '/b2c-customers?node-id=990-2945',
+      tag: 'Figma #990:2945',
+      icon: UserCheck,
+      active:
+        (pathname === '/b2c-customers' &&
+          ((search as any)['node-id'] === '990-2945' ||
+            (search as any).nodeId === '990:2945' ||
+            ((search as any).view === 'details' &&
+              (search as any)['node-id'] !== '995-4126' &&
+              (search as any).nodeId !== '995:4126' &&
+              (search as any).sidebar !== 'collapsed'))) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '990-2945' ||
+            (search as any).nodeId === '990:2945')) ||
+        (pathname === '/' &&
+          ((search as any)['node-id'] === '990-2945' ||
+            (search as any).nodeId === '990:2945')),
+    },
+    {
+      title: 'Admin: Collapsed Sidebar / Customer Profile (M15)',
+      path: '/b2c-customers?node-id=995-4126&view=details&sidebar=collapsed',
+      tag: 'Figma #995:4126',
+      icon: Users,
+      active:
+        (pathname === '/b2c-customers' &&
+          ((search as any)['node-id'] === '995-4126' ||
+            (search as any).nodeId === '995:4126' ||
+            (search as any).sidebar === 'collapsed')) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '995-4126' ||
+            (search as any).nodeId === '995:4126')) ||
+        (pathname === '/' &&
+          ((search as any)['node-id'] === '995-4126' ||
+            (search as any).nodeId === '995:4126')),
+    },
+    {
+      title: 'Admin: Audit Log (M15)',
+      path: '/admin-audit-log?node-id=995-3669',
+      tag: 'Figma #995:3669',
+      icon: FileText,
+      active:
+        pathname === '/admin-audit-log' ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '995-3669' ||
+            (search as any).nodeId === '995:3669' ||
+            (search as any).view === 'audit-log' ||
+            (search as any).tab === 'audit-log')),
+    },
+    {
+      title: 'Admin: Reports - Bookings (M15)',
+      path: '/admin-reports?node-id=1005-5341&tab=bookings',
+      tag: 'Figma #1005:5341',
+      icon: CalendarDays,
+      active:
+        (pathname === '/admin-reports' &&
+          ((search as any).tab === 'bookings' ||
+            (search as any)['node-id'] === '1005-5341' ||
+            (search as any).nodeId === '1005:5341' ||
+            (search as any)['node-id'] === '1005-5344' ||
+            (search as any).nodeId === '1005:5344' ||
+            !(search as any).tab)) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '1005-5341' ||
+            (search as any).nodeId === '1005:5341' ||
+            (search as any)['node-id'] === '1005-5344' ||
+            (search as any).nodeId === '1005:5344')),
+    },
+    {
+      title: 'Admin: Reports - Payments (M15)',
+      path: '/admin-reports?node-id=1005-5345&tab=payments',
+      tag: 'Figma #1005:5345',
+      icon: CreditCard,
+      active:
+        (pathname === '/admin-reports' &&
+          ((search as any).tab === 'payments' ||
+            (search as any)['node-id'] === '1005-5345' ||
+            (search as any).nodeId === '1005:5345')) ||
+        (pathname === '/admin' &&
+          ((search as any)['node-id'] === '1005-5345' ||
+            (search as any).nodeId === '1005:5345')),
+    },
+    {
+      title: 'Admin: Reports - Sales (M15)',
+      path: '/admin-reports?node-id=1005-4738&tab=sales',
+      tag: 'Figma #1005:4738',
+      icon: TrendingUp,
+      active:
+        pathname === '/admin-reports' &&
+        (search as any).tab !== 'payments' &&
+        (search as any)['node-id'] !== '1005-5345' &&
+        (search as any).nodeId !== '1005:5345',
     },
     {
       title: 'Admin: All Applications',

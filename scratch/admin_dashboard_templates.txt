@@ -1,0 +1,1172 @@
+=== EL-02fac3db ===
+  EL-02fac3db:
+    type: FRAME
+    layout: layout_5405da97
+    fills: White
+    strokes: Athens Gray
+    strokeWeight: 1px 0px 0px
+
+=== EL-04eca728 ===
+  EL-04eca728:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 10.880000114440918px 12px 10.869999885559082px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    borderRadius: 11px
+
+=== EL-09476c5f ===
+  EL-09476c5f:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Platform Settings
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-0af6044c ===
+  EL-0af6044c:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 28px 28px 40px
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      locationRelativeToParent:
+        x: 0
+        y: 68
+      dimensions:
+        width: 1656
+
+=== EL-0b230fa2 ===
+  EL-0b230fa2:
+    type: FRAME
+    layout:
+      mode: column
+      overflowScroll:
+        - y
+      alignSelf: stretch
+      padding: 14px 12px 18px
+      alignItems: stretch
+      gap: 16px
+      sizing:
+        horizontal: fill
+        vertical: fill
+
+=== EL-0ccd4aea ===
+  EL-0ccd4aea:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 4px 10px 4px 4px
+      alignItems: center
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 14px
+
+=== EL-1519dabc ===
+  EL-1519dabc:
+    type: FRAME
+    layout: layout_222d185b
+
+=== EL-19ed2d5b ===
+  EL-19ed2d5b:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 15px 16px 10px
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+    strokes: White 7%
+    strokeWeight: 0px 0px 1px
+
+=== EL-1ba56e07 ===
+  EL-1ba56e07:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 8px 12px
+      alignItems: center
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    strokes: Catskill White (856:2825)
+    strokeWeight: 1px
+    borderRadius: 14px
+
+=== EL-1fd2da9e ===
+  EL-1fd2da9e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Collapse
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 13.5
+      lineHeight: 20.25px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Wild Blue Yonder
+
+=== EL-235879b0 ===
+  EL-235879b0:
+    type: FRAME
+    layout:
+      mode: row
+      alignItems: center
+      gap: 8px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-243631c0 ===
+  EL-243631c0:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Admin Users
+    textStyle: style_94747b76
+    fills: Comet
+
+=== EL-27a7f8c4 ===
+  EL-27a7f8c4:
+    type: FRAME
+    layout:
+      mode: column
+      gap: 10px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    borderRadius: 12px
+
+=== EL-27f9f2b6 ===
+  EL-27f9f2b6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample data
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11
+      lineHeight: 16.5px
+      letterSpacing: 0.03em
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+
+=== EL-280eabfe ===
+  EL-280eabfe:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 8px 12px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: White
+    borderRadius: 12px
+
+=== EL-2a66e910 ===
+  EL-2a66e910:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: hug
+        vertical: fill
+
+=== EL-2df750f6 ===
+  EL-2df750f6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Sample Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 14
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Mirage
+
+=== EL-2f9fe287 ===
+  EL-2f9fe287:
+    type: FRAME
+    layout:
+      mode: column
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-2fd65db2 ===
+  EL-2fd65db2:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Reports
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-301f98e1 ===
+  EL-301f98e1:
+    type: FRAME
+    layout: layout_1655a44c
+    strokes: White 7%
+    strokeWeight: 1px 0px 0px
+
+=== EL-317cf97d ===
+  EL-317cf97d:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 0px 0px 7.75px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-344c29b0 ===
+  EL-344c29b0:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Reviews
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-358a1981 ===
+  EL-358a1981:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      padding: 8px 12px
+      justifyContent: space-between
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: Catskill White (7:976)
+    borderRadius: 11px
+
+=== EL-38fddc5a ===
+  EL-38fddc5a:
+    type: FRAME
+    layout: layout_d9d5a9ac
+    fills: fill_2093ec7c
+    borderRadius: 11px
+
+=== EL-39910436 ===
+  EL-39910436:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Finance
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+
+=== EL-3d024053 ===
+  EL-3d024053:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 38
+        height: 38
+    fills: White 0.2%
+    effects:
+      boxShadow: 0px 0px 0px 1px rgba(225, 232, 241, 1)
+    borderRadius: 11px
+
+=== EL-4074d9e1 ===
+  EL-4074d9e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Bookings
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-40ae2791 ===
+  EL-40ae2791:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Roles & Permissions
+    textStyle: style_325b630c
+    fills: Pigeon Post
+
+=== EL-41691f1b ===
+  EL-41691f1b:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Super Admin
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+
+=== EL-43323dcb ===
+  EL-43323dcb:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      gap: 2px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-46f55cb2 ===
+  EL-46f55cb2:
+    type: FRAME
+    layout: layout_3b2f0454
+    fills: Hawkes Blue
+    borderRadius: 12px
+
+=== EL-4c261f7f ===
+  EL-4c261f7f:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 86.52
+        height: 16.5
+
+=== EL-5132315e ===
+  EL-5132315e:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 14px 0px 0px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-53173af5 ===
+  EL-53173af5:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Sample Admin
+    textStyle: style_8f1384da
+    fills: Comet
+
+=== EL-5321e56d ===
+  EL-5321e56d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: SA
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 13
+      lineHeight: 19.5px
+      textAlignHorizontal: CENTER
+      textAlignVertical: CENTER
+    fills: Saffron
+
+=== EL-53a7a43c ===
+  EL-53a7a43c:
+    type: RECTANGLE
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      position: absolute
+      locationRelativeToParent:
+        x: 304
+        y: -39
+      dimensions:
+        width: 120
+        height: 120
+    fills: fill_48bd18ed
+    borderRadius: 60px
+
+=== EL-557136c9 ===
+  EL-557136c9:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Audit Log
+    textStyle: style_325b630c
+    fills: Pigeon Post
+
+=== EL-58e2a7b0 ===
+  EL-58e2a7b0:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 11px 6px
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 44
+        height: 44
+    borderRadius: 12px
+
+=== EL-5cb7385b ===
+  EL-5cb7385b:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1.5px 9px 1.75px 7px
+      alignItems: center
+      gap: 5px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White (660:4703)
+    borderRadius: 999px
+
+=== EL-618e9697 ===
+  EL-618e9697:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Agents
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-62b4d877 ===
+  EL-62b4d877:
+    type: IMAGE-SVG
+    layout: layout_73bebfab
+
+=== EL-64a79c70 ===
+  EL-64a79c70:
+    type: TEXT
+    layout: layout_177c5efc
+    text: © 2026 AeroWing. All rights reserved.
+    textStyle: style_8f1384da
+    fills: Comet
+
+=== EL-681edddb ===
+  EL-681edddb:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 1px 0px 0px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-6e7b525c ===
+  EL-6e7b525c:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-6e926975 ===
+  EL-6e926975:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 2px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-703abc35 ===
+  EL-703abc35:
+    type: FRAME
+    layout: layout_1d4dd0e1
+    borderRadius: 11px
+
+=== EL-7041e0b0 ===
+  EL-7041e0b0:
+    type: FRAME
+    layout: layout_56042251
+    borderRadius: 11px
+
+=== EL-70b8e7e1 ===
+  EL-70b8e7e1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Support
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+
+=== EL-74650fe4 ===
+  EL-74650fe4:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      gap: 14px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-7b655d35 ===
+  EL-7b655d35:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: flex-end
+      wrap: true
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-7c39d4fd ===
+  EL-7c39d4fd:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 3px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-83bc679e ===
+  EL-83bc679e:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-84b602b1 ===
+  EL-84b602b1:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Content
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+
+=== EL-85b2c02d ===
+  EL-85b2c02d:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 96.98
+
+=== EL-866b6ed6 ===
+  EL-866b6ed6:
+    type: TEXT
+    layout: layout_177c5efc
+    text: '2'
+    textStyle: style_c6fb220c
+    fills: Mirage
+
+=== EL-8cc0c44d ===
+  EL-8cc0c44d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: B2C Customers
+    textStyle: style_325b630c
+    fills: Pigeon Post
+
+=== EL-966c7e52 ===
+  EL-966c7e52:
+    type: FRAME
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 161
+        height: 36
+    fills:
+      - type: IMAGE
+        imageRef: 6314bcf91784ce8b96f7ab208754cc28da16f127
+        scaleMode: STRETCH
+        objectFit: fill
+        isBackground: false
+        imageDownloadArguments:
+          needsCropping: true
+          requiresImageDimensions: false
+          cropTransform:
+            - - 1
+              - 0
+              - 0
+            - - 0
+              - 1.000014305114746
+              - -0.000007151029876695247
+          filenameSuffix: ecfad5
+
+=== EL-970eec68 ===
+  EL-970eec68:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Pricing & Promotions
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-9b1c0f19 ===
+  EL-9b1c0f19:
+    type: FRAME
+    layout: layout_d2eb2aa9
+    fills: Selago
+    strokes: Link Water
+    strokeWeight: 1px
+    borderRadius: 999px
+
+=== EL-9dd62ce4 ===
+  EL-9dd62ce4:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fill
+        vertical: fixed
+      dimensions:
+        height: 12
+    fills: Catskill White
+    borderRadius: 999px
+
+=== EL-a0b6cf5b ===
+  EL-a0b6cf5b:
+    type: TEXT
+    layout:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: -1
+      dimensions:
+        width: 83.16
+        height: 17
+    text: Admin Panel
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 800
+      fontSize: 11
+      lineHeight: 16.5px
+      letterSpacing: 0.09em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Saffron
+
+=== EL-a26bffb3 ===
+  EL-a26bffb3:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 1.5px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 844.11
+
+=== EL-a5e6b4d2 ===
+  EL-a5e6b4d2:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Core Admin
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+
+=== EL-a73b2a19 ===
+  EL-a73b2a19:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 20
+        height: 20
+
+=== EL-a8b2764a ===
+  EL-a8b2764a:
+    type: FRAME
+    layout:
+      mode: column
+      justifyContent: center
+      alignItems: center
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 38
+        height: 38
+    fills: Midnight Blue
+    borderRadius: 11px
+
+=== EL-a8ebef05 ===
+  EL-a8ebef05:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Super Admin
+    textStyle:
+      fontFamily: Manrope
+      fontStyle: Bold
+      fontWeight: 700
+      fontSize: 12
+      lineHeight: 17px
+      textAlignHorizontal: LEFT
+      textAlignVertical: CENTER
+    fills: Comet
+
+=== EL-ab88c726 ===
+  EL-ab88c726:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 10px 12px 14px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+    strokes: White 7%
+    strokeWeight: 1px 0px 0px
+
+=== EL-acfb41d2 ===
+  EL-acfb41d2:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 22px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-ad79941c ===
+  EL-ad79941c:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Overview
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+
+=== EL-adbc2baf ===
+  EL-adbc2baf:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 64
+
+=== EL-aef92fc1 ===
+  EL-aef92fc1:
+    type: FRAME
+    layout: layout_3b2f0454
+    fills: Midnight Blue
+    borderRadius: 12px
+
+=== EL-b1d338df ===
+  EL-b1d338df:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 19
+        height: 19
+
+=== EL-b4d5d5d0 ===
+  EL-b4d5d5d0:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 264
+        height: 1200
+    fills: fill_bbc54479
+
+=== EL-bb582553 ===
+  EL-bb582553:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      alignItems: center
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-bbedda7b ===
+  EL-bbedda7b:
+    type: FRAME
+    layout:
+      mode: row
+      gap: 7.989999771118164px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-bc40306a ===
+  EL-bc40306a:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      alignItems: stretch
+      gap: 8px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-bca47167 ===
+  EL-bca47167:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 9px 0px 10px
+      alignItems: center
+      gap: 6px
+      sizing:
+        horizontal: hug
+        vertical: hug
+    borderRadius: 8px
+
+=== EL-bdff8199 ===
+  EL-bdff8199:
+    type: FRAME
+    layout: layout_56042251
+    fills: fill_183fb985
+    effects: effect_a6f27370
+    borderRadius: 11px
+
+=== EL-bfbba51a ===
+  EL-bfbba51a:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 2px
+      sizing:
+        horizontal: hug
+        vertical: hug
+
+=== EL-c319309c ===
+  EL-c319309c:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      justifyContent: space-between
+      wrap: true
+      gap: 10px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-c45ae915 ===
+  EL-c45ae915:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Users
+    textStyle: style_325b630c
+    fills: Pigeon Post
+
+=== EL-c6f62e52 ===
+  EL-c6f62e52:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Demo Admin
+    textStyle: style_8f1384da
+    fills: Comet
+
+=== EL-cab67d74 ===
+  EL-cab67d74:
+    type: FRAME
+    layout: layout_d9d5a9ac
+    fills: White
+    borderRadius: 11px
+
+=== EL-d10a515e ===
+  EL-d10a515e:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Suppliers
+    textStyle: style_d5fe13bf
+    fills: Rock Blue
+
+=== EL-d14effc8 ===
+  EL-d14effc8:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 0px 28px
+      alignItems: center
+      gap: 14.010000228881836px
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1656
+        height: 68
+    fills: White 92%
+    strokes: Mystic
+    strokeWeight: 0px 0px 1px
+    effects: effect_84e86613
+
+=== EL-d1ac142c ===
+  EL-d1ac142c:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-d2f5d0a6 ===
+  EL-d2f5d0a6:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 22
+        height: 22
+
+=== EL-d40fb4e5 ===
+  EL-d40fb4e5:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 16
+        height: 16
+
+=== EL-d4302386 ===
+  EL-d4302386:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 12
+        height: 12
+
+=== EL-d8c5a118 ===
+  EL-d8c5a118:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 0px 12px 8px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-db7ddb8d ===
+  EL-db7ddb8d:
+    type: TEXT
+    layout: layout_177c5efc
+    text: /
+    textStyle: style_e94c23d2
+    fills: Gull Gray
+
+=== EL-de24eeb5 ===
+  EL-de24eeb5:
+    type: FRAME
+    layout:
+      mode: row
+      alignSelf: stretch
+      alignItems: center
+      wrap: true
+      gap: 4px
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-dfdf56f9 ===
+  EL-dfdf56f9:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-e2a5820c ===
+  EL-e2a5820c:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: stretch
+      gap: 1.5px
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 821.02
+
+=== EL-e9077466 ===
+  EL-e9077466:
+    type: FRAME
+    layout: layout_5c79c5b1
+
+=== EL-ea7b03b4 ===
+  EL-ea7b03b4:
+    type: FRAME
+    layout:
+      mode: row
+      padding: 1px 8px
+      alignItems: center
+      sizing:
+        horizontal: hug
+        vertical: hug
+    fills: Catskill White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 999px
+
+=== EL-ef7898e7 ===
+  EL-ef7898e7:
+    type: FRAME
+    layout:
+      mode: column
+      alignItems: flex-end
+      sizing:
+        horizontal: fixed
+        vertical: hug
+      dimensions:
+        width: 73.89
+
+=== EL-eff13b88 ===
+  EL-eff13b88:
+    type: TEXT
+    layout: layout_56d3c81c
+    text: Platform Modules
+    textStyle: style_2b587743
+    fills: Wild Blue Yonder
+
+=== EL-f1890f3e ===
+  EL-f1890f3e:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 17
+        height: 17
+
+=== EL-f652840d ===
+  EL-f652840d:
+    type: IMAGE-SVG
+    layout:
+      mode: none
+      sizing:
+        horizontal: fixed
+        vertical: fixed
+      dimensions:
+        width: 18
+        height: 18
+
+=== EL-f7218847 ===
+  EL-f7218847:
+    type: FRAME
+    layout:
+      mode: column
+      padding: 18px 20px 23px
+      alignItems: stretch
+      gap: 12px
+      sizing:
+        horizontal: fill
+        vertical: hug
+    fills: White
+    strokes: Mystic
+    strokeWeight: 1px
+    borderRadius: 18px
+
+=== EL-f8534a1a ===
+  EL-f8534a1a:
+    type: FRAME
+    layout:
+      mode: column
+      alignSelf: stretch
+      padding: 0px 0px 16px
+      alignItems: stretch
+      sizing:
+        horizontal: fill
+        vertical: hug
+
+=== EL-fcf06162 ===
+  EL-fcf06162:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Operations
+    textStyle: style_3a13c6f7
+    fills: Midnight Blue
+
+=== EL-fdff9110 ===
+  EL-fdff9110:
+    type: TEXT
+    layout: layout_177c5efc
+    text: Admin Panel
+    textStyle: style_e94c23d2
+    fills: Comet
+

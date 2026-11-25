@@ -1,0 +1,2793 @@
+      id=984:976
+        name='Admin Roles Permissions'
+        
+        
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+        
+        
+          id=984:977
+            name='div'
+            tpl=EL-d1ac142c type=FRAME
+            
+              id=984:978
+                name='Admin navigation'
+                tpl=EL-b4d5d5d0 type=FRAME
+                
+                  id=984:1851
+                    name='div.sb-hd'
+                    tpl=EL-19ed2d5b type=FRAME
+                    
+                      id=984:1852
+                        name='Aero Wing Admin Panel — Dashboard'
+                        tpl=EL-27a7f8c4 type=FRAME
+                        
+                          id=984:1853
+                            name='AeroWing Admin — Dashboard'
+                            tpl=EL-280eabfe type=FRAME
+                            
+                              id=984:1854
+                                name='AeroWing — Explore, Book, Travel'
+                                tpl=EL-966c7e52 type=FRAME
+                          id=984:1855
+                            name='span.sb-lab'
+                            tpl=EL-4c261f7f type=FRAME
+                            
+                              id=984:1856
+                                tpl=EL-a0b6cf5b type=TEXT tpl_text='Admin Panel'
+                  id=984:985
+                    name='Admin'
+                    tpl=EL-0b230fa2 type=FRAME
+                    
+                      id=984:986
+                        name='div.sb-g'
+                        tpl=EL-e9077466 type=FRAME
+                        
+                          id=984:987
+                            name='p#g-ov'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=984:988
+                                tpl=EL-ad79941c type=TEXT tpl_text='Overview'
+                          id=984:989
+                            name='a.sb-i'
+                            tpl=EL-7041e0b0 type=FRAME
+                            
+                              id=984:990
+                                name='Frame'
+                                tpl=EL-b1d338df type=IMAGE-SVG
+                              id=984:995
+                                name='span.sb-t'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=984:996
+                                    tpl=EL-b9328c9b type=TEXT tpl_text='Dashboard'
+                      id=984:997
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=984:998
+                            name='p#g-core'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=984:999
+                                tpl=EL-a5e6b4d2 type=TEXT tpl_text='Core Admin'
+                          id=984:1000
+                            name='ul'
+                            tpl=EL-6e926975 type=FRAME
+                            
+                              id=984:1001
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=984:1002
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=984:1004
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1005
+                                        tpl=EL-8cc0c44d type=TEXT tpl_text='B2C Customers'
+                              id=984:1006
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=984:1007
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=984:1010
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1011
+                                        tpl=EL-c45ae915 type=TEXT tpl_text='Admin Users'
+                              id=984:1012
+                                name='a.sb-i'
+                                tpl=EL-bdff8199 type=FRAME
+                                
+                                  id=984:1013
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=984:1016
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1017
+                                        tpl=EL-ac3d52ca type=TEXT tpl_text='Roles & Permissions'
+                              id=984:1018
+                                name='a.sb-i'
+                                tpl=EL-7041e0b0 type=FRAME
+                                
+                                  id=984:1019
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                                  id=984:1024
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1025
+                                        tpl=EL-557136c9 type=TEXT tpl_text='Audit Log'
+                      id=984:1026
+                        name='div.sb-g'
+                        tpl=EL-301f98e1 type=FRAME
+                        
+                          id=984:1027
+                            name='p#g-mod'
+                            tpl=EL-d8c5a118 type=FRAME
+                            
+                              id=984:1028
+                                tpl=EL-eff13b88 type=TEXT tpl_text='Platform Modules'
+                          id=984:1029
+                            name='ul'
+                            tpl=EL-43323dcb type=FRAME
+                            
+                              id=984:1030
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1031
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1033
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1034
+                                        tpl=EL-4074d9e1 type=TEXT tpl_text='Bookings'
+                              id=984:1035
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1036
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1039
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1040
+                                        tpl=EL-618e9697 type=TEXT tpl_text='Agents'
+                              id=984:1041
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1042
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1044
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1045
+                                        tpl=EL-d10a515e type=TEXT tpl_text='Suppliers'
+                              id=984:1046
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1047
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1050
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1051
+                                        tpl=EL-970eec68 type=TEXT tpl_text='Pricing & Promotions'
+                              id=984:1052
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1053
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1055
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1056
+                                        tpl=EL-344c29b0 type=TEXT tpl_text='Reviews'
+                              id=984:1074
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1075
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1078
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1079
+                                        tpl=EL-2fd65db2 type=TEXT tpl_text='Reports'
+                              id=984:1080
+                                name='a.sb-i'
+                                tpl=EL-703abc35 type=FRAME
+                                
+                                  id=984:1081
+                                    name='Frame'
+                                    tpl=EL-f1890f3e type=IMAGE-SVG
+                                  id=984:1084
+                                    name='span.sb-t'
+                                    tpl=EL-2f9fe287 type=FRAME
+                                    
+                                      id=984:1085
+                                        tpl=EL-09476c5f type=TEXT tpl_text='Platform Settings'
+                  id=984:1086
+                    name='div.sb-ft'
+                    tpl=EL-ab88c726 type=FRAME
+                    
+                      id=984:1087
+                        name='Collapse sidebar'
+                        tpl=EL-04eca728 type=FRAME
+                        
+                          id=984:1088
+                            name='Frame'
+                            tpl=EL-b1d338df type=IMAGE-SVG
+                          id=984:1091
+                            name='span#sb-col-l'
+                            tpl=EL-83bc679e type=FRAME
+                            
+                              id=984:1092
+                                tpl=EL-1fd2da9e type=TEXT tpl_text='Collapse'
+              id=984:1093
+                name='Main column'
+                
+                
+                  
+                  
+                    
+                    
+                  
+                    
+                
+                  id=984:1094
+                    name='main'
+                    tpl=EL-0af6044c type=FRAME
+                    
+                      id=984:1095
+                        name='div'
+                        
+                        
+                          
+                          
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=984:1096
+                            name='div.ph2'
+                            tpl=EL-7b655d35 type=FRAME
+                            
+                              id=984:1097
+                                name='div'
+                                tpl=EL-7c39d4fd type=FRAME
+                                
+                                  id=984:1098
+                                    name='span'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=984:1099
+                                        tpl=EL-fea8bcb3 type=TEXT tpl_text='Core Admin'
+                                  id=984:1100
+                                    name='h1'
+                                    tpl=EL-681edddb type=FRAME
+                                    
+                                      id=984:1101
+                                        
+                                        
+                                        text='Roles & Permissions'
+                                        
+                                        
+                                  id=984:1102
+                                    name='p'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=984:1103
+                                        
+                                        
+                                        text='Configure access for predefined Admin roles.'
+                                        
+                                        
+                              id=984:1104
+                                name='div.ph2-a'
+                                
+                                
+                                  
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                
+                                  id=984:1105
+                                    name='button.btn'
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                      id=984:1106
+                                        name='Frame'
+                                        tpl=EL-f652840d type=IMAGE-SVG
+                                      id=984:1109
+                                        
+                                        
+                                        text='Edit Permissions'
+                                        
+                                        
+                          id=984:1110
+                            name='p.ib2'
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                            
+                            
+                            
+                            
+                              id=984:1111
+                                name='svg:margin'
+                                
+                                
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                    
+                                
+                                  id=984:1112
+                                    name='Frame'
+                                    tpl=EL-b1d338df type=IMAGE-SVG
+                              id=984:1116
+                                
+                                
+                                text='Role names are predefined. Exact permission assignments are configured by the platform administrator and are not defined by the current project source.'
+                                
+                                
+                          id=984:1117
+                            name='Predefined Admin roles'
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                              id=984:1118
+                                name='li'
+                                tpl=EL-8af0cbd5 type=FRAME
+                                
+                                  id=984:1119
+                                    name='button.rcb'
+                                    
+                                    
+                                    
+                                      
+                                        
+                                    
+                                    
+                                    
+                                    
+                                      id=984:1120
+                                        name='button.rcb:shadow'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                        
+                                          
+                                        
+                                      id=984:1121
+                                        name='span'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1122
+                                            name='Frame'
+                                            tpl=EL-179fbc21 type=IMAGE-SVG
+                                          id=984:1124
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            text='Super Admin'
+                                            
+                                            
+                                      id=984:1125
+                                        name='span:margin'
+                                        tpl=EL-d2bf2676 type=FRAME
+                                        
+                                          id=984:1126
+                                            name='span'
+                                            tpl=EL-f47f396a type=FRAME
+                                            
+                                              id=984:1127
+                                                tpl=EL-486f6a16 type=TEXT tpl_text='Predefined Admin role'
+                                      id=984:1128
+                                        name='span'
+                                        tpl=EL-e3ecd737 type=FRAME
+                                        
+                                          id=984:1129
+                                            tpl=EL-c03004df type=TEXT tpl_text='2 users'
+                                          id=984:1130
+                                            name='span.tag'
+                                            tpl=EL-ea7b03b4 type=FRAME
+                                            
+                                              id=984:1131
+                                                tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                              id=984:1132
+                                name='li'
+                                tpl=EL-8af0cbd5 type=FRAME
+                                
+                                  id=984:1133
+                                    name='button.rcb'
+                                    tpl=EL-132bff77 type=FRAME
+                                    
+                                      id=984:1134
+                                        name='span'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1135
+                                            name='Frame'
+                                            tpl=EL-179fbc21 type=IMAGE-SVG
+                                          id=984:1137
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            text='Operations'
+                                            
+                                            
+                                      id=984:1138
+                                        name='span:margin'
+                                        tpl=EL-d2bf2676 type=FRAME
+                                        
+                                          id=984:1139
+                                            name='span'
+                                            tpl=EL-f47f396a type=FRAME
+                                            
+                                              id=984:1140
+                                                tpl=EL-486f6a16 type=TEXT tpl_text='Predefined Admin role'
+                                      id=984:1141
+                                        name='span'
+                                        tpl=EL-e3ecd737 type=FRAME
+                                        
+                                          id=984:1142
+                                            
+                                            
+                                            text='4 users'
+                                            
+                                            
+                                          id=984:1143
+                                            name='span.tag'
+                                            tpl=EL-ea7b03b4 type=FRAME
+                                            
+                                              id=984:1144
+                                                tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                              id=984:1145
+                                name='li'
+                                tpl=EL-8af0cbd5 type=FRAME
+                                
+                                  id=984:1146
+                                    name='button.rcb'
+                                    tpl=EL-132bff77 type=FRAME
+                                    
+                                      id=984:1147
+                                        name='span'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1148
+                                            name='Frame'
+                                            tpl=EL-179fbc21 type=IMAGE-SVG
+                                          id=984:1150
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            text='Finance'
+                                            
+                                            
+                                      id=984:1151
+                                        name='span:margin'
+                                        tpl=EL-d2bf2676 type=FRAME
+                                        
+                                          id=984:1152
+                                            name='span'
+                                            tpl=EL-f47f396a type=FRAME
+                                            
+                                              id=984:1153
+                                                tpl=EL-486f6a16 type=TEXT tpl_text='Predefined Admin role'
+                                      id=984:1154
+                                        name='span'
+                                        tpl=EL-e3ecd737 type=FRAME
+                                        
+                                          id=984:1155
+                                            tpl=EL-c03004df type=TEXT tpl_text='2 users'
+                                          id=984:1156
+                                            name='span.tag'
+                                            tpl=EL-ea7b03b4 type=FRAME
+                                            
+                                              id=984:1157
+                                                tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                              id=984:1158
+                                name='li'
+                                tpl=EL-8af0cbd5 type=FRAME
+                                
+                                  id=984:1159
+                                    name='button.rcb'
+                                    tpl=EL-132bff77 type=FRAME
+                                    
+                                      id=984:1160
+                                        name='span'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1161
+                                            name='Frame'
+                                            tpl=EL-179fbc21 type=IMAGE-SVG
+                                          id=984:1163
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            text='Support'
+                                            
+                                            
+                                      id=984:1164
+                                        name='span:margin'
+                                        tpl=EL-d2bf2676 type=FRAME
+                                        
+                                          id=984:1165
+                                            name='span'
+                                            tpl=EL-f47f396a type=FRAME
+                                            
+                                              id=984:1166
+                                                tpl=EL-486f6a16 type=TEXT tpl_text='Predefined Admin role'
+                                      id=984:1167
+                                        name='span'
+                                        tpl=EL-e3ecd737 type=FRAME
+                                        
+                                          id=984:1168
+                                            
+                                            
+                                            text='3 users'
+                                            
+                                            
+                                          id=984:1169
+                                            name='span.tag'
+                                            tpl=EL-ea7b03b4 type=FRAME
+                                            
+                                              id=984:1170
+                                                tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                              id=984:1171
+                                name='li'
+                                tpl=EL-8af0cbd5 type=FRAME
+                                
+                                  id=984:1172
+                                    name='button.rcb'
+                                    tpl=EL-132bff77 type=FRAME
+                                    
+                                      id=984:1173
+                                        name='span'
+                                        
+                                        
+                                          
+                                          
+                                            
+                                            
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1174
+                                            name='Frame'
+                                            tpl=EL-179fbc21 type=IMAGE-SVG
+                                          id=984:1176
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            text='Content'
+                                            
+                                            
+                                      id=984:1177
+                                        name='span:margin'
+                                        tpl=EL-d2bf2676 type=FRAME
+                                        
+                                          id=984:1178
+                                            name='span'
+                                            tpl=EL-f47f396a type=FRAME
+                                            
+                                              id=984:1179
+                                                tpl=EL-486f6a16 type=TEXT tpl_text='Predefined Admin role'
+                                      id=984:1180
+                                        name='span'
+                                        tpl=EL-e3ecd737 type=FRAME
+                                        
+                                          id=984:1181
+                                            
+                                            
+                                            text='1 user'
+                                            
+                                            
+                                          id=984:1182
+                                            name='span.tag'
+                                            tpl=EL-ea7b03b4 type=FRAME
+                                            
+                                              id=984:1183
+                                                tpl=EL-27f9f2b6 type=TEXT tpl_text='Sample data'
+                          id=984:1184
+                            name='div.rpg'
+                            
+                            
+                              
+                              
+                              
+                              
+                              
+                              
+                                
+                                
+                            
+                              id=984:1185
+                                name='section'
+                                tpl=EL-89825985 type=FRAME
+                                
+                                  id=984:1186
+                                    name='div.mc-h'
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                    
+                                    
+                                      id=984:1187
+                                        name='div'
+                                        tpl=EL-bfbba51a type=FRAME
+                                        
+                                          id=984:1188
+                                            name='h2#mx-h'
+                                            tpl=EL-dfdf56f9 type=FRAME
+                                            
+                                              id=984:1189
+                                                
+                                                
+                                                text='Permission Matrix'
+                                                
+                                                
+                                          id=984:1190
+                                            name='p'
+                                            tpl=EL-dfdf56f9 type=FRAME
+                                            
+                                              id=984:1191
+                                                
+                                                
+                                                text='High-level access by Admin area.'
+                                                
+                                                
+                                  id=984:1192
+                                    name='table'
+                                    tpl=EL-e9077466 type=FRAME
+                                    
+                                      id=984:1193
+                                        name='tr'
+                                        tpl=EL-8a10e53c type=FRAME
+                                        
+                                          id=984:1194
+                                            name='th'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                            
+                                              id=984:1195
+                                                
+                                                
+                                                text='Permission area'
+                                                
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                
+                                          id=984:1196
+                                            name='th.sel'
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                              
+                                            
+                                            
+                                              id=984:1197
+                                                
+                                                
+                                                text='Super Admin'
+                                                
+                                                
+                                          id=984:1198
+                                            name='th'
+                                            tpl=EL-fa08dcfb type=FRAME
+                                            
+                                              id=984:1199
+                                                
+                                                
+                                                text='Operations'
+                                                
+                                                
+                                          id=984:1200
+                                            name='th'
+                                            tpl=EL-fa08dcfb type=FRAME
+                                            
+                                              id=984:1201
+                                                
+                                                
+                                                text='Finance'
+                                                
+                                                
+                                          id=984:1202
+                                            name='th'
+                                            tpl=EL-fa08dcfb type=FRAME
+                                            
+                                              id=984:1203
+                                                
+                                                
+                                                text='Support'
+                                                
+                                                
+                                          id=984:1204
+                                            name='th'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                            
+                                            
+                                            
+                                              id=984:1205
+                                                
+                                                
+                                                text='Content'
+                                                
+                                                
+                                      id=984:1206
+                                        name='tbody'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=984:1207
+                                            name='th'
+                                            tpl=EL-eb419917 type=FRAME
+                                            
+                                              id=984:1208
+                                                
+                                                
+                                                text='Core Admin'
+                                                
+                                                
+                                          id=984:1209
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1210
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1211
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1212
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1215
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1216
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1217
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1218
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1221
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1222
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1223
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1224
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1227
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1228
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1229
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1230
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1233
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1234
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1235
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1236
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1239
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1240
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1241
+                                                    
+                                                    
+                                                    text='Dashboard'
+                                                    
+                                                    
+                                          id=984:1242
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1243
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1244
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1245
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1248
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1249
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1250
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1251
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1254
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1255
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1256
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1257
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1260
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1261
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1262
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1263
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1266
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1267
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1268
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1269
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1272
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1273
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1274
+                                                    
+                                                    
+                                                    text='B2C Customers'
+                                                    
+                                                    
+                                          id=984:1275
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1276
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1277
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1278
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1281
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1282
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1283
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1284
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1287
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1288
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1289
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1290
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1293
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1294
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1295
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1296
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1299
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1300
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1301
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1302
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1305
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1306
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1307
+                                                    
+                                                    
+                                                    text='Admin Users'
+                                                    
+                                                    
+                                          id=984:1308
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1309
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1310
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1311
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1314
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1315
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1316
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1317
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1320
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1321
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1322
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1323
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1326
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1327
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1328
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1329
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1332
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1333
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1334
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1335
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1338
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1339
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1340
+                                                    
+                                                    
+                                                    text='Roles & Permissions'
+                                                    
+                                                    
+                                          id=984:1341
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1342
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1343
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1344
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1347
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1348
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1349
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1350
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1353
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1354
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1355
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1356
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1359
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1360
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1361
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1362
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1365
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1366
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1367
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1368
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1371
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1372
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1373
+                                                    
+                                                    
+                                                    text='Audit Log'
+                                                    
+                                                    
+                                          id=984:1374
+                                            name='th'
+                                            tpl=EL-eb419917 type=FRAME
+                                            
+                                              id=984:1375
+                                                
+                                                
+                                                text='Platform Modules'
+                                                
+                                                
+                                          id=984:1376
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1377
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1378
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1379
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1382
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1383
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1384
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1385
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1388
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1389
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1390
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1391
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1394
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1395
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1396
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1397
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1400
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1401
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1402
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1403
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1406
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1407
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1408
+                                                    
+                                                    
+                                                    text='Bookings'
+                                                    
+                                                    
+                                          id=984:1409
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1410
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1411
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1412
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1415
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1416
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1417
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1418
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1421
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1422
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1423
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1424
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1427
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1428
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1429
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1430
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1433
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1434
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1435
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1436
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1439
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1440
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1441
+                                                    
+                                                    
+                                                    text='Agents'
+                                                    
+                                                    
+                                          id=984:1442
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1443
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1444
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1445
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1448
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1449
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1450
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1451
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1454
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1455
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1456
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1457
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1460
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1461
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1462
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1463
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1466
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1467
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1468
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1469
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1472
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1473
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1474
+                                                    
+                                                    
+                                                    text='Suppliers'
+                                                    
+                                                    
+                                          id=984:1475
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1476
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1477
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1478
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1481
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1482
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1483
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1484
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1487
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1488
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1489
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1490
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1493
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1494
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1495
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1496
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1499
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1500
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1501
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1502
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1505
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1506
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1507
+                                                    
+                                                    
+                                                    text='Pricing & Promotions'
+                                                    
+                                                    
+                                          id=984:1508
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1509
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1510
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1511
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1514
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1515
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1516
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1517
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1520
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1521
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1522
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1523
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1526
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1527
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1528
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1529
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1532
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1533
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1534
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1535
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1538
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1539
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1540
+                                                    
+                                                    
+                                                    text='Reviews'
+                                                    
+                                                    
+                                          id=984:1541
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1542
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1543
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1544
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1547
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1548
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1549
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1550
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1553
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1554
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1555
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1556
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1559
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1560
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1561
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1562
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1565
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1566
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1567
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1568
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1571
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1572
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1573
+                                                    
+                                                    
+                                                    text='Notifications'
+                                                    
+                                                    
+                                          id=984:1574
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1575
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1576
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1577
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1580
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1581
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1582
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1583
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1586
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1587
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1588
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1589
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1592
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1593
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1594
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1595
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1598
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1599
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1600
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1601
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1604
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1605
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1606
+                                                    
+                                                    
+                                                    text='CRM / WhatsApp'
+                                                    
+                                                    
+                                          id=984:1607
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1608
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1609
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1610
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1613
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1614
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1615
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1616
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1619
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1620
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1621
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1622
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1625
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1626
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1627
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1628
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1631
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1632
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1633
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1634
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1637
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1638
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1639
+                                                    
+                                                    
+                                                    text='Content'
+                                                    
+                                                    
+                                          id=984:1640
+                                            name='tr'
+                                            tpl=EL-c4b13774 type=FRAME
+                                            
+                                              id=984:1641
+                                                name='td.sel'
+                                                tpl=EL-ba5caf95 type=FRAME
+                                                
+                                                  id=984:1642
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1643
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1646
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1647
+                                                name='td'
+                                                tpl=EL-0185509f type=FRAME
+                                                
+                                                  id=984:1648
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1649
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1652
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1653
+                                                name='td'
+                                                tpl=EL-4d30ea12 type=FRAME
+                                                
+                                                  id=984:1654
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1655
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1658
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1659
+                                                name='td'
+                                                tpl=EL-3fcb57eb type=FRAME
+                                                
+                                                  id=984:1660
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1661
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1664
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1665
+                                                name='td'
+                                                tpl=EL-04ba2a6f type=FRAME
+                                                
+                                                  id=984:1666
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1667
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1670
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1671
+                                                name='th'
+                                                tpl=EL-90504830 type=FRAME
+                                                
+                                                  id=984:1672
+                                                    
+                                                    
+                                                    text='Reports'
+                                                    
+                                                    
+                                          id=984:1673
+                                            name='tr'
+                                            
+                                            
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                            
+                                              id=984:1674
+                                                name='td.sel'
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                  id=984:1675
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1676
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1679
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1680
+                                                name='td'
+                                                
+                                                
+                                                
+                                                  id=984:1681
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1682
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1685
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1686
+                                                name='td'
+                                                
+                                                
+                                                
+                                                  id=984:1687
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1688
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1691
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1692
+                                                name='td'
+                                                
+                                                
+                                                
+                                                  id=984:1693
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1694
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1697
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1698
+                                                name='td'
+                                                
+                                                
+                                                
+                                                  id=984:1699
+                                                    name='span'
+                                                    tpl=EL-57b4e922 type=FRAME
+                                                    
+                                                      id=984:1700
+                                                        name='Frame'
+                                                        tpl=EL-62b4d877 type=IMAGE-SVG
+                                                      id=984:1703
+                                                        tpl=EL-c72bfb92 type=TEXT tpl_text='Not configured'
+                                              id=984:1704
+                                                name='th'
+                                                
+                                                
+                                                
+                                                
+                                                  id=984:1705
+                                                    
+                                                    
+                                                    text='Platform Settings'
+                                                    
+                                                    
+                              id=984:1706
+                                name='div.side'
+                                
+                                
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                    
+                                    
+                                  
+                                    
+                                
+                                  id=984:1707
+                                    name='section.sc3'
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                      id=984:1708
+                                        name='h2#mp-h'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=984:1709
+                                            
+                                            
+                                            text='Menu Access Preview'
+                                            
+                                            
+                                      id=984:1710
+                                        name='p.sub'
+                                        tpl=EL-e9077466 type=FRAME
+                                        
+                                          id=984:1711
+                                            
+                                            
+                                            text=''{ts1}Admin menu for {/ts1}{ts2}**Super Admin**{/ts2}{ts1} based on the current configuration.{/ts1}''
+                                            
+                                            
+                                            
+                                      id=984:1712
+                                        name='div'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                        
+                                        
+                                        
+                                          id=984:1713
+                                            name='div'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                            
+                                              id=984:1714
+                                                name='h3'
+                                                tpl=EL-b3d92507 type=FRAME
+                                                
+                                                  id=984:1715
+                                                    
+                                                    
+                                                    text='Core Admin'
+                                                    
+                                                    
+                                              id=984:1716
+                                                name='ul'
+                                                tpl=EL-6e926975 type=FRAME
+                                                
+                                                  id=984:1717
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1718
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1719
+                                                            
+                                                            
+                                                            text='Dashboard'
+                                                            
+                                                            
+                                                      id=984:1720
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1721
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1722
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1723
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1724
+                                                            
+                                                            
+                                                            text='B2C Customers'
+                                                            
+                                                            
+                                                      id=984:1725
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1726
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1727
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1728
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1729
+                                                            
+                                                            
+                                                            text='Admin Users'
+                                                            
+                                                            
+                                                      id=984:1730
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1731
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1732
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1733
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1734
+                                                            
+                                                            
+                                                            text='Roles & Permissions'
+                                                            
+                                                            
+                                                      id=984:1735
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1736
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1737
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1738
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1739
+                                                            
+                                                            
+                                                            text='Audit Log'
+                                                            
+                                                            
+                                                      id=984:1740
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1741
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                          id=984:1742
+                                            name='div'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                            
+                                              id=984:1743
+                                                name='h3'
+                                                tpl=EL-b3d92507 type=FRAME
+                                                
+                                                  id=984:1744
+                                                    
+                                                    
+                                                    text='Platform Modules'
+                                                    
+                                                    
+                                              id=984:1745
+                                                name='ul'
+                                                tpl=EL-6e926975 type=FRAME
+                                                
+                                                  id=984:1746
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1747
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1748
+                                                            
+                                                            
+                                                            text='Bookings'
+                                                            
+                                                            
+                                                      id=984:1749
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1750
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1751
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1752
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1753
+                                                            
+                                                            
+                                                            text='Agents'
+                                                            
+                                                            
+                                                      id=984:1754
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1755
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1756
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1757
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1758
+                                                            
+                                                            
+                                                            text='Suppliers'
+                                                            
+                                                            
+                                                      id=984:1759
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1760
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1761
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1762
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1763
+                                                            
+                                                            
+                                                            text='Pricing & Promotions'
+                                                            
+                                                            
+                                                      id=984:1764
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1765
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1766
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1767
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1768
+                                                            
+                                                            
+                                                            text='Reviews'
+                                                            
+                                                            
+                                                      id=984:1769
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1770
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1771
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1772
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1773
+                                                            
+                                                            
+                                                            text='Notifications'
+                                                            
+                                                            
+                                                      id=984:1774
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1775
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1776
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1777
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1778
+                                                            
+                                                            
+                                                            text='CRM / WhatsApp'
+                                                            
+                                                            
+                                                      id=984:1779
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1780
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1781
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1782
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1783
+                                                            
+                                                            
+                                                            text='Content'
+                                                            
+                                                            
+                                                      id=984:1784
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1785
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1786
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1787
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1788
+                                                            
+                                                            
+                                                            text='Reports'
+                                                            
+                                                            
+                                                      id=984:1789
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1790
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                                  id=984:1791
+                                                    name='li'
+                                                    tpl=EL-267b0375 type=FRAME
+                                                    
+                                                      id=984:1792
+                                                        name='span'
+                                                        tpl=EL-2f9fe287 type=FRAME
+                                                        
+                                                          id=984:1793
+                                                            
+                                                            
+                                                            text='Platform Settings'
+                                                            
+                                                            
+                                                      id=984:1794
+                                                        name='span'
+                                                        tpl=EL-1fee5a49 type=FRAME
+                                                        
+                                                          id=984:1795
+                                                            tpl=EL-7cd4643f type=TEXT tpl_text='Not configured'
+                                      id=984:1796
+                                        name='p.mp-k'
+                                        
+                                        
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                            
+                                            
+                                        
+                                          id=984:1797
+                                            name='span'
+                                            tpl=EL-46dbad38 type=FRAME
+                                            
+                                              id=984:1798
+                                                name='i'
+                                                
+                                                
+                                                
+                                                
+                                              id=984:1799
+                                                
+                                                
+                                                text='Visible'
+                                                
+                                                
+                                          id=984:1800
+                                            name='span'
+                                            tpl=EL-46dbad38 type=FRAME
+                                            
+                                              id=984:1801
+                                                name='i'
+                                                
+                                                
+                                                
+                                                  
+                                                
+                                              id=984:1802
+                                                
+                                                
+                                                text='Hidden'
+                                                
+                                                
+                                          id=984:1803
+                                            name='span'
+                                            tpl=EL-46dbad38 type=FRAME
+                                            
+                                              id=984:1804
+                                                name='i'
+                                                
+                                                
+                                                
+                                                
+                                              id=984:1805
+                                                
+                                                
+                                                text='Not configured'
+                                                
+                                                
+                                  id=984:1806
+                                    name='section.sc3'
+                                    
+                                    
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                      id=984:1807
+                                        name='div'
+                                        tpl=EL-c094fdcc type=FRAME
+                                        
+                                          id=984:1808
+                                            name='Frame'
+                                            tpl=EL-d2f5d0a6 type=IMAGE-SVG
+                                          id=984:1810
+                                            name='div'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                            
+                                              id=984:1811
+                                                name='h2#en-h'
+                                                tpl=EL-dfdf56f9 type=FRAME
+                                                
+                                                  id=984:1812
+                                                    
+                                                    
+                                                    text='Permissions apply beyond navigation'
+                                                    
+                                                    
+                                              id=984:1813
+                                                name='p'
+                                                tpl=EL-dfdf56f9 type=FRAME
+                                                
+                                                  id=984:1814
+                                                    
+                                                    
+                                                    text='Hiding a menu item is not authorization. The same permission must also be enforced\nby the backend/API.'
+                                                    
+                                                    
+                                      id=984:1815
+                                        name='p.aud'
+                                        tpl=EL-f96bbce8 type=FRAME
+                                        
+                                          id=984:1816
+                                            name='svg:margin'
+                                            
+                                            
+                                              
+                                              
+                                              
+                                                
+                                                
+                                              
+                                                
+                                                
+                                            
+                                              id=984:1817
+                                                name='Frame'
+                                                tpl=EL-494805ba type=IMAGE-SVG
+                                          id=984:1822
+                                            name='span'
+                                            tpl=EL-2a66e910 type=FRAME
+                                            
+                                              id=984:1823
+                                                
+                                                
+                                                text='Permission changes may be recorded in the Audit Log.'
+                                                
+                                                
+                  id=984:1824
+                    name='footer.ft2'
+                    
+                    
+                      
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                    
+                    
+                    
+                    
+                      id=984:1825
+                        tpl=EL-64a79c70 type=TEXT tpl_text='© 2026 AeroWing. All rights reserved.'
+                  id=984:1826
+                    name='header'
+                    tpl=EL-d14effc8 type=FRAME
+                    
+                      id=984:1827
+                        name='Breadcrumb:margin'
+                        
+                        
+                          
+                          
+                          
+                            
+                            
+                        
+                          id=984:1828
+                            name='Breadcrumb'
+                            tpl=EL-235879b0 type=FRAME
+                            
+                              id=984:1829
+                                name='li'
+                                tpl=EL-2f9fe287 type=FRAME
+                                
+                                  id=984:1830
+                                    tpl=EL-fdff9110 type=TEXT tpl_text='Admin Panel'
+                              id=984:1831
+                                name='li'
+                                tpl=EL-bbedda7b type=FRAME
+                                
+                                  id=984:1832
+                                    tpl=EL-db7ddb8d type=TEXT tpl_text='/'
+                                  id=984:1833
+                                    
+                                    
+                                    text='Roles & Permissions'
+                                    
+                                    
+                      id=984:1834
+                        name='div.tb-a'
+                        tpl=EL-235879b0 type=FRAME
+                        
+                          id=984:1835
+                            name='Notifications'
+                            tpl=EL-58e2a7b0 type=FRAME
+                            
+                              id=984:1836
+                                name='Frame'
+                                tpl=EL-d2f5d0a6 type=IMAGE-SVG
+                          id=984:1838
+                            name='button menu#pf-b'
+                            tpl=EL-0ccd4aea type=FRAME
+                            
+                              id=984:1839
+                                name='span.pf-av'
+                                tpl=EL-a8b2764a type=FRAME
+                                
+                                  id=984:1840
+                                    tpl=EL-5321e56d type=TEXT tpl_text='SA'
+                              id=984:1841
+                                name='span.pf-t'
+                                tpl=EL-6e7b525c type=FRAME
+                                
+                                  id=984:1842
+                                    name='b'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=984:1843
+                                        tpl=EL-2df750f6 type=TEXT tpl_text='Sample Admin'
+                                  id=984:1844
+                                    name='small#pf-role'
+                                    tpl=EL-dfdf56f9 type=FRAME
+                                    
+                                      id=984:1845
+                                        tpl=EL-a8ebef05 type=TEXT tpl_text='Super Admin'
+                              id=984:1846
+                                name='Frame'
+                                tpl=EL-d40fb4e5 type=IMAGE-SVG

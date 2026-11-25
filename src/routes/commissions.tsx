@@ -3,6 +3,7 @@ import {
   CommissionTrackingPage,
   AgentReportsPage,
 } from '#/components/agent-portal'
+import { AdminReportsCommissionsPage } from '#/components/admin'
 
 interface CommissionSearchParams {
   'node-id'?: string
@@ -46,6 +47,19 @@ export const Route = createFileRoute('/commissions')({
 
 function CommissionsRoute() {
   const search = Route.useSearch()
+
+  if (
+    search['node-id'] === '1005-5346' ||
+    search.nodeId === '1005:5346' ||
+    search['node-id'] === '1005-5346'
+  ) {
+    return (
+      <AdminReportsCommissionsPage
+        initialTab="commissions"
+        initialNodeId={search['node-id'] || search.nodeId}
+      />
+    )
+  }
 
   if (search['node-id'] === '821-1922' || search.nodeId === '821:1922') {
     return (

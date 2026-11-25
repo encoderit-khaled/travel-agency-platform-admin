@@ -1,0 +1,189 @@
+- [1009:6558] FRAME Platform Settings - Languages
+  - [1009:6559] FRAME div
+    - [1080:1858] FRAME Admin navigation
+      - [1080:1859] FRAME div.sb-hd
+        - [1080:1860] FRAME Aero Wing Admin Panel — Dashboard
+          - [1080:1861] FRAME AeroWing Admin — Dashboard
+            - [1080:1862] FRAME AeroWing — Explore, Book, Travel
+          - [1080:1863] FRAME span.sb-lab
+            - [1080:1864] TEXT 
+      - [1080:1865] FRAME Admin
+        - [1080:1866] FRAME div.sb-g
+          - [1080:1867] FRAME p#g-ov
+            - [1080:1868] TEXT 
+          - [1080:1869] FRAME a.sb-i
+            - [1080:1870] IMAGE-SVG Frame
+            - [1080:1875] FRAME span.sb-t
+              - [1080:1876] TEXT 
+        - [1080:1877] FRAME div.sb-g
+          - [1080:1878] FRAME p#g-core
+            - [1080:1879] TEXT 
+          - [1080:1880] FRAME ul
+            - [1080:1881] FRAME a.sb-i
+              - [1080:1882] IMAGE-SVG Frame
+              - [1080:1884] FRAME span.sb-t
+                - [1080:1885] TEXT 
+            - [1080:1886] FRAME a.sb-i
+              - [1080:1887] IMAGE-SVG Frame
+              - [1080:1890] FRAME span.sb-t
+                - [1080:1891] TEXT 
+            - [1080:1892] FRAME a.sb-i
+              - [1080:1893] IMAGE-SVG Frame
+              - [1080:1896] FRAME span.sb-t
+                - [1080:1897] TEXT 
+            - [1080:1898] FRAME a.sb-i
+              - [1080:1899] IMAGE-SVG Frame
+              - [1080:1904] FRAME span.sb-t
+                - [1080:1905] TEXT 
+        - [1080:1906] FRAME div.sb-g
+          - [1080:1907] FRAME p#g-mod
+            - [1080:1908] TEXT 
+          - [1080:1909] FRAME ul
+            - [1080:1910] FRAME a.sb-i
+              - [1080:1911] IMAGE-SVG Frame
+              - [1080:1913] FRAME span.sb-t
+                - [1080:1914] TEXT 
+            - [1080:1915] FRAME a.sb-i
+              - [1080:1916] IMAGE-SVG Frame
+              - [1080:1919] FRAME span.sb-t
+                - [1080:1920] TEXT 
+            - [1080:1921] FRAME a.sb-i
+              - [1080:1922] IMAGE-SVG Frame
+              - [1080:1924] FRAME span.sb-t
+                - [1080:1925] TEXT 
+            - [1080:1926] FRAME a.sb-i
+              - [1080:1927] IMAGE-SVG Frame
+              - [1080:1930] FRAME span.sb-t
+                - [1080:1931] TEXT 
+            - [1080:1932] FRAME a.sb-i
+              - [1080:1933] IMAGE-SVG Frame
+              - [1080:1935] FRAME span.sb-t
+                - [1080:1936] TEXT 
+            - [1080:1954] FRAME a.sb-i
+              - [1080:1955] IMAGE-SVG Frame
+              - [1080:1958] FRAME span.sb-t
+                - [1080:1959] TEXT 
+            - [1080:1960] FRAME a.sb-i
+              - [1080:1961] IMAGE-SVG Frame
+              - [1080:1964] FRAME span.sb-t
+                - [1080:1965] TEXT 
+      - [1080:1966] FRAME div.sb-ft
+        - [1080:1967] FRAME Collapse sidebar
+          - [1080:1968] IMAGE-SVG Frame
+          - [1080:1971] FRAME span#sb-col-l
+            - [1080:1972] TEXT 
+    - [1009:6675] FRAME Main column
+      - [1009:6676] FRAME main
+        - [1009:6677] FRAME div#page
+          - [1009:6678] FRAME div.ph2
+            - [1009:6679] FRAME div
+              - [1009:6680] FRAME span
+                - [1009:6681] TEXT 
+              - [1009:6682] FRAME h1
+                - [1009:6683] TEXT 
+              - [1009:6684] FRAME p
+                - [1009:6685] TEXT 
+          - [1009:6686] FRAME div
+            - [1009:6687] FRAME Platform Settings sections
+              - [1009:6688] FRAME p.sn-t
+                - [1009:6689] TEXT 
+              - [1009:6690] FRAME ul
+                - [1009:6691] FRAME a
+                  - [1009:6692] IMAGE-SVG Frame
+                  - [1009:6695] FRAME span
+                    - [1009:6696] TEXT 
+                - [1009:6697] FRAME a
+                  - [1009:6698] IMAGE-SVG Frame
+                  - [1009:6701] FRAME span
+                    - [1009:6702] TEXT 
+                  - [1009:6703] RECTANGLE ::before
+                - [1009:6704] FRAME a
+                  - [1009:6705] IMAGE-SVG Frame
+                  - [1009:6709] FRAME span
+                    - [1009:6710] TEXT 
+                - [1009:6711] FRAME a
+                  - [1009:6712] IMAGE-SVG Frame
+                  - [1009:6715] FRAME span
+                    - [1009:6716] TEXT 
+                - [1009:6717] FRAME a
+                  - [1009:6718] IMAGE-SVG Frame
+                  - [1009:6721] FRAME span
+                    - [1009:6722] TEXT 
+            - [1009:6723] FRAME div.sm2
+              - [1009:6724] FRAME section.pc3
+                - [1009:6725] FRAME div.pc3-h
+                  - [1009:6726] FRAME div
+                    - [1009:6727] FRAME span.kpi-ic:margin
+                      - [1009:6728] FRAME span.kpi-ic
+                        - [1009:6729] IMAGE-SVG Frame
+                    - [1009:6732] FRAME div.ph-t
+                      - [1009:6733] FRAME h2#lg-h
+                        - [1009:6734] TEXT 
+                      - [1009:6735] FRAME p.sub
+                        - [1009:6736] TEXT 
+                  - [1009:6737] FRAME button#cfg
+                    - [1009:6738] IMAGE-SVG Frame
+                    - [1009:6741] TEXT 
+                - [1009:6742] FRAME div.lg-ns
+                  - [1009:6743] FRAME span.es-ic:margin
+                    - [1009:6744] FRAME span.es-ic
+                      - [1009:6745] IMAGE-SVG Frame
+                  - [1009:6748] FRAME h3:margin
+                    - [1009:6749] FRAME h3
+                      - [1009:6750] TEXT 
+                  - [1009:6751] FRAME p
+                    - [1009:6752] TEXT 
+              - [1009:6753] FRAME div.lg-n
+                - [1009:6754] FRAME aside.inf
+                  - [1009:6755] FRAME span.kpi-ic
+                    - [1009:6756] IMAGE-SVG Frame
+                  - [1009:6760] FRAME div
+                    - [1009:6761] FRAME h2#inf-h
+                      - [1009:6762] TEXT 
+                    - [1009:6763] FRAME p
+                      - [1009:6764] TEXT 
+                - [1009:6765] FRAME section.pc3
+                  - [1009:6766] FRAME h2#ap-h
+                    - [1009:6767] TEXT 
+                  - [1009:6768] FRAME dl.kvn
+                    - [1009:6769] FRAME div
+                      - [1009:6770] FRAME span.kpi-ic
+                        - [1009:6771] IMAGE-SVG Frame
+                      - [1009:6774] FRAME div
+                        - [1009:6775] FRAME dt
+                          - [1009:6776] TEXT 
+                        - [1009:6777] FRAME dd
+                          - [1009:6778] TEXT 
+                    - [1009:6779] FRAME div
+                      - [1009:6780] FRAME span.kpi-ic
+                        - [1009:6781] IMAGE-SVG Frame
+                      - [1009:6783] FRAME div
+                        - [1009:6784] FRAME dt
+                          - [1009:6785] TEXT 
+                        - [1009:6786] FRAME dd
+                          - [1009:6787] TEXT 
+      - [1009:6788] FRAME footer.ft2
+        - [1009:6789] TEXT 
+      - [1009:6790] FRAME header
+        - [1009:6791] FRAME Breadcrumb:margin
+          - [1009:6792] FRAME Breadcrumb
+            - [1009:6793] FRAME li
+              - [1009:6794] TEXT 
+            - [1009:6795] FRAME li
+              - [1009:6796] TEXT 
+              - [1009:6797] TEXT 
+            - [1009:6798] FRAME li
+              - [1009:6799] TEXT 
+              - [1009:6800] TEXT 
+        - [1009:6801] FRAME div.tb-a
+          - [1009:6802] FRAME Notifications
+            - [1009:6803] IMAGE-SVG Frame
+          - [1009:6805] FRAME button menu#pf-b
+            - [1009:6806] FRAME span.pf-av
+              - [1009:6807] TEXT 
+            - [1009:6808] FRAME span.pf-t
+              - [1009:6809] FRAME b
+                - [1009:6810] TEXT 
+              - [1009:6811] FRAME small#pf-role
+                - [1009:6812] TEXT 
+            - [1009:6813] IMAGE-SVG Frame

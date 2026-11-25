@@ -1,0 +1,74 @@
+- [1009:6827] FRAME Platform Settings - Languages - Configure Languages
+  - [1009:6826] RECTANGLE Configure Languages 1
+  - [1080:1974] FRAME Admin navigation
+    - [1080:1975] FRAME div.sb-hd
+      - [1080:1976] FRAME Aero Wing Admin Panel — Dashboard
+        - [1080:1977] FRAME AeroWing Admin — Dashboard
+          - [1080:1978] FRAME AeroWing — Explore, Book, Travel
+        - [1080:1979] FRAME span.sb-lab
+          - [1080:1980] TEXT 
+    - [1080:1981] FRAME Admin
+      - [1080:1982] FRAME div.sb-g
+        - [1080:1983] FRAME p#g-ov
+          - [1080:1984] TEXT 
+        - [1080:1985] FRAME a.sb-i
+          - [1080:1986] IMAGE-SVG Frame
+          - [1080:1991] FRAME span.sb-t
+            - [1080:1992] TEXT 
+      - [1080:1993] FRAME div.sb-g
+        - [1080:1994] FRAME p#g-core
+          - [1080:1995] TEXT 
+        - [1080:1996] FRAME ul
+          - [1080:1997] FRAME a.sb-i
+            - [1080:1998] IMAGE-SVG Frame
+            - [1080:2000] FRAME span.sb-t
+              - [1080:2001] TEXT 
+          - [1080:2002] FRAME a.sb-i
+            - [1080:2003] IMAGE-SVG Frame
+            - [1080:2006] FRAME span.sb-t
+              - [1080:2007] TEXT 
+          - [1080:2008] FRAME a.sb-i
+            - [1080:2009] IMAGE-SVG Frame
+            - [1080:2012] FRAME span.sb-t
+              - [1080:2013] TEXT 
+          - [1080:2014] FRAME a.sb-i
+            - [1080:2015] IMAGE-SVG Frame
+            - [1080:2020] FRAME span.sb-t
+              - [1080:2021] TEXT 
+      - [1080:2022] FRAME div.sb-g
+        - [1080:2023] FRAME p#g-mod
+          - [1080:2024] TEXT 
+        - [1080:2025] FRAME ul
+          - [1080:2026] FRAME a.sb-i
+            - [1080:2027] IMAGE-SVG Frame
+            - [1080:2029] FRAME span.sb-t
+              - [1080:2030] TEXT 
+          - [1080:2031] FRAME a.sb-i
+            - [1080:2032] IMAGE-SVG Frame
+            - [1080:2035] FRAME span.sb-t
+              - [1080:2036] TEXT 
+          - [1080:2037] FRAME a.sb-i
+            - [1080:2038] IMAGE-SVG Frame
+            - [1080:2040] FRAME span.sb-t
+              - [1080:2041] TEXT 
+          - [1080:2042] FRAME a.sb-i
+            - [1080:2043] IMAGE-SVG Frame
+            - [1080:2046] FRAME span.sb-t
+              - [1080:2047] TEXT 
+          - [1080:2048] FRAME a.sb-i
+            - [1080:2049] IMAGE-SVG Frame
+            - [1080:2051] FRAME span.sb-t
+              - [1080:2052] TEXT 
+          - [1080:2070] FRAME a.sb-i
+            - [1080:2071] IMAGE-SVG Frame
+            - [1080:2074] FRAME span.sb-t
+              - [1080:2075] TEXT 
+          - [1080:2076] FRAME a.sb-i
+            - [1080:2077] IMAGE-SVG Frame
+            - [1080:2080] FRAME span.sb-t
+              - [1080:2081] TEXT 
+    - [1080:2082] FRAME div.sb-ft
+      - [1080:2083] FRAME Collapse sidebar
+        - [1080:2084] IMAGE-SVG Frame
+        - [1080:2087] FRAME span#sb-col-l
+          - [1080:2088] TEXT 

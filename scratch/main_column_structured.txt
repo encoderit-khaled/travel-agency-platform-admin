@@ -1,0 +1,422 @@
+              id=990:3062
+                name=Main column
+                  id=990:3063
+                    name=main
+                      mode: column
+                      padding: 28px 28px 40px
+                      id=990:3064
+                        name=div#page
+                          mode: column
+                          gap: 6px
+                          id=990:3065
+                            name=a.back
+                              mode: row
+                              padding: 9px 6px 10px
+                              gap: 6px
+                            borderRadius: 8px
+                              id=990:3066
+                                name=Frame
+                                tpl=EL-f652840d | type=IMAGE-SVG | mode=none
+                              id=990:3068
+                                text="Back to B2C Customers"
+                                textStyle: style_cf58f31f
+                                fills=Midnight Blue
+                          id=990:3069
+                            name=div.ph2
+                              mode: row
+                              padding: 0px 0px 16px
+                              gap: 12px
+                              id=990:3070
+                                name=div
+                                tpl=EL-7c39d4fd | type=FRAME | mode=column | gap=3px
+                                  id=990:3071
+                                    name=span
+                                    tpl=EL-dfdf56f9 | type=FRAME | mode=column
+                                      id=990:3072
+                                        tpl=EL-fea8bcb3 | type=TEXT | text=Core Admin | fills=Science Blue
+                                  id=990:3073
+                                    name=h1
+                                    tpl=EL-681edddb | type=FRAME | mode=column | pad=1px 0px 0px
+                                      id=990:3074
+                                        text="Customer Profile"
+                                        textStyle: style_47de102a
+                                        fills=Midnight Blue
+                                  id=990:3075
+                                    name=p
+                                    tpl=EL-dfdf56f9 | type=FRAME | mode=column
+                                      id=990:3076
+                                        text="View and manage the customer’s basic profile information."
+                                        textStyle: style_be48c804
+                                        fills=Comet
+                          id=990:3077
+                            name=section.idc
+                              mode: row
+                              padding: 22px 24px
+                              gap: 18px
+                            strokes: Mystic
+                            strokeWeight: 1px
+                            borderRadius: 18px
+                              id=990:3078
+                                name='::after'
+                                  mode: none
+                                borderRadius: 110px
+                              id=990:3079
+                                name=span.pf-av
+                                  mode: column
+                                fills=Midnight Blue
+                                borderRadius: 18px
+                                  id=990:3080
+                                    text="DC"
+                                    textStyle:
+                                    fills=Saffron
+                              id=990:3081
+                                name=div.idc-t
+                                tpl=EL-b45a9547 | type=FRAME | mode=column | gap=6px
+                                  id=990:3082
+                                    name=h2#id-h
+                                      mode: row
+                                      gap: 6px 10px
+                                      id=990:3083
+                                        text="Demo Customer"
+                                        textStyle:
+                                        fills=Midnight Blue
+                                      id=990:3084
+                                        name=span.tag
+                                        tpl=EL-ea7b03b4 | type=FRAME | fills=Catskill White | strokes=Mystic | borderRadius=999px | mode=row | pad=1px 8px
+                                          id=990:3085
+                                            text="Sample data"
+                                            textStyle:
+                                            fills=Comet
+                                  id=990:3086
+                                    name=div.idc-m
+                                    tpl=EL-9cc7660f | type=FRAME | mode=row | gap=6px 8px
+                                      id=990:3087
+                                        name=span
+                                        tpl=EL-5cb7385b | type=FRAME | fills=Catskill White (660:4703) | borderRadius=999px | mode=row | pad=1.5px 9px 1.75px 7px | gap=5px
+                                          id=990:3088
+                                            name=Frame
+                                            tpl=EL-d4302386 | type=IMAGE-SVG | mode=none
+                                          id=990:3090
+                                            text="B2C Customer"
+                                            textStyle: style_3a13c6f7
+                                            fills=Midnight Blue
+                                      id=990:3091
+                                        name=span
+                                        fills=Link Water (7:616)
+                                        borderRadius: 999px
+                                          id=990:3092
+                                            name=Frame
+                                            tpl=EL-62b4d877 | type=IMAGE-SVG
+                                          id=990:3095
+                                            tpl=EL-f83f3747 | type=TEXT | text=Email | fills=Midnight Blue
+                          id=990:3096
+                            name=div
+                              mode: row
+                              padding: 14px 0px 0px
+                              gap: 20px
+                              id=990:3097
+                                name=div.mcol
+                                tpl=EL-6cb81979 | type=FRAME | mode=column | gap=20px
+                                  id=990:3098
+                                    name=section.pc3
+                                    tpl=EL-ed86ce35 | type=FRAME | fills=White | strokes=Mystic | borderRadius=18px | mode=column | pad=20px 22px | gap=16px
+                                      id=990:3099
+                                        name=div.pc3-h
+                                        tpl=EL-89de18e1 | type=FRAME | mode=row | gap=10px
+                                          id=990:3100
+                                            name=div
+                                            tpl=EL-5d197b60 | type=FRAME | mode=row | gap=10px
+                                              id=990:3101
+                                                name=span.kpi-ic
+                                                tpl=EL-a3dd0e0a | type=FRAME | fills=Hawkes Blue | borderRadius=10px | mode=column | pad=9px 0px
+                                                  id=990:3102
+                                                    name=Frame
+                                                    tpl=EL-f652840d | type=IMAGE-SVG | mode=none
+                                              id=990:3104
+                                                name=h2#pi-h
+                                                tpl=EL-2f9fe287 | type=FRAME | mode=column
+                                                  id=990:3105
+                                                    text="Profile Information"
+                                                    textStyle: style_aefbca38
+                                                    fills=Midnight Blue
+                                          id=990:3106
+                                            name=button#ed-b
+                                            tpl=EL-54a3e44b | type=FRAME | fills=White | strokes=Heather | borderRadius=11px | mode=row | pad=9px 14px 10px | gap=10px
+                                              id=990:3107
+                                                name=Frame
+                                                tpl=EL-d40fb4e5 | type=IMAGE-SVG | mode=none
+                                              id=990:3110
+                                                text="Edit Profile"
+                                                textStyle: style_bb12b1a7
+                                                fills=Midnight Blue
+                                      id=990:3111
+                                        name=div
+                                        tpl=EL-329d8a59 | type=FRAME | mode=column | gap=3px
+                                          id=990:3112
+                                            name=dt
+                                            tpl=EL-e9077466 | type=FRAME
+                                              id=990:3113
+                                                text="Full Name"
+                                                textStyle: style_e0b4c12d
+                                                fills=Comet
+                                          id=990:3114
+                                            name=dd#fn-v
+                                            tpl=EL-773c6f36 | type=FRAME | mode=row | pad=0px 0px 1.5px | gap=6px
+                                              id=990:3115
+                                                text="Demo Customer"
+                                                textStyle: style_ac8daa02
+                                                fills=Mirage
+                                  id=990:3116
+                                    name=section.pc3
+                                      mode: column
+                                      padding: 20px 22px
+                                      gap: 14px
+                                    fills=White
+                                    strokes: Mystic
+                                    strokeWeight: 1px
+                                    borderRadius: 18px
+                                      id=990:3117
+                                        name=div.pc3-h
+                                        tpl=EL-998e62e2 | type=FRAME | mode=row | gap=10px
+                                          id=990:3118
+                                            name=div
+                                            tpl=EL-5d197b60 | type=FRAME | mode=row | gap=10px
+                                              id=990:3119
+                                                name=span.kpi-ic
+                                                tpl=EL-a3dd0e0a | type=FRAME | fills=Hawkes Blue | borderRadius=10px | mode=column | pad=9px 0px
+                                                  id=990:3120
+                                                    name=Frame
+                                                    tpl=EL-f652840d | type=IMAGE-SVG | mode=none
+                                              id=990:3123
+                                                name=h2#sc-h
+                                                tpl=EL-2f9fe287 | type=FRAME | mode=column
+                                                  id=990:3124
+                                                    text="Sign-in & Contact"
+                                                    textStyle: style_aefbca38
+                                                    fills=Midnight Blue
+                                      id=990:3125
+                                        name=dl.kv2
+                                          mode: grid
+                                          padding: 2px 0px 0px
+                                          gap: 14px 18px
+                                          id=990:3126
+                                            name=div
+                                              mode: column
+                                              gap: 3px
+                                              id=990:3127
+                                                name=dt
+                                                tpl=EL-e9077466 | type=FRAME
+                                                  id=990:3128
+                                                    text="Email"
+                                                    textStyle: style_e0b4c12d
+                                                    fills=Comet
+                                              id=990:3129
+                                                name=dd#em-v
+                                                tpl=EL-773c6f36 | type=FRAME | mode=row | pad=0px 0px 1.5px | gap=6px
+                                                  id=990:3130
+                                                    text="demo.customer@example.com"
+                                                    textStyle: style_ac8daa02
+                                                    fills=Mirage
+                                          id=990:3131
+                                            name=div
+                                              mode: column
+                                              padding: 0px 0px 0.75px
+                                              gap: 3px
+                                              id=990:3132
+                                                name=dt
+                                                tpl=EL-e9077466 | type=FRAME
+                                                  id=990:3133
+                                                    text="Mobile"
+                                                    textStyle: style_e0b4c12d
+                                                    fills=Comet
+                                              id=990:3134
+                                                name=dd#mb-v
+                                                tpl=EL-bb66f4c9 | type=FRAME | mode=row | gap=6px
+                                                  id=990:3135
+                                                    name=span
+                                                      mode: column
+                                                      id=990:3136
+                                                        text="Not added"
+                                                        textStyle:
+                                                        fills=Comet
+                                          id=990:3137
+                                            name=div
+                                              mode: column
+                                              gap: 3px
+                                              id=990:3138
+                                                name=dt
+                                                tpl=EL-e9077466 | type=FRAME
+                                                  id=990:3139
+                                                    tpl=EL-524c1fb6 | type=TEXT | text=Sign-in Context | fills=Comet
+                                              id=990:3140
+                                                name=dd#sx-v
+                                                tpl=EL-bb66f4c9 | type=FRAME | mode=row | gap=6px
+                                                  id=990:3141
+                                                    name=span.sic
+                                                      mode: row
+                                                      gap: 6px
+                                                      id=990:3142
+                                                        name=span
+                                                        tpl=EL-32aa1743 | type=FRAME | fills=Link Water (7:616) | borderRadius=999px
+                                                          id=990:3143
+                                                            name=Frame
+                                                            tpl=EL-62b4d877 | type=IMAGE-SVG
+                                                          id=990:3146
+                                                            tpl=EL-f83f3747 | type=TEXT | text=Email | fills=Midnight Blue
+                                      id=990:3147
+                                        name=p
+                                        tpl=EL-f96bbce8 | type=FRAME | mode=row | gap=8px
+                                          id=990:3148
+                                            name=svg:margin
+                                              mode: column
+                                              padding: 1px 0px 0px
+                                              id=990:3149
+                                                name=Frame
+                                                tpl=EL-d40fb4e5 | type=IMAGE-SVG | mode=none
+                                          id=990:3153
+                                            name=span
+                                            tpl=EL-2a66e910 | type=FRAME | mode=column
+                                              id=990:3154
+                                                text="Sign-in and contact details are read-only here."
+                                                textStyle:
+                                                fills=Comet
+                              id=990:3155
+                                name=section.pc3
+                                  mode: column
+                                  padding: 20px 22px
+                                  gap: 16px
+                                fills=White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                  id=990:3156
+                                    name=div.pc3-h
+                                    tpl=EL-998e62e2 | type=FRAME | mode=row | gap=10px
+                                      id=990:3157
+                                        name=div
+                                        tpl=EL-5d197b60 | type=FRAME | mode=row | gap=10px
+                                          id=990:3158
+                                            name=span.kpi-ic
+                                            tpl=EL-a3dd0e0a | type=FRAME | fills=Hawkes Blue | borderRadius=10px | mode=column | pad=9px 0px
+                                              id=990:3159
+                                                name=Frame
+                                                tpl=EL-f652840d | type=IMAGE-SVG | mode=none
+                                          id=990:3161
+                                            name=h2#ac-h
+                                            tpl=EL-2f9fe287 | type=FRAME | mode=column
+                                              id=990:3162
+                                                text="Customer Account"
+                                                textStyle: style_aefbca38
+                                                fills=Midnight Blue
+                                  id=990:3163
+                                    name=dl.kv2
+                                      mode: column
+                                      gap: 14px
+                                      id=990:3164
+                                        name=div
+                                        tpl=EL-329d8a59 | type=FRAME | mode=column | gap=3px
+                                          id=990:3165
+                                            name=dt
+                                            tpl=EL-e9077466 | type=FRAME
+                                              id=990:3166
+                                                text="Account Type"
+                                                textStyle: style_e0b4c12d
+                                                fills=Comet
+                                          id=990:3167
+                                            name=dd
+                                            tpl=EL-773c6f36 | type=FRAME | mode=row | pad=0px 0px 1.5px | gap=6px
+                                              id=990:3168
+                                                text="B2C Customer"
+                                                textStyle: style_ac8daa02
+                                                fills=Mirage
+                                      id=990:3169
+                                        name=div
+                                        tpl=EL-329d8a59 | type=FRAME | mode=column | gap=3px
+                                          id=990:3170
+                                            name=dt
+                                            tpl=EL-e9077466 | type=FRAME
+                                              id=990:3171
+                                                tpl=EL-524c1fb6 | type=TEXT | text=Sign-in Context | fills=Comet
+                                          id=990:3172
+                                            name=dd#ac-sx
+                                            tpl=EL-773c6f36 | type=FRAME | mode=row | pad=0px 0px 1.5px | gap=6px
+                                              id=990:3173
+                                                text="Email"
+                                                textStyle: style_ac8daa02
+                                                fills=Mirage
+                  id=990:3174
+                    name=footer.ft2
+                      mode: column
+                      padding: 16px 28px
+                    fills=White
+                    strokes: Mystic
+                    strokeWeight: 1px 0px 0px
+                      id=990:3175
+                        tpl=EL-64a79c70 | type=TEXT | text=© 2026 AeroWing. All rights reserved. | fills=Comet
+                  id=990:3176
+                    name=header
+                    tpl=EL-c8d2d5b1 | type=FRAME | fills=White 92% | strokes=Mystic | mode=row | pad=0px 28px | gap=14px
+                      id=990:3177
+                        name=Breadcrumb:margin
+                          mode: column
+                          padding: 0px 1027.18994140625px 0px 0px
+                          id=990:3178
+                            name=Breadcrumb
+                            tpl=EL-235879b0 | type=FRAME | mode=row | gap=8px
+                              id=990:3179
+                                name=li
+                                tpl=EL-2f9fe287 | type=FRAME | mode=column
+                                  id=990:3180
+                                    tpl=EL-fdff9110 | type=TEXT | text=Admin Panel | fills=Comet
+                              id=990:3181
+                                name=li
+                                tpl=EL-bbedda7b | type=FRAME | mode=row | gap=7.989999771118164px
+                                  id=990:3182
+                                    tpl=EL-db7ddb8d | type=TEXT | text=/ | fills=Gull Gray
+                                  id=990:3183
+                                    text="B2C Customers"
+                                    textStyle: style_e94c23d2
+                                    fills=Comet
+                              id=990:3184
+                                name=li
+                                  mode: row
+                                  gap: 8px
+                                  id=990:3185
+                                    tpl=EL-db7ddb8d | type=TEXT | text=/ | fills=Gull Gray
+                                  id=990:3186
+                                    text="Customer Profile"
+                                    textStyle: style_857f4816
+                                    fills=Mirage
+                      id=990:3187
+                        name=div.tb-a
+                        tpl=EL-235879b0 | type=FRAME | mode=row | gap=8px
+                          id=990:3188
+                            name=Notifications
+                            tpl=EL-58e2a7b0 | type=FRAME | borderRadius=12px | mode=column | pad=11px 6px
+                              id=990:3189
+                                name=Frame
+                                tpl=EL-d2f5d0a6 | type=IMAGE-SVG | mode=none
+                          id=990:3191
+                            name=button menu#pf-b
+                            tpl=EL-0ccd4aea | type=FRAME | fills=White | strokes=Mystic | borderRadius=14px | mode=row | pad=4px 10px 4px 4px | gap=10px
+                              id=990:3192
+                                name=span.pf-av
+                                tpl=EL-a8b2764a | type=FRAME | fills=Midnight Blue | borderRadius=11px | mode=column
+                                  id=990:3193
+                                    tpl=EL-5321e56d | type=TEXT | text=SA | fills=Saffron
+                              id=990:3194
+                                name=span.pf-t
+                                tpl=EL-6e7b525c | type=FRAME | mode=column
+                                  id=990:3195
+                                    name=b
+                                    tpl=EL-dfdf56f9 | type=FRAME | mode=column
+                                      id=990:3196
+                                        tpl=EL-2df750f6 | type=TEXT | text=Sample Admin | fills=Mirage
+                                  id=990:3197
+                                    name=small#pf-role
+                                    tpl=EL-dfdf56f9 | type=FRAME | mode=column
+                                      id=990:3198
+                                        tpl=EL-a8ebef05 | type=TEXT | text=Super Admin | fills=Comet
+                              id=990:3199
+                                name=Frame
+                                tpl=EL-d40fb4e5 | type=IMAGE-SVG | mode=none

@@ -1,0 +1,1813 @@
+      - id: 972:2051
+        name: Admin Dashboard
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          sizing:
+            horizontal: fixed
+            vertical: hug
+          locationRelativeToParent:
+            x: 4450
+            y: 402
+          dimensions:
+            width: 1920
+        fills: White Catskill White (7:6)
+        children:
+          - id: 972:2052
+            name: div
+            template: EL-d1ac142c
+            children:
+              - id: 972:2053
+                name: Admin navigation
+                template: EL-b4d5d5d0
+                children:
+                  - id: 972:2054
+                    name: div.sb-hd
+                    template: EL-19ed2d5b
+                    children:
+                      - id: 972:2055
+                        name: Aero Wing Admin Panel — Dashboard
+                        template: EL-27a7f8c4
+                        children:
+                          - id: 972:2545
+                            name: AeroWing Admin — Dashboard
+                            template: EL-280eabfe
+                            children:
+                              - id: 972:2546
+                                name: AeroWing — Explore, Book, Travel
+                                template: EL-966c7e52
+                          - id: 972:2058
+                            name: span.sb-lab
+                            template: EL-4c261f7f
+                            children:
+                              - id: 972:2059
+                                template: EL-a0b6cf5b
+                  - id: 972:2060
+                    name: Admin
+                    template: EL-0b230fa2
+                    children:
+                      - id: 972:2061
+                        name: div.sb-g
+                        template: EL-e9077466
+                        children:
+                          - id: 972:2062
+                            name: p#g-ov
+                            template: EL-d8c5a118
+                            children:
+                              - id: 972:2063
+                                template: EL-ad79941c
+                          - id: 972:2064
+                            name: a.sb-i
+                            template: EL-bdff8199
+                            children:
+                              - id: 972:2065
+                                name: Frame
+                                template: EL-b1d338df
+                              - id: 972:2070
+                                name: span.sb-t
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 972:2071
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Dashboard
+                                    textStyle: style_cf58f31f
+                                    fills: White
+                      - id: 972:2072
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 972:2073
+                            name: p#g-core
+                            template: EL-d8c5a118
+                            children:
+                              - id: 972:2074
+                                template: EL-a5e6b4d2
+                          - id: 972:2075
+                            name: ul
+                            template: EL-6e926975
+                            children:
+                              - id: 972:2076
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 972:2077
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 972:2079
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2080
+                                        template: EL-8cc0c44d
+                              - id: 972:2081
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 972:2082
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 972:2085
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2086
+                                        template: EL-c45ae915
+                              - id: 972:2087
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 972:2088
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 972:2091
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2092
+                                        template: EL-40ae2791
+                              - id: 972:2093
+                                name: a.sb-i
+                                template: EL-7041e0b0
+                                children:
+                                  - id: 972:2094
+                                    name: Frame
+                                    template: EL-b1d338df
+                                  - id: 972:2099
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2100
+                                        template: EL-557136c9
+                      - id: 972:2101
+                        name: div.sb-g
+                        template: EL-301f98e1
+                        children:
+                          - id: 972:2102
+                            name: p#g-mod
+                            template: EL-d8c5a118
+                            children:
+                              - id: 972:2103
+                                template: EL-eff13b88
+                          - id: 972:2104
+                            name: ul
+                            template: EL-43323dcb
+                            children:
+                              - id: 972:2105
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2106
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2108
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2109
+                                        template: EL-4074d9e1
+                              - id: 972:2110
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2111
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2114
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2115
+                                        template: EL-618e9697
+                              - id: 972:2116
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2117
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2119
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2120
+                                        template: EL-d10a515e
+                              - id: 972:2121
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2122
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2125
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2126
+                                        template: EL-970eec68
+                              - id: 972:2127
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2128
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2130
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2131
+                                        template: EL-344c29b0
+                              - id: 972:2149
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2150
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2153
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2154
+                                        template: EL-2fd65db2
+                              - id: 972:2155
+                                name: a.sb-i
+                                template: EL-703abc35
+                                children:
+                                  - id: 972:2156
+                                    name: Frame
+                                    template: EL-f1890f3e
+                                  - id: 972:2159
+                                    name: span.sb-t
+                                    template: EL-2f9fe287
+                                    children:
+                                      - id: 972:2160
+                                        template: EL-09476c5f
+                  - id: 972:2161
+                    name: div.sb-ft
+                    template: EL-ab88c726
+                    children:
+                      - id: 972:2162
+                        name: Collapse sidebar
+                        template: EL-04eca728
+                        children:
+                          - id: 972:2163
+                            name: Frame
+                            template: EL-b1d338df
+                          - id: 972:2166
+                            name: span#sb-col-l
+                            template: EL-83bc679e
+                            children:
+                              - id: 972:2167
+                                template: EL-1fd2da9e
+              - id: 972:2168
+                name: Main column
+                type: FRAME
+                layout:
+                  mode: none
+                  sizing:
+                    horizontal: fill
+                    vertical: fixed
+                  dimensions:
+                    height: 1372.5
+                children:
+                  - id: 972:2169
+                    name: main
+                    template: EL-0af6044c
+                    children:
+                      - id: 972:2170
+                        name: div#page
+                        template: EL-acfb41d2
+                        children:
+                          - id: 972:2171
+                            name: div.ph2
+                            template: EL-7b655d35
+                            children:
+                              - id: 972:2172
+                                name: div
+                                template: EL-7c39d4fd
+                                children:
+                                  - id: 972:2173
+                                    name: span
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 972:2174
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Admin Dashboard
+                                        textStyle: style_26b1bc04
+                                        fills: Science Blue
+                                  - id: 972:2175
+                                    name: h1
+                                    template: EL-681edddb
+                                    children:
+                                      - id: 972:2176
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Overview
+                                        textStyle: style_47de102a
+                                        fills: Midnight Blue
+                                  - id: 972:2177
+                                    name: p
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 972:2178
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Monitor key platform activity and access core administration tools.
+                                        textStyle: style_be48c804
+                                        fills: Comet
+                              - id: 972:2179
+                                name: span.ctx
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  padding: 8px 12px
+                                  alignItems: center
+                                  gap: 8px
+                                  sizing:
+                                    horizontal: hug
+                                    vertical: hug
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 12px
+                                children:
+                                  - id: 972:2180
+                                    name: Frame
+                                    template: EL-d40fb4e5
+                                  - id: 972:2185
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Current overview
+                                    textStyle: style_e6a95020
+                                    fills: Comet
+                                  - id: 972:2186
+                                    name: span.tag
+                                    template: EL-ea7b03b4
+                                    children:
+                                      - id: 972:2187
+                                        template: EL-27f9f2b6
+                          - id: 972:2188
+                            name: div
+                            type: FRAME
+                            layout:
+                              mode: grid
+                              alignSelf: stretch
+                              gridTemplateColumns: repeat(3,minmax(0,1fr))
+                              gridTemplateRows: 153.25px 391.75px 491.25px
+                              gap: 20px
+                              sizing:
+                                horizontal: fill
+                                vertical: fixed
+                              dimensions:
+                                height: 1076.25
+                            children:
+                              - id: 972:2189
+                                name: section
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  justifyContent: center
+                                  gap: 20px
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: fixed
+                                  gridColumn: span 3
+                                  dimensions:
+                                    height: 153.25
+                                children:
+                                  - id: 972:2190
+                                    name: div.kpi
+                                    template: EL-f7218847
+                                    children:
+                                      - id: 972:2191
+                                        name: div.kpi-t
+                                        template: EL-bb582553
+                                        children:
+                                          - id: 972:2192
+                                            name: span.kpi-ic
+                                            template: EL-aef92fc1
+                                            children:
+                                              - id: 972:2193
+                                                name: Frame
+                                                template: EL-a73b2a19
+                                          - id: 972:2195
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2196
+                                                template: EL-27f9f2b6
+                                      - id: 972:2197
+                                        name: div
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 972:2198
+                                            name: p.kpi-l
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2199
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: B2C Customers
+                                                textStyle: style_94747b76
+                                                fills: Comet
+                                          - id: 972:2200
+                                            name: p.kpi-v
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2201
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: 1,248
+                                                textStyle: style_43eafae1
+                                                fills: Mirage
+                                      - id: 972:2202
+                                        name: '::after'
+                                        template: EL-53a7a43c
+                                  - id: 972:2203
+                                    name: div.kpi
+                                    template: EL-f7218847
+                                    children:
+                                      - id: 972:2204
+                                        name: div.kpi-t
+                                        template: EL-bb582553
+                                        children:
+                                          - id: 972:2205
+                                            name: span.kpi-ic
+                                            type: FRAME
+                                            layout: layout_3b2f0454
+                                            fills: Egg Sour
+                                            borderRadius: 12px
+                                            children:
+                                              - id: 972:2206
+                                                name: Frame
+                                                template: EL-a73b2a19
+                                          - id: 972:2208
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2209
+                                                template: EL-27f9f2b6
+                                      - id: 972:2210
+                                        name: div
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 972:2211
+                                            name: p.kpi-l
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2212
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: Bookings
+                                                textStyle: style_94747b76
+                                                fills: Comet
+                                          - id: 972:2213
+                                            name: p.kpi-v
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2214
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: 3,560
+                                                textStyle: style_43eafae1
+                                                fills: Mirage
+                                      - id: 972:2215
+                                        name: '::after'
+                                        template: EL-53a7a43c
+                                  - id: 972:2216
+                                    name: div.kpi
+                                    template: EL-f7218847
+                                    children:
+                                      - id: 972:2217
+                                        name: div.kpi-t
+                                        template: EL-bb582553
+                                        children:
+                                          - id: 972:2218
+                                            name: span.kpi-ic
+                                            type: FRAME
+                                            layout: layout_3b2f0454
+                                            fills: Apple Green
+                                            borderRadius: 12px
+                                            children:
+                                              - id: 972:2219
+                                                name: Frame
+                                                template: EL-a73b2a19
+                                          - id: 972:2222
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2223
+                                                template: EL-27f9f2b6
+                                      - id: 972:2224
+                                        name: div
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 972:2225
+                                            name: p.kpi-l
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2226
+                                                template: EL-243631c0
+                                          - id: 972:2227
+                                            name: p.kpi-v
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2228
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: '12'
+                                                textStyle: style_43eafae1
+                                                fills: Mirage
+                                      - id: 972:2229
+                                        name: '::after'
+                                        template: EL-53a7a43c
+                                  - id: 972:2230
+                                    name: div.kpi
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      padding: 18px 20px
+                                      alignItems: stretch
+                                      gap: 12px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    fills: White
+                                    strokes: Mystic
+                                    strokeWeight: 1px
+                                    borderRadius: 18px
+                                    children:
+                                      - id: 972:2231
+                                        name: div.kpi-t
+                                        template: EL-bb582553
+                                        children:
+                                          - id: 972:2232
+                                            name: span.kpi-ic
+                                            template: EL-46f55cb2
+                                            children:
+                                              - id: 972:2233
+                                                name: Frame
+                                                template: EL-a73b2a19
+                                          - id: 972:2238
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2239
+                                                template: EL-27f9f2b6
+                                      - id: 972:2240
+                                        name: div
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 972:2241
+                                            name: p.kpi-l
+                                            template: EL-e9077466
+                                            children:
+                                              - id: 972:2242
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: Audit Activity
+                                                textStyle: style_94747b76
+                                                fills: Comet
+                                          - id: 972:2243
+                                            name: p.kpi-v
+                                            type: FRAME
+                                            layout:
+                                              mode: none
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: fixed
+                                              dimensions:
+                                                height: 41
+                                            children:
+                                              - id: 972:2244
+                                                type: TEXT
+                                                layout:
+                                                  mode: none
+                                                  sizing: {}
+                                                  locationRelativeToParent:
+                                                    x: 0
+                                                    y: 0
+                                                  dimensions:
+                                                    width: 56.19
+                                                    height: 36
+                                                text: '486'
+                                                textStyle: style_43eafae1
+                                                fills: Mirage
+                                              - id: 972:2245
+                                                type: TEXT
+                                                layout:
+                                                  mode: none
+                                                  sizing: {}
+                                                  locationRelativeToParent:
+                                                    x: 55.14
+                                                    y: 4.5
+                                                  dimensions:
+                                                    width: 43.18
+                                                    height: 36
+                                                text: events
+                                                textStyle:
+                                                  fontFamily: Manrope
+                                                  fontStyle: Bold
+                                                  fontWeight: 700
+                                                  fontSize: 13
+                                                  lineHeight: 36px
+                                                  textAlignHorizontal: LEFT
+                                                  textAlignVertical: CENTER
+                                                fills: Comet
+                                      - id: 972:2246
+                                        name: '::after'
+                                        template: EL-53a7a43c
+                              - id: 972:2247
+                                name: section#w-bs
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 20px 22px
+                                  alignItems: stretch
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                  gridColumn: span 2
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                children:
+                                  - id: 972:2248
+                                    name: div.wd-h:margin
+                                    template: EL-f8534a1a
+                                    children:
+                                      - id: 972:2249
+                                        name: div.wd-h
+                                        template: EL-c319309c
+                                        children:
+                                          - id: 972:2250
+                                            name: div
+                                            template: EL-bfbba51a
+                                            children:
+                                              - id: 972:2251
+                                                name: h2#bs-h
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2252
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Booking Status Overview
+                                                    textStyle: style_aefbca38
+                                                    fills: Midnight Blue
+                                              - id: 972:2253
+                                                name: p
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2254
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Bookings by lifecycle status.
+                                                    textStyle: style_f3f7ae19
+                                                    fills: Comet
+                                          - id: 972:2255
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2256
+                                                template: EL-27f9f2b6
+                                  - id: 972:2257
+                                    name: ul
+                                    template: EL-1519dabc
+                                    children:
+                                      - id: 972:2258
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2259
+                                            name: span.sb2
+                                            type: FRAME
+                                            layout: layout_d2eb2aa9
+                                            fills: Egg Sour
+                                            strokes: Buff
+                                            strokeWeight: 1px
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2260
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2263
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Pending
+                                                textStyle: style_d455df39
+                                                fills: Cinnamon
+                                          - id: 972:2264
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2266
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2267
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '214'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2268
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2269
+                                            name: span.sb2
+                                            type: FRAME
+                                            layout: layout_d2eb2aa9
+                                            fills: Narvik
+                                            strokes: Fringy Flower
+                                            strokeWeight: 1px
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2270
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2273
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Confirmed
+                                                textStyle: style_d455df39
+                                                fills: Jewel
+                                          - id: 972:2274
+                                            name: span
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 0px 0px 43.97999954223633px
+                                              justifyContent: center
+                                              alignItems: stretch
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: fixed
+                                              dimensions:
+                                                height: 12
+                                            fills: Catskill White
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2275
+                                                name: span.confirmed
+                                                type: RECTANGLE
+                                                layout: layout_617da2ef
+                                                fills: Eucalyptus
+                                                borderRadius: 999px
+                                          - id: 972:2276
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2277
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: 1,036
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2278
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2279
+                                            name: span.sb2
+                                            template: EL-9b1c0f19
+                                            children:
+                                              - id: 972:2280
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2282
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Ticketed
+                                                textStyle: style_d455df39
+                                                fills: Endeavour
+                                          - id: 972:2283
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2285
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2286
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '842'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2287
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2288
+                                            name: span.sb2
+                                            template: EL-9b1c0f19
+                                            children:
+                                              - id: 972:2289
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2291
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Issued
+                                                textStyle: style_d455df39
+                                                fills: Endeavour
+                                          - id: 972:2292
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2294
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2295
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '958'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2296
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2297
+                                            name: span.sb2
+                                            type: FRAME
+                                            layout: layout_d2eb2aa9
+                                            fills: Catskill White (710:20114)
+                                            strokes: Mystic
+                                            strokeWeight: 1px
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2298
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2301
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Cancelled
+                                                textStyle: style_d455df39
+                                                fills:
+                                                  - '#4A5568'
+                                          - id: 972:2302
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2304
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2305
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '236'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2306
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2307
+                                            name: span.sb2
+                                            type: FRAME
+                                            layout: layout_d2eb2aa9
+                                            fills:
+                                              - '#EEF0FC'
+                                            strokes:
+                                              - '#D3D6F3'
+                                            strokeWeight: 1px
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2308
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2311
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Refunded
+                                                textStyle: style_d455df39
+                                                fills:
+                                                  - '#3D3F99'
+                                          - id: 972:2312
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2314
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2315
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '148'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                      - id: 972:2316
+                                        name: li
+                                        template: EL-74650fe4
+                                        children:
+                                          - id: 972:2317
+                                            name: span.sb2
+                                            type: FRAME
+                                            layout: layout_d2eb2aa9
+                                            fills: Provincial Pink
+                                            strokes: Mandys Pink
+                                            strokeWeight: 1px
+                                            borderRadius: 999px
+                                            children:
+                                              - id: 972:2318
+                                                name: Frame
+                                                template: EL-62b4d877
+                                              - id: 972:2322
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Failed
+                                                textStyle: style_d455df39
+                                                fills: Thunderbird
+                                          - id: 972:2323
+                                            name: span
+                                            template: EL-9dd62ce4
+                                          - id: 972:2325
+                                            name: span
+                                            template: EL-adbc2baf
+                                            children:
+                                              - id: 972:2326
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: '126'
+                                                textStyle: style_3a4967d7
+                                                fills: Mirage
+                                  - id: 972:2327
+                                    name: p.bs-tot:margin
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignSelf: stretch
+                                      padding: 16px 0px 0px
+                                      alignItems: stretch
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    children:
+                                      - id: 972:2328
+                                        name: p.bs-tot
+                                        type: FRAME
+                                        layout:
+                                          mode: row
+                                          alignSelf: stretch
+                                          padding: 12px 0px 0px
+                                          justifyContent: space-between
+                                          alignItems: stretch
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        strokes: Athens Gray
+                                        strokeWeight: 1px 0px 0px
+                                        children:
+                                          - id: 972:2329
+                                            name: span
+                                            template: EL-2a66e910
+                                            children:
+                                              - id: 972:2330
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Total bookings
+                                                textStyle: style_94747b76
+                                                fills: Comet
+                                          - id: 972:2331
+                                            name: b
+                                            template: EL-2a66e910
+                                            children:
+                                              - id: 972:2332
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: 3,560
+                                                textStyle: style_c967ff2b
+                                                fills: Mirage
+                              - id: 972:2333
+                                name: section#w-qk
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 20px 22px 61.25px
+                                  alignItems: stretch
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                children:
+                                  - id: 972:2334
+                                    name: div.wd-h:margin
+                                    template: EL-f8534a1a
+                                    children:
+                                      - id: 972:2335
+                                        name: div.wd-h
+                                        type: FRAME
+                                        layout:
+                                          mode: row
+                                          alignSelf: stretch
+                                          wrap: true
+                                          gap: 10px
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        children:
+                                          - id: 972:2336
+                                            name: div
+                                            template: EL-bfbba51a
+                                            children:
+                                              - id: 972:2337
+                                                name: h2#qk-h
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2338
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Quick Access
+                                                    textStyle: style_aefbca38
+                                                    fills: Midnight Blue
+                                              - id: 972:2339
+                                                name: p
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2340
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Core administration tools.
+                                                    textStyle: style_f3f7ae19
+                                                    fills: Comet
+                                  - id: 972:2341
+                                    name: ul
+                                    template: EL-bc40306a
+                                    children:
+                                      - id: 972:2342
+                                        name: a
+                                        template: EL-1ba56e07
+                                        children:
+                                          - id: 972:2343
+                                            name: span
+                                            template: EL-cab67d74
+                                            children:
+                                              - id: 972:2344
+                                                name: span:shadow
+                                                template: EL-3d024053
+                                              - id: 972:2345
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2347
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: Manage B2C Customers
+                                            textStyle: style_53cdfbde
+                                            fills: Mirage
+                                          - id: 972:2348
+                                            name: span:margin
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 0px 0px 203.343994140625px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 972:2349
+                                                name: span
+                                                template: EL-317cf97d
+                                                children:
+                                                  - id: 972:2350
+                                                    name: Frame
+                                                    template: EL-d40fb4e5
+                                      - id: 972:2352
+                                        name: a
+                                        template: EL-1ba56e07
+                                        children:
+                                          - id: 972:2353
+                                            name: span
+                                            template: EL-cab67d74
+                                            children:
+                                              - id: 972:2354
+                                                name: span:shadow
+                                                template: EL-3d024053
+                                              - id: 972:2355
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2358
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: Manage Admin Users
+                                            textStyle: style_53cdfbde
+                                            fills: Mirage
+                                          - id: 972:2359
+                                            name: span:margin
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 0px 0px 222.75px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 972:2360
+                                                name: span
+                                                template: EL-317cf97d
+                                                children:
+                                                  - id: 972:2361
+                                                    name: Frame
+                                                    template: EL-d40fb4e5
+                                      - id: 972:2363
+                                        name: a
+                                        template: EL-1ba56e07
+                                        children:
+                                          - id: 972:2364
+                                            name: span
+                                            template: EL-cab67d74
+                                            children:
+                                              - id: 972:2365
+                                                name: span:shadow
+                                                template: EL-3d024053
+                                              - id: 972:2366
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2369
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: Roles & Permissions
+                                            textStyle: style_53cdfbde
+                                            fills: Mirage
+                                          - id: 972:2370
+                                            name: span:margin
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 0px 0px 225.8280029296875px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 972:2371
+                                                name: span
+                                                template: EL-317cf97d
+                                                children:
+                                                  - id: 972:2372
+                                                    name: Frame
+                                                    template: EL-d40fb4e5
+                                      - id: 972:2374
+                                        name: a
+                                        template: EL-1ba56e07
+                                        children:
+                                          - id: 972:2375
+                                            name: span
+                                            template: EL-cab67d74
+                                            children:
+                                              - id: 972:2376
+                                                name: span:shadow
+                                                template: EL-3d024053
+                                              - id: 972:2377
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2382
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: View Audit Log
+                                            textStyle: style_53cdfbde
+                                            fills: Mirage
+                                          - id: 972:2383
+                                            name: span:margin
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              padding: 0px 0px 0px 265.7969970703125px
+                                              alignItems: flex-end
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 972:2384
+                                                name: span
+                                                template: EL-317cf97d
+                                                children:
+                                                  - id: 972:2385
+                                                    name: Frame
+                                                    template: EL-d40fb4e5
+                              - id: 972:2387
+                                name: section#w-act
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 20px 22px
+                                  justifyContent: space-between
+                                  alignItems: stretch
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                  gridColumn: span 2
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                children:
+                                  - id: 972:2388
+                                    name: div.wd-h:margin
+                                    template: EL-f8534a1a
+                                    children:
+                                      - id: 972:2389
+                                        name: div.wd-h
+                                        template: EL-c319309c
+                                        children:
+                                          - id: 972:2390
+                                            name: div
+                                            template: EL-bfbba51a
+                                            children:
+                                              - id: 972:2391
+                                                name: h2#act-h
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2392
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Recent Admin Activity
+                                                    textStyle: style_aefbca38
+                                                    fills: Midnight Blue
+                                              - id: 972:2393
+                                                name: p
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2394
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Latest administration actions.
+                                                    textStyle: style_f3f7ae19
+                                                    fills: Comet
+                                          - id: 972:2395
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2396
+                                                template: EL-27f9f2b6
+                                  - id: 972:2397
+                                    name: ul
+                                    type: FRAME
+                                    layout: layout_5c79c5b1
+                                    strokes: Catskill White (856:2825)
+                                    strokeWeight: 1px
+                                    borderRadius: 14px
+                                    children:
+                                      - id: 972:2398
+                                        name: li
+                                        type: FRAME
+                                        layout: layout_5405da97
+                                        fills: White
+                                        children:
+                                          - id: 972:2399
+                                            name: span
+                                            template: EL-38fddc5a
+                                            children:
+                                              - id: 972:2400
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2403
+                                            name: div
+                                            template: EL-a26bffb3
+                                            children:
+                                              - id: 972:2404
+                                                name: b
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 972:2405
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Role permissions updated
+                                                    textStyle: style_cf58f31f
+                                                    fills: Mirage
+                                              - id: 972:2406
+                                                name: span.who
+                                                template: EL-de24eeb5
+                                                children:
+                                                  - id: 972:2407
+                                                    template: EL-53173af5
+                                          - id: 972:2408
+                                            name: time
+                                            template: EL-ef7898e7
+                                            children:
+                                              - id: 972:2409
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Today, 09:42
+                                                textStyle: style_2cfdd1d3
+                                                fills: Comet
+                                      - id: 972:2410
+                                        name: li
+                                        template: EL-02fac3db
+                                        children:
+                                          - id: 972:2411
+                                            name: span
+                                            template: EL-38fddc5a
+                                            children:
+                                              - id: 972:2412
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2415
+                                            name: div
+                                            template: EL-a26bffb3
+                                            children:
+                                              - id: 972:2416
+                                                name: b
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 972:2417
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Admin account updated
+                                                    textStyle: style_cf58f31f
+                                                    fills: Mirage
+                                              - id: 972:2418
+                                                name: span.who
+                                                template: EL-de24eeb5
+                                                children:
+                                                  - id: 972:2419
+                                                    template: EL-53173af5
+                                          - id: 972:2420
+                                            name: time
+                                            template: EL-ef7898e7
+                                            children:
+                                              - id: 972:2421
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Today, 09:15
+                                                textStyle: style_2cfdd1d3
+                                                fills: Comet
+                                      - id: 972:2422
+                                        name: li
+                                        template: EL-02fac3db
+                                        children:
+                                          - id: 972:2423
+                                            name: span
+                                            template: EL-38fddc5a
+                                            children:
+                                              - id: 972:2424
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2427
+                                            name: div
+                                            template: EL-a26bffb3
+                                            children:
+                                              - id: 972:2428
+                                                name: b
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 972:2429
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Customer profile viewed
+                                                    textStyle: style_cf58f31f
+                                                    fills: Mirage
+                                              - id: 972:2430
+                                                name: span.who
+                                                template: EL-de24eeb5
+                                                children:
+                                                  - id: 972:2431
+                                                    template: EL-c6f62e52
+                                          - id: 972:2432
+                                            name: time
+                                            template: EL-ef7898e7
+                                            children:
+                                              - id: 972:2433
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Today, 08:57
+                                                textStyle: style_2cfdd1d3
+                                                fills: Comet
+                                      - id: 972:2434
+                                        name: li
+                                        template: EL-02fac3db
+                                        children:
+                                          - id: 972:2435
+                                            name: span
+                                            template: EL-38fddc5a
+                                            children:
+                                              - id: 972:2436
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2438
+                                            name: div
+                                            template: EL-e2a5820c
+                                            children:
+                                              - id: 972:2439
+                                                name: b
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 972:2440
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Admin account created
+                                                    textStyle: style_cf58f31f
+                                                    fills: Mirage
+                                              - id: 972:2441
+                                                name: span.who
+                                                template: EL-de24eeb5
+                                                children:
+                                                  - id: 972:2442
+                                                    template: EL-53173af5
+                                          - id: 972:2443
+                                            name: time
+                                            template: EL-85b2c02d
+                                            children:
+                                              - id: 972:2444
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Yesterday, 17:20
+                                                textStyle: style_2cfdd1d3
+                                                fills: Comet
+                                      - id: 972:2445
+                                        name: li
+                                        template: EL-02fac3db
+                                        children:
+                                          - id: 972:2446
+                                            name: span
+                                            template: EL-38fddc5a
+                                            children:
+                                              - id: 972:2447
+                                                name: Frame
+                                                template: EL-f652840d
+                                          - id: 972:2450
+                                            name: div
+                                            template: EL-e2a5820c
+                                            children:
+                                              - id: 972:2451
+                                                name: b
+                                                template: EL-e9077466
+                                                children:
+                                                  - id: 972:2452
+                                                    type: TEXT
+                                                    layout: layout_56d3c81c
+                                                    text: Customer profile updated
+                                                    textStyle: style_cf58f31f
+                                                    fills: Mirage
+                                              - id: 972:2453
+                                                name: span.who
+                                                template: EL-de24eeb5
+                                                children:
+                                                  - id: 972:2454
+                                                    template: EL-c6f62e52
+                                          - id: 972:2455
+                                            name: time
+                                            template: EL-85b2c02d
+                                            children:
+                                              - id: 972:2456
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Yesterday, 15:04
+                                                textStyle: style_2cfdd1d3
+                                                fills: Comet
+                                  - id: 972:2457
+                                    name: div.wd-f
+                                    template: EL-5132315e
+                                    children:
+                                      - id: 972:2458
+                                        name: a
+                                        template: EL-bca47167
+                                        children:
+                                          - id: 972:2459
+                                            type: TEXT
+                                            layout: layout_177c5efc
+                                            text: View Audit Log
+                                            textStyle: style_cf58f31f
+                                            fills: Science Blue
+                                          - id: 972:2460
+                                            name: Frame
+                                            template: EL-d40fb4e5
+                              - id: 972:2462
+                                name: section#w-au
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 20px 22px
+                                  justifyContent: space-between
+                                  alignItems: stretch
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                fills: White
+                                strokes: Mystic
+                                strokeWeight: 1px
+                                borderRadius: 18px
+                                children:
+                                  - id: 972:2463
+                                    name: div.wd-h:margin
+                                    template: EL-f8534a1a
+                                    children:
+                                      - id: 972:2464
+                                        name: div.wd-h
+                                        template: EL-c319309c
+                                        children:
+                                          - id: 972:2465
+                                            name: div
+                                            template: EL-bfbba51a
+                                            children:
+                                              - id: 972:2466
+                                                name: h2#au-h
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2467
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Admin Users
+                                                    textStyle: style_aefbca38
+                                                    fills: Midnight Blue
+                                              - id: 972:2468
+                                                name: p
+                                                template: EL-dfdf56f9
+                                                children:
+                                                  - id: 972:2469
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: Accounts by predefined role.
+                                                    textStyle: style_f3f7ae19
+                                                    fills: Comet
+                                          - id: 972:2470
+                                            name: span.tag
+                                            template: EL-ea7b03b4
+                                            children:
+                                              - id: 972:2471
+                                                template: EL-27f9f2b6
+                                  - id: 972:2472
+                                    name: p.au-n
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      alignSelf: stretch
+                                      alignItems: baseline
+                                      gap: 8px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    children:
+                                      - id: 972:2473
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: '12'
+                                        textStyle:
+                                          fontFamily: Manrope
+                                          fontStyle: Bold
+                                          fontWeight: 800
+                                          fontSize: 28
+                                          lineHeight: 42px
+                                          textAlignHorizontal: LEFT
+                                          textAlignVertical: CENTER
+                                        fills: Mirage
+                                      - id: 972:2474
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Admin accounts
+                                        textStyle: style_e6a95020
+                                        fills: Comet
+                                  - id: 972:2475
+                                    name: ul.au-r:margin
+                                    type: FRAME
+                                    layout: layout_1655a44c
+                                    children:
+                                      - id: 972:2476
+                                        name: ul.au-r
+                                        template: EL-bc40306a
+                                        children:
+                                          - id: 972:2477
+                                            name: li
+                                            template: EL-358a1981
+                                            children:
+                                              - id: 972:2478
+                                                name: span
+                                                template: EL-5cb7385b
+                                                children:
+                                                  - id: 972:2479
+                                                    name: Frame
+                                                    template: EL-d4302386
+                                                  - id: 972:2481
+                                                    template: EL-41691f1b
+                                              - id: 972:2482
+                                                name: b
+                                                template: EL-2f9fe287
+                                                children:
+                                                  - id: 972:2483
+                                                    template: EL-866b6ed6
+                                          - id: 972:2484
+                                            name: li
+                                            template: EL-358a1981
+                                            children:
+                                              - id: 972:2485
+                                                name: span
+                                                template: EL-5cb7385b
+                                                children:
+                                                  - id: 972:2486
+                                                    name: Frame
+                                                    template: EL-d4302386
+                                                  - id: 972:2488
+                                                    template: EL-fcf06162
+                                              - id: 972:2489
+                                                name: b
+                                                template: EL-2f9fe287
+                                                children:
+                                                  - id: 972:2490
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '4'
+                                                    textStyle: style_c6fb220c
+                                                    fills: Mirage
+                                          - id: 972:2491
+                                            name: li
+                                            template: EL-358a1981
+                                            children:
+                                              - id: 972:2492
+                                                name: span
+                                                template: EL-5cb7385b
+                                                children:
+                                                  - id: 972:2493
+                                                    name: Frame
+                                                    template: EL-d4302386
+                                                  - id: 972:2495
+                                                    template: EL-39910436
+                                              - id: 972:2496
+                                                name: b
+                                                template: EL-2f9fe287
+                                                children:
+                                                  - id: 972:2497
+                                                    template: EL-866b6ed6
+                                          - id: 972:2498
+                                            name: li
+                                            template: EL-358a1981
+                                            children:
+                                              - id: 972:2499
+                                                name: span
+                                                template: EL-5cb7385b
+                                                children:
+                                                  - id: 972:2500
+                                                    name: Frame
+                                                    template: EL-d4302386
+                                                  - id: 972:2502
+                                                    template: EL-70b8e7e1
+                                              - id: 972:2503
+                                                name: b
+                                                template: EL-2f9fe287
+                                                children:
+                                                  - id: 972:2504
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '3'
+                                                    textStyle: style_c6fb220c
+                                                    fills: Mirage
+                                          - id: 972:2505
+                                            name: li
+                                            template: EL-358a1981
+                                            children:
+                                              - id: 972:2506
+                                                name: span
+                                                template: EL-5cb7385b
+                                                children:
+                                                  - id: 972:2507
+                                                    name: Frame
+                                                    template: EL-d4302386
+                                                  - id: 972:2509
+                                                    template: EL-84b602b1
+                                              - id: 972:2510
+                                                name: b
+                                                template: EL-2f9fe287
+                                                children:
+                                                  - id: 972:2511
+                                                    type: TEXT
+                                                    layout: layout_177c5efc
+                                                    text: '1'
+                                                    textStyle: style_c6fb220c
+                                                    fills: Mirage
+                                  - id: 972:2512
+                                    name: div.wd-f:margin
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignSelf: stretch
+                                      padding: 60.5px 0px 0px
+                                      justifyContent: flex-end
+                                      alignItems: stretch
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: fixed
+                                      dimensions:
+                                        height: 114.5
+                                    children:
+                                      - id: 972:2513
+                                        name: div.wd-f
+                                        template: EL-5132315e
+                                        children:
+                                          - id: 972:2514
+                                            name: a
+                                            template: EL-bca47167
+                                            children:
+                                              - id: 972:2515
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: Manage Admin Users
+                                                textStyle: style_cf58f31f
+                                                fills: Science Blue
+                                              - id: 972:2516
+                                                name: Frame
+                                                template: EL-d40fb4e5
+                  - id: 972:2518
+                    name: footer.ft2
+                    type: FRAME
+                    layout:
+                      mode: column
+                      padding: 16px 28px
+                      sizing:
+                        horizontal: fixed
+                        vertical: hug
+                      locationRelativeToParent:
+                        x: 0
+                        y: 1320.75
+                      dimensions:
+                        width: 1656
+                    fills: White
+                    strokes: Mystic
+                    strokeWeight: 1px 0px 0px
+                    children:
+                      - id: 972:2519
+                        template: EL-64a79c70
+                  - id: 972:2520
+                    name: header
+                    template: EL-d14effc8
+                    children:
+                      - id: 972:2521
+                        name: Breadcrumb:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 0px 1180.9200439453125px 0px 0px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 972:2522
+                            name: Breadcrumb
+                            template: EL-235879b0
+                            children:
+                              - id: 972:2523
+                                name: li
+                                template: EL-2f9fe287
+                                children:
+                                  - id: 972:2524
+                                    template: EL-fdff9110
+                              - id: 972:2525
+                                name: li
+                                template: EL-bbedda7b
+                                children:
+                                  - id: 972:2526
+                                    template: EL-db7ddb8d
+                                  - id: 972:2527
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Dashboard
+                                    textStyle: style_857f4816
+                                    fills: Mirage
+                      - id: 972:2528
+                        name: div.tb-a
+                        template: EL-235879b0
+                        children:
+                          - id: 972:2529
+                            name: Notifications
+                            template: EL-58e2a7b0
+                            children:
+                              - id: 972:2530
+                                name: Frame
+                                template: EL-d2f5d0a6
+                          - id: 972:2532
+                            name: button menu#pf-b
+                            template: EL-0ccd4aea
+                            children:
+                              - id: 972:2533
+                                name: span.pf-av
+                                template: EL-a8b2764a
+                                children:
+                                  - id: 972:2534
+                                    template: EL-5321e56d
+                              - id: 972:2535
+                                name: span.pf-t
+                                template: EL-6e7b525c
+                                children:
+                                  - id: 972:2536
+                                    name: b
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 972:2537
+                                        template: EL-2df750f6
+                                  - id: 972:2538
+                                    name: small#pf-role
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 972:2539
+                                        template: EL-a8ebef05
+                              - id: 972:2540
+                                name: Frame
+                                template: EL-d40fb4e5

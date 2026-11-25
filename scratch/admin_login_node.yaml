@@ -1,0 +1,638 @@
+      - id: 965:1410
+        name: Admin Login
+        type: FRAME
+        layout:
+          mode: column
+          alignItems: stretch
+          sizing:
+            horizontal: fixed
+            vertical: fixed
+          locationRelativeToParent:
+            x: 430
+            y: 402
+          dimensions:
+            width: 1920
+            height: 1080
+        fills: White Catskill White
+        children:
+          - id: 965:1411
+            name: div
+            type: FRAME
+            layout:
+              mode: row
+              alignSelf: stretch
+              alignItems: stretch
+              sizing:
+                horizontal: fill
+                vertical: fill
+            children:
+              - id: 965:1412
+                name: aside
+                type: FRAME
+                layout:
+                  mode: column
+                  alignSelf: stretch
+                  justifyContent: center
+                  alignItems: stretch
+                  sizing:
+                    horizontal: fixed
+                    vertical: fill
+                  dimensions:
+                    width: 883
+                fills:
+                  - type: GRADIENT_LINEAR
+                    gradient: linear-gradient(154deg, rgba(0, 26, 61, 1) 0%, rgba(1, 42, 94, 1) 59%, rgba(11, 58, 117, 1) 100%)
+                children:
+                  - id: 965:1413
+                    name: Frame
+                    type: IMAGE-SVG
+                    layout:
+                      mode: none
+                      sizing:
+                        horizontal: fixed
+                        vertical: fixed
+                      position: absolute
+                      locationRelativeToParent:
+                        x: 0
+                        y: 0
+                      dimensions:
+                        width: 883.19
+                        height: 1080.25
+                  - id: 965:1507
+                    name: 2026-11-18 14 47 25 1
+                    type: RECTANGLE
+                    layout:
+                      mode: none
+                      sizing:
+                        horizontal: fixed
+                        vertical: fixed
+                      position: absolute
+                      locationRelativeToParent:
+                        x: 0
+                        y: 0
+                      dimensions:
+                        width: 928
+                        height: 1080
+                    fills:
+                      - type: IMAGE
+                        imageRef: 84092e3a281e83c46f508243017ed71ee0299d7c
+                        scaleMode: FILL
+                        objectFit: cover
+                        isBackground: false
+                        imageDownloadArguments:
+                          needsCropping: false
+                          requiresImageDimensions: false
+                  - id: 965:1432
+                    name: div.ap-in
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignSelf: stretch
+                      padding: 48px 56px 36px
+                      sizing:
+                        horizontal: fill
+                        vertical: fill
+                    children:
+                      - id: 965:1433
+                        name: span.ap-logo:align-flex-start
+                        template: EL-dfdf56f9
+                        children:
+                          - id: 965:1496
+                            name: AeroWing Admin — Dashboard
+                            template: EL-280eabfe
+                            children:
+                              - id: 965:1497
+                                name: AeroWing — Explore, Book, Travel
+                                template: EL-966c7e52
+                      - id: 965:1437
+                        name: div.ap-copy:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          padding: 872.5px 0px 0px
+                          justifyContent: flex-end
+                          alignItems: stretch
+                          sizing:
+                            horizontal: fixed
+                            vertical: fixed
+                          dimensions:
+                            width: 420
+                            height: 872.5
+                        children:
+                          - id: 965:1438
+                            name: div.ap-copy
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignSelf: stretch
+                              gap: 10px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 965:1439
+                                name: span.ap-eb
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  padding: 6px 12px 6px 10px
+                                  alignItems: center
+                                  gap: 8px
+                                  sizing:
+                                    horizontal: hug
+                                    vertical: hug
+                                fills: Saffron 14%
+                                strokes: Saffron 35%
+                                strokeWeight: 1px
+                                borderRadius: 999px
+                                children:
+                                  - id: 965:1440
+                                    name: Frame
+                                    template: EL-494805ba
+                                  - id: 965:1443
+                                    type: TEXT
+                                    layout: layout_177c5efc
+                                    text: Admin Panel
+                                    textStyle:
+                                      fontFamily: Manrope
+                                      fontStyle: Bold
+                                      fontWeight: 800
+                                      fontSize: 12.5
+                                      lineHeight: 18.75px
+                                      letterSpacing: 0.06em
+                                      textCase: UPPER
+                                      textAlignHorizontal: LEFT
+                                      textAlignVertical: CENTER
+                                    fills: Saffron
+                              - id: 965:1444
+                                name: p.ap-h
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  alignSelf: stretch
+                                  padding: 6px 0px 0px
+                                  alignItems: stretch
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                children:
+                                  - id: 965:1445
+                                    type: TEXT
+                                    layout: layout_56d3c81c
+                                    text: Aero Wing Admin
+                                    textStyle:
+                                      fontFamily: Manrope
+                                      fontStyle: Bold
+                                      fontWeight: 800
+                                      fontSize: 40
+                                      lineHeight: 48px
+                                      letterSpacing: '-0.015em'
+                                      textAlignHorizontal: LEFT
+                                      textAlignVertical: CENTER
+                                    fills: White
+                              - id: 965:1446
+                                name: p.ap-s
+                                template: EL-e9077466
+                                children:
+                                  - id: 965:1447
+                                    type: TEXT
+                                    layout: layout_56d3c81c
+                                    text: The operational workspace for authorised Aero Wing staff.
+                                    textStyle:
+                                      fontFamily: Manrope
+                                      fontStyle: Regular
+                                      fontWeight: 500
+                                      fontSize: 16
+                                      lineHeight: 24px
+                                      textAlignHorizontal: LEFT
+                                      textAlignVertical: CENTER
+                                    fills: Periwinkle Gray
+                      - id: 965:1448
+                        name: p.ap-ft:margin
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          padding: 40px 0px 0px
+                          alignItems: stretch
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 965:1449
+                            name: p.ap-ft
+                            template: EL-e9077466
+                            children:
+                              - id: 965:1450
+                                type: TEXT
+                                layout: layout_56d3c81c
+                                text: © 2026 AeroWing. All rights reserved.
+                                textStyle: style_8f1384da
+                                fills: Nepal
+              - id: 965:1451
+                name: main#main
+                type: FRAME
+                layout:
+                  mode: row
+                  alignSelf: stretch
+                  padding: 48px 32px
+                  justifyContent: center
+                  alignItems: center
+                  sizing:
+                    horizontal: fill
+                    vertical: fill
+                fills:
+                  - type: GRADIENT_RADIAL
+                    gradient: radial-gradient(circle at 100% 0%, rgba(230, 238, 248, 1) 0%, rgba(230, 238, 248, 0) 60%)
+                  - '#F4F6FA'
+                children:
+                  - id: 965:1452
+                    name: div.acw
+                    type: FRAME
+                    layout:
+                      mode: column
+                      alignItems: stretch
+                      gap: 18px
+                      sizing:
+                        horizontal: fill
+                        vertical: hug
+                    children:
+                      - id: 965:1453
+                        name: div.ac-brand
+                        template: EL-a75c3b19
+                        children:
+                          - id: 965:1454
+                            name: span.adm-b
+                            type: FRAME
+                            layout:
+                              mode: row
+                              padding: 5px 12px 5px 9px
+                              alignItems: center
+                              gap: 6px
+                              sizing:
+                                horizontal: hug
+                                vertical: hug
+                            fills: Midnight Blue
+                            borderRadius: 999px
+                            children:
+                              - id: 965:1455
+                                name: Frame
+                                type: IMAGE-SVG
+                                layout:
+                                  mode: none
+                                  sizing:
+                                    horizontal: fixed
+                                    vertical: fixed
+                                  dimensions:
+                                    width: 14
+                                    height: 14
+                              - id: 965:1458
+                                type: TEXT
+                                layout: layout_177c5efc
+                                text: Admin Panel
+                                textStyle:
+                                  fontFamily: Manrope
+                                  fontStyle: Bold
+                                  fontWeight: 800
+                                  fontSize: 12.5
+                                  lineHeight: 18.75px
+                                  letterSpacing: 0.02em
+                                  textAlignHorizontal: LEFT
+                                  textAlignVertical: CENTER
+                                fills: White
+                      - id: 965:1459
+                        name: section.acard
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          padding: 34px 34px 26px
+                          alignItems: stretch
+                          gap: 22px
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        fills: White
+                        strokes: Mystic
+                        strokeWeight: 1px
+                        effects:
+                          boxShadow: 0px 2px 6px 0px rgba(1, 42, 94, 0.05), 0px 24px 50px -30px rgba(0, 26, 61, 0.38)
+                        borderRadius: 22px
+                        children:
+                          - id: 965:1460
+                            name: '::before'
+                            type: RECTANGLE
+                            layout:
+                              mode: none
+                              sizing:
+                                horizontal: fixed
+                                vertical: fixed
+                              position: absolute
+                              locationRelativeToParent:
+                                x: 1
+                                y: 1
+                              dimensions:
+                                width: 446
+                                height: 4
+                            fills:
+                              - type: GRADIENT_LINEAR
+                                gradient: linear-gradient(90deg, rgba(1, 42, 94, 1) 0%, rgba(10, 118, 204, 1) 50%, rgba(241, 193, 52, 1) 100%)
+                          - id: 965:1461
+                            name: 'Step 1: Admin email'
+                            type: FRAME
+                            layout:
+                              mode: column
+                              alignSelf: stretch
+                              alignItems: stretch
+                              gap: 5px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            children:
+                              - id: 965:1462
+                                name: h1#h-email
+                                template: EL-e9077466
+                                children:
+                                  - id: 965:1463
+                                    type: TEXT
+                                    layout: layout_56d3c81c
+                                    text: Sign in to Admin Panel
+                                    textStyle:
+                                      fontFamily: Manrope
+                                      fontStyle: Bold
+                                      fontWeight: 800
+                                      fontSize: 26
+                                      lineHeight: 34px
+                                      letterSpacing: '-0.01em'
+                                      textAlignHorizontal: LEFT
+                                      textAlignVertical: CENTER
+                                    fills: Midnight Blue
+                              - id: 965:1464
+                                name: p.sub
+                                template: EL-e9077466
+                                children:
+                                  - id: 965:1465
+                                    type: TEXT
+                                    layout: layout_56d3c81c
+                                    text: Use your authorised Admin account to continue.
+                                    textStyle: style_be48c804
+                                    fills: Comet
+                              - id: 965:1466
+                                name: form#f-email
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  alignSelf: stretch
+                                  padding: 17px 0px 0px
+                                  alignItems: stretch
+                                  gap: 20px
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                children:
+                                  - id: 965:1467
+                                    name: div.fld
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      alignSelf: stretch
+                                      alignItems: stretch
+                                      gap: 6px
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    children:
+                                      - id: 965:1468
+                                        name: label
+                                        template: EL-e9077466
+                                        children:
+                                          - id: 965:1469
+                                            type: TEXT
+                                            layout: layout_56d3c81c
+                                            text: Admin Email
+                                            textStyle: style_cf58f31f
+                                            fills: Mirage
+                                      - id: 965:1470
+                                        name: input#email
+                                        type: FRAME
+                                        layout:
+                                          mode: column
+                                          alignSelf: stretch
+                                          padding: 16px 16px 15px
+                                          alignItems: stretch
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        fills: White
+                                        strokes: Heather
+                                        strokeWeight: 1px
+                                        borderRadius: 14px
+                                        children:
+                                          - id: 965:1471
+                                            name: div#placeholder
+                                            type: FRAME
+                                            layout:
+                                              mode: column
+                                              alignSelf: stretch
+                                              padding: 1px 0px 2px
+                                              alignItems: stretch
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 965:1472
+                                                type: TEXT
+                                                layout: layout_56d3c81c
+                                                text: admin@example.com
+                                                textStyle:
+                                                  fontFamily: Manrope
+                                                  fontStyle: Regular
+                                                  fontWeight: 500
+                                                  fontSize: 16
+                                                  textAlignHorizontal: LEFT
+                                                  textAlignVertical: CENTER
+                                                fills: Regent Gray
+                                      - id: 965:1473
+                                        name: p#email-h:margin
+                                        type: FRAME
+                                        layout:
+                                          mode: column
+                                          alignSelf: stretch
+                                          padding: 2px 0px 0px
+                                          alignItems: stretch
+                                          sizing:
+                                            horizontal: fill
+                                            vertical: hug
+                                        children:
+                                          - id: 965:1474
+                                            name: p#email-h
+                                            type: FRAME
+                                            layout:
+                                              mode: row
+                                              alignSelf: stretch
+                                              alignItems: center
+                                              wrap: true
+                                              gap: 4px 8px
+                                              sizing:
+                                                horizontal: fill
+                                                vertical: hug
+                                            children:
+                                              - id: 965:1475
+                                                type: TEXT
+                                                layout: layout_177c5efc
+                                                text: 'Example: admin@example.com'
+                                                textStyle: style_f3f7ae19
+                                                fills: Comet
+                                              - id: 965:1476
+                                                name: span.tag
+                                                template: EL-ea7b03b4
+                                                children:
+                                                  - id: 965:1477
+                                                    template: EL-27f9f2b6
+                                  - id: 965:1478
+                                    name: button.btn
+                                    type: FRAME
+                                    layout:
+                                      mode: row
+                                      alignSelf: stretch
+                                      padding: 13px 20px
+                                      justifyContent: center
+                                      alignItems: center
+                                      sizing:
+                                        horizontal: fill
+                                        vertical: hug
+                                    fills: Midnight Blue
+                                    strokes: Black 0%
+                                    strokeWeight: 1px
+                                    borderRadius: 14px
+                                    children:
+                                      - id: 965:1479
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Continue
+                                        textStyle:
+                                          fontFamily: Manrope
+                                          fontStyle: Bold
+                                          fontWeight: 800
+                                          fontSize: 16
+                                          lineHeight: 24px
+                                          textAlignHorizontal: CENTER
+                                          textAlignVertical: CENTER
+                                        fills: White
+                              - id: 965:1480
+                                name: div.trb
+                                type: FRAME
+                                layout:
+                                  mode: row
+                                  alignSelf: stretch
+                                  padding: 11px 0px 0px
+                                  justifyContent: center
+                                  sizing:
+                                    horizontal: fill
+                                    vertical: hug
+                                children:
+                                  - id: 965:1481
+                                    name: button#trouble
+                                    type: FRAME
+                                    layout:
+                                      mode: column
+                                      padding: 9px 4px 10px
+                                      justifyContent: center
+                                      alignItems: center
+                                      sizing:
+                                        horizontal: hug
+                                        vertical: hug
+                                    borderRadius: 6px
+                                    children:
+                                      - id: 965:1482
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Trouble signing in?
+                                        textStyle:
+                                          fontFamily: Manrope
+                                          fontStyle: Bold
+                                          fontWeight: 700
+                                          fontSize: 14
+                                          lineHeight: 21px
+                                          textAlignHorizontal: CENTER
+                                          textAlignVertical: CENTER
+                                          textDecoration: UNDERLINE
+                                        fills: Science Blue
+                          - id: 965:1483
+                            name: div#auth-n
+                            type: FRAME
+                            layout:
+                              mode: row
+                              alignSelf: stretch
+                              padding: 18px 0px 0px
+                              gap: 12px
+                              sizing:
+                                horizontal: fill
+                                vertical: hug
+                            strokes: Athens Gray
+                            strokeWeight: 1px 0px 0px
+                            children:
+                              - id: 965:1484
+                                name: svg:margin
+                                type: FRAME
+                                layout:
+                                  mode: column
+                                  padding: 1px 0px 0px
+                                  sizing:
+                                    horizontal: fixed
+                                    vertical: fixed
+                                  dimensions:
+                                    width: 20
+                                    height: 21
+                                children:
+                                  - id: 965:1485
+                                    name: Frame
+                                    template: EL-a73b2a19
+                              - id: 965:1488
+                                name: div
+                                template: EL-bfbba51a
+                                children:
+                                  - id: 965:1489
+                                    name: b
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 965:1490
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Authorised access only
+                                        textStyle: style_c967ff2b
+                                        fills: Mirage
+                                  - id: 965:1491
+                                    name: span
+                                    template: EL-dfdf56f9
+                                    children:
+                                      - id: 965:1492
+                                        type: TEXT
+                                        layout: layout_177c5efc
+                                        text: Access to the Aero Wing Admin Panel is restricted to\nauthorised staff.
+                                        textStyle:
+                                          fontFamily: Manrope
+                                          fontStyle: Regular
+                                          fontWeight: 500
+                                          fontSize: 13
+                                          lineHeight: 19px
+                                          textAlignHorizontal: LEFT
+                                          textAlignVertical: CENTER
+                                        fills: Comet
+                      - id: 965:1493
+                        name: p.ac-ft
+                        type: FRAME
+                        layout:
+                          mode: column
+                          alignSelf: stretch
+                          alignItems: center
+                          sizing:
+                            horizontal: fill
+                            vertical: hug
+                        children:
+                          - id: 965:1494
+                            type: TEXT
+                            layout: layout_177c5efc
+                            text: © 2026 AeroWing. All rights reserved.
+                            textStyle: style_c6a3c9ed
+                            fills: Comet

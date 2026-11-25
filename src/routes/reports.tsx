@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { AgentReportsPage } from '#/components/agent-portal'
+import { AdminReportsPage, AdminReportsCommissionsPage } from '#/components/admin'
 
 interface ReportsSearchParams {
   'node-id'?: string
@@ -73,6 +74,53 @@ export const Route = createFileRoute('/reports')({
 function ReportsRoute() {
   const search = Route.useSearch()
   const isExportOpen = Boolean(search.export) || search.modal === 'export'
+
+  if (
+    search['node-id'] === '1005-5341' ||
+    search['node-id'] === '1005:5341' ||
+    search.nodeId === '1005-5341' ||
+    search.nodeId === '1005:5341' ||
+    search['node-id'] === '1005-5344' ||
+    search['node-id'] === '1005:5344' ||
+    search.nodeId === '1005-5344' ||
+    search.nodeId === '1005:5344'
+  ) {
+    return (
+      <AdminReportsPage
+        initialTab="bookings"
+        initialNodeId={search['node-id'] || search.nodeId}
+      />
+    )
+  }
+
+  if (
+    search['node-id'] === '1005-5346' ||
+    search['node-id'] === '1005:5346' ||
+    search.nodeId === '1005-5346' ||
+    search.nodeId === '1005:5346'
+  ) {
+    return (
+      <AdminReportsCommissionsPage
+        initialTab="commissions"
+        initialNodeId={search['node-id'] || search.nodeId}
+        initialExportOpen={isExportOpen}
+      />
+    )
+  }
+
+  if (
+    search['node-id'] === '1005-5345' ||
+    search['node-id'] === '1005:5345' ||
+    search.nodeId === '1005-5345' ||
+    search.nodeId === '1005:5345'
+  ) {
+    return (
+      <AdminReportsPage
+        initialTab="payments"
+        initialNodeId={search['node-id'] || search.nodeId}
+      />
+    )
+  }
 
   return (
     <AgentReportsPage
