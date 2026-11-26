@@ -112,13 +112,13 @@ export function BusinessDetailsPage({
                   <Check className="size-4.5 text-emerald-600 shrink-0" />
                   <span>{saveSuccessMessage}</span>
                 </div>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setSaveSuccessMessage(null)}
                   className="text-emerald-700 hover:text-emerald-950 font-bold px-1.5 py-0.5 rounded cursor-pointer"
                 >
                   ✕
-                </button>
+                </Button>
               </div>
             )}
 

@@ -124,7 +124,7 @@ export function OwnerAccessSummaryDialog({
             </div>
 
             <Button
-              variant="ghost"
+              variant="plain"
               size="icon"
               onClick={() => onOpenChange(false)}
               className="text-white/80 hover:text-white hover:bg-white/10 absolute right-4 top-4 rounded-full"
@@ -198,7 +198,7 @@ export function OwnerAccessSummaryDialog({
 
             <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
               {categories.map((cat) => (
-                <button
+                <Button variant="plain"
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   className={cn(
@@ -206,10 +206,10 @@ export function OwnerAccessSummaryDialog({
                     selectedCategory === cat
                       ? 'bg-[#001A3D] text-white shadow-xs'
                       : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200',
-                  )}
+                  ))}
                 >
                   {cat}
-                </button>
+                </Button>
               ))}
             </div>
           </div>

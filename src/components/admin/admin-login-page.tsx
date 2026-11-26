@@ -229,14 +229,14 @@ export function AdminLoginPage({
                       {/* Helper text with sample data quick-fill tag (#965:1474) */}
                       <div className="flex items-center justify-between text-xs text-[#4F5B70] pt-1">
                         <span>Example: admin@example.com</span>
-                        <button
+                        <Button variant="plain"
                           type="button"
                           onClick={fillSampleEmail}
                           className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#EEF2F7] hover:bg-[#DCE2EB] text-[#4F5B70] border border-[#DCE2EB] text-[10.5px] font-bold cursor-pointer transition-colors"
                           title="Click to fill sample email"
                         >
                           Sample data
-                        </button>
+                        </Button>
                       </div>
                     </div>
 
@@ -266,13 +266,13 @@ export function AdminLoginPage({
 
                     {/* Trouble signing in Link (#965:1481) */}
                     <div className="text-center pt-1">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => switchToView('trouble')}
                         className="text-sm font-bold text-[#0267B8] hover:text-[#014A85] underline underline-offset-3 cursor-pointer transition-colors"
                       >
                         Trouble signing in?
-                      </button>
+                      </Button>
                     </div>
                   </form>
 

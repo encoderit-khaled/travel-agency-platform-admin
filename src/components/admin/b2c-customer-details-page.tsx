@@ -78,7 +78,7 @@ export function B2CCustomerDetailsPage({
             {/* Left: Mobile Toggle & Breadcrumb */}
             <div className="flex items-center gap-3 min-w-0">
               <Button
-                variant="ghost"
+                variant="plain"
                 size="icon"
                 className="lg:hidden text-[#012A5E]"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -121,7 +121,7 @@ export function B2CCustomerDetailsPage({
             {/* Right: Notifications & Profile Menu (Node #990:3187) */}
             <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
               {/* Notifications Button */}
-              <button
+              <Button variant="plain"
                 type="button"
                 className="size-10 rounded-xl flex items-center justify-center text-[#4F5B70] hover:text-[#012A5E] hover:bg-slate-100/80 transition-colors relative cursor-pointer"
                 title="Notifications"
@@ -129,7 +129,7 @@ export function B2CCustomerDetailsPage({
               >
                 <Bell className="size-5 text-[#4F5B70]" />
                 <span className="size-2 rounded-full bg-[#0267B8] absolute top-2.5 right-2.5 ring-2 ring-white" />
-              </button>
+              </Button>
 
               {/* Profile Pill Menu (Node #990:3191) */}
               <DropdownMenu>
@@ -200,13 +200,13 @@ export function B2CCustomerDetailsPage({
                   <span className="font-bold">Profile updated successfully:</span>
                   <span>Customer name changed to &ldquo;{customerName}&rdquo;.</span>
                 </div>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setShowSavedToast(false)}
                   className="text-xs font-bold text-[#0267B8] hover:underline"
                 >
                   Dismiss
-                </button>
+                </Button>
               </div>
             )}
 
@@ -329,14 +329,14 @@ export function B2CCustomerDetailsPage({
                       </div>
 
                       {/* Edit Profile Button (Node #990:3106 button#ed-b) */}
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setIsEditDialogOpen(true)}
                         className="bg-white border border-[#C5CFDC] rounded-[11px] px-3.5 py-2 inline-flex items-center gap-2 text-sm font-extrabold text-[#012A5E] hover:bg-slate-50 transition-colors shadow-2xs cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#012A5E]/20"
                       >
                         <Pencil className="size-3.5 text-[#012A5E]" />
                         <span>Edit Profile</span>
-                      </button>
+                      </Button>
                     </div>
 
                     {/* Content */}

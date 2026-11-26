@@ -89,14 +89,14 @@ export function EmptyState({
               </span>
               <span className="font-bold">{filter.value}</span>
               {filter.onRemove && (
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={filter.onRemove}
                   className="ml-0.5 text-[#8C9BAE] hover:text-[#B71C1C] p-0.5 rounded-full transition-colors cursor-pointer"
                   aria-label={`Remove filter for ${filter.label}`}
                 >
                   <X className="size-3" />
-                </button>
+                </Button>
               )}
             </Badge>
           ))}

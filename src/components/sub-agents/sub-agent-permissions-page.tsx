@@ -338,26 +338,26 @@ export function SubAgentPermissionsPage({
                 <CheckCircle2 className="size-4 shrink-0" />
                 <span>{toastMessage}</span>
               </div>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setToastMessage(null)}
                 className="text-white/80 hover:text-white ml-4 cursor-pointer"
               >
                 ✕
-              </button>
+              </Button>
             </div>
           )}
 
           {/* Back link */}
           <div className="flex items-center">
-            <button
+            <Button variant="plain"
               type="button"
               onClick={handleGoBack}
               className="inline-flex items-center gap-1.5 text-sm font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors py-1 cursor-pointer"
             >
               <ArrowLeft className="size-4" />
               <span>Back to {deskName}</span>
-            </button>
+            </Button>
           </div>
 
           {/* Desk Header / Identity Section */}
@@ -732,7 +732,7 @@ export function SubAgentPermissionsPage({
                             {preset === 'custom' ? (
                               <div className="inline-flex rounded-lg border border-[#D5DDE8] bg-[#F4F6FA] p-0.5 gap-0.5 text-xs font-bold shadow-2xs">
                                 {perm.allowedOptions.includes('allowed') && (
-                                  <button
+                                  <Button variant="plain"
                                     type="button"
                                     onClick={() =>
                                       handlePermissionChange(perm.id, 'allowed')
@@ -742,15 +742,15 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'allowed'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    )}
+                                    ))}
                                   >
                                     <Check className="size-3.5 text-[#0E6A3D] stroke-[2.5]" />
                                     <span>Allowed</span>
-                                  </button>
+                                  </Button>
                                 )}
 
                                 {perm.allowedOptions.includes('view_only') && (
-                                  <button
+                                  <Button variant="plain"
                                     type="button"
                                     onClick={() =>
                                       handlePermissionChange(
@@ -763,17 +763,17 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'view_only'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    )}
+                                    ))}
                                   >
                                     <Eye className="size-3.5 text-[#01559A]" />
                                     <span>View only</span>
-                                  </button>
+                                  </Button>
                                 )}
 
                                 {perm.allowedOptions.includes(
                                   'not_allowed',
                                 ) && (
-                                  <button
+                                  <Button variant="plain"
                                     type="button"
                                     onClick={() =>
                                       handlePermissionChange(
@@ -786,11 +786,11 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'not_allowed'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    )}
+                                    ))}
                                   >
                                     <Ban className="size-3.5 text-[#5C677A]" />
                                     <span>Not allowed</span>
-                                  </button>
+                                  </Button>
                                 )}
                               </div>
                             ) : (

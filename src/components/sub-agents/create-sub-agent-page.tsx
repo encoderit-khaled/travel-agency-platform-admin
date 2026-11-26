@@ -30,6 +30,7 @@ import { Textarea } from '#/components/ui/textarea'
 import { Button } from '#/components/ui/button'
 import { useActionLoading } from '#/hooks/use-action-loading'
 import { Badge } from '#/components/ui/badge'
+import { RadioGroup, RadioGroupItem } from '#/components/ui/radio-group'
 import {
   AgentPortalSidebar,
   AgentPortalHeader,
@@ -535,7 +536,13 @@ export function CreateSubAgentPage() {
                     </Badge>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <RadioGroup
+                    value={formData.permissionPreset}
+                    onValueChange={(value) =>
+                      handlePresetChange(value as PermissionPreset)
+                    }
+                    className="grid grid-cols-1 md:grid-cols-3 gap-3"
+                  >
                     {/* Option 1: Standard Access (Suggested) */}
                     <div
                       onClick={() => handlePresetChange('standard')}
@@ -547,13 +554,7 @@ export function CreateSubAgentPage() {
                     >
                       <div className="flex items-center justify-between gap-1">
                         <div className="flex items-center gap-2">
-                          <input
-                            type="radio"
-                            name="perm-preset"
-                            checked={formData.permissionPreset === 'standard'}
-                            onChange={() => handlePresetChange('standard')}
-                            className="size-4 text-[#012A5E] accent-[#012A5E]"
-                          />
+                          <RadioGroupItem value="standard" />
                           <span className="text-xs font-bold text-[#141B28]">
                             Standard Sub-agent Access
                           </span>
@@ -580,13 +581,7 @@ export function CreateSubAgentPage() {
                       }`}
                     >
                       <div className="flex items-center gap-2">
-                        <input
-                          type="radio"
-                          name="perm-preset"
-                          checked={formData.permissionPreset === 'limited'}
-                          onChange={() => handlePresetChange('limited')}
-                          className="size-4 text-[#012A5E] accent-[#012A5E]"
-                        />
+                        <RadioGroupItem value="limited" />
                         <span className="text-xs font-bold text-[#141B28]">
                           Limited Access
                         </span>
@@ -608,13 +603,7 @@ export function CreateSubAgentPage() {
                       }`}
                     >
                       <div className="flex items-center gap-2">
-                        <input
-                          type="radio"
-                          name="perm-preset"
-                          checked={formData.permissionPreset === 'custom'}
-                          onChange={() => handlePresetChange('custom')}
-                          className="size-4 text-[#012A5E] accent-[#012A5E]"
-                        />
+                        <RadioGroupItem value="custom" />
                         <span className="text-xs font-bold text-[#141B28]">
                           Custom Permissions
                         </span>
@@ -625,7 +614,7 @@ export function CreateSubAgentPage() {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </RadioGroup>
                 </div>
 
                 {/* Permission Preview Box */}
@@ -765,7 +754,16 @@ export function CreateSubAgentPage() {
                     </Badge>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <RadioGroup
+                    value={formData.markupOption}
+                    onValueChange={(value) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        markupOption: value as 'later' | 'now',
+                      }))
+                    }
+                    className="grid grid-cols-1 sm:grid-cols-2 gap-3"
+                  >
                     {/* Option 1: Configure later */}
                     <div
                       onClick={() =>
@@ -782,18 +780,7 @@ export function CreateSubAgentPage() {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <input
-                            type="radio"
-                            name="markup-option"
-                            checked={formData.markupOption === 'later'}
-                            onChange={() =>
-                              setFormData((prev) => ({
-                                ...prev,
-                                markupOption: 'later',
-                              }))
-                            }
-                            className="size-4 text-[#012A5E] accent-[#012A5E]"
-                          />
+                          <RadioGroupItem value="later" />
                           <span className="text-xs font-bold text-[#141B28]">
                             Configure later
                           </span>
@@ -822,18 +809,7 @@ export function CreateSubAgentPage() {
                       }`}
                     >
                       <div className="flex items-center gap-2">
-                        <input
-                          type="radio"
-                          name="markup-option"
-                          checked={formData.markupOption === 'now'}
-                          onChange={() =>
-                            setFormData((prev) => ({
-                              ...prev,
-                              markupOption: 'now',
-                            }))
-                          }
-                          className="size-4 text-[#012A5E] accent-[#012A5E]"
-                        />
+                        <RadioGroupItem value="now" />
                         <span className="text-xs font-bold text-[#141B28]">
                           Configure now
                         </span>
@@ -842,7 +818,7 @@ export function CreateSubAgentPage() {
                         Go to markup setup right after creating the account.
                       </p>
                     </div>
-                  </div>
+                  </RadioGroup>
 
                   {/* Expandable configuration if configure now is selected */}
                   {formData.markupOption === 'now' && (
@@ -987,13 +963,13 @@ export function CreateSubAgentPage() {
                       <dd className="font-bold text-[#141B28] text-right truncate max-w-35">
                         {formData.displayName || '—'}
                       </dd>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('displayName')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -1004,13 +980,13 @@ export function CreateSubAgentPage() {
                       <dd className="font-semibold text-[#141B28] text-right truncate max-w-35">
                         {formData.loginEmail || '—'}
                       </dd>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('loginEmail')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -1023,13 +999,13 @@ export function CreateSubAgentPage() {
                       <dd className="font-medium text-[#141B28] text-right truncate max-w-35">
                         {formData.contactPerson || '—'}
                       </dd>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('contactPerson')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -1040,13 +1016,13 @@ export function CreateSubAgentPage() {
                       <dd className="font-medium text-[#141B28] text-right truncate max-w-35">
                         {formData.mobileNumber || '—'}
                       </dd>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('mobile')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -1061,13 +1037,13 @@ export function CreateSubAgentPage() {
                             ? 'Limited Access'
                             : 'Custom Permissions'}
                       </dd>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('permissions')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -1087,13 +1063,13 @@ export function CreateSubAgentPage() {
                           </span>
                         )}
                       </div>
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => scrollToField('markup')}
                         className="text-[11px] font-bold text-[#0267B8] hover:underline"
                       >
                         Edit
-                      </button>
+                      </Button>
                     </div>
                   </div>
 

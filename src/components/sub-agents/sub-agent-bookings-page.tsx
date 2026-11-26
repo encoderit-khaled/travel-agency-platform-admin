@@ -120,12 +120,12 @@ export function SubAgentBookingsPage({
         cell: ({ row }) => {
           const bk = row.original
           return (
-            <button
+            <Button variant="plain"
               onClick={() => handleOpenBooking(bk)}
               className="font-mono text-xs font-extrabold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer block text-left"
             >
               {bk.ref}
-            </button>
+            </Button>
           )
         },
         meta: {
@@ -232,13 +232,13 @@ export function SubAgentBookingsPage({
                     <CheckCircle2 className="size-3.5 text-emerald-600" />
                     <span>E-ticket available</span>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => handleOpenBooking(bk)}
                     className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
                   >
                     <span>View E-ticket</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </>
               ) : bk.documentStatus === 'Voucher available' ? (
                 <>
@@ -246,13 +246,13 @@ export function SubAgentBookingsPage({
                     <CheckCircle2 className="size-3.5 text-emerald-600" />
                     <span>Voucher available</span>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => handleOpenBooking(bk)}
                     className="inline-flex items-center gap-1 text-[11px] font-bold text-[#0267B8] hover:text-[#014A85] hover:underline cursor-pointer"
                   >
                     <span>View Voucher</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </>
               ) : (
                 <span className="text-xs text-[#8C9BAE]">
@@ -459,17 +459,17 @@ export function SubAgentBookingsPage({
               { id: 'bookings', label: `Bookings (${allBookings.length})` },
               { id: 'performance', label: 'Performance' },
             ].map((tab) => (
-              <button
+              <Button variant="plain"
                 key={tab.id}
                 onClick={() => handleTabClick(tab.id as any)}
                 className={`px-4 py-2.5 text-xs font-bold transition-all relative border-b-2 cursor-pointer whitespace-nowrap ${
                   tab.id === 'bookings'
                     ? 'border-[#012A5E] text-[#012A5E]'
                     : 'border-transparent text-[#64748B] hover:text-[#012A5E] hover:border-[#CBD5E1]'
-                }`}
+                }`)}
               >
                 {tab.label}
-              </button>
+              </Button>
             ))}
           </div>
         </>
@@ -626,13 +626,13 @@ export function SubAgentBookingsPage({
 
         {/* Filter by status pills */}
         <div className="px-5 md:px-6 pt-4 pb-2 border-b border-[#F1F3F6] flex items-center gap-2 overflow-x-auto">
-          <button
+          <Button variant="plain"
             onClick={() => setStatusChipFilter(null)}
             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all border cursor-pointer ${
               statusChipFilter === null
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>All</span>
             <span
@@ -644,9 +644,9 @@ export function SubAgentBookingsPage({
             >
               {counts.total}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Pending' ? null : 'Pending',
@@ -656,7 +656,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Pending'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Pending</span>
             <span
@@ -668,9 +668,9 @@ export function SubAgentBookingsPage({
             >
               {counts.pending}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Confirmed' ? null : 'Confirmed',
@@ -680,7 +680,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Confirmed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Confirmed</span>
             <span
@@ -692,9 +692,9 @@ export function SubAgentBookingsPage({
             >
               {counts.confirmed}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Ticketed' ? null : 'Ticketed',
@@ -704,7 +704,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Ticketed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Ticketed / Issued</span>
             <span
@@ -716,9 +716,9 @@ export function SubAgentBookingsPage({
             >
               {counts.ticketed}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Cancelled' ? null : 'Cancelled',
@@ -728,7 +728,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Cancelled'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Cancelled</span>
             <span
@@ -740,9 +740,9 @@ export function SubAgentBookingsPage({
             >
               {counts.cancelled}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Refunded' ? null : 'Refunded',
@@ -752,15 +752,15 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Refunded'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Refunded</span>
             <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-[#F1F5F9] text-[#64748B]">
               {counts.refunded}
             </span>
-          </button>
+          </Button>
 
-          <button
+          <Button variant="plain"
             onClick={() =>
               setStatusChipFilter(
                 statusChipFilter === 'Failed' ? null : 'Failed',
@@ -770,13 +770,13 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Failed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`}
+            }`)}
           >
             <span>Failed</span>
             <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-[#F1F5F9] text-[#64748B]">
               {counts.failed}
             </span>
-          </button>
+          </Button>
         </div>
 
         {/* Search and filter controls grid (5 columns matching Figma #694:7359) */}
@@ -796,12 +796,12 @@ export function SubAgentBookingsPage({
                 className="pl-9 pr-8 h-9 text-xs bg-white border-[#DCE2EB] text-[#012A5E] rounded-lg focus-visible:ring-1 focus-visible:ring-[#0267B8]"
               />
               {searchQuery && (
-                <button
+                <Button variant="plain"
                   onClick={() => setSearchQuery('')}
                   className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
                 >
                   <X className="size-3.5" />
-                </button>
+                </Button>
               )}
             </div>
           </div>
@@ -944,7 +944,7 @@ export function SubAgentBookingsPage({
             selectedService !== 'all' ||
             selectedStatus !== 'all' ||
             statusChipFilter) && (
-            <button
+            <Button variant="plain"
               onClick={() => {
                 setSearchQuery('')
                 setSelectedService('all')
@@ -954,7 +954,7 @@ export function SubAgentBookingsPage({
               className="text-xs font-bold text-[#0267B8] hover:underline cursor-pointer"
             >
               Clear filters
-            </button>
+            </Button>
           )}
         </div>
 

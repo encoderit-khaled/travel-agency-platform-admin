@@ -164,7 +164,7 @@ export function NewCreditRequestForm({
             {/* Selectable Radio Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               {/* Option 1: Credit-limit increase */}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setRequestType('Credit-limit increase')}
                 className={cn(
@@ -172,7 +172,7 @@ export function NewCreditRequestForm({
                   requestType === 'Credit-limit increase'
                     ? 'border-2 border-[#0267B8] bg-[#F4F8FD] shadow-xs'
                     : 'border-[#DCE2EB] bg-white hover:border-[#0267B8]/40 hover:bg-slate-50/50',
-                )}
+                ))}
               >
                 <div className="mt-0.5 shrink-0">
                   <div
@@ -196,10 +196,10 @@ export function NewCreditRequestForm({
                     Request a higher credit limit for the Agent account.
                   </p>
                 </div>
-              </button>
+              </Button>
 
               {/* Option 2: Credit top-up */}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setRequestType('Credit top-up')}
                 className={cn(
@@ -207,7 +207,7 @@ export function NewCreditRequestForm({
                   requestType === 'Credit top-up'
                     ? 'border-2 border-[#0267B8] bg-[#F4F8FD] shadow-xs'
                     : 'border-[#DCE2EB] bg-white hover:border-[#0267B8]/40 hover:bg-slate-50/50',
-                )}
+                ))}
               >
                 <div className="mt-0.5 shrink-0">
                   <div
@@ -231,7 +231,7 @@ export function NewCreditRequestForm({
                     Request additional Agent credit.
                   </p>
                 </div>
-              </button>
+              </Button>
             </div>
 
             {/* Sub-banner callout */}

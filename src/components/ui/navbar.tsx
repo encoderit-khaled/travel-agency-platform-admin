@@ -33,6 +33,7 @@ import {
   DropdownMenuGroup,
 } from '#/components/ui/dropdown-menu'
 import { cn } from 'cn'
+import { Button } from '#/components/ui/button'
 
 export interface NavbarBreadcrumbItem {
   label: string
@@ -234,13 +235,13 @@ export function Navbar({
                         {item.label}
                       </BreadcrumbPage>
                     ) : item.onClick ? (
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={item.onClick}
                         className="text-[#4F5B70] hover:text-[#012A5E] font-medium transition-colors hover:underline cursor-pointer whitespace-nowrap"
                       >
                         {item.label}
-                      </button>
+                      </Button>
                     ) : (
                       <BreadcrumbLink
                         href={item.href || '#'}
@@ -316,13 +317,13 @@ export function Navbar({
                 )}
               </div>
               {unreadCount > 0 && (
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={handleMarkAllRead}
                   className="text-xs font-semibold text-[#0267B8] hover:underline cursor-pointer"
                 >
                   Mark all read
-                </button>
+                </Button>
               )}
             </div>
 

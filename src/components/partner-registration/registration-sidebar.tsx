@@ -10,6 +10,7 @@ import {
   HelpCircle,
   FileCheck2,
 } from 'lucide-react'
+import { Button } from '#/components/ui/button'
 
 export interface RegistrationSidebarProps {
   businessName?: string
@@ -169,7 +170,7 @@ export function RegistrationSidebar({
 
       {/* Card 2: What partners get (Accordion) */}
       <div className="rounded-[18px] border border-[#DCE2EB] bg-white p-5 shadow-xs">
-        <button
+        <Button variant="plain"
           type="button"
           className="flex w-full items-center justify-between cursor-pointer select-none text-left"
           onClick={() => setIsAccordionOpen((prev) => !prev)}
@@ -183,7 +184,7 @@ export function RegistrationSidebar({
               isAccordionOpen ? '' : 'rotate-180'
             }`}
           />
-        </button>
+        </Button>
 
         {isAccordionOpen && (
           <div className="mt-4 flex flex-col gap-3.5 border-t border-[#F1F5F9] pt-3.5">

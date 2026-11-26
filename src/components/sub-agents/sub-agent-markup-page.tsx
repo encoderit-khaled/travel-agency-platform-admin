@@ -31,6 +31,7 @@ import {
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { DataTable } from '#/components/ui/data-table'
+import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import type { ColumnDef } from '@tanstack/react-table'
 import {
@@ -254,13 +255,13 @@ export function SubAgentMarkupPage({
         id: 'action',
         header: 'Action',
         cell: ({ row }) => (
-          <button
+          <Button variant="plain"
             type="button"
             onClick={() => handleDeleteRule(row.original.id)}
             className="text-gray-400 hover:text-red-600 p-1 cursor-pointer transition-colors"
           >
             <Trash2 className="size-3.5" />
-          </button>
+          </Button>
         ),
         meta: {
           headerClassName: 'py-2.5 px-3 text-right',
@@ -306,26 +307,26 @@ export function SubAgentMarkupPage({
                 <CheckCircle2 className="size-4 shrink-0" />
                 <span>{toastMessage}</span>
               </div>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setToastMessage(null)}
                 className="text-white/80 hover:text-white ml-4 cursor-pointer"
               >
                 ✕
-              </button>
+              </Button>
             </div>
           )}
 
           {/* Back link */}
           <div className="flex items-center">
-            <button
+            <Button variant="plain"
               type="button"
               onClick={handleGoBack}
               className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors py-1 cursor-pointer"
             >
               <ArrowLeft className="size-3.5" />
               <span>Back to {deskName}</span>
-            </button>
+            </Button>
           </div>
 
           {/* Desk Header / Identity Section */}
@@ -582,14 +583,14 @@ export function SubAgentMarkupPage({
                                   ? `+${rule.value}%`
                                   : `+${rule.currency || 'BDT'} ${rule.value}`}
                               </span>
-                              <button
+                              <Button variant="plain"
                                 type="button"
                                 onClick={() => handleDeleteRule(rule.id)}
                                 className="text-gray-400 hover:text-red-600 p-1 rounded-md transition-colors cursor-pointer"
                                 title="Remove rule"
                               >
                                 <Trash2 className="size-3.5" />
-                              </button>
+                              </Button>
                             </div>
                           </div>
                         ))}
@@ -608,14 +609,14 @@ export function SubAgentMarkupPage({
                     <span>Add Markup Rule</span>
                   </Button>
 
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => setContextDialogOpen(true)}
                     className="inline-flex items-center gap-1 text-xs font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer py-1"
                   >
                     <span>View pricing context</span>
                     <ArrowRight className="size-3.5" />
-                  </button>
+                  </Button>
                 </div>
               </section>
 
@@ -1237,7 +1238,7 @@ export function SubAgentMarkupPage({
 
                 {/* Input with Suffix */}
                 <div className="border border-[#DCE2EB] rounded-xl bg-white flex items-stretch focus-within:border-[#0267B8] focus-within:ring-2 focus-within:ring-[#0267B8]/20 transition-all overflow-hidden">
-                  <input
+                  <Input
                     id="drawer-markup-val"
                     type="number"
                     step="0.1"
@@ -1245,7 +1246,7 @@ export function SubAgentMarkupPage({
                     value={markupValue}
                     onChange={(e) => setMarkupValue(e.target.value)}
                     placeholder={markupType === 'percentage' ? '0' : '0.00'}
-                    className="flex-1 px-4 py-2.5 text-base font-bold text-[#012A5E] placeholder:text-gray-400 outline-none"
+                    className="h-auto flex-1 rounded-none border-0 bg-transparent px-4 py-2.5 text-base font-bold text-[#012A5E] shadow-none placeholder:text-gray-400 outline-none focus-visible:ring-0"
                   />
                   <div className="px-4 py-2.5 bg-[#F4F6FA] border-l border-[#DCE2EB] text-[#4F5B70] font-bold text-sm select-none flex items-center justify-center min-w-12.5">
                     {markupType === 'percentage' ? '%' : 'BDT'}

@@ -170,13 +170,13 @@ export function CommissionTrackingPage({
         cell: ({ row }) => {
           const record = row.original
           return (
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => handleOpenDetails(record)}
               className="text-left font-extrabold text-[#0066CC] hover:underline cursor-pointer"
             >
               {record.bookingId}
-            </button>
+            </Button>
           )
         },
         meta: {

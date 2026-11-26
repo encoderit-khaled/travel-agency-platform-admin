@@ -62,14 +62,14 @@ export function B2CCustomerDetailsView({
 
       {/* Back button */}
       <div>
-        <button
+        <Button variant="plain"
           type="button"
           onClick={onBack}
           className="inline-flex items-center gap-2 text-sm font-semibold text-[#012A5E] hover:text-[#0F3F7D] transition-colors cursor-pointer group"
         >
           <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
           <span>Back to B2C Customers</span>
-        </button>
+        </Button>
       </div>
 
       {/* Page Header */}

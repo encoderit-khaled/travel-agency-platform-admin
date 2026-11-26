@@ -279,14 +279,14 @@ export function B2CCustomersPage({
                           className="h-10 pl-10 pr-9 rounded-xl border-[#C5CFDC] bg-white text-sm text-[#141B28] placeholder:text-[#8792A4] focus:border-[#012A5E] focus:ring-1 focus:ring-[#012A5E] transition-all"
                         />
                         {searchQuery && (
-                          <button
+                          <Button variant="plain"
                             type="button"
                             onClick={() => setSearchQuery('')}
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8792A4] hover:text-[#141B28] p-0.5 rounded-full transition-colors cursor-pointer"
                             title="Clear search"
                           >
                             <X className="size-3.5" />
-                          </button>
+                          </Button>
                         )}
                       </div>
                     </div>

@@ -857,7 +857,7 @@ export function AgentReportsPage({
         cell: ({ row }) => (
           <div className="contents" onClick={(e) => e.stopPropagation()}>
             <Button
-              variant="ghost"
+              variant="plain"
               size="sm"
               onClick={() => handleOpenCommissionDetails(row.original)}
               className="h-7 px-2 text-xs text-[#0267B8] hover:text-[#014A85] hover:bg-[#EBF2FA] flex items-center gap-1 mx-auto cursor-pointer"
@@ -1016,7 +1016,7 @@ export function AgentReportsPage({
         cell: ({ row }) => (
           <Button
             type="button"
-            variant="ghost"
+            variant="plain"
             size="sm"
             onClick={() => {
               setSelectedWalletTx(row.original)
@@ -1132,7 +1132,7 @@ export function AgentReportsPage({
         cell: ({ row }) => (
           <Button
             type="button"
-            variant="ghost"
+            variant="plain"
             size="sm"
             onClick={() => {
               setSelectedCreditRequest(row.original)
@@ -1294,7 +1294,7 @@ export function AgentReportsPage({
             >
               {/* Presets Row */}
               <div className="flex flex-wrap items-center gap-2">
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => handlePresetSelect('this-month')}
                   className={cn(
@@ -1302,11 +1302,11 @@ export function AgentReportsPage({
                     periodPreset === 'this-month'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  )}
+                  ))}
                 >
                   This Month
-                </button>
-                <button
+                </Button>
+                <Button variant="plain"
                   type="button"
                   onClick={() => handlePresetSelect('previous-month')}
                   className={cn(
@@ -1314,11 +1314,11 @@ export function AgentReportsPage({
                     periodPreset === 'previous-month'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  )}
+                  ))}
                 >
                   Previous Month
-                </button>
-                <button
+                </Button>
+                <Button variant="plain"
                   type="button"
                   onClick={() => handlePresetSelect('last-30-days')}
                   className={cn(
@@ -1326,11 +1326,11 @@ export function AgentReportsPage({
                     periodPreset === 'last-30-days'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  )}
+                  ))}
                 >
                   Last 30 Days
-                </button>
-                <button
+                </Button>
+                <Button variant="plain"
                   type="button"
                   onClick={() => handlePresetSelect('custom')}
                   className={cn(
@@ -1338,10 +1338,10 @@ export function AgentReportsPage({
                     periodPreset === 'custom'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold shadow-2xs'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  )}
+                  ))}
                 >
                   Custom
-                </button>
+                </Button>
               </div>
 
               {/* Inputs Grid: 6 columns powered by TanStack Form Fields */}
@@ -1521,7 +1521,7 @@ export function AgentReportsPage({
 
           {/* Report Sections Tab Navigation (#821:1664) */}
           <div className="bg-white border border-[#DCE2EB] rounded-2xl p-1.5 shadow-2xs flex items-center gap-1 overflow-x-auto">
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('overview')}
               className={cn(
@@ -1529,13 +1529,13 @@ export function AgentReportsPage({
                 activeTab === 'overview'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <Layers className="size-4" />
               <span>Overview</span>
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('sales')}
               className={cn(
@@ -1543,13 +1543,13 @@ export function AgentReportsPage({
                 activeTab === 'sales'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <TrendingUp className="size-4" />
               <span>Sales</span>
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('bookings')}
               className={cn(
@@ -1557,16 +1557,16 @@ export function AgentReportsPage({
                 activeTab === 'bookings'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <CalendarDays className="size-4" />
               <span>Bookings</span>
               {activeTab === 'bookings' && (
                 <div className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#012A5E] rounded-full" />
               )}
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('commissions')}
               className={cn(
@@ -1574,13 +1574,13 @@ export function AgentReportsPage({
                 activeTab === 'commissions'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <Percent className="size-4" />
               <span>Commissions</span>
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('wallet-credit')}
               className={cn(
@@ -1588,13 +1588,13 @@ export function AgentReportsPage({
                 activeTab === 'wallet-credit'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <Wallet className="size-4" />
               <span>Wallet & Credit</span>
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('sub-agents')}
               className={cn(
@@ -1602,11 +1602,11 @@ export function AgentReportsPage({
                 activeTab === 'sub-agents'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              )}
+              ))}
             >
               <Users className="size-4" />
               <span>Sub-agent Performance</span>
-            </button>
+            </Button>
           </div>
 
           {/* ======================================================== */}
@@ -1903,14 +1903,14 @@ export function AgentReportsPage({
                       </div>
                     </div>
 
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setActiveTab(area.targetTab)}
                       className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1.5 pt-2 border-t border-[#DCE2EB]/60 group-hover:translate-x-0.5 transition-all w-fit cursor-pointer"
                     >
                       <span>Open report</span>
                       <ArrowRight className="size-3.5" />
-                    </button>
+                    </Button>
                   </div>
                 ))}
               </div>
@@ -2480,13 +2480,13 @@ export function AgentReportsPage({
                     </p>
                   </div>
                   <div className="pt-3 mt-3 border-t border-[#F4F6FA] flex items-center justify-between">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setTopUpOpen(true)}
                       className="text-xs font-bold text-[#0267B8] hover:underline flex items-center gap-1 cursor-pointer"
                     >
                       <span>+ Instant Top-up</span>
-                    </button>
+                    </Button>
                     <span className="text-[11px] text-[#6B778C]">
                       Pre-funded
                     </span>
@@ -3003,7 +3003,7 @@ export function AgentReportsPage({
 
                   {/* Direction Tabs */}
                   <div className="flex items-center gap-1.5 w-full md:w-auto">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setWalletDirection('All')}
                       className={cn(
@@ -3011,11 +3011,11 @@ export function AgentReportsPage({
                         walletDirection === 'All'
                           ? 'bg-[#012A5E] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E]',
-                      )}
+                      ))}
                     >
                       All (10)
-                    </button>
-                    <button
+                    </Button>
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setWalletDirection('Credit')}
                       className={cn(
@@ -3023,11 +3023,11 @@ export function AgentReportsPage({
                         walletDirection === 'Credit'
                           ? 'bg-[#00875A] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#00875A] hover:bg-[#E6F4EA]',
-                      )}
+                      ))}
                     >
                       Credits (+4)
-                    </button>
-                    <button
+                    </Button>
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setWalletDirection('Debit')}
                       className={cn(
@@ -3035,10 +3035,10 @@ export function AgentReportsPage({
                         walletDirection === 'Debit'
                           ? 'bg-[#DE350B] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#DE350B] hover:bg-[#FEECEB]',
-                      )}
+                      ))}
                     >
                       Debits (-6)
-                    </button>
+                    </Button>
                   </div>
 
                   {/* Type Filter Select */}

@@ -182,13 +182,13 @@ export function SubAgentsPage({
                 <CheckCircle2 className="size-4 shrink-0" />
                 <span>{toastMessage}</span>
               </div>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setToastMessage(null)}
                 className="text-white/80 hover:text-white"
               >
                 ✕
-              </button>
+              </Button>
             </div>
           )}
 
@@ -241,7 +241,7 @@ export function SubAgentsPage({
             </div>
 
             <div className="flex items-center gap-3 shrink-0 self-end md:self-center">
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => showToast('Opening Agency Wallet...')}
                 className="group flex items-center gap-1.5 text-xs font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer px-2.5 py-1.5 rounded-lg hover:bg-white/60"
@@ -249,9 +249,9 @@ export function SubAgentsPage({
                 <Wallet className="size-3.5" />
                 <span>View Wallet</span>
                 <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Button>
 
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => showToast('Opening Available Credit Line...')}
                 className="group flex items-center gap-1.5 text-xs font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer px-2.5 py-1.5 rounded-lg hover:bg-white/60"
@@ -259,7 +259,7 @@ export function SubAgentsPage({
                 <CreditCard className="size-3.5" />
                 <span>View Credit</span>
                 <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Button>
             </div>
           </aside>
 

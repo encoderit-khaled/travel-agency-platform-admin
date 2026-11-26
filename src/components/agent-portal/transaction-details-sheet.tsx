@@ -141,14 +141,14 @@ export function TransactionDetailsSheet({
               <div>
                 <p className="text-xs text-[#5A6578] mb-1">Reference</p>
                 {hasBookingRef ? (
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => onNavigateToBooking?.(transaction.reference)}
                     className="font-bold text-sm text-[#0267B8] hover:underline inline-flex items-center gap-1 text-left"
                   >
                     <span>{transaction.reference}</span>
                     <ExternalLink className="size-3" />
-                  </button>
+                  </Button>
                 ) : (
                   <p className="font-medium text-[#5A6578] text-sm">
                     {transaction.reference}

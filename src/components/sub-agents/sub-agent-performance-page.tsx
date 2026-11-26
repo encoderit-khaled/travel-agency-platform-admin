@@ -349,12 +349,12 @@ export function SubAgentPerformancePage({
         cell: ({ row }) => {
           const bk = row.original
           return (
-            <button
+            <Button variant="plain"
               onClick={() => handleOpenBooking(bk)}
               className="hover:underline cursor-pointer flex items-center gap-1 font-mono text-xs"
             >
               <span>{bk.ref}</span>
-            </button>
+            </Button>
           )
         },
         meta: {
@@ -457,7 +457,7 @@ export function SubAgentPerformancePage({
 
         <div className="flex flex-wrap items-center gap-2 shrink-0">
           <Button
-            variant="ghost"
+            variant="plain"
             size="sm"
             onClick={() => {
               window.location.href = '/reports?tab=sub-agents'
@@ -1012,13 +1012,13 @@ export function SubAgentPerformancePage({
                 wallet.
               </p>
             </div>
-            <button
+            <Button variant="plain"
               onClick={() => setWalletDialogOpen(true)}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-3 pt-2 border-t border-[#E2E8F0] cursor-pointer"
             >
               <span>View Wallet</span>
               <ArrowRight className="size-3" />
-            </button>
+            </Button>
           </div>
 
           {/* Credit Summary Card */}
@@ -1036,13 +1036,13 @@ export function SubAgentPerformancePage({
                 Available credit is managed under Skyline Demo Travels Ltd.
               </p>
             </div>
-            <button
+            <Button variant="plain"
               onClick={() => setCreditDialogOpen(true)}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-3 pt-2 border-t border-[#E2E8F0] cursor-pointer"
             >
               <span>View Credit</span>
               <ArrowRight className="size-3" />
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -1297,9 +1297,9 @@ export function SubAgentPerformancePage({
             >
               Bookings
             </Link>
-            <button className="px-4 py-3 text-xs font-extrabold text-[#012A5E] border-b-3 border-[#F1C134] transition-all cursor-pointer whitespace-nowrap">
+            <Button variant="plain" className="px-4 py-3 text-xs font-extrabold text-[#012A5E] border-b-3 border-[#F1C134] transition-all cursor-pointer whitespace-nowrap">
               Performance
-            </button>
+            </Button>
           </div>
 
           {/* Page Body */}

@@ -318,14 +318,14 @@ export function AgentManagementOverviewPage({
                   <span>Not configured</span>
                 </span>
               )}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => handleOpenPermissions(agent)}
                 className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <span>View Permissions</span>
                 <ArrowRight className="size-3" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -352,14 +352,14 @@ export function AgentManagementOverviewPage({
                   <span>Not configured</span>
                 </span>
               )}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => handleOpenMarkup(agent)}
                 className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <span>View Markup</span>
                 <ArrowRight className="size-3" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -390,14 +390,14 @@ export function AgentManagementOverviewPage({
                     : 'No bookings'}
                 </span>
               </span>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => handleOpenBookings(agent)}
                 className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <span>View Bookings</span>
                 <ArrowRight className="size-3" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -459,13 +459,13 @@ export function AgentManagementOverviewPage({
         <div className="fixed top-5 right-5 z-50 bg-[#012A5E] text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 border border-white/20 animate-in fade-in slide-in-from-top-3">
           <CheckCircle2 className="size-5 text-[#F1C134]" />
           <span className="text-xs font-bold">{actionSuccessMsg}</span>
-          <button
+          <Button variant="plain"
             type="button"
             onClick={() => setActionSuccessMsg(null)}
             className="text-white/70 hover:text-white p-0.5"
           >
             <X className="size-4" />
-          </button>
+          </Button>
         </div>
       )}
 
@@ -501,7 +501,7 @@ export function AgentManagementOverviewPage({
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setPreviewDropdownOpen((prev) => !prev)}
                 className={cn(
@@ -509,12 +509,12 @@ export function AgentManagementOverviewPage({
                   previewDropdownOpen
                     ? 'bg-[#F1C134] text-[#012A5E] border-[#F1C134] shadow-xs'
                     : 'bg-white/10 text-white border-white/20 hover:bg-white/20',
-                )}
+                ))}
               >
                 {previewDropdownOpen
                   ? '✓ Action Dropdown Open (#665:7388)'
                   : 'Toggle Action Dropdown (#665:7388)'}
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -649,7 +649,7 @@ export function AgentManagementOverviewPage({
                 </div>
 
                 <div className="pt-3 border-t border-[#F1F3F6] mt-4">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => {
                       setFilterBooking('has_bookings')
@@ -659,7 +659,7 @@ export function AgentManagementOverviewPage({
                   >
                     <span>View Sub-agent Bookings</span>
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </button>
+                  </Button>
                 </div>
               </article>
 
@@ -693,7 +693,7 @@ export function AgentManagementOverviewPage({
                 </div>
 
                 <div className="pt-3 border-t border-[#F1F3F6] mt-4">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => {
                       setFilterMarkup('not_configured')
@@ -703,7 +703,7 @@ export function AgentManagementOverviewPage({
                   >
                     <span>Show not configured</span>
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </button>
+                  </Button>
                 </div>
               </article>
 
@@ -741,7 +741,7 @@ export function AgentManagementOverviewPage({
                 </div>
 
                 <div className="pt-3 border-t border-[#F1F3F6] mt-4">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => {
                       setFilterPermissions('not_configured')
@@ -751,7 +751,7 @@ export function AgentManagementOverviewPage({
                   >
                     <span>Show needs configuration</span>
                     <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </button>
+                  </Button>
                 </div>
               </article>
             </div>
@@ -797,14 +797,14 @@ export function AgentManagementOverviewPage({
                       className="h-10 pl-9.5 pr-8 text-xs sm:text-sm bg-white border-[#DCE2EB] rounded-xl focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                     />
                     {searchQuery && (
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setSearchQuery('')}
                         className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-[#9AA6B9] hover:text-[#012A5E]"
                         aria-label="Clear search query"
                       >
                         <X className="size-3.5" />
-                      </button>
+                      </Button>
                     )}
                   </div>
 
@@ -870,7 +870,7 @@ export function AgentManagementOverviewPage({
                   {/* Reset Filters */}
                   {hasActiveFilters && (
                     <Button
-                      variant="ghost"
+                      variant="plain"
                       size="sm"
                       onClick={handleClearFilters}
                       className="text-xs font-bold text-[#D9383A] hover:bg-[#FDF2F2] h-10 px-3 shrink-0"

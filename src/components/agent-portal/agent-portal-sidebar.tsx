@@ -18,6 +18,7 @@ import {
 } from 'lucide-react'
 import { cn } from 'cn'
 import { SidebarContext } from '#/components/ui/sidebar'
+import { Button } from '#/components/ui/button'
 
 export interface AgentPortalSidebarProps {
   currentTab?: string
@@ -265,14 +266,14 @@ export function AgentPortalSidebar({
                 </a>
 
                 {isMobileOpen && (
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={closeMobile}
                     className="p-1 -mr-1 rounded-md text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA] transition-colors cursor-pointer shrink-0"
                     aria-label="Close navigation"
                   >
                     <X className="size-4.5" />
-                  </button>
+                  </Button>
                 )}
               </div>
 
@@ -295,7 +296,7 @@ export function AgentPortalSidebar({
                 const Icon = item.icon
                 const isActive = activeLabel === item.label
                 return (
-                  <button
+                  <Button variant="plain"
                     key={item.label}
                     type="button"
                     title={item.label}
@@ -308,7 +309,7 @@ export function AgentPortalSidebar({
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    )}
+                    ))}
                   >
                     <Icon
                       className={cn(
@@ -319,7 +320,7 @@ export function AgentPortalSidebar({
                     {(!isCollapsed || isMobileOpen) && (
                       <span className="truncate">{item.label}</span>
                     )}
-                  </button>
+                  </Button>
                 )
               })}
             </div>
@@ -340,7 +341,7 @@ export function AgentPortalSidebar({
                 const Icon = item.icon
                 const isActive = activeLabel === item.label
                 return (
-                  <button
+                  <Button variant="plain"
                     key={item.label}
                     type="button"
                     title={item.label}
@@ -353,7 +354,7 @@ export function AgentPortalSidebar({
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    )}
+                    ))}
                   >
                     <Icon
                       className={cn(
@@ -364,7 +365,7 @@ export function AgentPortalSidebar({
                     {(!isCollapsed || isMobileOpen) && (
                       <span className="truncate">{item.label}</span>
                     )}
-                  </button>
+                  </Button>
                 )
               })}
             </div>
@@ -385,7 +386,7 @@ export function AgentPortalSidebar({
                 const Icon = item.icon
                 const isActive = activeLabel === item.label
                 return (
-                  <button
+                  <Button variant="plain"
                     key={item.label}
                     type="button"
                     title={item.label}
@@ -398,7 +399,7 @@ export function AgentPortalSidebar({
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    )}
+                    ))}
                   >
                     <Icon
                       className={cn(
@@ -409,7 +410,7 @@ export function AgentPortalSidebar({
                     {(!isCollapsed || isMobileOpen) && (
                       <span className="truncate">{item.label}</span>
                     )}
-                  </button>
+                  </Button>
                 )
               })}
             </div>

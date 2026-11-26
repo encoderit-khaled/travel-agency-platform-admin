@@ -161,35 +161,35 @@ export function ExportReportDialog({
               Export Format
             </label>
             <div className="grid grid-cols-2 gap-3">
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setFormat('csv')}
                 className={`p-3 rounded-xl border text-left cursor-pointer transition-all ${
                   format === 'csv'
                     ? 'border-[#0267B8] bg-[#EBF2FA] text-[#012A5E] font-bold'
                     : 'border-[#DCE2EB] hover:bg-[#F4F6FA] text-[#4F5B70]'
-                }`}
+                }`)}
               >
                 <div className="font-bold">CSV (.csv)</div>
                 <div className="text-[11px] text-[#64748B]">
                   Standard spreadsheet
                 </div>
-              </button>
+              </Button>
 
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setFormat('json')}
                 className={`p-3 rounded-xl border text-left cursor-pointer transition-all ${
                   format === 'json'
                     ? 'border-[#0267B8] bg-[#EBF2FA] text-[#012A5E] font-bold'
                     : 'border-[#DCE2EB] hover:bg-[#F4F6FA] text-[#4F5B70]'
-                }`}
+                }`)}
               >
                 <div className="font-bold">JSON (.json)</div>
                 <div className="text-[11px] text-[#64748B]">
                   Developer & API export
                 </div>
-              </button>
+              </Button>
             </div>
           </div>
         </div>

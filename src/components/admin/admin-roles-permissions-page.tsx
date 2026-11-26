@@ -435,13 +435,13 @@ export function AdminRolesPermissionsPage({
                   <Check className="size-5 text-emerald-600 shrink-0" />
                   <span>{savedNotification}</span>
                 </div>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setSavedNotification(null)}
                   className="text-emerald-700 hover:text-emerald-950 font-bold px-2 py-0.5 rounded cursor-pointer"
                 >
                   ✕
-                </button>
+                </Button>
               </div>
             )}
 
@@ -547,7 +547,7 @@ export function AdminRolesPermissionsPage({
                   const Icon = getRoleIcon(role.iconName)
 
                   return (
-                    <button
+                    <Button variant="plain"
                       key={role.id}
                       type="button"
                       onClick={() => setSelectedRole(role.id)}
@@ -557,7 +557,7 @@ export function AdminRolesPermissionsPage({
                         isSelected
                           ? 'bg-linear-to-br from-[#F2F7FD] to-white border-[#001A3D] shadow-md ring-1 ring-[#001A3D]/20'
                           : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-xs shadow-2xs',
-                      )}
+                      ))}
                     >
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
@@ -592,7 +592,7 @@ export function AdminRolesPermissionsPage({
                           {role.tag}
                         </span>
                       </div>
-                    </button>
+                    </Button>
                   )
                 })}
               </div>

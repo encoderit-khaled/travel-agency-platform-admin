@@ -433,7 +433,7 @@ export function CreditRequestsPage({
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto space-y-6">
           {/* Back button */}
           <div>
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => {
                 if (activeTab === 'new') {
@@ -446,7 +446,7 @@ export function CreditRequestsPage({
             >
               <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-1" />
               <span>Back to Credit</span>
-            </button>
+            </Button>
           </div>
 
           {/* Page Title & Header */}
@@ -488,7 +488,7 @@ export function CreditRequestsPage({
 
           {/* Tabs Navigation */}
           <div className="flex items-center gap-2 border-b border-[#DCE2EB]">
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('history')}
               className={cn(
@@ -496,7 +496,7 @@ export function CreditRequestsPage({
                 activeTab === 'history'
                   ? 'text-[#001A3D]'
                   : 'text-[#5A6E85] hover:text-[#001A3D]',
-              )}
+              ))}
             >
               <FileText className="size-4" />
               <span>Request History</span>
@@ -506,9 +506,9 @@ export function CreditRequestsPage({
               {activeTab === 'history' && (
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#001A3D] rounded-t-full" />
               )}
-            </button>
+            </Button>
 
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('new')}
               className={cn(
@@ -516,14 +516,14 @@ export function CreditRequestsPage({
                 activeTab === 'new'
                   ? 'text-[#001A3D]'
                   : 'text-[#5A6E85] hover:text-[#001A3D]',
-              )}
+              ))}
             >
               <Plus className="size-4 stroke-[2.5]" />
               <span>New Request</span>
               {activeTab === 'new' && (
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#001A3D] rounded-t-full" />
               )}
-            </button>
+            </Button>
           </div>
 
           {/* ======================================================== */}
@@ -910,7 +910,7 @@ export function CreditRequestsPage({
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                       {/* Option 1: Credit-limit increase */}
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() =>
                           setNewRequestType('Credit-limit increase')
@@ -920,7 +920,7 @@ export function CreditRequestsPage({
                           newRequestType === 'Credit-limit increase'
                             ? 'border-[#0267B8] bg-[#F0F7FF] ring-2 ring-[#0267B8]/20 shadow-xs'
                             : 'border-[#DCE2EB] bg-white hover:bg-[#F8FAFC]',
-                        )}
+                        ))}
                       >
                         <div
                           className={cn(
@@ -942,10 +942,10 @@ export function CreditRequestsPage({
                             Request a higher credit limit for the agency
                           </span>
                         </div>
-                      </button>
+                      </Button>
 
                       {/* Option 2: Credit top-up */}
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setNewRequestType('Credit top-up')}
                         className={cn(
@@ -953,7 +953,7 @@ export function CreditRequestsPage({
                           newRequestType === 'Credit top-up'
                             ? 'border-[#0267B8] bg-[#F0F7FF] ring-2 ring-[#0267B8]/20 shadow-xs'
                             : 'border-[#DCE2EB] bg-white hover:bg-[#F8FAFC]',
-                        )}
+                        ))}
                       >
                         <div
                           className={cn(
@@ -975,7 +975,7 @@ export function CreditRequestsPage({
                             Request immediate wallet/credit replenishment
                           </span>
                         </div>
-                      </button>
+                      </Button>
                     </div>
 
                     <p className="text-[11px] text-[#5A6E85] pt-1">

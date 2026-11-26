@@ -167,7 +167,7 @@ export function AgentApplicationsTable({
       columnHelper.accessor('reference', {
         header: ({ column }) => (
           <Button
-            variant="ghost"
+            variant="plain"
             size="xs"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
             className="-ml-2 h-7 font-bold text-[#4F5B70] hover:text-[#012A5E] uppercase tracking-wider text-[11px]"
@@ -202,7 +202,7 @@ export function AgentApplicationsTable({
       columnHelper.accessor('businessName', {
         header: ({ column }) => (
           <Button
-            variant="ghost"
+            variant="plain"
             size="xs"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
             className="-ml-2 h-7 font-bold text-[#4F5B70] hover:text-[#012A5E] uppercase tracking-wider text-[11px]"
@@ -295,7 +295,7 @@ export function AgentApplicationsTable({
       columnHelper.accessor('submittedDate', {
         header: ({ column }) => (
           <Button
-            variant="ghost"
+            variant="plain"
             size="xs"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
             className="-ml-2 h-7 font-bold text-[#4F5B70] hover:text-[#012A5E] uppercase tracking-wider text-[11px]"
@@ -446,7 +446,7 @@ export function AgentApplicationsTable({
     <div className="bg-white rounded-2xl border border-[#DCE2EB] shadow-xs overflow-hidden flex flex-col">
       {/* 1. Tabs Row (Pending Review vs All Applications) */}
       <div className="border-b border-[#E6EAF0] px-4 pt-2 flex items-center gap-1 bg-[#FCFCFD]">
-        <button
+        <Button variant="plain"
           type="button"
           onClick={() => {
             onTabChange('pending')
@@ -456,7 +456,7 @@ export function AgentApplicationsTable({
             activeTab === 'pending'
               ? 'border-[#F1C134] text-[#012A5E]'
               : 'border-transparent text-[#4F5B70] hover:text-[#012A5E]'
-          }`}
+          }`)}
         >
           <span>Pending Review</span>
           <span
@@ -468,9 +468,9 @@ export function AgentApplicationsTable({
           >
             {pendingCount}
           </span>
-        </button>
+        </Button>
 
-        <button
+        <Button variant="plain"
           type="button"
           onClick={() => {
             onTabChange('all')
@@ -480,7 +480,7 @@ export function AgentApplicationsTable({
             activeTab === 'all'
               ? 'border-[#F1C134] text-[#012A5E]'
               : 'border-transparent text-[#4F5B70] hover:text-[#012A5E]'
-          }`}
+          }`)}
         >
           <span>All Applications</span>
           <span
@@ -492,7 +492,7 @@ export function AgentApplicationsTable({
           >
             {allCount}
           </span>
-        </button>
+        </Button>
       </div>
 
       {/* 2. TanStack Table Search & Filters Bar matching Figma #645:427 */}
@@ -509,14 +509,14 @@ export function AgentApplicationsTable({
               className="h-11 pl-10 pr-9 rounded-xl border-[#CFD7E3] bg-white text-sm placeholder:text-[#7B7B7B] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
             />
             {globalFilter && (
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setGlobalFilter('')}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-[#7B7B7B] hover:text-[#141C2E] p-0.5 rounded-full cursor-pointer"
                 aria-label="Clear search"
               >
                 <X className="size-4" />
-              </button>
+              </Button>
             )}
           </div>
         </div>

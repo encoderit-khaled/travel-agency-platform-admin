@@ -460,7 +460,7 @@ export function WalletLedgerPage({
           <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto space-y-6">
             {/* Top Navigation Row: Back Link */}
             <div>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => {
                   window.location.href = '/agent'
@@ -469,7 +469,7 @@ export function WalletLedgerPage({
               >
                 <ArrowLeft className="size-4" />
                 <span>Back to Wallet</span>
-              </button>
+              </Button>
             </div>
 
             {/* Page Title & Actions */}
@@ -662,13 +662,13 @@ export function WalletLedgerPage({
                     className="pl-10 pr-10 h-11 rounded-xl bg-white border-[#DCE2EB] text-sm focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                   />
                   {searchQuery && (
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setSearchQuery('')}
                       className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#718096] hover:text-[#001A3D]"
                     >
                       <X className="size-4" />
-                    </button>
+                    </Button>
                   )}
                 </div>
 
@@ -808,7 +808,7 @@ export function WalletLedgerPage({
                   <div className="flex justify-end pt-1">
                     <Button
                       type="button"
-                      variant="ghost"
+                      variant="plain"
                       size="sm"
                       onClick={clearFilters}
                       className="text-xs text-[#DC2626] hover:bg-red-50 hover:text-red-700 h-8 gap-1.5 cursor-pointer"

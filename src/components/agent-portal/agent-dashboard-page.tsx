@@ -233,7 +233,7 @@ export function AgentDashboardPage({
                     const Icon = service.icon
                     const isSelected = selectedService === service.id
                     return (
-                      <button
+                      <Button variant="plain"
                         key={service.id}
                         type="button"
                         onClick={() => handleServiceSelect(service.id)}
@@ -242,7 +242,7 @@ export function AgentDashboardPage({
                           isSelected
                             ? 'bg-white/16 border-[#F1C134] ring-2 ring-[#F1C134]/30 shadow-md scale-[1.02]'
                             : 'bg-white/6 hover:bg-white/12 border-white/16 text-white',
-                        )}
+                        ))}
                       >
                         <div
                           className={cn(
@@ -262,7 +262,7 @@ export function AgentDashboardPage({
                         >
                           {service.label}
                         </span>
-                      </button>
+                      </Button>
                     )
                   })}
                 </div>
@@ -319,13 +319,13 @@ export function AgentDashboardPage({
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F1F5F9]">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => setTopUpModalOpen(true)}
                     className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                   >
                     View Wallet <ChevronRight className="size-3.5" />
-                  </button>
+                  </Button>
                 </div>
               </Card>
 
@@ -350,13 +350,13 @@ export function AgentDashboardPage({
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F1F5F9]">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => setCreditModalOpen(true)}
                     className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                   >
                     View Credit <ChevronRight className="size-3.5" />
-                  </button>
+                  </Button>
                 </div>
               </Card>
 
@@ -526,13 +526,13 @@ export function AgentDashboardPage({
 
                 <div className="p-4 pt-0">
                   <div className="pt-3 border-t border-[#F1F5F9]">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={handleStartBooking}
                       className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                     >
                       View All Bookings <ChevronRight className="size-3.5" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </Card>
@@ -658,7 +658,7 @@ export function AgentDashboardPage({
                       </Button>
                       <Button
                         type="button"
-                        variant="ghost"
+                        variant="plain"
                         size="sm"
                         onClick={() => setTopUpModalOpen(true)}
                         className="h-8 rounded-lg text-xs font-bold text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]"
@@ -671,13 +671,13 @@ export function AgentDashboardPage({
 
                 <div className="p-4 pt-0">
                   <div className="pt-3 border-t border-[#F1F5F9]">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setTopUpModalOpen(true)}
                       className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                     >
                       View Wallet <ChevronRight className="size-3.5" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </Card>
@@ -755,13 +755,13 @@ export function AgentDashboardPage({
 
                 <div className="p-4 pt-0">
                   <div className="pt-3 border-t border-[#F1F5F9]">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setCreditModalOpen(true)}
                       className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                     >
                       View Credit <ChevronRight className="size-3.5" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </Card>
@@ -978,13 +978,13 @@ export function AgentDashboardPage({
 
                 <div className="p-4 pt-0">
                   <div className="pt-3 border-t border-[#F1F5F9]">
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={() => setSubAgentModalOpen(true)}
                       className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] flex items-center gap-1 transition-colors"
                     >
                       View Sub-agents <ChevronRight className="size-3.5" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </Card>
@@ -1092,7 +1092,7 @@ export function AgentDashboardPage({
                   {/* Body 5 Report Cards #660:5757 */}
                   <div className="p-6">
                     <div className="grid grid-cols-2 gap-2.5">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         className="flex items-center gap-2.5 p-2.5 rounded-xl border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-left transition-colors cursor-pointer group"
                       >
@@ -1107,9 +1107,9 @@ export function AgentDashboardPage({
                             Report
                           </span>
                         </div>
-                      </button>
+                      </Button>
 
-                      <button
+                      <Button variant="plain"
                         type="button"
                         className="flex items-center gap-2.5 p-2.5 rounded-xl border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-left transition-colors cursor-pointer group"
                       >
@@ -1124,9 +1124,9 @@ export function AgentDashboardPage({
                             Report
                           </span>
                         </div>
-                      </button>
+                      </Button>
 
-                      <button
+                      <Button variant="plain"
                         type="button"
                         className="flex items-center gap-2.5 p-2.5 rounded-xl border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-left transition-colors cursor-pointer group"
                       >
@@ -1141,9 +1141,9 @@ export function AgentDashboardPage({
                             Report
                           </span>
                         </div>
-                      </button>
+                      </Button>
 
-                      <button
+                      <Button variant="plain"
                         type="button"
                         className="flex items-center gap-2.5 p-2.5 rounded-xl border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-left transition-colors cursor-pointer group"
                       >
@@ -1158,9 +1158,9 @@ export function AgentDashboardPage({
                             Report
                           </span>
                         </div>
-                      </button>
+                      </Button>
 
-                      <button
+                      <Button variant="plain"
                         type="button"
                         className="col-span-2 flex items-center gap-2.5 p-2.5 rounded-xl border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-left transition-colors cursor-pointer group"
                       >
@@ -1175,7 +1175,7 @@ export function AgentDashboardPage({
                             Detailed hierarchy analysis
                           </span>
                         </div>
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -1226,7 +1226,7 @@ export function AgentDashboardPage({
           <div className="min-w-0 space-y-4">
             <div className="flex min-w-0 gap-2 overflow-x-auto pb-1">
               {travelServices.map((s) => (
-                <button
+                <Button variant="plain"
                   key={s.id}
                   type="button"
                   onClick={() => setSelectedService(s.id)}
@@ -1235,10 +1235,10 @@ export function AgentDashboardPage({
                     selectedService === s.id
                       ? 'border-[#012A5E] bg-[#012A5E] text-white'
                       : 'border-[#DCE2EB] bg-[#F4F6FA] text-[#4F5B70] hover:bg-white',
-                  )}
+                  ))}
                 >
                   {s.label}
-                </button>
+                </Button>
               ))}
             </div>
 
@@ -1348,13 +1348,13 @@ export function AgentDashboardPage({
 
             <div className="flex gap-2">
               {['$1,000', '$2,500', '$5,000', '$10,000'].map((preset) => (
-                <button
+                <Button variant="plain"
                   key={preset}
                   type="button"
                   className="flex-1 py-1 rounded-lg border border-[#DCE2EB] bg-[#F4F6FA] hover:bg-[#EBF3FC] text-xs font-bold text-[#012A5E]"
                 >
                   {preset}
-                </button>
+                </Button>
               ))}
             </div>
 

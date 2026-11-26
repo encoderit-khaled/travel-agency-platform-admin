@@ -350,13 +350,13 @@ export function LanguagesPage({
                               </div>
 
                               {/* Discard new row link */}
-                              <button
+                              <Button variant="plain"
                                 type="button"
                                 onClick={() => handleDiscardRow(row.id)}
                                 className="text-sm font-semibold text-[#0052CC] hover:underline cursor-pointer shrink-0"
                               >
                                 Discard new row
-                              </button>
+                              </Button>
                             </div>
                           </div>
                         ))}
@@ -364,14 +364,14 @@ export function LanguagesPage({
 
                       {/* + Add Language button */}
                       <div>
-                        <button
+                        <Button variant="plain"
                           type="button"
                           onClick={handleAddNewRow}
                           className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-dashed border-[#CBD5E1] hover:border-[#94A3B8] bg-white hover:bg-slate-50 text-sm font-semibold text-[#001A3D] cursor-pointer transition-all shadow-2xs"
                         >
                           <Plus className="size-4 text-[#0052CC]" />
                           <span>Add Language</span>
-                        </button>
+                        </Button>
                       </div>
 
                       {/* Divider */}
@@ -433,14 +433,14 @@ export function LanguagesPage({
                               </span>
                             </div>
 
-                            <button
+                            <Button variant="plain"
                               type="button"
                               onClick={() => handleDeleteConfigured(lang.id)}
                               title={`Remove ${lang.name}`}
                               className="size-8 rounded-lg flex items-center justify-center text-[#94A3B8] hover:text-rose-600 hover:bg-rose-50 transition-colors cursor-pointer"
                             >
                               <Trash2 className="size-4" />
-                            </button>
+                            </Button>
                           </div>
                         ))}
                       </div>

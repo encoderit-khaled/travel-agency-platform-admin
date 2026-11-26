@@ -36,6 +36,7 @@ import {
   useSidebar,
 } from '#/components/ui/sidebar'
 import { cn } from 'cn'
+import { Button } from '#/components/ui/button'
 
 export interface AdminSidebarProps {
   currentTab?: string
@@ -393,7 +394,7 @@ function AdminSidebarFooterToggle() {
       <p className="text-[11px] text-[#8C9BAE] font-medium leading-relaxed group-data-[collapsible=icon]:hidden">
         M15 · Admin Panel Core
       </p>
-      <button
+      <Button variant="plain"
         type="button"
         onClick={toggleSidebar}
         title={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
@@ -404,7 +405,7 @@ function AdminSidebarFooterToggle() {
         ) : (
           <PanelLeftClose className="size-5" />
         )}
-      </button>
+      </Button>
     </div>
   )
 }

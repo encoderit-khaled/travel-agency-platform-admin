@@ -155,44 +155,44 @@ export function SubAgentPermissionsModal({
 
                 {/* Status selector pills */}
                 <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#DCE2EB] shrink-0 self-start sm:self-center">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => handleSetStatus(item.id, 'allowed')}
                     className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
                       currentStatus === 'allowed'
                         ? 'bg-[#E6F4EC] text-[#0E7A3E] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`}
+                    }`)}
                   >
                     <Check className="size-3" />
                     <span>Allowed</span>
-                  </button>
+                  </Button>
 
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => handleSetStatus(item.id, 'view_only')}
                     className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
                       currentStatus === 'view_only'
                         ? 'bg-[#EAF4FD] text-[#0267B8] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`}
+                    }`)}
                   >
                     <Eye className="size-3" />
                     <span>View only</span>
-                  </button>
+                  </Button>
 
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => handleSetStatus(item.id, 'not_allowed')}
                     className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
                       currentStatus === 'not_allowed'
                         ? 'bg-[#EEF1F5] text-[#4F5B70] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`}
+                    }`)}
                   >
                     <Ban className="size-3" />
                     <span>Not allowed</span>
-                  </button>
+                  </Button>
                 </div>
               </div>
             )

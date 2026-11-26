@@ -447,7 +447,7 @@ export function CurrenciesExchangeRatesPage({
 
         {showSuccess && (
           <div className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center">
-            <button
+            <Button variant="plain"
               type="button"
               role="status"
               aria-live="polite"
@@ -458,7 +458,7 @@ export function CurrenciesExchangeRatesPage({
                 <Check className="size-8 stroke-3" />
               </span>
               <span className="text-sm font-bold">Currency settings updated</span>
-            </button>
+            </Button>
           </div>
         )}
       </div>
@@ -626,7 +626,7 @@ function ExchangeRatesPanel({
                     className="h-10 rounded-xl border-[#DCE2EB] bg-white font-semibold text-[#001A3D]"
                   />
                 </div>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     onChangeDrafts((current) =>
@@ -638,7 +638,7 @@ function ExchangeRatesPanel({
                   className="pb-2.5 text-sm font-semibold text-[#0052CC] hover:underline"
                 >
                   Discard new row
-                </button>
+                </Button>
               </div>
             ))}
             <Button
@@ -767,7 +767,7 @@ function DisplayCurrenciesPanel({
                       className="h-11 rounded-xl border-[#D5DEE8] bg-white pl-10 text-sm uppercase"
                     />
                   </div>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() =>
                       onChangeDrafts((current) =>
@@ -779,7 +779,7 @@ function DisplayCurrenciesPanel({
                     className="shrink-0 cursor-pointer text-sm font-semibold text-[#0052CC] hover:underline"
                   >
                     Discard new row
-                  </button>
+                  </Button>
                 </div>
               </div>
             ))}

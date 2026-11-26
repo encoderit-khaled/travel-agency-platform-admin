@@ -417,14 +417,14 @@ export function AgentBookingHistoryPage({
             <CheckCircle2 className="size-3.5 text-[#0B6A45]" />
             {booking.documentStatus}
           </span>
-          <button
+          <Button variant="plain"
             type="button"
             onClick={() => setPreviewDocument(booking)}
             className="text-xs font-bold text-[#0267B8] hover:text-[#012A5E] hover:underline inline-flex items-center gap-1 cursor-pointer transition-colors"
           >
             {buttonText}
             <ArrowRight className="size-3" />
-          </button>
+          </Button>
         </div>
       )
     }
@@ -445,13 +445,13 @@ export function AgentBookingHistoryPage({
         cell: ({ row }) => {
           const booking = row.original
           return (
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setSelectedBooking(booking)}
               className="text-[#0267B8] hover:text-[#012A5E] hover:underline cursor-pointer transition-colors"
             >
               {booking.ref}
-            </button>
+            </Button>
           )
         },
         meta: {
@@ -718,7 +718,7 @@ export function AgentBookingHistoryPage({
                   <p className="text-xs text-[#64748B] font-medium leading-tight">
                     Created by Skyline Demo Travels Ltd
                   </p>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation()
@@ -728,7 +728,7 @@ export function AgentBookingHistoryPage({
                   >
                     Show these
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -756,7 +756,7 @@ export function AgentBookingHistoryPage({
                   <p className="text-xs text-[#64748B] font-medium leading-tight">
                     Mirpur, Banani and Uttara Desk
                   </p>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation()
@@ -766,7 +766,7 @@ export function AgentBookingHistoryPage({
                   >
                     Show these
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -858,14 +858,14 @@ export function AgentBookingHistoryPage({
 
               {/* Status Filter Chips Row */}
               <div className="px-5 pt-4 pb-2 border-b border-[#F1F3F6] flex flex-wrap items-center gap-2">
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setStatusChipFilter(null)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
                     statusChipFilter === null
                       ? 'bg-[#012A5E] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   All
                   <span
@@ -877,9 +877,9 @@ export function AgentBookingHistoryPage({
                   >
                     {totalBookingsCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -890,7 +890,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'pending'
                       ? 'bg-[#9A6400] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Pending
                   <span
@@ -902,9 +902,9 @@ export function AgentBookingHistoryPage({
                   >
                     {pendingCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -915,7 +915,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'confirmed'
                       ? 'bg-[#0B6A45] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Confirmed
                   <span
@@ -927,9 +927,9 @@ export function AgentBookingHistoryPage({
                   >
                     {confirmedCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -942,7 +942,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'ticketed_issued'
                       ? 'bg-[#0267B8] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Ticketed / Issued
                   <span
@@ -954,9 +954,9 @@ export function AgentBookingHistoryPage({
                   >
                     {ticketedIssuedCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -967,7 +967,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'cancelled'
                       ? 'bg-[#475569] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Cancelled
                   <span
@@ -979,9 +979,9 @@ export function AgentBookingHistoryPage({
                   >
                     {cancelledCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -992,7 +992,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'refunded'
                       ? 'bg-[#475569] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Refunded
                   <span
@@ -1004,9 +1004,9 @@ export function AgentBookingHistoryPage({
                   >
                     {refundedCount}
                   </span>
-                </button>
+                </Button>
 
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() =>
                     setStatusChipFilter(
@@ -1017,7 +1017,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'failed'
                       ? 'bg-[#DC2626] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`}
+                  }`)}
                 >
                   Failed
                   <span
@@ -1029,7 +1029,7 @@ export function AgentBookingHistoryPage({
                   >
                     {failedCount}
                   </span>
-                </button>
+                </Button>
               </div>
 
               {/* Filters & Search Toolbar */}
@@ -1045,13 +1045,13 @@ export function AgentBookingHistoryPage({
                       className="pl-10 pr-9 h-10 rounded-xl bg-white border-[#DCE2EB] text-sm text-[#012A5E] placeholder:text-[#94A3B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                     />
                     {searchQuery && (
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setSearchQuery('')}
                         className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 cursor-pointer"
                       >
                         <X className="size-4" />
-                      </button>
+                      </Button>
                     )}
                   </div>
 
@@ -1279,7 +1279,7 @@ export function AgentBookingHistoryPage({
                     {hasActiveFilters && (
                       <div className="flex flex-col justify-end">
                         <Button
-                          variant="ghost"
+                          variant="plain"
                           size="sm"
                           onClick={resetFilters}
                           className="h-10 px-3 text-xs font-bold text-[#DC2626] hover:bg-rose-50 hover:text-[#B91C1C] cursor-pointer"
@@ -1763,14 +1763,14 @@ export function AgentBookingHistoryPage({
                   { name: 'Package', icon: Package },
                   { name: 'Activity', icon: Compass },
                 ].map((s) => (
-                  <button
+                  <Button variant="plain"
                     key={s.name}
                     type="button"
                     className="p-3 rounded-xl border border-[#DCE2EB] hover:border-[#0267B8] hover:bg-blue-50/30 flex flex-col items-center gap-1.5 text-xs font-bold text-[#012A5E] cursor-pointer transition-colors"
                   >
                     <s.icon className="size-5 text-[#0267B8]" />
                     {s.name}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>

@@ -216,14 +216,14 @@ export function SubAgentsTable({
                   Not configured
                 </span>
               )}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => onViewPermissions(sa)}
                 className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
               >
                 <span>View Permissions</span>
                 <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -251,14 +251,14 @@ export function SubAgentsTable({
                   Not configured
                 </span>
               )}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => onViewMarkup(sa)}
                 className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
               >
                 <span>View Markup</span>
                 <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -280,14 +280,14 @@ export function SubAgentsTable({
                   ? 'No bookings'
                   : `${sa.bookingsCount} ${sa.bookingsCount === 1 ? 'booking' : 'bookings'}`}
               </span>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => onViewBookings(sa)}
                 className="group flex items-center gap-1 text-xs font-bold text-[#0267B8] hover:text-[#012A5E] mt-0.5 cursor-pointer"
               >
                 <span>View Bookings</span>
                 <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </Button>
             </div>
           )
         },
@@ -433,14 +433,14 @@ export function SubAgentsTable({
             className="h-11 pl-9 pr-8 rounded-xl bg-white border-[#DCE2EB] text-xs sm:text-sm text-[#012A5E] placeholder:text-[#7B7B7B] focus-visible:ring-1 focus-visible:ring-[#0267B8]/20 focus-visible:border-[#0267B8]"
           />
           {searchQuery && (
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => onSearchChange('')}
               className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded text-[#7B7B7B] hover:text-[#012A5E]"
               aria-label="Clear search"
             >
               <X className="size-3.5" />
-            </button>
+            </Button>
           )}
         </div>
 

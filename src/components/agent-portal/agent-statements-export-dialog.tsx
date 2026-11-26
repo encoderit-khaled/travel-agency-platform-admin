@@ -214,30 +214,30 @@ export function AgentStatementsExportDialog({
 
               {/* Format selection switch */}
               <div className="flex items-center p-1 bg-[#F1F5F9] rounded-xl border border-[#E2E8F0]">
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setFormat('pdf')}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                     format === 'pdf'
                       ? 'bg-white text-[#012A5E] shadow-xs'
                       : 'text-[#64748B] hover:text-[#012A5E]'
-                  }`}
+                  }`)}
                 >
                   <FileText className="size-3.5" />
                   <span>Download PDF</span>
-                </button>
-                <button
+                </Button>
+                <Button variant="plain"
                   type="button"
                   onClick={() => setFormat('csv')}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                     format === 'csv'
                       ? 'bg-white text-[#012A5E] shadow-xs'
                       : 'text-[#64748B] hover:text-[#012A5E]'
-                  }`}
+                  }`)}
                 >
                   <FileSpreadsheet className="size-3.5" />
                   <span>Download CSV</span>
-                </button>
+                </Button>
               </div>
             </div>
 
@@ -339,7 +339,7 @@ export function AgentStatementsExportDialog({
                   <span className="font-semibold text-[#64748B]">
                     Document Format: Official Letterhead (A4 Printable)
                   </span>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => setShowPreview(!showPreview)}
                     className="flex items-center gap-1 text-[#0267B8] font-bold hover:underline"
@@ -348,7 +348,7 @@ export function AgentStatementsExportDialog({
                     <span>
                       {showPreview ? 'Hide Preview' : 'Preview Paper Document'}
                     </span>
-                  </button>
+                  </Button>
                 </div>
 
                 {showPreview ? (

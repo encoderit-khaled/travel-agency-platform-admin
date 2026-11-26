@@ -342,13 +342,13 @@ export function PricingMarkupPage({
           const rule = row.original
           return (
             <>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => handleViewDetails(rule)}
                 className="font-bold text-[#0267B8] hover:underline text-left block"
               >
                 {rule.name}
-              </button>
+              </Button>
               <span className="text-[10px] font-semibold text-[#0267B8] bg-[#EBF3FC] border border-[#BFDBFE] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
                 <Lock className="size-2.5" />
                 Admin
@@ -474,13 +474,13 @@ export function PricingMarkupPage({
           const rule = row.original
           return (
             <>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => handleViewDetails(rule)}
                 className="font-bold text-[#0267B8] hover:underline text-left block"
               >
                 {rule.name}
-              </button>
+              </Button>
               <span className="text-[10px] font-semibold text-[#B45309] bg-[#FEF3C7] border border-[#FDE68A] rounded px-1.5 py-0.2 mt-0.5 inline-flex items-center gap-1">
                 <Tag className="size-2.5" />
                 Agent
@@ -576,7 +576,7 @@ export function PricingMarkupPage({
             <div className="flex items-center justify-end gap-1.5">
               <Button
                 type="button"
-                variant="ghost"
+                variant="plain"
                 size="sm"
                 onClick={() => handleOpenEditRule(rule)}
                 className="h-8 px-2 text-xs font-semibold text-[#001A3D] hover:bg-[#F1F3F7]"
@@ -588,7 +588,7 @@ export function PricingMarkupPage({
               {rule.status === 'active' ? (
                 <Button
                   type="button"
-                  variant="ghost"
+                  variant="plain"
                   size="sm"
                   onClick={() => handlePromptDisable(rule)}
                   className="h-8 px-2 text-xs font-semibold text-[#B45309] hover:bg-amber-50"
@@ -599,7 +599,7 @@ export function PricingMarkupPage({
               ) : (
                 <Button
                   type="button"
-                  variant="ghost"
+                  variant="plain"
                   size="sm"
                   onClick={() => handleToggleEnable(rule)}
                   className="h-8 px-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-50"
@@ -611,7 +611,7 @@ export function PricingMarkupPage({
 
               <Button
                 type="button"
-                variant="ghost"
+                variant="plain"
                 size="sm"
                 onClick={() => handlePromptRemove(rule)}
                 className="h-8 px-2 text-xs font-semibold text-[#D92D20] hover:bg-red-50"
@@ -892,7 +892,7 @@ export function PricingMarkupPage({
                 serviceFilter !== 'all' ||
                 typeFilter !== 'all' ||
                 statusFilter !== 'all') && (
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => {
                     setSearchQuery('')
@@ -904,7 +904,7 @@ export function PricingMarkupPage({
                   className="text-xs font-semibold text-[#0267B8] hover:underline cursor-pointer"
                 >
                   Reset filters
-                </button>
+                </Button>
               )}
             </div>
           </div>
@@ -1057,7 +1057,7 @@ export function PricingMarkupPage({
                 const isConfiguredInactive = module.status === 'inactive'
 
                 return (
-                  <button
+                  <Button variant="plain"
                     key={module.id}
                     type="button"
                     onClick={() => handleOpenPreviewForService(module.name)}
@@ -1093,7 +1093,7 @@ export function PricingMarkupPage({
                         {module.subtext}
                       </p>
                     </div>
-                  </button>
+                  </Button>
                 )
               })}
             </div>

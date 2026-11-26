@@ -15,6 +15,7 @@ import type {
   SubAgentFilterStatus,
   SubAgentFilterBooking,
 } from './types'
+import { Button } from '#/components/ui/button'
 
 interface SubAgentsKPICardsProps {
   subAgents: SubAgent[]
@@ -103,14 +104,14 @@ export function SubAgentsKPICards({
         </div>
 
         <div className="pt-3 border-t border-[#F1F3F6] mt-3">
-          <button
+          <Button variant="plain"
             type="button"
             onClick={onViewAllBookings}
             className="group flex items-center gap-1.5 text-xs sm:text-[13px] font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer"
           >
             <span>View Sub-agent Bookings</span>
             <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-          </button>
+          </Button>
         </div>
       </article>
 
@@ -147,14 +148,14 @@ export function SubAgentsKPICards({
         </div>
 
         <div className="pt-3 border-t border-[#F1F3F6] mt-3">
-          <button
+          <Button variant="plain"
             type="button"
             onClick={() => onFilterStatusChange('markup_needed')}
             className="group flex items-center gap-1.5 text-xs sm:text-[13px] font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer"
           >
             <span>Show not configured</span>
             <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-          </button>
+          </Button>
         </div>
       </article>
 
@@ -191,14 +192,14 @@ export function SubAgentsKPICards({
         </div>
 
         <div className="pt-3 border-t border-[#F1F3F6] mt-3">
-          <button
+          <Button variant="plain"
             type="button"
             onClick={() => onFilterStatusChange('permissions_needed')}
             className="group flex items-center gap-1.5 text-xs sm:text-[13px] font-extrabold text-[#0267B8] hover:text-[#012A5E] transition-colors cursor-pointer"
           >
             <span>Show needs configuration</span>
             <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-          </button>
+          </Button>
         </div>
       </article>
       </div>

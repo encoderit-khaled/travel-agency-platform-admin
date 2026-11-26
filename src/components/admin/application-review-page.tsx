@@ -145,14 +145,14 @@ export function ApplicationReviewPage({
           <main className="flex-1 px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-5 max-w-[1664px] w-full mx-auto">
             {/* Back Navigation Button matching Figma button#dt-back */}
             <div className="flex items-center justify-between">
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={onBack}
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#005CE8] hover:text-[#0047B3] transition-colors cursor-pointer group"
               >
                 <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-0.5" />
                 <span>Back to applications</span>
-              </button>
+              </Button>
 
               {/* Quick action to trigger Approve modal directly if pending */}
               {application.status === 'pending' && (
@@ -175,13 +175,13 @@ export function ApplicationReviewPage({
                   <CheckCircle2 className="size-4 shrink-0 text-[#2E7D32]" />
                   <span>{bannerAlert}</span>
                 </div>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setBannerAlert(null)}
                   className="text-[#1B5E20] hover:text-black text-xs font-bold px-1.5 py-0.5 cursor-pointer"
                 >
                   Dismiss
-                </button>
+                </Button>
               </div>
             )}
 
@@ -414,7 +414,7 @@ export function ApplicationReviewPage({
                         <span className="text-sm font-medium text-[#0F172A]">
                           {application.email}
                         </span>
-                        <button
+                        <Button variant="plain"
                           type="button"
                           onClick={() =>
                             copyToClipboard(application.email, 'email')
@@ -433,7 +433,7 @@ export function ApplicationReviewPage({
                               <span>Copy</span>
                             </>
                           )}
-                        </button>
+                        </Button>
                       </dd>
                     </div>
 
@@ -449,7 +449,7 @@ export function ApplicationReviewPage({
                         <span className="text-sm font-medium text-[#0F172A]">
                           {application.phone || '+880 1555 030405'}
                         </span>
-                        <button
+                        <Button variant="plain"
                           type="button"
                           onClick={() =>
                             copyToClipboard(
@@ -471,7 +471,7 @@ export function ApplicationReviewPage({
                               <span>Copy</span>
                             </>
                           )}
-                        </button>
+                        </Button>
                       </dd>
                     </div>
                   </dl>

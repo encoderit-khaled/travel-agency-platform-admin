@@ -215,33 +215,33 @@ export function AddEditMarkupRulePage({
             <div className="flex flex-col gap-5">
               {/* Back button */}
               <div className="flex items-center justify-between">
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={handleBack}
                   className="group inline-flex items-center gap-2 text-sm font-bold text-[#0267B8] hover:text-[#012A5E] transition-colors rounded-lg py-1 px-1 -ml-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0267B8]"
                 >
                   <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-0.5" />
                   <span>Back to Pricing & Markup</span>
-                </button>
+                </Button>
 
                 <div className="flex items-center gap-2">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={handlePopulateSample}
                     className="text-xs font-semibold text-[#0267B8] bg-white border border-[#DCE2EB] hover:bg-[#F7FAFE] px-2.5 py-1 rounded-lg transition-colors shadow-2xs"
                     title="Fill form with sample data"
                   >
                     Load Sample Data
-                  </button>
+                  </Button>
                   {(ruleName || markupValue || service) && (
-                    <button
+                    <Button variant="plain"
                       type="button"
                       onClick={handleResetForm}
                       className="text-xs font-medium text-[#4F5B70] hover:text-[#B42318] px-2 py-1 transition-colors"
                       title="Clear form to empty state"
                     >
                       Reset
-                    </button>
+                    </Button>
                   )}
                 </div>
               </div>

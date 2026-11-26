@@ -324,13 +324,13 @@ export function AdminReportsSalesPage({
                   <Check className="size-4 text-[#0267B8]" />
                   {exportNotice}
                 </span>
-                <button
+                <Button variant="plain"
                   type="button"
                   onClick={() => setExportNotice(null)}
                   className="text-xs text-[#012A5E]/70 hover:text-[#012A5E] font-bold"
                 >
                   Dismiss
-                </button>
+                </Button>
               </div>
             )}
 
@@ -366,7 +366,7 @@ export function AdminReportsSalesPage({
               {REPORT_TABS.map((tab) => {
                 const isActive = activeTab === tab.id
                 return (
-                  <button
+                  <Button variant="plain"
                     key={tab.id}
                     type="button"
                     onClick={() => setActiveTab(tab.id)}
@@ -375,7 +375,7 @@ export function AdminReportsSalesPage({
                       isActive
                         ? 'text-[#012A5E] font-extrabold'
                         : 'text-[#4F5B70] hover:text-[#012A5E] font-bold hover:bg-[#EEF2F7]/50',
-                    )}
+                    ))}
                   >
                     {tab.id === 'sales' && <TrendingUp className="size-4" />}
                     {tab.id === 'bookings' && (
@@ -389,7 +389,7 @@ export function AdminReportsSalesPage({
                     {isActive && (
                       <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                     )}
-                  </button>
+                  </Button>
                 )
               })}
             </div>

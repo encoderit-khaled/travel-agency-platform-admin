@@ -248,12 +248,12 @@ export function AgentBookingDetailsPage({
                   .
                 </span>
               </div>
-              <button
+              <Button variant="plain"
                 onClick={() => setDownloadSuccessToast(false)}
                 className="text-[#047857] hover:opacity-75 font-semibold"
               >
                 Dismiss
-              </button>
+              </Button>
             </div>
           )}
 

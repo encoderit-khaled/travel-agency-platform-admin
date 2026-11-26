@@ -124,7 +124,7 @@ export function AgentCreditRequestsPage({
         <main className="flex-1 p-6 lg:p-8 max-w-7xl mx-auto w-full space-y-6">
           {/* Top Bar: Back to Credit link */}
           <div>
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => {
                 window.location.href = '/wallet'
@@ -133,7 +133,7 @@ export function AgentCreditRequestsPage({
             >
               <ChevronLeft className="size-4" />
               <span>Back to Credit</span>
-            </button>
+            </Button>
           </div>
 
           {/* Page Heading & Action Button */}
@@ -174,7 +174,7 @@ export function AgentCreditRequestsPage({
           {/* Navigation Tabs */}
           <div className="flex items-center gap-8 border-b border-[#DCE2EB] pt-2">
             {/* Tab 1: Request History */}
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('history')}
               className={cn(
@@ -182,7 +182,7 @@ export function AgentCreditRequestsPage({
                 activeTab === 'history'
                   ? 'text-[#0267B8]'
                   : 'text-[#5A6578] hover:text-[#001A3D]',
-              )}
+              ))}
             >
               <ListOrdered className="size-4" />
               <span>Request History</span>
@@ -199,10 +199,10 @@ export function AgentCreditRequestsPage({
               {activeTab === 'history' && (
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0267B8]" />
               )}
-            </button>
+            </Button>
 
             {/* Tab 2: New Request */}
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setActiveTab('new')}
               className={cn(
@@ -210,14 +210,14 @@ export function AgentCreditRequestsPage({
                 activeTab === 'new'
                   ? 'text-[#0267B8]'
                   : 'text-[#5A6578] hover:text-[#001A3D]',
-              )}
+              ))}
             >
               <Plus className="size-4 stroke-[2.5]" />
               <span>New Request</span>
               {activeTab === 'new' && (
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0267B8]" />
               )}
-            </button>
+            </Button>
           </div>
 
           {/* Tab Panels */}

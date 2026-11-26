@@ -492,7 +492,7 @@ export function AdminReportsPage({
             {/* Report Type Tabs (div.rtw / Report type) */}
             <div className="flex items-center gap-2 border-b border-[#E2E8F0] overflow-x-auto no-scrollbar pt-1">
               {/* Sales Tab */}
-              <button
+              <Button variant="plain"
                 id="tab-sales"
                 type="button"
                 onClick={() => setActiveTab('sales')}
@@ -501,17 +501,17 @@ export function AdminReportsPage({
                   activeTab === 'sales'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                )}
+                ))}
               >
                 <BarChart3 className="size-4.5 shrink-0" />
                 <span>Sales</span>
                 {activeTab === 'sales' && (
                   <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
-              </button>
+              </Button>
 
               {/* Bookings Tab */}
-              <button
+              <Button variant="plain"
                 id="tab-bookings"
                 type="button"
                 onClick={() => setActiveTab('bookings')}
@@ -520,17 +520,17 @@ export function AdminReportsPage({
                   activeTab === 'bookings'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                )}
+                ))}
               >
                 <CalendarDays className="size-4.5 shrink-0" />
                 <span>Bookings</span>
                 {activeTab === 'bookings' && (
                   <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
-              </button>
+              </Button>
 
               {/* Payments Tab */}
-              <button
+              <Button variant="plain"
                 id="tab-payments"
                 type="button"
                 onClick={() => setActiveTab('payments')}
@@ -539,17 +539,17 @@ export function AdminReportsPage({
                   activeTab === 'payments'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                )}
+                ))}
               >
                 <CreditCard className="size-4.5 shrink-0" />
                 <span>Payments</span>
                 {activeTab === 'payments' && (
                   <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
-              </button>
+              </Button>
 
               {/* Commissions Tab (ACTIVE in node 1005-5346) */}
-              <button
+              <Button variant="plain"
                 id="tab-commissions"
                 type="button"
                 onClick={() => setActiveTab('commissions')}
@@ -558,14 +558,14 @@ export function AdminReportsPage({
                   activeTab === 'commissions'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                )}
+                ))}
               >
                 <Percent className="size-4.5 shrink-0 text-[#0265FF]" />
                 <span className="font-bold">Commissions</span>
                 {activeTab === 'commissions' && (
                   <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
-              </button>
+              </Button>
             </div>
 
             {/* Report Filters Card (Report filters) */}
@@ -579,14 +579,14 @@ export function AdminReportsPage({
                   appliedFilters.supplier !== 'all' ||
                   appliedFilters.channel !== 'all' ||
                   tableSearch) && (
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={handleResetFilters}
                     className="text-xs text-[#0265FF] hover:underline flex items-center gap-1 font-medium cursor-pointer"
                   >
                     <RotateCcw className="size-3" />
                     <span>Reset Filters</span>
-                  </button>
+                  </Button>
                 )}
               </div>
 

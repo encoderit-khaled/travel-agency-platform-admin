@@ -323,7 +323,7 @@ export function AdminReportsPage({
           const b = row.original
           return (
             <>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => {
                   setSelectedBooking(b)
@@ -332,7 +332,7 @@ export function AdminReportsPage({
                 className="hover:underline hover:text-[#0267B8] cursor-pointer text-left font-bold"
               >
                 {b.bookingRef}
-              </button>
+              </Button>
               <span className="block text-[10px] text-[#8C9BAE] font-normal font-sans">
                 PNR: {b.pnr}
               </span>
@@ -441,7 +441,7 @@ export function AdminReportsPage({
           return (
             <Button
               type="button"
-              variant="ghost"
+              variant="plain"
               size="sm"
               onClick={() => {
                 setSelectedBooking(b)
@@ -661,7 +661,7 @@ export function AdminReportsPage({
                 {REPORT_TABS.map((tab) => {
                   const isActive = activeTab === tab.id
                   return (
-                    <button
+                    <Button variant="plain"
                       key={tab.id}
                       type="button"
                       onClick={() => setActiveTab(tab.id)}
@@ -670,7 +670,7 @@ export function AdminReportsPage({
                         isActive
                           ? 'text-[#012A5E] bg-white border-t border-x border-[#DCE2EB]'
                           : 'text-[#6B778C] hover:text-[#012A5E] hover:bg-white/50',
-                      )}
+                      ))}
                     >
                       {tab.id === 'sales' && <TrendingUp className="size-4" />}
                       {tab.id === 'bookings' && (
@@ -686,7 +686,7 @@ export function AdminReportsPage({
                       {isActive && (
                         <div className="absolute -bottom-px left-0 right-0 h-0.5 bg-[#012A5E]" />
                       )}
-                    </button>
+                    </Button>
                   )
                 })}
               </div>

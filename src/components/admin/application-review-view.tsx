@@ -84,7 +84,7 @@ export function ApplicationReviewView({
       <div>
         <Button
           type="button"
-          variant="ghost"
+          variant="plain"
           onClick={onBack}
           className="text-[#005CE8] hover:text-[#0047B3] hover:bg-[#EBF3FE] font-bold text-sm px-3 py-2 -ml-2 rounded-xl gap-2 cursor-pointer transition-colors"
         >
@@ -324,7 +324,7 @@ export function ApplicationReviewView({
                   <span className="font-medium text-[#0F172A]">
                     {application.email}
                   </span>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => handleCopy(application.email, 'email')}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-[#475569] hover:text-[#012A5E] bg-[#F1F5F9] hover:bg-[#E2E8F0] px-2 py-0.5 rounded transition-colors cursor-pointer"
@@ -341,7 +341,7 @@ export function ApplicationReviewView({
                         <span>Copy</span>
                       </>
                     )}
-                  </button>
+                  </Button>
                 </dd>
               </div>
 
@@ -356,7 +356,7 @@ export function ApplicationReviewView({
                   <span className="font-medium text-[#0F172A]">
                     {application.phone || '+880 1555 030405'}
                   </span>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() =>
                       handleCopy(
@@ -378,7 +378,7 @@ export function ApplicationReviewView({
                         <span>Copy</span>
                       </>
                     )}
-                  </button>
+                  </Button>
                 </dd>
               </div>
             </dl>

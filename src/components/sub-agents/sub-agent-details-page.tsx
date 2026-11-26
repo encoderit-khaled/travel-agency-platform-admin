@@ -201,13 +201,13 @@ export function SubAgentDetailsPage({
                 <CheckCircle2 className="size-3.5 text-emerald-600" />
                 <span>E-ticket available</span>
               </div>
-              <button
+              <Button variant="plain"
                 onClick={() => handleOpenBooking(bk)}
                 className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
               >
                 <span>View E-ticket</span>
                 <ArrowRight className="size-2.5" />
-              </button>
+              </Button>
             </div>
           ) : bk.documentStatus === 'Voucher available' ? (
             <div className="space-y-0.5">
@@ -215,13 +215,13 @@ export function SubAgentDetailsPage({
                 <CheckCircle2 className="size-3.5 text-emerald-600" />
                 <span>Voucher available</span>
               </div>
-              <button
+              <Button variant="plain"
                 onClick={() => handleOpenBooking(bk)}
                 className="text-[11px] font-bold text-[#0267B8] hover:underline cursor-pointer flex items-center gap-0.5"
               >
                 <span>View Voucher</span>
                 <ArrowRight className="size-2.5" />
-              </button>
+              </Button>
             </div>
           ) : (
             <span className="text-xs text-[#8C9BAE] font-medium">
@@ -374,17 +374,17 @@ export function SubAgentDetailsPage({
               { id: 'bookings', label: `Bookings (${bookings.length})` },
               { id: 'performance', label: 'Performance' },
             ].map((tab) => (
-              <button
+              <Button variant="plain"
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`px-4 py-3 text-xs font-extrabold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
                   activeTab === tab.id
                     ? 'border-[#0267B8] text-[#0267B8]'
                     : 'border-transparent text-[#64748B] hover:text-[#012A5E]'
-                }`}
+                }`)}
               >
                 {tab.label}
-              </button>
+              </Button>
             ))}
           </div>
 
@@ -417,13 +417,13 @@ export function SubAgentDetailsPage({
                       <span>Configured</span>
                     </div>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => setPermissionsModalOpen(true)}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-4 pt-3 border-t border-[#F1F3F6] cursor-pointer"
                   >
                     <span>View Permissions</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
 
                 {/* 2. Markup Card */}
@@ -442,13 +442,13 @@ export function SubAgentDetailsPage({
                       {desk.markupNote}
                     </div>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => setActiveTab('markup')}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-4 pt-3 border-t border-[#F1F3F6] cursor-pointer"
                   >
                     <span>Configure Markup</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
 
                 {/* 3. Bookings Card */}
@@ -467,13 +467,13 @@ export function SubAgentDetailsPage({
                       {desk.bookingsNote}
                     </div>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => setActiveTab('bookings')}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-4 pt-3 border-t border-[#F1F3F6] cursor-pointer"
                   >
                     <span>View Bookings</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
 
                 {/* 4. Performance Card */}
@@ -492,13 +492,13 @@ export function SubAgentDetailsPage({
                       {desk.performanceNote}
                     </div>
                   </div>
-                  <button
+                  <Button variant="plain"
                     onClick={() => setActiveTab('performance')}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0267B8] hover:text-[#014A85] transition-colors mt-4 pt-3 border-t border-[#F1F3F6] cursor-pointer"
                   >
                     <span>View Performance</span>
                     <ArrowRight className="size-3" />
-                  </button>
+                  </Button>
                 </div>
               </div>
 

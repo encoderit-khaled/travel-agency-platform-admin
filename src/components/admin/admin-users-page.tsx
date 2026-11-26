@@ -409,14 +409,14 @@ export function AdminUsersPage({
                       className="h-11 pl-10 pr-9 bg-white border-[#C5CFDC] rounded-xl text-sm placeholder:text-[#8792A4] text-[#141B28] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                     />
                     {searchQuery && (
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setSearchQuery('')}
                         className="absolute right-3 text-[#8792A4] hover:text-[#141B28] p-1"
                         aria-label="Clear search"
                       >
                         <X className="size-3.5" />
-                      </button>
+                      </Button>
                     )}
                   </div>
                 </div>
@@ -492,13 +492,13 @@ export function AdminUsersPage({
                   </span>
                 </div>
                 {(searchQuery || selectedRole !== 'all' || forceNoData) && (
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={handleResetFilters}
                     className="text-xs font-bold text-[#0267B8] hover:underline"
                   >
                     Reset filters
-                  </button>
+                  </Button>
                 )}
               </div>
 

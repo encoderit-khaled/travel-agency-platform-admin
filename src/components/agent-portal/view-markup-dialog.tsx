@@ -141,14 +141,14 @@ export function ViewMarkupDialog({
                       {rule.description}
                     </p>
                   </div>
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => handleRemove(idx)}
                     className="p-1.5 rounded-lg text-[#8C9BAE] hover:text-red-600 hover:bg-red-50 transition-colors"
                     aria-label="Delete rule"
                   >
                     <Trash2 className="size-4" />
-                  </button>
+                  </Button>
                 </div>
               ))}
             </div>
@@ -192,7 +192,7 @@ export function ViewMarkupDialog({
               <div className="flex justify-end gap-2 pt-1">
                 <Button
                   type="button"
-                  variant="ghost"
+                  variant="plain"
                   size="sm"
                   onClick={() => setShowAddForm(false)}
                   className="text-xs"

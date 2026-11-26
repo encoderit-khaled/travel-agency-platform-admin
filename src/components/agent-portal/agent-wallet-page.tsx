@@ -243,13 +243,13 @@ export function AgentWalletPage({
         cell: ({ row }) => {
           const tx = row.original
           return tx.reference !== '—' ? (
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => handleBookingClick(tx.reference)}
               className="font-semibold text-[#0267B8] underline hover:text-[#012A5E] cursor-pointer"
             >
               {tx.reference}
-            </button>
+            </Button>
           ) : (
             <span className="text-[#8D99AE]">—</span>
           )
@@ -343,13 +343,13 @@ export function AgentWalletPage({
               <CheckCircle2 className="size-4 shrink-0" />
               <span>{successToast}</span>
             </div>
-            <button
+            <Button variant="plain"
               type="button"
               onClick={() => setSuccessToast(null)}
               className="text-white/80 hover:text-white text-xs underline cursor-pointer"
             >
               Dismiss
-            </button>
+            </Button>
           </div>
         )}
 

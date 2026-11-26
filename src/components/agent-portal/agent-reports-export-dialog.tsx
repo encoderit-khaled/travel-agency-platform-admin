@@ -164,14 +164,14 @@ export function AgentReportsExportDialog({
                   Export Format
                 </label>
                 <div className="grid grid-cols-2 gap-3">
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => field.handleChange('csv')}
                     className={`flex items-center gap-2.5 p-3 rounded-xl border text-left transition-all ${
                       field.state.value === 'csv'
                         ? 'border-[#0267B8] bg-[#F5F8FC] text-[#0267B8] shadow-xs'
                         : 'border-[#E4E7EC] hover:bg-slate-50 text-[#344054]'
-                    }`}
+                    }`)}
                   >
                     <FileSpreadsheet className="size-5 shrink-0" />
                     <div className="flex-1 min-w-0">
@@ -185,16 +185,16 @@ export function AgentReportsExportDialog({
                     {field.state.value === 'csv' && (
                       <Check className="size-4 text-[#0267B8]" />
                     )}
-                  </button>
+                  </Button>
 
-                  <button
+                  <Button variant="plain"
                     type="button"
                     onClick={() => field.handleChange('pdf')}
                     className={`flex items-center gap-2.5 p-3 rounded-xl border text-left transition-all ${
                       field.state.value === 'pdf'
                         ? 'border-[#0267B8] bg-[#F5F8FC] text-[#0267B8] shadow-xs'
                         : 'border-[#E4E7EC] hover:bg-slate-50 text-[#344054]'
-                    }`}
+                    }`)}
                   >
                     <FileText className="size-5 shrink-0" />
                     <div className="flex-1 min-w-0">
@@ -208,7 +208,7 @@ export function AgentReportsExportDialog({
                     {field.state.value === 'pdf' && (
                       <Check className="size-4 text-[#0267B8]" />
                     )}
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}

@@ -586,39 +586,39 @@ export function AgentStatementsPage({
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
                     {/* Period Presets */}
                     <div className="md:col-span-5 flex flex-wrap gap-2">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => handlePresetChange('this-month')}
                         className={`px-3 py-2 text-xs font-semibold rounded-xl border transition-all ${
                           periodPreset === 'this-month'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`}
+                        }`)}
                       >
                         This Month
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => handlePresetChange('previous-month')}
                         className={`px-3 py-2 text-xs font-semibold rounded-xl border transition-all ${
                           periodPreset === 'previous-month'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`}
+                        }`)}
                       >
                         Previous Month
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => handlePresetChange('custom')}
                         className={`px-3 py-2 text-xs font-semibold rounded-xl border transition-all ${
                           periodPreset === 'custom'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`}
+                        }`)}
                       >
                         Custom
-                      </button>
+                      </Button>
                     </div>
 
                     {/* Date Inputs: From & To */}
@@ -805,7 +805,7 @@ export function AgentStatementsPage({
                   {/* Section Header */}
                   <div className="p-4 bg-white flex items-center justify-between border-b border-[#E6EAF0]">
                     <div className="flex items-center gap-3">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setBookingsExpanded(!bookingsExpanded)}
                         className="w-7 h-7 rounded-lg border border-[#DCE2EB] flex items-center justify-center text-[#4F5B70] hover:bg-[#F4F6FA]"
@@ -816,7 +816,7 @@ export function AgentStatementsPage({
                         ) : (
                           <ChevronDown className="w-4 h-4" />
                         )}
-                      </button>
+                      </Button>
                       <h3 className="text-base font-bold text-[#012A5E]">
                         Bookings
                       </h3>
@@ -865,7 +865,7 @@ export function AgentStatementsPage({
                   {/* Section Header */}
                   <div className="p-4 bg-white flex items-center justify-between border-b border-[#E6EAF0]">
                     <div className="flex items-center gap-3">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setWalletExpanded(!walletExpanded)}
                         className="w-7 h-7 rounded-lg border border-[#DCE2EB] flex items-center justify-center text-[#4F5B70] hover:bg-[#F4F6FA]"
@@ -876,7 +876,7 @@ export function AgentStatementsPage({
                         ) : (
                           <ChevronDown className="w-4 h-4" />
                         )}
-                      </button>
+                      </Button>
                       <h3 className="text-base font-bold text-[#012A5E]">
                         Wallet Transactions
                       </h3>
@@ -924,7 +924,7 @@ export function AgentStatementsPage({
                   {/* Section Header */}
                   <div className="p-4 bg-white flex items-center justify-between border-b border-[#E6EAF0]">
                     <div className="flex items-center gap-3">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setCreditExpanded(!creditExpanded)}
                         className="w-7 h-7 rounded-lg border border-[#DCE2EB] flex items-center justify-center text-[#4F5B70] hover:bg-[#F4F6FA]"
@@ -935,7 +935,7 @@ export function AgentStatementsPage({
                         ) : (
                           <ChevronDown className="w-4 h-4" />
                         )}
-                      </button>
+                      </Button>
                       <h3 className="text-base font-bold text-[#012A5E]">
                         Credit Usage
                       </h3>
@@ -1012,7 +1012,7 @@ export function AgentStatementsPage({
                   {/* Section Header */}
                   <div className="p-4 bg-white flex items-center justify-between border-b border-[#E6EAF0]">
                     <div className="flex items-center gap-3">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() =>
                           setCommissionsExpanded(!commissionsExpanded)
@@ -1025,7 +1025,7 @@ export function AgentStatementsPage({
                         ) : (
                           <ChevronDown className="w-4 h-4" />
                         )}
-                      </button>
+                      </Button>
                       <h3 className="text-base font-bold text-[#012A5E]">
                         Commissions
                       </h3>

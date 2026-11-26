@@ -122,42 +122,42 @@ export function AdminReportsExportDialog({
               File Format
             </Label>
             <div className="grid grid-cols-3 gap-2">
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setFormat('csv')}
                 className={`flex flex-col items-center justify-center gap-1.5 p-3 rounded-lg border text-xs font-medium transition-all ${
                   format === 'csv'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`}
+                }`)}
               >
                 <FileSpreadsheet className="size-5" />
                 <span>CSV File</span>
-              </button>
-              <button
+              </Button>
+              <Button variant="plain"
                 type="button"
                 onClick={() => setFormat('xlsx')}
                 className={`flex flex-col items-center justify-center gap-1.5 p-3 rounded-lg border text-xs font-medium transition-all ${
                   format === 'xlsx'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`}
+                }`)}
               >
                 <FileSpreadsheet className="size-5" />
                 <span>Excel (.xlsx)</span>
-              </button>
-              <button
+              </Button>
+              <Button variant="plain"
                 type="button"
                 onClick={() => setFormat('pdf')}
                 className={`flex flex-col items-center justify-center gap-1.5 p-3 rounded-lg border text-xs font-medium transition-all ${
                   format === 'pdf'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`}
+                }`)}
               >
                 <FileText className="size-5" />
                 <span>PDF Document</span>
-              </button>
+              </Button>
             </div>
           </div>
         </div>

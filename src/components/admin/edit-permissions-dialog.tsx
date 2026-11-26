@@ -131,7 +131,7 @@ export function EditPermissionsDialog({
                         : FileText
 
               return (
-                <button
+                <Button variant="plain"
                   key={role.id}
                   type="button"
                   onClick={() => setSelectedRole(role.id)}
@@ -140,7 +140,7 @@ export function EditPermissionsDialog({
                     isSelected
                       ? 'bg-[#012A5E] text-white border-[#012A5E] shadow-sm'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#EEF2F7] hover:text-[#012A5E]',
-                  )}
+                  ))}
                 >
                   <Icon className={cn('size-3.5', isSelected ? 'text-white' : 'text-[#8C97A8]')} />
                   <span>{role.name}</span>
@@ -153,7 +153,7 @@ export function EditPermissionsDialog({
                   >
                     {role.userCountLabel}
                   </Badge>
-                </button>
+                </Button>
               )
             })}
           </div>
@@ -222,7 +222,7 @@ export function EditPermissionsDialog({
                       <p className="text-[11px] text-[#8C97A8]">Permission area identifier: {area.id}</p>
                     </div>
                     <div className="flex items-center gap-1.5 bg-[#EEF2F7] p-1 rounded-xl">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'visible')}
                         className={cn(
@@ -230,12 +230,12 @@ export function EditPermissionsDialog({
                           currentStatus === 'visible'
                             ? 'bg-[#1F9D61] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <Check className="size-3" />
                         Visible
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'hidden')}
                         className={cn(
@@ -243,12 +243,12 @@ export function EditPermissionsDialog({
                           currentStatus === 'hidden'
                             ? 'bg-[#8C97A8] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <EyeOff className="size-3" />
                         Hidden
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'not-configured')}
                         className={cn(
@@ -256,11 +256,11 @@ export function EditPermissionsDialog({
                           currentStatus === 'not-configured'
                             ? 'bg-white text-[#012A5E] font-bold shadow-xs border border-[#DCE2EB]'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <HelpCircle className="size-3" />
                         Not Configured
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 )
@@ -289,7 +289,7 @@ export function EditPermissionsDialog({
                       <p className="text-[11px] text-[#8C97A8]">Permission area identifier: {area.id}</p>
                     </div>
                     <div className="flex items-center gap-1.5 bg-[#EEF2F7] p-1 rounded-xl">
-                      <button
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'visible')}
                         className={cn(
@@ -297,12 +297,12 @@ export function EditPermissionsDialog({
                           currentStatus === 'visible'
                             ? 'bg-[#1F9D61] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <Check className="size-3" />
                         Visible
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'hidden')}
                         className={cn(
@@ -310,12 +310,12 @@ export function EditPermissionsDialog({
                           currentStatus === 'hidden'
                             ? 'bg-[#8C97A8] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <EyeOff className="size-3" />
                         Hidden
-                      </button>
-                      <button
+                      </Button>
+                      <Button variant="plain"
                         type="button"
                         onClick={() => setStatus(area.id, 'not-configured')}
                         className={cn(
@@ -323,11 +323,11 @@ export function EditPermissionsDialog({
                           currentStatus === 'not-configured'
                             ? 'bg-white text-[#012A5E] font-bold shadow-xs border border-[#DCE2EB]'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        )}
+                        ))}
                       >
                         <HelpCircle className="size-3" />
                         Not Configured
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 )

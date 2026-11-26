@@ -28,6 +28,7 @@ import {
   SelectValue,
 } from '#/components/ui/select'
 import { Badge } from '#/components/ui/badge'
+import { RadioGroup, RadioGroupItem } from '#/components/ui/radio-group'
 import type {
   AgentMarkupRule,
   PricingCalculationType,
@@ -368,28 +369,22 @@ export function AddEditMarkupDialog({
                 >
                   Initial Rule State
                 </Label>
-                <div className="flex items-center gap-4">
+                <RadioGroup
+                  value={status}
+                  onValueChange={(value) =>
+                    setStatus(value as 'active' | 'inactive')
+                  }
+                  className="flex w-auto flex-row items-center gap-4"
+                >
                   <label className="flex items-center gap-2 text-sm text-[#1D2939] cursor-pointer">
-                    <input
-                      type="radio"
-                      name="status"
-                      checked={status === 'active'}
-                      onChange={() => setStatus('active')}
-                      className="size-4 text-[#001A3D]"
-                    />
+                    <RadioGroupItem value="active" />
                     Active (applied to live quotes)
                   </label>
                   <label className="flex items-center gap-2 text-sm text-[#1D2939] cursor-pointer">
-                    <input
-                      type="radio"
-                      name="status"
-                      checked={status === 'inactive'}
-                      onChange={() => setStatus('inactive')}
-                      className="size-4 text-[#001A3D]"
-                    />
+                    <RadioGroupItem value="inactive" />
                     Inactive (saved for future use)
                   </label>
-                </div>
+                </RadioGroup>
               </div>
             </div>
 

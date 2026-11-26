@@ -388,7 +388,7 @@ export function RolesAccessPage({
             <div className="flex items-center justify-end gap-1">
               {member.role === 'Agent Owner' ? (
                 <Button
-                  variant="ghost"
+                  variant="plain"
                   size="sm"
                   type="button"
                   onClick={handleOpenOwnerModal}
@@ -399,7 +399,7 @@ export function RolesAccessPage({
               ) : (
                 <>
                   <Button
-                    variant="ghost"
+                    variant="plain"
                     size="sm"
                     type="button"
                     onClick={() => handleOpenDeskDetails(member)}
@@ -522,7 +522,7 @@ export function RolesAccessPage({
           <div className="max-w-6xl mx-auto space-y-6">
             {/* Top Navigation: Back Link */}
             <div>
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => {
                   window.location.href = '/agent'
@@ -531,7 +531,7 @@ export function RolesAccessPage({
               >
                 <ChevronLeft className="size-4" />
                 <span>Back to Account / Settings</span>
-              </button>
+              </Button>
             </div>
 
             {/* Page Header (Figma #835:2353 - #835:2367) */}
@@ -562,7 +562,7 @@ export function RolesAccessPage({
             {/* TAB NAVIGATION: Roles and access sections (Figma #835:2368) */}
             <div className="bg-white rounded-2xl border border-[#DCE2EB] px-2 py-0 flex items-center gap-1 shadow-2xs overflow-x-auto">
               {/* Tab 1: Overview */}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setActiveTab('overview')}
                 className={cn(
@@ -570,7 +570,7 @@ export function RolesAccessPage({
                   activeTab === 'overview'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                )}
+                ))}
               >
                 <ShieldCheck
                   className={cn(
@@ -584,10 +584,10 @@ export function RolesAccessPage({
                 {activeTab === 'overview' && (
                   <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
-              </button>
+              </Button>
 
               {/* Tab 2: Team Access (Node #835:2588) */}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setActiveTab('team')}
                 className={cn(
@@ -595,7 +595,7 @@ export function RolesAccessPage({
                   activeTab === 'team'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                )}
+                ))}
               >
                 <Users
                   className={cn(
@@ -610,10 +610,10 @@ export function RolesAccessPage({
                 {activeTab === 'team' && (
                   <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
-              </button>
+              </Button>
 
               {/* Tab 3: Permission Matrix (Node #835:2591) */}
-              <button
+              <Button variant="plain"
                 type="button"
                 onClick={() => setActiveTab('matrix')}
                 className={cn(
@@ -621,7 +621,7 @@ export function RolesAccessPage({
                   activeTab === 'matrix'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                )}
+                ))}
               >
                 <TableIcon
                   className={cn(
@@ -635,7 +635,7 @@ export function RolesAccessPage({
                 {activeTab === 'matrix' && (
                   <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
-              </button>
+              </Button>
             </div>
 
             {/* TAB 1 CONTENT: OVERVIEW (Figma Node #835:2262) */}
@@ -899,13 +899,13 @@ export function RolesAccessPage({
                           className="pl-8.5 pr-8 h-9 text-xs bg-[#F8FAFC] border-[#E2E8F0] rounded-xl text-[#141C2E]"
                         />
                         {teamSearchQuery && (
-                          <button
+                          <Button variant="plain"
                             type="button"
                             onClick={() => setTeamSearchQuery('')}
                             className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 cursor-pointer"
                           >
                             <X className="size-3.5" />
-                          </button>
+                          </Button>
                         )}
                       </div>
 
