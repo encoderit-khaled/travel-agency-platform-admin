@@ -201,7 +201,7 @@ export function DocumentUploadSlot({
             </div>
             <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-2">
-                <span className="text-xs sm:text-sm font-bold text-[#141C2E] truncate max-w-[260px] sm:max-w-[340px]">
+                <span className="text-xs sm:text-sm font-bold text-[#141C2E] truncate max-w-65 sm:max-w-85">
                   {file.name}
                 </span>
                 <Badge

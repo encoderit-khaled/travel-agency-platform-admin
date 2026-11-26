@@ -51,7 +51,7 @@ function DropdownMenuContent({
         <MenuPrimitive.Popup
           data-slot="dropdown-menu-content"
           className={cn(
-            'z-50 min-w-[13rem] overflow-hidden rounded-xl border border-[#DCE2EB] bg-white p-1 text-[#141C2E] shadow-xl transition-all duration-150 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0',
+            'z-50 min-w-52 overflow-hidden rounded-xl border border-[#DCE2EB] bg-white p-1 text-[#141C2E] shadow-xl transition-all duration-150 data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0',
             className,
           )}
           {...props}
@@ -74,7 +74,7 @@ function DropdownMenuItem({
     <MenuPrimitive.Item
       data-slot="dropdown-menu-item"
       className={cn(
-        'relative flex cursor-pointer select-none items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-[#012A5E] outline-none transition-colors hover:bg-[#F4F6FA] hover:text-[#0267B8] focus:bg-[#F4F6FA] focus:text-[#0267B8] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4',
+        'relative flex cursor-pointer select-none items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold text-[#012A5E] outline-none transition-colors hover:bg-[#F4F6FA] hover:text-[#0267B8] focus:bg-[#F4F6FA] focus:text-[#0267B8] data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4',
         inset && 'pl-8',
         className,
       )}

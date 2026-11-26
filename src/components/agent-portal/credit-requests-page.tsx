@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   ArrowLeft,
   Plus,
@@ -63,6 +65,7 @@ export function CreditRequestsPage({
   initialSheetOpen = false,
   initialSubmitSuccessOpen = false,
 }: CreditRequestsPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
 
@@ -529,7 +532,14 @@ export function CreditRequestsPage({
           {activeTab === 'history' && (
             <div className="space-y-6">
               {/* KPI Cards Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {isContentLoading ? (
+                <CardGridSkeleton
+                  count={4}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                  cardClassName="h-28 rounded-xl"
+                />
+              ) : null}
+              <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                 {/* KPI 1 */}
                 <div className="bg-white rounded-xl border border-[#DCE2EB] p-4.5 shadow-xs flex flex-col justify-between space-y-3">
                   <div className="flex items-center gap-2.5">

@@ -15,6 +15,8 @@ import {
   Sparkles,
 } from 'lucide-react'
 import { Badge } from '#/components/ui/badge'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import type { ServiceCoverageModule } from './types'
 
 interface ServiceCoverageGridProps {
@@ -22,6 +24,8 @@ interface ServiceCoverageGridProps {
 }
 
 export function ServiceCoverageGrid({ modules }: ServiceCoverageGridProps) {
+  const isContentLoading = useContentLoading()
+
   const getIcon = (type: ServiceCoverageModule['iconType']) => {
     switch (type) {
       case 'plane':
@@ -74,7 +78,16 @@ export function ServiceCoverageGrid({ modules }: ServiceCoverageGridProps) {
 
       {/* Grid of 8 services */}
       <div className="p-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+        {isContentLoading ? (
+          <CardGridSkeleton
+            count={8}
+            className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4"
+            cardClassName="h-24 rounded-xl"
+          />
+        ) : null}
+        <div
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 ${isContentLoading ? 'hidden' : ''}`}
+        >
           {modules.map((m) => {
             const Icon = getIcon(m.iconType)
             const isAgentActive = m.hasAgentRule && m.status === 'active'

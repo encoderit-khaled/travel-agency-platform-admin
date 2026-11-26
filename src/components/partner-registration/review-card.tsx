@@ -87,7 +87,7 @@ export function ReviewCard({
                 <dt className="text-xs font-semibold text-[#4F5B70]">
                   {field.label}
                 </dt>
-                <dd className="font-bold text-[#141C2E] break-words whitespace-pre-line text-sm leading-relaxed">
+                <dd className="font-bold text-[#141C2E] wrap-break-word whitespace-pre-line text-sm leading-relaxed">
                   {field.value}
                 </dd>
               </div>

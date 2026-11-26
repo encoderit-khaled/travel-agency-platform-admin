@@ -30,7 +30,7 @@ export function CreditRequestSubmitDialog({
 }: CreditRequestSubmitDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[520px] p-6 sm:p-8 bg-white rounded-2xl shadow-2xl border border-[#DCE2EB]">
+      <DialogContent className="sm:max-w-130 p-6 sm:p-8 bg-white rounded-2xl shadow-2xl border border-[#DCE2EB]">
         <div className="flex flex-col items-center text-center space-y-5">
           {/* Green checkmark icon */}
           <div className="size-14 rounded-full bg-[#EBFDF2] border border-[#BBF7D0] flex items-center justify-center text-[#16A34A] shadow-xs">

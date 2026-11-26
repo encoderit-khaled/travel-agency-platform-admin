@@ -45,7 +45,7 @@ export function TransactionDetailsSheet({
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
         side="right"
-        className="sm:max-w-[560px] md:max-w-[580px] w-full p-0 flex flex-col justify-between bg-white border-l border-[#DCE2EB] shadow-2xl"
+        className="sm:max-w-140 md:max-w-145 w-full p-0 flex flex-col justify-between bg-white border-l border-[#DCE2EB] shadow-2xl"
       >
         {/* Top Header */}
         <div className="p-6 pb-5 bg-white border-b border-[#E6EAF0] relative">

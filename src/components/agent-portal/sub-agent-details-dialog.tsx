@@ -46,7 +46,7 @@ export function SubAgentDetailsDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[640px] p-6 max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-160 p-6 max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">

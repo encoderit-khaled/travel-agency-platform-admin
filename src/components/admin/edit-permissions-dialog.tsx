@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Badge } from '#/components/ui/badge'
 import {
   Shield,
@@ -82,9 +83,13 @@ export function EditPermissionsDialog({
     })
   }
 
+  const { isLoading, run } = useActionLoading(open)
+
   const handleSave = () => {
-    onSave(draftMatrix)
-    onOpenChange(false)
+    run(() => {
+      onSave(draftMatrix)
+      onOpenChange(false)
+    })
   }
 
   const roleRoleObj = ADMIN_ROLES.find((r) => r.id === selectedRole) || ADMIN_ROLES[0]
@@ -347,6 +352,8 @@ export function EditPermissionsDialog({
             <Button
               type="button"
               onClick={handleSave}
+              loading={isLoading}
+              loadingText="Saving..."
               className="bg-[#012A5E] hover:bg-[#0F3F7D] text-white font-bold px-5"
             >
               Save Configuration

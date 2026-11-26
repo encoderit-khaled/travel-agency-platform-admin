@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Badge } from '#/components/ui/badge'
 import { SlidersHorizontal, Check, Eye, Ban } from 'lucide-react'
 import type { PermissionStatus } from './types'
@@ -79,6 +80,7 @@ export function SubAgentPermissionsModal({
   initialPreset: _initialPreset,
   onSave,
 }: SubAgentPermissionsModalProps) {
+  const { isLoading, run } = useActionLoading(open)
   const [localPermissions, setLocalPermissions] =
     React.useState<Record<string, PermissionStatus>>(permissions)
 
@@ -94,12 +96,20 @@ export function SubAgentPermissionsModal({
   }
 
   const handleApply = () => {
-    onSave?.(localPermissions)
-    onOpenChange(false)
+    run(() => {
+      onSave?.(localPermissions)
+      onOpenChange(false)
+    })
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        if (!next && isLoading) return
+        onOpenChange(next)
+      }}
+    >
       <DialogContent className="sm:max-w-xl max-h-[88vh] overflow-y-auto rounded-2xl p-6 bg-white border-[#E6EAF0]">
         <DialogHeader className="gap-1.5 pb-3 border-b border-[#E6EAF0]">
           <div className="flex items-center gap-2.5">
@@ -194,6 +204,7 @@ export function SubAgentPermissionsModal({
             type="button"
             variant="outline"
             onClick={() => onOpenChange(false)}
+            disabled={isLoading}
             className="rounded-xl border-[#B7C0CF] text-[#4F5B70]"
           >
             Cancel
@@ -201,6 +212,8 @@ export function SubAgentPermissionsModal({
           <Button
             type="button"
             onClick={handleApply}
+            loading={isLoading}
+            loadingText="Saving..."
             className="rounded-xl bg-[#012A5E] text-white hover:bg-[#023E8A] font-bold"
           >
             Apply Permissions

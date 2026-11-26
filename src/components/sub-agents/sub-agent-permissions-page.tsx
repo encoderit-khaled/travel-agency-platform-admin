@@ -22,6 +22,7 @@ import {
 } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import {
   Dialog,
   DialogContent,
@@ -208,6 +209,7 @@ export function SubAgentPermissionsPage({
 
   // Toast feedback
   const [toastMessage, setToastMessage] = React.useState<string | null>(null)
+  const { isLoading: isSaving, run } = useActionLoading(saveDialogOpen)
   const showToast = (msg: string) => {
     setToastMessage(msg)
     setTimeout(() => setToastMessage(null), 4000)
@@ -276,10 +278,12 @@ export function SubAgentPermissionsPage({
 
   // Confirm save
   const handleConfirmSave = () => {
-    setSavedPreset(preset)
-    setSavedPermissions({ ...permissions })
-    setSaveDialogOpen(false)
-    showToast(`Permissions successfully updated for ${deskName}.`)
+    run(() => {
+      setSavedPreset(preset)
+      setSavedPermissions({ ...permissions })
+      setSaveDialogOpen(false)
+      showToast(`Permissions successfully updated for ${deskName}.`)
+    })
   }
 
   // Confirm discard
@@ -326,7 +330,7 @@ export function SubAgentPermissionsPage({
         />
 
         {/* Page Content */}
-        <main className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-14 py-6 max-w-[1520px] w-full mx-auto space-y-5">
+        <main className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-14 py-6 max-w-380 w-full mx-auto space-y-5">
           {/* Toast Notification */}
           {toastMessage && (
             <div className="p-3.5 rounded-xl bg-[#0E6A3D] text-white text-xs font-bold flex items-center justify-between shadow-lg animate-in fade-in slide-in-from-top-2">
@@ -1044,6 +1048,8 @@ export function SubAgentPermissionsPage({
             <Button
               type="button"
               onClick={handleConfirmSave}
+              loading={isSaving}
+              loadingText="Saving..."
               className="bg-[#F1C134] text-[#012A5E] hover:bg-[#e6b527] font-extrabold cursor-pointer flex items-center gap-1.5 shadow-[0_4px_12px_rgba(241,193,52,0.4)]"
             >
               <CheckCircle2 className="size-4" />

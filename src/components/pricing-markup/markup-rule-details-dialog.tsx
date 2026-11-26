@@ -43,7 +43,7 @@ export function MarkupRuleDetailsDialog({
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
         side="right"
-        className="w-full sm:max-w-md md:max-w-[480px] p-6 flex flex-col justify-between overflow-y-auto"
+        className="w-full sm:max-w-md md:max-w-120 p-6 flex flex-col justify-between overflow-y-auto"
       >
         <div className="space-y-6">
           {/* Header matching Figma #710:22498 */}

@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Search,
   Clock,
@@ -39,6 +41,7 @@ export function CreditRequestsHistoryTable({
   requests,
   onSelectRequest,
 }: CreditRequestsHistoryTableProps) {
+  const isContentLoading = useContentLoading()
   const [searchQuery, setSearchQuery] = React.useState('')
   const [typeFilter, setTypeFilter] = React.useState('all')
   const [statusFilter, setStatusFilter] = React.useState('all')
@@ -270,7 +273,14 @@ export function CreditRequestsHistoryTable({
   return (
     <div className="space-y-6">
       {/* 1. Top KPI Summary Cards (4 Cards) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={4}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          cardClassName="h-28 rounded-2xl"
+        />
+      ) : null}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
         {/* KPI 1: Total */}
         <div className="bg-white rounded-2xl border border-[#DCE2EB] p-5 shadow-xs">
           <div className="flex items-center gap-2.5 mb-3">

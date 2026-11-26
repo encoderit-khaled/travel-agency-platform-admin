@@ -11,7 +11,14 @@ import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
-import { Wallet, Lock, Info, ArrowRight, CheckCircle2 } from 'lucide-react'
+import {
+  Wallet,
+  Lock,
+  Info,
+  ArrowRight,
+  CheckCircle2,
+  Loader2,
+} from 'lucide-react'
 
 export interface TopUpWalletDialogProps {
   open: boolean
@@ -70,7 +77,7 @@ export function TopUpWalletDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[480px] p-6 gap-0 rounded-2xl border border-[#DCE2EB] bg-white shadow-2xl">
+      <DialogContent className="sm:max-w-120 p-6 gap-0 rounded-2xl border border-[#DCE2EB] bg-white shadow-2xl">
         {submittedSuccess ? (
           <div className="py-8 flex flex-col items-center justify-center text-center space-y-3">
             <div className="size-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shadow-xs">
@@ -172,10 +179,13 @@ export function TopUpWalletDialog({
                 disabled={isSubmitting}
                 className="h-11 px-5 rounded-xl bg-[#F1C134] hover:bg-[#E5B422] text-[#001A3D] font-bold shadow-xs flex items-center gap-2 cursor-pointer transition-colors"
               >
+                {isSubmitting ? (
+                  <Loader2 className="size-4 animate-spin" />
+                ) : null}
                 <span>
                   {isSubmitting ? 'Processing...' : 'Continue to Stripe'}
                 </span>
-                <ArrowRight className="size-4" />
+                {isSubmitting ? null : <ArrowRight className="size-4" />}
               </Button>
             </DialogFooter>
           </form>

@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   BarChart3,
   CalendarDays,
@@ -174,6 +176,7 @@ export function AdminReportsPage({
   initialExportOpen = false,
   className,
 }: AdminReportsPageProps) {
+  const isContentLoading = useContentLoading()
   // Navigation & Active tab state
   const [activeTab, setActiveTab] = React.useState<ReportTab>(initialTab)
   const [exportModalOpen, setExportModalOpen] =
@@ -503,7 +506,7 @@ export function AdminReportsPage({
                 <BarChart3 className="size-4.5 shrink-0" />
                 <span>Sales</span>
                 {activeTab === 'sales' && (
-                  <span className="absolute bottom-[-1px] left-0 right-0 h-[3px] bg-[#0265FF]" />
+                  <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
               </button>
 
@@ -522,7 +525,7 @@ export function AdminReportsPage({
                 <CalendarDays className="size-4.5 shrink-0" />
                 <span>Bookings</span>
                 {activeTab === 'bookings' && (
-                  <span className="absolute bottom-[-1px] left-0 right-0 h-[3px] bg-[#0265FF]" />
+                  <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
               </button>
 
@@ -541,7 +544,7 @@ export function AdminReportsPage({
                 <CreditCard className="size-4.5 shrink-0" />
                 <span>Payments</span>
                 {activeTab === 'payments' && (
-                  <span className="absolute bottom-[-1px] left-0 right-0 h-[3px] bg-[#0265FF]" />
+                  <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
               </button>
 
@@ -560,7 +563,7 @@ export function AdminReportsPage({
                 <Percent className="size-4.5 shrink-0 text-[#0265FF]" />
                 <span className="font-bold">Commissions</span>
                 {activeTab === 'commissions' && (
-                  <span className="absolute bottom-[-1px] left-0 right-0 h-[3px] bg-[#0265FF]" />
+                  <span className="absolute -bottom-px left-0 right-0 h-0.75 bg-[#0265FF]" />
                 )}
               </button>
             </div>
@@ -757,7 +760,14 @@ export function AdminReportsPage({
             </div>
 
             {/* KPI Cards Grid (div#panel) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={4}
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                cardClassName="h-32 rounded-xl"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
               {/* Card 1: Booking Count */}
               <div className="kpi bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-xs relative overflow-hidden space-y-3">
                 <div className="kpi-t flex items-center justify-between">

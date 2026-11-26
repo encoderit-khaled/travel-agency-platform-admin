@@ -2,6 +2,7 @@ import * as React from 'react'
 import {
   ArrowDownToLine,
   Download,
+  Loader2,
   CheckCircle2,
   FileSpreadsheet,
   FileText,
@@ -290,7 +291,10 @@ export function AgentReportsExportDialog({
                   Downloaded!
                 </>
               ) : downloading ? (
-                'Preparing Export...'
+                <>
+                  <Loader2 className="size-4 animate-spin mr-2" />
+                  Preparing Export...
+                </>
               ) : (
                 <>
                   <Download className="size-4 mr-1.5" />

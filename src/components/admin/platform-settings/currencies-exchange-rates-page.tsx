@@ -13,6 +13,7 @@ import {
   Plus,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Badge } from '#/components/ui/badge'
@@ -234,12 +235,12 @@ export function CurrenciesExchangeRatesPage({
             userInitials="SA"
           />
 
-          <main className="mx-auto w-full max-w-[1440px] flex-1 space-y-6 p-7">
+          <main className="mx-auto w-full max-w-360 flex-1 space-y-6 p-7">
             <div className="space-y-1">
               <p className="text-xs font-extrabold tracking-[0.08em] text-[#0267B8] uppercase">
                 Platform Settings
               </p>
-              <h1 className="text-[30px] leading-[38px] font-extrabold tracking-tight text-[#012A5E]">
+              <h1 className="text-[30px] leading-9.5 font-extrabold tracking-tight text-[#012A5E]">
                 Platform Settings
               </h1>
               <p className="text-[15px] leading-[22.5px] font-medium text-[#4F5B70]">
@@ -250,10 +251,10 @@ export function CurrenciesExchangeRatesPage({
             <div className="flex flex-col items-start gap-6 lg:flex-row">
               <aside
                 aria-label="Platform Settings sections"
-                className="w-full shrink-0 rounded-[18px] border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-[260px]"
+                className="w-full shrink-0 rounded-[18px] border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-65"
               >
                 <div className="mb-1 px-2.5 pt-1.5 pb-2">
-                  <h2 className="text-[11.5px] leading-[17px] font-extrabold tracking-[0.08em] text-[#4F5B70] uppercase">
+                  <h2 className="text-[11.5px] leading-4.25 font-extrabold tracking-[0.08em] text-[#4F5B70] uppercase">
                     Settings
                   </h2>
                 </div>
@@ -282,10 +283,10 @@ export function CurrenciesExchangeRatesPage({
                           <span
                             aria-hidden="true"
                             className={cn(
-                              'absolute top-1/2 left-0 w-[3px] -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]',
+                              'absolute top-1/2 left-0 w-0.75 -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]',
                               section.displayTitle?.includes('\n')
-                                ? 'h-[34px]'
-                                : 'h-[26px]',
+                                ? 'h-8.5'
+                                : 'h-6.5',
                             )}
                           />
                         )}
@@ -307,13 +308,13 @@ export function CurrenciesExchangeRatesPage({
               </aside>
 
               <div className="w-full min-w-0 flex-1 space-y-5">
-                <Card className="gap-4 rounded-[18px] border border-[#DCE2EB] bg-white px-[22px] py-5 shadow-xs ring-0">
+                <Card className="gap-4 rounded-[18px] border border-[#DCE2EB] bg-white px-5.5 py-5 shadow-xs ring-0">
                   <div className="flex items-center gap-2.5">
                     <div className="flex size-9 shrink-0 items-center justify-center rounded-[10px] bg-[#EAF4FD]">
-                      <Link2 className="size-[18px] text-[#0267B8]" />
+                      <Link2 className="size-4.5 text-[#0267B8]" />
                     </div>
                     <div className="space-y-0.5">
-                      <h2 className="text-[16.5px] leading-[23px] font-extrabold text-[#012A5E]">
+                      <h2 className="text-[16.5px] leading-5.75 font-extrabold text-[#012A5E]">
                         Currencies & Exchange Rates
                       </h2>
                       <p className="text-[13.5px] leading-5 font-medium text-[#4F5B70]">
@@ -336,16 +337,16 @@ export function CurrenciesExchangeRatesPage({
                     <TabsList className="h-auto w-full justify-start gap-1 rounded-none border-b border-[#DCE2EB] bg-transparent p-0">
                       <TabsTrigger
                         value="display-currencies"
-                        className="h-[46px] rounded-t-[10px] border-b-[3px] border-transparent px-3.5 text-[15px] leading-[22.5px] font-extrabold text-[#4F5B70] aria-selected:border-[#012A5E] aria-selected:text-[#012A5E] data-[active]:border-[#012A5E] data-[active]:bg-transparent data-[active]:text-[#012A5E] data-[active]:shadow-none"
+                        className="h-11.5 rounded-t-[10px] border-b-[3px] border-transparent px-3.5 text-[15px] leading-[22.5px] font-extrabold text-[#4F5B70] aria-selected:border-[#012A5E] aria-selected:text-[#012A5E] data-active:border-[#012A5E] data-active:bg-transparent data-active:text-[#012A5E] data-active:shadow-none"
                       >
-                        <Link2 className="size-[17px]" />
+                        <Link2 className="size-4.25" />
                         Display Currencies
                       </TabsTrigger>
                       <TabsTrigger
                         value="exchange-rates"
-                        className="h-[46px] rounded-t-[10px] border-b-[3px] border-transparent px-3.5 text-[15px] leading-[22.5px] font-bold text-[#4F5B70] aria-selected:border-[#012A5E] aria-selected:font-extrabold aria-selected:text-[#012A5E] data-[active]:border-[#012A5E] data-[active]:bg-transparent data-[active]:font-extrabold data-[active]:text-[#012A5E] data-[active]:shadow-none"
+                        className="h-11.5 rounded-t-[10px] border-b-[3px] border-transparent px-3.5 text-[15px] leading-[22.5px] font-bold text-[#4F5B70] aria-selected:border-[#012A5E] aria-selected:font-extrabold aria-selected:text-[#012A5E] data-active:border-[#012A5E] data-active:bg-transparent data-active:font-extrabold data-active:text-[#012A5E] data-active:shadow-none"
                       >
-                        <TrendingUp className="size-[17px]" />
+                        <TrendingUp className="size-4.25" />
                         Exchange Rates
                       </TabsTrigger>
                     </TabsList>
@@ -380,7 +381,7 @@ export function CurrenciesExchangeRatesPage({
 
                 <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
                   <Card className="gap-0 rounded-2xl border border-[#DCE2EB] bg-linear-to-br from-[#F3F8FE] to-white py-0 shadow-xs ring-0">
-                    <div className="flex items-start gap-3 px-[18px] py-4">
+                    <div className="flex items-start gap-3 px-4.5 py-4">
                       <div className="flex size-9 shrink-0 items-center justify-center rounded-[10px] bg-[#EAF4FD] text-[#0267B8]">
                         <Info className="size-4" />
                       </div>
@@ -408,10 +409,10 @@ export function CurrenciesExchangeRatesPage({
                             <Monitor className="size-4" />
                           </div>
                           <div className="space-y-0.5">
-                            <dt className="text-[12.5px] leading-[19px] font-extrabold text-[#4F5B70]">
+                            <dt className="text-[12.5px] leading-4.75 font-extrabold text-[#4F5B70]">
                               Applies to
                             </dt>
-                            <dd className="text-[14.5px] leading-[22px] font-extrabold text-[#141B28]">
+                            <dd className="text-[14.5px] leading-5.5 font-extrabold text-[#141B28]">
                               Customer-facing price display
                             </dd>
                           </div>
@@ -421,10 +422,10 @@ export function CurrenciesExchangeRatesPage({
                             <CreditCard className="size-4" />
                           </div>
                           <div className="space-y-0.5">
-                            <dt className="text-[12.5px] leading-[19px] font-extrabold text-[#4F5B70]">
+                            <dt className="text-[12.5px] leading-4.75 font-extrabold text-[#4F5B70]">
                               Payment currencies
                             </dt>
-                            <dd className="text-[14.5px] leading-[22px] font-extrabold text-[#141B28]">
+                            <dd className="text-[14.5px] leading-5.5 font-extrabold text-[#141B28]">
                               Payment availability for a currency is controlled
                               separately by the currencies enabled on the
                               Client&apos;s Stripe account.
@@ -451,10 +452,10 @@ export function CurrenciesExchangeRatesPage({
               role="status"
               aria-live="polite"
               onClick={() => setShowSuccess(false)}
-              className="pointer-events-auto flex w-[220px] cursor-pointer flex-col items-center gap-3 rounded-[28px] bg-[#071933] px-8 py-8 text-center text-white shadow-2xl"
+              className="pointer-events-auto flex w-55 cursor-pointer flex-col items-center gap-3 rounded-[28px] bg-[#071933] px-8 py-8 text-center text-white shadow-2xl"
             >
               <span className="flex size-16 items-center justify-center rounded-full bg-white text-[#071933]">
-                <Check className="size-8 stroke-[3]" />
+                <Check className="size-8 stroke-3" />
               </span>
               <span className="text-sm font-bold">Currency settings updated</span>
             </button>
@@ -716,7 +717,7 @@ function DisplayCurrenciesPanel({
     <div className="space-y-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="space-y-0.5">
-          <h3 className="text-[15px] leading-[22px] font-extrabold text-[#012A5E]">
+          <h3 className="text-[15px] leading-5.5 font-extrabold text-[#012A5E]">
             Display Currencies
           </h3>
           <p className="text-[13.5px] leading-5 font-medium text-[#4F5B70]">
@@ -750,7 +751,7 @@ function DisplayCurrenciesPanel({
                   Currency Code
                 </Label>
                 <div className="flex items-center justify-between gap-4">
-                  <div className="relative w-full max-w-[460px]">
+                  <div className="relative w-full max-w-115">
                     <Link2 className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-[#94A3B8]" />
                     <Input
                       id={`currency-code-${row.id}`}
@@ -797,14 +798,14 @@ function DisplayCurrenciesPanel({
           <EditorActions onCancel={onCancel} onSave={onSave} />
         </div>
       ) : currencies.length === 0 ? (
-        <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-dashed border-[#CBD5E3] bg-[#FAFCFE] px-4 py-[30px] text-center">
-          <div className="mb-1.5 flex size-[52px] items-center justify-center rounded-[15px] bg-[#F1F4F8] text-[#0267B8]">
-            <Coins className="size-[22px]" />
+        <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-dashed border-[#CBD5E3] bg-[#FAFCFE] px-4 py-7.5 text-center">
+          <div className="mb-1.5 flex size-13 items-center justify-center rounded-[15px] bg-[#F1F4F8] text-[#0267B8]">
+            <Coins className="size-5.5" />
           </div>
           <h3 className="text-[16.5px] leading-6 font-extrabold text-[#012A5E]">
             No confirmed currency configuration loaded
           </h3>
-          <p className="max-w-[640px] px-3.5 text-sm leading-[21px] font-medium text-[#4F5B70]">
+          <p className="max-w-160 px-3.5 text-sm leading-5.25 font-medium text-[#4F5B70]">
             Configured display currencies and exchange rates will appear here
             once the platform currency configuration is supplied.
           </p>
@@ -842,6 +843,8 @@ function EditorActions({
   onCancel: () => void
   onSave: () => void
 }) {
+  const { isLoading, run } = useActionLoading()
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#F1F5F9] pt-4">
       <Badge className="h-auto gap-2 rounded-full border-[#FDE68A] bg-[#FEF9C3] px-3 py-1 text-xs font-semibold text-[#854D0E]">
@@ -859,7 +862,9 @@ function EditorActions({
         </Button>
         <Button
           type="button"
-          onClick={onSave}
+          onClick={() => run(onSave)}
+          loading={isLoading}
+          loadingText="Saving..."
           className="h-10 rounded-xl bg-[#001A3D] px-5 text-sm font-semibold text-white hover:bg-[#002654]"
         >
           Save Changes

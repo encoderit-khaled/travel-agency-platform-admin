@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   ArrowLeft,
   Wallet,
@@ -73,6 +75,7 @@ export function SubAgentBookingsPage({
   initialTab = 'bookings',
   isStandalone = true,
 }: SubAgentBookingsPageProps) {
+  const isContentLoading = useContentLoading()
   const navigate = useNavigate()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
   const [_activeTab, setActiveTab] = React.useState<
@@ -127,7 +130,7 @@ export function SubAgentBookingsPage({
         },
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pl-6 min-w-[180px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pl-6 min-w-45',
           cellClassName: 'py-4 pl-6',
         },
       },
@@ -147,7 +150,7 @@ export function SubAgentBookingsPage({
         ),
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[220px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-55',
           cellClassName: 'py-4',
         },
       },
@@ -162,7 +165,7 @@ export function SubAgentBookingsPage({
         ),
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[150px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-37.5',
           cellClassName: 'py-4',
         },
       },
@@ -172,7 +175,7 @@ export function SubAgentBookingsPage({
         cell: ({ row }) => row.original.travelDate,
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-45',
           cellClassName: 'py-4 text-xs font-semibold text-[#4F5B70]',
         },
       },
@@ -212,7 +215,7 @@ export function SubAgentBookingsPage({
         },
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[130px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-32.5',
           cellClassName: 'py-4',
         },
       },
@@ -261,7 +264,7 @@ export function SubAgentBookingsPage({
         },
         meta: {
           headerClassName:
-            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-[180px]',
+            'text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 min-w-45',
           cellClassName: 'py-4',
         },
       },
@@ -284,7 +287,7 @@ export function SubAgentBookingsPage({
         },
         meta: {
           headerClassName:
-            'text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pr-6 min-w-[140px]',
+            'text-right text-[11px] font-bold uppercase tracking-wider text-[#64748B] py-3.5 pr-6 min-w-35',
           cellClassName: 'py-4 text-right pr-6',
         },
       },
@@ -517,7 +520,14 @@ export function SubAgentBookingsPage({
       </div>
 
       {/* Booking Summary 4 KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={4}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          cardClassName="h-28 rounded-2xl"
+        />
+      ) : null}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
         {/* Card 1: Total Bookings */}
         <div className="bg-white rounded-2xl border border-[#DCE2EB] p-4 shadow-2xs hover:border-[#CBD5E1] transition-all">
           <div className="flex items-center gap-3">

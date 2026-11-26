@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Globe, Plus, Trash2 } from 'lucide-react'
 import type { LanguageItem } from './types'
@@ -60,18 +61,22 @@ export function ConfigureLanguagesDialog({
     )
   }
 
+  const { isLoading, run } = useActionLoading(open)
+
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault()
     const valid = rows
       .map((r) => ({ ...r, name: r.name.trim() }))
       .filter((r) => r.name.length > 0)
-    onSave(valid)
-    onOpenChange(false)
+    run(() => {
+      onSave(valid)
+      onOpenChange(false)
+    })
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[560px] p-0 overflow-hidden rounded-[20px] border border-[#DCE2EB] bg-white shadow-xl">
+      <DialogContent className="sm:max-w-140 p-0 overflow-hidden rounded-[20px] border border-[#DCE2EB] bg-white shadow-xl">
         <form onSubmit={handleSave} className="flex flex-col">
           {/* Header */}
           <DialogHeader className="p-6 pb-4 border-b border-[#DCE2EB] bg-[#F8FAFC]">
@@ -146,6 +151,8 @@ export function ConfigureLanguagesDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Saving..."
               className="rounded-xl bg-[#001A3D] hover:bg-[#001430] text-white text-xs sm:text-sm font-bold"
             >
               Save Languages

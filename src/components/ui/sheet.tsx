@@ -13,7 +13,7 @@ function SheetBackdrop({ className, ...props }: SheetPrimitive.Backdrop.Props) {
     <SheetPrimitive.Backdrop
       data-slot="sheet-backdrop"
       className={cn(
-        'fixed inset-0 z-50 bg-[#012A5E]/40 backdrop-blur-xs transition-opacity duration-300 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0',
+        'fixed inset-0 z-50 bg-[#012A5E]/40 backdrop-blur-xs transition-opacity duration-300 data-ending-style:opacity-0 data-starting-style:opacity-0',
         className,
       )}
       {...props}
@@ -32,12 +32,12 @@ function SheetContent({
   ...props
 }: SheetContentProps) {
   const sideClasses = {
-    top: 'inset-x-0 top-0 border-b border-[#DCE2EB] data-[ending-style]:-translate-y-full data-[starting-style]:-translate-y-full',
+    top: 'inset-x-0 top-0 border-b border-[#DCE2EB] data-ending-style:-translate-y-full data-starting-style:-translate-y-full',
     bottom:
-      'inset-x-0 bottom-0 border-t border-[#DCE2EB] data-[ending-style]:translate-y-full data-[starting-style]:translate-y-full',
-    left: 'inset-y-0 left-0 h-full w-3/4 max-w-sm sm:max-w-md border-r border-[#DCE2EB] data-[ending-style]:-translate-x-full data-[starting-style]:-translate-x-full',
+      'inset-x-0 bottom-0 border-t border-[#DCE2EB] data-ending-style:translate-y-full data-starting-style:translate-y-full',
+    left: 'inset-y-0 left-0 h-full w-3/4 max-w-sm sm:max-w-md border-r border-[#DCE2EB] data-ending-style:-translate-x-full data-starting-style:-translate-x-full',
     right:
-      'inset-y-0 right-0 h-full w-full sm:max-w-lg md:max-w-[540px] border-l border-[#DCE2EB] data-[ending-style]:translate-x-full data-[starting-style]:translate-x-full',
+      'inset-y-0 right-0 h-full w-full sm:max-w-lg md:max-w-135 border-l border-[#DCE2EB] data-ending-style:translate-x-full data-starting-style:translate-x-full',
   }
 
   return (

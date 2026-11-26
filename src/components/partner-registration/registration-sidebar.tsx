@@ -42,7 +42,7 @@ export function RegistrationSidebar({
           <div className="flex flex-col gap-1 text-xs">
             <div className="flex justify-between">
               <span className="text-[#64748B]">Agency:</span>
-              <span className="font-bold text-[#141C2E] truncate max-w-[180px]">
+              <span className="font-bold text-[#141C2E] truncate max-w-45">
                 {businessName}
               </span>
             </div>

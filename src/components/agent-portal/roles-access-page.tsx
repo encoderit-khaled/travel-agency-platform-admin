@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   ShieldCheck,
   ShieldAlert,
@@ -68,6 +70,7 @@ export function RolesAccessPage({
   initialModal = null,
   initialNodeId,
 }: RolesAccessPageProps) {
+  const isContentLoading = useContentLoading()
   // Determine effective starting tab based on initialTab or initialNodeId
   const effectiveInitialTab: 'overview' | 'team' | 'matrix' =
     React.useMemo(() => {
@@ -515,7 +518,7 @@ export function RolesAccessPage({
         />
 
         {/* Main Content Body */}
-        <main className="flex-1 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-[152px] py-6 pb-20">
+        <main className="flex-1 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-38 py-6 pb-20">
           <div className="max-w-6xl mx-auto space-y-6">
             {/* Top Navigation: Back Link */}
             <div>
@@ -579,7 +582,7 @@ export function RolesAccessPage({
                 />
                 <span>Overview</span>
                 {activeTab === 'overview' && (
-                  <span className="absolute bottom-0 left-2 right-2 h-[3px] bg-[#012A5E] rounded-t-sm" />
+                  <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
               </button>
 
@@ -605,7 +608,7 @@ export function RolesAccessPage({
                   {TEAM_ACCESS_HOLDERS.length}
                 </span>
                 {activeTab === 'team' && (
-                  <span className="absolute bottom-0 left-2 right-2 h-[3px] bg-[#012A5E] rounded-t-sm" />
+                  <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
               </button>
 
@@ -630,7 +633,7 @@ export function RolesAccessPage({
                 />
                 <span>Permission Matrix</span>
                 {activeTab === 'matrix' && (
-                  <span className="absolute bottom-0 left-2 right-2 h-[3px] bg-[#012A5E] rounded-t-sm" />
+                  <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                 )}
               </button>
             </div>
@@ -639,7 +642,14 @@ export function RolesAccessPage({
             {activeTab === 'overview' && (
               <div className="space-y-6">
                 {/* 4 KPI Summary Cards (Figma #835:2383) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={4}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                    cardClassName="h-28 rounded-2xl"
+                  />
+                ) : null}
+                <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                   {ROLES_ACCESS_KPIS.map((kpi) => (
                     <div
                       key={kpi.id}
@@ -1019,7 +1029,7 @@ export function RolesAccessPage({
                           }
                         }}
                       >
-                        <SelectTrigger className="h-7! w-[158px] rounded-lg bg-[#F8FAFC] border-[#E2E8F0] px-2 text-xs text-[#141C2E]">
+                        <SelectTrigger className="h-7! w-39.5 rounded-lg bg-[#F8FAFC] border-[#E2E8F0] px-2 text-xs text-[#141C2E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1150,7 +1160,7 @@ export function RolesAccessPage({
         </main>
 
         {/* Footer (Figma #835:2530) */}
-        <footer className="border-t border-[#E2E8F0] bg-white px-6 sm:px-10 lg:px-16 xl:px-[152px] py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-[#5A6882]">
+        <footer className="border-t border-[#E2E8F0] bg-white px-6 sm:px-10 lg:px-16 xl:px-38 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-[#5A6882]">
           <span>
             AeroWing Agent Portal · M2.13 Role-Based Access · Roles & Access
             (Website)

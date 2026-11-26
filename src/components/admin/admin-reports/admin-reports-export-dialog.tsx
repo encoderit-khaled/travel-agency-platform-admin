@@ -1,5 +1,11 @@
 import * as React from 'react'
-import { Download, FileSpreadsheet, FileText, CheckCircle2 } from 'lucide-react'
+import {
+  Download,
+  FileSpreadsheet,
+  FileText,
+  CheckCircle2,
+  Loader2,
+} from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -102,7 +108,7 @@ export function AdminReportsExportDialog({
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-[#5D6B82]">Filters:</span>
-                  <span className="text-right text-[#001A3D] truncate max-w-[200px]">
+                  <span className="text-right text-[#001A3D] truncate max-w-50">
                     {currentFilters.service} · {currentFilters.channel}
                   </span>
                 </div>
@@ -177,7 +183,10 @@ export function AdminReportsExportDialog({
                 <span>Downloaded!</span>
               </>
             ) : isExporting ? (
-              <span>Exporting...</span>
+              <>
+                <Loader2 className="size-4 animate-spin" />
+                <span>Exporting...</span>
+              </>
             ) : (
               <>
                 <Download className="size-4" />

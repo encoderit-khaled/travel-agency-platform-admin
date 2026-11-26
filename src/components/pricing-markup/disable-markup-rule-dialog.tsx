@@ -9,6 +9,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { AgentMarkupRule } from './types'
 
 interface DisableMarkupRuleDialogProps {
@@ -24,15 +25,25 @@ export function DisableMarkupRuleDialog({
   rule,
   onConfirmDisable,
 }: DisableMarkupRuleDialogProps) {
+  const { isLoading, run } = useActionLoading(open)
+
   if (!rule) return null
 
   const handleConfirm = () => {
-    onConfirmDisable(rule.id)
-    onOpenChange(false)
+    run(() => {
+      onConfirmDisable(rule.id)
+      onOpenChange(false)
+    })
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        if (!next && isLoading) return
+        onOpenChange(next)
+      }}
+    >
       <DialogContent className="sm:max-w-md p-6 bg-white border border-[#E2E8F0] rounded-2xl shadow-xl">
         <div className="flex flex-col items-center text-center">
           {/* Blue Minus Icon matching Figma #710:22499 */}
@@ -68,6 +79,7 @@ export function DisableMarkupRuleDialog({
             type="button"
             variant="outline"
             onClick={() => onOpenChange(false)}
+            disabled={isLoading}
             className="flex-1 border-[#CBD5E1] text-xs font-semibold text-[#1D2939] h-10 rounded-xl hover:bg-[#F8FAFC]"
           >
             Keep Active
@@ -75,6 +87,8 @@ export function DisableMarkupRuleDialog({
           <Button
             type="button"
             onClick={handleConfirm}
+            loading={isLoading}
+            loadingText="Processing..."
             className="flex-1 bg-[#F1C134] hover:bg-[#E5B52C] text-xs font-bold text-[#001A3D] h-10 rounded-xl shadow-xs"
           >
             Disable Rule

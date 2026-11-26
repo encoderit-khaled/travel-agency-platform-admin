@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Wallet,
   ArrowLeft,
@@ -65,6 +67,7 @@ export function WalletLedgerPage({
   initialExportOpen,
   initialNodeId,
 }: WalletLedgerPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
@@ -270,7 +273,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[130px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-32.5',
           cellClassName: 'py-4 px-4 align-middle',
         },
       },
@@ -289,7 +292,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[200px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-50',
           cellClassName: 'py-4 px-4 align-middle',
         },
       },
@@ -312,7 +315,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-[240px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 min-w-60',
           cellClassName: 'py-4 px-4 align-middle',
         },
       },
@@ -334,7 +337,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[140px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-35',
           cellClassName: 'py-4 px-4 align-middle',
         },
       },
@@ -361,7 +364,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-[120px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 w-30',
           cellClassName: 'py-4 px-4 align-middle',
         },
       },
@@ -384,7 +387,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-37.5',
           cellClassName: 'py-4 px-4 align-middle text-right',
         },
       },
@@ -395,7 +398,7 @@ export function WalletLedgerPage({
           clickable(row.original, row.original.runningBalance),
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[160px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-40',
           cellClassName:
             'py-4 px-4 align-middle text-right font-extrabold text-xs text-[#001A3D]',
         },
@@ -424,7 +427,7 @@ export function WalletLedgerPage({
         },
         meta: {
           headerClassName:
-            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-[150px]',
+            'text-xs font-bold text-[#5A6578] uppercase tracking-wider py-3.5 px-4 text-right w-37.5',
           cellClassName: 'py-4 px-4 align-middle text-right',
         },
       },
@@ -521,7 +524,14 @@ export function WalletLedgerPage({
             </div>
 
             {/* 3 KPI Summary Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={3}
+                className="grid grid-cols-1 md:grid-cols-3 gap-4"
+                cardClassName="h-36 rounded-2xl"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 ${isContentLoading ? "hidden" : ""}`}>
               {/* Card 1: Current Wallet Balance */}
               <div className="bg-linear-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] rounded-2xl p-5 text-white shadow-md relative overflow-hidden flex flex-col justify-between">
                 <div>

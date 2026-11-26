@@ -17,6 +17,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import {
@@ -81,6 +82,8 @@ export function AddEditMarkupDialog({
     setError('')
   }, [existingRule, open])
 
+  const { isLoading, run } = useActionLoading(open)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!name.trim()) {
@@ -114,8 +117,10 @@ export function AddEditMarkupDialog({
         existingRule?.createdAt || new Date().toISOString().split('T')[0],
     }
 
-    onSaveRule(newOrUpdated)
-    onOpenChange(false)
+    run(() => {
+      onSaveRule(newOrUpdated)
+      onOpenChange(false)
+    })
   }
 
   return (
@@ -409,6 +414,8 @@ export function AddEditMarkupDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText={isEditing ? 'Saving...' : 'Processing...'}
               className="bg-[#001A3D] text-white hover:bg-[#012A5E] font-bold px-5"
             >
               {isEditing ? 'Save Changes' : 'Create Markup Rule'}

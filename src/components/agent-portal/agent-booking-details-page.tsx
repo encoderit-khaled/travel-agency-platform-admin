@@ -131,7 +131,7 @@ export function AgentBookingDetailsPage({
         />
 
         {/* Page Container */}
-        <main className="flex-1 max-w-[1440px] w-full mx-auto px-4 sm:px-8 lg:px-12 py-6 space-y-6 pb-20">
+        <main className="flex-1 max-w-360 w-full mx-auto px-4 sm:px-8 lg:px-12 py-6 space-y-6 pb-20">
           {/* Back link */}
           <div>
             <Link
@@ -868,7 +868,7 @@ export function AgentBookingDetailsPage({
 
       {/* E-ticket Preview Dialog Modal (Figma #707:19884) */}
       <Dialog open={isTicketPreviewOpen} onOpenChange={setIsTicketPreviewOpen}>
-        <DialogContent className="sm:max-w-[640px] p-6 max-h-[92vh] overflow-y-auto rounded-2xl bg-white border-[#DCE2EB]">
+        <DialogContent className="sm:max-w-160 p-6 max-h-[92vh] overflow-y-auto rounded-2xl bg-white border-[#DCE2EB]">
           <DialogHeader className="pb-3 border-b border-[#F1F3F6]">
             <div className="flex items-center justify-between">
               <div>

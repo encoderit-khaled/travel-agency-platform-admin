@@ -55,11 +55,17 @@ export function RejectApplicationDialog({
       })
       setIsSubmitting(false)
       onClose()
-    }, 300)
+    }, 700)
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open && isSubmitting) return
+        if (!open) onClose()
+      }}
+    >
       <DialogContent className="max-w-xl p-6 sm:p-7">
         <DialogHeader className="gap-2">
           <div className="flex items-center gap-3">
@@ -174,11 +180,12 @@ export function RejectApplicationDialog({
             type="button"
             variant="destructive"
             onClick={handleConfirm}
-            disabled={isSubmitting}
+            loading={isSubmitting}
+            loadingText="Rejecting..."
             className="bg-[#C62828] text-white hover:bg-[#B71C1C] font-extrabold px-5 h-10 shadow-sm gap-1.5 cursor-pointer"
           >
             <XCircle className="size-4" />
-            <span>{isSubmitting ? 'Rejecting...' : 'Confirm Rejection'}</span>
+            <span>Confirm Rejection</span>
           </Button>
         </DialogFooter>
       </DialogContent>

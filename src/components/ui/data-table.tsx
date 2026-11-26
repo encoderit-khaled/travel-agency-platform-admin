@@ -8,6 +8,8 @@ import {
   type RowData,
 } from '@tanstack/react-table'
 import { cn } from 'cn'
+import { FlightOrbitLoader } from '#/components/ui/flight-orbit-loader'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Table,
   TableBody,
@@ -40,6 +42,9 @@ export interface DataTableProps<TData> {
   emptyCellClassName?: string
   /** Extra body rows rendered after the data rows, such as a totals row. */
   afterRows?: React.ReactNode
+  /** Shows skeleton rows while content is loading. */
+  isLoading?: boolean
+  loadingRowCount?: number
 }
 
 export function DataTable<TData>({
@@ -56,7 +61,10 @@ export function DataTable<TData>({
   empty,
   emptyCellClassName,
   afterRows,
+  isLoading = false,
 }: DataTableProps<TData>) {
+  const isContentLoading = useContentLoading()
+  const showSkeleton = isLoading || isContentLoading
   const table = useReactTable({
     data,
     columns,
@@ -92,7 +100,18 @@ export function DataTable<TData>({
         ))}
       </TableHeader>
       <TableBody className={bodyClassName}>
-        {rows.length === 0 && empty ? (
+        {showSkeleton ? (
+          <TableRow className="hover:bg-transparent">
+            <TableCell
+              colSpan={table.getVisibleLeafColumns().length}
+              className="py-10"
+            >
+              <div className="flex justify-center">
+                <FlightOrbitLoader />
+              </div>
+            </TableCell>
+          </TableRow>
+        ) : rows.length === 0 && empty ? (
           <TableRow className="hover:bg-transparent">
             <TableCell colSpan={columns.length} className={emptyCellClassName}>
               {empty}

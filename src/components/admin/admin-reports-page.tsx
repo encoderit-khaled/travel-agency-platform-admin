@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   CalendarDays,
   Download,
@@ -171,6 +173,7 @@ export function AdminReportsPage({
   initialChannel = 'All Channels',
   className,
 }: AdminReportsPageProps) {
+  const isContentLoading = useContentLoading()
   const [activeTab, setActiveTab] = React.useState<ReportTab>(initialTab)
 
   // Filter Form States
@@ -365,7 +368,7 @@ export function AdminReportsPage({
             <div className="font-bold text-[#012A5E]">
               {row.original.customerName}
             </div>
-            <div className="text-[11px] text-[#64748B] truncate max-w-[180px]">
+            <div className="text-[11px] text-[#64748B] truncate max-w-45">
               {row.original.customerEmail}
             </div>
           </>
@@ -681,7 +684,7 @@ export function AdminReportsPage({
                       )}
                       <span>{tab.label}</span>
                       {isActive && (
-                        <div className="absolute -bottom-[1px] left-0 right-0 h-[2px] bg-[#012A5E]" />
+                        <div className="absolute -bottom-px left-0 right-0 h-0.5 bg-[#012A5E]" />
                       )}
                     </button>
                   )
@@ -885,7 +888,14 @@ export function AdminReportsPage({
             {activeTab === 'bookings' && (
               <div className="space-y-6 animate-in fade-in duration-200">
                 {/* Row 1: KPI Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={4}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                    cardClassName="h-32 rounded-[18px]"
+                  />
+                ) : null}
+                <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                   {/* KPI 1: Total Bookings */}
                   <div className="bg-white rounded-[18px] border border-[#DCE2EB] p-5 shadow-xs flex flex-col justify-between gap-3">
                     <div className="flex items-start justify-between">
@@ -1284,7 +1294,14 @@ export function AdminReportsPage({
             {activeTab === 'sales' && (
               <div className="space-y-6 animate-in fade-in duration-200">
                 {/* Sales KPIs */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={2}
+                    className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                    cardClassName="h-32 rounded-[18px]"
+                  />
+                ) : null}
+                <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                   <div className="bg-white rounded-[18px] border border-[#DCE2EB] p-5 shadow-xs space-y-2">
                     <div className="flex items-start justify-between">
                       <div className="size-10 rounded-xl bg-[#EBF2FA] text-[#0267B8] flex items-center justify-center">

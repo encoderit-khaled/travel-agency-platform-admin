@@ -10,6 +10,7 @@ import {
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import {
   Select,
   SelectTrigger,
@@ -54,6 +55,8 @@ export function AddSubAgentDialog({
     setConfigureMarkupNow(true)
     setError('')
   }
+
+  const { isLoading, run } = useActionLoading(open)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -118,18 +121,20 @@ export function AddSubAgentDialog({
       lastActive: 'Just created',
     }
 
-    if (onAddSubAgent) {
-      onAddSubAgent(newSubAgent)
-    } else if (onSubAgentCreated) {
-      onSubAgentCreated(newSubAgent)
-    }
-    resetForm()
-    onOpenChange(false)
+    run(() => {
+      if (onAddSubAgent) {
+        onAddSubAgent(newSubAgent)
+      } else if (onSubAgentCreated) {
+        onSubAgentCreated(newSubAgent)
+      }
+      resetForm()
+      onOpenChange(false)
+    })
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[540px] p-6 max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-135 p-6 max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="size-11 rounded-xl bg-[#F1C134]/15 text-[#012A5E] flex items-center justify-center mb-1">
             <UserPlus className="size-5 text-[#012A5E]" />
@@ -316,6 +321,8 @@ export function AddSubAgentDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Processing..."
               className="bg-[#F1C134] text-[#012A5E] hover:bg-[#E5B52A] font-extrabold shadow-sm"
             >
               Create Sub-agent

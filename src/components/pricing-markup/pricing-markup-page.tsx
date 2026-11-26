@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Lock,
   Tag,
@@ -67,6 +69,7 @@ export function PricingMarkupPage({
   initialModal,
   initialRuleId,
 }: PricingMarkupPageProps) {
+  const isContentLoading = useContentLoading()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
 
   // Rules state
@@ -706,7 +709,14 @@ export function PricingMarkupPage({
           </div>
 
           {/* 4 Summary KPI Cards matching Figma #710:21925 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {isContentLoading ? (
+            <CardGridSkeleton
+              count={4}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+              cardClassName="h-32 rounded-2xl"
+            />
+          ) : null}
+          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
             {/* Card 1: Admin Pricing */}
             <div className="rounded-2xl border border-[#E2E8F0] bg-white p-5 space-y-3 shadow-2xs">
               <div className="flex items-center gap-3">

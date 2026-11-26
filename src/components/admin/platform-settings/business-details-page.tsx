@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Building2,
   Globe,
@@ -32,6 +34,7 @@ export function BusinessDetailsPage({
   businessData,
   onUpdateBusinessDetails,
 }: BusinessDetailsPageProps) {
+  const isContentLoading = useContentLoading()
   const isLanguageNode =
     initialNodeId.includes('1009-6826') ||
     initialNodeId.includes('1009:6826') ||
@@ -137,7 +140,7 @@ export function BusinessDetailsPage({
               {/* Left Column: Platform Settings sections Navigation Card */}
               <aside
                 aria-label="Platform Settings sections"
-                className="w-full lg:w-[260px] shrink-0 bg-white border border-[#DCE2EB] rounded-[18px] p-3 shadow-xs"
+                className="w-full lg:w-65 shrink-0 bg-white border border-[#DCE2EB] rounded-[18px] p-3 shadow-xs"
               >
                 {/* Section title (p.sn-t) */}
                 <div className="px-2.5 py-1.5 mb-1">
@@ -172,7 +175,7 @@ export function BusinessDetailsPage({
                         {isActive && (
                           <span
                             aria-hidden="true"
-                            className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-[26px] bg-[#F1C134] rounded-r-[3px]"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 w-0.75 h-6.5 bg-[#F1C134] rounded-r-[3px]"
                           />
                         )}
 
@@ -287,7 +290,14 @@ export function BusinessDetailsPage({
                   </h2>
 
                   {/* 2x2 Cards Grid (ul) */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                  {isContentLoading ? (
+                    <CardGridSkeleton
+                      count={4}
+                      className="grid grid-cols-1 md:grid-cols-2 gap-3.5"
+                      cardClassName="h-20 rounded-[16px]"
+                    />
+                  ) : null}
+                  <div className={`grid grid-cols-1 md:grid-cols-2 gap-3.5 ${isContentLoading ? "hidden" : ""}`}>
                     {OTHER_SETTINGS_CARDS.map((card) => {
                       const Icon = card.icon
                       return (

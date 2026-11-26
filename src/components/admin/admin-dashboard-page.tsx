@@ -13,7 +13,7 @@ import {
   UserPlus,
   Eye,
   Edit3,
-  RefreshCw,
+  RotateCw,
 } from 'lucide-react'
 import { AdminSidebar } from './admin-sidebar'
 import { AdminHeader } from './admin-header'
@@ -33,6 +33,8 @@ import {
   type AdminRoleItem,
 } from './dashboard-data'
 import { Card, CardTitle, CardDescription } from '#/components/ui/card'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import { SidebarProvider } from '#/components/ui/sidebar'
@@ -443,6 +445,8 @@ export interface AdminDashboardPageProps {
 export function AdminDashboardPage({ onRefresh }: AdminDashboardPageProps) {
   const [isRefreshing, setIsRefreshing] = React.useState(false)
   const [lastRefreshed, setLastRefreshed] = React.useState('Just now')
+  const isContentLoading = useContentLoading()
+  const showPlaceholder = isContentLoading || isRefreshing
 
   const handleRefresh = () => {
     setIsRefreshing(true)
@@ -480,7 +484,7 @@ export function AdminDashboardPage({ onRefresh }: AdminDashboardPageProps) {
 
           {/* Main Content: div#page (EL-acfb41d2) */}
           <main className="flex-1 p-5 md:p-6 lg:p-8">
-            <div className="mx-auto flex max-w-[1520px] flex-col gap-6">
+            <div className="mx-auto flex max-w-380 flex-col gap-6">
               {/* Page Header (div.ph2) */}
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div className="flex flex-col gap-1">
@@ -516,22 +520,34 @@ export function AdminDashboardPage({ onRefresh }: AdminDashboardPageProps) {
                     className="h-6 px-1.5 text-xs text-[#0267B8] hover:bg-[#EEF2F7]"
                     title={`Refresh overview data (Last updated: ${lastRefreshed})`}
                   >
-                    <RefreshCw
+                    <RotateCw
                       className={cn('size-3.5', isRefreshing && 'animate-spin')}
                     />
                   </Button>
                 </div>
               </div>
 
+              {showPlaceholder ? <CardGridSkeleton /> : null}
+
               {/* Row 1: KPI Metrics Grid (section 972:2189) */}
-              <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <section
+                className={cn(
+                  'grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4',
+                  showPlaceholder && 'hidden',
+                )}
+              >
                 {DASHBOARD_KPIS.map((kpi) => (
                   <AdminKpiCard key={kpi.id} item={kpi} />
                 ))}
               </section>
 
               {/* Rows 2 & 3: Main Grid (3 columns on lg, gap-5) */}
-              <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+              <div
+                className={cn(
+                  'grid grid-cols-1 gap-5 lg:grid-cols-3',
+                  showPlaceholder && 'hidden',
+                )}
+              >
                 {/* Row 2 Left (span 2): Booking Status Overview */}
                 <div className="lg:col-span-2">
                   <BookingStatusOverview />

@@ -32,6 +32,8 @@ import { AgentPortalHeader } from './agent-portal-header'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
 import { Card } from '#/components/ui/card'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { Input } from '#/components/ui/input'
 import { DatePicker } from '#/components/ui/date-picker'
 import {
@@ -74,6 +76,7 @@ export function AgentDashboardPage({
 
   // Demo toggle: Prototype empty state (exact Figma #660:5189) vs Populated demo
   const [isDemoPopulated, setIsDemoPopulated] = React.useState(initialPopulated)
+  const isContentLoading = useContentLoading()
 
   // Interactive modal states
   const [bookingModalOpen, setBookingModalOpen] = React.useState(false)
@@ -204,7 +207,7 @@ export function AgentDashboardPage({
                 aria-hidden="true"
               />
               <div
-                className="absolute -right-16 -top-16 size-80 rounded-full border-[32px] border-[#F1C134]/10 pointer-events-none"
+                className="absolute -right-16 -top-16 size-80 rounded-full border-32 border-[#F1C134]/10 pointer-events-none"
                 aria-hidden="true"
               />
 
@@ -286,8 +289,15 @@ export function AgentDashboardPage({
               </div>
             </section>
 
+            {isContentLoading ? <CardGridSkeleton /> : null}
+
             {/* 3. Business Summary 4 KPI Cards matching Figma #660:5365 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <div
+              className={cn(
+                'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5',
+                isContentLoading && 'hidden',
+              )}
+            >
               {/* KPI 1: Wallet Balance */}
               <Card className="rounded-2xl border-[#DCE2EB] bg-white p-5 shadow-xs hover:shadow-md transition-shadow">
                 <div className="flex items-center justify-between">
@@ -431,7 +441,12 @@ export function AgentDashboardPage({
             </div>
 
             {/* 4. Dashboard Modules Grid matching Figma #660:5456 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div
+              className={cn(
+                'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6',
+                isContentLoading && 'hidden',
+              )}
+            >
               {/* Module 1: Recent Bookings (Figma section#c-bk #660:5457) */}
               <Card
                 id="c-bk"
@@ -454,7 +469,7 @@ export function AgentDashboardPage({
                   </div>
 
                   {/* Body Empty State #660:5467 */}
-                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-[220px]">
+                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-55">
                     {isDemoPopulated ? (
                       <div className="w-full text-left space-y-3">
                         <div className="p-3 rounded-xl bg-[#F4F6FA] border border-[#DCE2EB] flex items-center justify-between">
@@ -544,7 +559,7 @@ export function AgentDashboardPage({
                   </div>
 
                   {/* Body State #660:5497 */}
-                  <div className="p-6 flex flex-col items-start gap-3 min-h-[220px]">
+                  <div className="p-6 flex flex-col items-start gap-3 min-h-55">
                     <div className="w-full flex items-start gap-3 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200/60 text-emerald-900">
                       <CheckCircle2 className="size-5 text-emerald-600 shrink-0 mt-0.5" />
                       <div className="text-left">
@@ -864,7 +879,7 @@ export function AgentDashboardPage({
                   </div>
 
                   {/* Body Content #660:5657 */}
-                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-[190px]">
+                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-47.5">
                     <div className="size-12 rounded-2xl bg-[#F4F6FA] text-[#8EAECF] flex items-center justify-center mb-2.5">
                       <Percent className="size-6" />
                     </div>
@@ -918,7 +933,7 @@ export function AgentDashboardPage({
                   </div>
 
                   {/* Body Content #660:5684 */}
-                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-[190px]">
+                  <div className="p-6 text-center flex flex-col items-center justify-center min-h-47.5">
                     {isDemoPopulated ? (
                       <div className="w-full text-left space-y-2">
                         <div className="p-2.5 rounded-xl bg-[#F4F6FA] border border-[#DCE2EB] flex items-center justify-between text-xs">

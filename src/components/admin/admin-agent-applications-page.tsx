@@ -10,6 +10,8 @@ import { ApplicationReviewModal } from './application-review-modal'
 import { ApplicationReviewView } from './application-review-view'
 import type { AgentApplication } from './application-review-modal'
 import { Button } from '#/components/ui/button'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { SidebarProvider } from '#/components/ui/sidebar'
 
 // Initial application data derived exactly from Figma design #645:301 & #648:909
@@ -79,6 +81,7 @@ export function AdminAgentApplicationsPage({
   const [forceNoDataMatch, setForceNoDataMatch] = React.useState<boolean>(
     initialEmpty || initialView === 'no-data',
   )
+  const isContentLoading = useContentLoading()
 
   // Status counts
   const pendingCount = applications.filter((a) => a.status === 'pending').length
@@ -298,7 +301,16 @@ export function AdminAgentApplicationsPage({
                 </div>
 
                 {/* 3. Status Metric Cards (4 Grid) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3.5 sm:gap-4">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={4}
+                    className="gap-3.5 sm:gap-4"
+                    cardClassName="h-24 rounded-2xl"
+                  />
+                ) : null}
+                <div
+                  className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3.5 sm:gap-4 ${isContentLoading ? 'hidden' : ''}`}
+                >
                   <StatusMetricCard
                     status="pending"
                     title="Pending Review"

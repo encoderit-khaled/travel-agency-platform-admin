@@ -11,6 +11,7 @@ import {
 import { Input } from '#/components/ui/input'
 import { Textarea } from '#/components/ui/textarea'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Badge } from '#/components/ui/badge'
 import { cn } from 'cn'
 import type { CreditRequestType } from './credit-requests-types'
@@ -38,13 +39,17 @@ export function NewCreditRequestForm({
     'Explain why you need this credit change',
   )
 
+  const { isLoading, run } = useActionLoading()
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    onSubmitRequest({
-      requestType,
-      requestedAmount,
-      reason,
-    })
+    run(() =>
+      onSubmitRequest({
+        requestType,
+        requestedAmount,
+        reason,
+      }),
+    )
   }
 
   return (
@@ -342,7 +347,7 @@ export function NewCreditRequestForm({
               <span className="text-xs text-[#64748B] block font-medium">
                 Reason
               </span>
-              <p className="font-semibold text-[#001A3D] text-sm leading-relaxed break-words">
+              <p className="font-semibold text-[#001A3D] text-sm leading-relaxed wrap-break-word">
                 {reason || '—'}
               </p>
             </div>
@@ -368,6 +373,8 @@ export function NewCreditRequestForm({
           <div className="pt-4 space-y-2.5 border-t border-[#F1F5F9]">
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Processing..."
               className="w-full h-11 rounded-xl bg-[#F5B544] hover:bg-[#E5A433] text-[#001A3D] font-bold text-sm shadow-xs flex items-center justify-center gap-2 cursor-pointer transition-colors"
             >
               <CheckCircle2 className="size-4 text-[#001A3D]" />

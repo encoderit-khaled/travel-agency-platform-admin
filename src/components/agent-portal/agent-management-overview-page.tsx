@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Users,
   CalendarDays,
@@ -61,6 +63,7 @@ export function AgentManagementOverviewPage({
   initialFilterBooking = 'all',
   initialDropdownOpen = false,
 }: AgentManagementOverviewPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
@@ -281,7 +284,7 @@ export function AgentManagementOverviewPage({
               </span>
               <div className="flex items-center gap-1.5 text-xs font-semibold text-[#012A5E]">
                 <Mail className="size-3.5 text-[#0267B8] shrink-0" />
-                <span className="truncate max-w-[190px]">{agent.email}</span>
+                <span className="truncate max-w-47.5">{agent.email}</span>
               </div>
               {agent.phone && (
                 <div className="flex items-center gap-1.5 text-[11px] font-medium text-[#4F5B70]">
@@ -306,7 +309,7 @@ export function AgentManagementOverviewPage({
             <div className="flex flex-col items-start gap-1.5">
               {agent.permissionsConfigured ? (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                  <Check className="size-3 stroke-[3]" />
+                  <Check className="size-3 stroke-3" />
                   <span>Configured</span>
                 </span>
               ) : (
@@ -340,7 +343,7 @@ export function AgentManagementOverviewPage({
             <div className="flex flex-col items-start gap-1.5">
               {agent.markupConfigured ? (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                  <Check className="size-3 stroke-[3]" />
+                  <Check className="size-3 stroke-3" />
                   <span>Configured</span>
                 </span>
               ) : (
@@ -591,7 +594,14 @@ export function AgentManagementOverviewPage({
             </aside>
 
             {/* KPI Cards Grid (Figma Sub-agent summary #665:6862) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={4}
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5"
+                cardClassName="h-36 rounded-2xl"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 ${isContentLoading ? "hidden" : ""}`}>
               {/* Card 1: Total Sub-agents (Figma article.kpi #665:6863) */}
               <article className="bg-white rounded-2xl border border-[#DCE2EB] p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(1,42,94,0.03)] hover:shadow-md transition-shadow">
                 <div className="flex flex-col gap-3">
@@ -668,7 +678,7 @@ export function AgentManagementOverviewPage({
                   {/* Split Pills: Configured vs Not Configured */}
                   <div className="flex flex-wrap items-center gap-2 pt-1">
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                      <Check className="size-3.5 stroke-[3]" />
+                      <Check className="size-3.5 stroke-3" />
                       <span>{markupConfiguredCount} Configured</span>
                     </span>
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-[#F1F5F9] text-[#4F5B70]">
@@ -712,7 +722,7 @@ export function AgentManagementOverviewPage({
                   {/* Split Pills: Assigned vs Need Config */}
                   <div className="flex flex-wrap items-center gap-2 pt-1">
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-extrabold bg-[#ECFDF5] text-[#137A48]">
-                      <Check className="size-3.5 stroke-[3]" />
+                      <Check className="size-3.5 stroke-3" />
                       <span>
                         {permissionsConfiguredCount} Permissions assigned
                       </span>
@@ -777,7 +787,7 @@ export function AgentManagementOverviewPage({
               <div className="p-4 sm:p-5 border-b border-[#E6EAF0] bg-[#F8FAFC]/50 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 flex-1 max-w-4xl">
                   {/* Search Input */}
-                  <div className="relative flex-1 min-w-[220px]">
+                  <div className="relative flex-1 min-w-55">
                     <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-[#9AA6B9]" />
                     <Input
                       type="search"

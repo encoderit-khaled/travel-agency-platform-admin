@@ -2,6 +2,7 @@ import * as React from 'react'
 import {
   ArrowDownToLine,
   Download,
+  Loader2,
   CheckCircle2,
   FileText,
   FileSpreadsheet,
@@ -186,7 +187,7 @@ export function AgentStatementsExportDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[680px] w-full p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white shadow-2xl border border-[#DCE2EB] overflow-hidden">
+      <DialogContent className="max-w-170 w-full p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white shadow-2xl border border-[#DCE2EB] overflow-hidden">
         {downloadSuccess ? (
           <div className="py-8 flex flex-col items-center justify-center text-center space-y-3">
             <div className="size-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shadow-xs">
@@ -465,7 +466,11 @@ export function AgentStatementsExportDialog({
                   disabled={downloading}
                   className="rounded-xl bg-[#F5B800] hover:bg-[#E5AC00] text-[#001A3D] font-bold text-xs px-6 py-2.5 h-10 flex items-center gap-2 shadow-xs cursor-pointer transition-colors"
                 >
-                  <Download className="size-4" />
+                  {downloading ? (
+                    <Loader2 className="size-4 animate-spin" />
+                  ) : (
+                    <Download className="size-4" />
+                  )}
                   <span>
                     {downloading
                       ? 'Preparing...'

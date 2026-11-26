@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Users,
   Shield,
@@ -53,6 +55,7 @@ export function AdminUsersPage({
   initialAction,
   initialUserId,
 }: AdminUsersPageProps) {
+  const isContentLoading = useContentLoading()
   const [users, setUsers] = React.useState<AdminUser[]>(INITIAL_ADMIN_USERS)
   const [searchQuery, setSearchQuery] = React.useState(initialSearchQuery)
   const [selectedRole, setSelectedRole] =
@@ -253,7 +256,7 @@ export function AdminUsersPage({
           />
 
           {/* Main Page Content */}
-          <main className="flex-1 p-5 sm:p-7 lg:p-8 max-w-[1400px] w-full mx-auto space-y-6">
+          <main className="flex-1 p-5 sm:p-7 lg:p-8 max-w-350 w-full mx-auto space-y-6">
             {/* Simulation controls / banner */}
             <div className="flex flex-wrap items-center justify-between gap-3 bg-white border border-[#DCE2EB] rounded-2xl p-3 sm:px-4 shadow-2xs">
               <div className="flex items-center gap-2 text-xs font-semibold text-[#4F5B70]">
@@ -326,7 +329,14 @@ export function AdminUsersPage({
             </div>
 
             {/* Summary KPI Cards (Summary) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={2}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl"
+                cardClassName="h-28 rounded-[18px]"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl ${isContentLoading ? "hidden" : ""}`}>
               {/* Card 1: Total Admin Users */}
               <div className="relative overflow-hidden bg-white border border-[#DCE2EB] rounded-[18px] p-4 flex flex-col justify-between shadow-2xs">
                 {/* Decorative circle */}

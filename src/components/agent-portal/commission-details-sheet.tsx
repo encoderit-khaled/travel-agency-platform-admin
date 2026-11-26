@@ -65,7 +65,7 @@ export function CommissionDetailsSheet({
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
         side="right"
-        className="w-full sm:max-w-md md:max-w-[540px] p-6 sm:p-8 flex flex-col justify-between overflow-y-auto bg-white border-l border-[#DCE2EB]"
+        className="w-full sm:max-w-md md:max-w-135 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto bg-white border-l border-[#DCE2EB]"
       >
         <div className="space-y-6">
           {/* Header */}

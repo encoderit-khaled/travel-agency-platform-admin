@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { AgentApplication } from './application-review-modal'
 
 export interface ApproveApplicationModalProps {
@@ -25,20 +26,26 @@ export function ApproveApplicationModal({
   onConfirmApprove,
   application,
 }: ApproveApplicationModalProps) {
+  const { isLoading, run } = useActionLoading(isOpen)
+
   if (!application) return null
 
   const handleConfirm = () => {
-    if (onConfirm) {
-      onConfirm()
-    }
-    if (onConfirmApprove) {
-      onConfirmApprove(application.id)
-    }
-    onClose()
+    run(() => {
+      onConfirm?.()
+      onConfirmApprove?.(application.id)
+      onClose()
+    })
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open && isLoading) return
+        if (!open) onClose()
+      }}
+    >
       <DialogContent className="max-w-135 p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
         <DialogHeader className="gap-0 text-left">
           {/* Circular Green Icon Badge matching Figma #648:1247 */}
@@ -91,6 +98,7 @@ export function ApproveApplicationModal({
             type="button"
             variant="outline"
             onClick={onClose}
+            disabled={isLoading}
             className="h-10 px-5 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F4F6FA] hover:text-[#012A5E] font-semibold text-sm transition-colors cursor-pointer"
           >
             Cancel
@@ -98,6 +106,8 @@ export function ApproveApplicationModal({
           <Button
             type="button"
             onClick={handleConfirm}
+            loading={isLoading}
+            loadingText="Processing..."
             className="h-10 px-5 rounded-xl bg-[#0B6B43] hover:bg-[#085233] text-white font-bold text-sm shadow-xs transition-colors cursor-pointer"
           >
             Confirm Approval

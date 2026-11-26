@@ -10,6 +10,7 @@ import {
   Pencil,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { SidebarProvider } from '#/components/ui/sidebar'
 import { AdminSidebar } from '../admin-sidebar'
@@ -70,6 +71,7 @@ export function LanguagesPage({
 
   // Centered dark success toast matching Figma 1009:6825 screenshot
   const [showSuccessToast, setShowSuccessToast] = React.useState<boolean>(false)
+  const { isLoading: isSaving, run } = useActionLoading()
 
   // Update a draft row name
   const updateRowName = (id: string, name: string) => {
@@ -143,23 +145,22 @@ export function LanguagesPage({
       updated = configuredLanguages.length > 0 ? configuredLanguages : INITIAL_CONFIGURED_LANGUAGES
     }
 
-    setConfiguredLanguages(updated)
-    if (onUpdateLanguages) {
-      onUpdateLanguages(updated)
-    }
-    if (onSaveLanguages) {
-      onSaveLanguages(updated)
-    }
+    run(() => {
+      setConfiguredLanguages(updated)
+      if (onUpdateLanguages) {
+        onUpdateLanguages(updated)
+      }
+      if (onSaveLanguages) {
+        onSaveLanguages(updated)
+      }
 
-    // Reset draft rows & switch to saved view
-    setDraftRows([{ id: `draft-${Date.now()}`, name: '' }])
-    setIsAddingMode(false)
-
-    // Trigger success toast popup matching Figma node 1009:6825
-    setShowSuccessToast(true)
-    setTimeout(() => {
-      setShowSuccessToast(false)
-    }, 3500)
+      setDraftRows([{ id: `draft-${Date.now()}`, name: '' }])
+      setIsAddingMode(false)
+      setShowSuccessToast(true)
+      setTimeout(() => {
+        setShowSuccessToast(false)
+      }, 3500)
+    })
   }
 
   // Remove a configured language
@@ -198,7 +199,7 @@ export function LanguagesPage({
           />
 
           {/* Main Content Area */}
-          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-[1440px] w-full mx-auto space-y-6">
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-360 w-full mx-auto space-y-6">
             {/* Page Header (PLATFORM SETTINGS / Platform Settings / Manage core platform configuration.) */}
             <div className="space-y-1">
               <span className="text-xs font-bold text-[#0052CC] tracking-wider uppercase">
@@ -217,7 +218,7 @@ export function LanguagesPage({
               {/* Left Column: Platform Settings sections Navigation Card */}
               <aside
                 aria-label="Platform Settings sections"
-                className="w-full lg:w-[260px] shrink-0 bg-white border border-[#DCE2EB] rounded-2xl p-3 shadow-xs"
+                className="w-full lg:w-65 shrink-0 bg-white border border-[#DCE2EB] rounded-2xl p-3 shadow-xs"
               >
                 {/* Section title (SETTINGS) */}
                 <div className="px-3 py-2 mb-1">
@@ -253,7 +254,7 @@ export function LanguagesPage({
                         {isActive && (
                           <span
                             aria-hidden="true"
-                            className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-[26px] bg-[#F1C134] rounded-r-[3px]"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 w-0.75 h-6.5 bg-[#F1C134] rounded-r-[3px]"
                           />
                         )}
 
@@ -335,7 +336,7 @@ export function LanguagesPage({
 
                             <div className="flex items-center justify-between gap-4">
                               {/* Input with globe icon on the left inside input */}
-                              <div className="relative flex-1 max-w-[500px]">
+                              <div className="relative flex-1 max-w-125">
                                 <Globe className="size-4.5 text-[#64748B] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                                 <Input
                                   id={`lang-input-${row.id}`}
@@ -399,6 +400,8 @@ export function LanguagesPage({
                           <Button
                             type="button"
                             onClick={handleSave}
+                            loading={isSaving}
+                            loadingText="Saving..."
                             className="h-10 px-6 rounded-xl bg-[#001A3D] hover:bg-[#002654] text-sm font-semibold text-white cursor-pointer shadow-xs"
                           >
                             Save Changes

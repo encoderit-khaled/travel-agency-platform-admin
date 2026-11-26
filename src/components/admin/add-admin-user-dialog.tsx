@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import {
@@ -38,6 +39,7 @@ export function AddAdminUserDialog({
   const [role, setRole] = React.useState<AdminRole>('Operations')
   const [sendInvite, setSendInvite] = React.useState(true)
   const [error, setError] = React.useState<string | null>(null)
+  const { isLoading, run } = useActionLoading(open)
 
   const handleReset = () => {
     setName('')
@@ -80,9 +82,11 @@ export function AddAdminUserDialog({
       lastActive: 'Just now',
     }
 
-    onAddUser(newUser)
-    handleReset()
-    onOpenChange(false)
+    run(() => {
+      onAddUser(newUser)
+      handleReset()
+      onOpenChange(false)
+    })
   }
 
   const selectedRoleDef = PREDEFINED_ROLES.find((r) => r.name === role)
@@ -255,6 +259,8 @@ export function AddAdminUserDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Processing..."
               className="h-10 px-5 rounded-xl bg-[#012A5E] hover:bg-[#02387B] text-white font-bold text-xs shadow-xs"
             >
               Add Admin User

@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from '#/components/ui/select'
 import { Building2, ArrowRight } from 'lucide-react'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { BusinessInformationData } from './types'
 
 export interface BusinessInformationFormProps {
@@ -121,6 +122,9 @@ export function BusinessInformationForm({
     }
   }
 
+  const { isLoading: isSubmitting, run } = useActionLoading()
+  const busy = isLoading || isSubmitting
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setTouched({
@@ -134,7 +138,7 @@ export function BusinessInformationForm({
     setErrors(validationErrors)
 
     if (Object.keys(validationErrors).length === 0) {
-      onSubmit?.(formData)
+      run(() => onSubmit?.(formData))
     }
   }
 
@@ -185,7 +189,7 @@ export function BusinessInformationForm({
               aria-invalid={
                 touched.legalBusinessName && !!errors.legalBusinessName
               }
-              className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
+              className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
             />
             {touched.legalBusinessName && errors.legalBusinessName && (
               <p className="text-xs text-[#DC2626] font-medium">
@@ -213,7 +217,7 @@ export function BusinessInformationForm({
               placeholder="e.g. Skyline Travels"
               value={formData.tradingName}
               onChange={(e) => handleChange('tradingName', e.target.value)}
-              className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
+              className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
             />
           </div>
 
@@ -231,7 +235,7 @@ export function BusinessInformationForm({
             >
               <SelectTrigger
                 id="b-type"
-                className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm font-semibold"
+                className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm font-semibold"
               >
                 <SelectValue placeholder="Select business type" />
               </SelectTrigger>
@@ -271,7 +275,7 @@ export function BusinessInformationForm({
               onChange={(e) =>
                 handleChange('registrationNumber', e.target.value)
               }
-              className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
+              className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
             />
           </div>
 
@@ -290,7 +294,7 @@ export function BusinessInformationForm({
             >
               <SelectTrigger
                 id="b-country"
-                className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm font-semibold"
+                className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm font-semibold"
               >
                 <SelectValue placeholder="Select country" />
               </SelectTrigger>
@@ -325,7 +329,7 @@ export function BusinessInformationForm({
               onChange={(e) => handleChange('city', e.target.value)}
               onBlur={() => handleBlur('city')}
               aria-invalid={touched.city && !!errors.city}
-              className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
+              className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
             />
             {touched.city && errors.city && (
               <p className="text-xs text-[#DC2626] font-medium">
@@ -350,7 +354,7 @@ export function BusinessInformationForm({
               onChange={(e) => handleChange('address', e.target.value)}
               onBlur={() => handleBlur('address')}
               aria-invalid={touched.address && !!errors.address}
-              className="min-h-[80px] rounded-[12px] border-[#CBD5E1] bg-white p-3 text-sm"
+              className="min-h-20 rounded-[12px] border-[#CBD5E1] bg-white p-3 text-sm"
             />
             {touched.address && errors.address && (
               <p className="text-xs text-[#DC2626] font-medium">
@@ -378,7 +382,7 @@ export function BusinessInformationForm({
               placeholder="https://example.com"
               value={formData.website}
               onChange={(e) => handleChange('website', e.target.value)}
-              className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
+              className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm"
             />
           </div>
         </div>
@@ -388,7 +392,8 @@ export function BusinessInformationForm({
       <div className="rounded-[18px] border border-[#DCE2EB] bg-white p-3.5 sm:p-4.5 shadow-xs flex items-center justify-end">
         <Button
           type="submit"
-          disabled={isLoading}
+          loading={busy}
+          loadingText="Processing..."
           className="h-12 sm:h-13 rounded-[10px] bg-[#F5A623] hover:bg-[#EAA11F] text-[#012A5E] font-extrabold text-xs sm:text-sm px-7 gap-2 shadow-xs cursor-pointer"
         >
           <span>Continue to Step 2 (Contact & Documents)</span>

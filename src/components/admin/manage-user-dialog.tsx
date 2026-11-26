@@ -17,6 +17,7 @@ import {
   DialogTitle,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import {
@@ -60,23 +61,29 @@ export function ManageUserDialog({
     }
   }, [user])
 
+  const { isLoading, run } = useActionLoading(open)
+
   if (!user) return null
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault()
-    onUpdateUser({
-      ...user,
-      name: name.trim() || user.name,
-      email: email.trim() || user.email,
-      role,
-      status,
+    run(() => {
+      onUpdateUser({
+        ...user,
+        name: name.trim() || user.name,
+        email: email.trim() || user.email,
+        role,
+        status,
+      })
+      onOpenChange(false)
     })
-    onOpenChange(false)
   }
 
   const handleDelete = () => {
-    onDeleteUser(user.id)
-    onOpenChange(false)
+    run(() => {
+      onDeleteUser(user.id)
+      onOpenChange(false)
+    })
   }
 
   const selectedRoleDef = PREDEFINED_ROLES.find((r) => r.name === role)
@@ -142,6 +149,8 @@ export function ManageUserDialog({
               <Button
                 type="button"
                 onClick={handleDelete}
+                loading={isLoading}
+                loadingText="Processing..."
                 className="h-10 px-5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow-xs"
               >
                 Yes, Delete User
@@ -306,6 +315,8 @@ export function ManageUserDialog({
                 </Button>
                 <Button
                   type="submit"
+                  loading={isLoading}
+                  loadingText="Saving..."
                   className="h-10 px-5 rounded-xl bg-[#012A5E] hover:bg-[#02387B] text-white font-bold text-xs shadow-xs"
                 >
                   Save Changes

@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Search,
   Ticket,
@@ -75,6 +77,7 @@ export function AgentBookingHistoryPage({
   initialStatusFilter,
   initialServiceFilter,
 }: AgentBookingHistoryPageProps) {
+  const isContentLoading = useContentLoading()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
 
   // Filters & Search
@@ -453,7 +456,7 @@ export function AgentBookingHistoryPage({
         },
         meta: {
           headerClassName:
-            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
+            'w-42.5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
           cellClassName: 'py-4 pl-6 align-middle font-mono text-sm font-bold',
         },
       },
@@ -473,7 +476,7 @@ export function AgentBookingHistoryPage({
         ),
         meta: {
           headerClassName:
-            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-42.5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-middle',
         },
       },
@@ -491,7 +494,7 @@ export function AgentBookingHistoryPage({
         },
         meta: {
           headerClassName:
-            'w-[155px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-38.75 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-middle',
         },
       },
@@ -501,7 +504,7 @@ export function AgentBookingHistoryPage({
         cell: ({ row }) => row.original.travelDate,
         meta: {
           headerClassName:
-            'w-[170px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-42.5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName:
             'py-4 align-middle text-sm font-medium text-[#0F172A]',
         },
@@ -516,7 +519,7 @@ export function AgentBookingHistoryPage({
           ),
         meta: {
           headerClassName:
-            'w-[200px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-50 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-middle',
         },
       },
@@ -526,7 +529,7 @@ export function AgentBookingHistoryPage({
         cell: ({ row }) => renderStatusBadge(row.original.status),
         meta: {
           headerClassName:
-            'w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-32.5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-middle',
         },
       },
@@ -536,7 +539,7 @@ export function AgentBookingHistoryPage({
         cell: ({ row }) => renderDocumentCell(row.original),
         meta: {
           headerClassName:
-            'w-[220px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-55 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-middle',
         },
       },
@@ -559,7 +562,7 @@ export function AgentBookingHistoryPage({
         },
         meta: {
           headerClassName:
-            'w-[130px] text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pr-6 text-right',
+            'w-32.5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider py-3.5 pr-6 text-right',
           cellClassName: 'py-4 pr-6 align-middle text-right',
         },
       },
@@ -657,7 +660,14 @@ export function AgentBookingHistoryPage({
             </div>
 
             {/* 5 KPI Summary Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={5}
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
+                cardClassName="h-32 rounded-2xl"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 ${isContentLoading ? "hidden" : ""}`}>
               {/* Card 1: Total Bookings */}
               <div
                 onClick={() => {
@@ -1063,7 +1073,7 @@ export function AgentBookingHistoryPage({
                           if (val) setSourceFilter(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[160px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-40 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1096,7 +1106,7 @@ export function AgentBookingHistoryPage({
                           if (val) setCreatedByFilter(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[180px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-45 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1139,7 +1149,7 @@ export function AgentBookingHistoryPage({
                           if (val) setServiceFilter(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[150px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-37.5 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1183,7 +1193,7 @@ export function AgentBookingHistoryPage({
                           if (val) setStatusDropdownFilter(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[140px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-35 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1215,7 +1225,7 @@ export function AgentBookingHistoryPage({
                           if (val) setDateFilter(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[140px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-35 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1245,7 +1255,7 @@ export function AgentBookingHistoryPage({
                           if (val) setSortBy(val)
                         }}
                       >
-                        <SelectTrigger className="h-10 min-w-[180px] rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
+                        <SelectTrigger className="h-10 min-w-45 rounded-xl bg-white border-[#DCE2EB] text-xs font-semibold text-[#012A5E]">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -1378,7 +1388,7 @@ export function AgentBookingHistoryPage({
       >
         <SheetContent
           side="right"
-          className="sm:max-w-[520px] p-0 flex flex-col justify-between bg-[#F8FAFC]"
+          className="sm:max-w-130 p-0 flex flex-col justify-between bg-[#F8FAFC]"
         >
           {selectedBooking && (
             <>
@@ -1576,7 +1586,7 @@ export function AgentBookingHistoryPage({
           if (!open) setPreviewDocument(null)
         }}
       >
-        <DialogContent className="sm:max-w-[560px] p-0 overflow-hidden bg-white border-[#DCE2EB] rounded-2xl shadow-xl">
+        <DialogContent className="sm:max-w-140 p-0 overflow-hidden bg-white border-[#DCE2EB] rounded-2xl shadow-xl">
           {previewDocument && (
             <div>
               {/* Modal Header */}
@@ -1727,7 +1737,7 @@ export function AgentBookingHistoryPage({
 
       {/* New Booking / Search Dialog */}
       <Dialog open={newBookingModalOpen} onOpenChange={setNewBookingModalOpen}>
-        <DialogContent className="sm:max-w-[540px] p-0 rounded-2xl overflow-hidden bg-white border-[#DCE2EB] shadow-xl">
+        <DialogContent className="sm:max-w-135 p-0 rounded-2xl overflow-hidden bg-white border-[#DCE2EB] shadow-xl">
           <div className="p-6 bg-linear-to-r from-[#001A3D] to-[#012A5E] text-white space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-wider text-blue-200">
               Skyline Demo Travels Ltd

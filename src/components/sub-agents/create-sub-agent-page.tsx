@@ -28,6 +28,7 @@ import {
 } from '#/components/ui/select'
 import { Textarea } from '#/components/ui/textarea'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Badge } from '#/components/ui/badge'
 import {
   AgentPortalSidebar,
@@ -117,9 +118,11 @@ export function CreateSubAgentPage() {
     }))
   }
 
+  const { isLoading, run } = useActionLoading()
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setCreatedSuccessOpen(true)
+    run(() => setCreatedSuccessOpen(true))
   }
 
   // Get active permission item status helper
@@ -981,7 +984,7 @@ export function CreateSubAgentPage() {
                   <div className="flex items-center justify-between py-1.5 border-b border-[#F1F5F9]">
                     <dt className="text-[#4F5B70] font-medium">Display Name</dt>
                     <div className="flex items-center gap-2">
-                      <dd className="font-bold text-[#141B28] text-right truncate max-w-[140px]">
+                      <dd className="font-bold text-[#141B28] text-right truncate max-w-35">
                         {formData.displayName || '—'}
                       </dd>
                       <button
@@ -998,7 +1001,7 @@ export function CreateSubAgentPage() {
                   <div className="flex items-center justify-between py-1.5 border-b border-[#F1F5F9]">
                     <dt className="text-[#4F5B70] font-medium">Login Email</dt>
                     <div className="flex items-center gap-2">
-                      <dd className="font-semibold text-[#141B28] text-right truncate max-w-[140px]">
+                      <dd className="font-semibold text-[#141B28] text-right truncate max-w-35">
                         {formData.loginEmail || '—'}
                       </dd>
                       <button
@@ -1017,7 +1020,7 @@ export function CreateSubAgentPage() {
                       Contact Person
                     </dt>
                     <div className="flex items-center gap-2">
-                      <dd className="font-medium text-[#141B28] text-right truncate max-w-[140px]">
+                      <dd className="font-medium text-[#141B28] text-right truncate max-w-35">
                         {formData.contactPerson || '—'}
                       </dd>
                       <button
@@ -1034,7 +1037,7 @@ export function CreateSubAgentPage() {
                   <div className="flex items-center justify-between py-1.5 border-b border-[#F1F5F9]">
                     <dt className="text-[#4F5B70] font-medium">Mobile</dt>
                     <div className="flex items-center gap-2">
-                      <dd className="font-medium text-[#141B28] text-right truncate max-w-[140px]">
+                      <dd className="font-medium text-[#141B28] text-right truncate max-w-35">
                         {formData.mobileNumber || '—'}
                       </dd>
                       <button
@@ -1115,6 +1118,8 @@ export function CreateSubAgentPage() {
                 <div className="flex flex-col gap-2.5 pt-2">
                   <Button
                     type="submit"
+                    loading={isLoading}
+                    loadingText="Processing..."
                     className="w-full h-11 rounded-xl bg-[#F1C134] text-[#012A5E] hover:bg-[#F3C84D] font-extrabold text-sm shadow-sm transition-transform active:scale-[0.99] flex items-center justify-center gap-2"
                   >
                     <CheckCircle2 className="size-4 stroke-[2.5]" />

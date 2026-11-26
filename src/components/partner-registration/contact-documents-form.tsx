@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import {
   Select,
   SelectContent,
@@ -127,6 +128,9 @@ export function ContactDocumentsForm({
     }
   }
 
+  const { isLoading: isSubmitting, run } = useActionLoading()
+  const busy = isLoading || isSubmitting
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setTouched({
@@ -138,7 +142,7 @@ export function ContactDocumentsForm({
     setErrors(validationErrors)
 
     if (Object.keys(validationErrors).length === 0) {
-      onSubmit?.(formData)
+      run(() => onSubmit?.(formData))
     }
   }
 
@@ -206,7 +210,7 @@ export function ContactDocumentsForm({
                 onChange={(e) => handleChange('fullName', e.target.value)}
                 onBlur={() => handleBlur('fullName')}
                 aria-invalid={touched.fullName && !!errors.fullName}
-                className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
+                className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
               />
               {touched.fullName && errors.fullName && (
                 <p className="text-xs text-[#DC2626] font-medium">
@@ -234,7 +238,7 @@ export function ContactDocumentsForm({
                 placeholder="e.g. Managing Director, Travel Consultant"
                 value={formData.jobTitle}
                 onChange={(e) => handleChange('jobTitle', e.target.value)}
-                className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
+                className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
               />
             </div>
 
@@ -260,7 +264,7 @@ export function ContactDocumentsForm({
                   onBlur={() => handleBlur('businessEmail')}
                   aria-invalid={touched.businessEmail && !!errors.businessEmail}
                   aria-describedby="f-email-h"
-                  className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white pl-10 pr-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
+                  className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white pl-10 pr-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                 />
               </div>
               <p id="f-email-h" className="text-[11.5px] text-[#64748B]">
@@ -284,14 +288,14 @@ export function ContactDocumentsForm({
               </Label>
               <div className="flex items-center gap-2">
                 {/* Dial Code Selector */}
-                <div className="w-[130px] shrink-0">
+                <div className="w-32.5 shrink-0">
                   <Select
                     value={formData.phoneCountryCode}
                     onValueChange={(val) =>
                       val && handleChange('phoneCountryCode', val)
                     }
                   >
-                    <SelectTrigger className="h-[50px] rounded-[12px] border-[#CBD5E1] bg-white px-2.5 text-xs sm:text-sm font-semibold text-[#141C2E] focus-visible:border-[#0267B8]">
+                    <SelectTrigger className="h-12.5 rounded-[12px] border-[#CBD5E1] bg-white px-2.5 text-xs sm:text-sm font-semibold text-[#141C2E] focus-visible:border-[#0267B8]">
                       <SelectValue placeholder="+880" />
                     </SelectTrigger>
                     <SelectContent>
@@ -317,7 +321,7 @@ export function ContactDocumentsForm({
                   onBlur={() => handleBlur('phoneNumber')}
                   aria-invalid={touched.phoneNumber && !!errors.phoneNumber}
                   aria-describedby="f-phone-h"
-                  className="h-[50px] flex-1 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
+                  className="h-12.5 flex-1 rounded-[12px] border-[#CBD5E1] bg-white px-3.5 text-sm text-[#141C2E] placeholder:text-[#94A3B8] focus-visible:border-[#0267B8] focus-visible:ring-1 focus-visible:ring-[#0267B8]"
                 />
               </div>
               <p id="f-phone-h" className="text-[11.5px] text-[#64748B]">
@@ -436,7 +440,7 @@ export function ContactDocumentsForm({
           type="button"
           variant="outline"
           onClick={onBack}
-          className="h-[46px] rounded-[10px] border-[#012A5E] text-[#012A5E] hover:bg-[#F8FAFD] font-bold text-xs sm:text-sm px-4 sm:px-5 gap-2"
+          className="h-11.5 rounded-[10px] border-[#012A5E] text-[#012A5E] hover:bg-[#F8FAFD] font-bold text-xs sm:text-sm px-4 sm:px-5 gap-2"
         >
           <ArrowLeft className="size-4" />
           <span>Back to Business Info</span>
@@ -452,7 +456,8 @@ export function ContactDocumentsForm({
         <Button
           id="b-next"
           type="submit"
-          disabled={isLoading}
+          loading={busy}
+          loadingText="Processing..."
           className="h-12 sm:h-13 rounded-[10px] bg-[#F5A623] hover:bg-[#EAA11F] text-[#012A5E] font-extrabold text-xs sm:text-sm px-6 sm:px-7 gap-2 shadow-xs cursor-pointer transition-all"
         >
           <span id="b-next-t">Continue to Review</span>

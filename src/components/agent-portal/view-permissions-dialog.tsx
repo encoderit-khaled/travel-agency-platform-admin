@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Checkbox } from '#/components/ui/checkbox'
 import { Badge } from '#/components/ui/badge'
 import { ShieldCheck } from 'lucide-react'
@@ -37,6 +38,8 @@ export function ViewPermissionsDialog({
     }
   }, [subAgent])
 
+  const { isLoading, run } = useActionLoading(open)
+
   if (!subAgent) return null
 
   const handleToggle = (id: string) => {
@@ -46,15 +49,17 @@ export function ViewPermissionsDialog({
   }
 
   const handleSave = () => {
-    onSavePermissions(subAgent.id, permissions)
-    onOpenChange(false)
+    run(() => {
+      onSavePermissions(subAgent.id, permissions)
+      onOpenChange(false)
+    })
   }
 
   const enabledCount = permissions.filter((p) => p.enabled).length
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[560px] p-6 max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-140 p-6 max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center justify-between">
             <div className="size-11 rounded-xl bg-[#EAF4FD] text-[#0267B8] flex items-center justify-center mb-1">
@@ -143,6 +148,8 @@ export function ViewPermissionsDialog({
             <Button
               type="button"
               onClick={handleSave}
+              loading={isLoading}
+              loadingText="Saving..."
               className="bg-[#0267B8] hover:bg-[#01559A] text-white font-extrabold"
             >
               Save Permissions

@@ -115,7 +115,7 @@ export function B2CCustomersPage({
         header: 'Customer',
         meta: {
           headerClassName:
-            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[220px]',
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-55',
           cellClassName: 'py-3.5 px-5',
         },
         cell: ({ row }) => {
@@ -144,7 +144,7 @@ export function B2CCustomersPage({
         header: 'Email',
         meta: {
           headerClassName:
-            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[200px]',
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-50',
           cellClassName: 'py-3.5 px-5 text-sm',
         },
         cell: ({ row }) =>
@@ -159,7 +159,7 @@ export function B2CCustomersPage({
         header: 'Mobile',
         meta: {
           headerClassName:
-            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[160px]',
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-40',
           cellClassName: 'py-3.5 px-5 text-sm',
         },
         cell: ({ row }) =>
@@ -174,7 +174,7 @@ export function B2CCustomersPage({
         header: 'Sign-in',
         meta: {
           headerClassName:
-            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-[150px]',
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider min-w-37.5',
           cellClassName: 'py-3.5 px-5',
         },
         cell: ({ row }) => (
@@ -190,7 +190,7 @@ export function B2CCustomersPage({
         header: 'Action',
         meta: {
           headerClassName:
-            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider text-right w-[140px]',
+            'py-3 px-5 text-xs font-bold text-[#4F5B70] uppercase tracking-wider text-right w-35',
           cellClassName: 'py-3.5 px-5 text-right',
         },
         cell: ({ row }) => {

@@ -92,11 +92,17 @@ export function ApproveApplicationDialog({
       })
       setIsSubmitting(false)
       onClose()
-    }, 300)
+    }, 700)
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open && isSubmitting) return
+        if (!open) onClose()
+      }}
+    >
       <DialogContent className="max-w-xl p-6 sm:p-7">
         <DialogHeader className="gap-2">
           <div className="flex items-center gap-3">
@@ -290,11 +296,12 @@ export function ApproveApplicationDialog({
           <Button
             type="button"
             onClick={handleConfirm}
-            disabled={isSubmitting}
+            loading={isSubmitting}
+            loadingText="Approving..."
             className="bg-[#00875A] text-white hover:bg-[#00704A] font-extrabold px-5 h-10 shadow-sm gap-1.5 cursor-pointer"
           >
             <CheckCircle2 className="size-4" />
-            <span>{isSubmitting ? 'Approving...' : 'Confirm Approval'}</span>
+            <span>Confirm Approval</span>
           </Button>
         </DialogFooter>
       </DialogContent>

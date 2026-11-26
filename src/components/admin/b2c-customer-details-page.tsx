@@ -74,7 +74,7 @@ export function B2CCustomerDetailsPage({
         {/* 2. Main Content Area */}
         <div className="flex-1 min-w-0 flex flex-col">
           {/* Top Header Bar (Node #990:3176) */}
-          <header className="h-[68px] shrink-0 bg-white/92 backdrop-blur-md border-b border-[#DCE2EB] px-5 sm:px-7 flex items-center justify-between sticky top-0 z-20">
+          <header className="h-17 shrink-0 bg-white/92 backdrop-blur-md border-b border-[#DCE2EB] px-5 sm:px-7 flex items-center justify-between sticky top-0 z-20">
             {/* Left: Mobile Toggle & Breadcrumb */}
             <div className="flex items-center gap-3 min-w-0">
               <Button
@@ -148,7 +148,7 @@ export function B2CCustomerDetailsPage({
                       Super Admin
                     </span>
                   </span>
-                  <ChevronDown className="size-4 text-[#8792A4] shrink-0 ml-0.5 group-hover:text-[#012A5E] transition-colors group-data-[popup-open]:rotate-180" />
+                  <ChevronDown className="size-4 text-[#8792A4] shrink-0 ml-0.5 group-hover:text-[#012A5E] transition-colors group-data-popup-open:rotate-180" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
                   align="end"
@@ -269,7 +269,7 @@ export function B2CCustomerDetailsPage({
               <section className="bg-white border border-[#DCE2EB] rounded-[18px] p-5 sm:p-6 shadow-xs relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
                 {/* Decorative radial gradient in top right corner (Node #990:3078 ::after) */}
                 <div
-                  className="absolute -top-16 -right-6 w-[220px] h-[220px] rounded-full pointer-events-none"
+                  className="absolute -top-16 -right-6 w-55 h-55 rounded-full pointer-events-none"
                   style={{
                     background:
                       'radial-gradient(circle at 50% 50%, rgba(241, 193, 52, 0.18) 0%, rgba(241, 193, 52, 0) 100%)',

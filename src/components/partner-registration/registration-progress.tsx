@@ -62,21 +62,21 @@ export function RegistrationProgress({
                 {isCompleted ? (
                   <span
                     aria-label={`${step.title} completed`}
-                    className="flex size-[38px] shrink-0 items-center justify-center rounded-full border-2 border-[#A7F3D0] bg-[#ECFDF5] text-[#059669] shadow-xs"
+                    className="flex size-9.5 shrink-0 items-center justify-center rounded-full border-2 border-[#A7F3D0] bg-[#ECFDF5] text-[#059669] shadow-xs"
                   >
                     <Check className="size-4 stroke-3" />
                   </span>
                 ) : isCurrent ? (
                   <span
                     aria-label={`Current step: ${step.title}`}
-                    className="flex size-[38px] shrink-0 items-center justify-center rounded-full bg-[#0267B8] text-white font-bold text-sm shadow-md"
+                    className="flex size-9.5 shrink-0 items-center justify-center rounded-full bg-[#0267B8] text-white font-bold text-sm shadow-md"
                   >
                     {step.number}
                   </span>
                 ) : (
                   <span
                     aria-label={`Upcoming step: ${step.title}`}
-                    className="flex size-[38px] shrink-0 items-center justify-center rounded-full border border-[#DCE2EB] bg-[#F8FAFD] text-[#8C9BAE] font-bold text-sm"
+                    className="flex size-9.5 shrink-0 items-center justify-center rounded-full border border-[#DCE2EB] bg-[#F8FAFD] text-[#8C9BAE] font-bold text-sm"
                   >
                     {step.number}
                   </span>
@@ -112,7 +112,7 @@ export function RegistrationProgress({
                 <div
                   aria-hidden="true"
                   className={cn(
-                    'hidden md:block h-0.5 flex-1 min-w-[20px] rounded-full transition-colors',
+                    'hidden md:block h-0.5 flex-1 min-w-5 rounded-full transition-colors',
                     step.id < currentStep ? 'bg-[#10B981]' : 'bg-[#E2E8F0]',
                   )}
                 />

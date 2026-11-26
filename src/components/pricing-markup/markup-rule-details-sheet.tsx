@@ -28,7 +28,7 @@ export function MarkupRuleDetailsSheet({
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
         side="right"
-        className="w-full sm:max-w-lg md:max-w-[540px] p-0 flex flex-col bg-white border-l border-[#DCE2EB] shadow-2xl overflow-y-auto"
+        className="w-full sm:max-w-lg md:max-w-135 p-0 flex flex-col bg-white border-l border-[#DCE2EB] shadow-2xl overflow-y-auto"
       >
         {/* Header matching Figma #710:22498 */}
         <div className="p-6 border-b border-[#E2E8F0] relative">

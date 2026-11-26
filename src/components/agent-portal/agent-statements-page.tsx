@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Download,
   Calendar,
@@ -45,6 +47,7 @@ export function AgentStatementsPage({
   initialExportFormat = 'csv',
   initialNodeId,
 }: AgentStatementsPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
@@ -478,7 +481,7 @@ export function AgentStatementsPage({
           </div>
 
           {/* Main page body */}
-          <main className="flex-1 px-4 sm:px-8 lg:px-12 py-8 max-w-[1520px] w-full mx-auto space-y-6 print:p-0 print:m-0 print:max-w-none">
+          <main className="flex-1 px-4 sm:px-8 lg:px-12 py-8 max-w-380 w-full mx-auto space-y-6 print:p-0 print:m-0 print:max-w-none">
             {/* PDF Statement Export Preview Banner (Figma #749:10388) */}
             {pdfPreviewMode ? (
               <div className="bg-[#012A5E] text-white p-4 sm:px-6 sm:py-4 rounded-xl shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-2 print:hidden">
@@ -726,7 +729,14 @@ export function AgentStatementsPage({
               {/* Document Body (#749:9621) */}
               <div className="p-4 sm:p-7 space-y-6">
                 {/* Statement Summary Row (#749:9622) */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={5}
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3"
+                    cardClassName="h-20 rounded-xl"
+                  />
+                ) : null}
+                <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 ${isContentLoading ? "hidden" : ""}`}>
                   {/* Card 1: Bookings */}
                   <div className="p-3.5 bg-[#F4F6FA] rounded-xl border border-[#E6EAF0] space-y-1">
                     <div className="text-[11px] font-medium text-[#4F5B70]">
@@ -943,7 +953,14 @@ export function AgentStatementsPage({
                   {/* Section Content: 4 Metric Cards */}
                   {creditExpanded && (
                     <div className="p-5 space-y-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                      {isContentLoading ? (
+                        <CardGridSkeleton
+                          count={4}
+                          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                          cardClassName="h-20 rounded-xl"
+                        />
+                      ) : null}
+                      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                         <div className="p-4 bg-[#F4F6FA] rounded-xl border border-[#E6EAF0] space-y-1">
                           <div className="text-xs font-semibold text-[#4F5B70]">
                             Credit Limit

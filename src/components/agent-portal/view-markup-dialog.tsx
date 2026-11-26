@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Badge } from '#/components/ui/badge'
@@ -39,6 +40,8 @@ export function ViewMarkupDialog({
     }
   }, [subAgent])
 
+  const { isLoading, run } = useActionLoading(open)
+
   if (!subAgent) return null
 
   const handleRemove = (index: number) => {
@@ -63,13 +66,15 @@ export function ViewMarkupDialog({
   }
 
   const handleSave = () => {
-    onSaveMarkup(subAgent.id, rules)
-    onOpenChange(false)
+    run(() => {
+      onSaveMarkup(subAgent.id, rules)
+      onOpenChange(false)
+    })
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[560px] p-6 max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-140 p-6 max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center justify-between">
             <div className="size-11 rounded-xl bg-[#FFF9E6] text-[#B45309] flex items-center justify-center mb-1">
@@ -230,6 +235,8 @@ export function ViewMarkupDialog({
           <Button
             type="button"
             onClick={handleSave}
+            loading={isLoading}
+            loadingText="Saving..."
             className="bg-[#0267B8] hover:bg-[#01559A] text-white font-extrabold"
           >
             Apply Changes

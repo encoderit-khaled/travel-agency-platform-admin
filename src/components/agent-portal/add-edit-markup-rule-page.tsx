@@ -19,6 +19,7 @@ import {
 } from 'lucide-react'
 import { useNavigate } from '@tanstack/react-router'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Badge } from '#/components/ui/badge'
 import { Label } from '#/components/ui/label'
@@ -85,6 +86,7 @@ export function AddEditMarkupRulePage({
   isEdit = false,
 }: AddEditMarkupRulePageProps) {
   const navigate = useNavigate()
+  const { isLoading: isSaving, run } = useActionLoading()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
 
   // Form states
@@ -163,16 +165,18 @@ export function AddEditMarkupRulePage({
     }
 
     setErrors({})
-    setSavedData({
-      ruleName,
-      scope,
-      service: scope === 'all' ? 'All Services' : service,
-      supplier: scope === 'specific_supplier' ? supplier : 'All suppliers',
-      markupType,
-      markupValue,
-      status,
+    run(() => {
+      setSavedData({
+        ruleName,
+        scope,
+        service: scope === 'all' ? 'All Services' : service,
+        supplier: scope === 'specific_supplier' ? supplier : 'All suppliers',
+        markupType,
+        markupValue,
+        status,
+      })
+      setSaveSuccessOpen(true)
     })
-    setSaveSuccessOpen(true)
   }
 
   const handleBack = () => {
@@ -207,7 +211,7 @@ export function AddEditMarkupRulePage({
           />
 
           {/* Body Content */}
-          <main className="flex-1 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-[152px] py-6 pb-12 max-w-[1920px] w-full mx-auto">
+          <main className="flex-1 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-38 py-6 pb-12 max-w-[1920px] w-full mx-auto">
             <div className="flex flex-col gap-5">
               {/* Back button */}
               <div className="flex items-center justify-between">
@@ -274,7 +278,7 @@ export function AddEditMarkupRulePage({
                 {/* Left Column: Form Sections A, B, C, D (820px max) */}
                 <form
                   onSubmit={handleSave}
-                  className="lg:col-span-7 xl:col-span-8 flex flex-col gap-4 max-w-[820px] w-full"
+                  className="lg:col-span-7 xl:col-span-8 flex flex-col gap-4 max-w-205 w-full"
                 >
                   {/* SECTION A: Rule Details */}
                   <div
@@ -740,7 +744,7 @@ export function AddEditMarkupRulePage({
                         </div>
 
                         {/* Input with suffix badge matching Figma */}
-                        <div className="relative flex items-center w-full max-w-[280px]">
+                        <div className="relative flex items-center w-full max-w-70">
                           <Input
                             id="f-val"
                             type="text"
@@ -1061,7 +1065,7 @@ export function AddEditMarkupRulePage({
                       <div className="py-2.5 flex items-center justify-between gap-2">
                         <span className="text-[#4F5B70] font-medium">Rule</span>
                         {ruleName.trim() ? (
-                          <b className="font-extrabold text-sm text-[#141B28] text-right truncate max-w-[200px]">
+                          <b className="font-extrabold text-sm text-[#141B28] text-right truncate max-w-50">
                             {ruleName}
                           </b>
                         ) : (
@@ -1217,6 +1221,8 @@ export function AddEditMarkupRulePage({
                       <Button
                         type="button"
                         onClick={handleSave}
+                        loading={isSaving}
+                        loadingText="Saving..."
                         className="w-full h-13 rounded-xl bg-[#F1C134] text-[#012A5E] hover:bg-[#E5B320] font-extrabold text-base shadow-sm flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-[0.99]"
                       >
                         <Check className="size-5 stroke-[2.5]" />
@@ -1227,6 +1233,7 @@ export function AddEditMarkupRulePage({
                         type="button"
                         variant="outline"
                         onClick={handleBack}
+                        disabled={isSaving}
                         className="w-full h-11 rounded-xl bg-white border-[#DCE2EB] text-[#141B28] hover:bg-gray-50 font-bold text-sm cursor-pointer transition-colors"
                       >
                         Cancel
@@ -1239,7 +1246,7 @@ export function AddEditMarkupRulePage({
           </main>
 
           {/* Footer */}
-          <footer className="border-t border-[#E6EAF0] bg-white px-4 sm:px-6 md:px-10 lg:px-12 xl:px-[152px] py-3.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[#4F5B70] mt-auto">
+          <footer className="border-t border-[#E6EAF0] bg-white px-4 sm:px-6 md:px-10 lg:px-12 xl:px-38 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[#4F5B70] mt-auto">
             <span>
               AeroWing Agent Portal · M2.3 + M2.4 Add / Edit Markup Rule ·
               Website

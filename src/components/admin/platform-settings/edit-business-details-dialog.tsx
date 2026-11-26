@@ -48,12 +48,12 @@ export function EditBusinessDetailsDialog({
       onSave(formData)
       setIsSubmitting(false)
       onOpenChange(false)
-    }, 200)
+    }, 700)
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[540px] p-0 overflow-hidden rounded-[20px] border border-[#DCE2EB] bg-white shadow-xl">
+      <DialogContent className="sm:max-w-135 p-0 overflow-hidden rounded-[20px] border border-[#DCE2EB] bg-white shadow-xl">
         <form onSubmit={handleSubmit} className="flex flex-col">
           {/* Header */}
           <DialogHeader className="p-6 pb-4 border-b border-[#DCE2EB] bg-[#F8FAFC]">
@@ -230,11 +230,12 @@ export function EditBusinessDetailsDialog({
             </DialogClose>
             <Button
               type="submit"
-              disabled={isSubmitting}
+              loading={isSubmitting}
+              loadingText="Saving..."
               className="bg-[#001A3D] hover:bg-[#012A5E] text-white font-bold px-5 h-9.5 rounded-xl text-xs gap-1.5 cursor-pointer shadow-xs"
             >
               <Check className="size-4" />
-              <span>{isSubmitting ? 'Saving...' : 'Save Changes'}</span>
+              <span>Save Changes</span>
             </Button>
           </DialogFooter>
         </form>

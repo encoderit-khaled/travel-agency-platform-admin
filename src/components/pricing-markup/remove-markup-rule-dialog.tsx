@@ -9,6 +9,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { AgentMarkupRule } from './types'
 
 interface RemoveMarkupRuleDialogProps {
@@ -24,15 +25,25 @@ export function RemoveMarkupRuleDialog({
   rule,
   onConfirmRemove,
 }: RemoveMarkupRuleDialogProps) {
+  const { isLoading, run } = useActionLoading(open)
+
   if (!rule) return null
 
   const handleConfirm = () => {
-    onConfirmRemove(rule.id)
-    onOpenChange(false)
+    run(() => {
+      onConfirmRemove(rule.id)
+      onOpenChange(false)
+    })
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        if (!next && isLoading) return
+        onOpenChange(next)
+      }}
+    >
       <DialogContent className="sm:max-w-md p-6 bg-white border border-[#E2E8F0] rounded-2xl shadow-xl">
         <div className="flex flex-col items-center text-center">
           {/* Red Warning Triangle matching Figma #710:22500 */}
@@ -68,6 +79,7 @@ export function RemoveMarkupRuleDialog({
             type="button"
             variant="outline"
             onClick={() => onOpenChange(false)}
+            disabled={isLoading}
             className="flex-1 border-[#CBD5E1] text-xs font-semibold text-[#1D2939] h-10 rounded-xl hover:bg-[#F8FAFC]"
           >
             Cancel
@@ -75,6 +87,8 @@ export function RemoveMarkupRuleDialog({
           <Button
             type="button"
             onClick={handleConfirm}
+            loading={isLoading}
+            loadingText="Processing..."
             className="flex-1 bg-[#D92D20] hover:bg-[#B42318] text-xs font-bold text-white h-10 rounded-xl shadow-xs"
           >
             <X className="size-3.5 mr-1" />

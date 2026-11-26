@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { useForm, useStore } from '@tanstack/react-form'
 import {
   BarChart3,
@@ -123,6 +125,7 @@ export function AgentReportsPage({
   initialExportOpen = false,
   initialNodeId,
 }: AgentReportsPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
@@ -1790,7 +1793,14 @@ export function AgentReportsPage({
           {activeTab === 'overview' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Top 5 KPI Summary Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5">
+              {isContentLoading ? (
+                <CardGridSkeleton
+                  count={5}
+                  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5"
+                  cardClassName="h-28 rounded-2xl"
+                />
+              ) : null}
+              <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 ${isContentLoading ? "hidden" : ""}`}>
                 {INITIAL_REPORT_KPIS.map((kpi) => (
                   <div
                     key={kpi.id}
@@ -2045,7 +2055,14 @@ export function AgentReportsPage({
                 </div>
 
                 {/* 4 Summary KPI Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+                {isContentLoading ? (
+                  <CardGridSkeleton
+                    count={4}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2"
+                    cardClassName="h-24 rounded-xl"
+                  />
+                ) : null}
+                <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2 ${isContentLoading ? "hidden" : ""}`}>
                   {/* Card 1: Pending */}
                   <div className="p-4 rounded-xl bg-[#FFFBF0] border border-[#FADBB3] flex flex-col justify-between">
                     <div className="flex items-center justify-between">
@@ -2432,7 +2449,14 @@ export function AgentReportsPage({
               </div>
 
               {/* 4 Financial KPI Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {isContentLoading ? (
+                <CardGridSkeleton
+                  count={4}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                  cardClassName="h-28 rounded-2xl"
+                />
+              ) : null}
+              <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                 {/* Available Balance */}
                 <div className="bg-white border border-[#DCE2EB] rounded-2xl p-5 shadow-2xs flex flex-col justify-between hover:border-[#0267B8]/30 transition-all">
                   <div className="flex items-center justify-between gap-2">

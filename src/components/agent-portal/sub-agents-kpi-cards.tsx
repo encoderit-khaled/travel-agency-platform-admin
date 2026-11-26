@@ -1,3 +1,5 @@
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Users,
   CalendarDays,
@@ -27,6 +29,7 @@ export function SubAgentsKPICards({
   onFilterBookingChange: _onFilterBookingChange,
   onViewAllBookings,
 }: SubAgentsKPICardsProps) {
+  const isContentLoading = useContentLoading()
   const totalSubAgents = subAgents.length
   const totalBookings = subAgents.reduce((sum, sa) => sum + sa.bookingsCount, 0)
 
@@ -42,7 +45,17 @@ export function SubAgentsKPICards({
     totalSubAgents - permissionsConfiguredCount
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+    <>
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={4}
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 xl:grid-cols-4"
+          cardClassName="h-40 rounded-[18px]"
+        />
+      ) : null}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 ${isContentLoading ? 'hidden' : ''}`}
+      >
       {/* KPI Card 1: Total Sub-agents */}
       <article className="bg-white rounded-[18px] border border-[#DCE2EB] p-5 flex flex-col justify-between shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-md transition-shadow">
         <div className="flex flex-col gap-2.5">
@@ -188,6 +201,7 @@ export function SubAgentsKPICards({
           </button>
         </div>
       </article>
-    </div>
+      </div>
+    </>
   )
 }

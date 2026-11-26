@@ -105,7 +105,7 @@ export function AdminAuditLogPage({
         header: 'Date & Time',
         meta: {
           headerClassName:
-            'w-[170px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+            'w-42.5 px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
           cellClassName: 'px-4.5 py-4 align-middle',
         },
         cell: ({ row }) => (
@@ -124,7 +124,7 @@ export function AdminAuditLogPage({
         header: 'Admin',
         meta: {
           headerClassName:
-            'w-[280px] lg:w-[312px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+            'w-70 lg:w-78 px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
           cellClassName: 'px-4.5 py-4 align-middle',
         },
         cell: ({ row }) => {
@@ -174,7 +174,7 @@ export function AdminAuditLogPage({
         header: 'Area',
         meta: {
           headerClassName:
-            'w-[260px] lg:w-[318px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+            'w-65 lg:w-79.5 px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
           cellClassName: 'px-4.5 py-4 align-middle',
         },
         cell: ({ row }) => (
@@ -188,7 +188,7 @@ export function AdminAuditLogPage({
         header: 'Context',
         meta: {
           headerClassName:
-            'w-[280px] lg:w-[346px] px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
+            'w-70 lg:w-86.5 px-4.5 py-3 text-left text-[11.5px] font-extrabold tracking-[0.06em] uppercase text-[#4F5B70] h-auto',
           cellClassName: 'px-4.5 py-4 align-middle',
         },
         cell: ({ row }) => (
@@ -347,7 +347,7 @@ export function AdminAuditLogPage({
                     data={filteredLogs}
                     columns={columns}
                     getRowId={(item) => item.id}
-                    tableClassName="w-full min-w-[900px] border-collapse"
+                    tableClassName="w-full min-w-225 border-collapse"
                     headerRowClassName="border-b border-[#EEF1F5] hover:bg-transparent bg-[#F8FAFC]"
                     rowClassName="border-b border-[#EEF1F5] hover:bg-[#F8FAFC]/80 transition-colors"
                     emptyCellClassName="py-12 text-center text-[#4F5B70]"

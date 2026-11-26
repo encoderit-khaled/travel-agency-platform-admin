@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Percent,
   Clock,
@@ -54,6 +56,7 @@ export function CommissionTrackingPage({
   initialDetailsOpen,
   initialNodeId,
 }: CommissionTrackingPageProps) {
+  const isContentLoading = useContentLoading()
   // Mobile sidebar state
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
@@ -466,7 +469,14 @@ export function CommissionTrackingPage({
             </div>
 
             {/* 4 KPI Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {isContentLoading ? (
+              <CardGridSkeleton
+                count={4}
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                cardClassName="h-28 rounded-xl"
+              />
+            ) : null}
+            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
               {/* KPI 1: Pending */}
               <div className="rounded-xl border border-[#E6EAF0] bg-[#F8FAFC] p-4 flex flex-col justify-between space-y-3">
                 <div className="flex items-center gap-2">

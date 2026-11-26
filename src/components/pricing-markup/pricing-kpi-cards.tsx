@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { ShieldCheck, Percent, Layers, Store, CheckCircle2 } from 'lucide-react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 
 interface PricingKpiCardsProps {
   adminConfigured?: boolean
@@ -20,8 +22,20 @@ export function PricingKpiCards({
   totalServices = 8,
   supplierRulesCount = 0,
 }: PricingKpiCardsProps) {
+  const isContentLoading = useContentLoading()
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+    <>
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={4}
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4"
+          cardClassName="h-36 rounded-2xl"
+        />
+      ) : null}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 ${isContentLoading ? 'hidden' : ''}`}
+      >
       {/* Card 1: Admin Pricing */}
       <article className="bg-white border border-[#E2E8F0] rounded-2xl p-5 shadow-xs flex flex-col justify-between transition-all hover:border-[#CBD5E1]">
         <div>
@@ -103,6 +117,7 @@ export function PricingKpiCards({
           Service-level rules only
         </p>
       </article>
-    </div>
+      </div>
+    </>
   )
 }

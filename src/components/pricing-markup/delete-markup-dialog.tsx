@@ -9,6 +9,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { AgentMarkupRule } from './types'
 
 interface DeleteMarkupDialogProps {
@@ -24,11 +25,19 @@ export function DeleteMarkupDialog({
   rule,
   onConfirmDelete,
 }: DeleteMarkupDialogProps) {
+  const { isLoading, run } = useActionLoading(open)
+
   if (!rule) return null
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[480px] bg-white border-[#E2E8F0] shadow-2xl p-6 rounded-2xl focus:outline-none">
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        if (!next && isLoading) return
+        onOpenChange(next)
+      }}
+    >
+      <DialogContent className="max-w-120 bg-white border-[#E2E8F0] shadow-2xl p-6 rounded-2xl focus:outline-none">
         <div className="flex flex-col items-start gap-4">
           {/* Warning Icon Badge */}
           <div className="size-11 rounded-full bg-[#FEE4E2] flex items-center justify-center text-[#D92D20] shrink-0">
@@ -67,6 +76,7 @@ export function DeleteMarkupDialog({
             type="button"
             variant="outline"
             onClick={() => onOpenChange(false)}
+            disabled={isLoading}
             className="rounded-xl border-[#CBD5E1] text-[#001A3D] hover:bg-[#F8FAFC] font-bold text-xs px-4 h-9.5"
           >
             Cancel
@@ -74,9 +84,13 @@ export function DeleteMarkupDialog({
           <Button
             type="button"
             onClick={() => {
-              onConfirmDelete(rule.id)
-              onOpenChange(false)
+              run(() => {
+                onConfirmDelete(rule.id)
+                onOpenChange(false)
+              })
             }}
+            loading={isLoading}
+            loadingText="Processing..."
             className="rounded-xl bg-[#D92D20] hover:bg-[#B42318] text-white font-bold text-xs px-4 h-9.5 flex items-center gap-1.5 shadow-xs"
           >
             <X className="size-3.5" />

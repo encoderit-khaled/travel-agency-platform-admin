@@ -35,6 +35,9 @@ import {
   Settings,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { FlightOrbitLoader } from '#/components/ui/flight-orbit-loader'
+import { useActionLoading } from '#/hooks/use-action-loading'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { Badge } from '#/components/ui/badge'
 import { Input } from '#/components/ui/input'
 import {
@@ -136,6 +139,8 @@ export function AdminRolesPermissionsPage({
   const [searchQuery, setSearchQuery] = React.useState<string>('')
   const [statusFilter, setStatusFilter] = React.useState<string>('all')
   const [savedNotification, setSavedNotification] = React.useState<string | null>(null)
+  const { isLoading: isSaving, run } = useActionLoading()
+  const isContentLoading = useContentLoading()
 
   // Full role permission matrix
   const [matrix, setMatrix] = React.useState<RolePermissionMatrix>(INITIAL_ROLE_PERMISSION_MATRIX)
@@ -179,10 +184,14 @@ export function AdminRolesPermissionsPage({
   }
 
   const handleSaveInline = () => {
-    setMatrix(draftMatrix)
-    setIsEditMode(false)
-    setSavedNotification(`Permissions for ${currentRole.name} updated successfully!`)
-    setTimeout(() => setSavedNotification(null), 4000)
+    run(() => {
+      setMatrix(draftMatrix)
+      setIsEditMode(false)
+      setSavedNotification(
+        `Permissions for ${currentRole.name} updated successfully!`,
+      )
+      setTimeout(() => setSavedNotification(null), 4000)
+    })
   }
 
   const handleDiscardInline = () => {
@@ -330,7 +339,7 @@ export function AdminRolesPermissionsPage({
       header: 'Permission area',
       meta: {
         headerClassName:
-          'w-[200px] text-xs font-bold text-[#001A3D] py-3.5 pl-5',
+          'w-50 text-xs font-bold text-[#001A3D] py-3.5 pl-5',
         cellClassName: 'py-3 pl-5 pr-2',
       },
       cell: ({ row }) => {
@@ -464,6 +473,8 @@ export function AdminRolesPermissionsPage({
                     </Button>
                     <Button
                       onClick={handleSaveInline}
+                      loading={isSaving}
+                      loadingText="Saving..."
                       className="bg-[#001A3D] hover:bg-[#00285C] text-white font-semibold shadow-xs gap-1.5"
                     >
                       <Save className="size-4 text-[#F1C134]" />
@@ -544,7 +555,7 @@ export function AdminRolesPermissionsPage({
                         'flex flex-col justify-between p-4 rounded-2xl text-left transition-all duration-200 cursor-pointer',
                         'border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#001A3D]',
                         isSelected
-                          ? 'bg-gradient-to-br from-[#F2F7FD] to-white border-[#001A3D] shadow-md ring-1 ring-[#001A3D]/20'
+                          ? 'bg-linear-to-br from-[#F2F7FD] to-white border-[#001A3D] shadow-md ring-1 ring-[#001A3D]/20'
                           : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-xs shadow-2xs',
                       )}
                     >
@@ -626,7 +637,7 @@ export function AdminRolesPermissionsPage({
                         if (val) setStatusFilter(val)
                       }}
                     >
-                      <SelectTrigger className="h-8 w-[148px] rounded-lg bg-slate-50 border-slate-200 text-xs text-slate-600">
+                      <SelectTrigger className="h-8 w-37 rounded-lg bg-slate-50 border-slate-200 text-xs text-slate-600">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -679,7 +690,15 @@ export function AdminRolesPermissionsPage({
                     </TableHeader>
 
                     <TableBody>
-                      {table.getRowModel().rows.length === 0 ? (
+                      {isContentLoading ? (
+                        <TableRow className="hover:bg-transparent">
+                          <TableCell colSpan={6} className="py-10">
+                            <div className="flex justify-center">
+                              <FlightOrbitLoader />
+                            </div>
+                          </TableCell>
+                        </TableRow>
+                      ) : table.getRowModel().rows.length === 0 ? (
                         <TableRow>
                           <TableCell
                             colSpan={6}
@@ -757,7 +776,7 @@ export function AdminRolesPermissionsPage({
                   </div>
 
                   {/* Dark Simulated Sidebar Box matching Figma fill_bbc54479 */}
-                  <div className="bg-[#001A3D] bg-gradient-to-b from-[#001A3D] via-[#012A5E] to-[#0A2244] rounded-xl p-4 text-white shadow-inner">
+                  <div className="bg-[#001A3D] bg-linear-to-b from-[#001A3D] via-[#012A5E] to-[#0A2244] rounded-xl p-4 text-white shadow-inner">
                     <div className="grid grid-cols-2 gap-4 text-xs">
                       {/* Left: Core Admin */}
                       <div className="space-y-2">

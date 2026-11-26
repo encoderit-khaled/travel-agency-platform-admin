@@ -10,6 +10,7 @@ import { Button } from '#/components/ui/button'
 import { Input } from '#/components/ui/input'
 import {
   Download,
+  Loader2,
   FileSpreadsheet,
   CheckCircle2,
   Calendar,
@@ -214,7 +215,10 @@ export function ExportReportDialog({
                 Downloaded!
               </>
             ) : isExporting ? (
-              'Exporting...'
+              <>
+                <Loader2 className="size-4 animate-spin mr-2" />
+                Exporting...
+              </>
             ) : (
               <>
                 <Download className="size-3.5" />

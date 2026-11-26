@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   HelpCircle,
   Shield,
@@ -10,8 +12,20 @@ import {
 } from 'lucide-react'
 
 export function HowPricingWorksCard() {
+  const isContentLoading = useContentLoading()
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <>
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={2}
+          className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-2"
+          cardClassName="h-48 rounded-2xl"
+        />
+      ) : null}
+      <div
+        className={`grid grid-cols-1 lg:grid-cols-2 gap-4 ${isContentLoading ? 'hidden' : ''}`}
+      >
       {/* Left Card: How pricing works (Figma #710:22417 Hawkes Blue) */}
       <section className="bg-[#EBF3FC] border border-[#D2E4F9] rounded-2xl p-5 shadow-xs flex flex-col justify-between">
         <div className="space-y-3">
@@ -84,6 +98,7 @@ export function HowPricingWorksCard() {
           </span>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }

@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   ArrowLeft,
   Download,
@@ -78,6 +80,7 @@ export function SubAgentPerformancePage({
   initialBookingRef,
   isStandalone = true,
 }: SubAgentPerformancePageProps) {
+  const isContentLoading = useContentLoading()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
   const desk = MIRPUR_DESK_DETAILS
 
@@ -600,7 +603,14 @@ export function SubAgentPerformancePage({
       </section>
 
       {/* Performance Summary (4 KPI Cards) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {isContentLoading ? (
+        <CardGridSkeleton
+          count={4}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          cardClassName="h-32 rounded-2xl"
+        />
+      ) : null}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
         {/* 1. Total Bookings */}
         <div className="bg-white rounded-2xl border border-[#DCE2EB] p-5 shadow-2xs flex flex-col justify-between">
           <div className="flex items-center justify-between">
@@ -1194,7 +1204,7 @@ export function SubAgentPerformancePage({
           agencyName="Skyline Demo Travels Ltd"
         />
 
-        <main className="flex-1 max-w-[1360px] w-full mx-auto px-4 sm:px-8 py-6 pb-20 space-y-5">
+        <main className="flex-1 max-w-340 w-full mx-auto px-4 sm:px-8 py-6 pb-20 space-y-5">
           {/* Back link */}
           <div>
             <Link

@@ -38,6 +38,8 @@ import {
 } from '#/components/ui/table'
 import { Input } from '#/components/ui/input'
 import { Button } from '#/components/ui/button'
+import { FlightOrbitLoader } from '#/components/ui/flight-orbit-loader'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import { Badge } from '#/components/ui/badge'
 import { EmptyState } from '#/components/ui/empty-state'
 import {
@@ -106,6 +108,7 @@ export function AgentApplicationsTable({
   )
   const [countryFilter, setCountryFilter] = React.useState('all')
   const [docFilter, setDocFilter] = React.useState('all')
+  const isContentLoading = useContentLoading()
 
   // Keep search in sync if initialSearch changes
   React.useEffect(() => {
@@ -647,7 +650,15 @@ export function AgentApplicationsTable({
           </TableHeader>
 
           <TableBody>
-            {table.getRowModel().rows.length === 0 ? (
+            {isContentLoading ? (
+              <TableRow className="hover:bg-transparent border-b border-[#EDF2F7]">
+                <TableCell colSpan={columns.length} className="py-10">
+                  <div className="flex justify-center">
+                    <FlightOrbitLoader />
+                  </div>
+                </TableCell>
+              </TableRow>
+            ) : table.getRowModel().rows.length === 0 ? (
               /* Figma No Data Match State (#648:1253) */
               <TableRow>
                 <TableCell colSpan={columns.length} className="py-10">

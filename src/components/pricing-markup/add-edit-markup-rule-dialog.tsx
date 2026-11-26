@@ -9,6 +9,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import {
@@ -64,6 +65,8 @@ export function AddEditMarkupRuleDialog({
     }
   }, [ruleToEdit, open])
 
+  const { isLoading, run } = useActionLoading(open)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!name.trim()) return
@@ -73,18 +76,20 @@ export function AddEditMarkupRuleDialog({
         ? `Sample ${value || '3'}%`
         : `Sample ${value || '500'} BDT`
 
-    onSaveRule({
-      id: ruleToEdit?.id,
-      name: name.trim(),
-      scope,
-      service,
-      type,
-      value: formattedValue,
-      numericValue: parseFloat(value) || 0,
-      supplier,
-      status: ruleToEdit ? ruleToEdit.status : 'active',
+    run(() => {
+      onSaveRule({
+        id: ruleToEdit?.id,
+        name: name.trim(),
+        scope,
+        service,
+        type,
+        value: formattedValue,
+        numericValue: parseFloat(value) || 0,
+        supplier,
+        status: ruleToEdit ? ruleToEdit.status : 'active',
+      })
+      onOpenChange(false)
     })
-    onOpenChange(false)
   }
 
   return (
@@ -293,6 +298,8 @@ export function AddEditMarkupRuleDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText={isEditing ? 'Saving...' : 'Processing...'}
               className="bg-[#001A3D] hover:bg-[#012A5E] text-xs font-bold text-white h-10 rounded-xl px-5 shadow-xs"
             >
               {isEditing ? 'Save Changes' : 'Create Markup Rule'}

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ArrowDownToLine, Download, CheckCircle2 } from 'lucide-react'
+import { ArrowDownToLine, Download, CheckCircle2, Loader2 } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -68,7 +68,7 @@ export function WalletLedgerExportDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[620px] w-full p-6 sm:p-7 rounded-2xl bg-white shadow-2xl border border-[#DCE2EB] overflow-hidden">
+      <DialogContent className="max-w-155 w-full p-6 sm:p-7 rounded-2xl bg-white shadow-2xl border border-[#DCE2EB] overflow-hidden">
         {downloadSuccess ? (
           <div className="py-8 flex flex-col items-center justify-center text-center space-y-3">
             <div className="size-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shadow-xs">
@@ -149,7 +149,11 @@ export function WalletLedgerExportDialog({
                 disabled={downloading}
                 className="rounded-xl bg-[#F5B800] hover:bg-[#E5AC00] text-[#001A3D] font-bold text-xs px-5 py-2.5 h-10 flex items-center gap-2 shadow-xs cursor-pointer transition-colors"
               >
-                <Download className="size-4" />
+                {downloading ? (
+                  <Loader2 className="size-4 animate-spin" />
+                ) : (
+                  <Download className="size-4" />
+                )}
                 <span>{downloading ? 'Downloading...' : 'Download CSV'}</span>
               </Button>
             </div>

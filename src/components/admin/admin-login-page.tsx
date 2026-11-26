@@ -96,7 +96,7 @@ export function AdminLoginPage({
       {/* LEFT ASIDE PANEL (Figma #965:1412)                        */}
       {/* ========================================================= */}
       <aside
-        className="relative lg:w-[48%] xl:w-[883px] shrink-0 min-h-[460px] lg:min-h-screen flex flex-col justify-between p-8 sm:p-12 lg:p-[48px_56px_36px] overflow-hidden text-white"
+        className="relative lg:w-[48%] xl:w-220.75 shrink-0 min-h-115 lg:min-h-screen flex flex-col justify-between p-8 sm:p-12 lg:p-[48px_56px_36px] overflow-hidden text-white"
         style={{
           background:
             'linear-gradient(154deg, rgba(0, 26, 61, 1) 0%, rgba(1, 42, 94, 1) 59%, rgba(11, 58, 117, 1) 100%)',
@@ -107,7 +107,7 @@ export function AdminLoginPage({
           <img
             src="/images/admin-login-aside-965-1507.png"
             alt="Flight Network"
-            className="w-full h-full object-cover object-left-top"
+            className="w-full h-full object-cover object-top-left"
           />
         </div>
 
@@ -131,7 +131,7 @@ export function AdminLoginPage({
           </div>
 
           {/* Heading (#965:1444) */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold tracking-[-0.015em] text-white leading-tight lg:leading-[48px]">
+          <h1 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold tracking-[-0.015em] text-white leading-tight lg:leading-12">
             Aero Wing Admin
           </h1>
 
@@ -151,13 +151,13 @@ export function AdminLoginPage({
       {/* RIGHT MAIN SIGN IN / TROUBLE SECTION (Figma #965:1451)    */}
       {/* ========================================================= */}
       <main
-        className="flex-1 flex flex-col justify-center items-center p-6 sm:p-12 lg:p-16 min-h-[620px] lg:min-h-screen relative"
+        className="flex-1 flex flex-col justify-center items-center p-6 sm:p-12 lg:p-16 min-h-155 lg:min-h-screen relative"
         style={{
           background:
             'radial-gradient(circle at 100% 0%, rgba(230, 238, 248, 1) 0%, rgba(230, 238, 248, 0) 60%), #F4F6FA',
         }}
       >
-        <div className="w-full max-w-[446px] space-y-4">
+        <div className="w-full max-w-111.5 space-y-4">
           {/* Top Lock Badge above the Card (#965:1454) */}
           <div className="flex items-center">
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#012A5E] text-white text-[12.5px] font-extrabold tracking-[0.02em] shadow-xs">
@@ -302,7 +302,7 @@ export function AdminLoginPage({
 
                   {/* Heading & Subtitle (#965:1500) */}
                   <div className="space-y-2">
-                    <h2 className="text-[26px] font-extrabold text-[#012A5E] tracking-[-0.01em] leading-[34px]">
+                    <h2 className="text-[26px] font-extrabold text-[#012A5E] tracking-[-0.01em] leading-8.5">
                       Trouble signing in?
                     </h2>
                     <p className="text-[14px] font-medium text-[#4F5B70] max-w-xs mx-auto leading-relaxed">

@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { FlightOrbitLoader } from '#/components/ui/flight-orbit-loader'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   Wallet,
   ArrowRight,
@@ -118,6 +120,7 @@ export function AgentWalletPage({
   initialTopUpOpen = false,
   initialMenu,
 }: AgentWalletPageProps) {
+  const isContentLoading = useContentLoading()
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [topUpOpen, setTopUpOpen] = React.useState(initialTopUpOpen)
   const [exportOpen, setExportOpen] = React.useState(false)
@@ -152,7 +155,7 @@ export function AgentWalletPage({
         header: 'Date / Time',
         cell: ({ row }) => row.original.dateTime,
         meta: {
-          headerClassName: 'py-3 px-4 w-[231px]',
+          headerClassName: 'py-3 px-4 w-57.75',
           cellClassName:
             'py-4 px-4 font-medium text-[#012A5E] whitespace-nowrap text-xs sm:text-sm',
         },
@@ -196,7 +199,7 @@ export function AgentWalletPage({
           )
         },
         meta: {
-          headerClassName: 'py-3 px-4 w-[257px]',
+          headerClassName: 'py-3 px-4 w-64.25',
           cellClassName: 'py-4 px-4 whitespace-nowrap',
         },
       },
@@ -230,7 +233,7 @@ export function AgentWalletPage({
           )
         },
         meta: {
-          headerClassName: 'py-3 px-4 w-[277px]',
+          headerClassName: 'py-3 px-4 w-69.25',
           cellClassName: 'py-4 px-4',
         },
       },
@@ -252,7 +255,7 @@ export function AgentWalletPage({
           )
         },
         meta: {
-          headerClassName: 'py-3 px-4 w-[176px]',
+          headerClassName: 'py-3 px-4 w-44',
           cellClassName: 'py-4 px-4 whitespace-nowrap text-xs sm:text-sm',
         },
       },
@@ -290,7 +293,7 @@ export function AgentWalletPage({
           )
         },
         meta: {
-          headerClassName: 'py-3 px-4 text-right w-[198px]',
+          headerClassName: 'py-3 px-4 text-right w-49.5',
           cellClassName: 'py-4 px-4 text-right whitespace-nowrap',
         },
       },
@@ -299,7 +302,7 @@ export function AgentWalletPage({
         header: 'Running Balance',
         cell: ({ row }) => row.original.runningBalance,
         meta: {
-          headerClassName: 'py-3 px-4 text-right w-[202px]',
+          headerClassName: 'py-3 px-4 text-right w-50.5',
           cellClassName:
             'py-4 px-4 text-right whitespace-nowrap font-extrabold text-[#012A5E] text-xs sm:text-sm',
         },
@@ -398,12 +401,17 @@ export function AgentWalletPage({
           </section>
 
           {/* Hero Section: Balance Card & Summary Metrics */}
-          <section className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+          {isContentLoading ? (
+            <div className="flex justify-center py-10">
+              <FlightOrbitLoader />
+            </div>
+          ) : null}
+          <section className={`grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch ${isContentLoading ? "hidden" : ""}`}>
             {/* Left Hero: Available Wallet Balance (7 cols) */}
             <div className="lg:col-span-7 rounded-[22px] p-7 text-white shadow-xl flex flex-col justify-between relative overflow-hidden bg-[linear-gradient(149deg,#001A3D_0%,#012A5E_57%,#0F3F7D_100%)] border border-white/10">
               {/* Exact decorative geometric circles from Figma */}
-              <div className="absolute -top-20 -right-10 w-[336px] h-[336px] rounded-full border-[38px] border-[#F1C134]/12 pointer-events-none" />
-              <div className="absolute -bottom-16 right-10 w-[200px] h-[200px] rounded-full bg-[#0267B8]/25 blur-[10px] pointer-events-none" />
+              <div className="absolute -top-20 -right-10 w-84 h-84 rounded-full border-38 border-[#F1C134]/12 pointer-events-none" />
+              <div className="absolute -bottom-16 right-10 w-50 h-50 rounded-full bg-[#0267B8]/25 blur-[10px] pointer-events-none" />
 
               <div className="space-y-4 relative z-10">
                 <div className="flex items-center justify-between w-full">

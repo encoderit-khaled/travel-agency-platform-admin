@@ -40,7 +40,7 @@ export function ETicketPreviewDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[580px] p-7 md:p-8 rounded-3xl bg-white border border-[#E6EAF0] shadow-2xl">
+      <DialogContent className="sm:max-w-145 p-7 md:p-8 rounded-3xl bg-white border border-[#E6EAF0] shadow-2xl">
         {/* Top Header */}
         <DialogHeader className="gap-2">
           <div className="size-11 rounded-xl bg-[#EAF4FD] flex items-center justify-center text-[#0267B8] mb-1">

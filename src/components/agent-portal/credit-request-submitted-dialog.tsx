@@ -45,11 +45,11 @@ export function CreditRequestSubmittedDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[560px] p-8 gap-0 rounded-3xl border border-[#DCE2EB] bg-white shadow-2xl">
+      <DialogContent className="sm:max-w-140 p-8 gap-0 rounded-3xl border border-[#DCE2EB] bg-white shadow-2xl">
         {/* Success Icon */}
         <div className="size-12 rounded-2xl bg-[#E8F8F0] text-[#10B981] flex items-center justify-center mb-4 shadow-xs">
           <div className="size-6 rounded-full border-2 border-[#10B981] flex items-center justify-center">
-            <Check className="size-3.5 stroke-[3] text-[#10B981]" />
+            <Check className="size-3.5 stroke-3 text-[#10B981]" />
           </div>
         </div>
 

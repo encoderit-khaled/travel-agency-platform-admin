@@ -10,6 +10,7 @@ import {
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
 import { Textarea } from '#/components/ui/textarea'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import type { AgentApplication } from './application-review-modal'
 
 export interface SuspendAgentModalProps {
@@ -28,6 +29,7 @@ export function SuspendAgentModal({
   application,
 }: SuspendAgentModalProps) {
   const [note, setNote] = React.useState('')
+  const { isLoading, run } = useActionLoading(isOpen)
 
   React.useEffect(() => {
     if (isOpen) {
@@ -38,17 +40,21 @@ export function SuspendAgentModal({
   if (!application) return null
 
   const handleConfirm = () => {
-    if (onConfirm) {
-      onConfirm(note)
-    }
-    if (onConfirmSuspend) {
-      onConfirmSuspend(application.id, note)
-    }
-    onClose()
+    run(() => {
+      onConfirm?.(note)
+      onConfirmSuspend?.(application.id, note)
+      onClose()
+    })
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open && isLoading) return
+        if (!open) onClose()
+      }}
+    >
       <DialogContent className="max-w-135 p-7 rounded-2xl bg-white border border-[#DCE2EB] shadow-2xl gap-0">
         <DialogHeader className="gap-0 text-left">
           {/* Circular Amber Icon Badge matching Figma #648:1251 */}
@@ -124,6 +130,7 @@ export function SuspendAgentModal({
             type="button"
             variant="outline"
             onClick={onClose}
+            disabled={isLoading}
             className="h-10 px-5 rounded-xl border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F4F6FA] hover:text-[#012A5E] font-semibold text-sm transition-colors cursor-pointer"
           >
             Cancel
@@ -131,6 +138,8 @@ export function SuspendAgentModal({
           <Button
             type="button"
             onClick={handleConfirm}
+            loading={isLoading}
+            loadingText="Processing..."
             className="h-10 px-5 rounded-xl bg-[#C62828] hover:bg-[#A91B1B] text-white font-bold text-sm shadow-xs transition-colors cursor-pointer"
           >
             Confirm Suspension

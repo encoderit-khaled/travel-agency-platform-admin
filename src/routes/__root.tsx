@@ -892,12 +892,12 @@ function RootComponent() {
       <div className="fixed bottom-4 left-4 z-50 print:hidden select-none">
         <DropdownMenu>
           <DropdownMenuTrigger
-            className="group flex items-center gap-2 rounded-full border border-[#012A5E]/20 bg-[#012A5E] px-3.5 py-2 text-xs font-bold text-white shadow-lg backdrop-blur-md transition-all hover:bg-[#023B82] active:scale-95 data-[popup-open]:bg-[#023B82]"
+            className="group flex items-center gap-2 rounded-full border border-[#012A5E]/20 bg-[#012A5E] px-3.5 py-2 text-xs font-bold text-white shadow-lg backdrop-blur-md transition-all hover:bg-[#023B82] active:scale-95 data-popup-open:bg-[#023B82]"
             aria-label="Toggle All Pages Navigator"
           >
             <Compass className="size-4 text-[#F1C134]" />
             <span>Routes & Pages</span>
-            <ChevronDown className="size-3.5 text-white/70 transition-transform duration-200 group-data-[popup-open]:rotate-180" />
+            <ChevronDown className="size-3.5 text-white/70 transition-transform duration-200 group-data-popup-open:rotate-180" />
           </DropdownMenuTrigger>
           <DropdownMenuContent
             side="top"

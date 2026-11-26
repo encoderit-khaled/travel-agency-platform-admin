@@ -343,10 +343,10 @@ export function SubAgentMarkupPage({
                 <p className="text-[11px] font-black text-[#003A7B] uppercase tracking-[0.11em]">
                   {deskName.toUpperCase()} • M2.2 SUB-AGENT MARKUP
                 </p>
-                <h1 className="text-2xl sm:text-[28px] font-black text-[#012A5E] tracking-tight leading-tight sm:leading-[36px]">
+                <h1 className="text-2xl sm:text-[28px] font-black text-[#012A5E] tracking-tight leading-tight sm:leading-9">
                   Sub-agent Markup
                 </h1>
-                <p className="text-xs sm:text-[13.5px] font-semibold text-[#4F5B70] leading-[20px]">
+                <p className="text-xs sm:text-[13.5px] font-semibold text-[#4F5B70] leading-5">
                   Configure markup for {deskName} on top of {agentBusiness}’s
                   applicable rates.
                 </p>
@@ -451,7 +451,7 @@ export function SubAgentMarkupPage({
                 How Sub-agent markup works
               </h2>
             </div>
-            <p className="text-xs font-semibold text-[#4F5B70] leading-[18px]">
+            <p className="text-xs font-semibold text-[#4F5B70] leading-4.5">
               Sub-agent markup is applied on top of the Parent Agent’s
               applicable rates.
             </p>
@@ -713,7 +713,7 @@ export function SubAgentMarkupPage({
                       return (
                         <div
                           key={mod.id}
-                          className="p-3 rounded-xl border border-[#E6EAF0] bg-[#FAFBFD] flex flex-col justify-between h-[80px]"
+                          className="p-3 rounded-xl border border-[#E6EAF0] bg-[#FAFBFD] flex flex-col justify-between h-20"
                         >
                           <div className="flex items-center gap-2">
                             <Icon className="size-3.5 text-[#0267B8] shrink-0" />
@@ -740,7 +740,7 @@ export function SubAgentMarkupPage({
             </div>
 
             {/* Right Column (lg:w-[380px]) */}
-            <div className="lg:w-[380px] w-full space-y-4 shrink-0">
+            <div className="lg:w-95 w-full space-y-4 shrink-0">
               {/* Card 1: Admin pricing limits */}
               <section
                 id="c-lim"
@@ -928,7 +928,7 @@ export function SubAgentMarkupPage({
       <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
         <SheetContent
           side="right"
-          className="w-full sm:max-w-[540px] md:max-w-[560px] p-0 flex flex-col justify-between border-l border-[#DCE2EB] shadow-2xl bg-white"
+          className="w-full sm:max-w-135 md:max-w-140 p-0 flex flex-col justify-between border-l border-[#DCE2EB] shadow-2xl bg-white"
         >
           {/* Header */}
           <div className="p-6 pb-5 border-b border-[#EEF1F5] flex items-start justify-between gap-4">
@@ -1247,7 +1247,7 @@ export function SubAgentMarkupPage({
                     placeholder={markupType === 'percentage' ? '0' : '0.00'}
                     className="flex-1 px-4 py-2.5 text-base font-bold text-[#012A5E] placeholder:text-gray-400 outline-none"
                   />
-                  <div className="px-4 py-2.5 bg-[#F4F6FA] border-l border-[#DCE2EB] text-[#4F5B70] font-bold text-sm select-none flex items-center justify-center min-w-[50px]">
+                  <div className="px-4 py-2.5 bg-[#F4F6FA] border-l border-[#DCE2EB] text-[#4F5B70] font-bold text-sm select-none flex items-center justify-center min-w-12.5">
                     {markupType === 'percentage' ? '%' : 'BDT'}
                   </div>
                 </div>
@@ -1292,7 +1292,7 @@ export function SubAgentMarkupPage({
 
       {/* Pricing Context Dialog (Shadcn Dialog) */}
       <Dialog open={contextDialogOpen} onOpenChange={setContextDialogOpen}>
-        <DialogContent className="sm:max-w-[500px]">
+        <DialogContent className="sm:max-w-125">
           <DialogHeader>
             <div className="size-11 rounded-xl bg-[#EAF4FD] text-[#0267B8] flex items-center justify-center mb-1">
               <Info className="size-5" />

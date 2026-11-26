@@ -569,7 +569,8 @@ export function ReviewSubmitPage({
                   <Button
                     type="button"
                     onClick={handleSubmit}
-                    disabled={isSubmitting}
+                    loading={isSubmitting}
+                    loadingText="Submitting..."
                     className={cn(
                       'h-13 min-w-55 w-full sm:w-auto rounded-[10px] font-extrabold text-[15px] px-8 shadow-xs border transition-all flex items-center justify-center gap-2 cursor-pointer',
                       declarationChecked
@@ -577,17 +578,8 @@ export function ReviewSubmitPage({
                         : 'bg-[#E2E8F0] hover:bg-[#CBD5E1] text-[#64748B] border-transparent',
                     )}
                   >
-                    {isSubmitting ? (
-                      <span className="inline-flex items-center gap-2">
-                        <span className="size-4 border-2 border-[#012A5E] border-t-transparent rounded-full animate-spin" />
-                        Submitting...
-                      </span>
-                    ) : (
-                      <>
-                        <span>Submit Application</span>
-                        <ArrowRight className="size-4 stroke-[2.5]" />
-                      </>
-                    )}
+                    <span>Submit Application</span>
+                    <ArrowRight className="size-4 stroke-[2.5]" />
                   </Button>
                 </div>
               </div>

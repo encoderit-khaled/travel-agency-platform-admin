@@ -8,6 +8,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import type { B2CCustomer } from './types'
@@ -35,6 +36,8 @@ export function EditCustomerDialog({
     }
   }, [customer, open])
 
+  const { isLoading, run } = useActionLoading(open)
+
   if (!customer) return null
 
   const handleSave = (e: React.FormEvent) => {
@@ -52,12 +55,14 @@ export function EditCustomerDialog({
         ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
         : trimmed.slice(0, 2).toUpperCase()
 
-    onSave({
-      ...customer,
-      name: trimmed,
-      initials,
+    run(() => {
+      onSave({
+        ...customer,
+        name: trimmed,
+        initials,
+      })
+      onOpenChange(false)
     })
-    onOpenChange(false)
   }
 
   return (
@@ -118,6 +123,8 @@ export function EditCustomerDialog({
             </Button>
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Saving..."
               className="rounded-xl bg-[#012A5E] hover:bg-[#0F3F7D] text-white font-semibold shadow-xs"
             >
               Save Changes

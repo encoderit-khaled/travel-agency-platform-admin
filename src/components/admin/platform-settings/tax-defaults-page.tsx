@@ -7,6 +7,7 @@ import {
   SlidersHorizontal,
 } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Separator } from '#/components/ui/separator'
@@ -71,6 +72,7 @@ export function TaxDefaultsPage({
     taxLabel?: string
     defaultRate?: string
   }>({})
+  const { isLoading: isSaving, run } = useActionLoading()
 
   const baseline = saved ?? EMPTY_TAX_DEFAULT_VALUES
   const hasChanges =
@@ -109,10 +111,12 @@ export function TaxDefaultsPage({
     if (nextErrors.taxLabel || nextErrors.defaultRate || rate === null) return
 
     const nextValues = { taxLabel, defaultRate: String(rate) }
-    setSaved(nextValues)
-    setDraft(nextValues)
-    setMode('view')
-    onSave?.(nextValues)
+    run(() => {
+      setSaved(nextValues)
+      setDraft(nextValues)
+      setMode('view')
+      onSave?.(nextValues)
+    })
   }
 
   return (
@@ -154,7 +158,7 @@ export function TaxDefaultsPage({
             <div className="flex flex-col items-start gap-6 lg:flex-row">
               <aside
                 aria-label="Platform Settings sections"
-                className="w-full shrink-0 rounded-[18px] border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-[260px]"
+                className="w-full shrink-0 rounded-[18px] border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-65"
               >
                 <div className="mb-1 px-2.5 py-1.5">
                   <h2 className="text-[11.5px] font-extrabold tracking-wider text-[#64748B] uppercase">
@@ -180,7 +184,7 @@ export function TaxDefaultsPage({
                         {isActive && (
                           <span
                             aria-hidden="true"
-                            className="absolute top-1/2 left-0 h-[26px] w-[3px] -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]"
+                            className="absolute top-1/2 left-0 h-6.5 w-0.75 -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]"
                           />
                         )}
                         <Icon
@@ -203,7 +207,7 @@ export function TaxDefaultsPage({
               <div className="w-full min-w-0 flex-1 space-y-5">
                 <section
                   aria-labelledby="tx-h"
-                  className="space-y-5 rounded-[18px] border border-[#DCE2EB] bg-white px-[22px] py-5 shadow-xs"
+                  className="space-y-5 rounded-[18px] border border-[#DCE2EB] bg-white px-5.5 py-5 shadow-xs"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2.5">
                     <div className="flex items-start gap-2.5">
@@ -355,6 +359,8 @@ export function TaxDefaultsPage({
                           </Button>
                           <Button
                             type="submit"
+                            loading={isSaving}
+                            loadingText="Saving..."
                             className="h-10 cursor-pointer rounded-xl bg-[#001A3D] px-5 text-sm font-semibold text-white shadow-xs hover:bg-[#002654]"
                           >
                             Save Changes
@@ -405,7 +411,7 @@ export function TaxDefaultsPage({
                 <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
                   <aside
                     aria-labelledby="inf-h"
-                    className="flex items-start gap-3 rounded-2xl border border-[#DCE2EB] bg-linear-to-b from-[#F3F8FE] to-white px-[18px] py-4 shadow-xs"
+                    className="flex items-start gap-3 rounded-2xl border border-[#DCE2EB] bg-linear-to-b from-[#F3F8FE] to-white px-4.5 py-4 shadow-xs"
                   >
                     <div className="flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-[#EBF3FC]">
                       <Info className="size-4.5 text-[#0052CC]" />
@@ -424,7 +430,7 @@ export function TaxDefaultsPage({
 
                   <section
                     aria-labelledby="td-h"
-                    className="space-y-3 rounded-[18px] border border-[#DCE2EB] bg-white px-5 pt-[17px] pb-[18px] shadow-xs"
+                    className="space-y-3 rounded-[18px] border border-[#DCE2EB] bg-white px-5 pt-4.25 pb-4.5 shadow-xs"
                   >
                     <h2 id="td-h" className="text-sm font-bold text-[#001A3D]">
                       Tax details

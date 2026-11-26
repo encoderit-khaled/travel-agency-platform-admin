@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { FileText, Info, Pencil, Settings, SquareStack } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { Separator } from '#/components/ui/separator'
@@ -67,6 +68,7 @@ export function CancellationPoliciesPage({
   const [errors, setErrors] = React.useState<{ name?: string; text?: string }>(
     {},
   )
+  const { isLoading: isSaving, run } = useActionLoading()
 
   const baseline = saved ?? EMPTY_POLICY
   const hasChanges = draft.name !== baseline.name || draft.text !== baseline.text
@@ -101,10 +103,12 @@ export function CancellationPoliciesPage({
       name,
       text,
     }
-    setSaved(nextPolicy)
-    setDraft(nextPolicy)
-    setMode('view')
-    onSavePolicy?.(nextPolicy)
+    run(() => {
+      setSaved(nextPolicy)
+      setDraft(nextPolicy)
+      setMode('view')
+      onSavePolicy?.(nextPolicy)
+    })
   }
 
   return (
@@ -130,7 +134,7 @@ export function CancellationPoliciesPage({
             userInitials="SA"
           />
 
-          <main className="mx-auto w-full max-w-[1440px] flex-1 space-y-6 p-4 sm:p-6 lg:p-8">
+          <main className="mx-auto w-full max-w-360 flex-1 space-y-6 p-4 sm:p-6 lg:p-8">
             <div className="space-y-1">
               <span className="text-xs font-bold tracking-wider text-[#0052CC] uppercase">
                 Platform Settings
@@ -146,7 +150,7 @@ export function CancellationPoliciesPage({
             <div className="flex flex-col items-start gap-6 lg:flex-row">
               <aside
                 aria-label="Platform Settings sections"
-                className="w-full shrink-0 rounded-2xl border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-[260px]"
+                className="w-full shrink-0 rounded-2xl border border-[#DCE2EB] bg-white p-3 shadow-xs lg:w-65"
               >
                 <div className="mb-1 px-3 py-2">
                   <h2 className="text-[11px] font-bold tracking-wider text-[#64748B] uppercase">
@@ -172,7 +176,7 @@ export function CancellationPoliciesPage({
                         {isActive && (
                           <span
                             aria-hidden="true"
-                            className="absolute top-1/2 left-0 h-[26px] w-[3px] -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]"
+                            className="absolute top-1/2 left-0 h-6.5 w-0.75 -translate-y-1/2 rounded-r-[3px] bg-[#F1C134]"
                           />
                         )}
                         <Icon
@@ -304,7 +308,7 @@ export function CancellationPoliciesPage({
                               }))
                             }
                           }}
-                          className="min-h-[148px] resize-y rounded-xl border-[#CBD5E1] bg-white px-3.5 py-3 text-sm text-[#001A3D] focus-visible:border-[#0052CC] focus-visible:ring-[#0052CC]/30"
+                          className="min-h-37 resize-y rounded-xl border-[#CBD5E1] bg-white px-3.5 py-3 text-sm text-[#001A3D] focus-visible:border-[#0052CC] focus-visible:ring-[#0052CC]/30"
                         />
                         <p className="text-xs text-[#64748B]">
                           Actual booking policy application is handled by the
@@ -334,6 +338,8 @@ export function CancellationPoliciesPage({
                           </Button>
                           <Button
                             type="submit"
+                            loading={isSaving}
+                            loadingText="Saving..."
                             className="h-10 cursor-pointer rounded-xl bg-[#001A3D] px-5 text-sm font-semibold text-white shadow-xs hover:bg-[#002654]"
                           >
                             Save Changes

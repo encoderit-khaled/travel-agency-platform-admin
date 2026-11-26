@@ -9,6 +9,7 @@ import {
   DialogClose,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { Input } from '#/components/ui/input'
 import { Label } from '#/components/ui/label'
 import { User, Check } from 'lucide-react'
@@ -36,14 +37,18 @@ export function EditCustomerDialog({
     }
   }, [open, customerName])
 
+  const { isLoading, run } = useActionLoading(open)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!name.trim()) {
       setError('Full name cannot be empty')
       return
     }
-    onSave(name.trim())
-    onOpenChange(false)
+    run(() => {
+      onSave(name.trim())
+      onOpenChange(false)
+    })
   }
 
   return (
@@ -99,6 +104,8 @@ export function EditCustomerDialog({
             <DialogClose render={<Button variant="outline" type="button" className="border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F4F6FA] font-bold">Cancel</Button>} />
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Saving..."
               className="bg-[#012A5E] hover:bg-[#0F3F7D] text-white font-extrabold inline-flex items-center gap-1.5 px-4 shadow-xs"
             >
               <Check className="size-4" />

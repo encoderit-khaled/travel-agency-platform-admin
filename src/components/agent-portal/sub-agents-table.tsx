@@ -163,7 +163,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[300px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
+            'w-75 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 pl-6',
           cellClassName: 'py-4 pl-6 align-top',
         },
       },
@@ -179,7 +179,7 @@ export function SubAgentsTable({
               </span>
               <div className="flex items-center gap-1.5 font-semibold text-[#141C2E]">
                 <Mail className="size-3.5 text-[#0267B8] shrink-0" />
-                <span className="truncate max-w-[200px]" title={sa.email}>
+                <span className="truncate max-w-50" title={sa.email}>
                   {sa.email}
                 </span>
               </div>
@@ -194,7 +194,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[280px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-70 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-top',
         },
       },
@@ -229,7 +229,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[200px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-50 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-top',
         },
       },
@@ -264,7 +264,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[180px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-45 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-top',
         },
       },
@@ -293,7 +293,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[160px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
+            'w-40 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5',
           cellClassName: 'py-4 align-top',
         },
       },
@@ -386,7 +386,7 @@ export function SubAgentsTable({
         },
         meta: {
           headerClassName:
-            'w-[120px] text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 text-right pr-6',
+            'w-30 text-xs font-extrabold text-[#4F5B70] uppercase tracking-wider py-3.5 text-right pr-6',
           cellClassName: 'py-4 pr-6 align-top text-right',
         },
       },
@@ -531,7 +531,7 @@ export function SubAgentsTable({
           data={filteredSubAgents}
           columns={columns}
           getRowId={(row) => row.id}
-          tableClassName="w-full min-w-[940px]"
+          tableClassName="w-full min-w-235"
           headerRowClassName="bg-[#D7E3F4]/50 hover:bg-[#D7E3F4]/50 border-y border-[#DCE2EB]"
           rowClassName="hover:bg-[#F8FAFC] border-b border-[#E6EAF0] transition-colors"
           emptyCellClassName="h-64 text-center"

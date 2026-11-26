@@ -7,6 +7,7 @@ import {
   DialogFooter,
 } from '#/components/ui/dialog'
 import { Button } from '#/components/ui/button'
+import { useActionLoading } from '#/hooks/use-action-loading'
 import { AlertOctagon, CheckCircle2 } from 'lucide-react'
 import type { SubAgent } from './types'
 
@@ -23,13 +24,21 @@ export function DeactivateSubAgentDialog({
   subAgent,
   onConfirm,
 }: DeactivateSubAgentDialogProps) {
+  const { isLoading, run } = useActionLoading(open)
+
   if (!subAgent) return null
 
   const isSuspending = subAgent.status === 'active'
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[460px] p-6">
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        if (!next && isLoading) return
+        onOpenChange(next)
+      }}
+    >
+      <DialogContent className="sm:max-w-115 p-6">
         <DialogHeader>
           <div
             className={`size-11 rounded-xl flex items-center justify-center mb-1 ${
@@ -61,6 +70,7 @@ export function DeactivateSubAgentDialog({
             type="button"
             variant="outline"
             onClick={() => onOpenChange(false)}
+            disabled={isLoading}
             className="border-[#DCE2EB] text-[#4F5B70]"
           >
             Cancel
@@ -68,9 +78,13 @@ export function DeactivateSubAgentDialog({
           <Button
             type="button"
             onClick={() => {
-              onConfirm(subAgent.id)
-              onOpenChange(false)
+              run(() => {
+                onConfirm(subAgent.id)
+                onOpenChange(false)
+              })
             }}
+            loading={isLoading}
+            loadingText="Processing..."
             className={
               isSuspending
                 ? 'bg-red-600 hover:bg-red-700 text-white font-extrabold shadow-sm'

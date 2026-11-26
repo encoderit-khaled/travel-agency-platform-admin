@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { CardGridSkeleton } from '#/components/ui/skeleton'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   ArrowLeft,
   Info,
@@ -71,6 +73,7 @@ export function SubAgentDetailsPage({
   initialBookingRef = 'AW-DEMO-FL-001',
   initialTab = 'overview',
 }: SubAgentDetailsPageProps) {
+  const isContentLoading = useContentLoading()
   const [mobileSidebarOpen, setMobileSidebarOpen] = React.useState(false)
   const [activeTab, setActiveTab] = React.useState<
     'overview' | 'permissions' | 'markup' | 'bookings' | 'performance'
@@ -277,7 +280,7 @@ export function SubAgentDetailsPage({
           agencyName="Skyline Demo Travels Ltd"
         />
 
-        <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-8 py-6 pb-20 space-y-6">
+        <main className="flex-1 max-w-350 w-full mx-auto px-4 sm:px-8 py-6 pb-20 space-y-6">
           {/* Back link */}
           <div>
             <Link
@@ -389,7 +392,14 @@ export function SubAgentDetailsPage({
           {activeTab === 'overview' && (
             <div className="space-y-6">
               {/* 4 KPI Summary Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {isContentLoading ? (
+                <CardGridSkeleton
+                  count={4}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                  cardClassName="h-32 rounded-2xl"
+                />
+              ) : null}
+              <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ${isContentLoading ? "hidden" : ""}`}>
                 {/* 1. Permissions Card */}
                 <div className="bg-white rounded-2xl border border-[#DCE2EB] p-5 shadow-2xs flex flex-col justify-between">
                   <div>

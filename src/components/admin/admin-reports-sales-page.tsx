@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { FlightOrbitLoader } from '#/components/ui/flight-orbit-loader'
+import { useContentLoading } from '#/hooks/use-content-loading'
 import {
   CalendarDays,
   DollarSign,
@@ -52,6 +54,7 @@ export function AdminReportsSalesPage({
   initialSupplier = 'All Suppliers',
   initialChannel = 'All Channels',
 }: AdminReportsSalesPageProps) {
+  const isContentLoading = useContentLoading()
   const [activeTab, setActiveTab] = React.useState<ReportTab>(initialTab)
 
   // Filter state
@@ -384,7 +387,7 @@ export function AdminReportsSalesPage({
 
                     {/* Active Tab Bottom Indicator Bar */}
                     {isActive && (
-                      <span className="absolute bottom-0 left-2 right-2 h-[3px] bg-[#012A5E] rounded-t-sm" />
+                      <span className="absolute bottom-0 left-2 right-2 h-0.75 bg-[#012A5E] rounded-t-sm" />
                     )}
                   </button>
                 )
@@ -560,9 +563,14 @@ export function AdminReportsSalesPage({
             {/* Main Panel (div#panel) */}
             <div id="panel" className="flex flex-col gap-6">
               {/* Row 1: KPI Cards + Sales by Service Breakdown */}
-              <div className="flex flex-col lg:flex-row items-stretch gap-5">
+              {isContentLoading ? (
+                <div className="flex justify-center py-10">
+                  <FlightOrbitLoader />
+                </div>
+              ) : null}
+              <div className={`flex flex-col lg:flex-row items-stretch gap-5 ${isContentLoading ? "hidden" : ""}`}>
                 {/* Column 1: 2 KPI Cards (fixed width 300px on desktop) */}
-                <div className="w-full lg:w-[300px] flex flex-col sm:flex-row lg:flex-col gap-4 shrink-0">
+                <div className="w-full lg:w-75 flex flex-col sm:flex-row lg:flex-col gap-4 shrink-0">
                   {/* KPI Card 1: Booking Count */}
                   <Card className="relative flex-1 overflow-hidden rounded-[18px] border border-[#DCE2EB] bg-white p-[18px_20px] shadow-2xs hover:border-[#C5CFDC] transition-all">
                     {/* Corner Radial Gradient Decoration (EL-dbc05c97) */}
