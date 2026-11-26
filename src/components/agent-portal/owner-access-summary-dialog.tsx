@@ -206,7 +206,7 @@ export function OwnerAccessSummaryDialog({
                     selectedCategory === cat
                       ? 'bg-[#001A3D] text-white shadow-xs'
                       : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200',
-                  ))}
+                  )}
                 >
                   {cat}
                 </Button>

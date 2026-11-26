@@ -570,7 +570,7 @@ export function RolesAccessPage({
                   activeTab === 'overview'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                ))}
+                )}
               >
                 <ShieldCheck
                   className={cn(
@@ -595,7 +595,7 @@ export function RolesAccessPage({
                   activeTab === 'team'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                ))}
+                )}
               >
                 <Users
                   className={cn(
@@ -621,7 +621,7 @@ export function RolesAccessPage({
                   activeTab === 'matrix'
                     ? 'text-[#012A5E] font-bold'
                     : 'text-[#5A6882] hover:text-[#012A5E]',
-                ))}
+                )}
               >
                 <TableIcon
                   className={cn(

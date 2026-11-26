@@ -129,7 +129,7 @@ export function AdminReportsExportDialog({
                   format === 'csv'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`)}
+                }`}
               >
                 <FileSpreadsheet className="size-5" />
                 <span>CSV File</span>
@@ -141,7 +141,7 @@ export function AdminReportsExportDialog({
                   format === 'xlsx'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`)}
+                }`}
               >
                 <FileSpreadsheet className="size-5" />
                 <span>Excel (.xlsx)</span>
@@ -153,7 +153,7 @@ export function AdminReportsExportDialog({
                   format === 'pdf'
                     ? 'border-[#0265FF] bg-[#EBF3FF] text-[#0265FF] shadow-xs'
                     : 'border-[#E2E8F0] hover:bg-slate-50 text-[#5D6B82]'
-                }`)}
+                }`}
               >
                 <FileText className="size-5" />
                 <span>PDF Document</span>

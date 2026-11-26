@@ -221,7 +221,7 @@ export function AgentStatementsExportDialog({
                     format === 'pdf'
                       ? 'bg-white text-[#012A5E] shadow-xs'
                       : 'text-[#64748B] hover:text-[#012A5E]'
-                  }`)}
+                  }`}
                 >
                   <FileText className="size-3.5" />
                   <span>Download PDF</span>
@@ -233,7 +233,7 @@ export function AgentStatementsExportDialog({
                     format === 'csv'
                       ? 'bg-white text-[#012A5E] shadow-xs'
                       : 'text-[#64748B] hover:text-[#012A5E]'
-                  }`)}
+                  }`}
                 >
                   <FileSpreadsheet className="size-3.5" />
                   <span>Download CSV</span>

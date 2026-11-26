@@ -501,7 +501,7 @@ export function AdminReportsPage({
                   activeTab === 'sales'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                ))}
+                )}
               >
                 <BarChart3 className="size-4.5 shrink-0" />
                 <span>Sales</span>
@@ -520,7 +520,7 @@ export function AdminReportsPage({
                   activeTab === 'bookings'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                ))}
+                )}
               >
                 <CalendarDays className="size-4.5 shrink-0" />
                 <span>Bookings</span>
@@ -539,7 +539,7 @@ export function AdminReportsPage({
                   activeTab === 'payments'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                ))}
+                )}
               >
                 <CreditCard className="size-4.5 shrink-0" />
                 <span>Payments</span>
@@ -558,7 +558,7 @@ export function AdminReportsPage({
                   activeTab === 'commissions'
                     ? 'bg-white text-[#001A3D] shadow-xs border-t border-x border-[#E2E8F0]'
                     : 'text-[#5D6B82] hover:text-[#001A3D] hover:bg-slate-100/70',
-                ))}
+                )}
               >
                 <Percent className="size-4.5 shrink-0 text-[#0265FF]" />
                 <span className="font-bold">Commissions</span>

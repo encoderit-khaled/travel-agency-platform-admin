@@ -375,7 +375,7 @@ export function AdminReportsSalesPage({
                       isActive
                         ? 'text-[#012A5E] font-extrabold'
                         : 'text-[#4F5B70] hover:text-[#012A5E] font-bold hover:bg-[#EEF2F7]/50',
-                    ))}
+                    )}
                   >
                     {tab.id === 'sales' && <TrendingUp className="size-4" />}
                     {tab.id === 'bookings' && (

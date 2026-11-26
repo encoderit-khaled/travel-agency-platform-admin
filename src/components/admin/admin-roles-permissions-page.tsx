@@ -557,7 +557,7 @@ export function AdminRolesPermissionsPage({
                         isSelected
                           ? 'bg-linear-to-br from-[#F2F7FD] to-white border-[#001A3D] shadow-md ring-1 ring-[#001A3D]/20'
                           : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-xs shadow-2xs',
-                      ))}
+                      )}
                     >
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">

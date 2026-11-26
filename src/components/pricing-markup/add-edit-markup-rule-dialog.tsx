@@ -147,7 +147,7 @@ export function AddEditMarkupRuleDialog({
                     scope === 'All Services'
                       ? 'border-[#001A3D] bg-[#F0F4FA] ring-1 ring-[#001A3D]'
                       : 'border-[#E2E8F0] bg-white hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   <span className="text-xs font-bold text-[#001A3D] block">
                     All Services
@@ -167,7 +167,7 @@ export function AddEditMarkupRuleDialog({
                     scope === 'Specific Service'
                       ? 'border-[#001A3D] bg-[#F0F4FA] ring-1 ring-[#001A3D]'
                       : 'border-[#E2E8F0] bg-white hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   <span className="text-xs font-bold text-[#001A3D] block">
                     Specific Service

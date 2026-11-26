@@ -140,7 +140,7 @@ export function EditPermissionsDialog({
                     isSelected
                       ? 'bg-[#012A5E] text-white border-[#012A5E] shadow-sm'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#EEF2F7] hover:text-[#012A5E]',
-                  ))}
+                  )}
                 >
                   <Icon className={cn('size-3.5', isSelected ? 'text-white' : 'text-[#8C97A8]')} />
                   <span>{role.name}</span>
@@ -230,7 +230,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'visible'
                             ? 'bg-[#1F9D61] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <Check className="size-3" />
                         Visible
@@ -243,7 +243,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'hidden'
                             ? 'bg-[#8C97A8] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <EyeOff className="size-3" />
                         Hidden
@@ -256,7 +256,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'not-configured'
                             ? 'bg-white text-[#012A5E] font-bold shadow-xs border border-[#DCE2EB]'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <HelpCircle className="size-3" />
                         Not Configured
@@ -297,7 +297,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'visible'
                             ? 'bg-[#1F9D61] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <Check className="size-3" />
                         Visible
@@ -310,7 +310,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'hidden'
                             ? 'bg-[#8C97A8] text-white shadow-xs'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <EyeOff className="size-3" />
                         Hidden
@@ -323,7 +323,7 @@ export function EditPermissionsDialog({
                           currentStatus === 'not-configured'
                             ? 'bg-white text-[#012A5E] font-bold shadow-xs border border-[#DCE2EB]'
                             : 'text-[#4F5B70] hover:text-[#141B28]',
-                        ))}
+                        )}
                       >
                         <HelpCircle className="size-3" />
                         Not Configured

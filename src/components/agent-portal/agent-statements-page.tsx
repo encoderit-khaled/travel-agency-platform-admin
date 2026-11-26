@@ -593,7 +593,7 @@ export function AgentStatementsPage({
                           periodPreset === 'this-month'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`)}
+                        }`}
                       >
                         This Month
                       </Button>
@@ -604,7 +604,7 @@ export function AgentStatementsPage({
                           periodPreset === 'previous-month'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`)}
+                        }`}
                       >
                         Previous Month
                       </Button>
@@ -615,7 +615,7 @@ export function AgentStatementsPage({
                           periodPreset === 'custom'
                             ? 'bg-[#EAF4FD] border-[#012A5E] text-[#012A5E]'
                             : 'bg-white border-[#C9D2DF] text-[#4F5B70] hover:bg-[#F4F6FA]'
-                        }`)}
+                        }`}
                       >
                         Custom
                       </Button>

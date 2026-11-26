@@ -381,7 +381,7 @@ export function SubAgentDetailsPage({
                   activeTab === tab.id
                     ? 'border-[#0267B8] text-[#0267B8]'
                     : 'border-transparent text-[#64748B] hover:text-[#012A5E]'
-                }`)}
+                }`}
               >
                 {tab.label}
               </Button>

@@ -172,7 +172,7 @@ export function NewCreditRequestForm({
                   requestType === 'Credit-limit increase'
                     ? 'border-2 border-[#0267B8] bg-[#F4F8FD] shadow-xs'
                     : 'border-[#DCE2EB] bg-white hover:border-[#0267B8]/40 hover:bg-slate-50/50',
-                ))}
+                )}
               >
                 <div className="mt-0.5 shrink-0">
                   <div
@@ -207,7 +207,7 @@ export function NewCreditRequestForm({
                   requestType === 'Credit top-up'
                     ? 'border-2 border-[#0267B8] bg-[#F4F8FD] shadow-xs'
                     : 'border-[#DCE2EB] bg-white hover:border-[#0267B8]/40 hover:bg-slate-50/50',
-                ))}
+                )}
               >
                 <div className="mt-0.5 shrink-0">
                   <div

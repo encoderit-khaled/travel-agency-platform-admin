@@ -742,7 +742,7 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'allowed'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    ))}
+                                    )}
                                   >
                                     <Check className="size-3.5 text-[#0E6A3D] stroke-[2.5]" />
                                     <span>Allowed</span>
@@ -763,7 +763,7 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'view_only'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    ))}
+                                    )}
                                   >
                                     <Eye className="size-3.5 text-[#01559A]" />
                                     <span>View only</span>
@@ -786,7 +786,7 @@ export function SubAgentPermissionsPage({
                                       currentLevel === 'not_allowed'
                                         ? 'bg-white text-[#012A5E] shadow-xs font-extrabold border border-[#E2E8F0]'
                                         : 'text-[#4F5B70] hover:text-[#012A5E]',
-                                    ))}
+                                    )}
                                   >
                                     <Ban className="size-3.5 text-[#5C677A]" />
                                     <span>Not allowed</span>

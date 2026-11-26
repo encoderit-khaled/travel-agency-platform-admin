@@ -1302,7 +1302,7 @@ export function AgentReportsPage({
                     periodPreset === 'this-month'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  ))}
+                  )}
                 >
                   This Month
                 </Button>
@@ -1314,7 +1314,7 @@ export function AgentReportsPage({
                     periodPreset === 'previous-month'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  ))}
+                  )}
                 >
                   Previous Month
                 </Button>
@@ -1326,7 +1326,7 @@ export function AgentReportsPage({
                     periodPreset === 'last-30-days'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  ))}
+                  )}
                 >
                   Last 30 Days
                 </Button>
@@ -1338,7 +1338,7 @@ export function AgentReportsPage({
                     periodPreset === 'custom'
                       ? 'bg-[#DEE8F5] text-[#012A5E] border-[#012A5E] font-bold shadow-2xs'
                       : 'bg-white text-[#4F5B70] border-[#DCE2EB] hover:bg-[#F4F6FA]',
-                  ))}
+                  )}
                 >
                   Custom
                 </Button>
@@ -1529,7 +1529,7 @@ export function AgentReportsPage({
                 activeTab === 'overview'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <Layers className="size-4" />
               <span>Overview</span>
@@ -1543,7 +1543,7 @@ export function AgentReportsPage({
                 activeTab === 'sales'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <TrendingUp className="size-4" />
               <span>Sales</span>
@@ -1557,7 +1557,7 @@ export function AgentReportsPage({
                 activeTab === 'bookings'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <CalendarDays className="size-4" />
               <span>Bookings</span>
@@ -1574,7 +1574,7 @@ export function AgentReportsPage({
                 activeTab === 'commissions'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <Percent className="size-4" />
               <span>Commissions</span>
@@ -1588,7 +1588,7 @@ export function AgentReportsPage({
                 activeTab === 'wallet-credit'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <Wallet className="size-4" />
               <span>Wallet & Credit</span>
@@ -1602,7 +1602,7 @@ export function AgentReportsPage({
                 activeTab === 'sub-agents'
                   ? 'bg-[#EBF2FA] text-[#012A5E] shadow-2xs'
                   : 'text-[#4F5B70] hover:text-[#012A5E] hover:bg-[#F4F6FA]',
-              ))}
+              )}
             >
               <Users className="size-4" />
               <span>Sub-agent Performance</span>
@@ -3011,7 +3011,7 @@ export function AgentReportsPage({
                         walletDirection === 'All'
                           ? 'bg-[#012A5E] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:text-[#012A5E]',
-                      ))}
+                      )}
                     >
                       All (10)
                     </Button>
@@ -3023,7 +3023,7 @@ export function AgentReportsPage({
                         walletDirection === 'Credit'
                           ? 'bg-[#00875A] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#00875A] hover:bg-[#E6F4EA]',
-                      ))}
+                      )}
                     >
                       Credits (+4)
                     </Button>
@@ -3035,7 +3035,7 @@ export function AgentReportsPage({
                         walletDirection === 'Debit'
                           ? 'bg-[#DE350B] text-white shadow-xs'
                           : 'bg-white border border-[#DCE2EB] text-[#DE350B] hover:bg-[#FEECEB]',
-                      ))}
+                      )}
                     >
                       Debits (-6)
                     </Button>

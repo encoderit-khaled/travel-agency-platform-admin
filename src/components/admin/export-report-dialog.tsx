@@ -168,7 +168,7 @@ export function ExportReportDialog({
                   format === 'csv'
                     ? 'border-[#0267B8] bg-[#EBF2FA] text-[#012A5E] font-bold'
                     : 'border-[#DCE2EB] hover:bg-[#F4F6FA] text-[#4F5B70]'
-                }`)}
+                }`}
               >
                 <div className="font-bold">CSV (.csv)</div>
                 <div className="text-[11px] text-[#64748B]">
@@ -183,7 +183,7 @@ export function ExportReportDialog({
                   format === 'json'
                     ? 'border-[#0267B8] bg-[#EBF2FA] text-[#012A5E] font-bold'
                     : 'border-[#DCE2EB] hover:bg-[#F4F6FA] text-[#4F5B70]'
-                }`)}
+                }`}
               >
                 <div className="font-bold">JSON (.json)</div>
                 <div className="text-[11px] text-[#64748B]">

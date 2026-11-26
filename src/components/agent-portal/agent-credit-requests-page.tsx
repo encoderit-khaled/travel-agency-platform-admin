@@ -182,7 +182,7 @@ export function AgentCreditRequestsPage({
                 activeTab === 'history'
                   ? 'text-[#0267B8]'
                   : 'text-[#5A6578] hover:text-[#001A3D]',
-              ))}
+              )}
             >
               <ListOrdered className="size-4" />
               <span>Request History</span>
@@ -210,7 +210,7 @@ export function AgentCreditRequestsPage({
                 activeTab === 'new'
                   ? 'text-[#0267B8]'
                   : 'text-[#5A6578] hover:text-[#001A3D]',
-              ))}
+              )}
             >
               <Plus className="size-4 stroke-[2.5]" />
               <span>New Request</span>

@@ -496,7 +496,7 @@ export function CreditRequestsPage({
                 activeTab === 'history'
                   ? 'text-[#001A3D]'
                   : 'text-[#5A6E85] hover:text-[#001A3D]',
-              ))}
+              )}
             >
               <FileText className="size-4" />
               <span>Request History</span>
@@ -516,7 +516,7 @@ export function CreditRequestsPage({
                 activeTab === 'new'
                   ? 'text-[#001A3D]'
                   : 'text-[#5A6E85] hover:text-[#001A3D]',
-              ))}
+              )}
             >
               <Plus className="size-4 stroke-[2.5]" />
               <span>New Request</span>
@@ -920,7 +920,7 @@ export function CreditRequestsPage({
                           newRequestType === 'Credit-limit increase'
                             ? 'border-[#0267B8] bg-[#F0F7FF] ring-2 ring-[#0267B8]/20 shadow-xs'
                             : 'border-[#DCE2EB] bg-white hover:bg-[#F8FAFC]',
-                        ))}
+                        )}
                       >
                         <div
                           className={cn(
@@ -953,7 +953,7 @@ export function CreditRequestsPage({
                           newRequestType === 'Credit top-up'
                             ? 'border-[#0267B8] bg-[#F0F7FF] ring-2 ring-[#0267B8]/20 shadow-xs'
                             : 'border-[#DCE2EB] bg-white hover:bg-[#F8FAFC]',
-                        ))}
+                        )}
                       >
                         <div
                           className={cn(

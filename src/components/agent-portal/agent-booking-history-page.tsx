@@ -865,7 +865,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === null
                       ? 'bg-[#012A5E] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   All
                   <span
@@ -890,7 +890,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'pending'
                       ? 'bg-[#9A6400] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Pending
                   <span
@@ -915,7 +915,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'confirmed'
                       ? 'bg-[#0B6A45] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Confirmed
                   <span
@@ -942,7 +942,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'ticketed_issued'
                       ? 'bg-[#0267B8] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Ticketed / Issued
                   <span
@@ -967,7 +967,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'cancelled'
                       ? 'bg-[#475569] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Cancelled
                   <span
@@ -992,7 +992,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'refunded'
                       ? 'bg-[#475569] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Refunded
                   <span
@@ -1017,7 +1017,7 @@ export function AgentBookingHistoryPage({
                     statusChipFilter === 'failed'
                       ? 'bg-[#DC2626] text-white shadow-xs'
                       : 'bg-white border border-[#DCE2EB] text-[#4F5B70] hover:bg-[#F8FAFC]'
-                  }`)}
+                  }`}
                 >
                   Failed
                   <span

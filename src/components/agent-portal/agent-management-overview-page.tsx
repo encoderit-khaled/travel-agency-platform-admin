@@ -509,7 +509,7 @@ export function AgentManagementOverviewPage({
                   previewDropdownOpen
                     ? 'bg-[#F1C134] text-[#012A5E] border-[#F1C134] shadow-xs'
                     : 'bg-white/10 text-white border-white/20 hover:bg-white/20',
-                ))}
+                )}
               >
                 {previewDropdownOpen
                   ? '✓ Action Dropdown Open (#665:7388)'

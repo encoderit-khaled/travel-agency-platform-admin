@@ -31,7 +31,14 @@ import { AgentPortalSidebar } from './agent-portal-sidebar'
 import { AgentPortalHeader } from './agent-portal-header'
 import { Button } from '#/components/ui/button'
 import { Badge } from '#/components/ui/badge'
-import { Card } from '#/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '#/components/ui/card'
 import { CardGridSkeleton } from '#/components/ui/skeleton'
 import { useContentLoading } from '#/hooks/use-content-loading'
 import { Input } from '#/components/ui/input'
@@ -199,54 +206,59 @@ export function AgentDashboardPage({
               </div>
             </div>
 
-            {/* 2. Hero Quick Start Banner matching Figma #660:5298 */}
-            <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-linear-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] text-white shadow-xl">
-              {/* Radial glow background & decorative accent rings */}
+            {/* 2. Hero Quick Start Card matching Figma #660:5298 */}
+            <Card className="relative gap-6 overflow-hidden rounded-2xl border-0 bg-linear-to-br from-[#001A3D] via-[#012A5E] to-[#0F3F7D] py-6 text-white shadow-xl ring-0 sm:rounded-3xl sm:py-8">
               <div
-                className="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(circle_at_100%_0%,rgba(10,118,204,0.45)_0%,transparent_60%)]"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_100%_0%,rgba(10,118,204,0.45)_0%,transparent_60%)] opacity-40"
                 aria-hidden="true"
               />
               <div
-                className="absolute -right-16 -top-16 size-80 rounded-full border-32 border-[#F1C134]/10 pointer-events-none"
+                className="pointer-events-none absolute -top-16 -right-16 size-80 rounded-full border-32 border-[#F1C134]/10"
                 aria-hidden="true"
               />
 
-              <div className="relative z-10 flex flex-col gap-6">
-                {/* Banner Header #660:5300 */}
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C9D7EA]">
-                    <Sparkles className="size-4 text-[#F1C134]" />
-                    <span>Book on behalf of a customer</span>
-                  </div>
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight text-white">
-                    Start your first booking
-                  </h2>
-                  <p className="text-xs sm:text-sm text-[#C9D7EA] max-w-xl">
-                    Search Aero Wing travel services and create a booking for
-                    your customer.
-                  </p>
+              <CardHeader className="relative z-10 gap-1.5 px-6 sm:px-8">
+                <div className="flex items-center gap-2 text-xs font-bold tracking-wider text-[#C9D7EA] uppercase">
+                  <Sparkles className="size-4 text-[#F1C134]" />
+                  <span>Book on behalf of a customer</span>
                 </div>
+                <CardTitle className="text-xl font-extrabold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                  Start your first booking
+                </CardTitle>
+                <CardDescription className="max-w-xl text-xs text-[#C9D7EA] sm:text-sm">
+                  Search Aero Wing travel services and create a booking for
+                  your customer.
+                </CardDescription>
+              </CardHeader>
 
-                {/* Travel Service Option Buttons #660:5310 */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 sm:gap-3">
+              <CardContent className="relative z-10 px-6 sm:px-8">
+                <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-3 lg:grid-cols-8">
                   {travelServices.map((service) => {
                     const Icon = service.icon
                     const isSelected = selectedService === service.id
                     return (
-                      <Button variant="plain"
+                      <Card
                         key={service.id}
-                        type="button"
+                        role="button"
+                        tabIndex={0}
+                        aria-pressed={isSelected}
                         onClick={() => handleServiceSelect(service.id)}
+                        onKeyDown={(event) => {
+                          if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault()
+                            handleServiceSelect(service.id)
+                          }
+                        }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 sm:py-4 sm:px-2 rounded-xl border text-center transition-all cursor-pointer group',
+                          'cursor-pointer items-center gap-2 rounded-xl border px-2 py-3 text-center shadow-none ring-0 transition-all group',
                           isSelected
-                            ? 'bg-white/16 border-[#F1C134] ring-2 ring-[#F1C134]/30 shadow-md scale-[1.02]'
-                            : 'bg-white/6 hover:bg-white/12 border-white/16 text-white',
-                        ))}
+                            ? 'scale-[1.02] border-[#F1C134] bg-white/16 shadow-md ring-2 ring-[#F1C134]/30'
+                            : 'border-white/16 bg-white/6 text-white hover:bg-white/12',
+                        )}
                       >
                         <div
                           className={cn(
-                            'size-9 rounded-lg flex items-center justify-center mb-2 transition-transform group-hover:scale-110',
+                            'flex size-9 items-center justify-center rounded-lg transition-transform group-hover:scale-110',
                             isSelected
                               ? 'bg-[#F1C134] text-[#012A5E]'
                               : 'bg-white/12 text-white',
@@ -256,38 +268,37 @@ export function AgentDashboardPage({
                         </div>
                         <span
                           className={cn(
-                            'text-xs font-bold leading-tight',
+                            'text-xs leading-tight font-bold',
                             isSelected ? 'text-[#F1C134]' : 'text-white',
                           )}
                         >
                           {service.label}
                         </span>
-                      </Button>
+                      </Card>
                     )
                   })}
                 </div>
+              </CardContent>
 
-                {/* Banner Action Bar #660:5351 */}
-                <div className="pt-2 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-[#C9D7EA]">
-                    <span className="size-2 rounded-full bg-[#F1C134] animate-pulse" />
-                    <span>
-                      Selected service: {selectedService} · Search real-time
-                      inventory & net agent fares
-                    </span>
-                  </div>
-
-                  <Button
-                    type="button"
-                    onClick={handleStartBooking}
-                    className="h-10 px-5 rounded-xl font-extrabold text-xs sm:text-sm text-[#012A5E] bg-[#F1C134] hover:bg-[#E5B52E] shadow-sm transition-all"
-                  >
-                    <span>Start New Booking</span>
-                    <ArrowRight className="size-4 ml-1.5" />
-                  </Button>
+              <CardFooter className="relative z-10 flex-col items-stretch justify-between gap-4 border-t border-white/15 px-6 pt-4 sm:flex-row sm:items-center sm:px-8">
+                <div className="flex items-center gap-2 text-xs text-[#C9D7EA] sm:text-sm">
+                  <span className="size-2 animate-pulse rounded-full bg-[#F1C134]" />
+                  <span>
+                    Selected service: {selectedService} · Search real-time
+                    inventory & net agent fares
+                  </span>
                 </div>
-              </div>
-            </section>
+
+                <Button
+                  type="button"
+                  onClick={handleStartBooking}
+                  className="h-10 rounded-xl px-5 text-xs font-extrabold text-[#012A5E] shadow-sm transition-all bg-[#F1C134] hover:bg-[#E5B52E] sm:text-sm"
+                >
+                  <span>Start New Booking</span>
+                  <ArrowRight className="ml-1.5 size-4" />
+                </Button>
+              </CardFooter>
+            </Card>
 
             {isContentLoading ? <CardGridSkeleton /> : null}
 
@@ -1235,7 +1246,7 @@ export function AgentDashboardPage({
                     selectedService === s.id
                       ? 'border-[#012A5E] bg-[#012A5E] text-white'
                       : 'border-[#DCE2EB] bg-[#F4F6FA] text-[#4F5B70] hover:bg-white',
-                  ))}
+                  )}
                 >
                   {s.label}
                 </Button>

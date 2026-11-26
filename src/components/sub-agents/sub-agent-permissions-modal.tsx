@@ -162,7 +162,7 @@ export function SubAgentPermissionsModal({
                       currentStatus === 'allowed'
                         ? 'bg-[#E6F4EC] text-[#0E7A3E] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`)}
+                    }`}
                   >
                     <Check className="size-3" />
                     <span>Allowed</span>
@@ -175,7 +175,7 @@ export function SubAgentPermissionsModal({
                       currentStatus === 'view_only'
                         ? 'bg-[#EAF4FD] text-[#0267B8] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`)}
+                    }`}
                   >
                     <Eye className="size-3" />
                     <span>View only</span>
@@ -188,7 +188,7 @@ export function SubAgentPermissionsModal({
                       currentStatus === 'not_allowed'
                         ? 'bg-[#EEF1F5] text-[#4F5B70] shadow-2xs'
                         : 'text-[#4F5B70] hover:text-[#141B28] hover:bg-[#F4F6FA]'
-                    }`)}
+                    }`}
                   >
                     <Ban className="size-3" />
                     <span>Not allowed</span>

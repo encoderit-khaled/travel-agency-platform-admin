@@ -171,7 +171,7 @@ export function AgentReportsExportDialog({
                       field.state.value === 'csv'
                         ? 'border-[#0267B8] bg-[#F5F8FC] text-[#0267B8] shadow-xs'
                         : 'border-[#E4E7EC] hover:bg-slate-50 text-[#344054]'
-                    }`)}
+                    }`}
                   >
                     <FileSpreadsheet className="size-5 shrink-0" />
                     <div className="flex-1 min-w-0">
@@ -194,7 +194,7 @@ export function AgentReportsExportDialog({
                       field.state.value === 'pdf'
                         ? 'border-[#0267B8] bg-[#F5F8FC] text-[#0267B8] shadow-xs'
                         : 'border-[#E4E7EC] hover:bg-slate-50 text-[#344054]'
-                    }`)}
+                    }`}
                   >
                     <FileText className="size-5 shrink-0" />
                     <div className="flex-1 min-w-0">

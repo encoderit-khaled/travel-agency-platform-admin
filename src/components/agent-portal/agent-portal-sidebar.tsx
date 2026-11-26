@@ -305,11 +305,11 @@ export function AgentPortalSidebar({
                       'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
-                        : 'gap-3 px-3 py-2.5 text-left',
+                        : 'justify-start gap-3 px-3 py-2.5 text-left',
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    ))}
+                    )}
                   >
                     <Icon
                       className={cn(
@@ -350,11 +350,11 @@ export function AgentPortalSidebar({
                       'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
-                        : 'gap-3 px-3 py-2.5 text-left',
+                        : 'justify-start gap-3 px-3 py-2.5 text-left',
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    ))}
+                    )}
                   >
                     <Icon
                       className={cn(
@@ -395,11 +395,11 @@ export function AgentPortalSidebar({
                       'w-full flex items-center rounded-xl text-sm transition-all cursor-pointer',
                       isCollapsed && !isMobileOpen
                         ? 'justify-center p-2.5'
-                        : 'gap-3 px-3 py-2.5 text-left',
+                        : 'justify-start gap-3 px-3 py-2.5 text-left',
                       isActive
                         ? 'bg-white/12 text-[#F1C134] font-semibold shadow-[inset_3px_0_0_0_#F1C134] hover:bg-white/15'
                         : 'bg-transparent text-[#C9D7EA] hover:text-white hover:bg-white/6 font-medium',
-                    ))}
+                    )}
                   >
                     <Icon
                       className={cn(

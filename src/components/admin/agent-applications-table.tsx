@@ -456,7 +456,7 @@ export function AgentApplicationsTable({
             activeTab === 'pending'
               ? 'border-[#F1C134] text-[#012A5E]'
               : 'border-transparent text-[#4F5B70] hover:text-[#012A5E]'
-          }`)}
+          }`}
         >
           <span>Pending Review</span>
           <span
@@ -480,7 +480,7 @@ export function AgentApplicationsTable({
             activeTab === 'all'
               ? 'border-[#F1C134] text-[#012A5E]'
               : 'border-transparent text-[#4F5B70] hover:text-[#012A5E]'
-          }`)}
+          }`}
         >
           <span>All Applications</span>
           <span

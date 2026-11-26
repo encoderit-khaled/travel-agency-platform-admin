@@ -466,7 +466,7 @@ export function SubAgentBookingsPage({
                   tab.id === 'bookings'
                     ? 'border-[#012A5E] text-[#012A5E]'
                     : 'border-transparent text-[#64748B] hover:text-[#012A5E] hover:border-[#CBD5E1]'
-                }`)}
+                }`}
               >
                 {tab.label}
               </Button>
@@ -632,7 +632,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === null
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>All</span>
             <span
@@ -656,7 +656,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Pending'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Pending</span>
             <span
@@ -680,7 +680,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Confirmed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Confirmed</span>
             <span
@@ -704,7 +704,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Ticketed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Ticketed / Issued</span>
             <span
@@ -728,7 +728,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Cancelled'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Cancelled</span>
             <span
@@ -752,7 +752,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Refunded'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Refunded</span>
             <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-[#F1F5F9] text-[#64748B]">
@@ -770,7 +770,7 @@ export function SubAgentBookingsPage({
               statusChipFilter === 'Failed'
                 ? 'bg-[#012A5E] text-white border-[#012A5E]'
                 : 'bg-white text-[#475569] border-[#DCE2EB] hover:bg-[#F8FAFC]'
-            }`)}
+            }`}
           >
             <span>Failed</span>
             <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-[#F1F5F9] text-[#64748B]">
